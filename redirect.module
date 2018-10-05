@@ -1476,13 +1476,13 @@ function redirect_parse_url($url) {
 
 function redirect_status_code_options($code = NULL) {
   $codes = array(
-    300 => t('300 Multiple Choices'),
-    301 => t('301 Moved Permanently'),
-    302 => t('302 Found'),
-    303 => t('303 See Other'),
-    304 => t('304 Not Modified'),
-    305 => t('305 Use Proxy'),
-    307 => t('307 Temporary Redirect'),
+    300 => '300 ' . t('Multiple Choices'),
+    301 => '301 ' . t('Moved Permanently'),
+    302 => '302 ' . t('Found'),
+    303 => '303 ' . t('See Other'),
+    304 => '304 ' . t('Not Modified'),
+    305 => '305 ' . t('Use Proxy'),
+    307 => '307 ' . t('Temporary Redirect'),
   );
   return isset($codes[$code]) ? $codes[$code] : $codes;
 }
