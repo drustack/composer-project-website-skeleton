@@ -883,8 +883,10 @@ function redirect_delete_by_path($path) {
   $query = db_select('redirect');
   $query->addField('redirect', 'rid');
   $query_or = db_or();
-  $query_or->condition('source', db_like($path), 'LIKE');
-  $query_or->condition('source', db_like($path . '/') . '%', 'LIKE');
+  if (variable_get('redirect_delete_by_source_path', TRUE)) {
+    $query_or->condition('source', db_like($path), 'LIKE');
+    $query_or->condition('source', db_like($path . '/') . '%', 'LIKE');
+  }
   $query_or->condition('redirect', db_like($path), 'LIKE');
   $query_or->condition('redirect', db_like($path . '/') . '%', 'LIKE');
   $query->condition($query_or);
