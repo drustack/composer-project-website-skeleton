@@ -39,7 +39,7 @@ function redirect_schema() {
       ),
       'source' => array(
         'type' => 'varchar',
-        'length' => 255,
+        'length' => 900,
         'not null' => TRUE,
         'description' => 'The source path to redirect from.',
       ),
@@ -51,7 +51,7 @@ function redirect_schema() {
       ),
       'redirect' => array(
         'type' => 'varchar',
-        'length' => 255,
+        'length' => 900,
         'not null' => TRUE,
         'description' => 'The destination path to redirect to.',
       ),
@@ -104,7 +104,11 @@ function redirect_schema() {
       'expires' => array('type', 'access'),
       'status_source_language' => array(
         'status',
-        'source',
+        // Limit the number of characters used by the index.
+        // That allows avoiding the risk to have a PDOException
+        // caused the DB index limitations of some databases.
+        // see https://www.drupal.org/project/redirect/issues/2057615.
+        array('source', 255),
         'language',
       ),
     ),
