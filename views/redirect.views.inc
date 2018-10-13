@@ -155,6 +155,25 @@ function redirect_views_data() {
     );
   }
 
+  // {redirect}.status
+  $data['redirect']['status'] = array(
+    'title' => t('Status'),
+    'help' => t('Whether or not the redirect is enabled.'),
+    'field' => array(
+      'handler' => 'views_handler_field_boolean',
+      'click sortable' => TRUE,
+    ),
+    'filter' => array(
+      'handler' => 'views_handler_filter_boolean_operator',
+      'label' => t('Status'),
+      'type' => 'enabled-disabled',
+      'use equal' => TRUE, // Use status = 1 instead of status <> 0 in WHERE statment
+    ),
+    'sort' => array(
+      'handler' => 'views_handler_sort',
+    ),
+  );
+
   // {redirect}.count
   $data['redirect']['count'] = array(
     'title' => t('Clicks'),
