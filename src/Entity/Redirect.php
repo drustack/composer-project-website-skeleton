@@ -207,7 +207,9 @@ class Redirect extends ContentEntityBase {
    */
   public function setRedirect($url, array $query = array(), array $options = array()) {
     $uri = $url . ($query ? '?' . UrlHelper::buildQuery($query) : '');
-    $this->redirect_redirect->set(0, ['uri' => 'internal:/' . ltrim($uri, '/'), 'options' => $options]);
+    $external = UrlHelper::isValid($url, TRUE);
+    $uri = ($external ? $url : 'internal:/' . ltrim($uri, '/'));
+    $this->redirect_redirect->set(0, ['uri' => $uri, 'options' => $options]);
   }
 
   /**
