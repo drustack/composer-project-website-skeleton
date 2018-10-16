@@ -3,7 +3,6 @@
 namespace Drupal\redirect\Entity;
 
 use Drupal\Component\Utility\Crypt;
-use Drupal\Component\Utility\Unicode;
 use Drupal\Component\Utility\UrlHelper;
 use Drupal\Core\Entity\ContentEntityBase;
 use Drupal\Core\Entity\EntityStorageInterface;
@@ -62,7 +61,7 @@ class Redirect extends ContentEntityBase {
    */
   public static function generateHash($source_path, array $source_query, $language) {
     $hash = array(
-      'source' => Unicode::strtolower($source_path),
+      'source' => mb_strtolower($source_path),
       'language' => $language,
     );
 
