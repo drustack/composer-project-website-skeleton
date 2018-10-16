@@ -126,9 +126,19 @@ class RedirectRequestSubscriber implements EventSubscriberInterface {
     // Get URL info and process it to be used for hash generation.
     parse_str($request->getQueryString(), $request_query);
 
-    // Do the inbound processing so that for example language prefixes are
-    // removed.
-    $path = $this->pathProcessor->processInbound($request->getPathInfo(), $request);
+    if (strpos($request->getPathInfo(), '/system/files/') === 0 && !$request->query->has('file')) {
+      // Private files paths are split by the inbound path processor and the
+      // relative file path is moved to the 'file' query string parameter. This
+      // is because the route system does not allow an arbitrary amount of
+      // parameters. We preserve the path as is returned by the request object.
+      // @see \Drupal\system\PathProcessor\PathProcessorFiles::processInbound()
+      $path = $request->getPathInfo();
+    }
+    else {
+      // Do the inbound processing so that for example language prefixes are
+      // removed.
+      $path = $this->pathProcessor->processInbound($request->getPathInfo(), $request);
+    }
     $path = trim($path, '/');
 
     $this->context->fromRequest($request);
