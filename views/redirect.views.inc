@@ -220,7 +220,7 @@ function redirect_views_data() {
 
   $data['redirect']['edit_redirect'] = array(
     'field' => array(
-      'title' => t('Edit link'),
+      'title' => t('Link to edit redirect'),
       'help' => t('Provide a simple link to edit the URL redirect.'),
       'handler' => 'redirect_handler_field_redirect_link_edit',
     ),
@@ -228,7 +228,7 @@ function redirect_views_data() {
 
   $data['redirect']['delete_redirect'] = array(
     'field' => array(
-      'title' => t('Delete link'),
+      'title' => t('Link to delete redirect'),
       'help' => t('Provide a simple link to delete the URL redirect.'),
       'handler' => 'redirect_handler_field_redirect_link_delete',
     ),

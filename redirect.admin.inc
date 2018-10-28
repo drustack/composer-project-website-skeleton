@@ -146,7 +146,7 @@ function redirect_list_form($form, &$form_state) {
     ),
   );
   if (redirect_access('create', 'redirect')) {
-    $form['rids']['#empty'] .= ' ' . l(t('Add URL redirect.'), 'admin/config/search/redirect/add', array('query' => $destination));
+    $form['rids']['#empty'] .= ' ' . l(t('Add URL redirect'), 'admin/config/search/redirect/add', array('query' => $destination));
   }
   $form['pager'] = array('#theme' => 'pager');
   return $form;

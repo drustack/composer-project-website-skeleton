@@ -202,7 +202,7 @@ class RedirectFunctionalTest extends RedirectTestHelper {
     $this->assertNoLink('Add URL redirect from this page to another location');
 
     $this->drupalGet('admin/reports/page-not-found');
-    $this->clickLink('Fix 404 pages with URL redirects');
+    $this->clickLink('Fix file not found (404) errors with URL redirects');
 
     // Check that normal users do not see the add redirect link on 404 pages.
     $this->drupalLogout();
