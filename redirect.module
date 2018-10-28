@@ -1506,22 +1506,26 @@ function redirect_is_current_page_404() {
 function _redirect_uasort($a, $b) {
   $a_weight = isset($a->weight) ? $a->weight : 0;
   $b_weight = isset($b->weight) ? $b->weight : 0;
+
+  // First sort by weight (case sensitivity).
   if ($a_weight != $b_weight) {
-    // First sort by weight (case sensitivity).
-    return $a_weight > $b_weight;
+    return ($a_weight > $b_weight) ? -1 : 1;
   }
-  elseif ($a->language != $b->language) {
-    // Then sort by language specific over language neutral.
-    return $a->language == LANGUAGE_NONE;
+
+  // Then sort by language specific over language neutral.
+  if ($a->language != $b->language) {
+    return ($a->language != LANGUAGE_NONE) ? -1 : 1;
   }
-  elseif (!empty($a->source_options['query']) != !empty($b->source_options['query'])) {
-    // Then sort by redirects that do not have query strings over ones that do.
-    return empty($a->source_options['query']);
+
+  // Prioritize redirects that have more query parameters over those with less.
+  $a_query_count = isset($a->source_options['query']) ? count($a->source_options['query']) : 0;
+  $b_query_count = isset($b->source_options['query']) ? count($b->source_options['query']) : 0;
+  if ($a_query_count != $b_query_count) {
+    return ($a_query_count > $b_query_count) ? -1 : 1;
   }
-  else {
-    // Lastly sort by the highest redirect ID.
-    return $a->rid < $b->rid;
-  }
+
+  // Lastly sort by the highest redirect ID.
+  return ($a->rid > $b->rid) ? -1 : 1;
 }
 
 /**
