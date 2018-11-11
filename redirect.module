@@ -574,6 +574,7 @@ function redirect_fetch_rids_by_path($source, $language, $enabled_only = FALSE) 
     $rid_query->condition($source_condition);
   }
   $rid_query->condition('language', array($language, LANGUAGE_NONE));
+  $rid_query->addTag('redirect_fetch');
   $rids = $rid_query->execute()->fetchCol();
   return $rids;
 }
