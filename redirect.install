@@ -444,3 +444,12 @@ function redirect_update_7103() {
   db_change_field('redirect', 'redirect_options', 'redirect_options', array('type' => 'blob'));
   db_change_field('redirect', 'source_options', 'source_options', array('type' => 'blob'));
 }
+
+ /**
+ * Add an index on the redirect column in the redirect table.
+ */
+function redirect_update_7104() {
+  if (!db_index_exists('redirect', 'redirect')) {
+    db_add_index('redirect', 'redirect', array('redirect'));
+  }
+}
