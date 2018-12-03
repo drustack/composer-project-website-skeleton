@@ -621,6 +621,12 @@ function redirect_settings_form($form, &$form_state) {
     '#default_value' => variable_get('redirect_auto_redirect', TRUE),
     '#disabled' => !module_exists('path'),
   );
+  $form['redirect_auto_redirect_delete'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Automatically create redirects when URL aliases are deleted.'),
+    '#default_value' => variable_get('redirect_auto_redirect_delete', FALSE),
+    '#disabled' => !module_exists('path'),
+  );
   $form['redirect_passthrough_querystring'] = array(
     '#type' => 'checkbox',
     '#title' => t('Retain query string through redirect.'),

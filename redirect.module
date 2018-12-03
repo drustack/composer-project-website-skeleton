@@ -413,7 +413,7 @@ function redirect_path_insert(array $path) {
  * Implements hook_path_delete().
  */
 function redirect_path_delete($path) {
-  if (!variable_get('redirect_auto_redirect', TRUE)) {
+  if (!variable_get('redirect_auto_redirect_delete', FALSE)) {
     return;
   }
   elseif (isset($path['redirect']) && !$path['redirect']) {
@@ -426,14 +426,24 @@ function redirect_path_delete($path) {
   }
 
   // Redirect from a deleted alias to the system path.
-  //if (!redirect_load_by_source($path['alias'], $path['language'])) {
-  //  $redirect = new stdClass();
-  //  redirect_object_prepare($redirect);
-  //  $redirect->source = $path['alias'];
-  //  $redirect->redirect = $path['source'];
-  //  $redirect->language = $path['language'];
-  //  redirect_save($redirect);
-  //}
+  if (!redirect_load_by_source($path['alias'], $path['language']) && drupal_valid_path($path['source'])) {
+    $redirect = new stdClass();
+    redirect_object_prepare($redirect);
+    $redirect->source = $path['alias'];
+    $redirect->redirect = $path['source'];
+    $redirect->language = $path['language'];
+    // Check if the redirect exists before saving.
+    $hash = redirect_hash($redirect);
+    $existing = redirect_load_by_hash($hash);
+    if (!$existing) {
+      redirect_save($redirect);
+    }
+    // If the existing redirect is disabled, re-enable it.
+    elseif (property_exists($existing, 'status') && $existing->status == 0) {
+      $existing->status = 1;
+      redirect_save($existing);
+    }
+  }
 }
 
 /**
@@ -1410,6 +1420,7 @@ function redirect_variables() {
   return array(
     'redirect_default_status_code' => 301,
     'redirect_auto_redirect' => TRUE,
+    'redirect_auto_redirect_delete' => FALSE,
     'redirect_warning' => FALSE,
     'redirect_passthrough_querystring' => 1,
     'redirect_page_cache' => 0,
