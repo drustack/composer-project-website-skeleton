@@ -406,6 +406,17 @@ function redirect_edit_form($form, &$form_state, $redirect = NULL) {
     '#default_value' => $redirect->status_code,
     '#options' => array(0 => t('Default (@default)', array('@default' => variable_get('redirect_default_status_code', 301)))) + redirect_status_code_options(),
   );
+  $form['advanced']['passthrough_querystring'] = array(
+    '#type' => 'select',
+    '#title' => t('Retain query string through redirect.'),
+    '#default_value' => isset($redirect->redirect_options['passthrough_querystring']) ? $redirect->redirect_options['passthrough_querystring'] : '',
+    '#options' => array(
+      '' => 'Use global setting',
+      '0' => 'No',
+      '1' => 'Yes',
+    ),
+    '#description' => t('For example, given a redirect from %source to %redirect, if a user visits %sourcequery they would be redirected to %redirectquery. The query strings in the redirection will always take precedence over the current query string.', array('%source' => 'source-path', '%redirect' => 'node?a=apples', '%sourcequery' => 'source-path?a=alligators&b=bananas', '%redirectquery' => 'node?a=apples&b=bananas')),
+  );
 
   $form['override'] = array(
     '#type' => 'checkbox',
@@ -569,6 +580,18 @@ function redirect_edit_form_validate($form, &$form_state) {
 function redirect_edit_form_submit($form, &$form_state) {
   form_state_values_clean($form_state);
   $redirect = (object) $form_state['values'];
+
+  // Add passthrough_querystring configuration to redirect_options.
+  if (isset($redirect->passthrough_querystring) && in_array($redirect->passthrough_querystring, array('0', '1'))) {
+    $redirect->redirect_options['passthrough_querystring'] = (int) $redirect->passthrough_querystring;
+  }
+  else {
+    // Remove current configuration so that global configuration is used.
+    unset($redirect->redirect_options['passthrough_querystring']);
+  }
+  // Remove passthrough_querystring property from redirect object.
+  unset($redirect->passthrough_querystring);
+
   redirect_save($redirect);
   drupal_set_message(t('The redirect has been saved.'));
   $form_state['redirect'] = 'admin/config/search/redirect';

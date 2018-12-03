@@ -1103,7 +1103,15 @@ function redirect_redirect($redirect = NULL) {
     $redirect->status_code = variable_get('redirect_default_status_code', 301);
   }
 
-  if (variable_get('redirect_passthrough_querystring', 1)) {
+  // Get global passthrough configuration by default.
+  $passthrough_querystring = variable_get('redirect_passthrough_querystring', 1);
+
+  // Individual redirects can be configured to override the global configuration.
+  if (isset($redirect->redirect_options['passthrough_querystring'])) {
+    $passthrough_querystring = $redirect->redirect_options['passthrough_querystring'];
+  }
+
+  if ($passthrough_querystring) {
     // Preserve the current query parameters in the redirect.
     $redirect->redirect_options += array('query' => array());
     $redirect->redirect_options['query'] += drupal_get_query_parameters();
