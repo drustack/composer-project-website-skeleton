@@ -532,7 +532,13 @@ function redirect_form_path_admin_form_alter(&$form, $form_state) {
  */
 function redirect_load($rid, $reset = FALSE) {
   $redirects = entity_load('redirect', array($rid), array(), $reset);
-  return !empty($redirects) ? reset($redirects) : FALSE;
+
+  if(!empty($redirects)) {
+    drupal_alter('redirect_load', $redirects);
+
+    return !empty($redirects) ? reset($redirects) : FALSE;
+  }
+  return FALSE;
 }
 
 /**

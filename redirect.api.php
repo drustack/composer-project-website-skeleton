@@ -78,7 +78,7 @@
  *
  * @ingroup redirect_api_hooks
  */
-function hook_redirect_load(array &$redirects, $types) {
+function hook_redirect_load_alter($redirects) {
 
 }
 
