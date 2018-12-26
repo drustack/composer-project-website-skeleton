@@ -1107,6 +1107,16 @@ function redirect_redirect($redirect = NULL) {
   }
   redirect_object_prepare($redirect, array('redirect' => current_path(), 'type' => 'manual', 'callback' => 'redirect_goto', 'cache' => TRUE));
 
+
+  // Rewrite redirect URLs to absolute file URIs.
+  if ($scheme = file_uri_scheme($redirect->redirect)) {
+    if (file_stream_wrapper_valid_scheme($scheme)) {
+      if ($external_path = file_create_url($redirect->redirect)) {
+        $redirect->redirect = $external_path;
+      }
+    }
+  }
+
   if (empty($redirect->status_code)) {
     $redirect->status_code = variable_get('redirect_default_status_code', 301);
   }
@@ -1428,6 +1438,8 @@ function redirect_url($path, array $options = array(), $clean_url = NULL) {
   if (isset($options['fragment'])) {
     $url .= '#' . $options['fragment'];
   }
+
+  $url = str_replace($GLOBALS['base_url'] . '/', '', $url);
 
   return $url;
 }

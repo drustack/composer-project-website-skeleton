@@ -83,6 +83,14 @@ function redirect_list_form($form, &$form_state) {
     $redirect_url = redirect_url($redirect->redirect, array_merge($redirect->redirect_options, array('alias' => TRUE)));
     drupal_alter('redirect_url', $redirect->source, $redirect->source_options);
     drupal_alter('redirect_url', $redirect->redirect, $redirect->redirect_options);
+    // Rewrite redirect URLs to absolute file URIs.
+    if ($scheme = file_uri_scheme($redirect->redirect)) {
+      if (file_stream_wrapper_valid_scheme($scheme)) {
+        if ($external_path = file_create_url($redirect->redirect)) {
+          $redirect->redirect = $external_path;
+        }
+      }
+    }
     $row['source'] = l($source_url, $redirect->source, $redirect->source_options);
     $row['redirect'] = l($redirect_url, $redirect->redirect, $redirect->redirect_options);
     $row['status'] = $redirect->status ? t('Enabled') : t('Disabled');
