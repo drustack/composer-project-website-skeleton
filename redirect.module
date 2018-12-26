@@ -1486,7 +1486,7 @@ function redirect_parse_url($url) {
   if (isset($parsed['query'])) {
     $url = substr($url, 0, -strlen($parsed['query']));
     $url = trim($url, '?&');
-    $parsed['query'] = drupal_get_query_array($parsed['query']);
+    parse_str($parsed['query'], $parsed['query']);
   }
 
   // Convert absolute to relative.
