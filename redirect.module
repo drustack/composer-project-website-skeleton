@@ -567,11 +567,16 @@ function redirect_load_by_hash($hash, $reset = FALSE) {
  *   An indexed array of IDs, or an empty array if there is no result set.
  */
 function redirect_fetch_rids_by_path($source, $language, $enabled_only = FALSE) {
+  static $status_field_exists = NULL;
+  if (!isset($status_field_exists)) {
+    // Prevent errors if redirect_update_7101() has not yet been run.
+    $status_field_exists = db_field_exists('redirect', 'status');
+  }
+
   // Run a case-insensitive query for matching RIDs first.
   $rid_query = db_select('redirect');
   $rid_query->addField('redirect', 'rid');
-  // Prevent errors if redirect_update_7101() has not yet been run.
-  if ($enabled_only && db_field_exists('redirect', 'status')) {
+  if ($enabled_only && $status_field_exists) {
     $rid_query->condition('status', 1);
   }
   if ($source != variable_get('site_frontpage', 'node')) {
