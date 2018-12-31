@@ -71,10 +71,14 @@ function redirect_hook_info() {
  * Implements hook_permission().
  */
 function redirect_permission() {
-  $permissions['administer redirects'] = array(
-    'title' => t('Administer URL redirections'),
+  return array(
+    'administer redirects' => array(
+      'title' => t('Administer URL redirections'),
+    ),
+    'administer own redirects' => array(
+      'title' => t('Administer own redirections'),
+    ),
   );
-  return $permissions;
 }
 
 /**
@@ -101,7 +105,8 @@ function redirect_menu() {
     'description' => 'Redirect users from one URL to another.',
     'page callback' => 'drupal_get_form',
     'page arguments' => array('redirect_list_form'),
-    'access arguments' => array('administer redirects'),
+    'access callback' => 'redirect_access',
+    'access arguments' => array('list', 'redirect'),
     'file' => 'redirect.admin.inc',
   );
   $items['admin/config/search/redirect/list'] = array(
@@ -699,7 +704,7 @@ function redirect_access($op, $redirect, $account = NULL) {
 
   $rights = &drupal_static(__FUNCTION__, array());
 
-  if (!$redirect || !in_array($op, array('create', 'update', 'delete'), TRUE)) {
+  if (!$redirect || !in_array($op, array('create', 'update', 'delete', 'list'), TRUE)) {
     // If there was no redirect to check against, or the $op was not one of the
     // supported ones, we return access denied.
     return FALSE;
@@ -716,10 +721,16 @@ function redirect_access($op, $redirect, $account = NULL) {
     return $rights[$account->uid][$cid][$op];
   }
 
-  // Administrators can access all redirects.
+  // Initialize the array value
+  $rights[$account->uid][$cid][$op] = FALSE;
+
   if (user_access('administer redirects', $account)) {
+    // Can access all redirects.
     $rights[$account->uid][$cid][$op] = TRUE;
-    return TRUE;
+  }
+  elseif (user_access('administer own redirects')) {
+    // Redirect needs to be the user's redirect
+    $rights[$account->uid][$cid][$op] = ($op == 'create' || $op == 'list' || $redirect->uid == $account->uid);
   }
 
   // We grant access to the redirect if both of the following conditions are met:
@@ -728,14 +739,12 @@ function redirect_access($op, $redirect, $account = NULL) {
   $access = module_invoke_all('redirect_access', $op, $redirect, $account);
   if (in_array(REDIRECT_ACCESS_DENY, $access, TRUE)) {
     $rights[$account->uid][$cid][$op] = FALSE;
-    return FALSE;
   }
   elseif (in_array(REDIRECT_ACCESS_ALLOW, $access, TRUE)) {
     $rights[$account->uid][$cid][$op] = TRUE;
-    return TRUE;
   }
 
-  return FALSE;
+  return $rights[$account->uid][$cid][$op];
 }
 
 /**
@@ -1642,7 +1651,7 @@ function redirect_field_attach_form($entity_type, $entity, &$form, &$form_state,
     '#title' => t('URL redirects'),
     '#collapsible' => TRUE,
     '#collapsed' => TRUE,
-    '#access' => user_access('administer redirects'),
+    '#access' => redirect_access('list', 'redirect'),
     '#weight' => 30,
     '#attributes' => array('class' => array('redirect-list')),
   );
