@@ -291,5 +291,19 @@ function hook_redirect_alter($redirect) {
 }
 
 /**
+ * Alter the hash of a redirect.
+ *
+ * @param array $hash
+ *   The hash of the URL redirect.
+ * @param object $redirect
+ *   The redirect that is being used for the redirect.
+ *
+ * @see redirect_hash()
+ * @ingroup redirect_api_hooks
+ */
+function hook_redirect_hash_alter(array &$hash, $redirect) {
+}
+
+/**
  * @} End of "addtogroup hooks".
  */
