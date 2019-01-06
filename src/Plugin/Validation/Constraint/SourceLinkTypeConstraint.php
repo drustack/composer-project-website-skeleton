@@ -84,7 +84,7 @@ class SourceLinkTypeConstraint extends Constraint implements ConstraintValidator
         }
       }
       if (!$url_is_valid) {
-        $this->context->addViolation($this->message, array('%url' => $url_string));
+        $this->context->addViolation($this->message, ['%url' => $url_string]);
       }
     }
   }

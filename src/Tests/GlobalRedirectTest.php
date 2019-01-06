@@ -162,7 +162,7 @@ class GlobalRedirectTest extends WebTestBase {
     $this->assertRedirect('node-alias', '<front>');
 
     // Test post request.
-    $this->drupalPost('Test-node', 'application/json', array());
+    $this->drupalPost('Test-node', 'application/json', []);
     // Does not do a redirect, stays in the same path.
     $this->assertEqual(basename($this->getUrl()), 'Test-node');
 
@@ -223,7 +223,7 @@ class GlobalRedirectTest extends WebTestBase {
       'language_configuration[content_translation]' => TRUE,
     ];
     $this->drupalPostForm('admin/structure/types/manage/page', $edit, t('Save content type'));
-    $this->assertRaw(t('The content type %type has been updated.', array('%type' => 'Page')), 'Basic page content type has been updated.');
+    $this->assertRaw(t('The content type %type has been updated.', ['%type' => 'Page']), 'Basic page content type has been updated.');
 
     $spanish_node = $this->drupalCreateNode([
       'type' => 'page',
@@ -252,11 +252,11 @@ class GlobalRedirectTest extends WebTestBase {
     $headers = $this->drupalGetHeaders(TRUE);
 
     $ending_url = isset($headers[0]['location']) ? $headers[0]['location'] : NULL;
-    $message = SafeMarkup::format('Testing redirect from %from to %to. Ending url: %url', array(
+    $message = SafeMarkup::format('Testing redirect from %from to %to. Ending url: %url', [
       '%from' => $path,
       '%to' => $expected_ending_url,
       '%url' => $ending_url,
-    ));
+    ]);
 
 
     if ($expected_ending_url == '<front>') {
