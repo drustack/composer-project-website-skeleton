@@ -160,16 +160,46 @@ class RedirectUnitTest extends RedirectTestHelper {
    * Test redirect_parse_url().
    */
   function testParseURL() {
-    //$test_cases = array(
-    //  array(
-    //    'input' => array('b' => 'aa', 'c' => array('c2' => 'aa', 'c1' => 'aa'), 'a' => 'aa'),
-    //    'expected' => array('a' => 'aa', 'b' => 'aa', 'c' => array('c1' => 'aa', 'c2' => 'aa')),
-    //  ),
-    //);
-    //foreach ($test_cases as $index => $test_case) {
-    //  $output = redirect_parse_url($test_case['input']);
-    //  $this->assertIdentical($output, $test_case['expected']);
-    //}
+    $clean_url = variable_get('clean_url', 0);
+    $test_case_groups = array(
+      // Tests to be run with Clean URLs on.
+      array(
+        'clean_url' => 1,
+        'test_cases' => array(
+          array(
+            'input' => 'base?param1=1',
+            'expected' => array(
+              'path' => 'base',
+              'query' => array('param1' => '1'),
+              'url' => 'base',
+            ),
+          ),
+        ),
+      ),
+      // Tests to be run with Clean URLs off.
+      array(
+        'clean_url' => 0,
+        'test_cases' => array(
+          array(
+            'input' => 'base&param1=1',
+            'expected' => array(
+              'path' => 'base',
+              'query' => array('param1' => '1'),
+              'url' => 'base',
+            ),
+          ),
+        ),
+      ),
+    );
+    foreach ($test_case_groups as $test_case_group) {
+      variable_set('clean_url', $test_case_group['clean_url']);
+      foreach ($test_case_group['test_cases'] as $index => $test_case) {
+        $output = redirect_parse_url($test_case['input']);
+        $this->assertIdentical($output, $test_case['expected']);
+      }
+    }
+    // Return 'clean_url' to the value it had before testing.
+    variable_set('clean_url', $clean_url);
   }
 }
 

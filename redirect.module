@@ -1515,6 +1515,14 @@ function redirect_parse_url($url) {
     $url = substr($url, 0, -strlen($parsed['fragment']));
     $url = trim($url, '#');
   }
+
+  // When Clean URLs are off, if a query component exists, it will be
+  // separated from the path component by "&" rather than "?".
+  if (variable_get('clean_url', 0) == 0 && strpos($url, '&')) {
+    $parsed['path'] = substr($url, 0, strpos($url, '&'));
+    $parsed['query'] = substr($url, strpos($url, '&') + 1);
+  }
+
   if (isset($parsed['query'])) {
     $url = substr($url, 0, -strlen($parsed['query']));
     $url = trim($url, '?&');
