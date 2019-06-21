@@ -326,7 +326,7 @@ function redirect_list_form_operations_confirm_form($form, &$form_state, $operat
  * @ingroup forms
  */
 function redirect_edit_form($form, &$form_state, $redirect = NULL) {
-  if (!isset($redirect)) {
+  if (empty($redirect)) {
     $redirect = new stdClass();
   }
 
@@ -551,7 +551,7 @@ function _redirect_extract_url_options(&$element, &$form_state) {
 }
 
 /**
- * Form validate handler; validate an URL redirect
+ * Form validate handler; validate an URL redirect.
  *
  * @see redirect_edit_form()
  */
@@ -573,7 +573,6 @@ function redirect_edit_form_validate($form, &$form_state) {
     if ($form['override']['#access']) {
       drupal_set_message('Did you read the warnings and click the checkbox?', 'error');
       $form_state['rebuild'] = TRUE;
-      //form_set_error('override', 'CLICK DA BUTTON!');
     }
   }
 
@@ -764,7 +763,7 @@ function redirect_404_list($form = NULL) {
 
   // Get filter keys and add the filter form.
   $keys = func_get_args();
-  //$keys = array_splice($keys, 2); // Offset the $form and $form_state parameters.
+  // Offset the $form and $form_state parameters.
   $keys = implode('/', $keys);
   $build['redirect_list_404_filter_form'] = drupal_get_form('redirect_list_404_filter_form', $keys);
 
