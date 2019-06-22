@@ -7,6 +7,8 @@ use Drupal\Core\Language\Language;
 use Drupal\Core\Logger\RfcLogLevel;
 use Drupal\Core\Url;
 use Drupal\simpletest\WebTestBase;
+use Drupal\taxonomy\Entity\Term;
+use Drupal\taxonomy\Entity\Vocabulary;
 
 /**
  * UI tests for redirect module.
@@ -353,7 +355,7 @@ class RedirectUITest extends WebTestBase {
    */
   function createVocabulary() {
     // Create a vocabulary.
-    $vocabulary = entity_create('taxonomy_vocabulary', [
+    $vocabulary = Vocabulary::create([
       'name' => $this->randomMachineName(),
       'description' => $this->randomMachineName(),
       'vid' => mb_strtolower($this->randomMachineName()),
@@ -370,7 +372,7 @@ class RedirectUITest extends WebTestBase {
   function createTerm($vocabulary) {
     $filter_formats = filter_formats();
     $format = array_pop($filter_formats);
-    $term = entity_create('taxonomy_term', [
+    $term = Term::create([
       'name' => $this->randomMachineName(),
       'description' => [
         'value' => $this->randomMachineName(),

@@ -6,6 +6,8 @@ use Drupal\Component\Utility\SafeMarkup;
 use Drupal\Core\Language\Language;
 use Drupal\simpletest\WebTestBase;
 use Drupal\language\Entity\ConfigurableLanguage;
+use Drupal\taxonomy\Entity\Term;
+use Drupal\taxonomy\Entity\Vocabulary;
 
 /**
  * Global redirect test cases.
@@ -102,7 +104,7 @@ class GlobalRedirectTest extends WebTestBase {
     \Drupal::service('path.alias_storage')->save('/admin/config/system/site-information', '/site-info');
 
     // Create a taxonomy term for the forum.
-    $term = entity_create('taxonomy_term', [
+    $term = Term::create([
       'name' => 'Test Forum Term',
       'vid' => 'forums',
       'langcode' => Language::LANGCODE_NOT_SPECIFIED,
@@ -111,13 +113,13 @@ class GlobalRedirectTest extends WebTestBase {
     $this->forumTerm = $term;
 
     // Create another taxonomy vocabulary with a term.
-    $vocab = entity_create('taxonomy_vocabulary', [
+    $vocab = Vocabulary::create([
       'name' => 'test vocab',
       'vid' => 'test-vocab',
       'langcode' => Language::LANGCODE_NOT_SPECIFIED,
     ]);
     $vocab->save();
-    $term = entity_create('taxonomy_term', [
+    $term = Term::create([
       'name' => 'Test Term',
       'vid' => $vocab->id(),
       'langcode' => Language::LANGCODE_NOT_SPECIFIED,
