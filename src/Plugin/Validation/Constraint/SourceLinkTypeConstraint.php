@@ -9,8 +9,8 @@ use Drupal\Component\Utility\UrlHelper;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;
 use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\ConstraintValidatorInterface;
-use Symfony\Component\Validator\ExecutionContextInterface;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Symfony\Component\Validator\Context\ExecutionContextInterface;
 
 /**
  * Validation constraint for links receiving data allowed by its settings.
@@ -25,7 +25,7 @@ class SourceLinkTypeConstraint extends Constraint implements ConstraintValidator
   public $message = 'The URL %url is not valid magor.';
 
   /**
-   * @var \Symfony\Component\Validator\ExecutionContextInterface
+   * @var \Symfony\Component\Validator\Context\ExecutionContextInterface
    */
   protected $context;
 
