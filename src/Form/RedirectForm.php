@@ -50,7 +50,7 @@ class RedirectForm extends ContentEntityForm {
           $redirect->setRedirect($redirect_url, $redirect_query, $redirect_options);
         }
         catch (MatchingRouteNotFoundException $e) {
-          drupal_set_message($this->t('Invalid redirect URL %url provided.', ['%url' => $redirect_url]), 'warning');
+          $this->messenger()->addMessage($this->t('Invalid redirect URL %url provided.', ['%url' => $redirect_url]), 'warning');
         }
       }
 
@@ -146,7 +146,7 @@ class RedirectForm extends ContentEntityForm {
    */
   public function save(array $form, FormStateInterface $form_state) {
     $this->entity->save();
-    drupal_set_message($this->t('The redirect has been saved.'));
+    $this->messenger()->addMessage($this->t('The redirect has been saved.'));
     $form_state->setRedirect('redirect.list');
   }
 }

@@ -87,7 +87,7 @@ class RedirectSettingsForm extends ConfigFormBase {
       }
     }
     $config->save();
-    drupal_set_message($this->t('Configuration was saved.'));
+    parent::submitForm($form, $form_state);
   }
 
 }

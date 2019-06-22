@@ -165,13 +165,13 @@ function redirect_generate_batch_generate($num, array &$context) {
 
 function redirect_generate_batch_finished($success, $results, $operations) {
   if ($success) {
-    drupal_set_message(\Drupal::translation()->formatPlural(count($results), 'One URL redirect created.', '@count URL redirects created.'));
+    \Drupal::messenger()->addMessage(\Drupal::translation()->formatPlural(count($results), 'One URL redirect created.', '@count URL redirects created.'));
   }
   else {
     // An error occurred.
     // $operations contains the operations that remained unprocessed.
     $error_operation = reset($operations);
-    drupal_set_message(t('An error occurred while processing @operation with arguments : @args', ['@operation' => $error_operation[0], '@args' => print_r($error_operation[0], TRUE)]));
+    \Drupal::messenger()->addMessage(t('An error occurred while processing @operation with arguments : @args', ['@operation' => $error_operation[0], '@args' => print_r($error_operation[0], TRUE)]));
   }
 }
 
