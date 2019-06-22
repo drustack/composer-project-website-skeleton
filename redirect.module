@@ -500,5 +500,22 @@ function redirect_form_node_form_alter(&$form, FormStateInterface $form_state, $
         '#suffix' => '</p>',
       ];
     }
+
+    $form['url_redirects']['actions'] = [
+      '#theme' => 'links',
+      '#links' => [],
+      '#attributes' => ['class' => ['action-links']],
+    ];
+    $form['url_redirects']['actions']['#links']['add'] = [
+      'title' => t('Add URL redirect'),
+      'url' => Url::fromRoute('redirect.add', [
+        'redirect' => $node->toUrl()->getInternalPath(),
+        'destination' => \Drupal::destination()->get(),
+      ]),
+      'attributes' => [
+        'class' => 'button',
+        'target' => '_blank',
+      ],
+    ];
   }
 }
