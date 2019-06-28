@@ -22,7 +22,7 @@ use Symfony\Component\Validator\Context\ExecutionContextInterface;
  */
 class SourceLinkTypeConstraint extends Constraint implements ConstraintValidatorInterface {
 
-  public $message = 'The URL %url is not valid magor.';
+  public $message = 'The URL %url is not valid.';
 
   /**
    * @var \Symfony\Component\Validator\Context\ExecutionContextInterface
