@@ -240,6 +240,32 @@ class RedirectAPITest extends KernelTestBase {
   }
 
   /**
+   * Test loop detection reset.
+   */
+  public function testLoopDetectionReset() {
+    // Add a chained redirect that isn't a loop.
+    /** @var \Drupal\redirect\Entity\Redirect $source */
+    $source = $this->controller->create();
+    $source->setSource('source-redirect');
+    $source->setRedirect('target');
+    $source->save();
+
+    /** @var \Drupal\redirect\Entity\Redirect $target */
+    $target = $this->controller->create();
+    $target->setSource('target');
+    $target->setRedirect('second-target');
+    $target->save();
+
+    /** @var \Drupal\redirect\RedirectRepository $repository */
+    $repository = \Drupal::service('redirect.repository');
+    $found = $repository->findMatchingRedirect('target');
+    $this->assertEquals($target->id(), $found->id());
+
+    $found = $repository->findMatchingRedirect('source-redirect');
+    $this->assertEquals($target->id(), $found->id());
+  }
+
+  /**
    * Test redirect_parse_url().
    */
   public function testParseURL() {
