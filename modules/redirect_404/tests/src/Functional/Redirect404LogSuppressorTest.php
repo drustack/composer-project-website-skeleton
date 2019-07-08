@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\redirect_404\Tests;
+namespace Drupal\Tests\redirect_404\Functional;
 
 /**
  * Tests suppressing 404 logs if the suppress_404 setting is enabled.

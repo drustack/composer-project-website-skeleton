@@ -2,11 +2,13 @@
 
 namespace Drupal\redirect\Plugin\Field\FieldWidget;
 
+use Drupal\Component\Utility\NestedArray;
 use Drupal\Component\Utility\UrlHelper;
 use Drupal\Core\Field\FieldItemListInterface;
 use Drupal\Core\Field\WidgetBase;
 use Drupal\Core\Url;
 use Drupal\Core\Form\FormStateInterface;
+use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;
 
 /**
@@ -69,6 +71,9 @@ class RedirectSourceWidget extends WidgetBase {
         }
         catch (ResourceNotFoundException $e) {
           // Do nothing, expected behaviour.
+        }
+        catch (AccessDeniedHttpException $e) {
+          // @todo Source lookup results in an access denied, deny access?
         }
 
         // Warning about the path being already redirected.
