@@ -1710,18 +1710,20 @@ function redirect_field_extra_fields() {
       // Redirect is explicitly disabled for this entity type.
       continue;
     }
-    foreach (array_keys($entity_info[$entity_type]['bundles']) as $bundle) {
-      if (!isset($entity_info[$entity_type]['bundles'][$bundle]['uri callback']) && !isset($entity_info[$entity_type]['uri callback'])) {
-        // The bundle or base entity must have an URI callback defined otherwise
-        // we cannot use the entity_uri() function to lookup the entity's source
-        // path.
-        continue;
+    if (!empty($entity_info[$entity_type]['bundles'])) {
+      foreach (array_keys($entity_info[$entity_type]['bundles']) as $bundle) {
+        if (!isset($entity_info[$entity_type]['bundles'][$bundle]['uri callback']) && !isset($entity_info[$entity_type]['uri callback'])) {
+          // The bundle or base entity must have an URI callback defined otherwise
+          // we cannot use the entity_uri() function to lookup the entity's source
+          // path.
+          continue;
+        }
+        $info[$entity_type][$bundle]['form']['redirect'] = array(
+          'label' => t('URL redirects'),
+          'description' => t('Redirect module form elements'),
+          'weight' => 30,
+        );
       }
-      $info[$entity_type][$bundle]['form']['redirect'] = array(
-        'label' => t('URL redirects'),
-        'description' => t('Redirect module form elements'),
-        'weight' => 30,
-      );
     }
   }
   return $info;
