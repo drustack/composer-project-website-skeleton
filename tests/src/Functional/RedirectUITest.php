@@ -115,16 +115,25 @@ class RedirectUITest extends BrowserTestBase {
     // Test if the automatically created redirect works.
     $this->assertRedirect('term_test_alias', 'term_test_alias_updated');
 
+    if (version_compare(\Drupal::VERSION, '8.8', '>=')) {
+      $path_field = 'path[0][value]';
+      $alias_field = 'alias[0][value]';
+    }
+    else {
+      $path_field = 'source';
+      $alias_field = 'alias';
+    }
+
     // Test the path alias update via the admin path form.
     $this->drupalPostForm('admin/config/search/path/add', [
-      'source' => '/node',
-      'alias' => '/aaa_path_alias',
+      $path_field => '/node',
+      $alias_field => '/aaa_path_alias',
     ], t('Save'));
     // Note that here we rely on fact that we land on the path alias list page
     // and the default sort is by the alias, which implies that the first edit
     // link leads to the edit page of the aaa_path_alias.
     $this->clickLink(t('Edit'));
-    $this->drupalPostForm(NULL, ['alias' => '/aaa_path_alias_updated'], t('Save'));
+    $this->drupalPostForm(NULL, [$alias_field => '/aaa_path_alias_updated'], t('Save'));
     $redirect = $this->repository->findMatchingRedirect('aaa_path_alias', [], 'en');
     $this->assertEqual($redirect->getRedirectUrl()->toString(), Url::fromUri('base:aaa_path_alias_updated')->toString());
     // Test if the automatically created redirect works.
