@@ -93,6 +93,10 @@ class RedirectForm extends ContentEntityForm {
   public function validateForm(array &$form, FormStateInterface $form_state) {
     parent::validateForm($form, $form_state);
     $source = $form_state->getValue(['redirect_source', 0]);
+    // Trim any trailing spaces from source url, leaving leading space as is.
+    // leading space is still a valid candidate to add for 301 source url.
+    $source['path'] = rtrim($source['path']);
+    $form_state->setValue('redirect_source', [$source]);
     $redirect = $form_state->getValue(['redirect_redirect', 0]);
 
     if ($source['path'] == '<front>') {
