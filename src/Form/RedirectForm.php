@@ -130,7 +130,7 @@ class RedirectForm extends ContentEntityForm {
     $hash = Redirect::generateHash($path, $query, $form_state->getValue('language')[0]['value']);
 
     // Search for duplicate.
-    $redirects = \Drupal::entityManager()
+    $redirects = \Drupal::entityTypeManager()
       ->getStorage('redirect')
       ->loadByProperties(['hash' => $hash]);
 
@@ -140,7 +140,7 @@ class RedirectForm extends ContentEntityForm {
         $form_state->setErrorByName('redirect_source', $this->t('The source path %source is already being redirected. Do you want to <a href="@edit-page">edit the existing redirect</a>?',
           [
             '%source' => $source['path'],
-            '@edit-page' => $redirect->url('edit-form')]));
+            '@edit-page' => $redirect->toUrl('edit-form')->toString()]));
       }
     }
   }

@@ -22,6 +22,11 @@ abstract class Redirect404TestBase extends BrowserTestBase {
   ];
 
   /**
+   * {@inheritdoc}
+   */
+  protected $defaultTheme = 'stark';
+
+  /**
    * Permissions for the admin user.
    *
    * @var array

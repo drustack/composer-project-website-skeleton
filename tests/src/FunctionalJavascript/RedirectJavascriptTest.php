@@ -35,6 +35,11 @@ class RedirectJavascriptTest extends WebDriverTestBase {
   /**
    * {@inheritdoc}
    */
+  protected $defaultTheme = 'stark';
+
+  /**
+   * {@inheritdoc}
+   */
   protected function setUp() {
     parent::setUp();
 
@@ -53,7 +58,7 @@ class RedirectJavascriptTest extends WebDriverTestBase {
 
     $this->repository = \Drupal::service('redirect.repository');
 
-    $this->storage = $this->container->get('entity.manager')->getStorage('redirect');
+    $this->storage = $this->container->get('entity_type.manager')->getStorage('redirect');
   }
 
   /**
@@ -130,7 +135,7 @@ class RedirectJavascriptTest extends WebDriverTestBase {
     $this->assertRaw(
       t(
         'The base source path %source is already being redirected. Do you want to <a href="@edit-page">edit the existing redirect</a>?',
-        ['%source' => 'non-existing?key=value', '@edit-page' => $redirect->url('edit-form')]
+        ['%source' => 'non-existing?key=value', '@edit-page' => $redirect->toUrl('edit-form')->toString()]
       )
     );
 
@@ -157,7 +162,7 @@ class RedirectJavascriptTest extends WebDriverTestBase {
     $this->assertRaw(
       t(
         'The source path %source is already being redirected. Do you want to <a href="@edit-page">edit the existing redirect</a>?',
-        ['%source' => 'non-existing?key=value', '@edit-page' => $redirect->url('edit-form')]
+        ['%source' => 'non-existing?key=value', '@edit-page' => $redirect->toUrl('edit-form')->toString()]
       )
     );
 

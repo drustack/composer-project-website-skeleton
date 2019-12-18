@@ -69,7 +69,7 @@ class SqlRedirectNotFoundStorage implements RedirectNotFoundStorageInterface {
       ->expression('count', 'count + 1')
       ->expression('daily_count', 'daily_count + 1')
       ->fields([
-        'timestamp' => REQUEST_TIME,
+        'timestamp' => \Drupal::time()->getRequestTime(),
         'count' => 1,
         'daily_count' => 1,
         'resolved' => 0,

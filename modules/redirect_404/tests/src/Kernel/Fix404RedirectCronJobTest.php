@@ -3,6 +3,7 @@
 namespace Drupal\Tests\redirect_404\Kernel;
 
 use Drupal\KernelTests\KernelTestBase;
+use Drupal\Core\Database\Database;
 
 /**
  * Tests the clean up cron job for redirect_404.
@@ -45,13 +46,13 @@ class Fix404RedirectCronJobTest extends KernelTestBase {
       ->save();
 
     // Check that there are 6 rows in the redirect_404 table.
-    $result = db_query("SELECT COUNT(*) FROM {redirect_404}")->fetchField();
+    $result = Database::getConnection()->query("SELECT COUNT(*) FROM {redirect_404}")->fetchField();
     $this->assertEquals(6, $result);
 
     // Run cron to drop 3 rows from the redirect_404 test table.
     redirect_404_cron();
 
-    $result = db_query("SELECT COUNT(*) FROM {redirect_404}")->fetchField();
+    $result = Database::getConnection()->query("SELECT COUNT(*) FROM {redirect_404}")->fetchField();
     $this->assertEquals(3, $result);
 
     // Check there are only 3 rows with more count in the redirect_404 table.
@@ -85,13 +86,13 @@ class Fix404RedirectCronJobTest extends KernelTestBase {
       ->save();
 
     // Check that there are 6 rows in the redirect_404 table.
-    $result = db_query("SELECT COUNT(*) FROM {redirect_404}")->fetchField();
+    $result = Database::getConnection()->query("SELECT COUNT(*) FROM {redirect_404}")->fetchField();
     $this->assertEquals(6, $result);
 
     // Run cron to drop just 1 row from the redirect_404 test table.
     redirect_404_cron();
 
-    $result = db_query("SELECT COUNT(*) FROM {redirect_404}")->fetchField();
+    $result = Database::getConnection()->query("SELECT COUNT(*) FROM {redirect_404}")->fetchField();
     $this->assertEquals(5, $result);
 
     // Check only the row with least count has been removed from the table.
@@ -205,7 +206,7 @@ class Fix404RedirectCronJobTest extends KernelTestBase {
    *   table, FALSE if it should. Defaults to TRUE.
    */
   protected function assert404RowHelper($path, $langcode = 'en', $not_exists = TRUE) {
-    $result = db_select('redirect_404', 'r404')
+    $result = Database::getConnection()->select('redirect_404', 'r404')
       ->fields('r404', ['path'])
       ->condition('path', $path)
       ->condition('langcode', $langcode)

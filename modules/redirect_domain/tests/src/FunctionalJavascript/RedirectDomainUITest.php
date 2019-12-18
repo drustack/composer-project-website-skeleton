@@ -21,6 +21,11 @@ class RedirectDomainUITest extends WebDriverTestBase {
   ];
 
   /**
+   * {@inheritdoc}
+   */
+  protected $defaultTheme = 'stark';
+
+  /**
    * Tests domain redirect.
    */
   public function testDomainRedirect() {

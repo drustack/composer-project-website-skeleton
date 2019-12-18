@@ -2,7 +2,7 @@
 
 namespace Drupal\Tests\redirect\Functional;
 
-use Drupal\Component\Utility\SafeMarkup;
+use Drupal\Component\Render\FormattableMarkup;
 use Drupal\Core\Language\Language;
 use Drupal\Core\Logger\RfcLogLevel;
 use Drupal\Core\Url;
@@ -38,6 +38,11 @@ class RedirectUITest extends BrowserTestBase {
    * {@inheritdoc}
    */
   public static $modules = ['redirect', 'node', 'path', 'dblog', 'views', 'taxonomy'];
+
+  /**
+   * {@inheritdoc}
+   */
+  protected $defaultTheme = 'stark';
 
   /**
    * {@inheritdoc}
@@ -171,15 +176,15 @@ class RedirectUITest extends BrowserTestBase {
     $this->assertText('Service unavailable');
     $this->assertResponse(503);
 
-    $log = db_select('watchdog')->fields('watchdog')->condition('type', 'redirect')->execute()->fetchAll();
+    $log = \Drupal::database()->select('watchdog')->fields('watchdog')->condition('type', 'redirect')->execute()->fetchAll();
     if (count($log) == 0) {
       $this->fail('Redirect loop has not been logged');
     }
     else {
       $log = reset($log);
-      $this->assertEqual($log->severity, RfcLogLevel::WARNING);
-      $this->assertEqual(SafeMarkup::format($log->message, unserialize($log->variables)),
-        SafeMarkup::format('Redirect loop identified at %path for redirect %id', ['%path' => '/node', '%id' => $redirect1->id()]));
+      $this->assertEquals(RfcLogLevel::WARNING, $log->severity);
+      $this->assertEquals('Redirect loop identified at %path for redirect %rid', $log->message);
+      $this->assertEquals(['%path' => '/node', '%rid' => $redirect1->id()], unserialize($log->variables));
     }
   }
 
