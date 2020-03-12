@@ -122,7 +122,7 @@ class DomainRedirectRequestSubscriberTest extends UnitTestCase {
 
     $http_kernel = $this->getMockBuilder(HttpKernelInterface::class)
       ->getMock();
-    return new GetResponseEvent($http_kernel, $request, 'test');
+    return new GetResponseEvent($http_kernel, $request, HttpKernelInterface::MASTER_REQUEST);
   }
 
   /**
