@@ -111,7 +111,9 @@ function redirect_schema() {
         array('source', 255),
         'language',
       ),
-      'redirect' => array('redirect'),
+      'redirect' => array(
+        array('redirect', 255),
+      ),
     ),
   );
 
@@ -261,7 +263,11 @@ function redirect_update_7101() {
   if (!db_index_exists('redirect', 'status_source_language')) {
     db_add_index('redirect', 'status_source_language', array(
       'status',
-      'source',
+      // Limit the number of characters used by the index.
+      // That allows avoiding the risk to have a PDOException
+      // caused the DB index limitations of some databases.
+      // see https://www.drupal.org/project/redirect/issues/2057615.
+      array('source', 255),
       'language',
     ));
   }
