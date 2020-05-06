@@ -199,7 +199,7 @@ function redirect_get_current_redirect() {
   // attempt to find a redirect matching the current path, query string, and
   // language code.
   if (!isset($redirect)) {
-    $redirect = redirect_load_by_source(current_path(), $GLOBALS['language']->language, drupal_get_query_parameters());
+    $redirect = redirect_load_by_source(current_path(), $GLOBALS['language_url']->language, drupal_get_query_parameters());
   }
 
   // @todo Add an alter hook here?
@@ -225,7 +225,7 @@ function redirect_url_inbound_alter(&$path, $original_path, $path_language) {
   // the path 'foo/redirect', then redirect_init() would normally fail since it
   // would not find a match.
   if ($path != $original_path && $original_path == current_path()) {
-    $current_langcode = !empty($path_language) ? $path_language : $GLOBALS['language']->language;
+    $current_langcode = !empty($path_language) ? $path_language : $GLOBALS['language_url']->language;
     $current_query = drupal_get_query_parameters();
     if ($redirect = redirect_load_by_source($original_path, $current_langcode, $current_query)) {
       redirect_set_current_redirect($redirect);
