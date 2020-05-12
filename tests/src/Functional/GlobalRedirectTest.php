@@ -208,7 +208,7 @@ class GlobalRedirectTest extends BrowserTestBase {
     // Does not do a redirect, stays in the same path.
     $this->assertSame(200, $response->getStatusCode());
     $this->assertEmpty($response->getHeader('Location'));
-    $this->assertNotContains('http-equiv="refresh', (string) $response->getBody());
+    $this->assertStringNotContainsString('http-equiv="refresh', (string) $response->getBody());
 
     // Test the access checking.
     $this->config->set('access_check', TRUE)->save();
