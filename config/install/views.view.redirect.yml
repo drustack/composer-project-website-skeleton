@@ -12,6 +12,7 @@ description: 'List of redirects'
 tag: ''
 base_table: redirect
 base_field: rid
+core: 8.x
 display:
   default:
     display_plugin: default
@@ -343,7 +344,6 @@ display:
           exposed: true
           expose:
             operator_id: redirect_source__path_op
-            operator_limit_selection: false
             label: From
             description: ''
             use_operator: false
@@ -384,7 +384,6 @@ display:
           exposed: true
           expose:
             operator_id: redirect_redirect__uri_op
-            operator_limit_selection: false
             label: To
             description: ''
             use_operator: false
@@ -428,7 +427,6 @@ display:
           exposed: true
           expose:
             operator_id: status_code_op
-            operator_limit_selection: false
             label: 'Status code'
             description: ''
             use_operator: false
@@ -518,7 +516,6 @@ display:
           exposed: true
           expose:
             operator_id: language_op
-            operator_limit_selection: false
             label: 'Original language'
             description: ''
             use_operator: false
