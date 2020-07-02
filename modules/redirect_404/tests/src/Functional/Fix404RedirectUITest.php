@@ -130,7 +130,7 @@ class Fix404RedirectUITest extends Redirect404TestBase {
     // Set some pages to be ignored just for the test.
     $node_to_ignore = '/node/' . $node1->id() . '/test';
     $terms_to_ignore = '/term/*';
-    $pages = $node_to_ignore . "\r\n" . $terms_to_ignore;
+    $pages = $node_to_ignore . "\r\n" . $terms_to_ignore . "\n";
     \Drupal::configFactory()
       ->getEditable('redirect_404.settings')
       ->set('pages', $pages)
@@ -158,6 +158,7 @@ class Fix404RedirectUITest extends Redirect404TestBase {
     $this->clickLink('Ignore');
     $this->assertUrl('admin/config/search/redirect/settings?ignore=' . $path_to_ignore . $destination);
     $this->assertText('Resolved the path ' . $path_to_ignore . ' in the database. Please check the ignored list and save the settings.');
+    $this->assertSession()->fieldValueEquals('ignore_pages', $node_to_ignore . "\r\n/term/*\n/node/2/test");
     $this->assertSession()->elementContains('css', '#edit-ignore-pages', $node_to_ignore);
     $this->assertSession()->elementContains('css', '#edit-ignore-pages', $terms_to_ignore);
     $this->assertSession()->elementContains('css', '#edit-ignore-pages', $path_to_ignore);
@@ -180,6 +181,16 @@ class Fix404RedirectUITest extends Redirect404TestBase {
     $this->assertSession()->elementContains('css', '#edit-ignore-pages', $terms_to_ignore);
     $this->assertSession()->elementNotContains('css', '#edit-ignore-pages', $node_to_ignore);
     $this->assertSession()->elementNotContains('css', '#edit-ignore-pages', $path_to_ignore);
+
+    // Testing whitelines.
+    $this->drupalGet('llama_page');
+    $this->drupalGet('admin/config/search/redirect/404');
+    $this->assertText('llama_page');
+    $this->clickLink('Ignore');
+    $this->assertSession()->fieldValueEquals('ignore_pages', "/node/*\r\n/term/*\n/llama_page");
+    $this->getSession()->getPage()->pressButton('Save configuration');
+    $this->drupalGet('admin/config/search/redirect/settings');
+    $this->assertSession()->fieldValueEquals('ignore_pages', "/node/*\r\n/term/*\n/llama_page");
   }
 
 }

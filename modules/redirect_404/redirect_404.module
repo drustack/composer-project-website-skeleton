@@ -46,7 +46,7 @@ function redirect_404_form_redirect_settings_form_alter(&$form, FormStateInterfa
   $ignored_pages = $config->get('pages');
   // Add a new path to be ignored, if there is an ignore argument in the query.
   if ($path_to_ignore = \Drupal::request()->query->get('ignore')) {
-    $ignored_pages .= "\n" . $path_to_ignore;
+    $ignored_pages .= $path_to_ignore;
   }
 
   $form['ignore_pages'] = [
