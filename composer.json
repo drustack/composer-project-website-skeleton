@@ -7,6 +7,9 @@
     ],
     "config": {
         "discard-changes": true,
+        "preferred-install": {
+            "drustack/*": "source"
+        },
         "process-timeout": 3600,
         "secure-http": false,
         "vendor-dir": "vendor"
@@ -93,7 +96,7 @@
                 "https://drupal.org/node/2852269": "https://drupal.org/files/issues/2019-04-29/recaptcha-nocaptcha-2852269-180.patch"
             },
             "drupal/token": {
-                "https://drupal.org/node/2816693": "https://drupal.org/files/issues/2020-10-15/token-term_vocabulary_source-2816693-19.patch"
+                "https://drupal.org/node/2816693": "https://drupal.org/files/issues/2021-03-31/token-term_vocabulary_source-2816693-23.patch"
             }
         }
     },
@@ -117,7 +120,7 @@
         "cweagans/composer-patches": "~1.7",
         "drupal/acl": "1.x-dev",
         "drupal/address": "1.x-dev",
-        "drupal/admin_toolbar": "2.x-dev",
+        "drupal/admin_toolbar": "3.x-dev",
         "drupal/advagg": "4.x-dev",
         "drupal/authorization": "1.x-dev",
         "drupal/avatars": "~1.1",
@@ -163,7 +166,7 @@
         "drupal/eu_cookie_compliance": "~1.9",
         "drupal/examples": "3.x-dev",
         "drupal/externalauth": "1.x-dev",
-        "drupal/features": "3.x-dev",
+        "drupal/features": "4.x-dev",
         "drupal/field_formatter_class": "~1.4",
         "drupal/file_browser": "~1.3",
         "drupal/fontyourface": "~3.5",
@@ -177,10 +180,12 @@
         "drupal/imageapi_optimize_binaries": "1.x-dev",
         "drupal/imagemagick": "3.x-dev",
         "drupal/inline_entity_form": "~1.0",
+        "drupal/layout_builder_restrictions": "~2.8",
         "drupal/layout_builder_st": "1.x-dev",
         "drupal/layout_library": "1.x-dev",
         "drupal/ldap": "4.x-dev",
         "drupal/leaflet": "~2.1.1",
+        "drupal/libraries": "3.x-dev",
         "drupal/link_attributes": "~1.11",
         "drupal/mailsystem": "~4.3",
         "drupal/matomo": "~1.10",
@@ -195,6 +200,7 @@
         "drupal/module_filter": "3.x-dev",
         "drupal/paragraphs": "1.x-dev",
         "drupal/pathauto": "~1.8",
+        "drupal/php": "1.x-dev",
         "drupal/poll": "~1.4",
         "drupal/profile": "1.x-dev",
         "drupal/recaptcha": "3.x-dev",
@@ -218,6 +224,7 @@
         "drupal/slick_views": "~2.3",
         "drupal/smtp": "~1.0",
         "drupal/swiftmailer": "2.x-dev",
+        "drupal/system_stream_wrapper": "~1.0",
         "drupal/taxonomy_menu": "3.x-dev",
         "drupal/tmgmt": "~1.11",
         "drupal/token": "1.x-dev",
