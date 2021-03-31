@@ -7,6 +7,9 @@
     ],
     "config": {
         "discard-changes": true,
+        "preferred-install": {
+            "drustack/*": "source"
+        },
         "process-timeout": 3600,
         "secure-http": false,
         "vendor-dir": "vendor"
