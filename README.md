@@ -1,56 +1,75 @@
-DruStack Standard Edition
-=========================
+<img alt="Drupal Logo" src="https://www.drupal.org/files/Wordmark_blue_RGB.png" height="60px">
 
-[![Build Status](https://travis-ci.org/drustack/drustack-standard.svg?branch=master)](https://travis-ci.org/drustack/drustack-standard)
-[![Latest Stable Version](https://poser.pugx.org/drustack/framework-standard-edition/v/stable.svg)](https://packagist.org/packages/drustack/framework-standard-edition)
-[![Total Downloads](https://poser.pugx.org/drustack/framework-standard-edition/downloads.svg)](https://packagist.org/packages/drustack/framework-standard-edition)
-[![License](https://poser.pugx.org/drustack/framework-standard-edition/license.svg)](https://packagist.org/packages/drustack/framework-standard-edition)
+Drupal is an open source content management platform supporting a variety of
+websites ranging from personal weblogs to large community-driven websites. For
+more information, visit the Drupal website, [Drupal.org][Drupal.org], and join
+the [Drupal community][Drupal community].
 
-Welcome to the DruStack Standard Edition - a fully-functional Drupal application that you can use as the skeleton for your new applications.
+## Contributing
 
-This project template will managing your site dependencies with [Composer](https://getcomposer.org/). If you want to know how to use it as replacement for [Drush Make](https://github.com/drush-ops/drush/blob/master/docs/make.md) visit the [Documentation on drupal.org](https://www.drupal.org/node/2471553).
+Drupal is developed on [Drupal.org][Drupal.org], the home of the international
+Drupal community since 2001!
 
-Usage
------
+[Drupal.org][Drupal.org] hosts Drupal's [GitLab repository][GitLab repository],
+its [issue queue][issue queue], and its [documentation][documentation]. Before
+you start working on code, be sure to search the [issue queue][issue queue] and
+create an issue if your aren't able to find an existing issue.
 
-First you need to [install composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx).
+Every issue on Drupal.org automatically creates a new community-accessible fork
+that you can contribute to. Learn more about the code contribution process on
+the [Issue forks & merge requests page][issue forks].
 
-After that you can create the project:
+## Usage
 
-    composer create-project drustack/framework-standard-edition:^8.4.0 MYPROJECT --no-interaction
+For a brief introduction, see [USAGE.txt](/core/USAGE.txt). You can also find
+guides, API references, and more by visiting Drupal's [documentation
+page][documentation].
 
-With `composer require ...` you can download new dependencies to your installation.
+You can quickly extend Drupal's core feature set by installing any of its
+[thousands of free and open source modules][modules]. With Drupal and its
+module ecosystem, you can often build most or all of what your project needs
+before writing a single line of code.
 
-    composer require drupal/devel:~1.0
+## Changelog
 
-The `composer create-project` command passes ownership of all files to the project that is created. You should create a new git repository, and commit all files not excluded by the .gitignore file.
+Drupal keeps detailed [change records][changelog]. You can search Drupal's
+changes for a record of every notable breaking change and new feature since
+2011.
 
-What does the template do?
---------------------------
+## Security
 
-When installing the given `composer.json` some tasks are taken care of:
+For a list of security announcements, see the [Security advisories
+page][Security advisories] (available as [an RSS feed][security RSS]). This
+page also describes how to subscribe to these announcements via email.
 
--   Drupal will be installed in the `web`-directory.
--   Autoloader is implemented to use the generated composer autoloader in `vendor/autoload.php`,
-    instead of the one provided by Drupal (`web/vendor/autoload.php`).
--   Modules (packages of type `drupal-module`) will be placed in `web/modules/contrib/`
--   Theme (packages of type `drupal-theme`) will be placed in `web/themes/contrib/`
--   Profiles (packages of type `drupal-profile`) will be placed in `web/profiles/`
--   Creates default writable versions of `settings.php` and `services.yml`.
--   Creates `sites/default/files`-directory.
--   Latest version of drush is installed locally for use at `vendor/bin/drush`.
--   Latest version of DrupalConsole is installed locally for use at `vendor/bin/drupal`.
+For information about the Drupal security process, or to find out how to report
+a potential security issue to the Drupal security team, see the [Security team
+page][security team].
 
-License
--------
+## Need a helping hand?
 
--   Code released under [GPL-2.0+](https://github.com/drustack/drustack-standard/blob/master/LICENSE)
--   Docs released under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)
+Visit the [Support page][support] or browse [over a thousand Drupal
+providers][service providers] offering design, strategy, development, and
+hosting services.
 
-Author Information
-------------------
+## Legal matters
 
--   Wong Hoi Sing Edison
-    -   <https://twitter.com/hswong3i>
-    -   <https://github.com/hswong3i>
+Know your rights when using Drupal by reading Drupal core's
+[license](/core/LICENSE.txt).
 
+Learn about the [Drupal trademark and logo policy here][trademark].
+
+[Drupal.org]: https://www.drupal.org
+[Drupal community]: https://www.drupal.org/community
+[GitLab repository]: https://git.drupalcode.org/project/drupal
+[issue queue]: https://www.drupal.org/project/issues/drupal
+[issue forks]: https://www.drupal.org/drupalorg/docs/gitlab-integration/issue-forks-merge-requests
+[documentation]: https://www.drupal.org/documentation
+[changelog]: https://www.drupal.org/list-changes/drupal
+[modules]: https://www.drupal.org/project/project_module
+[security advisories]: https://www.drupal.org/security
+[security RSS]: https://www.drupal.org/security/rss.xml
+[security team]: https://www.drupal.org/drupal-security-team
+[service providers]: https://www.drupal.org/drupal-services
+[support]: https://www.drupal.org/support
+[trademark]: https://www.drupal.com/trademark
