@@ -21,7 +21,7 @@
     "extra": {
         "branch-alias": {
             "dev-develop": "9.x-dev",
-            "dev-master": "9.1.x-dev"
+            "dev-master": "9.2.x-dev"
         },
         "drupal-scaffold": {
             "locations": {
@@ -68,16 +68,14 @@
                 "https://drupal.org/node/1810148": "https://drupal.org/files/issues/2021-05-28/1810148-83.patch",
                 "https://drupal.org/node/2362643": "https://drupal.org/files/issues/2021-01-21/2362643-76.patch",
                 "https://drupal.org/node/2429321": "https://drupal.org/files/issues/2020-05-04/2429321-9.1-75.patch",
-                "https://drupal.org/node/2716019": "https://drupal.org/files/issues/2021-01-25/2716019-153.patch",
-                "https://drupal.org/node/2815221": "https://drupal.org/files/issues/2020-10-29/2815221-135.patch",
+                "https://drupal.org/node/2815221": "https://drupal.org/files/issues/2021-06-17/2815221-139.patch",
                 "https://drupal.org/node/2825860": "https://drupal.org/files/issues/2020-10-21/2825860-48.patch",
                 "https://drupal.org/node/2862702": "https://drupal.org/files/issues/2862702-3.patch",
                 "https://drupal.org/node/2869592": "https://drupal.org/files/issues/2020-02-07/2869592-remove-update-warning-34.patch",
                 "https://drupal.org/node/2946333": "https://drupal.org/files/issues/2021-07-06/2946333-9.1.x-241.patch",
                 "https://drupal.org/node/2985882": "https://drupal.org/files/issues/2020-04-08/2985882-field-85.patch",
                 "https://drupal.org/node/3008924": "https://drupal.org/files/issues/2020-08-27/3008924-rerolled-17.patch",
-                "https://drupal.org/node/3015152": "https://drupal.org/files/issues/2021-01-29/3015152-tps-114.patch",
-                "https://drupal.org/node/3185231": "https://drupal.org/files/issues/2020-11-27/3185231-2.patch"
+                "https://drupal.org/node/3015152": "https://drupal.org/files/issues/2021-01-29/3015152-tps-114.patch"
             },
             "drupal/ctools": {
                 "https://drupal.org/node/2475595": "https://drupal.org/files/issues/2475595-ctools-autocomplete-fix-47.patch"
@@ -166,10 +164,10 @@
         "drupal/config_inspector": "1.x-dev",
         "drupal/config_update": "~1.7",
         "drupal/content_access": "1.x-dev",
-        "drupal/core-composer-scaffold": "~9.1.0",
-        "drupal/core-project-message": "~9.1.0",
-        "drupal/core-recommended": "~9.1.0",
-        "drupal/core-vendor-hardening": "~9.1.0",
+        "drupal/core-composer-scaffold": "~9.2.0",
+        "drupal/core-project-message": "~9.2.0",
+        "drupal/core-recommended": "~9.2.0",
+        "drupal/core-vendor-hardening": "~9.2.0",
         "drupal/csv_serialization": "2.x-dev",
         "drupal/ctools": "3.x-dev",
         "drupal/default_content": "2.0.x-dev",
@@ -265,7 +263,7 @@
         "drupal/webform": "6.x-dev",
         "drupal/xmlsitemap": "1.x-dev",
         "drustack/composer-generate-metadata": "~2.0",
-        "drustack/drustack": "~9.1.0",
+        "drustack/drustack": "~9.2.0",
         "npm-asset/blazy": "~1.8",
         "npm-asset/bootstrap": "~4.6",
         "npm-asset/dropzone": "~5.9",
@@ -276,7 +274,7 @@
     },
     "require-dev": {
         "composer/composer": "~2.0.2",
-        "drupal/core-dev": "~9.1.0",
+        "drupal/core-dev": "~9.2.0",
         "drush/drush": "~10.3",
         "oomphinc/composer-installers-extender": "~2.0",
         "zaporylie/composer-drupal-optimizations": "~1.2"
