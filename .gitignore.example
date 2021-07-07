@@ -9,12 +9,18 @@
 
 # Ignore core when managing all of a project's dependencies with Composer
 # including Drupal core.
-# core
+/core/
 
 # Ignore dependencies that are managed with Composer.
 # Generally you should only ignore the root vendor directory. It's important
 # that core/assets/vendor and any other vendor directories within contrib or
 # custom module, theme, etc., are not ignored unless you purposely do so.
+/libraries/
+/modules/contrib/
+/modules/custom/
+/profiles/
+/themes/contrib/
+/themes/custom/
 /vendor/
 
 # Ignore configuration files that may contain sensitive information.
@@ -24,6 +30,7 @@ sites/*/services*.yml
 # Ignore paths that contain user-generated content.
 sites/*/files
 sites/*/private
+sites/*/tmp
 
 # Ignore SimpleTest multi-site environment.
 sites/simpletest
@@ -40,3 +47,6 @@ sites/simpletest
 
 # Ignore SimpleTest multi-site environment.
 # simpletest
+/.htaccess
+/robots.txt
+/web.config
