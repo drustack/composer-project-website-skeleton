@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "39c86d89966ac215fb2289e398a2b3d1",
+    "content-hash": "6784eadf14b36f1221827f8dd78c6815",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2494,7 +2494,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/blazy.git",
-                "reference": "8cdc3701055037a20df6cb5433e7fae7b555a9cd"
+                "reference": "1f3cf6f056725ff1547ba3c5e9c78c0d1c29c311"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9"
@@ -5654,6 +5654,111 @@
             }
         },
         {
+            "name": "drupal/feeds",
+            "version": "dev-3.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/feeds.git",
+                "reference": "e8f3b360e7a10718f1d78bf6138d6d10fc18febf"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "require-dev": {
+                "drupal/pathauto": "^1.8",
+                "drush/drush": "^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.x-dev",
+                    "datestamp": "1616344161",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "Ian Ward",
+                    "homepage": "https://www.drupal.org/user/4736"
+                },
+                {
+                    "name": "MegaChriz",
+                    "homepage": "https://www.drupal.org/user/654114"
+                },
+                {
+                    "name": "Will White",
+                    "homepage": "https://www.drupal.org/user/32237"
+                },
+                {
+                    "name": "alex_b",
+                    "homepage": "https://www.drupal.org/user/53995"
+                },
+                {
+                    "name": "e2thex",
+                    "homepage": "https://www.drupal.org/user/189123"
+                },
+                {
+                    "name": "febbraro",
+                    "homepage": "https://www.drupal.org/user/43670"
+                },
+                {
+                    "name": "franz",
+                    "homepage": "https://www.drupal.org/user/581844"
+                },
+                {
+                    "name": "jmiccolis",
+                    "homepage": "https://www.drupal.org/user/31731"
+                },
+                {
+                    "name": "joelpittet",
+                    "homepage": "https://www.drupal.org/user/160302"
+                },
+                {
+                    "name": "kking",
+                    "homepage": "https://www.drupal.org/user/24399"
+                },
+                {
+                    "name": "tobby",
+                    "homepage": "https://www.drupal.org/user/154797"
+                },
+                {
+                    "name": "tristanoneil",
+                    "homepage": "https://www.drupal.org/user/340659"
+                },
+                {
+                    "name": "twistor",
+                    "homepage": "https://www.drupal.org/user/473738"
+                },
+                {
+                    "name": "yhahn",
+                    "homepage": "https://www.drupal.org/user/264833"
+                }
+            ],
+            "description": "Aggregates RSS/Atom/RDF feeds, imports CSV files and more.",
+            "homepage": "https://www.drupal.org/project/feeds",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/feeds",
+                "issues": "https://www.drupal.org/project/issues/feeds"
+            }
+        },
+        {
             "name": "drupal/field_formatter_class",
             "version": "1.5.0",
             "source": {
@@ -5710,6 +5815,65 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/field_formatter_class",
                 "issues": "https://www.drupal.org/project/issues/field_formatter_class"
+            }
+        },
+        {
+            "name": "drupal/field_permissions",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/field_permissions.git",
+                "reference": "5caf7fc8914d61789a814759cad0ac831372ea80"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev",
+                    "dev-8.x-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1+3-dev",
+                    "datestamp": "1605913025",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "RobLoach",
+                    "homepage": "https://www.drupal.org/user/61114"
+                },
+                {
+                    "name": "japerry",
+                    "homepage": "https://www.drupal.org/user/45640"
+                },
+                {
+                    "name": "jhedstrom",
+                    "homepage": "https://www.drupal.org/user/208732"
+                },
+                {
+                    "name": "mariacha1",
+                    "homepage": "https://www.drupal.org/user/2210776"
+                },
+                {
+                    "name": "markus_petrux",
+                    "homepage": "https://www.drupal.org/user/39593"
+                }
+            ],
+            "description": "The Field Permissions module allows site administrators to set field-level permissions to edit, view and create fields on any entity.",
+            "homepage": "https://www.drupal.org/project/field_permissions",
+            "support": {
+                "source": "https://git.drupalcode.org/project/field_permissions",
+                "issues": "https://www.drupal.org/project/issues/field_permissions"
             }
         },
         {
@@ -10689,7 +10853,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "3e15bb034c8cbfca6bffa3f08a280965277a3497"
+                "reference": "bda2d2f4220823013107e95b4a62fc47aa4cb9df"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9"
@@ -10741,7 +10905,7 @@
                 },
                 "drupal": {
                     "version": "6.x-dev",
-                    "datestamp": "1624458312",
+                    "datestamp": "1625597516",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -11077,16 +11241,16 @@
         },
         {
             "name": "drustack/drustack",
-            "version": "9.2.0-alpha1",
+            "version": "9.2.0-alpha2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drustack/composer-drupal-profile-drustack.git",
-                "reference": "cf12d7b180d2ca155fb6dedc8b52e5eee343be24"
+                "reference": "c4f8a80f6c9651be5a6f3b06ebdc8b9b69858a63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drustack/composer-drupal-profile-drustack/zipball/cf12d7b180d2ca155fb6dedc8b52e5eee343be24",
-                "reference": "cf12d7b180d2ca155fb6dedc8b52e5eee343be24",
+                "url": "https://api.github.com/repos/drustack/composer-drupal-profile-drustack/zipball/c4f8a80f6c9651be5a6f3b06ebdc8b9b69858a63",
+                "reference": "c4f8a80f6c9651be5a6f3b06ebdc8b9b69858a63",
                 "shasum": ""
             },
             "require": {
@@ -11114,9 +11278,9 @@
             "homepage": "https://drupal.org/project/drustack",
             "support": {
                 "issues": "https://github.com/drustack/composer-drupal-profile-drustack/issues",
-                "source": "https://github.com/drustack/composer-drupal-profile-drustack/tree/9.2.0-alpha1"
+                "source": "https://github.com/drustack/composer-drupal-profile-drustack/tree/9.2.0-alpha2"
             },
-            "time": "2021-07-06T09:50:56+00:00"
+            "time": "2021-07-07T09:07:21+00:00"
         },
         {
             "name": "easyrdf/easyrdf",
@@ -12597,10 +12761,10 @@
         },
         {
             "name": "npm-asset/bootstrap",
-            "version": "4.6.0",
+            "version": "5.0.2",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/bootstrap/-/bootstrap-4.6.0.tgz"
+                "url": "https://registry.npmjs.org/bootstrap/-/bootstrap-5.0.2.tgz"
             },
             "type": "npm-asset",
             "license": [
@@ -19748,16 +19912,16 @@
         },
         {
             "name": "sirbrillig/phpcs-variable-analysis",
-            "version": "v2.11.1",
+            "version": "v2.11.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sirbrillig/phpcs-variable-analysis.git",
-                "reference": "9df9ade5961a3505d0d24b0e6be2ab82e335f753"
+                "reference": "3fad28475bfbdbf8aa5c440f8a8f89824983d85e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sirbrillig/phpcs-variable-analysis/zipball/9df9ade5961a3505d0d24b0e6be2ab82e335f753",
-                "reference": "9df9ade5961a3505d0d24b0e6be2ab82e335f753",
+                "url": "https://api.github.com/repos/sirbrillig/phpcs-variable-analysis/zipball/3fad28475bfbdbf8aa5c440f8a8f89824983d85e",
+                "reference": "3fad28475bfbdbf8aa5c440f8a8f89824983d85e",
                 "shasum": ""
             },
             "require": {
@@ -19797,7 +19961,7 @@
                 "source": "https://github.com/sirbrillig/phpcs-variable-analysis",
                 "wiki": "https://github.com/sirbrillig/phpcs-variable-analysis/wiki"
             },
-            "time": "2021-06-18T20:54:59+00:00"
+            "time": "2021-07-06T23:45:17+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
@@ -20293,6 +20457,8 @@
         "drupal/examples": 20,
         "drupal/externalauth": 20,
         "drupal/features": 20,
+        "drupal/feeds": 20,
+        "drupal/field_permissions": 20,
         "drupal/hcaptcha": 20,
         "drupal/image_effects": 20,
         "drupal/imageapi_optimize": 20,
