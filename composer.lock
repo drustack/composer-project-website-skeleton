@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6784eadf14b36f1221827f8dd78c6815",
+    "content-hash": "f412363bb43e89c1be979263fa7df2f2",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -12797,10 +12797,16 @@
         },
         {
             "name": "npm-asset/popper.js",
-            "version": "1.16.1-patch1",
+            "version": "v2.9.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/popperjs/popper-core.git",
+                "reference": "4800b37c5b4cabb711ac1d904664a70271487c4b"
+            },
             "dist": {
-                "type": "tar",
-                "url": "https://registry.npmjs.org/popper.js/-/popper.js-1.16.1-lts.tgz"
+                "type": "zip",
+                "url": "https://api.github.com/repos/popperjs/popper-core/zipball/4800b37c5b4cabb711ac1d904664a70271487c4b",
+                "reference": "4800b37c5b4cabb711ac1d904664a70271487c4b"
             },
             "type": "npm-asset",
             "license": [
