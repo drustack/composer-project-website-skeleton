@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "32f6fe8733fead4fa4c1c4d601f75d15",
+    "content-hash": "a5946032c7843c07c616123982556538",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -11241,16 +11241,16 @@
         },
         {
             "name": "drustack/drustack",
-            "version": "9.2.0-alpha2",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drustack/composer-drupal-profile-drustack.git",
-                "reference": "c4f8a80f6c9651be5a6f3b06ebdc8b9b69858a63"
+                "reference": "a73282ed3982d130e95c3efcf82344d7325c4cbf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drustack/composer-drupal-profile-drustack/zipball/c4f8a80f6c9651be5a6f3b06ebdc8b9b69858a63",
-                "reference": "c4f8a80f6c9651be5a6f3b06ebdc8b9b69858a63",
+                "url": "https://api.github.com/repos/drustack/composer-drupal-profile-drustack/zipball/a73282ed3982d130e95c3efcf82344d7325c4cbf",
+                "reference": "a73282ed3982d130e95c3efcf82344d7325c4cbf",
                 "shasum": ""
             },
             "require": {
@@ -11278,9 +11278,9 @@
             "homepage": "https://drupal.org/project/drustack",
             "support": {
                 "issues": "https://github.com/drustack/composer-drupal-profile-drustack/issues",
-                "source": "https://github.com/drustack/composer-drupal-profile-drustack/tree/9.2.0-alpha2"
+                "source": "https://github.com/drustack/composer-drupal-profile-drustack/tree/develop"
             },
-            "time": "2021-07-07T09:07:21+00:00"
+            "time": "2021-07-07T10:32:37+00:00"
         },
         {
             "name": "easyrdf/easyrdf",
@@ -20493,7 +20493,8 @@
         "drupal/views_templates": 20,
         "drupal/viewsreference": 20,
         "drupal/webform": 20,
-        "drupal/xmlsitemap": 20
+        "drupal/xmlsitemap": 20,
+        "drustack/drustack": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
