@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f7c1deb219cd90dfc1e1883df9afd2d1",
+    "content-hash": "500672b14c34328e36b2c14187d4737a",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -9523,6 +9523,59 @@
             "homepage": "https://www.drupal.org/project/select2",
             "support": {
                 "source": "https://git.drupalcode.org/project/select2"
+            }
+        },
+        {
+            "name": "drupal/sharedemail",
+            "version": "dev-2.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/sharedemail.git",
+                "reference": "964c46588af19e4260aa33bd89bca6b3c25aa316"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.1+2-dev",
+                    "datestamp": "1612886125",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "aufumy",
+                    "homepage": "https://www.drupal.org/user/109516"
+                },
+                {
+                    "name": "baikho",
+                    "homepage": "https://www.drupal.org/user/2727459"
+                },
+                {
+                    "name": "burgdawg",
+                    "homepage": "https://www.drupal.org/user/3429219"
+                },
+                {
+                    "name": "christefano",
+                    "homepage": "https://www.drupal.org/user/104"
+                }
+            ],
+            "description": "Allow an e-mail address to be used by more than one user account",
+            "homepage": "https://www.drupal.org/project/sharedemail",
+            "support": {
+                "source": "https://git.drupalcode.org/project/sharedemail"
             }
         },
         {
@@ -21425,6 +21478,7 @@
         "drupal/search_api": 20,
         "drupal/seckit": 20,
         "drupal/security_review": 20,
+        "drupal/sharedemail": 20,
         "drupal/sitemap": 20,
         "drupal/slick_extras": 20,
         "drupal/slick_paragraphs": 20,
