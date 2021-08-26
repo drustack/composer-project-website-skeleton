@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "500672b14c34328e36b2c14187d4737a",
+    "content-hash": "ce6452e99fd86279b125508a49ec0d78",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2018,7 +2018,7 @@
         },
         {
             "name": "drupal-ckeditor-libraries-group/codesnippet",
-            "version": "4.16.1",
+            "version": "4.16.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal-ckeditor-libraries-group/codesnippet.git",
@@ -2172,7 +2172,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/admin_toolbar.git",
-                "reference": "7eeecad5e2fe4d6c11575f2d6c3d75eee5d4121b"
+                "reference": "af183ef84817027ec0234831fa8a3ea805f0bd97"
             },
             "require": {
                 "drupal/core": "^8.8.0 || ^9.0"
@@ -2187,7 +2187,7 @@
                 },
                 "drupal": {
                     "version": "3.x-dev",
-                    "datestamp": "1629221360",
+                    "datestamp": "1629882214",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -5900,6 +5900,74 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/feeds",
                 "issues": "https://www.drupal.org/project/issues/feeds"
+            }
+        },
+        {
+            "name": "drupal/feeds_tamper",
+            "version": "dev-2.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/feeds_tamper.git",
+                "reference": "14bcf24deef214e38ee7e542164b4a268e8c867c"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/feeds": "~3.0",
+                "drupal/tamper": "~1.0"
+            },
+            "require-dev": {
+                "drupal/feeds": "3.x-dev"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.0-beta2+2-dev",
+                    "datestamp": "1605728199",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Bobík",
+                    "homepage": "https://www.drupal.org/user/123612"
+                },
+                {
+                    "name": "MegaChriz",
+                    "homepage": "https://www.drupal.org/user/654114"
+                },
+                {
+                    "name": "franz",
+                    "homepage": "https://www.drupal.org/user/581844"
+                },
+                {
+                    "name": "mausolos",
+                    "homepage": "https://www.drupal.org/user/642118"
+                },
+                {
+                    "name": "twistor",
+                    "homepage": "https://www.drupal.org/user/473738"
+                }
+            ],
+            "description": "Modify feeds data before it gets saved.",
+            "homepage": "http://drupal.org/project/feeds_tamper",
+            "keywords": [
+                "Drupal",
+                "feeds",
+                "tamper"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/feeds_tamper",
+                "issues": "http://drupal.org/project/issues/feeds_tamper"
             }
         },
         {
@@ -10276,6 +10344,64 @@
             }
         },
         {
+            "name": "drupal/tamper",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/tamper.git",
+                "reference": "476a4ea9f05051fb8bcca69d975a810d7a9210c7"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha2+3-dev",
+                    "datestamp": "1611251866",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "MegaChriz",
+                    "homepage": "https://www.drupal.org/user/654114"
+                },
+                {
+                    "name": "ericgsmith",
+                    "homepage": "https://www.drupal.org/user/1649952"
+                },
+                {
+                    "name": "jamesdixon",
+                    "homepage": "https://www.drupal.org/user/762570"
+                },
+                {
+                    "name": "twistor",
+                    "homepage": "https://www.drupal.org/user/473738"
+                }
+            ],
+            "description": "Generic plugin to modify data.",
+            "homepage": "https://www.drupal.org/project/tamper",
+            "keywords": [
+                "Drupal",
+                "tamper"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/tamper",
+                "issues": "http://drupal.org/project/issues/tamper"
+            }
+        },
+        {
             "name": "drupal/taxonomy_menu",
             "version": "dev-3.x",
             "source": {
@@ -11333,7 +11459,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "bb486de2e590062b6ec8cdc59467a6458267963a"
+                "reference": "826a9292f59921703e44c245c2da59db8b719814"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9"
@@ -11385,7 +11511,7 @@
                 },
                 "drupal": {
                     "version": "6.x-dev",
-                    "datestamp": "1629362881",
+                    "datestamp": "1629903317",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -21455,6 +21581,7 @@
         "drupal/externalauth": 20,
         "drupal/features": 20,
         "drupal/feeds": 20,
+        "drupal/feeds_tamper": 20,
         "drupal/field_permissions": 20,
         "drupal/field_validation": 20,
         "drupal/hcaptcha": 20,
@@ -21483,6 +21610,7 @@
         "drupal/slick_extras": 20,
         "drupal/slick_paragraphs": 20,
         "drupal/swiftmailer": 20,
+        "drupal/tamper": 20,
         "drupal/taxonomy_menu": 20,
         "drupal/token": 20,
         "drupal/views_block_filter_block": 20,
