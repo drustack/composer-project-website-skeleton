@@ -5556,17 +5556,17 @@
         },
         {
             "name": "drupal/eu_cookie_compliance",
-            "version": "1.18.0",
+            "version": "1.19.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/eu-cookie-compliance.git",
-                "reference": "8.x-1.18"
+                "reference": "8.x-1.19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/eu_cookie_compliance-8.x-1.18.zip",
-                "reference": "8.x-1.18",
-                "shasum": "dfcbd4de713313b75feeefa0878379743479204b"
+                "url": "https://ftp.drupal.org/files/projects/eu_cookie_compliance-8.x-1.19.zip",
+                "reference": "8.x-1.19",
+                "shasum": "5a13cd53f87a58501cebd6e560c280ad7274035c"
             },
             "require": {
                 "drupal/core": "^8.9 || ^9"
@@ -5574,8 +5574,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.18",
-                    "datestamp": "1632895785",
+                    "version": "8.x-1.19",
+                    "datestamp": "1633775773",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5605,6 +5605,10 @@
                 {
                     "name": "See other contributors",
                     "homepage": "https://www.drupal.org/node/1538032/committers"
+                },
+                {
+                    "name": "svenryen",
+                    "homepage": "https://www.drupal.org/user/667244"
                 }
             ],
             "description": "This module aims at making the website compliant with the new EU cookie regulation.",
@@ -11540,7 +11544,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "0bc9b9657420307a56595b594d42044a8c710c21"
+                "reference": "20b21bc7f65ab234d276b2a4b097f7855054ee9b"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9"
@@ -11592,7 +11596,7 @@
                 },
                 "drupal": {
                     "version": "6.x-dev",
-                    "datestamp": "1633676467",
+                    "datestamp": "1633686600",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
