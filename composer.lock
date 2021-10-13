@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "756aedbd0a13c22f67480833a6c4e75c",
+    "content-hash": "11f2f9e8f224bf11a120d0e2d5a427cf",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4726,6 +4726,49 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/diff",
                 "issues": "https://www.drupal.org/project/issues/diff"
+            }
+        },
+        {
+            "name": "drupal/dropdown_language",
+            "version": "dev-3.0.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/dropdown_language.git",
+                "reference": "1e60735bdfef108a13a0bbb14e01b7811179ffc3"
+            },
+            "require": {
+                "drupal/core": "^9",
+                "php": "^7.3||^8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.0.x": "3.0.x-dev"
+                },
+                "drupal": {
+                    "version": "3.0.0+2-dev",
+                    "datestamp": "1626091535",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Scott Carpenter",
+                    "homepage": "https://www.drupal.org/user/297907",
+                    "email": "dropdown-language@goodscott.com"
+                }
+            ],
+            "description": "Dropdown Language Switcher. https://www.drupal.org/project/dropdown_language",
+            "homepage": "https://www.drupal.org/project/dropdown_language",
+            "support": {
+                "source": "https://git.drupalcode.org/project/dropdown_language"
             }
         },
         {
@@ -22385,6 +22428,7 @@
         "drupal/externalauth": 20,
         "drupal/features": 20,
         "drupal/feeds": 20,
+        "drupal/dropdown_language": 20,
         "drupal/feeds_ex": 20,
         "drupal/feeds_tamper": 20,
         "drupal/field_permissions": 20,
