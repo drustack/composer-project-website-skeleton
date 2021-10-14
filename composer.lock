@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "07d23cc8647096e49c1547cde9cd2d3f",
+    "content-hash": "383127f0b8f3e08d19d4209ca3d7b1cb",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -9729,17 +9729,11 @@
         },
         {
             "name": "drupal/samlauth",
-            "version": "3.3.0",
+            "version": "dev-3.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/samlauth.git",
-                "reference": "8.x-3.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/samlauth-8.x-3.3.zip",
-                "reference": "8.x-3.3",
-                "shasum": "743d1d4f8ee79eaeb941fe025d2b0c69eae416b7"
+                "reference": "5ecee0fd30c57ca67f46f7750dfbd6bb7c2ccfe6"
             },
             "require": {
                 "drupal/core": "^8 || ^9",
@@ -9748,16 +9742,17 @@
             },
             "type": "drupal-module",
             "extra": {
-                "drupal": {
-                    "version": "8.x-3.3",
-                    "datestamp": "1624398207",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                },
                 "branch-alias": {
+                    "dev-3.x": "3.x-dev",
                     "dev-8.x-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.3+3-dev",
+                    "datestamp": "1625154009",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -19915,16 +19910,16 @@
         },
         {
             "name": "instaclick/php-webdriver",
-            "version": "1.4.9",
+            "version": "1.4.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/instaclick/php-webdriver.git",
-                "reference": "961b12178cb71f8667afaf2f66ab3e000e060e1c"
+                "reference": "6bc1f44cf23031e68c326cd61e14ec32486f241b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/instaclick/php-webdriver/zipball/961b12178cb71f8667afaf2f66ab3e000e060e1c",
-                "reference": "961b12178cb71f8667afaf2f66ab3e000e060e1c",
+                "url": "https://api.github.com/repos/instaclick/php-webdriver/zipball/6bc1f44cf23031e68c326cd61e14ec32486f241b",
+                "reference": "6bc1f44cf23031e68c326cd61e14ec32486f241b",
                 "shasum": ""
             },
             "require": {
@@ -19972,9 +19967,9 @@
             ],
             "support": {
                 "issues": "https://github.com/instaclick/php-webdriver/issues",
-                "source": "https://github.com/instaclick/php-webdriver/tree/1.4.9"
+                "source": "https://github.com/instaclick/php-webdriver/tree/1.4.10"
             },
-            "time": "2021-06-28T22:23:20+00:00"
+            "time": "2021-10-14T03:25:34+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -22638,6 +22633,7 @@
         "drupal/ctools": 20,
         "drupal/default_content": 20,
         "drupal/devel": 20,
+        "drupal/dropdown_language": 20,
         "drupal/easy_breadcrumb": 20,
         "drupal/entity": 20,
         "drupal/entity_browser": 20,
@@ -22649,7 +22645,6 @@
         "drupal/externalauth": 20,
         "drupal/features": 20,
         "drupal/feeds": 20,
-        "drupal/dropdown_language": 20,
         "drupal/feeds_ex": 20,
         "drupal/feeds_tamper": 20,
         "drupal/field_permissions": 20,
@@ -22667,11 +22662,13 @@
         "drupal/mimemail": 20,
         "drupal/module_filter": 20,
         "drupal/paragraphs": 20,
+        "drupal/password_policy": 20,
         "drupal/php": 20,
         "drupal/rabbit_hole": 20,
         "drupal/rdfui": 20,
         "drupal/recaptcha": 20,
         "drupal/rules": 20,
+        "drupal/samlauth": 20,
         "drupal/search_api": 20,
         "drupal/seckit": 20,
         "drupal/security_review": 20,
@@ -22682,7 +22679,6 @@
         "drupal/swiftmailer": 20,
         "drupal/tamper": 20,
         "drupal/taxonomy_menu": 20,
-        "drupal/password_policy": 20,
         "drupal/token": 20,
         "drupal/views_block_filter_block": 20,
         "drupal/views_geojson": 20,
