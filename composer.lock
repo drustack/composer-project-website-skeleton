@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9a0ecfa724214ebe4f4943b500b72002",
+    "content-hash": "93a971f69709b836ebb347e8ff92753a",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5947,7 +5947,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/examples.git",
-                "reference": "28cefeef32097b42cbb44b934f14ddf0fb8c9e80"
+                "reference": "02945b7ca6dd272b71ce17180cd7f1178820cc2b"
             },
             "require": {
                 "drupal/core": "^8.7.7 || ^9"
@@ -15070,23 +15070,24 @@
         },
         {
             "name": "phenx/php-svg-lib",
-            "version": "v0.3.3",
+            "version": "0.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PhenX/php-svg-lib.git",
-                "reference": "5fa61b65e612ce1ae15f69b3d223cb14ecc60e32"
+                "reference": "f627771eb854aa7f45f80add0f23c6c4d67ea0f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PhenX/php-svg-lib/zipball/5fa61b65e612ce1ae15f69b3d223cb14ecc60e32",
-                "reference": "5fa61b65e612ce1ae15f69b3d223cb14ecc60e32",
+                "url": "https://api.github.com/repos/PhenX/php-svg-lib/zipball/f627771eb854aa7f45f80add0f23c6c4d67ea0f2",
+                "reference": "f627771eb854aa7f45f80add0f23c6c4d67ea0f2",
                 "shasum": ""
             },
             "require": {
+                "php": "^7.4 || ^8.0",
                 "sabberworm/php-css-parser": "^8.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^5.5|^6.5"
+                "phpunit/phpunit": "^9.5"
             },
             "type": "library",
             "autoload": {
@@ -15108,9 +15109,9 @@
             "homepage": "https://github.com/PhenX/php-svg-lib",
             "support": {
                 "issues": "https://github.com/PhenX/php-svg-lib/issues",
-                "source": "https://github.com/PhenX/php-svg-lib/tree/master"
+                "source": "https://github.com/PhenX/php-svg-lib/tree/0.3.4"
             },
-            "time": "2019-09-11T20:02:13+00:00"
+            "time": "2021-10-18T02:13:32+00:00"
         },
         {
             "name": "phpmailer/phpmailer",
