@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "93a971f69709b836ebb347e8ff92753a",
+    "content-hash": "d2e704af88935ef0d5228ed1165054c3",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3459,6 +3459,61 @@
             "homepage": "https://www.drupal.org/project/ckeditor_templates_ui",
             "support": {
                 "source": "https://git.drupalcode.org/project/ckeditor_templates_ui"
+            }
+        },
+        {
+            "name": "drupal/clientside_validation",
+            "version": "dev-3.0.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/clientside_validation.git",
+                "reference": "0631eff53428aebdb7655a8026162719623f66b6"
+            },
+            "require": {
+                "drupal/core": "^8.7.7 || ^9",
+                "php": ">=7.2.0"
+            },
+            "require-dev": {
+                "drupal/clientside_validation_demo": "*",
+                "drupal/clientside_validation_jquery": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.0.x": "3.0.x-dev"
+                },
+                "drupal": {
+                    "version": "3.0.0-rc4+6-dev",
+                    "datestamp": "1625394703",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Jelle_S",
+                    "homepage": "https://www.drupal.org/user/829198"
+                },
+                {
+                    "name": "attiks",
+                    "homepage": "https://www.drupal.org/user/105002"
+                },
+                {
+                    "name": "nikunjkotecha",
+                    "homepage": "https://www.drupal.org/user/694082"
+                }
+            ],
+            "description": "This module adds clientside validation",
+            "homepage": "https://www.drupal.org/project/clientside_validation",
+            "support": {
+                "source": "https://git.drupalcode.org/project/clientside_validation",
+                "issues": "https://drupal.org/project/issues/clientside_validation"
             }
         },
         {
@@ -22822,6 +22877,7 @@
         "drupal/bootstrap_sass": 20,
         "drupal/calendar": 20,
         "drupal/captcha": 20,
+        "drupal/clientside_validation": 20,
         "drupal/codesnippet": 20,
         "drupal/coffee": 20,
         "drupal/computed_field": 20,
