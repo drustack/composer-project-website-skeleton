@@ -6002,7 +6002,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/examples.git",
-                "reference": "02945b7ca6dd272b71ce17180cd7f1178820cc2b"
+                "reference": "287f55a8e48a5fac31d8e3312873d19e1f4375df"
             },
             "require": {
                 "drupal/core": "^8.7.7 || ^9"
@@ -6020,7 +6020,7 @@
                 },
                 "drupal": {
                     "version": "3.x-dev",
-                    "datestamp": "1632384150",
+                    "datestamp": "1634495359",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -8448,30 +8448,33 @@
         },
         {
             "name": "drupal/matomo",
-            "version": "1.11.0",
+            "version": "1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/matomo.git",
-                "reference": "8.x-1.11"
+                "reference": "8.x-1.12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/matomo-8.x-1.11.zip",
-                "reference": "8.x-1.11",
-                "shasum": "82be96c20ab15df03d199ab98d047cef6e67d40b"
+                "url": "https://ftp.drupal.org/files/projects/matomo-8.x-1.12.zip",
+                "reference": "8.x-1.12",
+                "shasum": "4c96688a1dad0caa9a767ee0986df8b94cc9aba2"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^8.8.0 || ^9.0.0"
+            },
+            "conflict": {
+                "drupal/csp": "<1.12"
             },
             "require-dev": {
-                "drupal/php": "*",
-                "drupal/token": "*"
+                "drupal/php": "~1.1",
+                "drupal/token": "~1.9"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.11",
-                    "datestamp": "1601651459",
+                    "version": "8.x-1.12",
+                    "datestamp": "1634559052",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8484,27 +8487,26 @@
             ],
             "authors": [
                 {
-                    "name": "Carsten Logemann",
-                    "homepage": "https://www.drupal.org/u/C_Logemann"
+                    "name": "C-Logemann",
+                    "homepage": "https://www.drupal.org/user/218368"
                 },
                 {
-                    "name": "Shelane French",
-                    "homepage": "https://www.drupal.org/u/shelane"
+                    "name": "Grimreaper",
+                    "homepage": "https://www.drupal.org/user/2388214"
                 },
                 {
-                    "name": "See other contributors",
-                    "homepage": "https://www.drupal.org/node/247808/committers"
+                    "name": "hass",
+                    "homepage": "https://www.drupal.org/user/85918"
                 },
                 {
                     "name": "shelane",
                     "homepage": "https://www.drupal.org/user/2674989"
                 }
             ],
-            "description": "Adds Matomo javascript tracking code to all your site's pages",
+            "description": "Adds Matomo javascript tracking code to all your site's pages.",
             "homepage": "https://www.drupal.org/project/matomo",
             "support": {
-                "source": "https://git.drupal.org/project/matomo.git",
-                "issues": "https://www.drupal.org/project/issues/matomo"
+                "source": "https://git.drupalcode.org/project/matomo"
             }
         },
         {
@@ -16085,16 +16087,16 @@
         },
         {
             "name": "swiftmailer/swiftmailer",
-            "version": "v6.2.7",
+            "version": "v6.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "15f7faf8508e04471f666633addacf54c0ab5933"
+                "reference": "8a5d5072dca8f48460fce2f4131fcc495eec654c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/15f7faf8508e04471f666633addacf54c0ab5933",
-                "reference": "15f7faf8508e04471f666633addacf54c0ab5933",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/8a5d5072dca8f48460fce2f4131fcc495eec654c",
+                "reference": "8a5d5072dca8f48460fce2f4131fcc495eec654c",
                 "shasum": ""
             },
             "require": {
@@ -16106,7 +16108,7 @@
             },
             "require-dev": {
                 "mockery/mockery": "^1.0",
-                "symfony/phpunit-bridge": "^4.4|^5.0"
+                "symfony/phpunit-bridge": "^4.4|^5.4"
             },
             "suggest": {
                 "ext-intl": "Needed to support internationalized email addresses"
@@ -16144,7 +16146,7 @@
             ],
             "support": {
                 "issues": "https://github.com/swiftmailer/swiftmailer/issues",
-                "source": "https://github.com/swiftmailer/swiftmailer/tree/v6.2.7"
+                "source": "https://github.com/swiftmailer/swiftmailer/tree/v6.3.0"
             },
             "funding": [
                 {
@@ -16156,7 +16158,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-03-09T12:30:35+00:00"
+            "time": "2021-10-18T15:26:12+00:00"
         },
         {
             "name": "symfony-cmf/routing",
