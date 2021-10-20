@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d2e704af88935ef0d5228ed1165054c3",
+    "content-hash": "5af9724e243693494b6c584048b2d7b7",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6002,7 +6002,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/examples.git",
-                "reference": "287f55a8e48a5fac31d8e3312873d19e1f4375df"
+                "reference": "d340009ebdb2058cc48c5240f46338c74544e142"
             },
             "require": {
                 "drupal/core": "^8.7.7 || ^9"
@@ -6020,7 +6020,7 @@
                 },
                 "drupal": {
                     "version": "3.x-dev",
-                    "datestamp": "1634495359",
+                    "datestamp": "1634666583",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -11482,6 +11482,50 @@
             }
         },
         {
+            "name": "drupal/toc_js",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/toc_js.git",
+                "reference": "2.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/toc_js-2.0.1.zip",
+                "reference": "2.0.1",
+                "shasum": "348f1f60112d56ea377014f83970a87067d8246f"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.1",
+                    "datestamp": "1632234081",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "flocondetoile",
+                    "homepage": "https://www.drupal.org/user/2006064"
+                }
+            ],
+            "description": "Build a hierarchical table of contents from header tags present on a page with the toc.js library.",
+            "homepage": "https://www.drupal.org/project/toc_js",
+            "support": {
+                "source": "https://git.drupalcode.org/project/toc_js"
+            }
+        },
+        {
             "name": "drupal/token",
             "version": "dev-1.x",
             "source": {
@@ -14748,6 +14792,18 @@
             "type": "npm-asset",
             "license": [
                 "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/tocjs",
+            "version": "0.5.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/tocjs/-/tocjs-0.5.0.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "GPL-2.0+"
             ]
         },
         {
@@ -20628,16 +20684,16 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "5.2.2",
+            "version": "5.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "069a785b2141f5bcf49f3e353548dc1cce6df556"
+                "reference": "622548b623e81ca6d78b721c5e029f4ce664f170"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/069a785b2141f5bcf49f3e353548dc1cce6df556",
-                "reference": "069a785b2141f5bcf49f3e353548dc1cce6df556",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/622548b623e81ca6d78b721c5e029f4ce664f170",
+                "reference": "622548b623e81ca6d78b721c5e029f4ce664f170",
                 "shasum": ""
             },
             "require": {
@@ -20648,7 +20704,8 @@
                 "webmozart/assert": "^1.9.1"
             },
             "require-dev": {
-                "mockery/mockery": "~1.3.2"
+                "mockery/mockery": "~1.3.2",
+                "psalm/phar": "^4.8"
             },
             "type": "library",
             "extra": {
@@ -20678,9 +20735,9 @@
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
             "support": {
                 "issues": "https://github.com/phpDocumentor/ReflectionDocBlock/issues",
-                "source": "https://github.com/phpDocumentor/ReflectionDocBlock/tree/master"
+                "source": "https://github.com/phpDocumentor/ReflectionDocBlock/tree/5.3.0"
             },
-            "time": "2020-09-03T19:13:55+00:00"
+            "time": "2021-10-19T17:43:47+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
