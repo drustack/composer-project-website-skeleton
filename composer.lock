@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5af9724e243693494b6c584048b2d7b7",
+    "content-hash": "d8b594e78f55114e2c92b233fe9589ff",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -12321,6 +12321,59 @@
             }
         },
         {
+            "name": "drupal/views_menu_children_filter",
+            "version": "dev-3.0.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/views_menu_children_filter.git",
+                "reference": "7c7311b117de1df0995f3f30448c9f112ecfefdf"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.0.x": "3.0.x-dev"
+                },
+                "drupal": {
+                    "version": "3.0.x-dev",
+                    "datestamp": "1608587486",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "DanielVeza",
+                    "homepage": "https://www.drupal.org/user/3362504"
+                },
+                {
+                    "name": "bmcclure",
+                    "homepage": "https://www.drupal.org/user/278485"
+                },
+                {
+                    "name": "cravecode",
+                    "homepage": "https://www.drupal.org/user/1693456"
+                },
+                {
+                    "name": "dieuwe",
+                    "homepage": "https://www.drupal.org/user/1536006"
+                }
+            ],
+            "description": "Views Menu Children Filter",
+            "homepage": "https://www.drupal.org/project/views_menu_children_filter",
+            "support": {
+                "source": "https://git.drupalcode.org/project/views_menu_children_filter"
+            }
+        },
+        {
             "name": "drupal/views_templates",
             "version": "dev-1.x",
             "source": {
@@ -22998,6 +23051,7 @@
         "drupal/views_block_filter_block": 20,
         "drupal/views_geojson": 20,
         "drupal/views_googlenews": 20,
+        "drupal/views_menu_children_filter": 20,
         "drupal/views_templates": 20,
         "drupal/viewsreference": 20,
         "drupal/webform": 20,
