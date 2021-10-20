@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d8b594e78f55114e2c92b233fe9589ff",
+    "content-hash": "2ff1a6993218b28df6be30bed051c84e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -11483,29 +11483,26 @@
         },
         {
             "name": "drupal/toc_js",
-            "version": "2.0.1",
+            "version": "dev-2.0.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/toc_js.git",
-                "reference": "2.0.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/toc_js-2.0.1.zip",
-                "reference": "2.0.1",
-                "shasum": "348f1f60112d56ea377014f83970a87067d8246f"
+                "reference": "4f99fde43f83f1452599983fd0a2dabe7557f2f7"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-2.0.x": "2.0.x-dev"
+                },
                 "drupal": {
-                    "version": "2.0.1",
-                    "datestamp": "1632234081",
+                    "version": "2.0.0+3-dev",
+                    "datestamp": "1632233933",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -23047,6 +23044,7 @@
         "drupal/swiftmailer": 20,
         "drupal/tamper": 20,
         "drupal/taxonomy_menu": 20,
+        "drupal/toc_js": 20,
         "drupal/token": 20,
         "drupal/views_block_filter_block": 20,
         "drupal/views_geojson": 20,
