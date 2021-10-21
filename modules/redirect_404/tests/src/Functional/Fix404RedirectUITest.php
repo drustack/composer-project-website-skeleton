@@ -33,8 +33,8 @@ class Fix404RedirectUITest extends Redirect404TestBase {
       'source' => 'non-existing0',
     ];
     $parsed_url = UrlHelper::parse($this->getUrl());
-    $this->assertEqual(Url::fromRoute('redirect.add')->setAbsolute()->toString(), $parsed_url['path']);
-    $this->assertEqual($expected_query, $parsed_url['query']);
+    $this->assertEquals($parsed_url['path'], Url::fromRoute('redirect.add')->setAbsolute()->toString());
+    $this->assertEquals($parsed_url['query'], $expected_query);
     $this->assertFieldByName('redirect_source[0][path]', 'non-existing0');
     // Save the redirect.
     $edit = ['redirect_redirect[0][uri]' => '/node'];
@@ -104,8 +104,8 @@ class Fix404RedirectUITest extends Redirect404TestBase {
       'destination' => $destination,
     ];
     $parsed_url = UrlHelper::parse($this->getUrl());
-    $this->assertEqual(Url::fromRoute('redirect.add')->setAbsolute()->toString(), $parsed_url['path']);
-    $this->assertEqual($expected_query, $parsed_url['query']);
+    $this->assertEquals($parsed_url['path'], Url::fromRoute('redirect.add')->setAbsolute()->toString());
+    $this->assertEquals($parsed_url['query'], $expected_query);
     $this->assertFieldByName('redirect_source[0][path]', 'non-existing2');
     $this->drupalPostForm(NULL, $edit, t('Save'));
     $this->assertUrl('admin/config/search/redirect/404');
