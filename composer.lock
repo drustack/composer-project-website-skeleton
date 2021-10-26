@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ee7ed19f66753634a014e3a538b74dc6",
+    "content-hash": "f07605e406ed8a7b7462360cd02418e3",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2564,7 +2564,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/better_exposed_filters.git",
-                "reference": "0225b9d9b9a6d67793de83c25713fac64057acbe"
+                "reference": "9bfa328ea8b48b8b93642acc667b6bf06e905b1e"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
@@ -2579,8 +2579,8 @@
                     "dev-5.x": "5.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-5.0-beta3+2-dev",
-                    "datestamp": "1634746851",
+                    "version": "8.x-5.0+1-dev",
+                    "datestamp": "1635181294",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -6002,7 +6002,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/examples.git",
-                "reference": "d340009ebdb2058cc48c5240f46338c74544e142"
+                "reference": "4bbef5c9ddb2c889898add3f5b4fc8e3a1f182f8"
             },
             "require": {
                 "drupal/core": "^8.7.7 || ^9"
@@ -6020,7 +6020,7 @@
                 },
                 "drupal": {
                     "version": "3.x-dev",
-                    "datestamp": "1634666583",
+                    "datestamp": "1634668492",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -8081,7 +8081,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ldap.git",
-                "reference": "86873c533220ac24f5b0fca7972c3b6d7fbddc0b"
+                "reference": "7ba4b17f840cfe74aab96dd62d6b5633c8e867ef"
             },
             "require": {
                 "drupal/authorization": "^1.0",
@@ -8281,10 +8281,10 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/libraries.git",
-                "reference": "ba30ae518d87313a5d532ba0d45581243b81ac1b"
+                "reference": "13b7b8407cdcec2f4956876486b932cf1f31dea8"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^8.8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
@@ -8292,8 +8292,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-beta1+1-dev",
-                    "datestamp": "1609772819",
+                    "version": "8.x-3.0-beta1+4-dev",
+                    "datestamp": "1635189814",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -8448,17 +8448,17 @@
         },
         {
             "name": "drupal/matomo",
-            "version": "1.12.0",
+            "version": "1.13.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/matomo.git",
-                "reference": "8.x-1.12"
+                "reference": "8.x-1.13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/matomo-8.x-1.12.zip",
-                "reference": "8.x-1.12",
-                "shasum": "4c96688a1dad0caa9a767ee0986df8b94cc9aba2"
+                "url": "https://ftp.drupal.org/files/projects/matomo-8.x-1.13.zip",
+                "reference": "8.x-1.13",
+                "shasum": "a3abacb383a349aeb9bfa271dd9294182ef16036"
             },
             "require": {
                 "drupal/core": "^8.8.0 || ^9.0.0"
@@ -8467,14 +8467,15 @@
                 "drupal/csp": "<1.12"
             },
             "require-dev": {
+                "drupal/csp": "~1.12",
                 "drupal/php": "~1.1",
                 "drupal/token": "~1.9"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.12",
-                    "datestamp": "1634559052",
+                    "version": "8.x-1.13",
+                    "datestamp": "1635192471",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -11448,6 +11449,54 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/taxonomy_menu",
                 "issues": "http://drupal.org/project/taxonomy_menu"
+            }
+        },
+        {
+            "name": "drupal/text_resize",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/text_resize.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/text_resize-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "9a5ef44c3cd12d661bb3e40bbc8d2dcaa2250ab3"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1634404210",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Wongjn",
+                    "homepage": "https://www.drupal.org/user/3055747"
+                },
+                {
+                    "name": "attheshow",
+                    "homepage": "https://www.drupal.org/user/249768"
+                }
+            ],
+            "description": "Creates a block that allows your users to resize text on the page.",
+            "homepage": "https://www.drupal.org/project/text_resize",
+            "support": {
+                "source": "https://git.drupalcode.org/project/text_resize"
             }
         },
         {
