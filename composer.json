@@ -61,6 +61,9 @@
             "npm-asset"
         ],
         "patches": {
+            "drupal/address": {
+                "https://drupal.org/node/2882589": "https://drupal.org/files/issues/2019-04-19/address-feeds-address-target-2882589-23.patch"
+            },
             "drupal/avatars": {
                 "https://drupal.org/node/3162722": "https://drupal.org/files/issues/2020-08-01/3162722-5.patch"
             },
