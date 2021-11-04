@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f92815fe61157ebd9d3dc5062ebfdb2d",
+    "content-hash": "103a227d16bd29079be9893609888d64",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -11813,6 +11813,102 @@
             }
         },
         {
+            "name": "drupal/telephone_formatter",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/telephone_formatter.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/telephone_formatter-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "cab3c3d9b165086afa0d9496cfeb088842c020d0"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "giggsey/libphonenumber-for-php": "^8.0"
+            },
+            "suggest": {
+                "drupal/telephone_validation": "Unsure data quality"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1614716069",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Jakub Piasecki",
+                    "homepage": "https://www.drupal.org/user/1532844",
+                    "email": "jakub@piaseccy.pl"
+                }
+            ],
+            "description": "Additional formatters to Telephone field.",
+            "homepage": "https://www.drupal.org/project/telephone_formatter",
+            "support": {
+                "source": "https://git.drupalcode.org/project/telephone_formatter",
+                "issues": "http://drupal.org/project/issues/telephone_formatter"
+            }
+        },
+        {
+            "name": "drupal/telephone_validation",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/telephone_validation.git",
+                "reference": "8.x-2.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/telephone_validation-8.x-2.3.zip",
+                "reference": "8.x-2.3",
+                "shasum": "34dd855d8f80c53bd93df66101020c1f2d05eb0e"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "giggsey/libphonenumber-for-php": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.3",
+                    "datestamp": "1591201337",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "zaporylie",
+                    "homepage": "https://www.drupal.org/user/1532844"
+                }
+            ],
+            "description": "Use 3rd party library to validate telephone field.",
+            "homepage": "http://drupal.org/project/telephone_validation",
+            "support": {
+                "source": "https://git.drupalcode.org/project/telephone_validation",
+                "issues": "http://drupal.org/project/issues/telephone_validation"
+            }
+        },
+        {
             "name": "drupal/text_resize",
             "version": "dev-1.x",
             "source": {
@@ -13702,6 +13798,133 @@
                 "source": "https://github.com/geocoder-php/nominatim-provider/tree/5.5.1"
             },
             "time": "2021-08-20T15:18:10+00:00"
+        },
+        {
+            "name": "giggsey/libphonenumber-for-php",
+            "version": "8.12.36",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/giggsey/libphonenumber-for-php.git",
+                "reference": "385660e434e7ad4bf023dde39302e561199b9bb4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/385660e434e7ad4bf023dde39302e561199b9bb4",
+                "reference": "385660e434e7ad4bf023dde39302e561199b9bb4",
+                "shasum": ""
+            },
+            "require": {
+                "giggsey/locale": "^1.7|^2.0",
+                "php": ">=5.3.2",
+                "symfony/polyfill-mbstring": "^1.17"
+            },
+            "require-dev": {
+                "pear/pear-core-minimal": "^1.9",
+                "pear/pear_exception": "^1.0",
+                "pear/versioncontrol_git": "^0.5",
+                "phing/phing": "^2.7",
+                "php-coveralls/php-coveralls": "^1.0|^2.0",
+                "symfony/console": "^2.8|^3.0|^v4.4|^v5.2",
+                "symfony/phpunit-bridge": "^4.2 || ^5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "8.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "libphonenumber\\": "src/"
+                },
+                "exclude-from-classmap": [
+                    "/src/data/",
+                    "/src/carrier/data/",
+                    "/src/geocoding/data/",
+                    "/src/timezone/data/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Joshua Gigg",
+                    "email": "giggsey@gmail.com",
+                    "homepage": "https://giggsey.com/"
+                }
+            ],
+            "description": "PHP Port of Google's libphonenumber",
+            "homepage": "https://github.com/giggsey/libphonenumber-for-php",
+            "keywords": [
+                "geocoding",
+                "geolocation",
+                "libphonenumber",
+                "mobile",
+                "phonenumber",
+                "validation"
+            ],
+            "support": {
+                "irc": "irc://irc.appliedirc.com/lobby",
+                "issues": "https://github.com/giggsey/libphonenumber-for-php/issues",
+                "source": "https://github.com/giggsey/libphonenumber-for-php"
+            },
+            "time": "2021-10-26T09:45:49+00:00"
+        },
+        {
+            "name": "giggsey/locale",
+            "version": "2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/giggsey/Locale.git",
+                "reference": "f28e0fa55e842afe034a7671df79757731467031"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/giggsey/Locale/zipball/f28e0fa55e842afe034a7671df79757731467031",
+                "reference": "f28e0fa55e842afe034a7671df79757731467031",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "ext-json": "*",
+                "pear/pear-core-minimal": "^1.9",
+                "pear/pear_exception": "^1.0",
+                "pear/versioncontrol_git": "^0.5",
+                "phing/phing": "^2.7",
+                "php-coveralls/php-coveralls": "^2.0",
+                "phpunit/phpunit": "^8.5|^9.5",
+                "symfony/console": "^5.0",
+                "symfony/filesystem": "^5.0",
+                "symfony/finder": "^5.0",
+                "symfony/process": "^5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Giggsey\\Locale\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Joshua Gigg",
+                    "email": "giggsey@gmail.com",
+                    "homepage": "https://giggsey.com/"
+                }
+            ],
+            "description": "Locale functions required by libphonenumber-for-php",
+            "support": {
+                "issues": "https://github.com/giggsey/Locale/issues",
+                "source": "https://github.com/giggsey/Locale/tree/2.0"
+            },
+            "time": "2021-08-23T09:01:14+00:00"
         },
         {
             "name": "google/recaptcha",
