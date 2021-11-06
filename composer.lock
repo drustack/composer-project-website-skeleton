@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1cfc2e914d1a3cd683958491abf4f231",
+    "content-hash": "9dd1a8440c95fc2c001bd21496a534d8",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -7111,6 +7111,47 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/fontyourface",
                 "issues": "https://drupal.org/project/issues/fontyourface"
+            }
+        },
+        {
+            "name": "drupal/form_options_attributes",
+            "version": "dev-2.0.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/form_options_attributes.git",
+                "reference": "32a7be8174faccb415b16b6cf29992be9fad5f39"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.0.x": "2.0.x-dev"
+                },
+                "drupal": {
+                    "version": "2.0.0-beta1+1-dev",
+                    "datestamp": "1593448052",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "zengenuity",
+                    "homepage": "https://www.drupal.org/user/326925"
+                }
+            ],
+            "description": "Allows form options for select, checkboxes, and radio elements to have individual attributes.",
+            "homepage": "https://www.drupal.org/project/form_options_attributes",
+            "support": {
+                "source": "https://git.drupalcode.org/project/form_options_attributes"
             }
         },
         {
@@ -24233,6 +24274,7 @@
         "drupal/feeds_tamper": 20,
         "drupal/field_permissions": 20,
         "drupal/field_validation": 20,
+        "drupal/form_options_attributes": 20,
         "drupal/geocoder": 20,
         "drupal/geofield": 20,
         "drupal/geofield_map": 20,
