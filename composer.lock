@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a5af6148ed91cca4fd6d411f8a6753e9",
+    "content-hash": "7eef9d8454280427728229734fbad9d1",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -15663,6 +15663,21 @@
             "dist": {
                 "type": "tar",
                 "url": "https://registry.npmjs.org/select2/-/select2-4.0.13.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/select2-bootstrap-5-theme",
+            "version": "1.2.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/select2-bootstrap-5-theme/-/select2-bootstrap-5-theme-1.2.0.tgz"
+            },
+            "require": {
+                "npm-asset/bootstrap": ">=5.0.2,<6.0.0"
             },
             "type": "npm-asset",
             "license": [
