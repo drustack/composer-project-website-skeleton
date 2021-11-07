@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4fd1f45c4572f8ad4c446a7e6472b5dd",
+    "content-hash": "338989f8a4860fe62ef65d1a2d379182",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -7787,7 +7787,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/image_effects.git",
-                "reference": "7138c1b4177868e80fb5114242a8d22dca03d4a6"
+                "reference": "60cb75124cb08b81c6478497c0de3abb44186591"
             },
             "require": {
                 "drupal/core": "^8.9 || ^9",
@@ -7809,8 +7809,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.1+3-dev",
-                    "datestamp": "1635427012",
+                    "version": "8.x-3.1+4-dev",
+                    "datestamp": "1635432077",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -9707,6 +9707,62 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/multiple_registration",
                 "issues": "https://www.drupal.org/project/multiple_registration"
+            }
+        },
+        {
+            "name": "drupal/office_hours",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/office_hours.git",
+                "reference": "6131941435d8716683c5170bba4d2529eb9d9ad1"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.5+19-dev",
+                    "datestamp": "1632226647",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "John Voskuilen",
+                    "homepage": "https://www.drupal.org/user/167994",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "johnv",
+                    "homepage": "https://www.drupal.org/user/591042"
+                },
+                {
+                    "name": "mikl",
+                    "homepage": "https://www.drupal.org/user/58679"
+                },
+                {
+                    "name": "skwashd",
+                    "homepage": "https://www.drupal.org/user/116305"
+                }
+            ],
+            "description": "Defines a 'weekly office hours' field type, allowing you to specify when an Entity is open or closed.",
+            "homepage": "http://drupal.org/project/office_hours",
+            "support": {
+                "source": "http://cgit.drupalcode.org/office_hours",
+                "issues": "http://drupal.org/project/office_hours",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
             }
         },
         {
@@ -13412,7 +13468,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "b5f0e4a167b53f2ebcc99e05f94d313cc6548009"
+                "reference": "07b195aef0084c9c5f43fba9d3016d0f87fcc7a5"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9"
@@ -13464,7 +13520,7 @@
                 },
                 "drupal": {
                     "version": "6.x-dev",
-                    "datestamp": "1636110611",
+                    "datestamp": "1636196099",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -24709,6 +24765,7 @@
         "drupal/menu_block": 20,
         "drupal/mimemail": 20,
         "drupal/module_filter": 20,
+        "drupal/office_hours": 20,
         "drupal/paragraphs": 20,
         "drupal/password_policy": 20,
         "drupal/php": 20,
