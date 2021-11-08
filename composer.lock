@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9cc6ab5246f5afff148776ce3187af9e",
+    "content-hash": "d2aa1dc70eefba18e96570d2d095364f",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -7053,6 +7053,56 @@
             "homepage": "https://www.drupal.org/project/file_browser",
             "support": {
                 "source": "https://git.drupalcode.org/project/file_browser"
+            }
+        },
+        {
+            "name": "drupal/file_delete",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/file_delete.git",
+                "reference": "87aa75402ca49d9b3bd8076fe9a45000c1919610"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "require-dev": {
+                "drupal/coder": "^8.3"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-rc1+1-dev",
+                    "datestamp": "1581544973",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Eom",
+                    "homepage": "https://www.drupal.org/user/3458427",
+                    "email": "jonnyeom@gmail.com"
+                }
+            ],
+            "description": "Provides the ability to easily delete files within Drupal administration.",
+            "homepage": "https://www.drupal.org/project/file_delete",
+            "keywords": [
+                "Drupal",
+                "File"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/file_delete",
+                "issues": "https://www.drupal.org/project/issues/file_delete"
             }
         },
         {
@@ -24747,6 +24797,7 @@
         "drupal/feeds_tamper": 20,
         "drupal/field_permissions": 20,
         "drupal/field_validation": 20,
+        "drupal/file_delete": 20,
         "drupal/form_options_attributes": 20,
         "drupal/geocoder": 20,
         "drupal/geofield": 20,
