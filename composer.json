@@ -107,8 +107,8 @@
             "drupal/file_delete": {
                 "https://drupal.org/node/3111440": "https://drupal.org/files/issues/2021-10-01/3111440-bulk-action-13.patch"
             },
-            "drupal/geocoder": {
-                "https://drupal.org/node/3153678": "https://drupal.org/files/issues/2021-09-02/3153678-35.clear-autoload-plugin-apcu.patch"
+            "drupal/leaflet": {
+                "https://drupal.org/node/2942651": "https://git.drupalcode.org/project/leaflet/-/merge_requests/5.diff"
             },
             "drupal/menu_block": {
                 "https://drupal.org/node/2847328": "https://drupal.org/files/issues/2020-12-07/2847328-5.patch"
@@ -224,6 +224,21 @@
         "drupal": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        "drustack/leaflet-fullscreen": {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/drustack/Leaflet-Leaflet.fullscreen/archive/refs/heads/gh-pages.zip"
+                },
+                "name": "drustack/leaflet-fullscreen",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "dev-gh-pages"
+            },
+            "type": "package"
         }
     },
     "require": {
@@ -400,6 +415,7 @@
         "drupal/xmlsitemap": "1.x-dev",
         "drustack/composer-generate-metadata": "~2.0",
         "drustack/drustack": "9.x-dev",
+        "drustack/leaflet-fullscreen": "dev-gh-pages",
         "geocoder-php/nominatim-provider": "~5.5",
         "npm-asset/blazy": "~1.8",
         "npm-asset/bootstrap": "~5.0",
@@ -407,8 +423,12 @@
         "npm-asset/firstandthird--toc": "~0.3",
         "npm-asset/flag-icon-css": "~3.5",
         "npm-asset/fortawesome--fontawesome-free": "~5.15",
+        "npm-asset/geoman-io--leaflet-geoman-free": "~2.11",
         "npm-asset/jquery-ui-touch-punch": "~0.2",
-        "npm-asset/leaflet.locatecontrol": "~0.74",
+        "npm-asset/leaflet": "dev-master",
+        "npm-asset/leaflet-gesture-handling": "~1.2",
+        "npm-asset/leaflet.locatecontrol": "~0.76",
+        "npm-asset/leaflet.markercluster": "~1.5",
         "npm-asset/select2": "~4.0",
         "npm-asset/select2-bootstrap-5-theme": "~1.2",
         "npm-asset/slick-carousel": "~1.8"
