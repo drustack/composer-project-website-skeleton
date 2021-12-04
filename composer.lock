@@ -5802,10 +5802,16 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity_clone.git",
-                "reference": "d4fb1ba755c6dd7a19fdad138bdde2f164c5387e"
+                "reference": "1650ec83100613525a798bf72376ff76d943d400"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
+            },
+            "require-dev": {
+                "drupal/entity_browser": "2.x-dev",
+                "drupal/entity_usage": "2.x-dev",
+                "drupal/paragraphs": "^1.0",
+                "drupal/search_api": "~1.0"
             },
             "type": "drupal-module",
             "extra": {
@@ -5839,8 +5845,8 @@
                     "homepage": "https://www.drupal.org/user/1361586"
                 }
             ],
-            "description": "Add a clone action for all entities",
-            "homepage": "https://www.drupal.org/project/entity_clone",
+            "description": "Add a clone action for all entities.",
+            "homepage": "https://drupal.org/project/entity_clone",
             "support": {
                 "source": "https://git.drupalcode.org/project/entity_clone"
             }
@@ -10526,7 +10532,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/rules.git",
-                "reference": "b92e91537fcb47e0dfd5eba4e3c5c9b79e543eca"
+                "reference": "ef7d6ab425119a250bd70dc1fe736b7d8ce50338"
             },
             "require": {
                 "drupal/core": "^8.8.2 || ^9",
@@ -10539,7 +10545,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.x-dev",
-                    "datestamp": "1636604902",
+                    "datestamp": "1638592463",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -13519,7 +13525,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "0e3d4b52865668883992149e6c329f7d7736cc45"
+                "reference": "7a7c768f9f1497ab7f8b818e43c5bd72a55e1cb2"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9"
@@ -13627,7 +13633,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/xmlsitemap.git",
-                "reference": "994b84a9b1d51ae3fc397cd2746bdaa2d3327fe6"
+                "reference": "c187190f866396cb92cf69b7e19a6c965c86361b"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
@@ -13646,8 +13652,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0+6-dev",
-                    "datestamp": "1631304005",
+                    "version": "8.x-1.1+2-dev",
+                    "datestamp": "1638486073",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -23127,16 +23133,16 @@
         },
         {
             "name": "phpunit/php-file-iterator",
-            "version": "3.0.5",
+            "version": "3.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-file-iterator.git",
-                "reference": "aa4be8575f26070b100fccb67faabb28f21f66f8"
+                "reference": "cf1c2e7c203ac650e352f4cc675a7021e7d1b3cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/aa4be8575f26070b100fccb67faabb28f21f66f8",
-                "reference": "aa4be8575f26070b100fccb67faabb28f21f66f8",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/cf1c2e7c203ac650e352f4cc675a7021e7d1b3cf",
+                "reference": "cf1c2e7c203ac650e352f4cc675a7021e7d1b3cf",
                 "shasum": ""
             },
             "require": {
@@ -23175,7 +23181,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-file-iterator/issues",
-                "source": "https://github.com/sebastianbergmann/php-file-iterator/tree/3.0.5"
+                "source": "https://github.com/sebastianbergmann/php-file-iterator/tree/3.0.6"
             },
             "funding": [
                 {
@@ -23183,7 +23189,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-28T05:57:25+00:00"
+            "time": "2021-12-02T12:48:52+00:00"
         },
         {
             "name": "phpunit/php-invoker",
