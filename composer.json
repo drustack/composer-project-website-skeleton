@@ -21,7 +21,7 @@
     "extra": {
         "branch-alias": {
             "dev-develop": "9.x-dev",
-            "dev-master": "9.2.x-dev"
+            "dev-master": "9.3.x-dev"
         },
         "drupal-scaffold": {
             "locations": {
@@ -61,21 +61,30 @@
             "npm-asset"
         ],
         "patches": {
+            "drupal/address": {
+                "https://drupal.org/node/2882589": "https://drupal.org/files/issues/2019-04-19/address-feeds-address-target-2882589-23.patch"
+            },
+            "drupal/asset_injector": {
+                "https://drupal.org/node/3181674": "https://drupal.org/files/issues/2021-10-29/add-library-info-tag-3181674-7.patch"
+            },
+            "drupal/avatars": {
+                "https://drupal.org/node/3162722": "https://drupal.org/files/issues/2020-08-01/3162722-5.patch"
+            },
             "drupal/block_class": {
                 "https://drupal.org/node/2998114": "https://drupal.org/files/issues/2021-05-07/2998114-81.patch"
             },
             "drupal/core": {
                 "https://drupal.org/node/1810148": "https://drupal.org/files/issues/2021-05-28/1810148-83.patch",
-                "https://drupal.org/node/2362643": "https://drupal.org/files/issues/2021-01-21/2362643-76.patch",
+                "https://drupal.org/node/2362643": "https://drupal.org/files/issues/2021-11-04/drupal-9.3.x-fix_broken_svg-2362643-81.patch",
                 "https://drupal.org/node/2429321": "https://drupal.org/files/issues/2020-05-04/2429321-9.1-75.patch",
-                "https://drupal.org/node/2815221": "https://drupal.org/files/issues/2021-06-17/2815221-139.patch",
+                "https://drupal.org/node/2815221": "https://drupal.org/files/issues/2021-09-08/2815221-140.patch",
                 "https://drupal.org/node/2825860": "https://drupal.org/files/issues/2021-05-07/2825860-exposed-filter-notice-56.patch",
                 "https://drupal.org/node/2862702": "https://drupal.org/files/issues/2021-04-24/2862702-28_0.patch",
                 "https://drupal.org/node/2869592": "https://drupal.org/files/issues/2020-02-07/2869592-remove-update-warning-34.patch",
-                "https://drupal.org/node/2946333": "https://drupal.org/files/issues/2021-06-29/2946333-238.patch",
+                "https://drupal.org/node/2946333": "https://git.drupalcode.org/project/drupal/-/merge_requests/1504.diff",
                 "https://drupal.org/node/2985882": "https://drupal.org/files/issues/2020-04-08/2985882-field-85.patch",
-                "https://drupal.org/node/3008924": "https://drupal.org/files/issues/2020-08-27/3008924-rerolled-17.patch",
-                "https://drupal.org/node/3015152": "https://drupal.org/files/issues/2021-01-29/3015152-tps-9.2.x-116.patch"
+                "https://drupal.org/node/3008924": "https://git.drupalcode.org/project/drupal/-/merge_requests/1505.diff",
+                "https://drupal.org/node/3015152": "https://git.drupalcode.org/project/drupal/-/merge_requests/1506.diff"
             },
             "drupal/ctools": {
                 "https://drupal.org/node/2475595": "https://drupal.org/files/issues/2475595-ctools-autocomplete-fix-47.patch"
@@ -84,17 +93,76 @@
                 "https://drupal.org/node/3067452": "https://drupal.org/files/issues/2021-03-18/entity_embed-recursion_context-3067452-15.patch",
                 "https://drupal.org/node/3069448": "https://drupal.org/files/issues/2019-10-18/entity-embed-array-to-string--3069448-19.patch"
             },
-            "drupal/examples": {
-                "https://drupal.org/node/3211322": "https://drupal.org/files/issues/2021-04-29/examples-3.x-core_version_requirement-3211322-2.patch"
+            "drupal/facets": {
+                "https://drupal.org/node/2939710": "https://drupal.org/files/issues/2020-11-12/support_views_cache-2939710-11.patch",
+                "https://drupal.org/node/3031544": "https://drupal.org/files/issues/2020-07-01/facets_url_weirdness.patch",
+                "https://drupal.org/node/3073444": "https://drupal.org/files/issues/2021-10-27/3073444-122.patch",
+                "https://drupal.org/node/3110730": "https://drupal.org/files/issues/2021-02-17/facets-request-stack-3110730-3.patch",
+                "https://drupal.org/node/3153622": "https://drupal.org/files/issues/2021-06-16/issue-3153622-nouislider_4.patch",
+                "https://drupal.org/node/3204660": "https://drupal.org/files/issues/2021-03-24/3204660-12.patch"
             },
             "drupal/features": {
                 "https://drupal.org/node/3034826": "https://drupal.org/files/issues/2021-03-31/features-call_to_member_function_on_null-3034826-5.patch"
             },
+            "drupal/file_delete": {
+                "https://drupal.org/node/3111440": "https://drupal.org/files/issues/2021-10-01/3111440-bulk-action-13.patch"
+            },
+            "drupal/geofield": {
+                "https://drupal.org/node/3253240": "https://git.drupalcode.org/project/geofield/-/merge_requests/7.diff",
+                "https://drupal.org/node/3253257": "https://git.drupalcode.org/project/geofield/-/merge_requests/8.diff"
+            },
+            "drupal/leaflet": {
+                "https://drupal.org/node/2942651": "https://git.drupalcode.org/project/leaflet/-/merge_requests/5.diff"
+            },
             "drupal/menu_block": {
                 "https://drupal.org/node/2847328": "https://drupal.org/files/issues/2020-12-07/2847328-5.patch"
             },
+            "drupal/office_hours": {
+                "https://drupal.org/node/1925272": "https://git.drupalcode.org/project/office_hours/-/merge_requests/5.diff",
+                "https://drupal.org/node/1998266": "https://drupal.org/files/issues/2021-09-10/office-hours-exceptions-1998266-71.patch",
+                "https://drupal.org/node/3208978": "https://drupal.org/files/issues/2021-09-30/OpeningHoursTokens-3208978-26.patch"
+            },
+            "drupal/password_policy": {
+                "https://drupal.org/node/2877040": "https://drupal.org/files/issues/2021-10-11/password_policy-remove_ctools-2877040-23.patch"
+            },
+            "drupal/profile": {
+                "https://drupal.org/node/2899744": "https://drupal.org/files/issues/2021-07-22/make-profiles-translatable-2899744-42.patch",
+                "https://drupal.org/node/3139127": "https://drupal.org/files/issues/2020-05-22/profile-local-tasks-313912-2.patch",
+                "https://drupal.org/node/3178743": "https://drupal.org/files/issues/2021-02-26/respect-assigned-roles-3178743-6.patch"
+            },
             "drupal/recaptcha": {
                 "https://drupal.org/node/2852269": "https://drupal.org/files/issues/2019-04-29/recaptcha-nocaptcha-2852269-180.patch"
+            },
+            "drupal/scss_compiler": {
+                "https://drupal.org/node/3211016": "https://git.drupalcode.org/project/scss_compiler/-/merge_requests/2.diff"
+            },
+            "drupal/search_api": {
+                "https://drupal.org/node/2877319": "https://drupal.org/files/issues/2021-04-20/2877319-15--db_backend_location_support.patch",
+                "https://drupal.org/node/3196990": "https://drupal.org/files/issues/2021-11-13/search_api-views_wrong_query_type-3196990-14.patch"
+            },
+            "drupal/search_api_autocomplete": {
+                "https://drupal.org/node/3068289": "https://drupal.org/files/issues/2020-05-28/search-api-autocomplete-cacheable-response-3068289-5.patch"
+            },
+            "drupal/search_api_location": {
+                "https://drupal.org/node/3048597": "https://git.drupalcode.org/project/search_api_location/-/merge_requests/1.patch",
+                "https://drupal.org/node/3070519": "https://drupal.org/files/issues/2021-09-10/require_location_resolve_option-3070519-5.patch",
+                "https://drupal.org/node/3117980": "https://drupal.org/files/issues/2020-03-05/geofield_prox_plugins-3117980-3.patch",
+                "https://drupal.org/node/3159697": "https://drupal.org/files/issues/2020-07-16/3159697-8.patch",
+                "https://drupal.org/node/3198410": "https://drupal.org/files/issues/2021-02-14/3198410_2.patch"
+            },
+            "drupal/select2": {
+                "https://drupal.org/node/3178287": "https://drupal.org/files/issues/2020-10-21/3178287.patch",
+                "https://drupal.org/node/3179030": "https://drupal.org/files/issues/2020-10-26/facet-widget-default-markup-3179030-2.patch",
+                "https://drupal.org/node/3211796": "https://drupal.org/files/issues/2021-05-03/properfix_zindex_ckeditor-3211796-5.patch"
+            },
+            "drupal/styleguide": {
+                "https://drupal.org/node/3184083": "https://drupal.org/files/issues/2020-11-22/3184083-1-styleguide-layout.patch"
+            },
+            "drupal/text_resize": {
+                "https://drupal.org/node/3246316": "https://drupal.org/files/issues/2021-10-28/text_resize-js_cookies-3246316-2.patch"
+            },
+            "drupal/toc_js": {
+                "https://drupal.org/node/3244920": "https://drupal.org/files/issues/2021-10-22/toc_js-npm-assist-3244920-5.patch"
             },
             "drupal/token": {
                 "https://drupal.org/node/2816693": "https://drupal.org/files/issues/2021-03-31/token-term_vocabulary_source-2816693-23.patch"
@@ -111,42 +179,92 @@
             "type": "composer",
             "url": "https://asset-packagist.org"
         },
+        "ckeditor/fakeobjects": {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "http://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.16.2.zip"
+                },
+                "name": "ckeditor/fakeobjects",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "4.16.2"
+            },
+            "type": "package"
+        },
+        "ckeditor/link": {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "http://download.ckeditor.com/link/releases/link_4.16.2.zip"
+                },
+                "name": "ckeditor/link",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "4.16.2"
+            },
+            "type": "package"
+        },
         "ckeditor/templates": {
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://download.ckeditor.com/templates/releases/templates_4.15.1.zip"
+                    "url": "http://download.ckeditor.com/templates/releases/templates_4.16.2.zip"
                 },
                 "name": "ckeditor/templates",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.15.1"
+                "version": "4.16.2"
             },
             "type": "package"
         },
         "drupal": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        "drustack/leaflet-fullscreen": {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/drustack/Leaflet-Leaflet.fullscreen/archive/refs/heads/gh-pages.zip"
+                },
+                "name": "drustack/leaflet-fullscreen",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "dev-gh-pages"
+            },
+            "type": "package"
         }
     },
     "require": {
-        "ckeditor/templates": "4.15.1",
+        "ckeditor/fakeobjects": "4.16.2",
+        "ckeditor/link": "4.16.2",
+        "ckeditor/templates": "4.16.2",
         "composer/installers": "~1.9",
         "cweagans/composer-patches": "~1.7",
         "drupal/acl": "1.x-dev",
         "drupal/address": "1.x-dev",
         "drupal/admin_toolbar": "3.x-dev",
         "drupal/advagg": "4.x-dev",
+        "drupal/anchor_link": "~2.5",
+        "drupal/asset_injector": "2.x-dev",
         "drupal/authorization": "1.x-dev",
         "drupal/avatars": "~1.1",
+        "drupal/back_to_top": "~2.0.0",
         "drupal/better_exposed_filters": "5.x-dev",
         "drupal/blazy": "2.x-dev",
         "drupal/block_class": "1.x-dev",
         "drupal/block_content_permissions": "1.x-dev",
         "drupal/block_visibility_groups": "1.x-dev",
-        "drupal/bootstrap_barrio": "5.x-dev",
+        "drupal/bootstrap_barrio": "5.5.x-dev",
         "drupal/bootstrap_layouts": "5.x-dev",
         "drupal/bootstrap_paragraphs": "2.x-dev",
         "drupal/bootstrap_sass": "5.x-dev",
@@ -156,20 +274,25 @@
         "drupal/checklistapi": "~2.0",
         "drupal/ckeditor_templates": "~1.2",
         "drupal/ckeditor_templates_ui": "~1.3",
+        "drupal/clientside_validation": "3.0.x-dev",
         "drupal/codesnippet": "1.x-dev",
         "drupal/coffee": "1.x-dev",
+        "drupal/computed_field": "2.x-dev",
+        "drupal/conditional_fields": "4.x-dev",
         "drupal/config_inspector": "1.x-dev",
         "drupal/config_update": "~1.7",
         "drupal/content_access": "1.x-dev",
-        "drupal/core-composer-scaffold": "~9.2.0",
-        "drupal/core-project-message": "~9.2.0",
-        "drupal/core-recommended": "~9.2.0",
-        "drupal/core-vendor-hardening": "~9.2.0",
+        "drupal/core-composer-scaffold": "~9.3.0",
+        "drupal/core-project-message": "~9.3.0",
+        "drupal/core-recommended": "~9.3.0",
+        "drupal/core-vendor-hardening": "~9.3.0",
         "drupal/csv_serialization": "2.x-dev",
         "drupal/ctools": "3.x-dev",
         "drupal/default_content": "2.0.x-dev",
         "drupal/devel": "4.x-dev",
+        "drupal/devel_entity_updates": "~3.0",
         "drupal/diff": "~1.0",
+        "drupal/dropdown_language": "3.0.x-dev",
         "drupal/dropzonejs": "~2.5",
         "drupal/easy_breadcrumb": "1.x-dev",
         "drupal/editor_advanced_link": "~1.8",
@@ -179,21 +302,33 @@
         "drupal/entity_browser": "2.x-dev",
         "drupal/entity_clone": "1.x-dev",
         "drupal/entity_embed": "1.x-dev",
+        "drupal/entity_print": "~2.4",
+        "drupal/entity_usage": "2.x-dev",
         "drupal/entityqueue": "1.x-dev",
         "drupal/eu_cookie_compliance": "~1.9",
         "drupal/examples": "3.x-dev",
         "drupal/externalauth": "1.x-dev",
+        "drupal/facets": "1.x-dev",
+        "drupal/fakeobjects": "~1.1",
         "drupal/features": "3.x-dev",
         "drupal/feeds": "3.x-dev",
+        "drupal/feeds_ex": "1.x-dev",
+        "drupal/feeds_tamper": "2.x-dev",
         "drupal/field_formatter_class": "~1.4",
         "drupal/field_permissions": "1.x-dev",
+        "drupal/field_validation": "1.x-dev",
         "drupal/file_browser": "~1.3",
+        "drupal/file_delete": "1.x-dev",
+        "drupal/flood_control": "~2.2.2",
         "drupal/fontyourface": "~3.5",
-        "drupal/geofield": "~1.16",
-        "drupal/geofield_map": "~2.67",
+        "drupal/form_options_attributes": "2.0.x-dev",
+        "drupal/geocoder": "3.x-dev",
+        "drupal/geofield": "1.x-dev",
+        "drupal/geofield_map": "2.x-dev",
         "drupal/google_analytics": "~3.1",
         "drupal/group": "~1.2",
         "drupal/hcaptcha": "1.x-dev",
+        "drupal/hreflang": "~1.4",
         "drupal/image_effects": "3.x-dev",
         "drupal/imageapi_optimize": "4.x-dev",
         "drupal/imageapi_optimize_binaries": "1.x-dev",
@@ -202,9 +337,11 @@
         "drupal/layout_builder_restrictions": "~2.8",
         "drupal/layout_library": "1.x-dev",
         "drupal/ldap": "4.x-dev",
-        "drupal/leaflet": "~2.1.1",
+        "drupal/leaflet": "2.1.x-dev",
+        "drupal/leaflet_more_maps": "2.1.x-dev",
         "drupal/libraries": "3.x-dev",
         "drupal/link_attributes": "~1.11",
+        "drupal/linkit": "~6.0.0-beta3",
         "drupal/mailsystem": "~4.3",
         "drupal/matomo": "~1.10",
         "drupal/media_entity_browser": "2.x-dev",
@@ -216,25 +353,33 @@
         "drupal/migrate_upgrade": "~3.2",
         "drupal/mimemail": "1.x-dev",
         "drupal/module_filter": "3.x-dev",
+        "drupal/multiple_registration": "~3.0",
+        "drupal/office_hours": "1.x-dev",
         "drupal/paragraphs": "1.x-dev",
+        "drupal/password_policy": "3.x-dev",
         "drupal/pathauto": "~1.8",
         "drupal/php": "1.x-dev",
         "drupal/poll": "~1.4",
-        "drupal/profile": "1.x-dev",
+        "drupal/profile": "~1.2",
         "drupal/rabbit_hole": "1.x-dev",
         "drupal/rdfui": "1.x-dev",
         "drupal/recaptcha": "3.x-dev",
         "drupal/redirect": "~1.6",
         "drupal/restui": "~1.18",
         "drupal/rules": "3.x-dev",
+        "drupal/samlauth": "3.x-dev",
         "drupal/scheduler": "~1.3",
         "drupal/schema_metatag": "~2.1",
+        "drupal/scss_compiler": "1.x-dev",
         "drupal/search404": "~2.0",
         "drupal/search_api": "1.x-dev",
+        "drupal/search_api_autocomplete": "1.x-dev",
+        "drupal/search_api_location": "1.x-dev",
         "drupal/seckit": "2.x-dev",
         "drupal/securelogin": "~1.8",
         "drupal/security_review": "1.x-dev",
-        "drupal/select2": "~1.9",
+        "drupal/select2": "1.x-dev",
+        "drupal/sharedemail": "2.x-dev",
         "drupal/shield": "~1.4",
         "drupal/sitemap": "2.x-dev",
         "drupal/slick": "~2.2",
@@ -244,36 +389,57 @@
         "drupal/slick_paragraphs": "2.x-dev",
         "drupal/slick_views": "~2.3",
         "drupal/smtp": "~1.0",
-        "drupal/swiftmailer": "2.x-dev",
+        "drupal/styleguide": "2.x-dev",
+        "drupal/svg_image": "~1.15",
+        "drupal/symfony_mailer": "1.x-dev",
         "drupal/system_stream_wrapper": "~1.0",
+        "drupal/tamper": "1.x-dev",
         "drupal/taxonomy_menu": "3.x-dev",
+        "drupal/telephone_formatter": "~1.1",
+        "drupal/telephone_validation": "~2.3",
+        "drupal/text_resize": "1.x-dev",
         "drupal/tmgmt": "~1.11",
+        "drupal/toc_js": "2.0.x-dev",
         "drupal/token": "1.x-dev",
         "drupal/twig_tweak": "~3.0",
         "drupal/unlimited_number": "~2.0",
+        "drupal/vbo_export": "~3.2",
         "drupal/view_unpublished": "~1.0",
         "drupal/views_block_filter_block": "1.x-dev",
         "drupal/views_bootstrap": "~4.3",
+        "drupal/views_bulk_edit": "~2.6",
+        "drupal/views_bulk_operations": "~3.13",
         "drupal/views_data_export": "~1.0",
         "drupal/views_geojson": "1.x-dev",
         "drupal/views_googlenews": "1.x-dev",
+        "drupal/views_infinite_scroll": "~1.9",
         "drupal/views_templates": "1.x-dev",
         "drupal/viewsreference": "2.x-dev",
-        "drupal/webform": "6.x-dev",
+        "drupal/webform": "6.1.x-dev",
         "drupal/xmlsitemap": "1.x-dev",
         "drustack/composer-generate-metadata": "~2.0",
-        "drustack/drustack": "~9.2.0",
+        "drustack/drustack": "9.x-dev",
+        "drustack/leaflet-fullscreen": "dev-gh-pages",
+        "geocoder-php/nominatim-provider": "~5.5",
         "npm-asset/blazy": "~1.8",
         "npm-asset/bootstrap": "~5.0",
         "npm-asset/dropzone": "~5.9",
+        "npm-asset/firstandthird--toc": "~0.3",
+        "npm-asset/flag-icon-css": "~3.5",
         "npm-asset/fortawesome--fontawesome-free": "~5.15",
-        "npm-asset/popper.js": "~1.16",
+        "npm-asset/geoman-io--leaflet-geoman-free": "~2.11",
+        "npm-asset/jquery-ui-touch-punch": "~0.2",
+        "npm-asset/leaflet": "dev-master",
+        "npm-asset/leaflet-gesture-handling": "~1.2",
+        "npm-asset/leaflet.locatecontrol": "~0.76",
+        "npm-asset/leaflet.markercluster": "~1.5",
         "npm-asset/select2": "~4.0",
+        "npm-asset/select2-bootstrap-5-theme": "~1.2",
         "npm-asset/slick-carousel": "~1.8"
     },
     "require-dev": {
         "composer/composer": "~2.0.2",
-        "drupal/core-dev": "~9.2.0",
+        "drupal/core-dev": "~9.3.0",
         "drush/drush": "~10.3",
         "oomphinc/composer-installers-extender": "~2.0",
         "zaporylie/composer-drupal-optimizations": "~1.2"
