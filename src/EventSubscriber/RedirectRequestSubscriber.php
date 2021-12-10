@@ -165,6 +165,10 @@ class RedirectRequestSubscriber implements EventSubscriberInterface {
       ];
       $response = new TrustedRedirectResponse($url->setAbsolute()->toString(), $redirect->getStatusCode(), $headers);
       $response->addCacheableDependency($redirect);
+
+      // Invoke hook_redirect_response_alter().
+      $this->moduleHandler->alter('redirect_response', $response, $redirect);
+
       $event->setResponse($response);
     }
   }

@@ -30,6 +30,7 @@ function redirect_hook_info() {
     'redirect_update',
     'redirect_delete',
     'redirect_alter',
+    'redirect_response',
   ];
 
   return array_fill_keys($hooks, ['group' => 'redirect']);
