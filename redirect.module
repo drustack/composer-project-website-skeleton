@@ -182,7 +182,7 @@ function redirect_delete_by_path($path, $langcode = NULL, $match_subpaths_and_re
   $database = \Drupal::database();
   $query = $database->select('redirect');
   $query->addField('redirect', 'rid');
-  $query_or = new Condition('OR');
+  $query_or = $database->condition('OR');
   $query_or->condition('redirect_source__path', $database->escapeLike($path), 'LIKE');
   if ($match_subpaths_and_redirect) {
     $query_or->condition('redirect_source__path', $database->escapeLike($path . '/') . '%', 'LIKE');
