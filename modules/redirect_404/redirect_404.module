@@ -55,6 +55,10 @@ function redirect_404_form_redirect_settings_form_alter(&$form, FormStateInterfa
     $ignored_pages .= $path_to_ignore;
   }
 
+  // Replace '\r\n' with '\n' to keep consistency in tests.
+  // See: https://www.drupal.org/project/redirect/issues/3244924
+  $ignored_pages = str_replace("\r\n", "\n", $ignored_pages);
+
   $form['ignore_pages'] = [
     '#type' => 'textarea',
     '#title' => t('Pages to ignore'),
