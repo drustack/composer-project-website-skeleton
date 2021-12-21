@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0a37ccf4cfa7aa6d3f299a11d258e4db",
+    "content-hash": "0c139134bccc564eb74ee2709df36200",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1050,16 +1050,16 @@
         },
         {
             "name": "consolidation/site-alias",
-            "version": "3.1.1",
+            "version": "3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/site-alias.git",
-                "reference": "e824b57253d9174f4a500f87e6d0e1e497c2a50a"
+                "reference": "2d514a1b278a1c5f28df20df317631f9829a88f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/site-alias/zipball/e824b57253d9174f4a500f87e6d0e1e497c2a50a",
-                "reference": "e824b57253d9174f4a500f87e6d0e1e497c2a50a",
+                "url": "https://api.github.com/repos/consolidation/site-alias/zipball/2d514a1b278a1c5f28df20df317631f9829a88f2",
+                "reference": "2d514a1b278a1c5f28df20df317631f9829a88f2",
                 "shasum": ""
             },
             "require": {
@@ -1102,9 +1102,9 @@
             "description": "Manage alias records for local and remote sites.",
             "support": {
                 "issues": "https://github.com/consolidation/site-alias/issues",
-                "source": "https://github.com/consolidation/site-alias/tree/3.1.1"
+                "source": "https://github.com/consolidation/site-alias/tree/3.1.2"
             },
-            "time": "2021-09-21T00:30:48+00:00"
+            "time": "2021-10-29T17:58:54+00:00"
         },
         {
             "name": "consolidation/site-process",
@@ -2871,7 +2871,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/blazy.git",
-                "reference": "d88f71949d94dcdd4ff1991a9cedbec9b2546e8d"
+                "reference": "d505f92e4bda7c6303268da1577cba3d8a204c55"
             },
             "require": {
                 "drupal/core": "^9.2 || ^10"
@@ -2885,8 +2885,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.5+14-dev",
-                    "datestamp": "1639660582",
+                    "version": "8.x-2.5+21-dev",
+                    "datestamp": "1640062822",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -5649,7 +5649,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity.git",
-                "reference": "e74400440e0f1ccb5604d05561763e04018512ea"
+                "reference": "2344c651621820750992d841e8fa1c57fcaebc9d"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9"
@@ -5660,8 +5660,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.2+5-dev",
-                    "datestamp": "1635842317",
+                    "version": "8.x-1.2+9-dev",
+                    "datestamp": "1639982054",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -5703,9 +5703,10 @@
                 }
             ],
             "description": "Provides expanded entity APIs, which will be moved to Drupal core one day.",
-            "homepage": "http://drupal.org/project/entity",
+            "homepage": "https://www.drupal.org/project/entity",
             "support": {
-                "source": "https://git.drupalcode.org/project/entity"
+                "source": "https://git.drupalcode.org/project/entity",
+                "issues": "https://www.drupal.org/project/issues/entity"
             }
         },
         {
@@ -7174,32 +7175,36 @@
         },
         {
             "name": "drupal/file_mdm",
-            "version": "2.1.0",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/file_mdm.git",
-                "reference": "8.x-2.1"
+                "reference": "8.x-2.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/file_mdm-8.x-2.1.zip",
-                "reference": "8.x-2.1",
-                "shasum": "5c3d75622299ebddc0e8456bb08bb371da8771bd"
+                "url": "https://ftp.drupal.org/files/projects/file_mdm-8.x-2.2.zip",
+                "reference": "8.x-2.2",
+                "shasum": "94b6e1dd7e5c605c149cf146fe1ee539850cb19f"
             },
             "require": {
-                "drupal/core": "^8.8 || ^9",
+                "drupal/core": "^9.2",
                 "lsolesen/pel": "^0.9.8",
-                "phenx/php-font-lib": "^0.5.2",
-                "php": ">=7"
+                "phenx/php-font-lib": "^0.5.3"
+            },
+            "conflict": {
+                "lsolesen/pel": "0.9.10"
             },
             "require-dev": {
-                "drupal/image_effects": "*"
+                "drupal/image_effects": "*",
+                "drupal/vendor_stream_wrapper": "^2",
+                "fileeye/linuxlibertine-fonts": "^5.3"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.1",
-                    "datestamp": "1586801064",
+                    "version": "8.x-2.2",
+                    "datestamp": "1639755159",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7224,16 +7229,16 @@
         },
         {
             "name": "drupal/file_mdm_exif",
-            "version": "2.1.0",
+            "version": "2.2.0",
             "require": {
-                "drupal/core": "^8.8 || ^9",
+                "drupal/core": "^9.2",
                 "drupal/file_mdm": "*"
             },
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.1",
-                    "datestamp": "1586801064",
+                    "version": "8.x-2.2",
+                    "datestamp": "1639755159",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7258,16 +7263,16 @@
         },
         {
             "name": "drupal/file_mdm_font",
-            "version": "2.1.0",
+            "version": "2.2.0",
             "require": {
-                "drupal/core": "^8.8 || ^9",
+                "drupal/core": "^9.2",
                 "drupal/file_mdm": "*"
             },
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.1",
-                    "datestamp": "1586801064",
+                    "version": "8.x-2.2",
+                    "datestamp": "1639755159",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7651,7 +7656,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/geofield_map.git",
-                "reference": "c1032bb21362bdaa15e7ee70c62f3a342684e47c"
+                "reference": "27be21bf6d77d4299121d5d91a10e9ca7e50f0d1"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
@@ -7663,8 +7668,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.69+3-dev",
-                    "datestamp": "1626553678",
+                    "version": "8.x-2.70+3-dev",
+                    "datestamp": "1639780934",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -7856,17 +7861,17 @@
         },
         {
             "name": "drupal/hreflang",
-            "version": "1.5.0",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/hreflang.git",
-                "reference": "8.x-1.5"
+                "reference": "8.x-1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/hreflang-8.x-1.5.zip",
-                "reference": "8.x-1.5",
-                "shasum": "415286f25a1cab7c735de08e9245a95df297c188"
+                "url": "https://ftp.drupal.org/files/projects/hreflang-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "d7b9673fc5379dc8242fd6a307299de9ed88e481"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -7874,8 +7879,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.5",
-                    "datestamp": "1635985562",
+                    "version": "8.x-1.6",
+                    "datestamp": "1639686850",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7892,7 +7897,7 @@
                     "homepage": "https://www.drupal.org/user/12302"
                 }
             ],
-            "description": "Adds hreflang link elements to the header of each page.",
+            "description": "Automatically adds an hreflang tag to the page for each enabled language.",
             "homepage": "https://www.drupal.org/project/hreflang",
             "support": {
                 "source": "https://git.drupalcode.org/project/hreflang"
@@ -7904,12 +7909,12 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/image_effects.git",
-                "reference": "60e41ea6f1f370f26b0110201e85f8c89deb95f5"
+                "reference": "05613968ef3e071fc884b437b5fcf1f3d9ff8c3e"
             },
             "require": {
                 "drupal/core": "^9.2",
-                "drupal/file_mdm_exif": "^2",
-                "drupal/file_mdm_font": "^2"
+                "drupal/file_mdm_exif": "^2.2",
+                "drupal/file_mdm_font": "^2.2"
             },
             "conflict": {
                 "drupal/imagemagick": "<3",
@@ -7927,8 +7932,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.1+13-dev",
-                    "datestamp": "1638716370",
+                    "version": "8.x-3.1+15-dev",
+                    "datestamp": "1639922922",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -8787,7 +8792,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/leaflet.git",
-                "reference": "6548685a853fa5fe06e0129257daa9b00dcc9b4f"
+                "reference": "eae259f686666d28209ef11e9f64e7b3c69ba865"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
@@ -8799,8 +8804,8 @@
                     "dev-2.1.x": "2.1.x-dev"
                 },
                 "drupal": {
-                    "version": "2.1.15+3-dev",
-                    "datestamp": "1638304762",
+                    "version": "2.1.16+4-dev",
+                    "datestamp": "1640019071",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -8856,7 +8861,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/leaflet_more_maps.git",
-                "reference": "fdf1cf57cc26d132a29a5d2c2d95d14660da01ca"
+                "reference": "a68b7731c53e15c91743fdbb2940a70203c59ebb"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
@@ -8872,8 +8877,8 @@
                     "dev-8.x-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "2.1.1+1-dev",
-                    "datestamp": "1617409013",
+                    "version": "2.1.2+1-dev",
+                    "datestamp": "1626737349",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -9404,21 +9409,22 @@
         },
         {
             "name": "drupal/metatag",
-            "version": "1.16.0",
+            "version": "1.17.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/metatag.git",
-                "reference": "8.x-1.16"
+                "reference": "8.x-1.17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/metatag-8.x-1.16.zip",
-                "reference": "8.x-1.16",
-                "shasum": "1c0028f4ff4583dc6601035657dd631c351b290c"
+                "url": "https://ftp.drupal.org/files/projects/metatag-8.x-1.17.zip",
+                "reference": "8.x-1.17",
+                "shasum": "92c87953d884d0e99a861a63c565fc573a20ba8d"
             },
             "require": {
-                "drupal/core": "^8 || ^9",
-                "drupal/token": "^1.0"
+                "drupal/core": "^9",
+                "drupal/token": "^1.0",
+                "php": ">=7.0"
             },
             "require-dev": {
                 "drupal/devel": "^4.0",
@@ -9426,13 +9432,14 @@
                 "drupal/metatag_open_graph": "*",
                 "drupal/page_manager": "4.x-dev",
                 "drupal/panelizer": "4.x-dev",
-                "drupal/redirect": "1.x-dev"
+                "drupal/redirect": "1.x-dev",
+                "mpyw/phpunit-patch-serializable-comparison": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.16",
-                    "datestamp": "1615820867",
+                    "version": "8.x-1.17",
+                    "datestamp": "1640019321",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9836,7 +9843,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/office_hours.git",
-                "reference": "b26a68bca2ee7d8c7b3a08339a419df02295e7f8"
+                "reference": "c706a60d08f0bf920bf053eb0f839d0a42e432df"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -9847,8 +9854,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.5+20-dev",
-                    "datestamp": "1632230508",
+                    "version": "8.x-1.5+23-dev",
+                    "datestamp": "1640014280",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -10600,10 +10607,10 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/rules.git",
-                "reference": "f2cd2adf2cea2d8aff967c1b1fdf3b8c6cd618a1"
+                "reference": "e00891aaddc22119346a09709000bddff4267e4d"
             },
             "require": {
-                "drupal/core": "^9",
+                "drupal/core": "^9 || ^10",
                 "drupal/typed_data": "^1.0"
             },
             "type": "drupal-module",
@@ -10613,7 +10620,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.x-dev",
-                    "datestamp": "1639439482",
+                    "datestamp": "1639989888",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -11127,6 +11134,105 @@
                 "source": "http://git.drupal.org/project/search_api_location.git",
                 "issues": "https://www.drupal.org/project/issues/search_api_location",
                 "irc": "irc://irc.freenode.org/drupal-search-api"
+            }
+        },
+        {
+            "name": "drupal/search_api_solr",
+            "version": "dev-4.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/search_api_solr.git",
+                "reference": "b521bd200965251fe1298fa4bacd3c35c81c4aaf"
+            },
+            "require": {
+                "composer/semver": "^1.0|^3.0",
+                "consolidation/annotated-command": "^2.12|^4.1",
+                "drupal/core": "^9.2 || ^10.0",
+                "drupal/search_api": "~1.21",
+                "ext-dom": "*",
+                "ext-json": "*",
+                "ext-simplexml": "*",
+                "laminas/laminas-stdlib": "^3.2",
+                "maennchen/zipstream-php": "^1.2|^2.0",
+                "php": "^7.3|^8.0",
+                "solarium/solarium": "^6.1.6"
+            },
+            "conflict": {
+                "drupal/acquia_search_solr": "<1.0.0-beta8",
+                "drupal/search_api_solr_multilingual": "<3.0.0"
+            },
+            "require-dev": {
+                "drupal/devel": "^4.0",
+                "drupal/facets": "1.x-dev",
+                "drupal/geofield": "1.x-dev",
+                "drupal/search_api_autocomplete": "*",
+                "drupal/search_api_location": "1.x-dev",
+                "drupal/search_api_spellcheck": "3.x-dev",
+                "monolog/monolog": "^1.25",
+                "phayes/geophp": "^1.2"
+            },
+            "suggest": {
+                "drupal/facets": "Provides facetted search.",
+                "drupal/search_api_autocomplete": "Provides auto complete for search boxes.",
+                "drupal/search_api_location": "Provides location searches.",
+                "drupal/search_api_solr_nlp": "Highly recommended! Provides Solr field types based on natural language processing (NLP).",
+                "drupal/search_api_spellcheck": "Provides spell checking and 'Did You Mean?'."
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-4.x": "4.x-dev"
+                },
+                "drupal": {
+                    "version": "4.x-dev",
+                    "datestamp": "1639661756",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9 || ^10"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Markus Kalkbrenner",
+                    "homepage": "https://www.drupal.org/u/mkalkbrenner"
+                },
+                {
+                    "name": "Other contributors",
+                    "homepage": "https://www.drupal.org/node/982682/committers"
+                },
+                {
+                    "name": "amateescu",
+                    "homepage": "https://www.drupal.org/user/729614"
+                },
+                {
+                    "name": "cspitzlay",
+                    "homepage": "https://www.drupal.org/user/419305"
+                },
+                {
+                    "name": "drunken monkey",
+                    "homepage": "https://www.drupal.org/user/205582"
+                },
+                {
+                    "name": "mkalkbrenner",
+                    "homepage": "https://www.drupal.org/user/124705"
+                }
+            ],
+            "description": "Offers an implementation of the Search API that uses an Apache Solr server for indexing content.",
+            "homepage": "https://www.drupal.org/project/search_api_solr",
+            "support": {
+                "source": "http://git.drupal.org/project/search_api_solr.git",
+                "issues": "https://www.drupal.org/project/issues/search_api_solr",
+                "chat": "https://drupalchat.me/channel/search"
             }
         },
         {
@@ -11708,10 +11814,10 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/slick_extras.git",
-                "reference": "21ae6a06c4e5ac310fa61903e57e7a3d9d86d504"
+                "reference": "524c1df919d881ea678e2721f9b95d5f471e1f2d"
             },
             "require": {
-                "drupal/core": "^8 || ^9",
+                "drupal/core": "^8 || ^9 || ^10",
                 "drupal/slick": "*"
             },
             "require-dev": {
@@ -11754,10 +11860,10 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/slick_paragraphs.git",
-                "reference": "98bb015d2a8009fc5817b4f47358b24fb685fa7c"
+                "reference": "ba0299260ff9a58f3b8ce82e146741d54357bba0"
             },
             "require": {
-                "drupal/core": "^8 || ^9",
+                "drupal/core": "^8 || ^9 || ^10",
                 "drupal/paragraphs": "~1.0",
                 "drupal/slick": "~2.0"
             },
@@ -12120,7 +12226,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/symfony_mailer.git",
-                "reference": "1515aa259454d80eaea548e448703e0e24e5fc0f"
+                "reference": "5c471c1cc873ee3d56c5c483ea26939a0a4d9ca4"
             },
             "require": {
                 "drupal/core": "^9.1",
@@ -12135,7 +12241,7 @@
                 },
                 "drupal": {
                     "version": "1.x-dev",
-                    "datestamp": "1639647656",
+                    "datestamp": "1639653293",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -13574,7 +13680,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "e751df0455e39739a6b8b75c88d6a5996695f441"
+                "reference": "b8ee8a0f2659d707d5eb4270a031f802d3b5d3e2"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9"
@@ -13626,7 +13732,7 @@
                 },
                 "drupal": {
                     "version": "6.1.x-dev",
-                    "datestamp": "1639427115",
+                    "datestamp": "1639883200",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -15550,27 +15656,26 @@
         },
         {
             "name": "lsolesen/pel",
-            "version": "0.9.10",
+            "version": "0.9.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pel/pel.git",
-                "reference": "04ecb8a29e4b1628414193b0df9294232a44f8a9"
+                "reference": "95dd3c16161c588f0ac66662c1870a073159e5ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pel/pel/zipball/04ecb8a29e4b1628414193b0df9294232a44f8a9",
-                "reference": "04ecb8a29e4b1628414193b0df9294232a44f8a9",
+                "url": "https://api.github.com/repos/pel/pel/zipball/95dd3c16161c588f0ac66662c1870a073159e5ec",
+                "reference": "95dd3c16161c588f0ac66662c1870a073159e5ec",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.1.0"
+                "php": ">=5.4.0"
             },
             "require-dev": {
-                "ext-exif": "*",
                 "ext-gd": "*",
-                "php-coveralls/php-coveralls": ">2.4",
-                "squizlabs/php_codesniffer": ">3.5",
-                "symfony/phpunit-bridge": "^4 || ^5"
+                "phpunit/phpunit": ">=4.8.36 <8",
+                "satooshi/php-coveralls": "1.0.*",
+                "squizlabs/php_codesniffer": "^3.0.0"
             },
             "type": "library",
             "autoload": {
@@ -15604,9 +15709,9 @@
             ],
             "support": {
                 "issues": "https://github.com/pel/pel/issues",
-                "source": "https://github.com/pel/pel/tree/0.9.10"
+                "source": "https://github.com/pel/pel/tree/0.9.9"
             },
-            "time": "2021-01-01T22:15:50+00:00"
+            "time": "2020-11-07T06:04:18+00:00"
         },
         {
             "name": "maennchen/zipstream-php",
@@ -16225,12 +16330,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Leaflet/Leaflet.git",
-                "reference": "27f49645efd83f55b8184c084b814ec3e306f640"
+                "reference": "911f578a608d71e0d67341fbfe871215ab30941d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Leaflet/Leaflet/zipball/27f49645efd83f55b8184c084b814ec3e306f640",
-                "reference": "27f49645efd83f55b8184c084b814ec3e306f640"
+                "url": "https://api.github.com/repos/Leaflet/Leaflet/zipball/911f578a608d71e0d67341fbfe871215ab30941d",
+                "reference": "911f578a608d71e0d67341fbfe871215ab30941d"
             },
             "type": "npm-asset",
             "license": [
@@ -16278,13 +16383,13 @@
             "version": "4.17.21-patch1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:lodash/lodash.git",
-                "reference": "11eb817cdfacf56c02d7005cbe520ffbeb0fe59a"
+                "url": "https://github.com/lodash/lodash.git",
+                "reference": "c6e281b878b315c7a10d90f9c2af4cdb112d9625"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lodash/lodash/zipball/11eb817cdfacf56c02d7005cbe520ffbeb0fe59a",
-                "reference": "11eb817cdfacf56c02d7005cbe520ffbeb0fe59a"
+                "url": "https://api.github.com/repos/lodash/lodash/zipball/c6e281b878b315c7a10d90f9c2af4cdb112d9625",
+                "reference": "c6e281b878b315c7a10d90f9c2af4cdb112d9625"
             },
             "type": "npm-asset",
             "license": [
@@ -16898,20 +17003,23 @@
         },
         {
             "name": "phenx/php-font-lib",
-            "version": "0.5.2",
+            "version": "0.5.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/PhenX/php-font-lib.git",
-                "reference": "ca6ad461f032145fff5971b5985e5af9e7fa88d8"
+                "url": "https://github.com/dompdf/php-font-lib.git",
+                "reference": "dd448ad1ce34c63d09baccd05415e361300c35b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PhenX/php-font-lib/zipball/ca6ad461f032145fff5971b5985e5af9e7fa88d8",
-                "reference": "ca6ad461f032145fff5971b5985e5af9e7fa88d8",
+                "url": "https://api.github.com/repos/dompdf/php-font-lib/zipball/dd448ad1ce34c63d09baccd05415e361300c35b4",
+                "reference": "dd448ad1ce34c63d09baccd05415e361300c35b4",
                 "shasum": ""
             },
+            "require": {
+                "ext-mbstring": "*"
+            },
             "require-dev": {
-                "phpunit/phpunit": "^4.8.35 || ^5 || ^6 || ^7"
+                "symfony/phpunit-bridge": "^3 || ^4 || ^5"
             },
             "type": "library",
             "autoload": {
@@ -16932,10 +17040,10 @@
             "description": "A library to read, parse, export and make subsets of different types of font files.",
             "homepage": "https://github.com/PhenX/php-font-lib",
             "support": {
-                "issues": "https://github.com/PhenX/php-font-lib/issues",
-                "source": "https://github.com/PhenX/php-font-lib/tree/0.5.2"
+                "issues": "https://github.com/dompdf/php-font-lib/issues",
+                "source": "https://github.com/dompdf/php-font-lib/tree/0.5.4"
             },
-            "time": "2020-03-08T15:31:32+00:00"
+            "time": "2021-12-17T19:44:54+00:00"
         },
         {
             "name": "phenx/php-svg-lib",
@@ -18352,6 +18460,69 @@
                 }
             ],
             "time": "2021-06-02T22:15:26+00:00"
+        },
+        {
+            "name": "solarium/solarium",
+            "version": "6.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/solariumphp/solarium.git",
+                "reference": "65f3e338d1d76d94dee1bdc1dbb199d0262f4822"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/solariumphp/solarium/zipball/65f3e338d1d76d94dee1bdc1dbb199d0262f4822",
+                "reference": "65f3e338d1d76d94dee1bdc1dbb199d0262f4822",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.3 || ^8.0",
+                "psr/event-dispatcher": "^1.0",
+                "psr/http-client": "^1.0",
+                "psr/http-factory": "^1.0",
+                "symfony/event-dispatcher-contracts": "^1.0 || ^2.0"
+            },
+            "require-dev": {
+                "escapestudios/symfony2-coding-standard": "^3.11",
+                "guzzlehttp/guzzle": "^7.2",
+                "nyholm/psr7": "^1.2",
+                "php-http/guzzle7-adapter": "^0.1",
+                "phpstan/extension-installer": "^1.0",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-phpunit": "^0.12",
+                "phpunit/phpunit": "^9.5",
+                "roave/security-advisories": "dev-master",
+                "symfony/event-dispatcher": "^4.3 || ^5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Solarium\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "See GitHub contributors",
+                    "homepage": "https://github.com/solariumphp/solarium/contributors"
+                }
+            ],
+            "description": "PHP Solr client",
+            "homepage": "http://www.solarium-project.org",
+            "keywords": [
+                "php",
+                "search",
+                "solr"
+            ],
+            "support": {
+                "issues": "https://github.com/solariumphp/solarium/issues",
+                "source": "https://github.com/solariumphp/solarium/tree/6.1.6"
+            },
+            "time": "2021-11-08T13:17:20+00:00"
         },
         {
             "name": "stack/builder",
@@ -25281,6 +25452,7 @@
         "drupal/search_api": 20,
         "drupal/search_api_autocomplete": 20,
         "drupal/search_api_location": 20,
+        "drupal/search_api_solr": 20,
         "drupal/seckit": 20,
         "drupal/security_review": 20,
         "drupal/select2": 20,

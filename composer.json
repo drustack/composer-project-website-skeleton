@@ -107,6 +107,9 @@
             "drupal/file_delete": {
                 "https://drupal.org/node/3111440": "https://drupal.org/files/issues/2021-10-01/3111440-bulk-action-13.patch"
             },
+            "drupal/geofield": {
+                "https://drupal.org/node/3254909": "https://git.drupalcode.org/project/geofield/-/merge_requests/9.diff"
+            },
             "drupal/leaflet": {
                 "https://drupal.org/node/2942651": "https://git.drupalcode.org/project/leaflet/-/merge_requests/5.diff"
             },
@@ -141,7 +144,7 @@
             "drupal/search_api_location": {
                 "https://drupal.org/node/3048597": "https://git.drupalcode.org/project/search_api_location/-/merge_requests/1.patch",
                 "https://drupal.org/node/3070519": "https://drupal.org/files/issues/2021-09-10/require_location_resolve_option-3070519-5.patch",
-                "https://drupal.org/node/3117980": "https://drupal.org/files/issues/2020-03-05/geofield_prox_plugins-3117980-3.patch",
+                "https://drupal.org/node/3117980": "https://git.drupalcode.org/project/search_api_location/-/merge_requests/2.diff",
                 "https://drupal.org/node/3159697": "https://drupal.org/files/issues/2020-07-16/3159697-8.patch",
                 "https://drupal.org/node/3198410": "https://drupal.org/files/issues/2021-02-14/3198410_2.patch"
             },
@@ -370,6 +373,7 @@
         "drupal/search_api": "1.x-dev",
         "drupal/search_api_autocomplete": "1.x-dev",
         "drupal/search_api_location": "1.x-dev",
+        "drupal/search_api_solr": "4.x-dev",
         "drupal/seckit": "2.x-dev",
         "drupal/securelogin": "~1.8",
         "drupal/security_review": "1.x-dev",
