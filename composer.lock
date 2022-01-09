@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "abaf3ae7e057820f753e5ec0595259fa",
+    "content-hash": "1b0dca2164781b60e37b9829c979789f",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2835,7 +2835,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/blazy.git",
-                "reference": "3990fa77ff4d663577ae33b872aae1c5a3dd94e2"
+                "reference": "0e9d96bcab32c4de360991a430bb067354d74a32"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9 || ^10"
@@ -2849,8 +2849,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.5+38-dev",
-                    "datestamp": "1641485485",
+                    "version": "8.x-2.5+41-dev",
+                    "datestamp": "1641573081",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -7813,17 +7813,17 @@
         },
         {
             "name": "drupal/hreflang",
-            "version": "1.6.0",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/hreflang.git",
-                "reference": "8.x-1.6"
+                "reference": "8.x-1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/hreflang-8.x-1.6.zip",
-                "reference": "8.x-1.6",
-                "shasum": "d7b9673fc5379dc8242fd6a307299de9ed88e481"
+                "url": "https://ftp.drupal.org/files/projects/hreflang-8.x-1.7.zip",
+                "reference": "8.x-1.7",
+                "shasum": "fcf72e6e805e486249ac9656a5c6ac7fb0aa693b"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -7831,8 +7831,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.6",
-                    "datestamp": "1639686850",
+                    "version": "8.x-1.7",
+                    "datestamp": "1641592674",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -11046,7 +11046,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/search_api_solr.git",
-                "reference": "027f9f6a6246d46c15f406c65beed9b939197e92"
+                "reference": "6e32e6bc9ef9337288a918f2d78f2713519e2bc0"
             },
             "require": {
                 "composer/semver": "^1.0|^3.0",
@@ -11089,7 +11089,7 @@
                 },
                 "drupal": {
                     "version": "4.x-dev",
-                    "datestamp": "1640863791",
+                    "datestamp": "1641558511",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -13580,11 +13580,11 @@
         },
         {
             "name": "drupal/webform",
-            "version": "dev-6.1.x",
+            "version": "dev-6.2.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "3cff1c9d8f7ba3b9a1550878a527faad7264f1b4"
+                "reference": "819f56173f1c49db37d3329298624c686cd7523c"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9"
@@ -13594,15 +13594,15 @@
                 "drupal/bootstrap": "~3.0",
                 "drupal/captcha": "~1.0",
                 "drupal/chosen": "~3.0",
-                "drupal/clientside_validation": "*",
+                "drupal/clientside_validation": "~3.0",
                 "drupal/clientside_validation_jquery": "*",
-                "drupal/devel": "*",
+                "drupal/devel": "~3.0",
                 "drupal/entity": "~1.0",
-                "drupal/entity_print": "*",
+                "drupal/entity_print": "~2.0",
                 "drupal/gnode": "*",
-                "drupal/group": "*",
+                "drupal/group": "1.0",
                 "drupal/jquery_ui": "~1.0",
-                "drupal/jquery_ui_checkboxradio": "*",
+                "drupal/jquery_ui_checkboxradio": "~1.0",
                 "drupal/jquery_ui_datepicker": "~1.0",
                 "drupal/lingotek": "~3.0",
                 "drupal/mailsystem": "~4.0",
@@ -13611,7 +13611,7 @@
                 "drupal/smtp": "~1.0",
                 "drupal/styleguide": "~1.0",
                 "drupal/telephone_validation": "~2.0",
-                "drupal/token": "*",
+                "drupal/token": "~1.0",
                 "drupal/variationcache": "~1.0",
                 "drupal/webform_access": "*",
                 "drupal/webform_attachment": "*",
@@ -13632,11 +13632,11 @@
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-6.1.x": "6.1.x-dev"
+                    "dev-6.2.x": "6.2.x-dev"
                 },
                 "drupal": {
-                    "version": "6.1.x-dev",
-                    "datestamp": "1641484808",
+                    "version": "6.2.x-dev",
+                    "datestamp": "1641485023",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -13981,12 +13981,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drustack/composer-drupal-profile-drustack.git",
-                "reference": "5e9656a09f428f2d60d26cb2517734c4d472ed69"
+                "reference": "03c68fc7809d4aef50ae4db0bfe4f01327810fde"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drustack/composer-drupal-profile-drustack/zipball/5e9656a09f428f2d60d26cb2517734c4d472ed69",
-                "reference": "5e9656a09f428f2d60d26cb2517734c4d472ed69",
+                "url": "https://api.github.com/repos/drustack/composer-drupal-profile-drustack/zipball/03c68fc7809d4aef50ae4db0bfe4f01327810fde",
+                "reference": "03c68fc7809d4aef50ae4db0bfe4f01327810fde",
                 "shasum": ""
             },
             "require": {
@@ -14016,7 +14016,7 @@
                 "issues": "https://github.com/drustack/composer-drupal-profile-drustack/issues",
                 "source": "https://github.com/drustack/composer-drupal-profile-drustack/tree/develop"
             },
-            "time": "2021-12-09T16:41:39+00:00"
+            "time": "2022-01-09T10:48:44+00:00"
         },
         {
             "name": "drustack/leaflet.fullscreen",
@@ -21772,16 +21772,16 @@
         },
         {
             "name": "willdurand/geocoder",
-            "version": "4.4.0",
+            "version": "4.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/geocoder-php/php-common.git",
-                "reference": "3e86f5b10ab0cef1cf03f979fe8e34b6476daff0"
+                "reference": "b9a27dfbc06d012f4ff52b890fe52789e4978769"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/geocoder-php/php-common/zipball/3e86f5b10ab0cef1cf03f979fe8e34b6476daff0",
-                "reference": "3e86f5b10ab0cef1cf03f979fe8e34b6476daff0",
+                "url": "https://api.github.com/repos/geocoder-php/php-common/zipball/b9a27dfbc06d012f4ff52b890fe52789e4978769",
+                "reference": "b9a27dfbc06d012f4ff52b890fe52789e4978769",
                 "shasum": ""
             },
             "require": {
@@ -21828,9 +21828,9 @@
                 "geoip"
             ],
             "support": {
-                "source": "https://github.com/geocoder-php/php-common/tree/4.4.0"
+                "source": "https://github.com/geocoder-php/php-common/tree/4.5.0"
             },
-            "time": "2020-12-21T09:30:01+00:00"
+            "time": "2022-01-07T14:44:30+00:00"
         }
     ],
     "packages-dev": [
