@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b45159b8e23546d785e54f58ee678e94",
+    "content-hash": "aa27ee50eaa20fb34284be4f5ad223ae",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2835,7 +2835,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/blazy.git",
-                "reference": "0e9d96bcab32c4de360991a430bb067354d74a32"
+                "reference": "24463805f0b8adbea90feee7a4ae2367776e8ca7"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9 || ^10"
@@ -2849,8 +2849,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.5+41-dev",
-                    "datestamp": "1641573081",
+                    "version": "8.x-2.5+44-dev",
+                    "datestamp": "1642128270",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -6442,30 +6442,29 @@
         },
         {
             "name": "drupal/facets",
-            "version": "dev-1.x",
+            "version": "dev-2.0.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/facets.git",
-                "reference": "520baf605bae76182d56f6c6b468a2aacf04b4b0"
+                "reference": "706651401e12f69a31c2b1a06814f6bc1559224a"
             },
             "require": {
-                "drupal/core": "^8.8 || ^9"
+                "drupal/core": "^9.2 || ^10.0"
             },
             "conflict": {
                 "drupal/search_api": "<1.14"
             },
             "require-dev": {
-                "drupal/search_api": "~1.14"
+                "drupal/search_api": "~1.21"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-1.x": "1.x-dev",
-                    "dev-8.x-1.x": "1.x-dev"
+                    "dev-2.0.x": "2.0.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.8+4-dev",
-                    "datestamp": "1636704920",
+                    "version": "2.0.0+7-dev",
+                    "datestamp": "1641921998",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -9747,7 +9746,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/office_hours.git",
-                "reference": "3b89daea459e74a61e7fde7e9e21e502de0e0a57"
+                "reference": "942ab31d521c788e82983860ce95e026243b61b8"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -9758,8 +9757,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.5+32-dev",
-                    "datestamp": "1641508869",
+                    "version": "8.x-1.5+37-dev",
+                    "datestamp": "1642091371",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
