@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d89893dd43d09778ef1ad54fbaabf06f",
+    "content-hash": "4bcaa314d2f7d940f65e9fc2261519cc",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6647,7 +6647,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/feeds.git",
-                "reference": "8be6b6b3157f273abc62f06488739af48ffa6616"
+                "reference": "6f1c3b2fee3288f8ad5e31dee0d861511e6624ae"
             },
             "require": {
                 "drupal/core": "^8.9 || ^9"
@@ -6663,7 +6663,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.x-dev",
-                    "datestamp": "1643554230",
+                    "datestamp": "1643897621",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -12128,11 +12128,12 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/symfony_mailer.git",
-                "reference": "7d1c733a8ec001992a76cdbf05e2d186d4d602c8"
+                "reference": "9ba17278dae130d5f322807dd0592c18646c2205"
             },
             "require": {
                 "drupal/core": "^9.1",
                 "html2text/html2text": "^4.0.1",
+                "php": ">=7.4",
                 "symfony/mailer": "^5.3.0",
                 "tijsverkoyen/css-to-inline-styles": "^2.2"
             },
@@ -12143,7 +12144,7 @@
                 },
                 "drupal": {
                     "version": "1.x-dev",
-                    "datestamp": "1642518165",
+                    "datestamp": "1642518351",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
