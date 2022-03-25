@@ -256,15 +256,17 @@ class GlobalRedirectTest extends BrowserTestBase {
 
     // Enable URL language detection and selection.
     $edit = ['language_interface[enabled][language-url]' => '1'];
-    $this->drupalPostForm('admin/config/regional/language/detection', $edit, t('Save settings'));
+    $this->drupalGet('admin/config/regional/language/detection');
+    $this->submitForm($edit, 'Save settings');
 
     // Set page content type to use multilingual support.
     $edit = [
       'language_configuration[language_alterable]' => TRUE,
       'language_configuration[content_translation]' => TRUE,
     ];
-    $this->drupalPostForm('admin/structure/types/manage/page', $edit, t('Save content type'));
-    $this->assertRaw(t('The content type %type has been updated.', ['%type' => 'Page']));
+    $this->drupalGet('admin/structure/types/manage/page');
+    $this->submitForm($edit, 'Save content type');
+    $this->assertSession()->responseContains('The content type <em class="placeholder">Page</em> has been updated.');
 
     $spanish_node = $this->drupalCreateNode([
       'type' => 'page',
