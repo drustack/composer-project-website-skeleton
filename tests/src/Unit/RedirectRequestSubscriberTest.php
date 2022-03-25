@@ -12,8 +12,8 @@ use PHPUnit_Framework_MockObject_MockObject;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\HttpKernel\Event\GetResponseEvent;
-use Symfony\Component\HttpKernel\Event\PostResponseEvent;
+use Symfony\Component\HttpKernel\Event\RequestEvent;
+use Symfony\Component\HttpKernel\Event\TerminateEvent;
 use Symfony\Component\HttpKernel\HttpKernelInterface;
 
 /**
@@ -125,7 +125,7 @@ class RedirectRequestSubscriberTest extends UnitTestCase {
    * @param bool $retain_query
    *   Flag if to retain the query through the redirect.
    *
-   * @return \Symfony\Component\HttpKernel\Event\GetResponseEvent
+   * @return \Symfony\Component\HttpKernel\Event\RequestEvent
    *   THe response event.
    */
   protected function callOnKernelRequestCheckRedirect($redirect, $request_uri, $request_query, $retain_query) {
@@ -252,7 +252,7 @@ class RedirectRequestSubscriberTest extends UnitTestCase {
    * @param array $headers
    *   Headers to be set into the response.
    *
-   * @return \Symfony\Component\HttpKernel\Event\PostResponseEvent
+   * @return \Symfony\Component\HttpKernel\Event\TerminateEvent
    *   The post response event object.
    */
   protected function getPostResponseEvent($headers = []) {
@@ -264,7 +264,7 @@ class RedirectRequestSubscriberTest extends UnitTestCase {
 
     $response = new Response('', 301, $headers);
 
-    return new PostResponseEvent($http_kernel, $request, $response);
+    return new TerminateEvent($http_kernel, $request, $response);
   }
 
   /**
@@ -273,14 +273,14 @@ class RedirectRequestSubscriberTest extends UnitTestCase {
    * @param $path_info
    * @param $query_string
    *
-   * @return GetResponseEvent
+   * @return RequestEvent
    */
   protected function getGetResponseEventStub($path_info, $query_string) {
     $request = Request::create($path_info . '?' . $query_string, 'GET', [], [], [], ['SCRIPT_NAME' => 'index.php']);
 
     $http_kernel = $this->getMockBuilder('\Symfony\Component\HttpKernel\HttpKernelInterface')
       ->getMock();
-    return new GetResponseEvent($http_kernel, $request, HttpKernelInterface::MASTER_REQUEST);
+    return new RequestEvent($http_kernel, $request, HttpKernelInterface::MASTER_REQUEST);
   }
 
   /**

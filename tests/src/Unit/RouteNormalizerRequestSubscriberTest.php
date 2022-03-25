@@ -4,7 +4,7 @@ namespace Drupal\Tests\redirect\Unit;
 
 use Drupal\Tests\UnitTestCase;
 use Drupal\redirect\EventSubscriber\RouteNormalizerRequestSubscriber;
-use Symfony\Component\HttpKernel\Event\GetResponseEvent;
+use Symfony\Component\HttpKernel\Event\RequestEvent;
 use Symfony\Component\HttpKernel\HttpKernelInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Drupal\Core\DependencyInjection\ContainerBuilder;
@@ -209,7 +209,7 @@ class RouteNormalizerRequestSubscriberTest extends UnitTestCase {
    * @param bool $set_request_attribute
    *   If true, the request attribute '_disable_route_normalizer' will be set.
    *
-   * @return \Symfony\Component\HttpKernel\Event\GetResponseEvent
+   * @return \Symfony\Component\HttpKernel\Event\RequestEvent
    */
   protected function getGetResponseEventStub($path_info, $query_string, $request_type = HttpKernelInterface::MASTER_REQUEST, $set_request_attribute = FALSE) {
     $request = Request::create($path_info . '?' . $query_string, 'GET', [], [], [], ['SCRIPT_NAME' => 'index.php', 'SCRIPT_FILENAME' => 'index.php']);
@@ -220,7 +220,7 @@ class RouteNormalizerRequestSubscriberTest extends UnitTestCase {
 
     $http_kernel = $this->getMockBuilder('\Symfony\Component\HttpKernel\HttpKernelInterface')
       ->getMock();
-    return new GetResponseEvent($http_kernel, $request, $request_type);
+    return new RequestEvent($http_kernel, $request, $request_type);
   }
 
 }

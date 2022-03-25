@@ -10,7 +10,7 @@ use Drupal\redirect_domain\EventSubscriber\DomainRedirectRequestSubscriber;
 use Drupal\Tests\UnitTestCase;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpKernel\Event\GetResponseEvent;
+use Symfony\Component\HttpKernel\Event\RequestEvent;
 use Symfony\Component\HttpKernel\HttpKernelInterface;
 
 /**
@@ -128,7 +128,7 @@ class DomainRedirectRequestSubscriberTest extends UnitTestCase {
    * @param $query_string
    *   The query string in the url.
    *
-   * @return GetResponseEvent
+   * @return RequestEvent
    *   The response for the request.
    */
   protected function getGetResponseEventStub($path_info, $query_string) {
@@ -136,7 +136,7 @@ class DomainRedirectRequestSubscriberTest extends UnitTestCase {
 
     $http_kernel = $this->getMockBuilder(HttpKernelInterface::class)
       ->getMock();
-    return new GetResponseEvent($http_kernel, $request, HttpKernelInterface::MASTER_REQUEST);
+    return new RequestEvent($http_kernel, $request, HttpKernelInterface::MASTER_REQUEST);
   }
 
   /**
