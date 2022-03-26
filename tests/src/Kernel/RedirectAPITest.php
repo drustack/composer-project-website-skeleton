@@ -27,12 +27,12 @@ class RedirectAPITest extends KernelTestBase {
    *
    * @var array
    */
-  public static $modules = ['redirect', 'link', 'field', 'system', 'user', 'language', 'views', 'path_alias'];
+  protected static $modules = ['redirect', 'link', 'field', 'system', 'user', 'language', 'views', 'path_alias'];
 
   /**
    * {@inheritdoc}
    */
-  public function setUp() {
+  public function setUp(): void {
     parent::setUp();
 
     $this->installEntitySchema('redirect');

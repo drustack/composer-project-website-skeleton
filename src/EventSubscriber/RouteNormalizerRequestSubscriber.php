@@ -86,7 +86,7 @@ class RouteNormalizerRequestSubscriber implements EventSubscriberInterface {
    */
   public function onKernelRequestRedirect(RequestEvent $event) {
 
-    if (!$this->config->get('route_normalizer_enabled') || !$event->isMasterRequest()) {
+    if (!$this->config->get('route_normalizer_enabled') || !$event->isMainRequest()) {
       return;
     }
 

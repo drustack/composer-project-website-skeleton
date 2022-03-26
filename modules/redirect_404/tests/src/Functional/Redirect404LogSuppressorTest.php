@@ -16,7 +16,7 @@ class Redirect404LogSuppressorTest extends Redirect404TestBase {
    *
    * @var array
    */
-  public static $modules = ['dblog'];
+  protected static $modules = ['dblog'];
 
   /**
    * A user with some relevant administrative permissions.
@@ -35,7 +35,7 @@ class Redirect404LogSuppressorTest extends Redirect404TestBase {
   /**
    * {@inheritdoc}
    */
-  public function setUp() {
+  public function setUp(): void {
     parent::setUp();
 
     // Create users with specific permissions.

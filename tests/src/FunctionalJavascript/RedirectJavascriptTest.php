@@ -30,7 +30,7 @@ class RedirectJavascriptTest extends WebDriverTestBase {
   /**
    * {@inheritdoc}
    */
-  public static $modules = ['redirect', 'node', 'path', 'dblog', 'views', 'taxonomy'];
+  protected static $modules = ['redirect', 'node', 'path', 'dblog', 'views', 'taxonomy'];
 
   /**
    * {@inheritdoc}
@@ -40,7 +40,7 @@ class RedirectJavascriptTest extends WebDriverTestBase {
   /**
    * {@inheritdoc}
    */
-  protected function setUp() {
+  protected function setUp(): void {
     parent::setUp();
 
     $this->drupalCreateContentType(['type' => 'article', 'name' => 'Article']);

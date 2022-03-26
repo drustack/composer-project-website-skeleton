@@ -24,7 +24,7 @@ class GlobalRedirectTest extends BrowserTestBase {
    *
    * @var array
    */
-  public static $modules = [
+  protected static $modules = [
     'path',
     'node',
     'redirect',
@@ -88,7 +88,7 @@ class GlobalRedirectTest extends BrowserTestBase {
   /**
    * {@inheritdoc}
    */
-  protected function setUp() {
+  protected function setUp(): void {
     parent::setUp();
 
     $this->config = $this->config('redirect.settings');

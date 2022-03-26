@@ -30,7 +30,7 @@ class RedirectNodeFormTest extends BrowserTestBase {
    *
    * @var array
    */
-  public static $modules = ['node', 'redirect'];
+  protected static $modules = ['node', 'redirect'];
 
   /**
    * {@inheritdoc}
@@ -40,7 +40,7 @@ class RedirectNodeFormTest extends BrowserTestBase {
   /**
    * {@inheritdoc}
    */
-  protected function setUp() {
+  protected function setUp(): void {
     parent::setUp();
 
     // Create Basic page node type.

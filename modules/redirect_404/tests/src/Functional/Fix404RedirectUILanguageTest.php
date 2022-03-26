@@ -25,7 +25,7 @@ class Fix404RedirectUILanguageTest extends Redirect404TestBase {
    *
    * @var array
    */
-  public static $modules = ['language'];
+  protected static $modules = ['language'];
 
   /**
    * Admin user's permissions for this test.
@@ -45,7 +45,7 @@ class Fix404RedirectUILanguageTest extends Redirect404TestBase {
   /**
    * {@inheritdoc}
    */
-  public function setUp() {
+  public function setUp(): void {
     parent::setUp();
 
     // Enable some languages for this test.

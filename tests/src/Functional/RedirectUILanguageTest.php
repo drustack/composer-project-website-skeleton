@@ -17,12 +17,12 @@ class RedirectUILanguageTest extends RedirectUITest {
   /**
    * {@inheritdoc}
    */
-  public static $modules = ['redirect', 'node', 'path', 'dblog', 'views', 'taxonomy', 'language', 'content_translation'];
+  protected static $modules = ['redirect', 'node', 'path', 'dblog', 'views', 'taxonomy', 'language', 'content_translation'];
 
   /**
    * {@inheritdoc}
    */
-  protected function setUp() {
+  protected function setUp(): void {
     parent::setUp();
 
     $language = ConfigurableLanguage::createFromLangcode('de');
