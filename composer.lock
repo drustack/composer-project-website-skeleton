@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f714b79ccfbe69d9edd7a95a6b2a49ef",
+    "content-hash": "e458319279e646244593914d43329295",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -11596,17 +11596,11 @@
         },
         {
             "name": "drupal/slick",
-            "version": "2.6.0",
+            "version": "dev-2.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/slick.git",
-                "reference": "8.x-2.6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/slick-8.x-2.6.zip",
-                "reference": "8.x-2.6",
-                "shasum": "2e4fa5612899c3aabb86f76ccab76bd6a50b21f2"
+                "reference": "175faa0ff0c776d1df0ddd57adf5a5ca628b9620"
             },
             "require": {
                 "drupal/blazy": "~2.0",
@@ -11614,12 +11608,15 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
                 "drupal": {
-                    "version": "8.x-2.6",
-                    "datestamp": "1645369537",
+                    "version": "8.x-2.6+1-dev",
+                    "datestamp": "1648090618",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -25770,6 +25767,7 @@
         "drupal/select2": 20,
         "drupal/sharedemail": 20,
         "drupal/sitemap": 20,
+        "drupal/slick": 20,
         "drupal/slick_extras": 20,
         "drupal/slick_paragraphs": 20,
         "drupal/styleguide": 20,
