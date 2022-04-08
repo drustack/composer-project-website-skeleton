@@ -574,22 +574,22 @@
         },
         {
             "name": "consolidation/annotated-command",
-            "version": "4.5.3",
+            "version": "4.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/annotated-command.git",
-                "reference": "1941a743e63993288e09d0686a4cb7ed47813213"
+                "reference": "93398c3166d9026ab93219ce23b2092b4d7b7904"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/1941a743e63993288e09d0686a4cb7ed47813213",
-                "reference": "1941a743e63993288e09d0686a4cb7ed47813213",
+                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/93398c3166d9026ab93219ce23b2092b4d7b7904",
+                "reference": "93398c3166d9026ab93219ce23b2092b4d7b7904",
                 "shasum": ""
             },
             "require": {
                 "consolidation/output-formatters": "^4.1.1",
                 "php": ">=7.1.3",
-                "psr/log": "^1|^2",
+                "psr/log": "^1|^2|^3",
                 "symfony/console": "^4.4.8|^5|^6",
                 "symfony/event-dispatcher": "^4.4.8|^5|^6",
                 "symfony/finder": "^4.4.8|^5|^6"
@@ -603,7 +603,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "5.x-dev"
+                    "dev-main": "4.x-dev"
                 }
             },
             "autoload": {
@@ -624,9 +624,9 @@
             "description": "Initialize Symfony Console commands from annotated command class methods.",
             "support": {
                 "issues": "https://github.com/consolidation/annotated-command/issues",
-                "source": "https://github.com/consolidation/annotated-command/tree/4.5.3"
+                "source": "https://github.com/consolidation/annotated-command/tree/4.5.4"
             },
-            "time": "2022-04-02T00:17:53+00:00"
+            "time": "2022-04-05T17:58:10+00:00"
         },
         {
             "name": "consolidation/config",
@@ -2839,7 +2839,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/blazy.git",
-                "reference": "9e012b21f297f2bcf94e52303d7008328fe975eb"
+                "reference": "669d29a01cc8a5dd846f26e7ab5573ac86b32085"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9 || ^10"
@@ -2853,8 +2853,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.9+21-dev",
-                    "datestamp": "1648994212",
+                    "version": "8.x-2.10-beta1+3-dev",
+                    "datestamp": "1649338349",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -6499,7 +6499,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/facets.git",
-                "reference": "c3110f5b6dc6b7f9a9e296288259983a7dc05ed0"
+                "reference": "09925ee5f3e610757b0d168959bf56d9e0cc2b55"
             },
             "require": {
                 "drupal/core": "^9.2 || ^10.0"
@@ -6508,7 +6508,13 @@
                 "drupal/search_api": "<1.14"
             },
             "require-dev": {
+                "drupal/jquery_ui_slider": "~1.1",
+                "drupal/jquery_ui_touch_punch": "~1.0",
                 "drupal/search_api": "~1.21"
+            },
+            "suggest": {
+                "drupal/jquery_ui_slider": "Required for the 'Facets Range Widget' module to work",
+                "drupal/jquery_ui_touch_punch": "Required for the 'Facets Range Widget' module to work"
             },
             "type": "drupal-module",
             "extra": {
@@ -6516,8 +6522,8 @@
                     "dev-2.0.x": "2.0.x-dev"
                 },
                 "drupal": {
-                    "version": "2.0.1+29-dev",
-                    "datestamp": "1647942128",
+                    "version": "2.0.1+33-dev",
+                    "datestamp": "1649067428",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -9798,7 +9804,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/office_hours.git",
-                "reference": "e1447351244518bde92266f767ab94269bcece0c"
+                "reference": "95020a0721377bc1b3f89d5c392eebc97e4f73a3"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -9809,8 +9815,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.5+76-dev",
-                    "datestamp": "1647014153",
+                    "version": "8.x-1.6+4-dev",
+                    "datestamp": "1649319382",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -11107,7 +11113,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/search_api_solr.git",
-                "reference": "6990668509a4f0b77bc6f7e657e56487dcd456b0"
+                "reference": "4bda466d0350013afa7248ffc3ee201e6cf46f43"
             },
             "require": {
                 "composer/semver": "^1.0|^3.0",
@@ -11151,7 +11157,7 @@
                 },
                 "drupal": {
                     "version": "4.x-dev",
-                    "datestamp": "1645805068",
+                    "datestamp": "1649090544",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -11541,7 +11547,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/sitemap.git",
-                "reference": "e72b95587bd04c08b4a6f1934178c10584b815af"
+                "reference": "df92f602ef419ecd73634a5e362e16e54499ef97"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -11552,8 +11558,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0-beta3+2-dev",
-                    "datestamp": "1646943448",
+                    "version": "8.x-2.0-beta3+3-dev",
+                    "datestamp": "1646944386",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -12181,7 +12187,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/symfony_mailer.git",
-                "reference": "b00ae3dcdd9c2db6020fac5c9beb52ee1f5601df"
+                "reference": "4d230bb800449de80c9af7177f1fe83efd60f2ed"
             },
             "require": {
                 "drupal/core": "^9.1",
@@ -12196,7 +12202,7 @@
                 },
                 "drupal": {
                     "version": "1.x-dev",
-                    "datestamp": "1648974903",
+                    "datestamp": "1649348221",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -14697,16 +14703,16 @@
         },
         {
             "name": "giggsey/locale",
-            "version": "2.1",
+            "version": "2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/giggsey/Locale.git",
-                "reference": "8d324583b5899e6280a875c43bf1fc9658bc6962"
+                "reference": "9c1dca769253f6a3e81f9a5c167f53b6a54ab635"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/Locale/zipball/8d324583b5899e6280a875c43bf1fc9658bc6962",
-                "reference": "8d324583b5899e6280a875c43bf1fc9658bc6962",
+                "url": "https://api.github.com/repos/giggsey/Locale/zipball/9c1dca769253f6a3e81f9a5c167f53b6a54ab635",
+                "reference": "9c1dca769253f6a3e81f9a5c167f53b6a54ab635",
                 "shasum": ""
             },
             "require": {
@@ -14745,9 +14751,9 @@
             "description": "Locale functions required by libphonenumber-for-php",
             "support": {
                 "issues": "https://github.com/giggsey/Locale/issues",
-                "source": "https://github.com/giggsey/Locale/tree/2.1"
+                "source": "https://github.com/giggsey/Locale/tree/2.2"
             },
-            "time": "2021-11-04T19:12:22+00:00"
+            "time": "2022-04-06T07:33:59+00:00"
         },
         {
             "name": "google/recaptcha",
@@ -25794,5 +25800,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }
