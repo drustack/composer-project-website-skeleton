@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "15c9d2dd88df3248741df8e51ce7a315",
+    "content-hash": "02b148669fd6162be3e825ce7c4f70a4",
     "packages": [
         {
             "name": "arthurkushman/query-path",
@@ -2894,7 +2894,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/blazy.git",
-                "reference": "07b50100c4aa0addc007d4f4fb021832ecfb4f16"
+                "reference": "558d5e614ca08640cd4ad5a0b28eb6fd87caff5c"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9 || ^10"
@@ -2908,8 +2908,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.10-rc3+3-dev",
-                    "datestamp": "1650459850",
+                    "version": "8.x-2.10+2-dev",
+                    "datestamp": "1650806661",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -5017,7 +5017,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/devel.git",
-                "reference": "329dfb12f9384b6ebb2a3332eafdc2feea624a1a"
+                "reference": "03311e0b4f55b735d9c04c80dc0fa0a62f5c5648"
             },
             "require": {
                 "doctrine/common": "^2.7",
@@ -5040,7 +5040,7 @@
                 },
                 "drupal": {
                     "version": "4.x-dev",
-                    "datestamp": "1644432608",
+                    "datestamp": "1650884169",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -5787,7 +5787,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity_browser.git",
-                "reference": "b7ee6578fd3b4b6e972d4d98d9669d0fa4daa523"
+                "reference": "6e053a9c669bda4c2d2453b1b585d51f9471981f"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9"
@@ -5807,8 +5807,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.5+2-dev",
-                    "datestamp": "1614629373",
+                    "version": "8.x-2.6+7-dev",
+                    "datestamp": "1650567969",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -6761,7 +6761,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/feeds.git",
-                "reference": "7a64deec8c3f9d6ef265cb20b19aebee32da38ff"
+                "reference": "44af3e03092f41a7a90ecf54878f10b946cdb2b7"
             },
             "require": {
                 "drupal/core": "^8.9 || ^9"
@@ -6777,7 +6777,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.x-dev",
-                    "datestamp": "1649945077",
+                    "datestamp": "1650621784",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -7206,7 +7206,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/file_delete.git",
-                "reference": "87aa75402ca49d9b3bd8076fe9a45000c1919610"
+                "reference": "154aef29df1f7140f1b0d71fa7dcd47557ebef51"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -7220,8 +7220,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-rc1+1-dev",
-                    "datestamp": "1581544973",
+                    "version": "8.x-1.0+4-dev",
+                    "datestamp": "1650489652",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -9493,25 +9493,24 @@
         },
         {
             "name": "drupal/migrate_plus",
-            "version": "5.2.0",
+            "version": "5.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/migrate_plus.git",
-                "reference": "8.x-5.2"
+                "reference": "8.x-5.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/migrate_plus-8.x-5.2.zip",
-                "reference": "8.x-5.2",
-                "shasum": "03ae34c362ccfacc4ae95b58469b25522e0ffb68"
+                "url": "https://ftp.drupal.org/files/projects/migrate_plus-8.x-5.3.zip",
+                "reference": "8.x-5.3",
+                "shasum": "3cf6dde235d7604ee49be2986812c0ee5e2982f6"
             },
             "require": {
                 "drupal/core": "^9.1"
             },
             "require-dev": {
                 "drupal/migrate_example_advanced_setup": "*",
-                "drupal/migrate_example_setup": "*",
-                "drush/drush": "^10"
+                "drupal/migrate_example_setup": "*"
             },
             "suggest": {
                 "ext-soap": "*",
@@ -9520,16 +9519,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-5.2",
-                    "datestamp": "1641478565",
+                    "version": "8.x-5.3",
+                    "datestamp": "1650658156",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
-                    }
-                },
-                "drush": {
-                    "services": {
-                        "drush.services.yml": "^9 || ^10"
                     }
                 }
             },
@@ -9921,7 +9915,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/paragraphs.git",
-                "reference": "80e4c5bfbfbf27d4cb59a228c0011ce81496ba76"
+                "reference": "6a75a6148bc31ffc5662c9a8130d32ec16aaaf6f"
             },
             "require": {
                 "drupal/core": "^9.2",
@@ -9949,8 +9943,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.13+6-dev",
-                    "datestamp": "1647882357",
+                    "version": "8.x-1.13+11-dev",
+                    "datestamp": "1650520402",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -10058,17 +10052,17 @@
         },
         {
             "name": "drupal/pathauto",
-            "version": "1.9.0",
+            "version": "1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/pathauto.git",
-                "reference": "8.x-1.9"
+                "reference": "8.x-1.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.9.zip",
-                "reference": "8.x-1.9",
-                "shasum": "f075ebff595c9b8b62333d65ad29020330e0ea9d"
+                "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.10.zip",
+                "reference": "8.x-1.10",
+                "shasum": "f49d5fbcd7a2c1b4de1da07194fe01d9012237ec"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
@@ -10081,8 +10075,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.9",
-                    "datestamp": "1644822949",
+                    "version": "8.x-1.10",
+                    "datestamp": "1650806739",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -11171,7 +11165,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/search_api_solr.git",
-                "reference": "4bda466d0350013afa7248ffc3ee201e6cf46f43"
+                "reference": "2c6342c709c78b056c94f761db8f11694cf8e6f7"
             },
             "require": {
                 "composer/semver": "^1.0|^3.0",
@@ -11215,7 +11209,7 @@
                 },
                 "drupal": {
                     "version": "4.x-dev",
-                    "datestamp": "1649090544",
+                    "datestamp": "1650640574",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -11664,7 +11658,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/slick.git",
-                "reference": "175faa0ff0c776d1df0ddd57adf5a5ca628b9620"
+                "reference": "b9a1b175bd906ed81c6e17a198c3f49ce6ca1409"
             },
             "require": {
                 "drupal/blazy": "~2.0",
@@ -11676,8 +11670,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.6+1-dev",
-                    "datestamp": "1648090618",
+                    "version": "8.x-2.6+7-dev",
+                    "datestamp": "1650570335",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -12245,7 +12239,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/symfony_mailer.git",
-                "reference": "3ac9554658820d114f4923f6dae437b6ade6c714"
+                "reference": "2ce0fa3f3ee8df064d20cc8091ae8fcfb92c1b78"
             },
             "require": {
                 "drupal/core": "^9.1",
@@ -12260,7 +12254,7 @@
                 },
                 "drupal": {
                     "version": "1.x-dev",
-                    "datestamp": "1650449710",
+                    "datestamp": "1650824070",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -14087,16 +14081,16 @@
         },
         {
             "name": "drustack/composer-generate-metadata",
-            "version": "2.0.0-beta2",
+            "version": "2.0.0-beta3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drustack/composer-project-composer-generate-metadata.git",
-                "reference": "e7eef81c488b1d3e588961f7c2806ef9fce4450c"
+                "reference": "84f95ae31dcfd1d66ebb1425eee61eef5a32c188"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drustack/composer-project-composer-generate-metadata/zipball/e7eef81c488b1d3e588961f7c2806ef9fce4450c",
-                "reference": "e7eef81c488b1d3e588961f7c2806ef9fce4450c",
+                "url": "https://api.github.com/repos/drustack/composer-project-composer-generate-metadata/zipball/84f95ae31dcfd1d66ebb1425eee61eef5a32c188",
+                "reference": "84f95ae31dcfd1d66ebb1425eee61eef5a32c188",
                 "shasum": ""
             },
             "require": {
@@ -14138,9 +14132,9 @@
             ],
             "support": {
                 "issues": "https://github.com/drustack/composer-project-composer-generate-metadata/issues",
-                "source": "https://github.com/drustack/composer-project-composer-generate-metadata/tree/2.0.0-beta2"
+                "source": "https://github.com/drustack/composer-project-composer-generate-metadata/tree/2.0.0-beta3"
             },
-            "time": "2021-10-06T02:19:06+00:00"
+            "time": "2022-04-23T03:19:25+00:00"
         },
         {
             "name": "drustack/drustack",
@@ -17706,16 +17700,16 @@
         },
         {
             "name": "phpoffice/phpspreadsheet",
-            "version": "1.22.0",
+            "version": "1.23.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
-                "reference": "3a9e29b4f386a08a151a33578e80ef1747037a48"
+                "reference": "21e4cf62699eebf007db28775f7d1554e612ed9e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/3a9e29b4f386a08a151a33578e80ef1747037a48",
-                "reference": "3a9e29b4f386a08a151a33578e80ef1747037a48",
+                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/21e4cf62699eebf007db28775f7d1554e612ed9e",
+                "reference": "21e4cf62699eebf007db28775f7d1554e612ed9e",
                 "shasum": ""
             },
             "require": {
@@ -17739,7 +17733,7 @@
                 "php": "^7.3 || ^8.0",
                 "psr/http-client": "^1.0",
                 "psr/http-factory": "^1.0",
-                "psr/simple-cache": "^1.0"
+                "psr/simple-cache": "^1.0 || ^2.0"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
@@ -17804,9 +17798,9 @@
             ],
             "support": {
                 "issues": "https://github.com/PHPOffice/PhpSpreadsheet/issues",
-                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/1.22.0"
+                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/1.23.0"
             },
-            "time": "2022-02-18T12:57:07+00:00"
+            "time": "2022-04-24T13:53:10+00:00"
         },
         {
             "name": "psr/cache",
@@ -18167,25 +18161,25 @@
         },
         {
             "name": "psr/simple-cache",
-            "version": "1.0.1",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/simple-cache.git",
-                "reference": "408d5eafb83c57f6365a3ca330ff23aa4a5fa39b"
+                "reference": "8707bf3cea6f710bf6ef05491234e3ab06f6432a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
-                "reference": "408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
+                "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/8707bf3cea6f710bf6ef05491234e3ab06f6432a",
+                "reference": "8707bf3cea6f710bf6ef05491234e3ab06f6432a",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": ">=8.0.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "2.0.x-dev"
                 }
             },
             "autoload": {
@@ -18200,7 +18194,7 @@
             "authors": [
                 {
                     "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
+                    "homepage": "https://www.php-fig.org/"
                 }
             ],
             "description": "Common interfaces for simple caching",
@@ -18212,9 +18206,9 @@
                 "simple-cache"
             ],
             "support": {
-                "source": "https://github.com/php-fig/simple-cache/tree/master"
+                "source": "https://github.com/php-fig/simple-cache/tree/2.0.0"
             },
-            "time": "2017-10-23T01:57:42+00:00"
+            "time": "2021-10-29T13:22:09+00:00"
         },
         {
             "name": "psy/psysh",
@@ -23503,16 +23497,16 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "1.4.4",
+            "version": "1.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpdoc-parser.git",
-                "reference": "d8e9fd97ca11f2f24fc1aafbcfb1f78bce762267"
+                "reference": "129a63b3bc7caeb593c224c41f420675e63cfefc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/d8e9fd97ca11f2f24fc1aafbcfb1f78bce762267",
-                "reference": "d8e9fd97ca11f2f24fc1aafbcfb1f78bce762267",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/129a63b3bc7caeb593c224c41f420675e63cfefc",
+                "reference": "129a63b3bc7caeb593c224c41f420675e63cfefc",
                 "shasum": ""
             },
             "require": {
@@ -23541,9 +23535,9 @@
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
             "support": {
                 "issues": "https://github.com/phpstan/phpdoc-parser/issues",
-                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.4.4"
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.4.5"
             },
-            "time": "2022-04-14T12:24:06+00:00"
+            "time": "2022-04-22T11:11:01+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
