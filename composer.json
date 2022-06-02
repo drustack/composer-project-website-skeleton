@@ -61,6 +61,9 @@
             "npm-asset"
         ],
         "patches": {
+            "drupal/feeds": {
+                "https://drupal.org/node/3189557": "https://www.drupal.org/files/issues/2022-04-06/langcode_target-3189557-12.patch"
+            },
             "drupal/advagg": {
                 "https://drupal.org/node/3258389": "https://git.drupalcode.org/project/advagg/-/merge_requests/6.diff"
             },
