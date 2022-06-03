@@ -61,9 +61,6 @@
             "npm-asset"
         ],
         "patches": {
-            "drupal/feeds": {
-                "https://drupal.org/node/3189557": "https://www.drupal.org/files/issues/2022-04-06/langcode_target-3189557-12.patch"
-            },
             "drupal/advagg": {
                 "https://drupal.org/node/3258389": "https://git.drupalcode.org/project/advagg/-/merge_requests/6.diff"
             },
@@ -119,6 +116,9 @@
             "drupal/features": {
                 "https://drupal.org/node/3034826": "https://drupal.org/files/issues/2021-03-31/features-call_to_member_function_on_null-3034826-5.patch"
             },
+            "drupal/feeds": {
+                "https://drupal.org/node/3189557": "https://drupal.org/files/issues/2022-04-06/langcode_target-3189557-12.patch"
+            },
             "drupal/file_delete": {
                 "https://drupal.org/node/3111440": "https://drupal.org/files/issues/2021-10-01/3111440-bulk-action-13.patch"
             },
@@ -147,6 +147,9 @@
             },
             "drupal/recaptcha": {
                 "https://drupal.org/node/2852269": "https://drupal.org/files/issues/2019-04-29/recaptcha-nocaptcha-2852269-180.patch"
+            },
+            "drupal/redirect": {
+                "https://drupal.org/node/3046873": "https://drupal.org/files/issues/2019-04-09/redirect-feeds-target-3046873-1-8.patch"
             },
             "drupal/scss_compiler": {
                 "https://drupal.org/node/3211016": "https://git.drupalcode.org/project/scss_compiler/-/merge_requests/2.diff"
@@ -290,7 +293,6 @@
         "drupal/captcha": "1.x-dev",
         "drupal/cdn": "~3.5",
         "drupal/checklistapi": "~2.0",
-        "drupal/translatable_menu_link_uri": "~2.0.0",
         "drupal/ckeditor_templates": "~1.2",
         "drupal/ckeditor_templates_ui": "~1.3",
         "drupal/clamav": "2.x-dev",
@@ -383,7 +385,7 @@
         "drupal/rabbit_hole": "1.x-dev",
         "drupal/rdfui": "1.x-dev",
         "drupal/recaptcha": "3.x-dev",
-        "drupal/redirect": "~1.6",
+        "drupal/redirect": "1.x-dev",
         "drupal/restui": "~1.18",
         "drupal/rules": "3.x-dev",
         "drupal/samlauth": "3.x-dev",
@@ -421,6 +423,7 @@
         "drupal/tmgmt": "~1.11",
         "drupal/toc_js": "2.0.x-dev",
         "drupal/token": "1.x-dev",
+        "drupal/translatable_menu_link_uri": "~2.0.0",
         "drupal/twig-twig": "~2.0.1",
         "drupal/twig_tweak": "~3.0",
         "drupal/unlimited_number": "~2.0",
