@@ -1,0 +1,91 @@
+{
+    "authors": [
+        {
+            "email": "hswong3i@pantarei-design.com",
+            "name": "Wong Hoi Sing Edison"
+        }
+    ],
+    "config": {
+        "discard-changes": true,
+        "preferred-install": {
+            "drustack/*": "source"
+        },
+        "process-timeout": 3600,
+        "secure-http": false,
+        "vendor-dir": "vendor"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "description": "The 'DruStack Standard Edition' distribution",
+    "extra": {
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "./"
+            }
+        },
+        "installer-paths": {
+            "core": [
+                "type:drupal-core"
+            ],
+            "drush/Commands/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "libraries/{$name}": [
+                "type:bower-asset",
+                "type:drupal-library",
+                "type:npm-asset"
+            ],
+            "modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "profiles/{$name}": [
+                "type:drupal-profile"
+            ],
+            "themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "themes/custom/{$name}": [
+                "type:drupal-custom-theme"
+            ]
+        },
+        "installer-types": [
+            "bower-asset",
+            "npm-asset"
+        ]
+    },
+    "homepage": "https://drupal.org/project/drustack",
+    "license": "GPL-2.0-or-later",
+    "minimum-stability": "dev",
+    "name": "drustack/website-skeleton",
+    "prefer-stable": true,
+    "repositories": {
+        "asset": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    },
+    "require": {
+        "composer/installers": "~1.9",
+        "cweagans/composer-patches": "~1.7",
+        "drupal/core-composer-scaffold": "~9.4.0",
+        "drupal/core-project-message": "~9.4.0",
+        "drupal/core-recommended": "~9.4.0",
+        "drupal/core-vendor-hardening": "~9.4.0"
+    },
+    "require-dev": {
+        "composer/composer": "~2.0",
+        "drupal/core-dev": "~9.4.0",
+        "drush/drush": "~11.0",
+        "oomphinc/composer-installers-extender": "~2.0",
+        "zaporylie/composer-drupal-optimizations": "~1.2"
+    },
+    "type": "project"
+}
