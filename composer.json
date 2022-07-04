@@ -12,7 +12,18 @@
         },
         "process-timeout": 3600,
         "secure-http": false,
-        "vendor-dir": "vendor"
+        "vendor-dir": "vendor",
+        "allow-plugins": {
+            "composer/installers": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "cweagans/composer-patches": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true,
+            "drupal/core-vendor-hardening": true,
+            "drustack/composer-generate-metadata": true,
+            "oomphinc/composer-installers-extender": true,
+            "zaporylie/composer-drupal-optimizations": true
+        }
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -66,9 +77,6 @@
             },
             "drupal/asset_injector": {
                 "https://drupal.org/node/3181674": "https://drupal.org/files/issues/2021-10-29/add-library-info-tag-3181674-7.patch"
-            },
-            "drupal/avatars": {
-                "https://drupal.org/node/3162722": "https://drupal.org/files/issues/2020-08-01/3162722-5.patch"
             },
             "drupal/block_class": {
                 "https://drupal.org/node/2998114": "https://drupal.org/files/issues/2021-05-07/2998114-81.patch"
