@@ -6,24 +6,24 @@
         }
     ],
     "config": {
-        "discard-changes": true,
-        "preferred-install": {
-            "drustack/*": "source"
-        },
-        "process-timeout": 3600,
-        "secure-http": false,
-        "vendor-dir": "vendor",
         "allow-plugins": {
             "composer/installers": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true,
             "cweagans/composer-patches": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
             "drupal/core-vendor-hardening": true,
             "drustack/composer-generate-metadata": true,
             "oomphinc/composer-installers-extender": true,
             "zaporylie/composer-drupal-optimizations": true
-        }
+        },
+        "discard-changes": true,
+        "preferred-install": {
+            "drustack/*": "source"
+        },
+        "process-timeout": 3600,
+        "secure-http": false,
+        "vendor-dir": "vendor"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -102,7 +102,7 @@
                 "https://drupal.org/node/2869592": "https://git.drupalcode.org/project/drupal/-/merge_requests/1517.diff",
                 "https://drupal.org/node/2896169": "https://git.drupalcode.org/project/drupal/-/merge_requests/1887.diff",
                 "https://drupal.org/node/2924653": "https://drupal.org/files/issues/2022-05-19/2924653-38.patch",
-                "https://drupal.org/node/2946333": "https://git.drupalcode.org/project/drupal/-/merge_requests/1504.diff",
+                "https://drupal.org/node/2946333": "https://drupal.org/files/issues/2022-04-17/2946333-9.3.x-271.patch",
                 "https://drupal.org/node/2985882": "https://git.drupalcode.org/project/drupal/-/merge_requests/1516.diff",
                 "https://drupal.org/node/3008924": "https://git.drupalcode.org/project/drupal/-/merge_requests/1505.diff",
                 "https://drupal.org/node/3015152": "https://git.drupalcode.org/project/drupal/-/merge_requests/1506.diff",
