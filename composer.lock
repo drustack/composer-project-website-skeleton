@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aa976e215fb06aa8aa21bf19526b6245",
+    "content-hash": "640431665c36094b2c093bc35182f8c4",
     "packages": [
         {
             "name": "arthurkushman/query-path",
@@ -13098,19 +13098,20 @@
         },
         {
             "name": "drupal/vbo_export",
-            "version": "4.0.0",
+            "version": "4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/vbo_export.git",
-                "reference": "4.0.0"
+                "reference": "4.1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/vbo_export-4.0.0.zip",
-                "reference": "4.0.0",
-                "shasum": "9950139058d6c4027f5121c57daa327a8068943b"
+                "url": "https://ftp.drupal.org/files/projects/vbo_export-4.1.0.zip",
+                "reference": "4.1.0",
+                "shasum": "2ab6ec316a46c672dcebdc93d3454879f1e6185f"
             },
             "require": {
+                "dompdf/dompdf": "^1.0 | ^2.0",
                 "drupal/core": "^9.3",
                 "drupal/views_bulk_operations": ">=3.5",
                 "phpoffice/phpspreadsheet": "^1.6"
@@ -13118,8 +13119,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "4.0.0",
-                    "datestamp": "1648062124",
+                    "version": "4.1.0",
+                    "datestamp": "1657614733",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
