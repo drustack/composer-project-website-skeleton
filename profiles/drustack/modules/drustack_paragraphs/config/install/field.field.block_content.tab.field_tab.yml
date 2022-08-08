@@ -1,0 +1,48 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.tab
+    - field.storage.block_content.field_tab
+    - paragraphs.paragraphs_type.tab
+  module:
+    - entity_reference_revisions
+id: block_content.tab.field_tab
+field_name: field_tab
+entity_type: block_content
+bundle: tab
+label: Tab
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      tab: tab
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: -12
+        enabled: false
+      block:
+        weight: -15
+        enabled: false
+      carousel:
+        weight: -11
+        enabled: false
+      image:
+        weight: -16
+        enabled: false
+      tab:
+        weight: -10
+        enabled: true
+      text:
+        weight: -17
+        enabled: false
+      views:
+        weight: -14
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,50 @@
+<?php
+
+/**
+ * @file
+ * DruStack Tabs block module file.
+ */
+
+use \Drupal\block_content\BlockContentInterface;
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter() for block templates.
+ */
+function drustack_paragraphs_theme_suggestions_block_alter(array &$suggestions, array $variables) {
+    // Block suggestions for custom block bundles.
+    if (isset($variables['elements']['content']['#block_content']) && $variables['elements']['content']['#block_content'] instanceof BlockContentInterface) {
+        array_splice($suggestions, 1, 0, 'block__' . $variables['elements']['content']['#block_content']->bundle());
+    }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function drustack_paragraphs_theme($existing, $type, $theme, $path) {
+    return [
+        'block__accordion' => [
+            'base hook' => 'block',
+        ],
+        'paragraph__accordion' => [
+            'base hook' => 'paragraph',
+        ],
+        'block__carousel' => [
+            'base hook' => 'block',
+        ],
+        'paragraph__carousel' => [
+            'base hook' => 'paragraph',
+        ],
+        'block__modal' => [
+            'base hook' => 'block',
+        ],
+        'paragraph__modal' => [
+            'base hook' => 'paragraph',
+        ],
+        'block__tab' => [
+            'base hook' => 'block',
+        ],
+        'paragraph__tab' => [
+            'base hook' => 'paragraph',
+        ],
+    ];
+}

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.blog
+  module:
+    - content_translation
+    - node
+    - toolbar
+id: blogger
+label: Blogger
+weight: 2
+is_admin: null
+permissions:
+  - 'access toolbar'
+  - 'create blog content'
+  - 'delete blog revisions'
+  - 'delete own blog content'
+  - 'edit own blog content'
+  - 'revert blog revisions'
+  - 'translate blog node'
+  - 'view blog revisions'

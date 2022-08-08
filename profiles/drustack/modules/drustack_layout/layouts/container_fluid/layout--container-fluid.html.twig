@@ -1,0 +1,9 @@
+{% if content %}
+    <div {{ attributes }}>
+        <div class="container-fluid">
+            <div {{ region_attributes.content.addClass('layout__region', 'layout__region--content', 'row') }}>
+                {{ content.content }}
+            </div>
+        </div>
+    </div>
+{% endif %}

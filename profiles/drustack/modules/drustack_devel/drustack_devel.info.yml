@@ -1,0 +1,19 @@
+type: module
+package: DruStack
+name: 'DruStack Devel'
+description: 'Development environment for DruStack'
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - 'admin_toolbar:admin_toolbar'
+  - 'admin_toolbar:admin_toolbar_links_access_filter'
+  - 'coffee:coffee'
+  - 'config_update:config_update_ui'
+  - 'devel:devel'
+  - 'drupal:field_ui'
+  - 'drupal:menu_ui'
+  - 'drupal:system'
+  - 'drupal:views_ui'
+  - 'features:features_ui'
+  - 'rdfui:rdf_builder'
+  - 'rdfui:rdfui'
+  - 'restui:restui'

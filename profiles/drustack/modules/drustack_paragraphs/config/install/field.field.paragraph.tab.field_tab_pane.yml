@@ -1,0 +1,54 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tab_pane
+    - paragraphs.paragraphs_type.block
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.tab
+    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.views
+  module:
+    - entity_reference_revisions
+id: paragraph.tab.field_tab_pane
+field_name: field_tab_pane
+entity_type: paragraph
+bundle: tab
+label: 'Tab Pane'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      text: text
+      image: image
+      block: block
+      views: views
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: -12
+        enabled: false
+      block:
+        weight: -15
+        enabled: true
+      carousel:
+        weight: -11
+        enabled: false
+      image:
+        weight: -16
+        enabled: true
+      tab:
+        weight: -10
+        enabled: false
+      text:
+        weight: -17
+        enabled: true
+      views:
+        weight: -14
+        enabled: true
+field_type: entity_reference_revisions

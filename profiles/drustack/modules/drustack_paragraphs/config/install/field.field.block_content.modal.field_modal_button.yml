@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.modal
+    - field.storage.block_content.field_modal_button
+  module:
+    - text
+id: block_content.modal.field_modal_button
+field_name: field_modal_button
+entity_type: block_content
+bundle: modal
+label: 'Modal Button'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,42 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - editor
+name: 'Basic HTML'
+format: basic_html
+weight: -3
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -40
+    settings:
+      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol type start> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <p> <br> <img src alt data-entity-type data-entity-uuid data-align data-caption width height> <pre> <span dir lang> <drupal-media data-entity-t ype data-entity-uuid data-view-mode data-align data-caption alt title>'
+      filter_html_help: true
+      filter_html_nofollow: false
+  filter_align:
+    id: filter_align
+    provider: filter
+    status: true
+    weight: 30
+    settings: {  }
+  filter_caption:
+    id: filter_caption
+    provider: filter
+    status: true
+    weight: 30
+    settings: {  }
+  editor_file_reference:
+    id: editor_file_reference
+    provider: editor
+    status: true
+    weight: -30
+    settings: {  }
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: 50
+    settings: {  }

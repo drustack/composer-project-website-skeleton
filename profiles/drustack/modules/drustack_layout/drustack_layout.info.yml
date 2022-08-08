@@ -1,0 +1,13 @@
+type: module
+package: DruStack
+name: 'DruStack Layout'
+description: 'Provides the tools to take control of your layout.'
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - 'drupal:block'
+  - 'drupal:field'
+  - 'drupal:layout_builder'
+  - 'drupal:node'
+  - 'drupal:options'
+  - 'drustack_core:drustack_core'
+  - 'layout_builder_restrictions:layout_builder_restrictions'

@@ -1,0 +1,91 @@
+drustack_container_clearfix:
+  label: "Container Clearfix"
+  catagory: drustack
+  path: layouts/container_clearfix
+  template: layout--container-clearfix
+  library: drustack_layout/container_clearfix
+  class: '\Drupal\drustack_layout\Plugin\Layout\LayoutClasses'
+  default_region: content
+  icon_map:
+    - [content]
+  regions:
+    content:
+      label: Content
+
+drustack_container_fluid:
+  label: "Container Fluid"
+  catagory: drustack
+  path: layouts/container_fluid
+  template: layout--container-fluid
+  library: drustack_layout/container_fluid
+  class: '\Drupal\drustack_layout\Plugin\Layout\LayoutClasses'
+  default_region: content
+  icon_map:
+    - [left, content, content, content, content, content, right]
+  regions:
+    content:
+      label: Content
+
+drustack_container:
+  label: "Container"
+  catagory: drustack
+  path: layouts/container
+  template: layout--container
+  library: drustack_layout/container
+  class: '\Drupal\drustack_layout\Plugin\Layout\LayoutClasses'
+  default_region: content
+  icon_map:
+    - [left, content, content, content, right]
+  regions:
+    content:
+      label: Content
+
+drustack_sidebar_first:
+  label: "Sidebar First"
+  catagory: drustack
+  path: layouts/sidebar_first
+  template: layout--sidebar-first
+  library: drustack_layout/sidebar_first
+  class: '\Drupal\drustack_layout\Plugin\Layout\LayoutClasses'
+  default_region: content
+  icon_map:
+    - [first, content, content, content]
+  regions:
+    first:
+      label: First
+    content:
+      label: Content
+
+drustack_sidebar_second:
+  label: "Sidebar Second"
+  catagory: drustack
+  path: layouts/sidebar_second
+  template: layout--sidebar-second
+  library: drustack_layout/sidebar_second
+  class: '\Drupal\drustack_layout\Plugin\Layout\LayoutClasses'
+  default_region: content
+  icon_map:
+    - [content, content, content, second]
+  regions:
+    content:
+      label: Content
+    second:
+      label: Second
+
+drustack_sidebar_both:
+  label: "Sidebar Both"
+  catagory: drustack
+  path: layouts/sidebar_both
+  template: layout--sidebar-both
+  library: drustack_layout/sidebar_both
+  class: '\Drupal\drustack_layout\Plugin\Layout\LayoutClasses'
+  default_region: content
+  icon_map:
+    - [first, content, content, second]
+  regions:
+    first:
+      label: First
+    content:
+      label: Content
+    second:
+      label: Second

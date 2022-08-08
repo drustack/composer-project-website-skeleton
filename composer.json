@@ -6,17 +6,7 @@
         }
     ],
     "config": {
-        "allow-plugins": {
-            "composer/installers": true,
-            "cweagans/composer-patches": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true,
-            "drupal/core-composer-scaffold": true,
-            "drupal/core-project-message": true,
-            "drupal/core-vendor-hardening": true,
-            "drustack/composer-generate-metadata": true,
-            "oomphinc/composer-installers-extender": true,
-            "zaporylie/composer-drupal-optimizations": true
-        },
+        "allow-plugins": true,
         "discard-changes": true,
         "preferred-install": {
             "drustack/*": "source"
@@ -448,7 +438,6 @@
         "drupal/webform": "6.2.x-dev",
         "drupal/xmlsitemap": "1.x-dev",
         "drustack/composer-generate-metadata": "~2.0",
-        "drustack/drustack": "9.x-dev",
         "drustack/leaflet.fullscreen": "dev-gh-pages",
         "geocoder-php/nominatim-provider": "~5.5",
         "npm-asset/accessible360--accessible-slick": "dev-master",

@@ -1,0 +1,23 @@
+type: module
+package: DruStack
+name: 'DruStack Paragraphs'
+description: 'Provides the tools to take control of your paragraphs.'
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - 'drupal:block'
+  - 'drupal:block_content'
+  - 'drupal:content_translation'
+  - 'drupal:field'
+  - 'drupal:file'
+  - 'drupal:image'
+  - 'drupal:language'
+  - 'drupal:layout_discovery'
+  - 'drupal:link'
+  - 'drupal:text'
+  - 'drupal:views'
+  - 'drustack_core:drustack_core'
+  - 'entity_reference_revisions:entity_reference_revisions'
+  - 'link_attributes:link_attributes'
+  - 'paragraphs:paragraphs'
+  - 'twig_tweak:twig_tweak'
+  - 'viewsreference:viewsreference'

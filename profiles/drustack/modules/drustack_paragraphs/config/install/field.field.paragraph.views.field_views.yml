@@ -1,0 +1,55 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_views
+    - paragraphs.paragraphs_type.views
+  module:
+    - viewsreference
+id: paragraph.views.field_views
+field_name: field_views
+entity_type: paragraph
+bundle: views
+label: Views
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: 0
+  plugin_types:
+    block: block
+    default: 0
+    feed: 0
+    page: 0
+  preselect_views:
+    aggregator_rss_feed: 0
+    aggregator_sources: 0
+    article: 0
+    block_content: 0
+    blog: 0
+    comment: 0
+    comments_recent: 0
+    content: 0
+    content_recent: 0
+    files: 0
+    frontpage: 0
+    media_library: 0
+    redirect: 0
+    scheduler_scheduled_content: 0
+    taxonomy_term: 0
+    user_admin_people: 0
+    watchdog: 0
+    who_s_new: 0
+    who_s_online: 0
+  enabled_settings:
+    offset: 0
+    pager: 0
+    limit: 0
+    argument: 0
+    title: 0
+field_type: viewsreference

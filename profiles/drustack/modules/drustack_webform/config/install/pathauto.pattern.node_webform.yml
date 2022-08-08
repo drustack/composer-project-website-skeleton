@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node_webform
+label: 'Content (Webform)'
+type: 'canonical_entities:node'
+pattern: '[node:source:menu-link:parent:url:path]/[node:source:title]'
+selection_criteria:
+  5454d5e7-404e-4e15-af1a-ea32fa91ce05:
+    id: node_type
+    negate: false
+    uuid: 5454d5e7-404e-4e15-af1a-ea32fa91ce05
+    context_mapping:
+      node: node
+    bundles:
+      webform: webform
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.blog
+  module:
+    - node
+id: node.blog
+targetEntityType: node
+bundle: blog
+types:
+  - 'schema:BlogPosting'
+fieldMappings:
+  title:
+    properties:
+      - 'schema:name'
+  body:
+    properties:
+      - 'schema:text'
+  comment:
+    properties:
+      - 'schema:comment'
+  field_attachment:
+    properties:
+      - 'schema:associatedMedia'
+  field_tags:
+    properties:
+      - 'schema:about'
