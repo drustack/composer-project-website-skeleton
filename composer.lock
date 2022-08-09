@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5a094c7b717bb6f70394c3b5c4da5630",
+    "content-hash": "54d289edbd2ca265e33c84eda06a4060",
     "packages": [
         {
             "name": "arthurkushman/query-path",
@@ -2954,23 +2954,23 @@
         },
         {
             "name": "drupal/block_class",
-            "version": "dev-1.x",
+            "version": "dev-2.0.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/block_class.git",
-                "reference": "2fe40ca4648ff742ed5ad5a4fed1901e900bf4bf"
+                "reference": "4a02582fdefbf92ae6048e3b6f75a15156926af2"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^8 || ^9 || ^10"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-1.x": "1.x-dev"
+                    "dev-2.0.x": "2.0.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.3+5-dev",
-                    "datestamp": "1656363622",
+                    "version": "2.0.0-beta15+4-dev",
+                    "datestamp": "1656362154",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
