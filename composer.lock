@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0185c6c843648e5e6220e1380f343eb7",
+    "content-hash": "d9dd96ffbe46a7d3fd3d4b3e8fe10305",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2315,6 +2315,94 @@
             "homepage": "https://www.drupal.org/project/token",
             "support": {
                 "source": "https://git.drupalcode.org/project/token"
+            }
+        },
+        {
+            "name": "drupal/xmlsitemap",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/xmlsitemap.git",
+                "reference": "3d56b37a2ed7c2e3b1b6eb8deb9e33f7ebc4887b"
+            },
+            "require": {
+                "drupal/core": "^9",
+                "ext-xmlwriter": "*"
+            },
+            "require-dev": {
+                "drupal/config_readonly": "^1.0",
+                "drupal/metatag": "^1.0",
+                "drupal/robotstxt": "^1.0"
+            },
+            "suggest": {
+                "drush/drush": "Command-line regenerating and rebuilding sitemaps."
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.2+18-dev",
+                    "datestamp": "1657821337",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9 || ^10"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "amateescu",
+                    "homepage": "https://www.drupal.org/user/729614"
+                },
+                {
+                    "name": "andrei.dincu",
+                    "homepage": "https://www.drupal.org/user/2628879"
+                },
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "juampynr",
+                    "homepage": "https://www.drupal.org/user/682736"
+                },
+                {
+                    "name": "paulmckibben",
+                    "homepage": "https://www.drupal.org/user/279003"
+                },
+                {
+                    "name": "pifagor",
+                    "homepage": "https://www.drupal.org/user/2375692"
+                },
+                {
+                    "name": "RenatoG",
+                    "homepage": "https://www.drupal.org/user/3326031"
+                },
+                {
+                    "name": "tadityar",
+                    "homepage": "https://www.drupal.org/user/3094465"
+                },
+                {
+                    "name": "th_tushar",
+                    "homepage": "https://www.drupal.org/user/1835276"
+                }
+            ],
+            "description": "Creates XML Sitemaps for the site",
+            "homepage": "https://www.drupal.org/project/xmlsitemap",
+            "support": {
+                "source": "https://git.drupalcode.org/project/xmlsitemap",
+                "issues": "http://drupal.org/project/issues/xmlsitemap"
             }
         },
         {
@@ -11772,7 +11860,8 @@
         "drupal/examples": 20,
         "drupal/features": 20,
         "drupal/module_filter": 20,
-        "drupal/token": 20
+        "drupal/token": 20,
+        "drupal/xmlsitemap": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
