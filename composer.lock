@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cd984235975ca1f4928af5a09d563ccc",
+    "content-hash": "67385a89b4594669b8fdf0dac3bc719d",
     "packages": [
         {
             "name": "arthurkushman/query-path",
@@ -333,28 +333,28 @@
         },
         {
             "name": "commerceguys/addressing",
-            "version": "v1.3.0",
+            "version": "v1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/commerceguys/addressing.git",
-                "reference": "566febd56ca71e31dd383b014c4e1bec680507bf"
+                "reference": "0478e6015472ad0b4e6c27d34ed9a8f0dbc4dfd3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/566febd56ca71e31dd383b014c4e1bec680507bf",
-                "reference": "566febd56ca71e31dd383b014c4e1bec680507bf",
+                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/0478e6015472ad0b4e6c27d34ed9a8f0dbc4dfd3",
+                "reference": "0478e6015472ad0b4e6c27d34ed9a8f0dbc4dfd3",
                 "shasum": ""
             },
             "require": {
-                "doctrine/collections": "~1.0",
+                "doctrine/collections": "^1.2",
                 "php": ">=7.3"
             },
             "require-dev": {
                 "ext-json": "*",
-                "mikey179/vfsstream": "1.*",
+                "mikey179/vfsstream": "^1.6.10",
                 "phpunit/phpunit": "^9.5",
-                "squizlabs/php_codesniffer": "3.*",
-                "symfony/validator": "^4.4 || ^5.4"
+                "squizlabs/php_codesniffer": "^3.6",
+                "symfony/validator": "^4.4 || ^5.4 || ^6.0"
             },
             "suggest": {
                 "symfony/validator": "to validate addresses"
@@ -391,9 +391,9 @@
             ],
             "support": {
                 "issues": "https://github.com/commerceguys/addressing/issues",
-                "source": "https://github.com/commerceguys/addressing/tree/v1.3.0"
+                "source": "https://github.com/commerceguys/addressing/tree/v1.4.0"
             },
-            "time": "2022-04-08T13:06:51+00:00"
+            "time": "2022-08-08T15:05:58+00:00"
         },
         {
             "name": "composer/installers",
@@ -2339,10 +2339,10 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/address.git",
-                "reference": "82604ddbef12aaa347308bf08a9e5c6d5af5222b"
+                "reference": "6896e77c80cb757719b4e4b9628ae6f3749a379a"
             },
             "require": {
-                "commerceguys/addressing": "^1.2.0",
+                "commerceguys/addressing": "^1.4.0",
                 "drupal/core": "^9.2 || ^10",
                 "php": "^7.3 || ^8.0"
             },
@@ -2355,8 +2355,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.9+23-dev",
-                    "datestamp": "1643714375",
+                    "version": "8.x-1.11+1-dev",
+                    "datestamp": "1659996732",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -2369,12 +2369,12 @@
             ],
             "authors": [
                 {
-                    "name": "Centarro",
-                    "homepage": "https://www.drupal.org/user/3661446"
-                },
-                {
                     "name": "bojanz",
                     "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "Centarro",
+                    "homepage": "https://www.drupal.org/user/3661446"
                 },
                 {
                     "name": "dww",
@@ -5957,7 +5957,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity_clone.git",
-                "reference": "76cfa8722c1ddd9af6c85627c2d022af817d03b9"
+                "reference": "cf354c04cb44ae7dedcdf3e379952a82b07a546e"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -5974,8 +5974,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta6+4-dev",
-                    "datestamp": "1659703835",
+                    "version": "8.x-1.0-beta6+5-dev",
+                    "datestamp": "1659942089",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -6777,7 +6777,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/feeds.git",
-                "reference": "c00161229462b2c11de0cc9118e4d1e75c55dc96"
+                "reference": "01a79a3112ea75cc064b4352b3637afb2745fc69"
             },
             "require": {
                 "drupal/core": "^8.9 || ^9"
@@ -6792,8 +6792,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.x-dev",
-                    "datestamp": "1659462202",
+                    "version": "8.x-3.0-beta2+4-dev",
+                    "datestamp": "1659968527",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -10002,11 +10002,10 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/password_policy.git",
-                "reference": "931c550edf984c81b13a604e73fcd3e501f2b144"
+                "reference": "10b06add6219adfacd74ae32ab7d38abc945d138"
             },
             "require": {
-                "drupal/core": "^8 || ^9",
-                "drupal/ctools": "^3.1"
+                "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
@@ -10014,8 +10013,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.1+19-dev",
-                    "datestamp": "1653396154",
+                    "version": "8.x-3.1+21-dev",
+                    "datestamp": "1659989129",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -12245,7 +12244,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/symfony_mailer.git",
-                "reference": "70676ecff1fa8932652dd42ca51cc64c5d11ca05"
+                "reference": "9250683d12abf9ddcb4188a659b6651ab9916778"
             },
             "require": {
                 "drupal/core": "^9.1",
@@ -12259,8 +12258,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "1.x-dev",
-                    "datestamp": "1659442340",
+                    "version": "1.0.0-alpha10+10-dev",
+                    "datestamp": "1659954195",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -14690,16 +14689,16 @@
         },
         {
             "name": "giggsey/libphonenumber-for-php",
-            "version": "8.12.52",
+            "version": "8.12.53",
             "source": {
                 "type": "git",
                 "url": "https://github.com/giggsey/libphonenumber-for-php.git",
-                "reference": "9a5269012e21d5a357f93d413fcc7a854a36b69d"
+                "reference": "2e39201ca4b88c1ec0594cd78128d21e94929d04"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/9a5269012e21d5a357f93d413fcc7a854a36b69d",
-                "reference": "9a5269012e21d5a357f93d413fcc7a854a36b69d",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/2e39201ca4b88c1ec0594cd78128d21e94929d04",
+                "reference": "2e39201ca4b88c1ec0594cd78128d21e94929d04",
                 "shasum": ""
             },
             "require": {
@@ -14759,7 +14758,7 @@
                 "issues": "https://github.com/giggsey/libphonenumber-for-php/issues",
                 "source": "https://github.com/giggsey/libphonenumber-for-php"
             },
-            "time": "2022-07-20T12:38:47+00:00"
+            "time": "2022-08-08T06:53:30+00:00"
         },
         {
             "name": "giggsey/locale",
