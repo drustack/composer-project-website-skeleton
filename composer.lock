@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6d48b2f714138f06d1478fec0ea70b58",
+    "content-hash": "76b77f4eb97561bea956f0d8a3d1b080",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2666,6 +2666,51 @@
             "homepage": "https://www.drupal.org/project/styleguide",
             "support": {
                 "source": "https://git.drupalcode.org/project/styleguide"
+            }
+        },
+        {
+            "name": "drupal/text_resize",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/text_resize.git",
+                "reference": "2ec626b2a07a773ddd529b254595e51519c53cbd"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1+5-dev",
+                    "datestamp": "1634381906",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Wongjn",
+                    "homepage": "https://www.drupal.org/user/3055747"
+                },
+                {
+                    "name": "attheshow",
+                    "homepage": "https://www.drupal.org/user/249768"
+                }
+            ],
+            "description": "Creates a block that allows your users to resize text on the page.",
+            "homepage": "https://www.drupal.org/project/text_resize",
+            "support": {
+                "source": "https://git.drupalcode.org/project/text_resize"
             }
         },
         {
@@ -9542,16 +9587,16 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "1.6.4",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpdoc-parser.git",
-                "reference": "135607f9ccc297d6923d49c2bcf309f509413215"
+                "reference": "367a8d9d5f7da2a0136422d27ce8840583926955"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/135607f9ccc297d6923d49c2bcf309f509413215",
-                "reference": "135607f9ccc297d6923d49c2bcf309f509413215",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/367a8d9d5f7da2a0136422d27ce8840583926955",
+                "reference": "367a8d9d5f7da2a0136422d27ce8840583926955",
                 "shasum": ""
             },
             "require": {
@@ -9581,9 +9626,9 @@
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
             "support": {
                 "issues": "https://github.com/phpstan/phpdoc-parser/issues",
-                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.6.4"
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.7.0"
             },
-            "time": "2022-06-26T13:09:08+00:00"
+            "time": "2022-08-09T12:23:23+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -12335,6 +12380,7 @@
         "drupal/module_filter": 20,
         "drupal/recaptcha": 20,
         "drupal/styleguide": 20,
+        "drupal/text_resize": 20,
         "drupal/token": 20,
         "drupal/xmlsitemap": 20
     },
