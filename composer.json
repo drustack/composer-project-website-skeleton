@@ -56,7 +56,12 @@
         "installer-types": [
             "bower-asset",
             "npm-asset"
-        ]
+        ],
+        "patches": {
+            "drupal/advagg": {
+                "https://drupal.org/node/3258389": "https://git.drupalcode.org/project/advagg/-/merge_requests/6.diff"
+            }
+        }
     },
     "homepage": "https://drupal.org/project/drustack",
     "license": "GPL-2.0-or-later",
@@ -77,6 +82,7 @@
         "composer/installers": "~1.9",
         "cweagans/composer-patches": "~1.7",
         "drupal/admin_toolbar": "3.x-dev",
+        "drupal/advagg": "4.x-dev",
         "drupal/core-composer-scaffold": "~9.4.0",
         "drupal/core-project-message": "~9.4.0",
         "drupal/core-recommended": "~9.4.0",
