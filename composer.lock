@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4ce6357aafeea34a746c0e5e75fcd930",
+    "content-hash": "6d48b2f714138f06d1478fec0ea70b58",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1427,33 +1427,28 @@
         },
         {
             "name": "drupal/captcha",
-            "version": "1.4.0",
+            "version": "dev-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/captcha.git",
-                "reference": "8.x-1.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/captcha-8.x-1.4.zip",
-                "reference": "8.x-1.4",
-                "shasum": "bd340d1c62e9960cebbf482ecc5ef24421542ec6"
+                "reference": "60078bf45942692c1ad8bfa64b02e102791d2253"
             },
             "require": {
                 "drupal/core": ">=8.9 <11"
             },
             "type": "drupal-module",
             "extra": {
-                "drupal": {
-                    "version": "8.x-1.4",
-                    "datestamp": "1658338565",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                },
                 "branch-alias": {
+                    "dev-1.x": "1.x-dev",
                     "dev-8.x-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.3+2-dev",
+                    "datestamp": "1658338419",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2350,6 +2345,52 @@
             "homepage": "https://www.drupal.org/project/features",
             "support": {
                 "source": "https://git.drupalcode.org/project/features"
+            }
+        },
+        {
+            "name": "drupal/hcaptcha",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/hcaptcha.git",
+                "reference": "8465d05556ea57a14ed2c7a5a2c35185b5a0810f"
+            },
+            "require": {
+                "drupal/captcha": "*",
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1+0-dev",
+                    "datestamp": "1596410664",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "hcaptcha",
+                    "homepage": "https://www.drupal.org/user/3615435"
+                },
+                {
+                    "name": "newsec",
+                    "homepage": "https://www.drupal.org/user/1329158"
+                }
+            ],
+            "description": "Protect your website from spam and abuse while letting real people pass through with ease.",
+            "homepage": "https://www.drupal.org/project/hcaptcha",
+            "support": {
+                "source": "https://git.drupalcode.org/project/hcaptcha"
             }
         },
         {
@@ -12284,11 +12325,13 @@
         "drupal/advagg": 20,
         "drupal/asset_injector": 20,
         "drupal/block_class": 20,
+        "drupal/captcha": 20,
         "drupal/config_split": 20,
         "drupal/ctools": 20,
         "drupal/devel": 20,
         "drupal/examples": 20,
         "drupal/features": 20,
+        "drupal/hcaptcha": 20,
         "drupal/module_filter": 20,
         "drupal/recaptcha": 20,
         "drupal/styleguide": 20,
