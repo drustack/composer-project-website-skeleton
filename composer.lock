@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c93078155c091d2b01ba158c07366ede",
+    "content-hash": "3ab63508365373a312c64992002e0faf",
     "packages": [
         {
             "name": "arthurkushman/query-path",
@@ -1522,6 +1522,52 @@
             }
         },
         {
+            "name": "drupal/bootstrap_sass",
+            "version": "dev-5.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/bootstrap_sass.git",
+                "reference": "6745261810f6fd4ecd4ceb71fc9cb3bd0f8310dc"
+            },
+            "require": {
+                "drupal/bootstrap_barrio": ">=5.1.3",
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "branch-alias": {
+                    "dev-5.x": "5.x-dev"
+                },
+                "drupal": {
+                    "version": "5.x-dev",
+                    "datestamp": "1657466497",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Ricardo.Castaneda",
+                    "homepage": "https://www.drupal.org/user/3520894"
+                },
+                {
+                    "name": "hatuhay",
+                    "homepage": "https://www.drupal.org/user/827704"
+                }
+            ],
+            "description": "SASS subtheme for Barrio Theme.",
+            "homepage": "http://drupal.org/project/bootstrap_sass",
+            "support": {
+                "source": "https://git.drupalcode.org/project/bootstrap_sass"
+            }
+        },
+        {
             "name": "drupal/captcha",
             "version": "dev-1.x",
             "source": {
@@ -2965,6 +3011,49 @@
             "homepage": "https://www.drupal.org/project/redirect",
             "support": {
                 "source": "https://git.drupalcode.org/project/redirect"
+            }
+        },
+        {
+            "name": "drupal/scss_compiler",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/scss_compiler.git",
+                "reference": "0376d5a44394248b3cd9bc65a47510ef48ca8f18"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9",
+                "scssphp/scssphp": "^1.0.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1+3-dev",
+                    "datestamp": "1632858352",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Seonic",
+                    "homepage": "https://www.drupal.org/user/3615425"
+                }
+            ],
+            "description": "Automatically compiles scss/less files defined in libraries.yml into css.",
+            "homepage": "https://www.drupal.org/project/scss_compiler",
+            "support": {
+                "source": "https://git.drupalcode.org/project/scss_compiler",
+                "issues": "https://drupal.org/project/issues/scss_compiler"
             }
         },
         {
@@ -5355,6 +5444,86 @@
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
             "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "scssphp/scssphp",
+            "version": "v1.10.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/scssphp/scssphp.git",
+                "reference": "6d44282ccf283e133ab70b6282f8e068ff2f9bf9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/scssphp/scssphp/zipball/6d44282ccf283e133ab70b6282f8e068ff2f9bf9",
+                "reference": "6d44282ccf283e133ab70b6282f8e068ff2f9bf9",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-json": "*",
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.4",
+                "phpunit/phpunit": "^5.7 || ^6.5 || ^7.5 || ^8.3 || ^9.4",
+                "sass/sass-spec": "*",
+                "squizlabs/php_codesniffer": "~3.5",
+                "symfony/phpunit-bridge": "^5.1",
+                "thoughtbot/bourbon": "^7.0",
+                "twbs/bootstrap": "~5.0",
+                "twbs/bootstrap4": "4.6.1",
+                "zurb/foundation": "~6.5"
+            },
+            "suggest": {
+                "ext-iconv": "Can be used as fallback when ext-mbstring is not available",
+                "ext-mbstring": "For best performance, mbstring should be installed as it is faster than ext-iconv"
+            },
+            "bin": [
+                "bin/pscss"
+            ],
+            "type": "library",
+            "extra": {
+                "bamarni-bin": {
+                    "forward-command": false,
+                    "bin-links": false
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "ScssPhp\\ScssPhp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anthon Pang",
+                    "email": "apang@softwaredevelopment.ca",
+                    "homepage": "https://github.com/robocoder"
+                },
+                {
+                    "name": "Cédric Morin",
+                    "email": "cedric@yterium.com",
+                    "homepage": "https://github.com/Cerdic"
+                }
+            ],
+            "description": "scssphp is a compiler for SCSS written in PHP.",
+            "homepage": "http://scssphp.github.io/scssphp/",
+            "keywords": [
+                "css",
+                "less",
+                "sass",
+                "scss",
+                "stylesheet"
+            ],
+            "support": {
+                "issues": "https://github.com/scssphp/scssphp/issues",
+                "source": "https://github.com/scssphp/scssphp/tree/v1.10.5"
+            },
+            "time": "2022-07-27T15:52:39+00:00"
         },
         {
             "name": "softcreatr/jsonpath",
@@ -13777,6 +13946,7 @@
         "drupal/asset_injector": 20,
         "drupal/block_class": 20,
         "drupal/bootstrap_barrio": 20,
+        "drupal/bootstrap_sass": 20,
         "drupal/captcha": 20,
         "drupal/config_split": 20,
         "drupal/ctools": 20,
@@ -13790,6 +13960,7 @@
         "drupal/module_filter": 20,
         "drupal/recaptcha": 20,
         "drupal/redirect": 20,
+        "drupal/scss_compiler": 20,
         "drupal/search_api": 20,
         "drupal/search_api_autocomplete": 20,
         "drupal/search_api_location": 20,
