@@ -109,6 +109,9 @@
             "drupal/search_api_autocomplete": {
                 "https://drupal.org/node/3068289": "https://drupal.org/files/issues/2020-05-28/search-api-autocomplete-cacheable-response-3068289-5.patch"
             },
+            "drupal/search_api_solr": {
+                "https://drupal.org/node/3258125": "https://git.drupalcode.org/project/search_api_solr/-/merge_requests/11.diff"
+            },
             "drupal/select2": {
                 "https://drupal.org/node/3178287": "https://git.drupalcode.org/project/select2/-/merge_requests/7.diff",
                 "https://drupal.org/node/3179030": "https://git.drupalcode.org/project/select2/-/merge_requests/6.diff",
@@ -152,10 +155,10 @@
         "drupal/bootstrap_barrio": "5.5.x-dev",
         "drupal/captcha": "1.x-dev",
         "drupal/config_split": "2.0.x-dev",
-        "drupal/core-composer-scaffold": "~9.4.0",
-        "drupal/core-project-message": "~9.4.0",
-        "drupal/core-recommended": "~9.4.0",
-        "drupal/core-vendor-hardening": "~9.4.0",
+        "drupal/core-composer-scaffold": "~9.4.5",
+        "drupal/core-project-message": "~9.4.5",
+        "drupal/core-recommended": "~9.4.5",
+        "drupal/core-vendor-hardening": "~9.4.5",
         "drupal/ctools": "3.x-dev",
         "drupal/devel": "4.x-dev",
         "drupal/examples": "3.x-dev",
@@ -170,6 +173,7 @@
         "drupal/redirect": "1.x-dev",
         "drupal/search_api": "1.x-dev",
         "drupal/search_api_autocomplete": "1.x-dev",
+        "drupal/search_api_solr": "4.x-dev",
         "drupal/select2": "1.x-dev",
         "drupal/styleguide": "2.x-dev",
         "drupal/text_resize": "1.x-dev",
@@ -183,7 +187,7 @@
         "composer/composer": "~2.0",
         "composer/installers": "~1.9",
         "cweagans/composer-patches": "~1.7",
-        "drupal/core-dev": "~9.4.0",
+        "drupal/core-dev": "~9.4.5",
         "drush/drush": "~11.1",
         "drustack/composer-generate-metadata": "~2.0",
         "oomphinc/composer-installers-extender": "~2.0",
