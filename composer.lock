@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e6804d954e806143096e38d4813652e7",
+    "content-hash": "7784ca389fed95998dda84bbe426bc28",
     "packages": [
         {
             "name": "arthurkushman/query-path",
@@ -245,18 +245,6 @@
             "dist": {
                 "type": "zip",
                 "url": "http://download.ckeditor.com/link/releases/link_4.17.1.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "drupal-library"
-        },
-        {
-            "name": "ckeditor/templates",
-            "version": "4.17.1",
-            "dist": {
-                "type": "zip",
-                "url": "http://download.ckeditor.com/templates/releases/templates_4.17.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -3554,99 +3542,6 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/checklistapi",
                 "issues": "https://www.drupal.org/project/issues/checklistapi"
-            }
-        },
-        {
-            "name": "drupal/ckeditor_templates",
-            "version": "1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/ckeditor_templates.git",
-                "reference": "8.x-1.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ckeditor_templates-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "4957f9d3b1d817433432f00518c18f52980a5376"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.2",
-                    "datestamp": "1601232517",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "lucaslg",
-                    "homepage": "https://www.drupal.org/user/3128975"
-                },
-                {
-                    "name": "mandclu",
-                    "homepage": "https://www.drupal.org/user/52136"
-                }
-            ],
-            "description": "Integrates the CKEditor templates plugin.",
-            "homepage": "https://www.drupal.org/project/ckeditor_templates",
-            "support": {
-                "source": "https://git.drupalcode.org/project/ckeditor_templates"
-            }
-        },
-        {
-            "name": "drupal/ckeditor_templates_ui",
-            "version": "1.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/ckeditor_templates_ui.git",
-                "reference": "8.x-1.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ckeditor_templates_ui-8.x-1.4.zip",
-                "reference": "8.x-1.4",
-                "shasum": "9ad3716df4c99f84aa5acd56702238b8043b39c5"
-            },
-            "require": {
-                "drupal/ckeditor_templates": "*",
-                "drupal/core": "^8 || ^9"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.4",
-                    "datestamp": "1602169160",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Anas_maw",
-                    "homepage": "https://www.drupal.org/user/3258840"
-                }
-            ],
-            "description": "Provide ui for adding ckeditor templates",
-            "homepage": "https://www.drupal.org/project/ckeditor_templates_ui",
-            "support": {
-                "source": "https://git.drupalcode.org/project/ckeditor_templates_ui"
             }
         },
         {
