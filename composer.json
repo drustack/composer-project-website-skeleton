@@ -191,33 +191,16 @@
             "type": "composer",
             "url": "https://asset-packagist.org"
         },
-        "ckeditor/link": {
-            "package": {
-                "dist": {
-                    "type": "zip",
-                    "url": "http://download.ckeditor.com/link/releases/link_4.17.1.zip"
-                },
-                "name": "ckeditor/link",
-                "require": {
-                    "composer/installers": "~1.0"
-                },
-                "type": "drupal-library",
-                "version": "4.17.1"
-            },
-            "type": "package"
-        },
         "drupal": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         }
     },
     "require": {
-        "ckeditor/link": "4.17.1",
         "drupal/acl": "1.x-dev",
         "drupal/address": "1.x-dev",
         "drupal/admin_toolbar": "3.x-dev",
         "drupal/advagg": "4.x-dev",
-        "drupal/anchor_link": "~2.5",
         "drupal/asset_injector": "2.x-dev",
         "drupal/authorization": "1.x-dev",
         "drupal/avatars": "~1.1",
