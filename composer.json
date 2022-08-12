@@ -123,7 +123,7 @@
                 "https://drupal.org/node/3254909": "https://git.drupalcode.org/project/geofield/-/merge_requests/9.diff"
             },
             "drupal/leaflet": {
-                "https://drupal.org/node/2942651": "https://git.drupalcode.org/project/leaflet/-/merge_requests/15.diff"
+                "https://drupal.org/node/3255306": "https://git.drupalcode.org/project/leaflet/-/merge_requests/15.diff"
             },
             "drupal/password_policy": {
                 "https://drupal.org/node/2867320": "https://git.drupalcode.org/project/password_policy/-/merge_requests/28.diff"
@@ -238,21 +238,6 @@
         "drupal": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
-        },
-        "drustack/leaflet.fullscreen": {
-            "package": {
-                "dist": {
-                    "type": "zip",
-                    "url": "https://github.com/drustack/Leaflet-Leaflet.fullscreen/archive/refs/heads/gh-pages.zip"
-                },
-                "name": "drustack/leaflet.fullscreen",
-                "require": {
-                    "composer/installers": "~1.0"
-                },
-                "type": "drupal-library",
-                "version": "dev-gh-pages"
-            },
-            "type": "package"
         }
     },
     "require": {
@@ -429,12 +414,12 @@
         "drupal/viewsreference": "2.x-dev",
         "drupal/webform": "6.2.x-dev",
         "drupal/xmlsitemap": "1.x-dev",
-        "drustack/leaflet.fullscreen": "dev-gh-pages",
         "geocoder-php/nominatim-provider": "~5.5",
         "npm-asset/accessible360--accessible-slick": "dev-master",
         "npm-asset/blazy": "~1.8",
         "npm-asset/bootstrap": "~5.0",
         "npm-asset/dropzone": "~5.9",
+        "npm-asset/drustack--leaflet.fullscreen": "~1.0.3-alpha2.0",
         "npm-asset/drustack--leaflet.resetview": "~1.1",
         "npm-asset/drustack--leaflet.syncview": "~1.1",
         "npm-asset/firstandthird--toc": "~0.3",

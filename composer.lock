@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "051fda55d6230f061ca34e7f58462e10",
+    "content-hash": "259442f5942bc65147e0e218d9a5fa56",
     "packages": [
         {
             "name": "arthurkushman/query-path",
@@ -14051,18 +14051,6 @@
             "time": "2022-07-12T16:08:05+00:00"
         },
         {
-            "name": "drustack/leaflet.fullscreen",
-            "version": "dev-gh-pages",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/drustack/Leaflet-Leaflet.fullscreen/archive/refs/heads/gh-pages.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "drupal-library"
-        },
-        {
             "name": "easyrdf/easyrdf",
             "version": "1.1.1",
             "source": {
@@ -16282,6 +16270,18 @@
             "type": "npm-asset",
             "license": [
                 "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/drustack--leaflet.fullscreen",
+            "version": "1.0.3-alpha3.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/@drustack/leaflet.fullscreen/-/leaflet.fullscreen-1.0.3-alpha3.0.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "ISC"
             ]
         },
         {
@@ -26147,7 +26147,6 @@
         "drupal/viewsreference": 20,
         "drupal/webform": 20,
         "drupal/xmlsitemap": 20,
-        "drustack/leaflet.fullscreen": 20,
         "npm-asset/accessible360--accessible-slick": 20
     },
     "prefer-stable": true,
