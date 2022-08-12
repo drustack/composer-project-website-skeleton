@@ -191,21 +191,6 @@
             "type": "composer",
             "url": "https://asset-packagist.org"
         },
-        "ckeditor/fakeobjects": {
-            "package": {
-                "dist": {
-                    "type": "zip",
-                    "url": "http://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.17.1.zip"
-                },
-                "name": "ckeditor/fakeobjects",
-                "require": {
-                    "composer/installers": "~1.0"
-                },
-                "type": "drupal-library",
-                "version": "4.17.1"
-            },
-            "type": "package"
-        },
         "ckeditor/link": {
             "package": {
                 "dist": {
@@ -242,7 +227,6 @@
         }
     },
     "require": {
-        "ckeditor/fakeobjects": "4.17.1",
         "ckeditor/link": "4.17.1",
         "ckeditor/templates": "4.17.1",
         "drupal/acl": "1.x-dev",
@@ -309,7 +293,6 @@
         "drupal/externalauth": "1.x-dev",
         "drupal/facets": "2.0.x-dev",
         "drupal/facets_pretty_paths": "~1.2",
-        "drupal/fakeobjects": "~1.1",
         "drupal/features": "3.x-dev",
         "drupal/feeds": "3.x-dev",
         "drupal/feeds_ex": "1.x-dev",
