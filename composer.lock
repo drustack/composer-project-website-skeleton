@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6222c394b74b30b9ebbc4d43541fad15",
+    "content-hash": "ac254d37beeb6fda88c219f9ccc13215",
     "packages": [
         {
             "name": "arthurkushman/query-path",
@@ -1810,6 +1810,121 @@
             }
         },
         {
+            "name": "drupal/config_inspector",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/config_inspector.git",
+                "reference": "4903ef7bf3532aa2cb6e627f7167a1fd86e84ecc"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.3+2-dev",
+                    "datestamp": "1633292603",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9 || ^10"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "aspilicious",
+                    "homepage": "https://www.drupal.org/user/172527"
+                },
+                {
+                    "name": "Gábor Hojtsy",
+                    "homepage": "https://www.drupal.org/user/4166"
+                },
+                {
+                    "name": "Jose Reyero",
+                    "homepage": "https://www.drupal.org/user/4299"
+                },
+                {
+                    "name": "vijaycs85",
+                    "homepage": "https://www.drupal.org/user/93488"
+                },
+                {
+                    "name": "vuil",
+                    "homepage": "https://www.drupal.org/user/3568458"
+                }
+            ],
+            "description": "Provides a configuration data and structure inspector tool",
+            "homepage": "https://drupal.org/project/config_inspector",
+            "support": {
+                "source": "https://cgit.drupalcode.org/config_inspector",
+                "issues": "https://drupal.org/project/issues/config_inspector",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
+            "name": "drupal/config_rewrite",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/config_rewrite.git",
+                "reference": "8.x-1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/config_rewrite-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "c4740c74fc6e48069cada1fab4c809f1b99d31ac"
+            },
+            "require": {
+                "drupal/core": "^8.6 || ^9 || ^10",
+                "php": ">=7.1"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.5",
+                    "datestamp": "1659538494",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Brant Wynn (brantwynn)",
+                    "homepage": "https://www.drupal.org/u/brantwynn",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "saltednut",
+                    "homepage": "https://www.drupal.org/user/252788"
+                }
+            ],
+            "description": "Rewrites existing configuration on module installation via using a 'rewrite' folder in the config directory.",
+            "homepage": "https://www.drupal.org/project/config_rewrite",
+            "support": {
+                "source": "http://cgit.drupalcode.org/config_rewrite",
+                "issues": "https://www.drupal.org/project/issues/config_rewrite"
+            }
+        },
+        {
             "name": "drupal/config_split",
             "version": "dev-2.0.x",
             "source": {
@@ -3084,6 +3199,56 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/feeds_tamper",
                 "issues": "http://drupal.org/project/issues/feeds_tamper"
+            }
+        },
+        {
+            "name": "drupal/file_delete",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/file_delete.git",
+                "reference": "154aef29df1f7140f1b0d71fa7dcd47557ebef51"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "require-dev": {
+                "drupal/coder": "^8.3"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0+4-dev",
+                    "datestamp": "1650489652",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Eom",
+                    "homepage": "https://www.drupal.org/user/3458427",
+                    "email": "jonnyeom@gmail.com"
+                }
+            ],
+            "description": "Provides the ability to easily delete files within Drupal administration.",
+            "homepage": "https://www.drupal.org/project/file_delete",
+            "keywords": [
+                "Drupal",
+                "File"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/file_delete",
+                "issues": "https://www.drupal.org/project/issues/file_delete"
             }
         },
         {
@@ -15127,6 +15292,7 @@
         "drupal/bootstrap_sass": 20,
         "drupal/captcha": 20,
         "drupal/clamav": 20,
+        "drupal/config_inspector": 20,
         "drupal/config_split": 20,
         "drupal/content_access": 20,
         "drupal/ctools": 20,
@@ -15137,6 +15303,7 @@
         "drupal/feeds": 20,
         "drupal/feeds_ex": 20,
         "drupal/feeds_tamper": 20,
+        "drupal/file_delete": 20,
         "drupal/geocoder": 20,
         "drupal/geofield": 20,
         "drupal/geofield_map": 20,
