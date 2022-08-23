@@ -5,7 +5,7 @@ filters:
     provider: filter
     settings: {}
     status: true
-    weight: 0
+    weight: 40
   filter_html:
     id: filter_html
     provider: filter
@@ -14,16 +14,22 @@ filters:
       filter_html_help: true
       filter_html_nofollow: false
     status: true
-    weight: -10
+    weight: -40
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    settings: {}
+    status: true
+    weight: 50
   filter_url:
     id: filter_url
     provider: filter
     settings:
       filter_url_length: 72
     status: true
-    weight: 0
+    weight: 40
 format: restricted_html
 langcode: en
 name: Restricted HTML
 status: true
-weight: 1
+weight: 0

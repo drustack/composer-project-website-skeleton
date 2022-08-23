@@ -5,22 +5,22 @@ filters:
     provider: filter
     settings: {}
     status: true
-    weight: 0
+    weight: 40
   filter_html_escape:
     id: filter_html_escape
     provider: filter
     settings: {}
     status: true
-    weight: -10
+    weight: -50
   filter_url:
     id: filter_url
     provider: filter
     settings:
       filter_url_length: 72
     status: true
-    weight: 0
+    weight: 40
 format: plain_text
 langcode: en
 name: Plain text
 status: true
-weight: 10
+weight: 3

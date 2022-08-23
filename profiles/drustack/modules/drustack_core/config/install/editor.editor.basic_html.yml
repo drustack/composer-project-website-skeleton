@@ -8,14 +8,44 @@ format: basic_html
 image_upload:
   directory: inline-images
   max_dimensions:
-    height: 0
-    width: 0
+    height: null
+    width: null
   max_size: ""
   scheme: public
   status: true
 langcode: en
 settings:
-  plugins: {}
+  plugins:
+    codesnippet:
+      highlight_languages:
+        apache: apache
+        bash: bash
+        coffeescript: coffeescript
+        cpp: cpp
+        cs: cs
+        css: css
+        diff: diff
+        html: html
+        http: http
+        ini: ini
+        java: java
+        javascript: javascript
+        json: json
+        makefile: makefile
+        markdown: markdown
+        nginx: nginx
+        objectivec: objectivec
+        perl: perl
+        php: php
+        python: python
+        ruby: ruby
+        sql: sql
+        vbscript: vbscript
+        xhtml: xhtml
+        xml: xml
+      highlight_style: github
+    language:
+      language_list: all
   toolbar:
     rows:
       - - items:
@@ -33,11 +63,15 @@ settings:
         - items:
             - Blockquote
             - DrupalImage
+            - SpecialChar
+            - CodeSnippet
           name: Media
         - items:
             - Format
           name: Block Formatting
         - items:
             - Source
+            - Maximize
+            - Language
           name: Tools
 status: true
