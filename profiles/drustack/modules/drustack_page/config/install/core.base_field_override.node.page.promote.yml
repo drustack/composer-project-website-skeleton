@@ -1,21 +1,20 @@
-langcode: en
-status: true
+bundle: page
+default_value:
+  - value: 0
+default_value_callback: ""
 dependencies:
   config:
     - node.type.page
-id: node.page.promote
-field_name: promote
+description: ""
 entity_type: node
-bundle: page
-label: 'Promoted to front page'
-description: ''
-required: false
-translatable: false
-default_value:
-  -
-    value: 0
-default_value_callback: ''
-settings:
-  on_label: 'On'
-  off_label: 'Off'
+field_name: promote
 field_type: boolean
+id: node.page.promote
+label: Promoted to front page
+langcode: en
+required: false
+settings:
+  off_label: 'Off'
+  on_label: 'On'
+status: true
+translatable: false

@@ -1,14 +1,14 @@
-langcode: en
-status: true
-dependencies: {  }
-name: large
-label: 'Large (480×480)'
+dependencies: {}
 effects:
   ddd73aa7-4bd6-4c85-b600-bdf2b1628d1d:
-    uuid: ddd73aa7-4bd6-4c85-b600-bdf2b1628d1d
-    id: image_scale
-    weight: 0
     data:
-      width: 480
       height: 480
       upscale: false
+      width: 480
+    id: image_scale
+    uuid: ddd73aa7-4bd6-4c85-b600-bdf2b1628d1d
+    weight: 0
+label: Large (480×480)
+langcode: en
+name: large
+status: true

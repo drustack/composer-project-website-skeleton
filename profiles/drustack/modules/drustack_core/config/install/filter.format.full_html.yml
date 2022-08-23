@@ -1,33 +1,33 @@
-langcode: en
-status: true
 dependencies:
   module:
     - editor
-name: 'Full HTML'
-format: full_html
-weight: 2
 filters:
-  filter_align:
-    id: filter_align
-    provider: filter
-    status: true
-    weight: 8
-    settings: {  }
-  filter_caption:
-    id: filter_caption
-    provider: filter
-    status: true
-    weight: 9
-    settings: {  }
-  filter_htmlcorrector:
-    id: filter_htmlcorrector
-    provider: filter
-    status: true
-    weight: 10
-    settings: {  }
   editor_file_reference:
     id: editor_file_reference
     provider: editor
+    settings: {}
     status: true
     weight: 11
-    settings: {  }
+  filter_align:
+    id: filter_align
+    provider: filter
+    settings: {}
+    status: true
+    weight: 8
+  filter_caption:
+    id: filter_caption
+    provider: filter
+    settings: {}
+    status: true
+    weight: 9
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    settings: {}
+    status: true
+    weight: 10
+format: full_html
+langcode: en
+name: Full HTML
+status: true
+weight: 2

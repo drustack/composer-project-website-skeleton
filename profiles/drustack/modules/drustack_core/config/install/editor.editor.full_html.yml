@@ -1,19 +1,24 @@
-langcode: en
-status: true
 dependencies:
   config:
     - filter.format.full_html
   module:
     - ckeditor
-format: full_html
 editor: ckeditor
+format: full_html
+image_upload:
+  directory: inline-images
+  max_dimensions:
+    height: 0
+    width: 0
+  max_size: ""
+  scheme: public
+  status: true
+langcode: en
 settings:
+  plugins: {}
   toolbar:
     rows:
-      -
-        -
-          name: Formatting
-          items:
+      - - items:
             - Bold
             - Italic
             - Strike
@@ -21,38 +26,26 @@ settings:
             - Subscript
             - '-'
             - RemoveFormat
-        -
-          name: Linking
-          items:
+          name: Formatting
+        - items:
             - DrupalLink
             - DrupalUnlink
-        -
-          name: Lists
-          items:
+          name: Linking
+        - items:
             - BulletedList
             - NumberedList
-        -
-          name: Media
-          items:
+          name: Lists
+        - items:
             - Blockquote
             - DrupalImage
             - Table
             - HorizontalRule
-        -
-          name: 'Block Formatting'
-          items:
+          name: Media
+        - items:
             - Format
-        -
-          name: Tools
-          items:
+          name: Block Formatting
+        - items:
             - ShowBlocks
             - Source
-  plugins: {  }
-image_upload:
-  status: true
-  scheme: public
-  directory: inline-images
-  max_size: ''
-  max_dimensions:
-    width: 0
-    height: 0
+          name: Tools
+status: true

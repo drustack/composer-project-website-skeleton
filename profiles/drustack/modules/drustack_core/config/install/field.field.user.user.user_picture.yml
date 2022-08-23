@@ -1,37 +1,37 @@
-langcode: en
-status: true
+bundle: user
+default_value: {}
+default_value_callback: ""
 dependencies:
   config:
     - field.storage.user.user_picture
   module:
     - image
     - user
-id: user.user.user_picture
-field_name: user_picture
+description: Your virtual face or picture.
 entity_type: user
-bundle: user
+field_name: user_picture
+field_type: image
+id: user.user.user_picture
 label: Picture
-description: 'Your virtual face or picture.'
+langcode: en
 required: false
-translatable: true
-default_value: {  }
-default_value_callback: ''
 settings:
-  handler: 'default:file'
-  handler_settings: {  }
-  file_directory: 'pictures/[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'png gif jpg jpeg'
-  max_filesize: ''
-  max_resolution: ''
-  min_resolution: ''
   alt_field: false
   alt_field_required: false
+  default_image:
+    alt: ""
+    height: null
+    title: ""
+    uuid: null
+    width: null
+  file_directory: pictures/[date:custom:Y]-[date:custom:m]
+  file_extensions: png gif jpg jpeg
+  handler: default:file
+  handler_settings: {}
+  max_filesize: ""
+  max_resolution: ""
+  min_resolution: ""
   title_field: false
   title_field_required: false
-  default_image:
-    uuid: null
-    alt: ''
-    title: ''
-    width: null
-    height: null
-field_type: image
+status: true
+translatable: true

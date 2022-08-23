@@ -1,16 +1,16 @@
-name: 'DruStack Article'
-description: 'Provides Article content type and related configuration. Use <em>articles</em> for time-sensitive content like news, press releases or blog posts.'
-type: module
-core_version_requirement: '^8.9 || ^9'
+core_version_requirement: ^8.9 || ^9
 dependencies:
-  - 'drupal:comment'
-  - 'drupal:field'
-  - 'drupal:image'
-  - 'drupal:node'
-  - 'drupal:path'
-  - 'drupal:rdf'
-  - 'drupal:text'
-  - 'drupal:user'
-  - 'drustack_core:drustack_core'
-  - 'scheduler:scheduler'
+  - drupal:comment
+  - drupal:field
+  - drupal:image
+  - drupal:node
+  - drupal:path
+  - drupal:rdf
+  - drupal:text
+  - drupal:user
+  - drustack_core:drustack_core
+  - scheduler:scheduler
+description: Provides Article content type and related configuration. Use <em>articles</em> for time-sensitive content like news, press releases or blog posts.
+name: DruStack Article
 package: DruStack
+type: module

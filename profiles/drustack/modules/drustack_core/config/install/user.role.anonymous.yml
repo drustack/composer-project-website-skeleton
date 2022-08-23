@@ -1,5 +1,3 @@
-langcode: en
-status: true
 dependencies:
   config:
     - filter.format.restricted_html
@@ -9,11 +7,13 @@ dependencies:
     - filter
     - system
 id: anonymous
-label: 'Anonymous user'
-weight: 0
 is_admin: false
+label: Anonymous user
+langcode: en
 permissions:
-  - 'access comments'
-  - 'access content'
-  - 'access site-wide contact form'
-  - 'use text format restricted_html'
+  - access comments
+  - access content
+  - access site-wide contact form
+  - use text format restricted_html
+status: true
+weight: 0

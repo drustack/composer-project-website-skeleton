@@ -1,5 +1,3 @@
-langcode: en
-status: true
 dependencies:
   config:
     - filter.format.basic_html
@@ -10,14 +8,16 @@ dependencies:
     - shortcut
     - system
 id: authenticated
-label: 'Authenticated user'
-weight: 1
 is_admin: false
+label: Authenticated user
+langcode: en
 permissions:
-  - 'access comments'
-  - 'access content'
-  - 'access shortcuts'
-  - 'access site-wide contact form'
-  - 'post comments'
-  - 'skip comment approval'
-  - 'use text format basic_html'
+  - access comments
+  - access content
+  - access shortcuts
+  - access site-wide contact form
+  - post comments
+  - skip comment approval
+  - use text format basic_html
+status: true
+weight: 1

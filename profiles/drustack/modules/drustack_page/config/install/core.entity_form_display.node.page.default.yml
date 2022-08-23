@@ -1,5 +1,85 @@
-langcode: en
-status: true
+bundle: page
+content:
+  body:
+    region: content
+    settings:
+      placeholder: ""
+      rows: 9
+      show_summary: false
+      summary_rows: 3
+    third_party_settings: {}
+    type: text_textarea_with_summary
+    weight: 31
+  created:
+    region: content
+    settings: {}
+    third_party_settings: {}
+    type: datetime_timestamp
+    weight: 10
+  langcode:
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {}
+    type: language_select
+    weight: 2
+  path:
+    region: content
+    settings: {}
+    third_party_settings: {}
+    type: path
+    weight: 30
+  promote:
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {}
+    type: boolean_checkbox
+    weight: 15
+  publish_on:
+    region: content
+    settings: {}
+    third_party_settings: {}
+    type: datetime_timestamp_no_default
+    weight: 30
+  status:
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {}
+    type: boolean_checkbox
+    weight: 120
+  sticky:
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {}
+    type: boolean_checkbox
+    weight: 16
+  title:
+    region: content
+    settings:
+      placeholder: ""
+      size: 60
+    third_party_settings: {}
+    type: string_textfield
+    weight: -5
+  uid:
+    region: content
+    settings:
+      match_limit: 10
+      match_operator: CONTAINS
+      placeholder: ""
+      size: 60
+    third_party_settings: {}
+    type: entity_reference_autocomplete
+    weight: 5
+  unpublish_on:
+    region: content
+    settings: {}
+    third_party_settings: {}
+    type: datetime_timestamp_no_default
+    weight: 30
 dependencies:
   config:
     - field.field.node.page.body
@@ -8,89 +88,9 @@ dependencies:
     - path
     - scheduler
     - text
+hidden: {}
 id: node.page.default
-targetEntityType: node
-bundle: page
+langcode: en
 mode: default
-content:
-  body:
-    type: text_textarea_with_summary
-    weight: 31
-    region: content
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-      show_summary: false
-    third_party_settings: {  }
-  created:
-    type: datetime_timestamp
-    weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  langcode:
-    type: language_select
-    weight: 2
-    region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    weight: 15
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
-  publish_on:
-    type: datetime_timestamp_no_default
-    weight: 30
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  status:
-    type: boolean_checkbox
-    weight: 120
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    weight: 16
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
-  title:
-    type: string_textfield
-    weight: -5
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
-    weight: 5
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  unpublish_on:
-    type: datetime_timestamp_no_default
-    weight: 30
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-hidden: {  }
+status: true
+targetEntityType: node

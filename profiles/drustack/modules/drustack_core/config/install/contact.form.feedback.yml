@@ -1,11 +1,11 @@
-langcode: en
-status: true
-dependencies: {  }
+dependencies: {}
 id: feedback
-label: 'Website feedback'
+label: Website feedback
+langcode: en
+message: Your message has been sent.
 recipients:
   - admin@example.com
-reply: ''
+redirect: ""
+reply: ""
+status: true
 weight: 0
-message: 'Your message has been sent.'
-redirect: ''

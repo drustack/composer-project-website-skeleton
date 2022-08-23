@@ -1,8 +1,8 @@
-name: DruStack
-description: 'DruStack is a starter Drupal distribution for developer.'
-type: profile
-core_version_requirement: '^8.9 || ^9'
-package: DruStack
+core_version_requirement: ^8.9 || ^9
+dependencies:
+  - drupal:automated_cron
+  - drupal:system
+description: DruStack is a starter Drupal distribution for developer.
 distribution:
   name: DruStack
 install:
@@ -87,9 +87,9 @@ install:
   - views
   - views_ui
   - workflows
+name: DruStack
+package: DruStack
 themes:
   - claro
   - olivero
-dependencies:
-  - 'drupal:automated_cron'
-  - 'drupal:system'
+type: profile
