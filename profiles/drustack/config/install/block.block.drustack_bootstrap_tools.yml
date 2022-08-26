@@ -1,5 +1,3 @@
-langcode: en
-status: true
 dependencies:
   config:
     - system.menu.tools
@@ -8,17 +6,19 @@ dependencies:
   theme:
     - drustack_bootstrap
 id: drustack_bootstrap_tools
-theme: drustack_bootstrap
-region: footer_fifth
-weight: 0
+langcode: en
+plugin: system_menu_block:tools
 provider: null
-plugin: 'system_menu_block:tools'
+region: footer_fifth
 settings:
-  id: 'system_menu_block:tools'
-  label: Tools
-  provider: system
-  label_display: visible
-  level: 1
   depth: 0
   expand_all_items: false
-visibility: {  }
+  id: system_menu_block:tools
+  label: Tools
+  label_display: visible
+  level: 1
+  provider: system
+status: true
+theme: drustack_bootstrap
+visibility: {}
+weight: 0

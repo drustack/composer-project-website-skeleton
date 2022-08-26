@@ -1,25 +1,20 @@
-langcode: en
-status: true
+bundle: aggregator_feed
+content:
+  items:
+    region: content
+    settings: {}
+    third_party_settings: {}
+    weight: 0
+  more_link:
+    region: content
+    settings: {}
+    third_party_settings: {}
+    weight: 1
 dependencies:
   config:
     - core.entity_view_mode.aggregator_feed.summary
   module:
     - aggregator
-id: aggregator_feed.aggregator_feed.summary
-targetEntityType: aggregator_feed
-bundle: aggregator_feed
-mode: summary
-content:
-  items:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 0
-    region: content
-  more_link:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 1
-    region: content
 hidden:
   checked: true
   description: true
@@ -28,3 +23,8 @@ hidden:
   langcode: true
   link: true
   search_api_excerpt: true
+id: aggregator_feed.aggregator_feed.summary
+langcode: en
+mode: summary
+status: true
+targetEntityType: aggregator_feed

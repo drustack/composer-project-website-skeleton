@@ -1,5 +1,3 @@
-langcode: en
-status: true
 dependencies:
   config:
     - system.menu.account
@@ -8,17 +6,19 @@ dependencies:
   theme:
     - drustack_bootstrap
 id: drustack_bootstrap_account_menu
-theme: drustack_bootstrap
-region: secondary_menu
-weight: 0
+langcode: en
+plugin: system_menu_block:account
 provider: null
-plugin: 'system_menu_block:account'
+region: secondary_menu
 settings:
-  id: 'system_menu_block:account'
-  label: 'User account menu'
-  provider: system
-  label_display: '0'
-  level: 1
   depth: 1
   expand_all_items: false
-visibility: {  }
+  id: system_menu_block:account
+  label: User account menu
+  label_display: "0"
+  level: 1
+  provider: system
+status: true
+theme: drustack_bootstrap
+visibility: {}
+weight: 0

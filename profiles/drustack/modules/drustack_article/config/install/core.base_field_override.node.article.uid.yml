@@ -1,19 +1,19 @@
-langcode: en
-status: true
+bundle: article
+default_value: {}
+default_value_callback: Drupal\node\Entity\Node::getDefaultEntityOwner
 dependencies:
   config:
     - node.type.article
-id: node.article.uid
-field_name: uid
+description: The username of the content author.
 entity_type: node
-bundle: article
-label: 'Authored by'
-description: 'The username of the content author.'
+field_name: uid
+field_type: entity_reference
+id: node.article.uid
+label: Authored by
+langcode: en
 required: false
-translatable: true
-default_value: {  }
-default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
 settings:
   handler: default
-  handler_settings: {  }
-field_type: entity_reference
+  handler_settings: {}
+status: true
+translatable: true

@@ -1,5 +1,19 @@
-langcode: en
-status: true
+bundle: user
+content:
+  member_for:
+    region: content
+    settings: {}
+    third_party_settings: {}
+    weight: 5
+  user_picture:
+    label: visually_hidden
+    region: content
+    settings:
+      image_link: content
+      image_style: thumbnail
+    third_party_settings: {}
+    type: image
+    weight: 0
 dependencies:
   config:
     - field.field.user.user.user_picture
@@ -7,25 +21,11 @@ dependencies:
   module:
     - image
     - user
-id: user.user.default
-targetEntityType: user
-bundle: user
-mode: default
-content:
-  member_for:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 5
-    region: content
-  user_picture:
-    type: image
-    label: visually_hidden
-    settings:
-      image_link: content
-      image_style: thumbnail
-    third_party_settings: {  }
-    weight: 0
-    region: content
 hidden:
   langcode: true
   search_api_excerpt: true
+id: user.user.default
+langcode: en
+mode: default
+status: true
+targetEntityType: user

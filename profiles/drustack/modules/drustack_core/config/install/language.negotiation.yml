@@ -1,13 +1,13 @@
+selected_langcode: site_default
 session:
   parameter: language
 url:
-  source: path_prefix
+  domains:
+    en: ""
+    zh-cn: ""
+    zh-hk: ""
   prefixes:
     en: en-hk
-    zh-hk: zh-hk
     zh-cn: zh-cn
-  domains:
-    en: ''
-    zh-hk: ''
-    zh-cn: ''
-selected_langcode: site_default
+    zh-hk: zh-hk
+  source: path_prefix

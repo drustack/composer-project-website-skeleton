@@ -1,5 +1,14 @@
-langcode: en
-status: true
+bundle: audio
+content:
+  thumbnail:
+    label: hidden
+    region: content
+    settings:
+      image_link: ""
+      image_style: thumbnail
+    third_party_settings: {}
+    type: image
+    weight: 0
 dependencies:
   config:
     - core.entity_view_mode.media.media_library
@@ -8,22 +17,13 @@ dependencies:
     - media.type.audio
   module:
     - image
-id: media.audio.media_library
-targetEntityType: media
-bundle: audio
-mode: media_library
-content:
-  thumbnail:
-    type: image
-    weight: 0
-    region: content
-    label: hidden
-    settings:
-      image_style: thumbnail
-      image_link: ''
-    third_party_settings: {  }
 hidden:
   created: true
   field_media_audio_file: true
   name: true
   uid: true
+id: media.audio.media_library
+langcode: en
+mode: media_library
+status: true
+targetEntityType: media

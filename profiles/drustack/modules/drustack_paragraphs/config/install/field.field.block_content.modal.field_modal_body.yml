@@ -1,5 +1,6 @@
-langcode: en
-status: true
+bundle: modal
+default_value: {}
+default_value_callback: ""
 dependencies:
   config:
     - block_content.type.modal
@@ -10,45 +11,44 @@ dependencies:
     - paragraphs.paragraphs_type.views
   module:
     - entity_reference_revisions
-id: block_content.modal.field_modal_body
-field_name: field_modal_body
+description: ""
 entity_type: block_content
-bundle: modal
-label: 'Modal Body'
-description: ''
+field_name: field_modal_body
+field_type: entity_reference_revisions
+id: block_content.modal.field_modal_body
+label: Modal Body
+langcode: en
 required: true
-translatable: false
-default_value: {  }
-default_value_callback: ''
 settings:
-  handler: 'default:paragraph'
+  handler: default:paragraph
   handler_settings:
-    target_bundles:
-      text: text
-      image: image
-      block: block
-      views: views
     negate: 0
+    target_bundles:
+      block: block
+      image: image
+      text: text
+      views: views
     target_bundles_drag_drop:
       accordion:
+        enabled: false
         weight: -12
-        enabled: false
       block:
+        enabled: true
         weight: -15
-        enabled: true
       carousel:
+        enabled: false
         weight: -11
-        enabled: false
       image:
+        enabled: true
         weight: -16
-        enabled: true
       tab:
-        weight: -10
         enabled: false
+        weight: -10
       text:
+        enabled: true
         weight: -17
-        enabled: true
       views:
-        weight: -14
         enabled: true
-field_type: entity_reference_revisions
+        weight: -14
+status: true
+translatable: false

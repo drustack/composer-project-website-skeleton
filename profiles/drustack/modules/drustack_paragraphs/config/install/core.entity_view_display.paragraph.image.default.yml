@@ -1,24 +1,24 @@
-langcode: en
-status: true
+bundle: image
+content:
+  field_image:
+    label: visually_hidden
+    region: content
+    settings:
+      image_link: ""
+      image_style: ""
+    third_party_settings: {}
+    type: image
+    weight: 0
 dependencies:
   config:
     - field.field.paragraph.image.field_image
     - paragraphs.paragraphs_type.image
   module:
     - image
-id: paragraph.image.default
-targetEntityType: paragraph
-bundle: image
-mode: default
-content:
-  field_image:
-    type: image
-    label: visually_hidden
-    settings:
-      image_link: ''
-      image_style: ''
-    third_party_settings: {  }
-    weight: 0
-    region: content
 hidden:
   search_api_excerpt: true
+id: paragraph.image.default
+langcode: en
+mode: default
+status: true
+targetEntityType: paragraph

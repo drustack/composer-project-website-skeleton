@@ -1,18 +1,18 @@
-langcode: en
-status: true
+bundle: tab
+default_value: {}
+default_value_callback: ""
 dependencies:
   config:
     - field.storage.paragraph.field_nav_link
     - paragraphs.paragraphs_type.tab
-id: paragraph.tab.field_nav_link
-field_name: field_nav_link
+description: ""
 entity_type: paragraph
-bundle: tab
-label: 'Nav Link'
-description: ''
-required: true
-translatable: true
-default_value: {  }
-default_value_callback: ''
-settings: {  }
+field_name: field_nav_link
 field_type: string
+id: paragraph.tab.field_nav_link
+label: Nav Link
+langcode: en
+required: true
+settings: {}
+status: true
+translatable: true

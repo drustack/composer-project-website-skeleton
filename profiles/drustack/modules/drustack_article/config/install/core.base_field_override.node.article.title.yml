@@ -1,17 +1,17 @@
-langcode: en
-status: true
+bundle: article
+default_value: {}
+default_value_callback: ""
 dependencies:
   config:
     - node.type.article
-id: node.article.title
-field_name: title
+description: ""
 entity_type: node
-bundle: article
-label: Title
-description: ''
-required: true
-translatable: true
-default_value: {  }
-default_value_callback: ''
-settings: {  }
+field_name: title
 field_type: string
+id: node.article.title
+label: Title
+langcode: en
+required: true
+settings: {}
+status: true
+translatable: true

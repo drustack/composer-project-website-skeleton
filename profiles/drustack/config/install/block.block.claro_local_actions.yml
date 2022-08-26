@@ -1,17 +1,17 @@
-langcode: en
-status: true
 dependencies:
   theme:
     - claro
 id: claro_local_actions
-theme: claro
-region: content
-weight: -10
-provider: null
+langcode: en
 plugin: local_actions_block
+provider: null
+region: content
 settings:
   id: local_actions_block
-  label: 'Primary admin actions'
+  label: Primary admin actions
+  label_display: "0"
   provider: core
-  label_display: '0'
-visibility: {  }
+status: true
+theme: claro
+visibility: {}
+weight: -10

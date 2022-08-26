@@ -1,51 +1,51 @@
-langcode: en
-status: true
+bundle: aggregator_feed
+content:
+  checked:
+    label: inline
+    region: content
+    settings:
+      future_format: '@interval hence'
+      granularity: 2
+      past_format: '@interval ago'
+    third_party_settings: {}
+    type: timestamp_ago
+    weight: 1
+  description:
+    region: content
+    settings: {}
+    third_party_settings: {}
+    weight: 3
+  feed_icon:
+    region: content
+    settings: {}
+    third_party_settings: {}
+    weight: 5
+  image:
+    region: content
+    settings: {}
+    third_party_settings: {}
+    weight: 2
+  items:
+    region: content
+    settings: {}
+    third_party_settings: {}
+    weight: 0
+  link:
+    label: inline
+    region: content
+    settings: {}
+    third_party_settings: {}
+    type: uri_link
+    weight: 4
 dependencies:
   module:
     - aggregator
-id: aggregator_feed.aggregator_feed.default
-targetEntityType: aggregator_feed
-bundle: aggregator_feed
-mode: default
-content:
-  checked:
-    type: timestamp_ago
-    label: inline
-    settings:
-      future_format: '@interval hence'
-      past_format: '@interval ago'
-      granularity: 2
-    third_party_settings: {  }
-    weight: 1
-    region: content
-  description:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 3
-    region: content
-  feed_icon:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 5
-    region: content
-  image:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 2
-    region: content
-  items:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 0
-    region: content
-  link:
-    type: uri_link
-    label: inline
-    settings: {  }
-    third_party_settings: {  }
-    weight: 4
-    region: content
 hidden:
   langcode: true
   more_link: true
   search_api_excerpt: true
+id: aggregator_feed.aggregator_feed.default
+langcode: en
+mode: default
+status: true
+targetEntityType: aggregator_feed

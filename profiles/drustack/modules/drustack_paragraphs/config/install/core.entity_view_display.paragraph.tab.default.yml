@@ -1,5 +1,22 @@
-langcode: en
-status: true
+bundle: tab
+content:
+  field_nav_link:
+    label: visually_hidden
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {}
+    type: string
+    weight: 0
+  field_tab_pane:
+    label: visually_hidden
+    region: content
+    settings:
+      link: ""
+      view_mode: default
+    third_party_settings: {}
+    type: entity_reference_revisions_entity_view
+    weight: 1
 dependencies:
   config:
     - field.field.paragraph.tab.field_nav_link
@@ -7,27 +24,10 @@ dependencies:
     - paragraphs.paragraphs_type.tab
   module:
     - entity_reference_revisions
-id: paragraph.tab.default
-targetEntityType: paragraph
-bundle: tab
-mode: default
-content:
-  field_nav_link:
-    type: string
-    label: visually_hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 0
-    region: content
-  field_tab_pane:
-    type: entity_reference_revisions_entity_view
-    label: visually_hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    weight: 1
-    region: content
 hidden:
   search_api_excerpt: true
+id: paragraph.tab.default
+langcode: en
+mode: default
+status: true
+targetEntityType: paragraph

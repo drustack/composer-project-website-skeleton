@@ -1,5 +1,6 @@
-langcode: en
-status: true
+bundle: page
+default_value: {}
+default_value_callback: ""
 dependencies:
   config:
     - field.storage.node.field_attachment
@@ -9,28 +10,27 @@ dependencies:
     - media.type.remote_video
     - media.type.video
     - node.type.page
-id: node.page.field_attachment
-field_name: field_attachment
+description: ""
 entity_type: node
-bundle: page
+field_name: field_attachment
+field_type: entity_reference
+id: node.page.field_attachment
 label: Attachments
-description: ''
+langcode: en
 required: false
-translatable: true
-default_value: {  }
-default_value_callback: ''
 settings:
-  handler: 'default:media'
+  handler: default:media
   handler_settings:
+    auto_create: true
+    auto_create_bundle: document
+    sort:
+      direction: DESC
+      field: changed
     target_bundles:
       audio: audio
       document: document
       image: image
       remote_video: remote_video
       video: video
-    sort:
-      field: changed
-      direction: DESC
-    auto_create: true
-    auto_create_bundle: document
-field_type: entity_reference
+status: true
+translatable: true

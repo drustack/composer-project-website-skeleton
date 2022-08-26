@@ -1,18 +1,18 @@
-langcode: en
-status: true
+bundle: accordion
+default_value: {}
+default_value_callback: ""
 dependencies:
   config:
     - field.storage.paragraph.field_card_header
     - paragraphs.paragraphs_type.accordion
-id: paragraph.accordion.field_card_header
-field_name: field_card_header
+description: ""
 entity_type: paragraph
-bundle: accordion
-label: 'Card Header'
-description: ''
-required: false
-translatable: true
-default_value: {  }
-default_value_callback: ''
-settings: {  }
+field_name: field_card_header
 field_type: string
+id: paragraph.accordion.field_card_header
+label: Card Header
+langcode: en
+required: false
+settings: {}
+status: true
+translatable: true

@@ -1,18 +1,18 @@
-langcode: en
-status: true
+cardinality: 1
+custom_storage: false
 dependencies:
   module:
     - layout_builder
     - node
-id: node.layout_builder__translation
-field_name: layout_builder__translation
 entity_type: node
-type: layout_translation
-settings: {  }
-module: layout_builder
+field_name: layout_builder__translation
+id: node.layout_builder__translation
+indexes: {}
+langcode: en
 locked: true
-cardinality: 1
-translatable: true
-indexes: {  }
+module: layout_builder
 persist_with_no_fields: false
-custom_storage: false
+settings: {}
+status: true
+translatable: true
+type: layout_translation

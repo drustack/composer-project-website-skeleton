@@ -1,5 +1,30 @@
-langcode: en
-status: true
+bundle: tab
+content:
+  field_nav_link:
+    region: content
+    settings:
+      placeholder: ""
+      size: 60
+    third_party_settings: {}
+    type: string_textfield
+    weight: 0
+  field_tab_pane:
+    region: content
+    settings:
+      add_mode: dropdown
+      default_paragraph_type: ""
+      edit_mode: open
+      form_display_mode: default
+      title: Paragraph
+      title_plural: Paragraphs
+    third_party_settings: {}
+    type: entity_reference_paragraphs
+    weight: 1
+  translation:
+    region: content
+    settings: {}
+    third_party_settings: {}
+    weight: 10
 dependencies:
   config:
     - field.field.paragraph.tab.field_nav_link
@@ -7,36 +32,11 @@ dependencies:
     - paragraphs.paragraphs_type.tab
   module:
     - paragraphs
-id: paragraph.tab.default
-targetEntityType: paragraph
-bundle: tab
-mode: default
-content:
-  field_nav_link:
-    type: string_textfield
-    weight: 0
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_tab_pane:
-    type: entity_reference_paragraphs
-    weight: 1
-    region: content
-    settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
-    third_party_settings: {  }
-  translation:
-    weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   created: true
   status: true
+id: paragraph.tab.default
+langcode: en
+mode: default
+status: true
+targetEntityType: paragraph

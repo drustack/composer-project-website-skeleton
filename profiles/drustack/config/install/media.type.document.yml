@@ -1,13 +1,13 @@
-langcode: en
-status: true
-dependencies: {  }
-id: document
-label: Document
-description: "An uploaded file or document, such as a PDF."
-source: file
-queue_thumbnail_downloads: false
-new_revision: true
-source_configuration:
-  source_field: field_media_document
+dependencies: {}
+description: An uploaded file or document, such as a PDF.
 field_map:
   name: name
+id: document
+label: Document
+langcode: en
+new_revision: true
+queue_thumbnail_downloads: false
+source: file
+source_configuration:
+  source_field: field_media_document
+status: true

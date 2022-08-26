@@ -1,17 +1,17 @@
-langcode: en
-status: true
+default_langcode: site_default
 dependencies:
   config:
     - block_content.type.accordion
   module:
     - content_translation
+id: block_content.accordion
+langcode: en
+language_alterable: true
+status: true
+target_bundle: accordion
+target_entity_type_id: block_content
 third_party_settings:
   content_translation:
-    enabled: true
     bundle_settings:
-      untranslatable_fields_hide: '0'
-id: block_content.accordion
-target_entity_type_id: block_content
-target_bundle: accordion
-default_langcode: site_default
-language_alterable: true
+      untranslatable_fields_hide: "0"
+    enabled: true

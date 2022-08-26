@@ -1,5 +1,42 @@
-langcode: en
-status: true
+bundle: remote_video
+content:
+  created:
+    region: content
+    settings: {}
+    third_party_settings: {}
+    type: datetime_timestamp
+    weight: 10
+  field_media_oembed_video:
+    region: content
+    settings:
+      placeholder: ""
+      size: 60
+    third_party_settings: {}
+    type: oembed_textfield
+    weight: 0
+  path:
+    region: content
+    settings: {}
+    third_party_settings: {}
+    type: path
+    weight: 30
+  status:
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {}
+    type: boolean_checkbox
+    weight: 100
+  uid:
+    region: content
+    settings:
+      match_limit: 10
+      match_operator: CONTAINS
+      placeholder: ""
+      size: 60
+    third_party_settings: {}
+    type: entity_reference_autocomplete
+    weight: 5
 dependencies:
   config:
     - field.field.media.remote_video.field_media_oembed_video
@@ -7,47 +44,10 @@ dependencies:
   module:
     - media
     - path
-id: media.remote_video.default
-targetEntityType: media
-bundle: remote_video
-mode: default
-content:
-  created:
-    type: datetime_timestamp
-    weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_media_oembed_video:
-    type: oembed_textfield
-    weight: 0
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
-  path:
-    type: path
-    weight: 30
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  status:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 100
-    region: content
-    third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
-    weight: 5
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    region: content
-    third_party_settings: {  }
 hidden:
   name: true
+id: media.remote_video.default
+langcode: en
+mode: default
+status: true
+targetEntityType: media

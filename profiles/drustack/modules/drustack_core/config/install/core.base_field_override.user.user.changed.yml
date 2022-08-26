@@ -1,17 +1,17 @@
-langcode: en
-status: true
+bundle: user
+default_value: {}
+default_value_callback: ""
 dependencies:
   module:
     - user
-id: user.user.changed
-field_name: changed
+description: The time that the user was last edited.
 entity_type: user
-bundle: user
-label: Changed
-description: 'The time that the user was last edited.'
-required: false
-translatable: false
-default_value: {  }
-default_value_callback: ''
-settings: {  }
+field_name: changed
 field_type: changed
+id: user.user.changed
+label: Changed
+langcode: en
+required: false
+settings: {}
+status: true
+translatable: false

@@ -1,5 +1,18 @@
-langcode: en
-status: true
+bundle: image
+content:
+  field_image:
+    region: content
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings: {}
+    type: image_image
+    weight: 0
+  translation:
+    region: content
+    settings: {}
+    third_party_settings: {}
+    weight: 10
 dependencies:
   config:
     - field.field.paragraph.image.field_image
@@ -7,24 +20,11 @@ dependencies:
     - paragraphs.paragraphs_type.image
   module:
     - image
-id: paragraph.image.default
-targetEntityType: paragraph
-bundle: image
-mode: default
-content:
-  field_image:
-    type: image_image
-    weight: 0
-    region: content
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-  translation:
-    weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   created: true
   status: true
+id: paragraph.image.default
+langcode: en
+mode: default
+status: true
+targetEntityType: paragraph

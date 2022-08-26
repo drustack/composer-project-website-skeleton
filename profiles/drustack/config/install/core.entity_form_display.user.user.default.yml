@@ -1,5 +1,25 @@
-langcode: en
-status: true
+bundle: user
+content:
+  account:
+    region: content
+    weight: -10
+  contact:
+    region: content
+    weight: 5
+  language:
+    region: content
+    weight: 0
+  timezone:
+    region: content
+    weight: 6
+  user_picture:
+    region: content
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings: {}
+    type: image_image
+    weight: -1
 dependencies:
   config:
     - field.field.user.user.user_picture
@@ -7,29 +27,9 @@ dependencies:
   module:
     - image
     - user
+hidden: {}
 id: user.user.default
-targetEntityType: user
-bundle: user
+langcode: en
 mode: default
-content:
-  account:
-    weight: -10
-    region: content
-  contact:
-    weight: 5
-    region: content
-  language:
-    weight: 0
-    region: content
-  timezone:
-    weight: 6
-    region: content
-  user_picture:
-    type: image_image
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    weight: -1
-    region: content
-hidden: {  }
+status: true
+targetEntityType: user

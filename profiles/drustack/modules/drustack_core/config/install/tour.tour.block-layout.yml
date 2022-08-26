@@ -1,45 +1,44 @@
-langcode: en
-status: true
 dependencies:
   module:
     - block
 id: block-layout
-label: 'Block Layout Page'
+label: Block Layout Page
+langcode: en
 module: block
 routes:
-  -
-    route_name: block.admin_display
+  - route_name: block.admin_display
+status: true
 tips:
   block-layout:
+    body: Blocks are boxes of content rendered into an area, or region, of a web page that can be displayed in regions (such as footer or sidebar) on your page.
     id: block-layout
+    label: Block Layout
     plugin: text
-    label: 'Block Layout'
     weight: 1
-    body: 'Blocks are boxes of content rendered into an area, or region, of a web page that can be displayed in regions (such as footer or sidebar) on your page.'
-  place-block:
-    id: place-block
-    plugin: text
-    label: 'Place Blocks'
-    weight: 2
-    selector: .button--small
-    body: 'Any custom or contributed block can be added to a particular region by clicking on a button Place block. A new block can also be created by clicking on Place Block'
   block-region:
+    body: Assign or change the region of a block by clicking here. A dropdown list with all the regions will appear.You can place one block in multiple regions.
     id: block-region
+    label: Block Region
     plugin: text
-    label: 'Block Region'
-    weight: 3
     selector: .block-region-select
-    body: 'Assign or change the region of a block by clicking here. A dropdown list with all the regions will appear.You can place one block in multiple regions.'
+    weight: 3
   configure-block:
+    body: By Clicking on "Configure" you can go ahead and edit the contents of the block, deal with the visibility settings and even change the placement of where it is on your theme.
     id: configure-block
+    label: Configure Block
     plugin: text
-    label: 'Configure Block'
-    weight: 4
     selector: .dropbutton-widget
-    body: 'By Clicking on "Configure" you can go ahead and edit the contents of the block, deal with the visibility settings and even change the placement of where it is on your theme.'
+    weight: 4
   custom-block-library:
+    body: The block management screen also has an another tab on the top which is used to add Custom blocks. The name of the tab is "Custom block library". This tab ultimately provides a link to add custom blocks.
     id: custom-block-library
+    label: Custom Block Library
     plugin: text
-    label: 'Custom Block Library'
     weight: 5
-    body: 'The block management screen also has an another tab on the top which is used to add Custom blocks. The name of the tab is "Custom block library". This tab ultimately provides a link to add custom blocks.'
+  place-block:
+    body: Any custom or contributed block can be added to a particular region by clicking on a button Place block. A new block can also be created by clicking on Place Block
+    id: place-block
+    label: Place Blocks
+    plugin: text
+    selector: .button--small
+    weight: 2

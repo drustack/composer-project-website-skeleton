@@ -1,51 +1,51 @@
-langcode: en
-status: true
+bundle: article
 dependencies:
   config:
     - node.type.article
   module:
     - node
-id: node.article
-targetEntityType: node
-bundle: article
-types:
-  - 'schema:Article'
 fieldMappings:
-  title:
-    properties:
-      - 'schema:name'
-  created:
-    properties:
-      - 'schema:dateCreated'
-    datatype_callback:
-      callable: 'Drupal\rdf\CommonDataConverter::dateIso8601Value'
-  changed:
-    properties:
-      - 'schema:dateModified'
-    datatype_callback:
-      callable: 'Drupal\rdf\CommonDataConverter::dateIso8601Value'
   body:
     properties:
-      - 'schema:text'
-  uid:
+      - schema:text
+  changed:
+    datatype_callback:
+      callable: Drupal\rdf\CommonDataConverter::dateIso8601Value
     properties:
-      - 'schema:author'
+      - schema:dateModified
   comment:
     properties:
-      - 'schema:comment'
+      - schema:comment
   comment_count:
-    properties:
-      - 'schema:interactionCount'
     datatype_callback:
-      callable: 'Drupal\rdf\SchemaOrgDataConverter::interactionCount'
       arguments:
         interaction_type: UserComments
-  field_image:
+      callable: Drupal\rdf\SchemaOrgDataConverter::interactionCount
     properties:
-      - 'schema:image'
-  field_tags:
+      - schema:interactionCount
+  created:
+    datatype_callback:
+      callable: Drupal\rdf\CommonDataConverter::dateIso8601Value
     properties:
-      - 'schema:about'
+      - schema:dateCreated
   field_attachment:
     properties:
-      - 'schema:associatedMedia'
+      - schema:associatedMedia
+  field_image:
+    properties:
+      - schema:image
+  field_tags:
+    properties:
+      - schema:about
+  title:
+    properties:
+      - schema:name
+  uid:
+    properties:
+      - schema:author
+id: node.article
+langcode: en
+status: true
+targetEntityType: node
+types:
+  - schema:Article

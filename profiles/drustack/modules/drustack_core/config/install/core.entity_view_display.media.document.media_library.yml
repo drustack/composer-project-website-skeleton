@@ -1,5 +1,14 @@
-langcode: en
-status: true
+bundle: document
+content:
+  thumbnail:
+    label: visually_hidden
+    region: content
+    settings:
+      image_link: ""
+      image_style: media_library
+    third_party_settings: {}
+    type: image
+    weight: 0
 dependencies:
   config:
     - core.entity_view_mode.media.media_library
@@ -8,20 +17,6 @@ dependencies:
     - media.type.document
   module:
     - image
-id: media.document.media_library
-targetEntityType: media
-bundle: document
-mode: media_library
-content:
-  thumbnail:
-    type: image
-    label: visually_hidden
-    settings:
-      image_link: ''
-      image_style: media_library
-    third_party_settings: {  }
-    weight: 0
-    region: content
 hidden:
   created: true
   field_media_document: true
@@ -29,3 +24,8 @@ hidden:
   name: true
   search_api_excerpt: true
   uid: true
+id: media.document.media_library
+langcode: en
+mode: media_library
+status: true
+targetEntityType: media

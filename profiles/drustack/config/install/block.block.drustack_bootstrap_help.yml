@@ -1,19 +1,19 @@
-langcode: en
-status: true
 dependencies:
   module:
     - help
   theme:
     - drustack_bootstrap
 id: drustack_bootstrap_help
-theme: drustack_bootstrap
-region: content
-weight: -30
-provider: null
+langcode: en
 plugin: help_block
+provider: null
+region: content
 settings:
   id: help_block
   label: Help
+  label_display: "0"
   provider: help
-  label_display: '0'
-visibility: {  }
+status: true
+theme: drustack_bootstrap
+visibility: {}
+weight: -30

@@ -1,19 +1,19 @@
-langcode: en
-status: true
+bundle: page
+default_value: {}
+default_value_callback: ""
 dependencies:
   config:
     - node.type.page
   module:
     - path
-id: node.page.path
-field_name: path
+description: ""
 entity_type: node
-bundle: page
-label: 'URL alias'
-description: ''
-required: false
-translatable: true
-default_value: {  }
-default_value_callback: ''
-settings: {  }
+field_name: path
 field_type: path
+id: node.page.path
+label: URL alias
+langcode: en
+required: false
+settings: {}
+status: true
+translatable: true

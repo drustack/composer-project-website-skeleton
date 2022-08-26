@@ -1,19 +1,19 @@
-langcode: en
-status: true
+bundle: comment
+default_value: {}
+default_value_callback: Drupal\comment\Entity\Comment::getDefaultEntityOwner
 dependencies:
   config:
     - comment.type.comment
-id: comment.comment.uid
-field_name: uid
+description: The user ID of the comment author.
 entity_type: comment
-bundle: comment
-label: 'User ID'
-description: 'The user ID of the comment author.'
+field_name: uid
+field_type: entity_reference
+id: comment.comment.uid
+label: User ID
+langcode: en
 required: false
-translatable: false
-default_value: {  }
-default_value_callback: 'Drupal\comment\Entity\Comment::getDefaultEntityOwner'
 settings:
   handler: default
-  handler_settings: {  }
-field_type: entity_reference
+  handler_settings: {}
+status: true
+translatable: false

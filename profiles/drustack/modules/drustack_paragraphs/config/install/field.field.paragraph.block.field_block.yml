@@ -1,22 +1,22 @@
-langcode: en
-status: true
+bundle: block
+default_value: {}
+default_value_callback: ""
 dependencies:
   config:
     - field.storage.paragraph.field_block
     - paragraphs.paragraphs_type.block
-id: paragraph.block.field_block
-field_name: field_block
+description: ""
 entity_type: paragraph
-bundle: block
-label: Block
-description: ''
-required: false
-translatable: true
-default_value: {  }
-default_value_callback: ''
-settings:
-  handler: 'default:block'
-  handler_settings:
-    target_bundles: null
-    auto_create: true
+field_name: field_block
 field_type: entity_reference
+id: paragraph.block.field_block
+label: Block
+langcode: en
+required: false
+settings:
+  handler: default:block
+  handler_settings:
+    auto_create: true
+    target_bundles: null
+status: true
+translatable: true

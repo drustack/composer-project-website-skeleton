@@ -1,17 +1,17 @@
-langcode: en
-status: true
+bundle: comment
+default_value: {}
+default_value_callback: ""
 dependencies:
   config:
     - comment.type.comment
-id: comment.comment.changed
-field_name: changed
+description: The time that the comment was last edited.
 entity_type: comment
-bundle: comment
-label: Changed
-description: 'The time that the comment was last edited.'
-required: false
-translatable: false
-default_value: {  }
-default_value_callback: ''
-settings: {  }
+field_name: changed
 field_type: changed
+id: comment.comment.changed
+label: Changed
+langcode: en
+required: false
+settings: {}
+status: true
+translatable: false

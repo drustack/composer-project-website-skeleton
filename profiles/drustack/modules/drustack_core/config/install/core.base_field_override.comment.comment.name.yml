@@ -1,19 +1,18 @@
-langcode: en
-status: true
+bundle: comment
+default_value:
+  - value: ""
+default_value_callback: ""
 dependencies:
   config:
     - comment.type.comment
-id: comment.comment.name
-field_name: name
+description: The comment author's name.
 entity_type: comment
-bundle: comment
-label: Name
-description: 'The comment author''s name.'
-required: false
-translatable: false
-default_value:
-  -
-    value: ''
-default_value_callback: ''
-settings: {  }
+field_name: name
 field_type: string
+id: comment.comment.name
+label: Name
+langcode: en
+required: false
+settings: {}
+status: true
+translatable: false

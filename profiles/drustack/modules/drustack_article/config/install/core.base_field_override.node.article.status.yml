@@ -1,21 +1,20 @@
-langcode: en
-status: true
+bundle: article
+default_value:
+  - value: 1
+default_value_callback: ""
 dependencies:
   config:
     - node.type.article
-id: node.article.status
-field_name: status
+description: ""
 entity_type: node
-bundle: article
-label: Published
-description: ''
-required: false
-translatable: true
-default_value:
-  -
-    value: 1
-default_value_callback: ''
-settings:
-  on_label: 'On'
-  off_label: 'Off'
+field_name: status
 field_type: boolean
+id: node.article.status
+label: Published
+langcode: en
+required: false
+settings:
+  off_label: 'Off'
+  on_label: 'On'
+status: true
+translatable: true

@@ -1,5 +1,3 @@
-langcode: en
-status: true
 dependencies:
   config:
     - node.type.blog
@@ -8,15 +6,17 @@ dependencies:
     - node
     - toolbar
 id: blogger
-label: Blogger
-weight: 2
 is_admin: null
+label: Blogger
+langcode: en
 permissions:
-  - 'access toolbar'
-  - 'create blog content'
-  - 'delete blog revisions'
-  - 'delete own blog content'
-  - 'edit own blog content'
-  - 'revert blog revisions'
-  - 'translate blog node'
-  - 'view blog revisions'
+  - access toolbar
+  - create blog content
+  - delete blog revisions
+  - delete own blog content
+  - edit own blog content
+  - revert blog revisions
+  - translate blog node
+  - view blog revisions
+status: true
+weight: 2

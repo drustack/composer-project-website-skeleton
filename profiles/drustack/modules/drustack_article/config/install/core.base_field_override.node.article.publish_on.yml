@@ -1,17 +1,17 @@
-langcode: en
-status: true
+bundle: article
+default_value: {}
+default_value_callback: ""
 dependencies:
   config:
     - node.type.article
-id: node.article.publish_on
-field_name: publish_on
+description: ""
 entity_type: node
-bundle: article
-label: 'Publish on'
-description: ''
-required: false
-translatable: true
-default_value: {  }
-default_value_callback: ''
-settings: {  }
+field_name: publish_on
 field_type: timestamp
+id: node.article.publish_on
+label: Publish on
+langcode: en
+required: false
+settings: {}
+status: true
+translatable: true

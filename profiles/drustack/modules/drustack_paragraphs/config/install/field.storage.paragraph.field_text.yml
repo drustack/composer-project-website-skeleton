@@ -1,18 +1,18 @@
-langcode: en
-status: true
+cardinality: 1
+custom_storage: false
 dependencies:
   module:
     - paragraphs
     - text
-id: paragraph.field_text
-field_name: field_text
 entity_type: paragraph
-type: text_long
-settings: {  }
-module: text
+field_name: field_text
+id: paragraph.field_text
+indexes: {}
+langcode: en
 locked: false
-cardinality: 1
-translatable: true
-indexes: {  }
+module: text
 persist_with_no_fields: false
-custom_storage: false
+settings: {}
+status: true
+translatable: true
+type: text_long

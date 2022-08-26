@@ -1,66 +1,66 @@
-page_title: Sitemap
+include_css: true
 message:
-  value: ''
   format: plain_text
+  value: ""
+page_title: Sitemap
 plugins:
-  frontpage:
-    enabled: true
-    weight: 0
-    settings:
-      title: 'Front page'
-      rss: /rss.xml
-  'vocabulary:tags':
-    enabled: false
-    weight: 0
-    settings:
-      title: Tags
-      show_description: false
-      show_count: false
-      term_depth: 9
-      term_count_threshold: 0
-      customize_link: false
-      term_link: entity.taxonomy_term.canonical|taxonomy_term
-      always_link: false
-      enable_rss: false
-      rss_link: view.taxonomy_term.feed_1|arg_0
-      rss_depth: 9
   book:
     enabled: false
     weight: 0
-  'menu:account':
-    enabled: false
-    weight: 0
-    settings:
-      title: 'User account menu'
-      show_disabled: false
-  'menu:admin':
-    enabled: false
-    weight: 0
-    settings:
-      title: Administration
-      show_disabled: false
-  'menu:devel':
-    enabled: false
-    weight: 0
-    settings:
-      title: Development
-      show_disabled: false
-  'menu:footer':
-    enabled: false
-    weight: 0
-    settings:
-      title: Footer
-      show_disabled: false
-  'menu:main':
+  frontpage:
     enabled: true
-    weight: 0
     settings:
-      title: 'Main navigation'
-      show_disabled: false
-  'menu:tools':
+      rss: /rss.xml
+      title: Front page
+    weight: 0
+  menu:account:
     enabled: false
-    weight: 0
     settings:
-      title: Tools
       show_disabled: false
-include_css: true
+      title: User account menu
+    weight: 0
+  menu:admin:
+    enabled: false
+    settings:
+      show_disabled: false
+      title: Administration
+    weight: 0
+  menu:devel:
+    enabled: false
+    settings:
+      show_disabled: false
+      title: Development
+    weight: 0
+  menu:footer:
+    enabled: false
+    settings:
+      show_disabled: false
+      title: Footer
+    weight: 0
+  menu:main:
+    enabled: true
+    settings:
+      show_disabled: false
+      title: Main navigation
+    weight: 0
+  menu:tools:
+    enabled: false
+    settings:
+      show_disabled: false
+      title: Tools
+    weight: 0
+  vocabulary:tags:
+    enabled: false
+    settings:
+      always_link: false
+      customize_link: false
+      enable_rss: false
+      rss_depth: 9
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      show_count: false
+      show_description: false
+      term_count_threshold: 0
+      term_depth: 9
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      title: Tags
+    weight: 0

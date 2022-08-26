@@ -1,10 +1,10 @@
-langcode: en
-status: true
+default_langcode: site_default
 dependencies:
   module:
     - content_moderation
 id: content_moderation_state.content_moderation_state
-target_entity_type_id: content_moderation_state
-target_bundle: content_moderation_state
-default_langcode: site_default
+langcode: en
 language_alterable: false
+status: true
+target_bundle: content_moderation_state
+target_entity_type_id: content_moderation_state

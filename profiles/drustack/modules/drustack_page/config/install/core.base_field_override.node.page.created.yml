@@ -1,17 +1,17 @@
-langcode: en
-status: true
+bundle: page
+default_value: {}
+default_value_callback: ""
 dependencies:
   config:
     - node.type.page
-id: node.page.created
-field_name: created
+description: The time that the node was created.
 entity_type: node
-bundle: page
-label: 'Authored on'
-description: 'The time that the node was created.'
-required: false
-translatable: true
-default_value: {  }
-default_value_callback: ''
-settings: {  }
+field_name: created
 field_type: created
+id: node.page.created
+label: Authored on
+langcode: en
+required: false
+settings: {}
+status: true
+translatable: true

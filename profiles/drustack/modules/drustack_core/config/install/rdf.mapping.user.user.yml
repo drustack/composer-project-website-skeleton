@@ -1,17 +1,17 @@
-langcode: en
-status: true
+bundle: user
 dependencies:
   module:
     - user
-id: user.user
-targetEntityType: user
-bundle: user
-types:
-  - 'schema:Person'
 fieldMappings:
   name:
     properties:
-      - 'schema:name'
+      - schema:name
   user_picture:
     properties:
-      - 'schema:image'
+      - schema:image
+id: user.user
+langcode: en
+status: true
+targetEntityType: user
+types:
+  - schema:Person

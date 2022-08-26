@@ -1,5 +1,14 @@
-langcode: en
-status: true
+bundle: image
+content:
+  field_media_image:
+    label: visually_hidden
+    region: content
+    settings:
+      image_link: file
+      image_style: large
+    third_party_settings: {}
+    type: image
+    weight: 0
 dependencies:
   config:
     - field.field.media.image.field_media_image
@@ -7,20 +16,6 @@ dependencies:
     - media.type.image
   module:
     - image
-id: media.image.default
-targetEntityType: media
-bundle: image
-mode: default
-content:
-  field_media_image:
-    type: image
-    label: visually_hidden
-    settings:
-      image_link: file
-      image_style: large
-    third_party_settings: {  }
-    weight: 0
-    region: content
 hidden:
   created: true
   langcode: true
@@ -28,3 +23,8 @@ hidden:
   search_api_excerpt: true
   thumbnail: true
   uid: true
+id: media.image.default
+langcode: en
+mode: default
+status: true
+targetEntityType: media

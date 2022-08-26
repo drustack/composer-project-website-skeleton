@@ -1,8 +1,5 @@
-name: DruStack
-description: 'DruStack is a starter Drupal distribution for developer.'
-type: profile
-core_version_requirement: '^8.9 || ^9'
-package: DruStack
+core_version_requirement: ^8.9 || ^9
+description: DruStack is a starter Drupal distribution for developer.
 distribution:
   name: DruStack
 install:
@@ -94,7 +91,10 @@ install:
   - views
   - views_ui
   - workflows
+name: DruStack
+package: DruStack
 themes:
   - bootstrap_barrio
   - drustack_bootstrap
   - claro
+type: profile

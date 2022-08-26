@@ -1,85 +1,83 @@
-langcode: en
-status: true
 dependencies:
   module:
     - views_ui
 id: views-ui
-label: 'View edit page'
+label: View edit page
+langcode: en
 module: views_ui
 routes:
-  -
-    route_name: entity.view.edit_form
-  -
-    route_name: entity.view.edit_display_form
+  - route_name: entity.view.edit_form
+  - route_name: entity.view.edit_display_form
+status: true
 tips:
   views-main:
+    body: View or edit the configuration.
     id: views-main
+    label: Manage view settings
     plugin: text
-    label: 'Manage view settings'
     weight: 1
-    body: 'View or edit the configuration.'
   views-ui-displays:
+    body: A display is a way of outputting the results, e.g., as a page or a block. A view can contain multiple displays, which are listed here. The active display is highlighted.
     id: views-ui-displays
+    label: Displays in this view
     plugin: text
-    label: 'Displays in this view'
-    weight: 2
     selector: '#views-display-top'
-    body: 'A display is a way of outputting the results, e.g., as a page or a block. A view can contain multiple displays, which are listed here. The active display is highlighted.'
-  views-ui-view-admin:
-    id: views-ui-view-admin
-    plugin: text
-    label: 'View administration'
-    weight: 3
-    position: left-start
-    selector: '#views-display-extra-actions'
-    body: 'Perform administrative tasks, including adding a description and creating a clone. Click the drop-down button to view the available options.'
-  views-ui-format:
-    id: views-ui-format
-    plugin: text
-    label: 'Output format'
-    weight: 4
-    selector: .views-ui-display-tab-bucket.format
-    body: 'Choose how to output results. E.g., choose <em>Content</em> to output each item completely, using your configured display settings. Or choose <em>Fields</em>, which allows you to output only specific fields for each result. Additional formats can be added by installing modules to <em>extend</em> Drupal''s base functionality.'
+    weight: 2
   views-ui-fields:
+    body: If this view uses fields, they are listed here. You can click on a field to configure it.
     id: views-ui-fields
-    plugin: text
     label: Fields
-    weight: 5
+    plugin: text
     selector: .views-ui-display-tab-bucket.field
-    body: 'If this view uses fields, they are listed here. You can click on a field to configure it.'
+    weight: 5
   views-ui-filter:
+    body: Add filters to limit the results in the output. E.g., to only show content that is <em>published</em>, you would add a filter for <em>Published</em> and select <em>Yes</em>.
     id: views-ui-filter
+    label: Filter your view
     plugin: text
-    label: 'Filter your view'
-    weight: 6
     selector: .views-ui-display-tab-bucket.filter
-    body: 'Add filters to limit the results in the output. E.g., to only show content that is <em>published</em>, you would add a filter for <em>Published</em> and select <em>Yes</em>.'
+    weight: 6
   views-ui-filter-operations:
+    body: Add, rearrange or remove filters.
     id: views-ui-filter-operations
+    label: Filter actions
     plugin: text
-    label: 'Filter actions'
+    selector: .views-ui-display-tab-bucket.filter .dropbutton-widget
     weight: 7
-    selector: '.views-ui-display-tab-bucket.filter .dropbutton-widget'
-    body: 'Add, rearrange or remove filters.'
-  views-ui-sorts:
-    id: views-ui-sorts
+  views-ui-format:
+    body: Choose how to output results. E.g., choose <em>Content</em> to output each item completely, using your configured display settings. Or choose <em>Fields</em>, which allows you to output only specific fields for each result. Additional formats can be added by installing modules to <em>extend</em> Drupal's base functionality.
+    id: views-ui-format
+    label: Output format
     plugin: text
-    label: 'Sort Criteria'
-    weight: 8
-    selector: .views-ui-display-tab-bucket.sort
-    body: 'Control the order in which the results are output. Click on an active sort rule to configure it.'
-  views-ui-sorts-operations:
-    id: views-ui-sorts-operations
-    plugin: text
-    label: 'Sort actions'
-    weight: 9
-    selector: '.views-ui-display-tab-bucket.sort .dropbutton-widget'
-    body: 'Add, rearrange or remove sorting rules.'
+    selector: .views-ui-display-tab-bucket.format
+    weight: 4
   views-ui-preview:
+    body: Show a preview of the view output.
     id: views-ui-preview
-    plugin: text
     label: Preview
-    weight: 10
+    plugin: text
     position: left-start
     selector: '#preview-submit'
-    body: 'Show a preview of the view output.'
+    weight: 10
+  views-ui-sorts:
+    body: Control the order in which the results are output. Click on an active sort rule to configure it.
+    id: views-ui-sorts
+    label: Sort Criteria
+    plugin: text
+    selector: .views-ui-display-tab-bucket.sort
+    weight: 8
+  views-ui-sorts-operations:
+    body: Add, rearrange or remove sorting rules.
+    id: views-ui-sorts-operations
+    label: Sort actions
+    plugin: text
+    selector: .views-ui-display-tab-bucket.sort .dropbutton-widget
+    weight: 9
+  views-ui-view-admin:
+    body: Perform administrative tasks, including adding a description and creating a clone. Click the drop-down button to view the available options.
+    id: views-ui-view-admin
+    label: View administration
+    plugin: text
+    position: left-start
+    selector: '#views-display-extra-actions'
+    weight: 3

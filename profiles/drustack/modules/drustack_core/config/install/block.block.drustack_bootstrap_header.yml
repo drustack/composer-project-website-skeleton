@@ -1,5 +1,3 @@
-langcode: en
-status: true
 dependencies:
   config:
     - system.menu.header
@@ -8,23 +6,25 @@ dependencies:
   theme:
     - drustack_bootstrap
 id: drustack_bootstrap_header
-theme: drustack_bootstrap
-region: primary_menu
-weight: 0
+langcode: en
+plugin: menu_block:header
 provider: null
-plugin: 'menu_block:header'
+region: primary_menu
 settings:
-  id: 'menu_block:header'
-  label: 'Header menu'
-  label_display: '0'
-  provider: menu_block
-  follow: false
-  follow_parent: child
-  level: 1
   depth: 0
   expand_all_items: true
-  parent: 'header:'
-  suggestion: header
-  label_type: block
+  follow: false
+  follow_parent: child
+  id: menu_block:header
+  label: Header menu
+  label_display: "0"
   label_link: false
-visibility: {  }
+  label_type: block
+  level: 1
+  parent: 'header:'
+  provider: menu_block
+  suggestion: header
+status: true
+theme: drustack_bootstrap
+visibility: {}
+weight: 0

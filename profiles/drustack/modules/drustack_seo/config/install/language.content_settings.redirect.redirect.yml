@@ -1,10 +1,10 @@
-langcode: en
-status: true
+default_langcode: und
 dependencies:
   module:
     - redirect
 id: redirect.redirect
-target_entity_type_id: redirect
-target_bundle: redirect
-default_langcode: und
+langcode: en
 language_alterable: false
+status: true
+target_bundle: redirect
+target_entity_type_id: redirect

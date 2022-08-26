@@ -1,19 +1,19 @@
-langcode: en
-status: true
 dependencies:
   theme:
     - claro
 id: claro_primary_local_tasks
-theme: claro
-region: header
-weight: 0
-provider: null
+langcode: en
 plugin: local_tasks_block
+provider: null
+region: header
 settings:
   id: local_tasks_block
-  label: 'Primary tabs'
-  provider: core
-  label_display: '0'
+  label: Primary tabs
+  label_display: "0"
   primary: true
+  provider: core
   secondary: false
-visibility: {  }
+status: true
+theme: claro
+visibility: {}
+weight: 0

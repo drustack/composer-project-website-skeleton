@@ -1,65 +1,28 @@
-langcode: en
-status: true
 dependencies:
   config:
     - filter.format.basic_html
   module:
     - ckeditor
-format: basic_html
 editor: ckeditor
+format: basic_html
+image_upload:
+  directory: inline-images
+  max_dimensions:
+    height: null
+    width: null
+  max_size: ""
+  scheme: public
+  status: true
+langcode: en
 settings:
-  toolbar:
-    rows:
-      -
-        -
-          name: Formatting
-          items:
-            - Bold
-            - Italic
-        -
-          name: Linking
-          items:
-            - DrupalLink
-            - DrupalUnlink
-        -
-          name: Lists
-          items:
-            - BulletedList
-            - NumberedList
-        -
-          name: Media
-          items:
-            - Blockquote
-            - DrupalImage
-            - SpecialChar
-            - CodeSnippet
-        -
-          name: 'Block Formatting'
-          items:
-            - Format
-        -
-          name: Tools
-          items:
-            - Source
-            - Maximize
-            - Templates
-            - Language
   plugins:
-    stylescombo:
-      styles: ''
-    language:
-      language_list: all
-    templates:
-      template_path: ''
-      replace_content: 0
     codesnippet:
-      highlight_style: github
       highlight_languages:
         apache: apache
         bash: bash
-        cs: cs
-        cpp: cpp
         coffeescript: coffeescript
+        cpp: cpp
+        cs: cs
         css: css
         diff: diff
         html: html
@@ -80,11 +43,41 @@ settings:
         vbscript: vbscript
         xhtml: xhtml
         xml: xml
-image_upload:
-  status: true
-  scheme: public
-  directory: inline-images
-  max_size: ''
-  max_dimensions:
-    width: null
-    height: null
+      highlight_style: github
+    language:
+      language_list: all
+    stylescombo:
+      styles: ""
+    templates:
+      replace_content: 0
+      template_path: ""
+  toolbar:
+    rows:
+      - - items:
+            - Bold
+            - Italic
+          name: Formatting
+        - items:
+            - DrupalLink
+            - DrupalUnlink
+          name: Linking
+        - items:
+            - BulletedList
+            - NumberedList
+          name: Lists
+        - items:
+            - Blockquote
+            - DrupalImage
+            - SpecialChar
+            - CodeSnippet
+          name: Media
+        - items:
+            - Format
+          name: Block Formatting
+        - items:
+            - Source
+            - Maximize
+            - Templates
+            - Language
+          name: Tools
+status: true

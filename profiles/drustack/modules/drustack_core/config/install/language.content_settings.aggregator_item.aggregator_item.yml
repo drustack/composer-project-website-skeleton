@@ -1,10 +1,10 @@
-langcode: en
-status: true
+default_langcode: site_default
 dependencies:
   module:
     - aggregator
 id: aggregator_item.aggregator_item
-target_entity_type_id: aggregator_item
-target_bundle: aggregator_item
-default_langcode: site_default
+langcode: en
 language_alterable: false
+status: true
+target_bundle: aggregator_item
+target_entity_type_id: aggregator_item

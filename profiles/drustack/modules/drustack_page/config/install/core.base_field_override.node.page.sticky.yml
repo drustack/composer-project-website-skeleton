@@ -1,21 +1,20 @@
-langcode: en
-status: true
+bundle: page
+default_value:
+  - value: 0
+default_value_callback: ""
 dependencies:
   config:
     - node.type.page
-id: node.page.sticky
-field_name: sticky
+description: ""
 entity_type: node
-bundle: page
-label: 'Sticky at top of lists'
-description: ''
-required: false
-translatable: true
-default_value:
-  -
-    value: 0
-default_value_callback: ''
-settings:
-  on_label: 'On'
-  off_label: 'Off'
+field_name: sticky
 field_type: boolean
+id: node.page.sticky
+label: Sticky at top of lists
+langcode: en
+required: false
+settings:
+  off_label: 'Off'
+  on_label: 'On'
+status: true
+translatable: true

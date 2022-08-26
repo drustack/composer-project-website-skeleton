@@ -1,18 +1,13 @@
-langcode: en
-status: true
+bundle: aggregator_item
+content:
+  timestamp:
+    region: content
+    weight: 0
 dependencies:
   config:
     - core.entity_view_mode.aggregator_item.summary
   module:
     - aggregator
-id: aggregator_item.aggregator_item.summary
-targetEntityType: aggregator_item
-bundle: aggregator_item
-mode: summary
-content:
-  timestamp:
-    weight: 0
-    region: content
 hidden:
   author: true
   description: true
@@ -20,3 +15,8 @@ hidden:
   langcode: true
   link: true
   search_api_excerpt: true
+id: aggregator_item.aggregator_item.summary
+langcode: en
+mode: summary
+status: true
+targetEntityType: aggregator_item

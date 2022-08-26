@@ -1,28 +1,28 @@
-langcode: en
-status: true
+bundle: webform
 dependencies:
   config:
     - node.type.webform
   module:
     - node
-id: node.webform
-targetEntityType: node
-bundle: webform
-types:
-  - 'schema:WebPage'
 fieldMappings:
-  title:
-    properties:
-      - 'schema:name'
   body:
     properties:
-      - 'schema:text'
+      - schema:text
   field_attachment:
     properties:
-      - 'schema:associatedMedia'
+      - schema:associatedMedia
   field_tags:
     properties:
-      - 'schema:about'
+      - schema:about
+  title:
+    properties:
+      - schema:name
   webform:
     properties:
-      - 'schema:text'
+      - schema:text
+id: node.webform
+langcode: en
+status: true
+targetEntityType: node
+types:
+  - schema:WebPage

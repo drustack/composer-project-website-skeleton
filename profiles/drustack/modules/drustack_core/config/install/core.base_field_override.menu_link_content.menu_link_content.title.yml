@@ -1,17 +1,17 @@
-langcode: en
-status: true
+bundle: menu_link_content
+default_value: {}
+default_value_callback: ""
 dependencies:
   module:
     - menu_link_content
-id: menu_link_content.menu_link_content.title
-field_name: title
+description: The text to be used for this link in the menu.
 entity_type: menu_link_content
-bundle: menu_link_content
-label: 'Menu link title'
-description: 'The text to be used for this link in the menu.'
-required: true
-translatable: true
-default_value: {  }
-default_value_callback: ''
-settings: {  }
+field_name: title
 field_type: string
+id: menu_link_content.menu_link_content.title
+label: Menu link title
+langcode: en
+required: true
+settings: {}
+status: true
+translatable: true

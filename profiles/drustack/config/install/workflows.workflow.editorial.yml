@@ -1,60 +1,60 @@
-langcode: en
-status: true
 dependencies:
   module:
     - content_moderation
 id: editorial
-label: 'Editorial'
+label: Editorial
+langcode: en
+status: true
 type: content_moderation
 type_settings:
+  default_moderation_state: draft
+  entity_types: {}
   states:
     archived:
-      label: Archived
-      weight: 5
-      published: false
       default_revision: true
+      label: Archived
+      published: false
+      weight: 5
     draft:
+      default_revision: false
       label: Draft
       published: false
-      default_revision: false
       weight: -5
     published:
+      default_revision: true
       label: Published
       published: true
-      default_revision: true
       weight: 0
   transitions:
     archive:
-      label: Archive
       from:
         - published
+      label: Archive
       to: archived
       weight: 2
     archived_draft:
-      label: 'Restore to Draft'
       from:
         - archived
+      label: Restore to Draft
       to: draft
       weight: 3
     archived_published:
-      label: Restore
       from:
         - archived
+      label: Restore
       to: published
       weight: 4
     create_new_draft:
-      label: 'Create New Draft'
-      to: draft
-      weight: 0
       from:
         - draft
         - published
+      label: Create New Draft
+      to: draft
+      weight: 0
     publish:
+      from:
+        - draft
+        - published
       label: Publish
       to: published
       weight: 1
-      from:
-        - draft
-        - published
-  entity_types: {  }
-  default_moderation_state: draft

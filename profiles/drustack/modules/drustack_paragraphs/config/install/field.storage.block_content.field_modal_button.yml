@@ -1,18 +1,18 @@
-langcode: en
-status: true
+cardinality: 1
+custom_storage: false
 dependencies:
   module:
     - block_content
     - text
-id: block_content.field_modal_button
-field_name: field_modal_button
 entity_type: block_content
-type: text_long
-settings: {  }
-module: text
+field_name: field_modal_button
+id: block_content.field_modal_button
+indexes: {}
+langcode: en
 locked: false
-cardinality: 1
-translatable: true
-indexes: {  }
+module: text
 persist_with_no_fields: false
-custom_storage: false
+settings: {}
+status: true
+translatable: true
+type: text_long

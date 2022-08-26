@@ -1,5 +1,6 @@
-langcode: en
-status: true
+bundle: tab
+default_value: {}
+default_value_callback: ""
 dependencies:
   config:
     - field.storage.paragraph.field_tab_pane
@@ -10,45 +11,44 @@ dependencies:
     - paragraphs.paragraphs_type.views
   module:
     - entity_reference_revisions
-id: paragraph.tab.field_tab_pane
-field_name: field_tab_pane
+description: ""
 entity_type: paragraph
-bundle: tab
-label: 'Tab Pane'
-description: ''
+field_name: field_tab_pane
+field_type: entity_reference_revisions
+id: paragraph.tab.field_tab_pane
+label: Tab Pane
+langcode: en
 required: false
-translatable: false
-default_value: {  }
-default_value_callback: ''
 settings:
-  handler: 'default:paragraph'
+  handler: default:paragraph
   handler_settings:
-    target_bundles:
-      text: text
-      image: image
-      block: block
-      views: views
     negate: 0
+    target_bundles:
+      block: block
+      image: image
+      text: text
+      views: views
     target_bundles_drag_drop:
       accordion:
+        enabled: false
         weight: -12
-        enabled: false
       block:
+        enabled: true
         weight: -15
-        enabled: true
       carousel:
+        enabled: false
         weight: -11
-        enabled: false
       image:
+        enabled: true
         weight: -16
-        enabled: true
       tab:
-        weight: -10
         enabled: false
+        weight: -10
       text:
+        enabled: true
         weight: -17
-        enabled: true
       views:
-        weight: -14
         enabled: true
-field_type: entity_reference_revisions
+        weight: -14
+status: true
+translatable: false

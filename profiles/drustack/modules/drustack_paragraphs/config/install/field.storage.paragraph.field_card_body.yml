@@ -1,19 +1,19 @@
-langcode: en
-status: true
+cardinality: -1
+custom_storage: false
 dependencies:
   module:
     - entity_reference_revisions
     - paragraphs
-id: paragraph.field_card_body
-field_name: field_card_body
 entity_type: paragraph
-type: entity_reference_revisions
+field_name: field_card_body
+id: paragraph.field_card_body
+indexes: {}
+langcode: en
+locked: false
+module: entity_reference_revisions
+persist_with_no_fields: false
 settings:
   target_type: paragraph
-module: entity_reference_revisions
-locked: false
-cardinality: -1
+status: true
 translatable: true
-indexes: {  }
-persist_with_no_fields: false
-custom_storage: false
+type: entity_reference_revisions

@@ -1,17 +1,17 @@
-langcode: en
-status: true
 dependencies:
   theme:
     - drustack_bootstrap
 id: drustack_bootstrap_local_actions
-theme: drustack_bootstrap
-region: content
-weight: -20
-provider: null
+langcode: en
 plugin: local_actions_block
+provider: null
+region: content
 settings:
   id: local_actions_block
-  label: 'Primary admin actions'
+  label: Primary admin actions
+  label_display: "0"
   provider: core
-  label_display: '0'
-visibility: {  }
+status: true
+theme: drustack_bootstrap
+visibility: {}
+weight: -20

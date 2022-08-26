@@ -1,24 +1,24 @@
-langcode: en
-status: true
+bundle: webform
+default_value: {}
+default_value_callback: ""
 dependencies:
   config:
     - field.storage.node.webform
     - node.type.webform
   module:
     - webform
-id: node.webform.webform
-field_name: webform
+description: Select the webform that you would like to attach to this node.
 entity_type: node
-bundle: webform
-label: Webform
-description: 'Select the webform that you would like to attach to this node.'
-required: false
-translatable: true
-default_value: {  }
-default_value_callback: ''
-settings:
-  handler: 'default:webform'
-  handler_settings:
-    target_bundles: null
-    auto_create: false
+field_name: webform
 field_type: webform
+id: node.webform.webform
+label: Webform
+langcode: en
+required: false
+settings:
+  handler: default:webform
+  handler_settings:
+    auto_create: false
+    target_bundles: null
+status: true
+translatable: true

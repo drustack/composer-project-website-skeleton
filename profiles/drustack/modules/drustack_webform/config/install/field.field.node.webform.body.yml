@@ -1,22 +1,22 @@
-langcode: en
-status: true
+bundle: webform
+default_value: {}
+default_value_callback: ""
 dependencies:
   config:
     - field.storage.node.body
     - node.type.webform
   module:
     - text
-id: node.webform.body
-field_name: body
+description: ""
 entity_type: node
-bundle: webform
+field_name: body
+field_type: text_with_summary
+id: node.webform.body
 label: Body
-description: ''
+langcode: en
 required: false
-translatable: true
-default_value: {  }
-default_value_callback: ''
 settings:
   display_summary: true
   required_summary: false
-field_type: text_with_summary
+status: true
+translatable: true

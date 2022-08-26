@@ -1,5 +1,5 @@
-langcode: en
-status: true
+cardinality: 1
+custom_storage: false
 dependencies:
   enforced:
     module:
@@ -7,19 +7,19 @@ dependencies:
   module:
     - file
     - media
-id: media.field_media_document
-field_name: field_media_document
 entity_type: media
-type: file
-settings:
-  uri_scheme: public
-  target_type: file
-  display_field: false
-  display_default: false
-module: file
+field_name: field_media_document
+id: media.field_media_document
+indexes: {}
+langcode: en
 locked: false
-cardinality: 1
-translatable: true
-indexes: {  }
+module: file
 persist_with_no_fields: false
-custom_storage: false
+settings:
+  display_default: false
+  display_field: false
+  target_type: file
+  uri_scheme: public
+status: true
+translatable: true
+type: file

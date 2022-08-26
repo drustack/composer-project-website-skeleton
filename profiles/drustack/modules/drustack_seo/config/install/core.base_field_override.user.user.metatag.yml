@@ -1,17 +1,17 @@
-langcode: en
-status: true
+bundle: user
+default_value: {}
+default_value_callback: ""
 dependencies:
   module:
     - user
-id: user.user.metatag
-field_name: metatag
+description: The meta tags for the entity.
 entity_type: user
-bundle: user
-label: 'Metatags (Hidden field for JSON support)'
-description: 'The meta tags for the entity.'
-required: false
-translatable: false
-default_value: {  }
-default_value_callback: ''
-settings: {  }
+field_name: metatag
 field_type: map
+id: user.user.metatag
+label: Metatags (Hidden field for JSON support)
+langcode: en
+required: false
+settings: {}
+status: true
+translatable: false

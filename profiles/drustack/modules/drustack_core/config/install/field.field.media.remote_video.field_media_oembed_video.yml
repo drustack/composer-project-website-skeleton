@@ -1,18 +1,18 @@
-langcode: en
-status: true
+bundle: remote_video
+default_value: {}
+default_value_callback: ""
 dependencies:
   config:
     - field.storage.media.field_media_oembed_video
     - media.type.remote_video
-id: media.remote_video.field_media_oembed_video
-field_name: field_media_oembed_video
+description: ""
 entity_type: media
-bundle: remote_video
-label: 'Video URL'
-description: ''
-required: true
-translatable: true
-default_value: {  }
-default_value_callback: ''
-settings: {  }
+field_name: field_media_oembed_video
 field_type: string
+id: media.remote_video.field_media_oembed_video
+label: Video URL
+langcode: en
+required: true
+settings: {}
+status: true
+translatable: true

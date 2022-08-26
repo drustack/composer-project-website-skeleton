@@ -1,12 +1,18 @@
-langcode: en
-status: true
 dependencies:
-  module:
-    - menu_ui
-    - scheduler
   enforced:
     module:
       - webform_node
+  module:
+    - menu_ui
+    - scheduler
+description: A basic page with a <em>webform</em> attached.
+display_submitted: false
+help: ""
+langcode: en
+name: Webform
+new_revision: true
+preview_mode: 1
+status: true
 third_party_settings:
   menu_ui:
     available_menus:
@@ -25,10 +31,4 @@ third_party_settings:
     unpublish_enable: true
     unpublish_required: false
     unpublish_revision: true
-name: Webform
 type: webform
-description: 'A basic page with a <em>webform</em> attached.'
-help: ''
-new_revision: true
-preview_mode: 1
-display_submitted: false

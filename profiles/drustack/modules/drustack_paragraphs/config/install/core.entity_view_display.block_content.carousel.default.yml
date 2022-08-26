@@ -1,25 +1,25 @@
-langcode: en
-status: true
+bundle: carousel
+content:
+  field_carousel:
+    label: visually_hidden
+    region: content
+    settings:
+      link: ""
+      view_mode: default
+    third_party_settings: {}
+    type: entity_reference_revisions_entity_view
+    weight: 0
 dependencies:
   config:
     - block_content.type.carousel
     - field.field.block_content.carousel.field_carousel
   module:
     - entity_reference_revisions
-id: block_content.carousel.default
-targetEntityType: block_content
-bundle: carousel
-mode: default
-content:
-  field_carousel:
-    type: entity_reference_revisions_entity_view
-    label: visually_hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    weight: 0
-    region: content
 hidden:
   langcode: true
   search_api_excerpt: true
+id: block_content.carousel.default
+langcode: en
+mode: default
+status: true
+targetEntityType: block_content

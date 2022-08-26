@@ -1,5 +1,10 @@
-langcode: en
-status: true
+bundle: article
+content:
+  links:
+    region: content
+    settings: {}
+    third_party_settings: {}
+    weight: 0
 dependencies:
   config:
     - core.entity_view_mode.node.rss
@@ -11,16 +16,6 @@ dependencies:
     - node.type.article
   module:
     - user
-id: node.article.rss
-targetEntityType: node
-bundle: article
-mode: rss
-content:
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 0
-    region: content
 hidden:
   body: true
   comment: true
@@ -29,3 +24,8 @@ hidden:
   field_tags: true
   langcode: true
   search_api_excerpt: true
+id: node.article.rss
+langcode: en
+mode: rss
+status: true
+targetEntityType: node

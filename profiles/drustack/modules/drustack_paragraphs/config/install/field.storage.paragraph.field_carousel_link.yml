@@ -1,18 +1,18 @@
-langcode: en
-status: true
+cardinality: 1
+custom_storage: false
 dependencies:
   module:
     - link
     - paragraphs
-id: paragraph.field_carousel_link
-field_name: field_carousel_link
 entity_type: paragraph
-type: link
-settings: {  }
-module: link
+field_name: field_carousel_link
+id: paragraph.field_carousel_link
+indexes: {}
+langcode: en
 locked: false
-cardinality: 1
-translatable: true
-indexes: {  }
+module: link
 persist_with_no_fields: false
-custom_storage: false
+settings: {}
+status: true
+translatable: true
+type: link

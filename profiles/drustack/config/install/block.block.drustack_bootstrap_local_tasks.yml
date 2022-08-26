@@ -1,19 +1,19 @@
-langcode: en
-status: true
 dependencies:
   theme:
     - drustack_bootstrap
 id: drustack_bootstrap_local_tasks
-theme: drustack_bootstrap
-region: content
-weight: -40
-provider: null
+langcode: en
 plugin: local_tasks_block
+provider: null
+region: content
 settings:
   id: local_tasks_block
   label: Tabs
-  provider: core
-  label_display: '0'
+  label_display: "0"
   primary: true
+  provider: core
   secondary: true
-visibility: {  }
+status: true
+theme: drustack_bootstrap
+visibility: {}
+weight: -40

@@ -1,21 +1,20 @@
-langcode: en
-status: true
+bundle: comment
+default_value:
+  - value: 1
+default_value_callback: Drupal\comment\Entity\Comment::getDefaultStatus
 dependencies:
   config:
     - comment.type.comment
-id: comment.comment.status
-field_name: status
+description: ""
 entity_type: comment
-bundle: comment
-label: Published
-description: ''
-required: false
-translatable: false
-default_value:
-  -
-    value: 1
-default_value_callback: 'Drupal\comment\Entity\Comment::getDefaultStatus'
-settings:
-  on_label: 'On'
-  off_label: 'Off'
+field_name: status
 field_type: boolean
+id: comment.comment.status
+label: Published
+langcode: en
+required: false
+settings:
+  off_label: 'Off'
+  on_label: 'On'
+status: true
+translatable: false

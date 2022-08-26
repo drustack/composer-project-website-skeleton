@@ -1,12 +1,12 @@
-langcode: en
-status: true
+cache: true
 dependencies:
-  module:
-    - media
   enforced:
     module:
       - media_library
+  module:
+    - media
 id: media.media_library
-label: 'Media library'
+label: Media library
+langcode: en
+status: true
 targetEntityType: media
-cache: true

@@ -1,19 +1,19 @@
-langcode: en
-status: true
+bundle: article
+default_value: {}
+default_value_callback: ""
 dependencies:
   config:
     - node.type.article
-id: node.article.menu_link
-field_name: menu_link
+description: Computed menu link for the node (only available during node saving).
 entity_type: node
-bundle: article
-label: 'Menu link'
-description: 'Computed menu link for the node (only available during node saving).'
+field_name: menu_link
+field_type: entity_reference
+id: node.article.menu_link
+label: Menu link
+langcode: en
 required: false
-translatable: true
-default_value: {  }
-default_value_callback: ''
 settings:
   handler: default
-  handler_settings: {  }
-field_type: entity_reference
+  handler_settings: {}
+status: true
+translatable: true

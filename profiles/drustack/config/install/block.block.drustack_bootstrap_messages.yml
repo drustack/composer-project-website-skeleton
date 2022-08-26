@@ -1,19 +1,19 @@
-langcode: en
-status: true
 dependencies:
   module:
     - system
   theme:
     - drustack_bootstrap
 id: drustack_bootstrap_messages
-theme: drustack_bootstrap
-region: highlighted
-weight: 0
-provider: null
+langcode: en
 plugin: system_messages_block
+provider: null
+region: highlighted
 settings:
   id: system_messages_block
-  label: 'Status messages'
+  label: Status messages
+  label_display: "0"
   provider: system
-  label_display: '0'
-visibility: {  }
+status: true
+theme: drustack_bootstrap
+visibility: {}
+weight: 0

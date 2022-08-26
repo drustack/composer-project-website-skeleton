@@ -1,16 +1,16 @@
-langcode: en
 anonymous: Anonymous
-verify_mail: true
+cancel_method: user_cancel_block
+langcode: en
 notify:
   cancel_confirm: true
   password_reset: true
-  status_activated: true
-  status_blocked: false
-  status_canceled: false
   register_admin_created: true
   register_no_approval_required: true
   register_pending_approval: true
-register: admin_only
-cancel_method: user_cancel_block
+  status_activated: true
+  status_blocked: false
+  status_canceled: false
 password_reset_timeout: 86400
 password_strength: true
+register: admin_only
+verify_mail: true

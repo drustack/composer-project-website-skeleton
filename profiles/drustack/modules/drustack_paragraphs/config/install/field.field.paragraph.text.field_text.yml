@@ -1,20 +1,20 @@
-langcode: en
-status: true
+bundle: text
+default_value: {}
+default_value_callback: ""
 dependencies:
   config:
     - field.storage.paragraph.field_text
     - paragraphs.paragraphs_type.text
   module:
     - text
-id: paragraph.text.field_text
-field_name: field_text
+description: ""
 entity_type: paragraph
-bundle: text
-label: Text
-description: ''
-required: false
-translatable: true
-default_value: {  }
-default_value_callback: ''
-settings: {  }
+field_name: field_text
 field_type: text_long
+id: paragraph.text.field_text
+label: Text
+langcode: en
+required: false
+settings: {}
+status: true
+translatable: true

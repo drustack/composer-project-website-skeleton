@@ -1,17 +1,17 @@
-langcode: en
-status: true
+default_langcode: site_default
 dependencies:
   config:
     - paragraphs.paragraphs_type.block
   module:
     - content_translation
+id: paragraph.block
+langcode: en
+language_alterable: true
+status: true
+target_bundle: block
+target_entity_type_id: paragraph
 third_party_settings:
   content_translation:
-    enabled: true
     bundle_settings:
-      untranslatable_fields_hide: '0'
-id: paragraph.block
-target_entity_type_id: paragraph
-target_bundle: block
-default_langcode: site_default
-language_alterable: true
+      untranslatable_fields_hide: "0"
+    enabled: true

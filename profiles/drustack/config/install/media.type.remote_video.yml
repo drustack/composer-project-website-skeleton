@@ -1,17 +1,17 @@
-langcode: en
-status: true
-dependencies: {  }
+dependencies: {}
+description: A remotely hosted video from YouTube or Vimeo.
+field_map:
+  title: name
 id: remote_video
-label: 'Remote video'
-description: 'A remotely hosted video from YouTube or Vimeo.'
-source: 'oembed:video'
-queue_thumbnail_downloads: false
+label: Remote video
+langcode: en
 new_revision: true
+queue_thumbnail_downloads: false
+source: oembed:video
 source_configuration:
-  thumbnails_directory: 'public://oembed_thumbnails'
   providers:
     - YouTube
     - Vimeo
   source_field: field_media_oembed_video
-field_map:
-  title: name
+  thumbnails_directory: public://oembed_thumbnails
+status: true

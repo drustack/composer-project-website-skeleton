@@ -1,15 +1,15 @@
-langcode: en
-status: true
 dependencies:
   module:
     - php
-name: 'PHP code'
-format: php_code
-weight: 6
 filters:
   php_code:
     id: php_code
     provider: php
+    settings: {}
     status: true
     weight: -50
-    settings: {  }
+format: php_code
+langcode: en
+name: PHP code
+status: true
+weight: 6

@@ -1,5 +1,38 @@
-langcode: en
-status: true
+bundle: modal
+content:
+  field_modal_body:
+    label: visually_hidden
+    region: content
+    settings:
+      link: ""
+      view_mode: default
+    third_party_settings: {}
+    type: entity_reference_revisions_entity_view
+    weight: 2
+  field_modal_button:
+    label: visually_hidden
+    region: content
+    settings: {}
+    third_party_settings: {}
+    type: text_default
+    weight: 0
+  field_modal_footer:
+    label: visually_hidden
+    region: content
+    settings:
+      link: ""
+      view_mode: default
+    third_party_settings: {}
+    type: entity_reference_revisions_entity_view
+    weight: 3
+  field_modal_title:
+    label: visually_hidden
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {}
+    type: string
+    weight: 1
 dependencies:
   config:
     - block_content.type.modal
@@ -10,44 +43,11 @@ dependencies:
   module:
     - entity_reference_revisions
     - text
-id: block_content.modal.default
-targetEntityType: block_content
-bundle: modal
-mode: default
-content:
-  field_modal_body:
-    type: entity_reference_revisions_entity_view
-    label: visually_hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    weight: 2
-    region: content
-  field_modal_button:
-    type: text_default
-    label: visually_hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 0
-    region: content
-  field_modal_footer:
-    type: entity_reference_revisions_entity_view
-    label: visually_hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    weight: 3
-    region: content
-  field_modal_title:
-    type: string
-    label: visually_hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 1
-    region: content
 hidden:
   langcode: true
   search_api_excerpt: true
+id: block_content.modal.default
+langcode: en
+mode: default
+status: true
+targetEntityType: block_content

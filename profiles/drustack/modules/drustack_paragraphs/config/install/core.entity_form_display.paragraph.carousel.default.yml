@@ -1,5 +1,45 @@
-langcode: en
-status: true
+bundle: carousel
+content:
+  field_carousel_caption:
+    region: content
+    settings:
+      placeholder: ""
+      rows: 5
+    third_party_settings: {}
+    type: text_textarea
+    weight: 2
+  field_carousel_item:
+    region: content
+    settings:
+      add_mode: dropdown
+      default_paragraph_type: ""
+      edit_mode: open
+      form_display_mode: default
+      title: Paragraph
+      title_plural: Paragraphs
+    third_party_settings: {}
+    type: entity_reference_paragraphs
+    weight: 0
+  field_carousel_link:
+    region: content
+    settings:
+      enabled_attributes:
+        accesskey: false
+        class: true
+        id: false
+        name: false
+        rel: true
+        target: true
+      placeholder_title: ""
+      placeholder_url: ""
+    third_party_settings: {}
+    type: link_attributes
+    weight: 1
+  translation:
+    region: content
+    settings: {}
+    third_party_settings: {}
+    weight: 10
 dependencies:
   config:
     - field.field.paragraph.carousel.field_carousel_caption
@@ -10,51 +50,11 @@ dependencies:
     - link_attributes
     - paragraphs
     - text
-id: paragraph.carousel.default
-targetEntityType: paragraph
-bundle: carousel
-mode: default
-content:
-  field_carousel_caption:
-    type: text_textarea
-    weight: 2
-    region: content
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-  field_carousel_item:
-    type: entity_reference_paragraphs
-    weight: 0
-    region: content
-    settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
-    third_party_settings: {  }
-  field_carousel_link:
-    type: link_attributes
-    weight: 1
-    region: content
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-      enabled_attributes:
-        id: false
-        name: false
-        target: true
-        rel: true
-        class: true
-        accesskey: false
-    third_party_settings: {  }
-  translation:
-    weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   created: true
   status: true
+id: paragraph.carousel.default
+langcode: en
+mode: default
+status: true
+targetEntityType: paragraph

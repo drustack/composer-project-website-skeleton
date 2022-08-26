@@ -1,5 +1,6 @@
-langcode: en
-status: true
+bundle: accordion
+default_value: {}
+default_value_callback: ""
 dependencies:
   config:
     - block_content.type.accordion
@@ -7,42 +8,41 @@ dependencies:
     - paragraphs.paragraphs_type.accordion
   module:
     - entity_reference_revisions
-id: block_content.accordion.field_accordion
-field_name: field_accordion
+description: ""
 entity_type: block_content
-bundle: accordion
+field_name: field_accordion
+field_type: entity_reference_revisions
+id: block_content.accordion.field_accordion
 label: Accordion
-description: ''
+langcode: en
 required: true
-translatable: false
-default_value: {  }
-default_value_callback: ''
 settings:
-  handler: 'default:paragraph'
+  handler: default:paragraph
   handler_settings:
+    negate: 0
     target_bundles:
       accordion: accordion
-    negate: 0
     target_bundles_drag_drop:
       accordion:
-        weight: -12
         enabled: true
+        weight: -12
       block:
+        enabled: false
         weight: -15
-        enabled: false
       carousel:
+        enabled: false
         weight: -11
-        enabled: false
       image:
+        enabled: false
         weight: -16
-        enabled: false
       tab:
+        enabled: false
         weight: -10
-        enabled: false
       text:
+        enabled: false
         weight: -17
-        enabled: false
       views:
-        weight: -14
         enabled: false
-field_type: entity_reference_revisions
+        weight: -14
+status: true
+translatable: false

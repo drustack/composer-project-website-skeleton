@@ -1,5 +1,6 @@
-langcode: en
-status: true
+bundle: carousel
+default_value: {}
+default_value_callback: ""
 dependencies:
   config:
     - block_content.type.carousel
@@ -7,42 +8,41 @@ dependencies:
     - paragraphs.paragraphs_type.carousel
   module:
     - entity_reference_revisions
-id: block_content.carousel.field_carousel
-field_name: field_carousel
+description: ""
 entity_type: block_content
-bundle: carousel
+field_name: field_carousel
+field_type: entity_reference_revisions
+id: block_content.carousel.field_carousel
 label: Carousel
-description: ''
+langcode: en
 required: true
-translatable: false
-default_value: {  }
-default_value_callback: ''
 settings:
-  handler: 'default:paragraph'
+  handler: default:paragraph
   handler_settings:
+    negate: 0
     target_bundles:
       carousel: carousel
-    negate: 0
     target_bundles_drag_drop:
       accordion:
+        enabled: false
         weight: -12
-        enabled: false
       block:
+        enabled: false
         weight: -15
-        enabled: false
       carousel:
-        weight: -11
         enabled: true
+        weight: -11
       image:
+        enabled: false
         weight: -16
-        enabled: false
       tab:
+        enabled: false
         weight: -10
-        enabled: false
       text:
+        enabled: false
         weight: -17
-        enabled: false
       views:
-        weight: -14
         enabled: false
-field_type: entity_reference_revisions
+        weight: -14
+status: true
+translatable: false

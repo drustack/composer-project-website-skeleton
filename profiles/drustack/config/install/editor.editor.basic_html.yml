@@ -1,52 +1,45 @@
-langcode: en
-status: true
 dependencies:
   config:
     - filter.format.basic_html
   module:
     - ckeditor
-format: basic_html
 editor: ckeditor
+format: basic_html
+image_upload:
+  directory: inline-images
+  max_dimensions:
+    height: 0
+    width: 0
+  max_size: ""
+  scheme: public
+  status: true
+langcode: en
 settings:
-  toolbar:
-    rows:
-      -
-        -
-          name: Formatting
-          items:
-            - Bold
-            - Italic
-        -
-          name: Linking
-          items:
-            - DrupalLink
-            - DrupalUnlink
-        -
-          name: Lists
-          items:
-            - BulletedList
-            - NumberedList
-        -
-          name: Media
-          items:
-            - Blockquote
-            - DrupalImage
-        -
-          name: 'Block Formatting'
-          items:
-            - Format
-        -
-          name: Tools
-          items:
-            - Source
   plugins:
     stylescombo:
-      styles: ''
-image_upload:
-  status: true
-  scheme: public
-  directory: inline-images
-  max_size: ''
-  max_dimensions:
-    width: 0
-    height: 0
+      styles: ""
+  toolbar:
+    rows:
+      - - items:
+            - Bold
+            - Italic
+          name: Formatting
+        - items:
+            - DrupalLink
+            - DrupalUnlink
+          name: Linking
+        - items:
+            - BulletedList
+            - NumberedList
+          name: Lists
+        - items:
+            - Blockquote
+            - DrupalImage
+          name: Media
+        - items:
+            - Format
+          name: Block Formatting
+        - items:
+            - Source
+          name: Tools
+status: true

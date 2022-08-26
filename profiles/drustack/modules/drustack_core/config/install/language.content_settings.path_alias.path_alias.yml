@@ -1,10 +1,10 @@
-langcode: en
-status: true
+default_langcode: und
 dependencies:
   module:
     - path_alias
 id: path_alias.path_alias
-target_entity_type_id: path_alias
-target_bundle: path_alias
-default_langcode: und
+langcode: en
 language_alterable: false
+status: true
+target_bundle: path_alias
+target_entity_type_id: path_alias

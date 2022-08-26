@@ -1,22 +1,22 @@
-langcode: en
-status: true
+bundle: carousel
+default_value: {}
+default_value_callback: ""
 dependencies:
   config:
     - field.storage.paragraph.field_carousel_link
     - paragraphs.paragraphs_type.carousel
   module:
     - link
-id: paragraph.carousel.field_carousel_link
-field_name: field_carousel_link
+description: ""
 entity_type: paragraph
-bundle: carousel
-label: 'Carousel Link'
-description: ''
-required: false
-translatable: true
-default_value: {  }
-default_value_callback: ''
-settings:
-  title: 1
-  link_type: 17
+field_name: field_carousel_link
 field_type: link
+id: paragraph.carousel.field_carousel_link
+label: Carousel Link
+langcode: en
+required: false
+settings:
+  link_type: 17
+  title: 1
+status: true
+translatable: true

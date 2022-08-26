@@ -1,21 +1,21 @@
-langcode: en
-status: true
 dependencies:
   module:
     - node
 id: node_page
-label: 'Content (Basic page)'
-type: 'canonical_entities:node'
+label: Content (Basic page)
+langcode: en
 pattern: '[node:source:menu-link:parent:url:path]/[node:source:title]'
+relationships: {}
 selection_criteria:
   a857d0b3-2d0c-4acb-a8cf-c160e5f579c2:
+    bundles:
+      page: page
+    context_mapping:
+      node: node
     id: node_type
     negate: false
     uuid: a857d0b3-2d0c-4acb-a8cf-c160e5f579c2
-    context_mapping:
-      node: node
-    bundles:
-      page: page
 selection_logic: and
+status: true
+type: canonical_entities:node
 weight: -5
-relationships: {  }

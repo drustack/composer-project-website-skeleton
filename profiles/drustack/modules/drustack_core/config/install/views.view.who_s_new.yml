@@ -1,194 +1,194 @@
-langcode: en
-status: true
+base_field: uid
+base_table: users_field_data
 dependencies:
   module:
     - user
-id: who_s_new
-label: 'Who''s new'
-module: user
-description: 'Shows a list of the newest user accounts on the site.'
-tag: default
-base_table: users_field_data
-base_field: uid
+description: Shows a list of the newest user accounts on the site.
 display:
-  default:
-    id: default
-    display_title: Master
-    display_plugin: default
-    position: 0
+  block_1:
+    cache_metadata:
+      contexts:
+        - languages:language_content
+        - languages:language_interface
+        - user.permissions
+      max-age: -1
+      tags: {}
     display_options:
-      title: 'Who''s new'
-      fields:
-        name:
-          id: name
-          table: users_field_data
-          field: name
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: user
-          entity_field: name
-          plugin_id: field
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            make_link: false
-            absolute: false
-            word_boundary: false
-            ellipsis: false
-            strip_tags: false
-            trim: false
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          type: user_name
-      pager:
-        type: some
+      block_category: User
+      block_description: Who's new
+      display_description: A list of new users
+      display_extenders: {}
+    display_plugin: block
+    display_title: Who's new
+    id: block_1
+    position: 1
+  default:
+    cache_metadata:
+      contexts:
+        - languages:language_content
+        - languages:language_interface
+        - user.permissions
+      max-age: -1
+      tags: {}
+    display_options:
+      access:
         options:
-          offset: 0
-          items_per_page: 5
+          perm: access content
+        type: perm
+      arguments: {}
+      cache:
+        options: {}
+        type: tag
+      display_extenders: {}
+      empty: {}
       exposed_form:
-        type: basic
         options:
-          submit_button: Apply
+          expose_sort_order: true
+          exposed_sorts_label: Sort by
           reset_button: false
           reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
-      access:
-        type: perm
-        options:
-          perm: 'access content'
-      cache:
-        type: tag
-        options: {  }
-      empty: {  }
-      sorts:
-        created:
-          id: created
-          table: users_field_data
-          field: created
-          relationship: none
-          group_type: group
-          admin_label: ''
+          submit_button: Apply
+        type: basic
+      fields:
+        name:
+          admin_label: ""
+          alter:
+            absolute: false
+            alter_text: false
+            ellipsis: false
+            html: false
+            make_link: false
+            strip_tags: false
+            trim: false
+            word_boundary: false
+          element_class: ""
+          element_default_classes: true
+          element_label_class: ""
+          element_label_colon: true
+          element_label_type: ""
+          element_type: ""
+          element_wrapper_class: ""
+          element_wrapper_type: ""
+          empty: ""
+          empty_zero: false
+          entity_field: name
           entity_type: user
-          entity_field: created
-          plugin_id: date
-          order: DESC
-          expose:
-            label: ''
-            field_identifier: created
-          exposed: false
-          granularity: second
-      arguments: {  }
+          exclude: false
+          field: name
+          group_type: group
+          hide_alter_empty: true
+          hide_empty: false
+          id: name
+          label: ""
+          plugin_id: field
+          relationship: none
+          table: users_field_data
+          type: user_name
       filters:
-        status:
-          id: status
-          table: users_field_data
-          field: status
-          entity_type: user
-          entity_field: status
-          plugin_id: boolean
-          value: '1'
-          group: 1
-          expose:
-            operator: '0'
-            operator_limit_selection: false
-            operator_list: {  }
         access:
-          id: access
-          table: users_field_data
-          field: access
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: user
+          admin_label: ""
           entity_field: access
-          plugin_id: date
-          operator: '>'
-          value:
-            min: ''
-            max: ''
-            value: '1970-01-01'
-            type: date
-          group: 1
-          exposed: false
+          entity_type: user
           expose:
-            operator_id: '0'
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
+            description: ""
+            identifier: ""
+            label: ""
             multiple: false
+            operator: ""
+            operator_id: "0"
+            operator_limit_selection: false
+            operator_list: {}
+            remember: false
             remember_roles:
               authenticated: authenticated
-          is_grouped: false
+            required: false
+            use_operator: false
+          exposed: false
+          field: access
+          group: 1
           group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
             default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-      style:
-        type: html_list
-      row:
-        type: fields
-      query:
-        type: views_query
+            default_group_multiple: {}
+            description: ""
+            group_items: {}
+            identifier: ""
+            label: ""
+            multiple: false
+            optional: true
+            remember: false
+            widget: select
+          group_type: group
+          id: access
+          is_grouped: false
+          operator: '>'
+          plugin_id: date
+          relationship: none
+          table: users_field_data
+          value:
+            max: ""
+            min: ""
+            type: date
+            value: "1970-01-01"
+        status:
+          entity_field: status
+          entity_type: user
+          expose:
+            operator: "0"
+            operator_limit_selection: false
+            operator_list: {}
+          field: status
+          group: 1
+          id: status
+          plugin_id: boolean
+          table: users_field_data
+          value: "1"
+      footer: {}
+      header: {}
+      pager:
         options:
-          query_comment: ''
+          items_per_page: 5
+          offset: 0
+        type: some
+      query:
+        options:
           disable_sql_rewrite: false
           distinct: false
+          query_comment: ""
+          query_tags: {}
           replica: false
-          query_tags: {  }
-      relationships: {  }
-      header: {  }
-      footer: {  }
-      display_extenders: {  }
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - user.permissions
-      tags: {  }
-  block_1:
-    id: block_1
-    display_title: 'Who''s new'
-    display_plugin: block
-    position: 1
-    display_options:
-      display_description: 'A list of new users'
-      display_extenders: {  }
-      block_description: 'Who''s new'
-      block_category: User
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - user.permissions
-      tags: {  }
+        type: views_query
+      relationships: {}
+      row:
+        type: fields
+      sorts:
+        created:
+          admin_label: ""
+          entity_field: created
+          entity_type: user
+          expose:
+            field_identifier: created
+            label: ""
+          exposed: false
+          field: created
+          granularity: second
+          group_type: group
+          id: created
+          order: DESC
+          plugin_id: date
+          relationship: none
+          table: users_field_data
+      style:
+        type: html_list
+      title: Who's new
+    display_plugin: default
+    display_title: Master
+    id: default
+    position: 0
+id: who_s_new
+label: Who's new
+langcode: en
+module: user
+status: true
+tag: default
