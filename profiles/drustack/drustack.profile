@@ -27,7 +27,6 @@ function drustack_install_tasks($install_state) {
     'drustack_page',
     'drustack_article',
 #    'drustack_blog',
-#    'drustack_webform',
   ];
   \Drupal::state()->set('drustack_features_exports', $modules);
 

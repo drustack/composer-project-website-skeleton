@@ -1302,16 +1302,16 @@
         },
         {
             "name": "doctrine/collections",
-            "version": "1.7.0",
+            "version": "1.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/collections.git",
-                "reference": "07d15c8a766e664ec271ae84e5dfc597aeeb03b1"
+                "reference": "d93dbc5ef2e6e98a5b16ca5b07c3e15de9fd9113"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/collections/zipball/07d15c8a766e664ec271ae84e5dfc597aeeb03b1",
-                "reference": "07d15c8a766e664ec271ae84e5dfc597aeeb03b1",
+                "url": "https://api.github.com/repos/doctrine/collections/zipball/d93dbc5ef2e6e98a5b16ca5b07c3e15de9fd9113",
+                "reference": "d93dbc5ef2e6e98a5b16ca5b07c3e15de9fd9113",
                 "shasum": ""
             },
             "require": {
@@ -1366,9 +1366,9 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/collections/issues",
-                "source": "https://github.com/doctrine/collections/tree/1.7.0"
+                "source": "https://github.com/doctrine/collections/tree/1.7.1"
             },
-            "time": "2022-08-18T05:44:45+00:00"
+            "time": "2022-08-23T18:47:41+00:00"
         },
         {
             "name": "doctrine/common",
@@ -2682,7 +2682,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/block_class.git",
-                "reference": "93678500672300654ce6cf4bc5ca1014b786b430"
+                "reference": "d582e4ff1308e58507a426320f77131892135e4e"
             },
             "require": {
                 "drupal/core": "^8 || ^9 || ^10"
@@ -2693,8 +2693,8 @@
                     "dev-2.0.x": "2.0.x-dev"
                 },
                 "drupal": {
-                    "version": "2.0.1+1-dev",
-                    "datestamp": "1660704848",
+                    "version": "2.0.1+2-dev",
+                    "datestamp": "1661270211",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -5386,26 +5386,26 @@
         },
         {
             "name": "drupal/embed",
-            "version": "1.5.0",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/embed.git",
-                "reference": "8.x-1.5"
+                "reference": "8.x-1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/embed-8.x-1.5.zip",
-                "reference": "8.x-1.5",
-                "shasum": "88a447329d16988459e82392443e96d441d651b2"
+                "url": "https://ftp.drupal.org/files/projects/embed-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "6d2964775c3228d122cd61904786b3640fa83045"
             },
             "require": {
-                "drupal/core": "^8.7.7 || ^9"
+                "drupal/core": "^9.3 | ^10"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.5",
-                    "datestamp": "1653500382",
+                    "version": "8.x-1.6",
+                    "datestamp": "1661298150",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5418,6 +5418,10 @@
             ],
             "authors": [
                 {
+                    "name": "cs_shadow",
+                    "homepage": "https://www.drupal.org/user/2828287"
+                },
+                {
                     "name": "Dave Reid",
                     "homepage": "https://www.drupal.org/user/53892"
                 },
@@ -5428,10 +5432,6 @@
                 {
                     "name": "Drupal Media Team",
                     "homepage": "https://www.drupal.org/user/3260690"
-                },
-                {
-                    "name": "cs_shadow",
-                    "homepage": "https://www.drupal.org/user/2828287"
                 },
                 {
                     "name": "phenaproxima",
@@ -6292,7 +6292,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/facets.git",
-                "reference": "3526bce8a6942f6fb357e8869e81daf1dcadfa82"
+                "reference": "1497a1d90ff2ca0e78db59ce1b6b8a4acb737598"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10.0"
@@ -6315,8 +6315,8 @@
                     "dev-2.0.x": "2.0.x-dev"
                 },
                 "drupal": {
-                    "version": "2.0.5+2-dev",
-                    "datestamp": "1660642265",
+                    "version": "2.0.5+3-dev",
+                    "datestamp": "1661248910",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -6548,10 +6548,10 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/feeds.git",
-                "reference": "e53d7870aa54ca74ac6a66689c6878cb66f3455c"
+                "reference": "59ec296285d1b9b30968cfdf617bfffb82ef4e2e"
             },
             "require": {
-                "drupal/core": "^8.9 || ^9"
+                "drupal/core": "^9.3"
             },
             "require-dev": {
                 "drupal/pathauto": "^1.8",
@@ -6563,8 +6563,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-beta2+6-dev",
-                    "datestamp": "1661077491",
+                    "version": "8.x-3.0-beta2+7-dev",
+                    "datestamp": "1661432432",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -9687,7 +9687,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/paragraphs.git",
-                "reference": "430fb27cb9fbff54e9a86ad660e6586b457a7305"
+                "reference": "45a4dbf3622447c03e91b8553c97a7b314bc6e02"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10",
@@ -9714,8 +9714,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.14+5-dev",
-                    "datestamp": "1660857948",
+                    "version": "8.x-1.14+6-dev",
+                    "datestamp": "1661440246",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -9764,7 +9764,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/password_policy.git",
-                "reference": "f69b3256484164359ab9aa55a606d74838e55d9e"
+                "reference": "5582e6d682e55308f794383594ed61d5598d7b5f"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -9775,8 +9775,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.1+27-dev",
-                    "datestamp": "1660758803",
+                    "version": "8.x-3.1+28-dev",
+                    "datestamp": "1661437120",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -10929,7 +10929,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/search_api_solr.git",
-                "reference": "5b60f2ed9ce4e6987a6324f3c97a03638d9998dc"
+                "reference": "2f05dce8b19e70512543c18e5dc1232034b10eae"
             },
             "require": {
                 "composer/semver": "^1.0|^3.0",
@@ -10972,8 +10972,8 @@
                     "dev-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "4.2.8+15-dev",
-                    "datestamp": "1661183973",
+                    "version": "4.2.8+19-dev",
+                    "datestamp": "1661438197",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -12410,10 +12410,6 @@
                     "homepage": "https://www.drupal.org/user/214652"
                 },
                 {
-                    "name": "Schnitzel",
-                    "homepage": "https://www.drupal.org/user/643820"
-                },
-                {
                     "name": "cgalli",
                     "homepage": "https://www.drupal.org/user/77453"
                 },
@@ -12432,6 +12428,10 @@
                 {
                     "name": "miro_dietiker",
                     "homepage": "https://www.drupal.org/user/227761"
+                },
+                {
+                    "name": "Schnitzel",
+                    "homepage": "https://www.drupal.org/user/643820"
                 },
                 {
                     "name": "webflo",
