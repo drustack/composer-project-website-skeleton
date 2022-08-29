@@ -52,7 +52,7 @@ function redirect_generate_redirects_batch_info($count, $delete = FALSE) {
   return [
     'operations' => $operations,
     'finished' => 'redirect_generate_batch_finished',
-    'file' => drupal_get_path('module', 'redirect') . '/redirect.generate.inc',
+    'file' => \Drupal::service('extension.list.module')->getPath('redirect') . '/redirect.generate.inc',
   ];
 }
 
