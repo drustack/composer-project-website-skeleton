@@ -17,14 +17,14 @@ class SqlRedirectNotFoundStorageTest extends UnitTestCase {
   /**
    * Mock database connection.
    *
-   * @var \Drupal\Core\Database\Connection|\PHPUnit_Framework_MockObject_MockObject
+   * @var \Drupal\Core\Database\Connection|\PHPUnit\Framework\MockObject\MockObject
    */
   protected $database;
 
   /**
    * Mock config factory.
    *
-   * @var \Drupal\Core\Config\ConfigFactoryInterface|\PHPUnit_Framework_MockObject_MockObject
+   * @var \Drupal\Core\Config\ConfigFactoryInterface|\PHPUnit\Framework\MockObject\MockObject
    */
   protected $configFactory;
 
@@ -33,9 +33,7 @@ class SqlRedirectNotFoundStorageTest extends UnitTestCase {
    */
   protected function setUp(): void {
     parent::setUp();
-    $this->database = $this->getMockBuilder(Connection::class)
-      ->disableOriginalConstructor()
-      ->getMock();
+    $this->database = $this->createMock(Connection::class);
   }
 
   /**

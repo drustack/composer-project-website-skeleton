@@ -10,7 +10,6 @@ use Drupal\Core\Routing\UrlGeneratorInterface;
 use Drupal\redirect\RedirectChecker;
 use Symfony\Component\HttpKernel\Event\RequestEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
-use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 /**

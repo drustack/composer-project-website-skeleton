@@ -78,9 +78,7 @@ class DomainRedirectRequestSubscriberTest extends UnitTestCase {
     ];
 
     // Create a mock redirect checker.
-    $checker = $this->getMockBuilder(RedirectChecker::class)
-      ->disableOriginalConstructor()
-      ->getMock();
+    $checker = $this->createMock(RedirectChecker::class);
     $checker->expects($this->any())
       ->method('canRedirect')
       ->will($this->returnValue(TRUE));
@@ -134,8 +132,7 @@ class DomainRedirectRequestSubscriberTest extends UnitTestCase {
   protected function getGetResponseEventStub($path_info, $query_string) {
     $request = Request::create($path_info . '?' . $query_string, 'GET', [], [], [], ['SCRIPT_NAME' => 'index.php']);
 
-    $http_kernel = $this->getMockBuilder(HttpKernelInterface::class)
-      ->getMock();
+    $http_kernel = $this->createMock(HttpKernelInterface::class);
     return new RequestEvent($http_kernel, $request, HttpKernelInterface::MASTER_REQUEST);
   }
 

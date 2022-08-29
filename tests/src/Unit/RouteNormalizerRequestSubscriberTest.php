@@ -140,8 +140,7 @@ class RouteNormalizerRequestSubscriberTest extends UnitTestCase {
    * @return \Drupal\Core\Routing\UrlGeneratorInterface|\PHPUnit\Framework\MockObject\MockObject
    */
   protected function getUrlGeneratorStub($request_uri, $call_expected = TRUE) {
-    $url_generator = $this->getMockBuilder('\Drupal\Core\Routing\UrlGeneratorInterface')
-      ->getMock();
+    $url_generator = $this->createMock('\Drupal\Core\Routing\UrlGeneratorInterface');
 
     $options = ['absolute' => TRUE];
 
@@ -163,8 +162,7 @@ class RouteNormalizerRequestSubscriberTest extends UnitTestCase {
    * @return \Drupal\Core\Path\PathMatcherInterface|\PHPUnit\Framework\MockObject\MockObject
    */
   protected function getPathMatcherStub($call_expected = TRUE) {
-    $path_matcher = $this->getMockBuilder('\Drupal\Core\Path\PathMatcherInterface')
-      ->getMock();
+    $path_matcher = $this->createMock('\Drupal\Core\Path\PathMatcherInterface');
 
     $expectation = $call_expected ? $this->once() : $this->never();
 
@@ -184,9 +182,7 @@ class RouteNormalizerRequestSubscriberTest extends UnitTestCase {
    * @return \Drupal\redirect\RedirectChecker|\PHPUnit\Framework\MockObject\MockObject
    */
   protected function getRedirectCheckerStub($call_expected = TRUE) {
-    $redirect_checker = $this->getMockBuilder('\Drupal\redirect\RedirectChecker')
-      ->disableOriginalConstructor()
-      ->getMock();
+    $redirect_checker = $this->createMock('\Drupal\redirect\RedirectChecker');
 
     $expectation = $call_expected ? $this->once() : $this->never();
 
@@ -218,8 +214,7 @@ class RouteNormalizerRequestSubscriberTest extends UnitTestCase {
       $request->attributes->add(['_disable_route_normalizer' => TRUE]);
     }
 
-    $http_kernel = $this->getMockBuilder('\Symfony\Component\HttpKernel\HttpKernelInterface')
-      ->getMock();
+    $http_kernel = $this->createMock('\Symfony\Component\HttpKernel\HttpKernelInterface');
     return new RequestEvent($http_kernel, $request, $request_type);
   }
 
