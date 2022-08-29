@@ -94,7 +94,7 @@ function redirect_generate_batch_generate($num, array &$context) {
     $context['sandbox']['nids'] = $query->execute()->fetchAllKeyed(0, 0);
   }
 
-  module_load_include('inc', 'devel_generate');
+  \Drupal::moduleHandler()->loadInclude('devel_generate', 'inc');
 
   $limit = 20;
   $types = array_keys(redirect_status_code_options());
