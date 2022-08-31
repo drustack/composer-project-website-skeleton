@@ -1,0 +1,16 @@
+default_langcode: site_default
+dependencies:
+  module:
+    - content_translation
+    - menu_link_content
+id: menu_link_content.menu_link_content
+langcode: en
+language_alterable: true
+status: true
+target_bundle: menu_link_content
+target_entity_type_id: menu_link_content
+third_party_settings:
+  content_translation:
+    bundle_settings:
+      untranslatable_fields_hide: "0"
+    enabled: true

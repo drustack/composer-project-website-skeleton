@@ -1,0 +1,17 @@
+bundle: default
+default_value: {}
+default_value_callback: ""
+dependencies:
+  config:
+    - shortcut.set.default
+description: The name of the shortcut.
+entity_type: shortcut
+field_name: title
+field_type: string
+id: shortcut.default.title
+label: Name
+langcode: en
+required: true
+settings: {}
+status: true
+translatable: true

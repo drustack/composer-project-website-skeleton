@@ -1,0 +1,55 @@
+bundle: tags
+content:
+  description:
+    region: content
+    settings:
+      placeholder: ""
+      rows: 5
+    third_party_settings: {}
+    type: text_textarea
+    weight: 2
+  langcode:
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {}
+    type: language_select
+    weight: 0
+  name:
+    region: content
+    settings:
+      placeholder: ""
+      size: 60
+    third_party_settings: {}
+    type: string_textfield
+    weight: 1
+  path:
+    region: content
+    settings: {}
+    third_party_settings: {}
+    type: path
+    weight: 3
+  status:
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {}
+    type: boolean_checkbox
+    weight: 4
+  translation:
+    region: content
+    settings: {}
+    third_party_settings: {}
+    weight: 5
+dependencies:
+  config:
+    - taxonomy.vocabulary.tags
+  module:
+    - path
+    - text
+hidden: {}
+id: taxonomy_term.tags.default
+langcode: en
+mode: default
+status: true
+targetEntityType: taxonomy_term

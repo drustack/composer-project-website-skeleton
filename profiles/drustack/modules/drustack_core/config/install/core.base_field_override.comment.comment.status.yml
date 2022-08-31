@@ -1,0 +1,20 @@
+bundle: comment
+default_value:
+  - value: 1
+default_value_callback: Drupal\comment\Entity\Comment::getDefaultStatus
+dependencies:
+  config:
+    - comment.type.comment
+description: ""
+entity_type: comment
+field_name: status
+field_type: boolean
+id: comment.comment.status
+label: Published
+langcode: en
+required: false
+settings:
+  off_label: 'Off'
+  on_label: 'On'
+status: true
+translatable: false

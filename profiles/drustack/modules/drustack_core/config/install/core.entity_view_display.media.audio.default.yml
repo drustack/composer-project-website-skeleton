@@ -1,0 +1,31 @@
+bundle: audio
+content:
+  field_media_audio_file:
+    label: visually_hidden
+    region: content
+    settings:
+      autoplay: false
+      controls: true
+      loop: false
+      multiple_file_display_type: tags
+    third_party_settings: {}
+    type: file_audio
+    weight: 0
+dependencies:
+  config:
+    - field.field.media.audio.field_media_audio_file
+    - media.type.audio
+  module:
+    - file
+hidden:
+  created: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true
+id: media.audio.default
+langcode: en
+mode: default
+status: true
+targetEntityType: media

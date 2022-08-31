@@ -1,0 +1,17 @@
+default_langcode: site_default
+dependencies:
+  config:
+    - taxonomy.vocabulary.tags
+  module:
+    - content_translation
+id: taxonomy_term.tags
+langcode: en
+language_alterable: true
+status: true
+target_bundle: tags
+target_entity_type_id: taxonomy_term
+third_party_settings:
+  content_translation:
+    bundle_settings:
+      untranslatable_fields_hide: "0"
+    enabled: true

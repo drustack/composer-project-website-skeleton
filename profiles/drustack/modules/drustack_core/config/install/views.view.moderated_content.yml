@@ -1,0 +1,830 @@
+base_field: vid
+base_table: node_field_revision
+dependencies:
+  enforced:
+    module:
+      - content_moderation
+  module:
+    - node
+    - user
+description: Find and moderate content.
+display:
+  default:
+    cache_metadata:
+      contexts:
+        - languages:language_content
+        - languages:language_interface
+        - url
+        - url.query_args
+        - user.node_grants:view
+        - user.permissions
+      max-age: -1
+      tags: {}
+    display_options:
+      access:
+        options:
+          perm: view any unpublished content
+        type: perm
+      arguments: {}
+      cache:
+        options: {}
+        type: tag
+      display_extenders: {}
+      empty:
+        area_text_custom:
+          admin_label: ""
+          content: No moderated content available. Only pending versions of content, such as drafts, are listed here.
+          empty: true
+          field: area_text_custom
+          group_type: group
+          id: area_text_custom
+          plugin_id: text_custom
+          relationship: none
+          table: views
+          tokenize: false
+      exposed_form:
+        options:
+          expose_sort_order: true
+          exposed_sorts_label: Sort by
+          reset_button: true
+          reset_button_label: Reset
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          submit_button: Filter
+        type: basic
+      fields:
+        changed:
+          admin_label: ""
+          alter:
+            absolute: false
+            alt: ""
+            alter_text: false
+            ellipsis: false
+            external: false
+            html: false
+            link_class: ""
+            make_link: false
+            max_length: 0
+            more_link: false
+            more_link_path: ""
+            more_link_text: ""
+            nl2br: false
+            path: ""
+            path_case: none
+            prefix: ""
+            preserve_tags: ""
+            rel: ""
+            replace_spaces: false
+            strip_tags: false
+            suffix: ""
+            target: ""
+            text: ""
+            trim: false
+            trim_whitespace: false
+            word_boundary: false
+          click_sort_column: value
+          delta_first_last: false
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          element_class: ""
+          element_default_classes: true
+          element_label_class: ""
+          element_label_colon: true
+          element_label_type: ""
+          element_type: ""
+          element_wrapper_class: ""
+          element_wrapper_type: ""
+          empty: ""
+          empty_zero: false
+          entity_field: changed
+          entity_type: node
+          exclude: false
+          field: changed
+          field_api_classes: false
+          group_column: value
+          group_columns: {}
+          group_rows: true
+          group_type: group
+          hide_alter_empty: true
+          hide_empty: false
+          id: changed
+          label: Updated
+          multi_type: separator
+          plugin_id: field
+          relationship: none
+          separator: ', '
+          settings:
+            custom_date_format: ""
+            date_format: short
+            timezone: ""
+          table: node_field_revision
+          type: timestamp
+        moderation_state:
+          admin_label: ""
+          alter:
+            absolute: false
+            alt: ""
+            alter_text: false
+            ellipsis: true
+            external: false
+            html: false
+            link_class: ""
+            make_link: false
+            max_length: 0
+            more_link: false
+            more_link_path: ""
+            more_link_text: ""
+            nl2br: false
+            path: ""
+            path_case: none
+            prefix: ""
+            preserve_tags: ""
+            rel: ""
+            replace_spaces: false
+            strip_tags: false
+            suffix: ""
+            target: ""
+            text: ""
+            trim: false
+            trim_whitespace: false
+            word_boundary: true
+          click_sort_column: value
+          delta_first_last: false
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          element_class: ""
+          element_default_classes: true
+          element_label_class: ""
+          element_label_colon: true
+          element_label_type: ""
+          element_type: ""
+          element_wrapper_class: ""
+          element_wrapper_type: ""
+          empty: ""
+          empty_zero: false
+          entity_type: node
+          exclude: false
+          field: moderation_state
+          field_api_classes: false
+          group_column: value
+          group_columns: {}
+          group_rows: true
+          group_type: group
+          hide_alter_empty: true
+          hide_empty: false
+          id: moderation_state
+          label: Moderation state
+          multi_type: separator
+          plugin_id: field
+          relationship: none
+          separator: ', '
+          settings: {}
+          table: node_field_revision
+          type: content_moderation_state
+        name:
+          admin_label: ""
+          alter:
+            absolute: false
+            alt: ""
+            alter_text: false
+            ellipsis: true
+            external: false
+            html: false
+            link_class: ""
+            make_link: false
+            max_length: 0
+            more_link: false
+            more_link_path: ""
+            more_link_text: ""
+            nl2br: false
+            path: ""
+            path_case: none
+            prefix: ""
+            preserve_tags: ""
+            rel: ""
+            replace_spaces: false
+            strip_tags: false
+            suffix: ""
+            target: ""
+            text: ""
+            trim: false
+            trim_whitespace: false
+            word_boundary: true
+          click_sort_column: value
+          delta_first_last: false
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          element_class: ""
+          element_default_classes: true
+          element_label_class: ""
+          element_label_colon: true
+          element_label_type: ""
+          element_type: ""
+          element_wrapper_class: ""
+          element_wrapper_type: ""
+          empty: ""
+          empty_zero: false
+          entity_field: name
+          entity_type: user
+          exclude: false
+          field: name
+          field_api_classes: false
+          group_column: value
+          group_columns: {}
+          group_rows: true
+          group_type: group
+          hide_alter_empty: true
+          hide_empty: false
+          id: name
+          label: Author
+          multi_type: separator
+          plugin_id: field
+          relationship: uid
+          separator: ', '
+          settings:
+            link_to_entity: true
+          table: users_field_data
+          type: user_name
+        operations:
+          admin_label: ""
+          alter:
+            absolute: false
+            alt: ""
+            alter_text: false
+            ellipsis: true
+            external: false
+            html: false
+            link_class: ""
+            make_link: false
+            max_length: 0
+            more_link: false
+            more_link_path: ""
+            more_link_text: ""
+            nl2br: false
+            path: ""
+            path_case: none
+            prefix: ""
+            preserve_tags: ""
+            rel: ""
+            replace_spaces: false
+            strip_tags: false
+            suffix: ""
+            target: ""
+            text: ""
+            trim: false
+            trim_whitespace: false
+            word_boundary: true
+          destination: true
+          element_class: ""
+          element_default_classes: true
+          element_label_class: ""
+          element_label_colon: true
+          element_label_type: ""
+          element_type: ""
+          element_wrapper_class: ""
+          element_wrapper_type: ""
+          empty: ""
+          empty_zero: false
+          entity_type: node
+          exclude: false
+          field: operations
+          group_type: group
+          hide_alter_empty: true
+          hide_empty: false
+          id: operations
+          label: Operations
+          plugin_id: entity_operations
+          relationship: none
+          table: node_revision
+        title:
+          admin_label: ""
+          alter:
+            absolute: false
+            alt: ""
+            alter_text: false
+            ellipsis: false
+            external: false
+            html: false
+            link_class: ""
+            make_link: false
+            max_length: 0
+            more_link: false
+            more_link_path: ""
+            more_link_text: ""
+            nl2br: false
+            path: ""
+            path_case: none
+            prefix: ""
+            preserve_tags: ""
+            rel: ""
+            replace_spaces: false
+            strip_tags: false
+            suffix: ""
+            target: ""
+            text: ""
+            trim: false
+            trim_whitespace: false
+            word_boundary: false
+          click_sort_column: value
+          delta_first_last: false
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          element_class: ""
+          element_default_classes: true
+          element_label_class: ""
+          element_label_colon: true
+          element_label_type: ""
+          element_type: ""
+          element_wrapper_class: ""
+          element_wrapper_type: ""
+          empty: ""
+          empty_zero: false
+          entity_field: title
+          entity_type: node
+          exclude: false
+          field: title
+          field_api_classes: false
+          group_column: value
+          group_columns: {}
+          group_rows: true
+          group_type: group
+          hide_alter_empty: true
+          hide_empty: false
+          id: title
+          label: Title
+          multi_type: separator
+          plugin_id: field
+          relationship: none
+          separator: ', '
+          settings:
+            link_to_entity: true
+          table: node_field_revision
+          type: string
+        type:
+          admin_label: ""
+          alter:
+            absolute: false
+            alt: ""
+            alter_text: false
+            ellipsis: true
+            external: false
+            html: false
+            link_class: ""
+            make_link: false
+            max_length: 0
+            more_link: false
+            more_link_path: ""
+            more_link_text: ""
+            nl2br: false
+            path: ""
+            path_case: none
+            prefix: ""
+            preserve_tags: ""
+            rel: ""
+            replace_spaces: false
+            strip_tags: false
+            suffix: ""
+            target: ""
+            text: ""
+            trim: false
+            trim_whitespace: false
+            word_boundary: true
+          click_sort_column: target_id
+          delta_first_last: false
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          element_class: ""
+          element_default_classes: true
+          element_label_class: ""
+          element_label_colon: true
+          element_label_type: ""
+          element_type: ""
+          element_wrapper_class: ""
+          element_wrapper_type: ""
+          empty: ""
+          empty_zero: false
+          entity_field: type
+          entity_type: node
+          exclude: false
+          field: type
+          field_api_classes: false
+          group_column: target_id
+          group_columns: {}
+          group_rows: true
+          group_type: group
+          hide_alter_empty: true
+          hide_empty: false
+          id: type
+          label: Content type
+          multi_type: separator
+          plugin_id: field
+          relationship: nid
+          separator: ', '
+          settings:
+            link: false
+          table: node_field_data
+          type: entity_reference_label
+      filter_groups:
+        groups:
+          1: AND
+        operator: AND
+      filters:
+        langcode:
+          admin_label: ""
+          entity_field: langcode
+          entity_type: node
+          expose:
+            description: ""
+            identifier: langcode
+            label: Language
+            multiple: false
+            operator: langcode_op
+            operator_id: langcode_op
+            operator_limit_selection: false
+            operator_list: {}
+            reduce: false
+            remember: false
+            remember_roles:
+              administrator: "0"
+              anonymous: "0"
+              authenticated: authenticated
+            required: false
+            use_operator: false
+          exposed: true
+          field: langcode
+          group: 1
+          group_info:
+            default_group: All
+            default_group_multiple: {}
+            description: ""
+            group_items: {}
+            identifier: ""
+            label: ""
+            multiple: false
+            optional: true
+            remember: false
+            widget: select
+          group_type: group
+          id: langcode
+          is_grouped: false
+          operator: in
+          plugin_id: language
+          relationship: none
+          table: node_field_revision
+          value: {}
+        latest_translation_affected_revision:
+          admin_label: ""
+          entity_type: node
+          expose:
+            description: ""
+            identifier: ""
+            label: ""
+            multiple: false
+            operator: ""
+            operator_id: ""
+            operator_limit_selection: false
+            operator_list: {}
+            remember: false
+            remember_roles:
+              authenticated: authenticated
+            required: false
+            use_operator: false
+          exposed: false
+          field: latest_translation_affected_revision
+          group: 1
+          group_info:
+            default_group: All
+            default_group_multiple: {}
+            description: ""
+            group_items: {}
+            identifier: ""
+            label: ""
+            multiple: false
+            optional: true
+            remember: false
+            widget: select
+          group_type: group
+          id: latest_translation_affected_revision
+          is_grouped: false
+          operator: =
+          plugin_id: latest_translation_affected_revision
+          relationship: none
+          table: node_revision
+          value: ""
+        moderation_state:
+          admin_label: ""
+          entity_type: node
+          expose:
+            description: ""
+            identifier: moderation_state
+            label: Moderation state
+            multiple: false
+            operator: moderation_state_op
+            operator_id: moderation_state_op
+            operator_limit_selection: false
+            operator_list: {}
+            reduce: true
+            remember: false
+            remember_roles:
+              administrator: "0"
+              anonymous: "0"
+              authenticated: authenticated
+            required: false
+            use_operator: false
+          exposed: true
+          field: moderation_state
+          group: 1
+          group_info:
+            default_group: All
+            default_group_multiple: {}
+            description: ""
+            group_items: {}
+            identifier: ""
+            label: ""
+            multiple: false
+            optional: true
+            remember: false
+            widget: select
+          group_type: group
+          id: moderation_state
+          is_grouped: false
+          operator: in
+          plugin_id: moderation_state_filter
+          relationship: none
+          table: node_field_revision
+          value:
+            editorial-archived: editorial-archived
+            editorial-draft: editorial-draft
+        moderation_state_1:
+          admin_label: ""
+          entity_type: node
+          expose:
+            description: ""
+            identifier: ""
+            label: ""
+            multiple: false
+            operator: ""
+            operator_id: ""
+            operator_limit_selection: false
+            operator_list: {}
+            reduce: false
+            remember: false
+            remember_roles:
+              authenticated: authenticated
+            required: false
+            use_operator: false
+          exposed: false
+          field: moderation_state
+          group: 1
+          group_info:
+            default_group: All
+            default_group_multiple: {}
+            description: ""
+            group_items: {}
+            identifier: ""
+            label: ""
+            multiple: false
+            optional: true
+            remember: false
+            widget: select
+          group_type: group
+          id: moderation_state_1
+          is_grouped: false
+          operator: not in
+          plugin_id: moderation_state_filter
+          relationship: none
+          table: node_field_revision
+          value:
+            editorial-published: editorial-published
+        title:
+          admin_label: ""
+          entity_field: title
+          entity_type: node
+          expose:
+            description: ""
+            identifier: title
+            label: Title
+            multiple: false
+            operator: title_op
+            operator_id: title_op
+            operator_limit_selection: false
+            operator_list: {}
+            remember: false
+            remember_roles:
+              administrator: "0"
+              anonymous: "0"
+              authenticated: authenticated
+            required: false
+            use_operator: false
+          exposed: true
+          field: title
+          group: 1
+          group_info:
+            default_group: All
+            default_group_multiple: {}
+            description: ""
+            group_items: {}
+            identifier: ""
+            label: ""
+            multiple: false
+            optional: true
+            remember: false
+            widget: select
+          group_type: group
+          id: title
+          is_grouped: false
+          operator: contains
+          plugin_id: string
+          relationship: none
+          table: node_field_revision
+          value: ""
+        type:
+          admin_label: ""
+          entity_field: type
+          entity_type: node
+          expose:
+            description: ""
+            identifier: type
+            label: Content type
+            multiple: false
+            operator: type_op
+            operator_id: type_op
+            operator_limit_selection: false
+            operator_list: {}
+            reduce: false
+            remember: false
+            remember_roles:
+              administrator: "0"
+              anonymous: "0"
+              authenticated: authenticated
+            required: false
+            use_operator: false
+          exposed: true
+          field: type
+          group: 1
+          group_info:
+            default_group: All
+            default_group_multiple: {}
+            description: ""
+            group_items: {}
+            identifier: ""
+            label: ""
+            multiple: false
+            optional: true
+            remember: false
+            widget: select
+          group_type: group
+          id: type
+          is_grouped: false
+          operator: in
+          plugin_id: bundle
+          relationship: nid
+          table: node_field_data
+          value: {}
+      footer: {}
+      header: {}
+      pager:
+        options:
+          expose:
+            items_per_page: false
+            items_per_page_label: Items per page
+            items_per_page_options: 5, 10, 25, 50
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          id: 0
+          items_per_page: 50
+          offset: 0
+          quantity: 9
+          tags:
+            first: « First
+            last: Last »
+            next: Next ›
+            previous: ‹ Previous
+          total_pages: null
+        type: full
+      query:
+        options:
+          disable_sql_rewrite: false
+          distinct: false
+          query_comment: ""
+          query_tags: {}
+          replica: false
+        type: views_query
+      relationships:
+        nid:
+          admin_label: Get the actual content from a content revision.
+          entity_field: nid
+          entity_type: node
+          field: nid
+          group_type: group
+          id: nid
+          plugin_id: standard
+          relationship: none
+          required: false
+          table: node_field_revision
+        uid:
+          admin_label: User
+          entity_field: uid
+          entity_type: node
+          field: uid
+          group_type: group
+          id: uid
+          plugin_id: standard
+          relationship: none
+          required: false
+          table: node_field_revision
+      row:
+        type: fields
+      sorts: {}
+      style:
+        options:
+          caption: ""
+          columns:
+            changed: changed
+            moderation_state: moderation_state
+            name: name
+            title: title
+            type: type
+          default: changed
+          default_row_class: true
+          description: ""
+          empty_table: true
+          grouping: {}
+          info:
+            changed:
+              align: ""
+              default_sort_order: desc
+              empty_column: false
+              responsive: ""
+              separator: ""
+              sortable: true
+            moderation_state:
+              align: ""
+              default_sort_order: asc
+              empty_column: false
+              responsive: ""
+              separator: ""
+              sortable: true
+            name:
+              align: ""
+              default_sort_order: asc
+              empty_column: false
+              responsive: ""
+              separator: ""
+              sortable: false
+            title:
+              align: ""
+              default_sort_order: asc
+              empty_column: false
+              responsive: ""
+              separator: ""
+              sortable: true
+            type:
+              align: ""
+              default_sort_order: asc
+              empty_column: false
+              responsive: ""
+              separator: ""
+              sortable: true
+          override: true
+          row_class: ""
+          sticky: true
+          summary: ""
+        type: table
+      title: Moderated content
+    display_plugin: default
+    display_title: Default
+    id: default
+    position: 0
+  moderated_content:
+    cache_metadata:
+      contexts:
+        - languages:language_content
+        - languages:language_interface
+        - url
+        - url.query_args
+        - user.node_grants:view
+        - user.permissions
+      max-age: -1
+      tags: {}
+    display_options:
+      display_description: ""
+      display_extenders: {}
+      path: admin/content/moderated
+    display_plugin: page
+    display_title: Moderated content
+    id: moderated_content
+    position: 1
+id: moderated_content
+label: Moderated content
+langcode: en
+module: views
+status: true
+tag: ""

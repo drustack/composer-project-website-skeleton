@@ -1,0 +1,20 @@
+bundle: personal
+content:
+  message:
+    label: above
+    region: content
+    settings: {}
+    third_party_settings: {}
+    type: basic_string
+    weight: 0
+dependencies:
+  config:
+    - contact.form.personal
+hidden:
+  langcode: true
+  search_api_excerpt: true
+id: contact_message.personal.default
+langcode: en
+mode: default
+status: true
+targetEntityType: contact_message

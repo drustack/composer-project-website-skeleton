@@ -1,0 +1,13 @@
+dependencies:
+  module:
+    - user
+id: user
+label: User
+langcode: en
+pattern: user/[user:account-name]
+relationships: {}
+selection_criteria: {}
+selection_logic: and
+status: true
+type: canonical_entities:user
+weight: 0

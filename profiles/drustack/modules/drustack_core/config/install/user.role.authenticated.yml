@@ -5,7 +5,9 @@ dependencies:
     - comment
     - contact
     - filter
+    - media
     - shortcut
+    - sitemap
     - system
 id: authenticated
 is_admin: false
@@ -16,8 +18,14 @@ permissions:
   - access content
   - access shortcuts
   - access site-wide contact form
+  - access sitemap
+  - access user contact forms
+  - access user profiles
+  - cancel account
+  - edit own comments
   - post comments
   - skip comment approval
   - use text format basic_html
+  - view media
 status: true
 weight: 1

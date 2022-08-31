@@ -1,0 +1,709 @@
+base_field: wid
+base_table: watchdog
+dependencies:
+  module:
+    - dblog
+    - user
+description: Recent log messages
+display:
+  default:
+    cache_metadata:
+      contexts:
+        - languages:language_content
+        - languages:language_interface
+        - url
+        - url.query_args
+        - user.permissions
+      max-age: -1
+      tags: {}
+    display_options:
+      access:
+        options:
+          perm: access site reports
+        type: perm
+      arguments: {}
+      cache:
+        options: {}
+        type: none
+      css_class: admin-dblog
+      display_extenders: {}
+      empty:
+        area:
+          admin_label: No log messages available.
+          content: No log messages available.
+          empty: true
+          field: area_text_custom
+          group_type: group
+          id: area_text_custom
+          plugin_id: text_custom
+          relationship: none
+          table: views
+          tokenize: false
+      exposed_form:
+        options:
+          expose_sort_order: false
+          exposed_sorts_label: Sort by
+          reset_button: true
+          reset_button_label: Reset
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          submit_button: Filter
+        type: basic
+      fields:
+        link:
+          admin_label: ""
+          alter:
+            absolute: false
+            alt: ""
+            alter_text: false
+            ellipsis: true
+            external: false
+            html: false
+            link_class: ""
+            make_link: false
+            max_length: 0
+            more_link: false
+            more_link_path: ""
+            more_link_text: ""
+            nl2br: false
+            path: ""
+            path_case: none
+            prefix: ""
+            preserve_tags: ""
+            rel: ""
+            replace_spaces: false
+            strip_tags: false
+            suffix: ""
+            target: ""
+            text: ""
+            trim: false
+            trim_whitespace: false
+            word_boundary: true
+          element_class: ""
+          element_default_classes: true
+          element_label_class: ""
+          element_label_colon: true
+          element_label_type: ""
+          element_type: ""
+          element_wrapper_class: ""
+          element_wrapper_type: ""
+          empty: ""
+          empty_zero: false
+          exclude: false
+          field: link
+          group_type: group
+          hide_alter_empty: true
+          hide_empty: false
+          id: link
+          label: Operations
+          plugin_id: dblog_operations
+          relationship: none
+          table: watchdog
+        message:
+          admin_label: ""
+          alter:
+            absolute: false
+            alt: '{{ message }}'
+            alter_text: false
+            ellipsis: true
+            external: false
+            html: true
+            link_class: ""
+            make_link: true
+            max_length: 56
+            more_link: false
+            more_link_path: ""
+            more_link_text: ""
+            nl2br: false
+            path: admin/reports/dblog/event/{{ wid }}
+            path_case: none
+            prefix: ""
+            preserve_tags: ""
+            rel: ""
+            replace_spaces: false
+            strip_tags: true
+            suffix: ""
+            target: ""
+            text: ""
+            trim: true
+            trim_whitespace: false
+            word_boundary: true
+          element_class: ""
+          element_default_classes: true
+          element_label_class: ""
+          element_label_colon: true
+          element_label_type: ""
+          element_type: ""
+          element_wrapper_class: ""
+          element_wrapper_type: ""
+          empty: ""
+          empty_zero: false
+          exclude: false
+          field: message
+          group_type: group
+          hide_alter_empty: true
+          hide_empty: false
+          id: message
+          label: Message
+          plugin_id: dblog_message
+          relationship: none
+          replace_variables: true
+          table: watchdog
+        name:
+          admin_label: ""
+          alter:
+            absolute: false
+            alt: ""
+            alter_text: false
+            ellipsis: true
+            external: false
+            html: false
+            link_class: ""
+            make_link: false
+            max_length: 0
+            more_link: false
+            more_link_path: ""
+            more_link_text: ""
+            nl2br: false
+            path: ""
+            path_case: none
+            prefix: ""
+            preserve_tags: ""
+            rel: ""
+            replace_spaces: false
+            strip_tags: false
+            suffix: ""
+            target: ""
+            text: ""
+            trim: false
+            trim_whitespace: false
+            word_boundary: true
+          click_sort_column: value
+          delta_first_last: false
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          element_class: ""
+          element_default_classes: true
+          element_label_class: ""
+          element_label_colon: true
+          element_label_type: ""
+          element_type: ""
+          element_wrapper_class: ""
+          element_wrapper_type: ""
+          empty: ""
+          empty_zero: false
+          entity_field: name
+          entity_type: user
+          exclude: false
+          field: name
+          field_api_classes: false
+          group_column: value
+          group_columns: {}
+          group_rows: true
+          group_type: group
+          hide_alter_empty: true
+          hide_empty: false
+          id: name
+          label: User
+          multi_type: separator
+          plugin_id: field
+          relationship: uid
+          separator: ', '
+          settings:
+            link_to_entity: true
+          table: users_field_data
+          type: user_name
+        nothing:
+          admin_label: Icon
+          alter:
+            absolute: false
+            alt: ""
+            alter_text: true
+            ellipsis: true
+            external: false
+            html: false
+            link_class: ""
+            make_link: false
+            max_length: 0
+            more_link: false
+            more_link_path: ""
+            more_link_text: ""
+            nl2br: false
+            path: ""
+            path_case: none
+            prefix: ""
+            preserve_tags: ""
+            rel: ""
+            replace_spaces: false
+            strip_tags: false
+            suffix: ""
+            target: ""
+            text: ""
+            trim: false
+            trim_whitespace: false
+            word_boundary: true
+          element_class: icon
+          element_default_classes: false
+          element_label_class: ""
+          element_label_colon: false
+          element_label_type: ""
+          element_type: ""
+          element_wrapper_class: ""
+          element_wrapper_type: ""
+          empty: ""
+          empty_zero: false
+          exclude: false
+          field: nothing
+          group_type: group
+          hide_alter_empty: false
+          hide_empty: false
+          id: nothing
+          label: ""
+          plugin_id: custom
+          relationship: none
+          table: views
+        severity:
+          admin_label: ""
+          alter:
+            absolute: false
+            alt: ""
+            alter_text: false
+            ellipsis: true
+            external: false
+            html: false
+            link_class: ""
+            make_link: false
+            max_length: 0
+            more_link: false
+            more_link_path: ""
+            more_link_text: ""
+            nl2br: false
+            path: ""
+            path_case: none
+            prefix: ""
+            preserve_tags: ""
+            rel: ""
+            replace_spaces: false
+            strip_tags: false
+            suffix: ""
+            target: ""
+            text: ""
+            trim: false
+            trim_whitespace: false
+            word_boundary: true
+          element_class: ""
+          element_default_classes: true
+          element_label_class: ""
+          element_label_colon: true
+          element_label_type: ""
+          element_type: ""
+          element_wrapper_class: ""
+          element_wrapper_type: ""
+          empty: ""
+          empty_zero: false
+          exclude: true
+          field: severity
+          group_type: group
+          hide_alter_empty: true
+          hide_empty: false
+          id: severity
+          label: Severity
+          machine_name: false
+          plugin_id: machine_name
+          relationship: none
+          table: watchdog
+        timestamp:
+          admin_label: ""
+          alter:
+            absolute: false
+            alt: ""
+            alter_text: false
+            ellipsis: true
+            external: false
+            html: false
+            link_class: ""
+            make_link: false
+            max_length: 0
+            more_link: false
+            more_link_path: ""
+            more_link_text: ""
+            nl2br: false
+            path: ""
+            path_case: none
+            prefix: ""
+            preserve_tags: ""
+            rel: ""
+            replace_spaces: false
+            strip_tags: false
+            suffix: ""
+            target: ""
+            text: ""
+            trim: false
+            trim_whitespace: false
+            word_boundary: true
+          custom_date_format: ""
+          date_format: short
+          element_class: ""
+          element_default_classes: true
+          element_label_class: ""
+          element_label_colon: true
+          element_label_type: ""
+          element_type: ""
+          element_wrapper_class: ""
+          element_wrapper_type: ""
+          empty: ""
+          empty_zero: false
+          exclude: false
+          field: timestamp
+          group_type: group
+          hide_alter_empty: true
+          hide_empty: false
+          id: timestamp
+          label: Date
+          plugin_id: date
+          relationship: none
+          table: watchdog
+          timezone: ""
+        type:
+          admin_label: ""
+          alter:
+            absolute: false
+            alt: ""
+            alter_text: false
+            ellipsis: true
+            external: false
+            html: false
+            link_class: ""
+            make_link: false
+            max_length: 0
+            more_link: false
+            more_link_path: ""
+            more_link_text: ""
+            nl2br: false
+            path: ""
+            path_case: none
+            prefix: ""
+            preserve_tags: ""
+            rel: ""
+            replace_spaces: false
+            strip_tags: false
+            suffix: ""
+            target: ""
+            text: ""
+            trim: false
+            trim_whitespace: false
+            word_boundary: true
+          element_class: ""
+          element_default_classes: true
+          element_label_class: ""
+          element_label_colon: true
+          element_label_type: ""
+          element_type: ""
+          element_wrapper_class: ""
+          element_wrapper_type: ""
+          empty: ""
+          empty_zero: false
+          exclude: false
+          field: type
+          group_type: group
+          hide_alter_empty: true
+          hide_empty: false
+          id: type
+          label: Type
+          plugin_id: standard
+          relationship: none
+          table: watchdog
+        wid:
+          admin_label: ""
+          alter:
+            absolute: false
+            alt: ""
+            alter_text: false
+            ellipsis: true
+            external: false
+            html: false
+            link_class: ""
+            make_link: false
+            max_length: 0
+            more_link: false
+            more_link_path: ""
+            more_link_text: ""
+            nl2br: false
+            path: ""
+            path_case: none
+            prefix: ""
+            preserve_tags: ""
+            rel: ""
+            replace_spaces: false
+            strip_tags: false
+            suffix: ""
+            target: ""
+            text: ""
+            trim: false
+            trim_whitespace: false
+            word_boundary: true
+          element_class: ""
+          element_default_classes: true
+          element_label_class: ""
+          element_label_colon: true
+          element_label_type: ""
+          element_type: ""
+          element_wrapper_class: ""
+          element_wrapper_type: ""
+          empty: ""
+          empty_zero: false
+          exclude: true
+          field: wid
+          group_type: group
+          hide_alter_empty: true
+          hide_empty: false
+          id: wid
+          label: WID
+          plugin_id: standard
+          relationship: none
+          table: watchdog
+      filter_groups:
+        groups:
+          1: AND
+        operator: AND
+      filters:
+        severity:
+          admin_label: ""
+          expose:
+            description: ""
+            identifier: severity
+            label: Severity
+            multiple: true
+            operator: severity_op
+            operator_id: severity_op
+            operator_limit_selection: false
+            operator_list: {}
+            reduce: false
+            remember: false
+            remember_roles:
+              administrator: "0"
+              anonymous: "0"
+              authenticated: authenticated
+            required: false
+            use_operator: false
+          exposed: true
+          field: severity
+          group: 1
+          group_info:
+            default_group: All
+            default_group_multiple: {}
+            description: ""
+            group_items: {}
+            identifier: ""
+            label: ""
+            multiple: false
+            optional: true
+            remember: false
+            widget: select
+          group_type: group
+          id: severity
+          is_grouped: false
+          operator: in
+          plugin_id: in_operator
+          relationship: none
+          table: watchdog
+          value: {}
+        type:
+          admin_label: ""
+          expose:
+            description: ""
+            identifier: type
+            label: Type
+            multiple: true
+            operator: type_op
+            operator_id: type_op
+            operator_limit_selection: false
+            operator_list: {}
+            reduce: false
+            remember: false
+            remember_roles:
+              administrator: "0"
+              anonymous: "0"
+              authenticated: authenticated
+            required: false
+            use_operator: false
+          exposed: true
+          field: type
+          group: 1
+          group_info:
+            default_group: All
+            default_group_multiple: {}
+            description: ""
+            group_items: {}
+            identifier: ""
+            label: ""
+            multiple: false
+            optional: true
+            remember: false
+            widget: select
+          group_type: group
+          id: type
+          is_grouped: false
+          operator: in
+          plugin_id: dblog_types
+          relationship: none
+          table: watchdog
+          value: {}
+      footer: {}
+      header: {}
+      pager:
+        options:
+          expose:
+            items_per_page: false
+            items_per_page_label: Items per page
+            items_per_page_options: 5, 10, 25, 50
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          id: 0
+          items_per_page: 50
+          offset: 0
+          tags:
+            next: ››
+            previous: ‹‹
+          total_pages: null
+        type: mini
+      query:
+        options:
+          disable_sql_rewrite: false
+          distinct: false
+          query_comment: ""
+          query_tags: {}
+          replica: false
+        type: views_query
+      relationships:
+        uid:
+          admin_label: User
+          field: uid
+          group_type: group
+          id: uid
+          plugin_id: standard
+          relationship: none
+          required: false
+          table: watchdog
+      row:
+        type: fields
+      sorts:
+        wid:
+          admin_label: ""
+          expose:
+            field_identifier: wid
+            label: ""
+          exposed: false
+          field: wid
+          group_type: group
+          id: wid
+          order: DESC
+          plugin_id: standard
+          relationship: none
+          table: watchdog
+      style:
+        options:
+          caption: ""
+          columns:
+            link: link
+            message: message
+            name: name
+            nothing: nothing
+            severity: severity
+            timestamp: timestamp
+            type: type
+            wid: wid
+          default: wid
+          default_row_class: true
+          description: ""
+          empty_table: false
+          grouping: {}
+          info:
+            link:
+              align: ""
+              empty_column: false
+              responsive: priority-low
+              separator: ""
+            message:
+              align: ""
+              default_sort_order: asc
+              empty_column: false
+              responsive: ""
+              separator: ""
+              sortable: false
+            name:
+              align: ""
+              default_sort_order: asc
+              empty_column: false
+              responsive: priority-medium
+              separator: ""
+              sortable: true
+            nothing:
+              align: ""
+              empty_column: false
+              responsive: priority-medium
+              separator: ""
+            severity:
+              align: ""
+              default_sort_order: asc
+              empty_column: false
+              responsive: priority-low
+              separator: ""
+              sortable: false
+            timestamp:
+              align: ""
+              default_sort_order: desc
+              empty_column: false
+              responsive: priority-low
+              separator: ""
+              sortable: true
+            type:
+              align: ""
+              default_sort_order: asc
+              empty_column: false
+              responsive: priority-medium
+              separator: ""
+              sortable: true
+            wid:
+              align: ""
+              default_sort_order: desc
+              empty_column: false
+              responsive: priority-low
+              separator: ""
+              sortable: false
+          override: true
+          row_class: '{{ type }} {{ severity }}'
+          sticky: false
+          summary: ""
+        type: table
+      title: Recent log messages
+    display_plugin: default
+    display_title: Default
+    id: default
+    position: 0
+  page:
+    cache_metadata:
+      contexts:
+        - languages:language_content
+        - languages:language_interface
+        - url
+        - url.query_args
+        - user.permissions
+      max-age: -1
+      tags: {}
+    display_options:
+      display_extenders: {}
+      path: admin/reports/dblog
+    display_plugin: page
+    display_title: Page
+    id: page
+    position: 1
+id: watchdog
+label: Watchdog
+langcode: en
+module: views
+status: true
+tag: ""

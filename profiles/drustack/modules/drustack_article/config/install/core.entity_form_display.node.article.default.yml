@@ -88,6 +88,11 @@ content:
     third_party_settings: {}
     type: string_textfield
     weight: 0
+  translation:
+    region: content
+    settings: {}
+    third_party_settings: {}
+    weight: 10
   uid:
     region: content
     settings:
@@ -104,6 +109,11 @@ content:
     third_party_settings: {}
     type: datetime_timestamp_no_default
     weight: 30
+  url_redirects:
+    region: content
+    settings: {}
+    third_party_settings: {}
+    weight: 50
 dependencies:
   config:
     - field.field.node.article.body

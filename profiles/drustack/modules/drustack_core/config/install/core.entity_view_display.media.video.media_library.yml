@@ -1,0 +1,33 @@
+bundle: video
+content:
+  thumbnail:
+    label: visually_hidden
+    region: content
+    settings:
+      image_link: ""
+      image_loading:
+        attribute: lazy
+      image_style: media_library
+    third_party_settings: {}
+    type: image
+    weight: 0
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.video.field_media_video_file
+    - image.style.media_library
+    - media.type.video
+  module:
+    - image
+hidden:
+  created: true
+  field_media_video_file: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  uid: true
+id: media.video.media_library
+langcode: en
+mode: media_library
+status: true
+targetEntityType: media

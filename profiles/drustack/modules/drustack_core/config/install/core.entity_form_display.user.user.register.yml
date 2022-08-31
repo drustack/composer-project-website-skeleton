@@ -1,0 +1,25 @@
+bundle: user
+content:
+  account:
+    region: content
+    settings: {}
+    third_party_settings: {}
+    weight: 0
+dependencies:
+  config:
+    - core.entity_form_mode.user.register
+    - field.field.user.user.user_picture
+  module:
+    - user
+hidden:
+  contact: true
+  langcode: true
+  language: true
+  path: true
+  timezone: true
+  user_picture: true
+id: user.user.register
+langcode: en
+mode: register
+status: true
+targetEntityType: user

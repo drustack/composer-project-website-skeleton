@@ -1,0 +1,22 @@
+bundle: tags
+content:
+  description:
+    label: visually_hidden
+    region: content
+    settings: {}
+    third_party_settings: {}
+    type: text_default
+    weight: 0
+dependencies:
+  config:
+    - taxonomy.vocabulary.tags
+  module:
+    - text
+hidden:
+  langcode: true
+  search_api_excerpt: true
+id: taxonomy_term.tags.default
+langcode: en
+mode: default
+status: true
+targetEntityType: taxonomy_term

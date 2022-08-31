@@ -1,0 +1,17 @@
+bundle: comment
+default_value: {}
+default_value_callback: ""
+dependencies:
+  config:
+    - comment.type.comment
+description: The comment author's home page address.
+entity_type: comment
+field_name: homepage
+field_type: uri
+id: comment.comment.homepage
+label: Homepage
+langcode: en
+required: false
+settings: {}
+status: true
+translatable: false

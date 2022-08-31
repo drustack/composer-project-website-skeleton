@@ -1,7 +1,7 @@
 bundle: comment
 content:
   comment_body:
-    label: hidden
+    label: visually_hidden
     region: content
     settings: {}
     third_party_settings: {}
@@ -9,6 +9,8 @@ content:
     weight: 0
   links:
     region: content
+    settings: {}
+    third_party_settings: {}
     weight: 100
 dependencies:
   config:

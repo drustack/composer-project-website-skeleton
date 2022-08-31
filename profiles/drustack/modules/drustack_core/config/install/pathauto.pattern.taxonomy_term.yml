@@ -1,0 +1,13 @@
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term
+label: Taxonomy term
+langcode: en
+pattern: '[term:source:parent:url:path]/[term:source:name]'
+relationships: {}
+selection_criteria: {}
+selection_logic: and
+status: true
+type: canonical_entities:taxonomy_term
+weight: 0

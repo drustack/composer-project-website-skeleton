@@ -5,6 +5,8 @@ dependencies:
     - comment
     - contact
     - filter
+    - media
+    - sitemap
     - system
 id: anonymous
 is_admin: false
@@ -14,6 +16,9 @@ permissions:
   - access comments
   - access content
   - access site-wide contact form
+  - access sitemap
+  - post comments
   - use text format restricted_html
+  - view media
 status: true
-weight: 0
+weight: -10

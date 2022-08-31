@@ -1,0 +1,13 @@
+dependencies:
+  module:
+    - node
+id: node
+label: Content
+langcode: en
+pattern: '[node:content-type:machine-name]/[node:source:title]'
+relationships: {}
+selection_criteria: {}
+selection_logic: and
+status: true
+type: canonical_entities:node
+weight: 0

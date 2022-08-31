@@ -2,9 +2,11 @@ bundle: user
 content:
   member_for:
     region: content
+    settings: {}
+    third_party_settings: {}
     weight: 5
   user_picture:
-    label: hidden
+    label: visually_hidden
     region: content
     settings:
       image_link: content

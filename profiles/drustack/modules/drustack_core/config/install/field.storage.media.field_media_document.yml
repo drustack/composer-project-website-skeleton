@@ -1,0 +1,25 @@
+cardinality: 1
+custom_storage: false
+dependencies:
+  enforced:
+    module:
+      - media
+  module:
+    - file
+    - media
+entity_type: media
+field_name: field_media_document
+id: media.field_media_document
+indexes: {}
+langcode: en
+locked: false
+module: file
+persist_with_no_fields: false
+settings:
+  display_default: false
+  display_field: false
+  target_type: file
+  uri_scheme: public
+status: true
+translatable: true
+type: file
