@@ -1,20 +1,20 @@
-cardinality: -1
-custom_storage: false
+langcode: en
+status: true
 dependencies:
   module:
     - paragraphs
     - views
     - viewsreference
-entity_type: paragraph
-field_name: field_views
 id: paragraph.field_views
-indexes: {}
-langcode: en
-locked: false
-module: viewsreference
-persist_with_no_fields: false
+field_name: field_views
+entity_type: paragraph
+type: viewsreference
 settings:
   target_type: view
-status: true
+module: viewsreference
+locked: false
+cardinality: -1
 translatable: true
-type: viewsreference
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

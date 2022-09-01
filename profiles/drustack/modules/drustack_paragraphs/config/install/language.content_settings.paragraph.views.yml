@@ -1,17 +1,17 @@
-default_langcode: site_default
+langcode: en
+status: true
 dependencies:
   config:
     - paragraphs.paragraphs_type.views
   module:
     - content_translation
-id: paragraph.views
-langcode: en
-language_alterable: true
-status: true
-target_bundle: views
-target_entity_type_id: paragraph
 third_party_settings:
   content_translation:
-    bundle_settings:
-      untranslatable_fields_hide: "0"
     enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.views
+target_entity_type_id: paragraph
+target_bundle: views
+default_langcode: site_default
+language_alterable: true

@@ -1,5 +1,5 @@
-base_field: nid
-base_table: node_field_data
+langcode: en
+status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
@@ -8,557 +8,557 @@ dependencies:
   module:
     - node
     - user
-description: ""
+id: blog
+label: Blog
+module: views
+description: ''
+tag: drustack_blog
+base_table: node_field_data
+base_field: nid
 display:
-  blog_all:
-    cache_metadata:
-      contexts:
-        - languages:language_content
-        - languages:language_interface
-        - url.query_args
-        - user.node_grants:view
-        - user.permissions
-      max-age: -1
-      tags: {}
-    display_options:
-      display_description: ""
-      display_extenders: {}
-      menu:
-        context: "0"
-        description: ""
-        expanded: false
-        menu_name: main
-        parent: ""
-        title: Blog
-        type: normal
-        weight: 50
-      path: blog
-    display_plugin: page
-    display_title: All blog posts
-    id: blog_all
-    position: 1
-  blog_all_feed:
-    cache_metadata:
-      contexts:
-        - languages:language_content
-        - languages:language_interface
-        - user.node_grants:view
-        - user.permissions
-      max-age: -1
-      tags: {}
-    display_options:
-      defaults:
-        title: false
-      display_description: ""
-      display_extenders: {}
-      displays:
-        blog_all: blog_all
-        blog_block: "0"
-        blog_user_all: "0"
-        default: "0"
-      pager:
-        type: some
-      path: blog/feed
-      row:
-        type: node_rss
-      sitename_title: false
-      style:
-        type: rss
-      title: Drupal blog posts
-    display_plugin: feed
-    display_title: All blog posts feed
-    id: blog_all_feed
-    position: 2
-  blog_block:
-    cache_metadata:
-      contexts:
-        - languages:language_content
-        - languages:language_interface
-        - url.query_args
-        - user.node_grants:view
-        - user.permissions
-      max-age: -1
-      tags: {}
-    display_options:
-      defaults:
-        row: false
-        style: false
-        title: false
-      display_extenders: {}
-      row:
-        options:
-          default_field_elements: true
-          hide_empty: false
-          inline: {}
-          separator: ""
-        type: fields
-      style:
-        options: {}
-        type: default
-      title: Recent blog posts
-    display_plugin: block
-    display_title: Block
-    id: blog_block
-    position: 5
-  blog_user_all:
-    cache_metadata:
-      contexts:
-        - languages:language_content
-        - languages:language_interface
-        - url
-        - url.query_args
-        - user.node_grants:view
-        - user.permissions
-      max-age: -1
-      tags: {}
-    display_options:
-      arguments:
-        name:
-          admin_label: ""
-          break_phrase: false
-          case: none
-          default_action: not found
-          default_argument_options:
-            argument: ""
-          default_argument_skip_url: false
-          default_argument_type: fixed
-          entity_field: name
-          entity_type: user
-          exception:
-            title: All
-            title_enable: false
-            value: all
-          field: name
-          glossary: false
-          group_type: group
-          id: name
-          limit: 0
-          path_case: lower
-          plugin_id: string
-          relationship: uid
-          specify_validation: false
-          summary:
-            format: default_summary
-            number_of_records: 0
-            sort_order: asc
-          summary_options:
-            base_path: ""
-            count: true
-            items_per_page: 25
-            override: false
-          table: users_field_data
-          title: '{{ arguments.name }}''s blog'
-          title_enable: true
-          transform_dash: true
-          validate:
-            fail: not found
-            type: none
-          validate_options: {}
-      defaults:
-        arguments: false
-        empty: false
-        relationships: false
-      display_description: ""
-      display_extenders: {}
-      empty:
-        area_text_custom:
-          admin_label: ""
-          content: '{{ arguments.name }} has not created any blog entries.'
-          empty: true
-          field: area_text_custom
-          group_type: group
-          id: area_text_custom
-          plugin_id: text_custom
-          relationship: none
-          table: views
-          tokenize: true
-      path: blog/%
-      relationships:
-        uid:
-          admin_label: author
-          entity_field: uid
-          entity_type: node
-          field: uid
-          group_type: group
-          id: uid
-          plugin_id: standard
-          relationship: none
-          required: false
-          table: node_field_data
-    display_plugin: page
-    display_title: All user blog posts
-    id: blog_user_all
-    position: 1
-  blog_user_all_feed:
-    cache_metadata:
-      contexts:
-        - languages:language_content
-        - languages:language_interface
-        - url
-        - user.node_grants:view
-        - user.permissions
-      max-age: -1
-      tags: {}
-    display_options:
-      arguments:
-        name:
-          admin_label: ""
-          break_phrase: false
-          case: none
-          default_action: not found
-          default_argument_options:
-            argument: ""
-          default_argument_skip_url: false
-          default_argument_type: fixed
-          entity_field: name
-          entity_type: user
-          exception:
-            title: All
-            title_enable: false
-            value: all
-          field: name
-          glossary: false
-          group_type: group
-          id: name
-          limit: 0
-          path_case: lower
-          plugin_id: string
-          relationship: uid
-          specify_validation: false
-          summary:
-            format: default_summary
-            number_of_records: 0
-            sort_order: asc
-          summary_options:
-            base_path: ""
-            count: true
-            items_per_page: 25
-            override: false
-          table: users_field_data
-          title: '{{ arguments.name }}''s blog'
-          title_enable: true
-          transform_dash: true
-          validate:
-            fail: not found
-            type: none
-          validate_options: {}
-      defaults:
-        arguments: false
-        empty: false
-        relationships: false
-      display_description: ""
-      display_extenders: {}
-      displays:
-        blog_all: "0"
-        blog_block: "0"
-        blog_user_all: blog_user_all
-        default: "0"
-      empty:
-        area_text_custom:
-          admin_label: ""
-          content: '{{ arguments.name }} has not created any blog entries.'
-          empty: true
-          field: area_text_custom
-          group_type: group
-          id: area_text_custom
-          plugin_id: text_custom
-          relationship: none
-          table: views
-          tokenize: true
-      pager:
-        type: some
-      path: blog/%/feed
-      relationships:
-        uid:
-          admin_label: author
-          entity_field: uid
-          entity_type: node
-          field: uid
-          group_type: group
-          id: uid
-          plugin_id: standard
-          relationship: none
-          required: false
-          table: node_field_data
-      row:
-        type: node_rss
-      style:
-        type: rss
-    display_plugin: feed
-    display_title: All user blog posts feed
-    id: blog_user_all_feed
-    position: 2
   default:
-    cache_metadata:
-      contexts:
-        - languages:language_content
-        - languages:language_interface
-        - url.query_args
-        - user.node_grants:view
-        - user.permissions
-      max-age: -1
-      tags: {}
+    id: default
+    display_title: Master
+    display_plugin: default
+    position: 0
     display_options:
-      access:
-        options:
-          perm: access content
-        type: perm
-      arguments: {}
-      cache:
-        options: {}
-        type: tag
-      display_extenders: {}
-      empty:
-        area_text_custom:
-          admin_label: ""
-          content: ' No blog content has been created yet.'
-          empty: true
-          field: area_text_custom
-          group_type: group
-          id: area_text_custom
-          plugin_id: text_custom
-          relationship: none
-          table: views
-          tokenize: true
-      exposed_form:
-        options:
-          expose_sort_order: true
-          exposed_sorts_label: Sort by
-          reset_button: false
-          reset_button_label: Reset
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-          submit_button: Apply
-        type: basic
+      title: 'Blog posts'
       fields:
         title:
-          admin_label: ""
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+          label: ''
+          exclude: false
           alter:
-            absolute: false
             alter_text: false
-            ellipsis: false
-            html: false
             make_link: false
+            absolute: false
+            word_boundary: false
+            ellipsis: false
             strip_tags: false
             trim: false
-            word_boundary: false
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
           click_sort_column: value
-          delta_first_last: false
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
-          element_class: ""
-          element_default_classes: true
-          element_label_class: ""
-          element_label_colon: true
-          element_label_type: ""
-          element_type: ""
-          element_wrapper_class: ""
-          element_wrapper_type: ""
-          empty: ""
-          empty_zero: false
-          entity_field: title
-          entity_type: node
-          exclude: false
-          field: title
-          field_api_classes: false
-          group_column: value
-          group_columns: {}
-          group_rows: true
-          group_type: group
-          hide_alter_empty: true
-          hide_empty: false
-          id: title
-          label: ""
+          delta_first_last: false
           multi_type: separator
-          plugin_id: field
-          relationship: none
           separator: ', '
-          settings:
-            link_to_entity: true
-          table: node_field_data
-          type: string
-      filter_groups:
-        groups:
-          1: AND
-        operator: AND
-      filters:
-        langcode:
-          admin_label: ""
-          entity_field: langcode
-          entity_type: node
-          expose:
-            description: ""
-            identifier: ""
-            label: ""
-            multiple: false
-            operator: ""
-            operator_id: ""
-            operator_limit_selection: false
-            operator_list: {}
-            reduce: false
-            remember: false
-            remember_roles:
-              authenticated: authenticated
-            required: false
-            use_operator: false
-          exposed: false
-          field: langcode
-          group: 1
-          group_info:
-            default_group: All
-            default_group_multiple: {}
-            description: ""
-            group_items: {}
-            identifier: ""
-            label: ""
-            multiple: false
-            optional: true
-            remember: false
-            widget: select
-          group_type: group
-          id: langcode
-          is_grouped: false
-          operator: in
-          plugin_id: language
-          relationship: none
-          table: node_field_data
-          value:
-            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
-        status:
-          entity_field: status
-          entity_type: node
-          expose:
-            operator: ""
-            operator_limit_selection: false
-            operator_list: {}
-          field: status
-          group: 1
-          id: status
-          plugin_id: boolean
-          table: node_field_data
-          value: "1"
-        type:
-          admin_label: ""
-          entity_field: type
-          entity_type: node
-          expose:
-            description: ""
-            identifier: ""
-            label: ""
-            multiple: false
-            operator: ""
-            operator_id: ""
-            operator_limit_selection: false
-            operator_list: {}
-            reduce: false
-            remember: false
-            remember_roles:
-              authenticated: authenticated
-            required: false
-            use_operator: false
-          exposed: false
-          field: type
-          group: 1
-          group_info:
-            default_group: All
-            default_group_multiple: {}
-            description: ""
-            group_items: {}
-            identifier: ""
-            label: ""
-            multiple: false
-            optional: true
-            remember: false
-            widget: select
-          group_type: group
-          id: type
-          is_grouped: false
-          operator: in
-          plugin_id: bundle
-          relationship: none
-          table: node_field_data
-          value:
-            blog: blog
-      footer: {}
-      header: {}
+          field_api_classes: false
       pager:
+        type: full
         options:
+          offset: 0
+          items_per_page: 10
+          total_pages: null
+          id: 0
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page: false
-            items_per_page_label: Items per page
-            items_per_page_options: 5, 10, 25, 50
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
-          id: 0
-          items_per_page: 10
-          offset: 0
           quantity: 9
-          tags:
-            first: « First
-            last: Last »
-            next: Next ›
-            previous: ‹ Previous
-          total_pages: null
-        type: full
-      query:
+      exposed_form:
+        type: basic
         options:
-          disable_sql_rewrite: false
-          distinct: false
-          query_comment: ""
-          query_tags: {}
-          replica: false
-        type: views_query
-      relationships: {}
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      empty:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: true
+          content: ' No blog content has been created yet.'
+          tokenize: true
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: created
+          exposed: false
+          granularity: second
+        sticky:
+          id: sticky
+          table: node_field_data
+          field: sticky
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: sticky
+          plugin_id: standard
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: sticky
+          exposed: false
+      arguments: {  }
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          operator: in
+          value:
+            blog: blog
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: default
       row:
+        type: 'entity:node'
         options:
           relationship: none
           view_mode: teaser
-        type: entity:node
-      sorts:
-        created:
-          admin_label: ""
-          entity_field: created
-          entity_type: node
-          expose:
-            field_identifier: created
-            label: ""
-          exposed: false
-          field: created
-          granularity: second
-          group_type: group
-          id: created
-          order: DESC
-          plugin_id: date
-          relationship: none
-          table: node_field_data
-        sticky:
-          admin_label: ""
-          entity_field: sticky
-          entity_type: node
-          expose:
-            field_identifier: sticky
-            label: ""
-          exposed: false
-          field: sticky
-          group_type: group
-          id: sticky
-          order: DESC
-          plugin_id: standard
-          relationship: none
-          table: node_field_data
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_tags: {  }
+      relationships: {  }
+      header: {  }
+      footer: {  }
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  blog_all:
+    id: blog_all
+    display_title: 'All blog posts'
+    display_plugin: page
+    position: 1
+    display_options:
+      display_description: ''
+      display_extenders: {  }
+      path: blog
+      menu:
+        type: normal
+        title: Blog
+        description: ''
+        weight: 50
+        expanded: false
+        menu_name: main
+        parent: ''
+        context: '0'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  blog_all_feed:
+    id: blog_all_feed
+    display_title: 'All blog posts feed'
+    display_plugin: feed
+    position: 2
+    display_options:
+      title: 'Drupal blog posts'
+      pager:
+        type: some
+      style:
+        type: rss
+      row:
+        type: node_rss
+      defaults:
+        title: false
+      display_description: ''
+      display_extenders: {  }
+      path: blog/feed
+      sitename_title: false
+      displays:
+        blog_all: blog_all
+        default: '0'
+        blog_block: '0'
+        blog_user_all: '0'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  blog_block:
+    id: blog_block
+    display_title: Block
+    display_plugin: block
+    position: 5
+    display_options:
+      title: 'Recent blog posts'
       style:
         type: default
-      title: Blog posts
-    display_plugin: default
-    display_title: Master
-    id: default
-    position: 0
-id: blog
-label: Blog
-langcode: en
-module: views
-status: true
-tag: drustack_blog
+        options: {  }
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
+      defaults:
+        title: false
+        style: false
+        row: false
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  blog_user_all:
+    id: blog_user_all
+    display_title: 'All user blog posts'
+    display_plugin: page
+    position: 1
+    display_options:
+      empty:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: true
+          content: '{{ arguments.name }} has not created any blog entries.'
+          tokenize: true
+      arguments:
+        name:
+          id: name
+          table: users_field_data
+          field: name
+          relationship: uid
+          group_type: group
+          admin_label: ''
+          entity_type: user
+          entity_field: name
+          plugin_id: string
+          default_action: 'not found'
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: true
+          title: '{{ arguments.name }}''s blog'
+          default_argument_type: fixed
+          default_argument_options:
+            argument: ''
+          default_argument_skip_url: false
+          summary_options:
+            base_path: ''
+            count: true
+            override: false
+            items_per_page: 25
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: false
+          validate:
+            type: none
+            fail: 'not found'
+          validate_options: {  }
+          glossary: false
+          limit: 0
+          case: none
+          path_case: lower
+          transform_dash: true
+          break_phrase: false
+      defaults:
+        empty: false
+        relationships: false
+        arguments: false
+      relationships:
+        uid:
+          id: uid
+          table: node_field_data
+          field: uid
+          relationship: none
+          group_type: group
+          admin_label: author
+          entity_type: node
+          entity_field: uid
+          plugin_id: standard
+          required: false
+      display_description: ''
+      display_extenders: {  }
+      path: blog/%
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  blog_user_all_feed:
+    id: blog_user_all_feed
+    display_title: 'All user blog posts feed'
+    display_plugin: feed
+    position: 2
+    display_options:
+      pager:
+        type: some
+      empty:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: true
+          content: '{{ arguments.name }} has not created any blog entries.'
+          tokenize: true
+      arguments:
+        name:
+          id: name
+          table: users_field_data
+          field: name
+          relationship: uid
+          group_type: group
+          admin_label: ''
+          entity_type: user
+          entity_field: name
+          plugin_id: string
+          default_action: 'not found'
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: true
+          title: '{{ arguments.name }}''s blog'
+          default_argument_type: fixed
+          default_argument_options:
+            argument: ''
+          default_argument_skip_url: false
+          summary_options:
+            base_path: ''
+            count: true
+            override: false
+            items_per_page: 25
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: false
+          validate:
+            type: none
+            fail: 'not found'
+          validate_options: {  }
+          glossary: false
+          limit: 0
+          case: none
+          path_case: lower
+          transform_dash: true
+          break_phrase: false
+      style:
+        type: rss
+      row:
+        type: node_rss
+      defaults:
+        empty: false
+        relationships: false
+        arguments: false
+      relationships:
+        uid:
+          id: uid
+          table: node_field_data
+          field: uid
+          relationship: none
+          group_type: group
+          admin_label: author
+          entity_type: node
+          entity_field: uid
+          plugin_id: standard
+          required: false
+      display_description: ''
+      display_extenders: {  }
+      path: blog/%/feed
+      displays:
+        blog_user_all: blog_user_all
+        default: '0'
+        blog_all: '0'
+        blog_block: '0'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }

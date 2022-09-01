@@ -5,13 +5,11 @@ content:
     region: content
     settings: {}
     third_party_settings: {}
-    type: aggregator_xss
+    type: basic_string
     weight: 0
 dependencies:
   config:
     - contact.form.personal
-  module:
-    - aggregator
 hidden:
   langcode: true
   search_api_excerpt: true
