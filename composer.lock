@@ -3861,7 +3861,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_split.git",
-                "reference": "1a30a8e3485beec1a67f1bf10a510b52e103849d"
+                "reference": "54336ff036f106c852b2a01e6298fd5b064fd1e2"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9 || ^10"
@@ -3882,8 +3882,8 @@
                     "dev-2.0.x": "2.0.x-dev"
                 },
                 "drupal": {
-                    "version": "2.0.0-rc3+3-dev",
-                    "datestamp": "1658266080",
+                    "version": "2.0.0-rc3+6-dev",
+                    "datestamp": "1662234827",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -3984,7 +3984,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/content_access.git",
-                "reference": "f5b67541f240d70e0f996b8cf038f78ac9d5ba50"
+                "reference": "38978b397f93366cd95046e7c3d78a74c31a4ef1"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9"
@@ -3998,8 +3998,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha4+1-dev",
-                    "datestamp": "1658171895",
+                    "version": "8.x-1.0-alpha4+3-dev",
+                    "datestamp": "1662295351",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -4840,7 +4840,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/devel.git",
-                "reference": "edf254befa4b5c7706920ee0452a225360eae4a1"
+                "reference": "f4a395b5f7f7f04f72f58b0bbf4f49a253611320"
             },
             "require": {
                 "doctrine/common": "^2.7",
@@ -4862,8 +4862,8 @@
                     "dev-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "4.x-dev",
-                    "datestamp": "1656845436",
+                    "version": "4.1.5+24-dev",
+                    "datestamp": "1662307012",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -6155,17 +6155,17 @@
         },
         {
             "name": "drupal/eu_cookie_compliance",
-            "version": "1.20.0",
+            "version": "1.21.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/eu-cookie-compliance.git",
-                "reference": "8.x-1.20"
+                "reference": "8.x-1.21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/eu_cookie_compliance-8.x-1.20.zip",
-                "reference": "8.x-1.20",
-                "shasum": "2168d812b2b197021451141b27ed865c51c07be7"
+                "url": "https://ftp.drupal.org/files/projects/eu_cookie_compliance-8.x-1.21.zip",
+                "reference": "8.x-1.21",
+                "shasum": "a2bc0ba97e20950b11a66a7c7a1895e424f0c4da"
             },
             "require": {
                 "drupal/core": "^8.9 || ^9 || ^10"
@@ -6173,8 +6173,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.20",
-                    "datestamp": "1661701837",
+                    "version": "8.x-1.21",
+                    "datestamp": "1662310508",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9729,7 +9729,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/office_hours.git",
-                "reference": "2c3d693acd04d14bea8989ff58fa4ab87760ecc1"
+                "reference": "fddd509dfba891eeb69d442d8141250aac26da5c"
             },
             "require": {
                 "drupal/core": "^8 || ^9 || ^10"
@@ -9740,8 +9740,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.7+3-dev",
-                    "datestamp": "1658323447",
+                    "version": "8.x-1.7+6-dev",
+                    "datestamp": "1662125697",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -10541,7 +10541,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/samlauth.git",
-                "reference": "7497df4886adc74532433a88bf99565eaa5953b1"
+                "reference": "c5f1ce35c30b141ee1ece0de479859f9245b8a4e"
             },
             "require": {
                 "drupal/core": "^9.2 || ^10",
@@ -10555,8 +10555,8 @@
                     "dev-8.x-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.x-dev",
-                    "datestamp": "1661960929",
+                    "version": "8.x-3.7+1-dev",
+                    "datestamp": "1662057888",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -16105,16 +16105,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.14.0",
+            "version": "v4.15.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "34bea19b6e03d8153165d8f30bba4c3be86184c1"
+                "reference": "0ef6c55a3f47f89d7a374e6f835197a0b5fcf900"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/34bea19b6e03d8153165d8f30bba4c3be86184c1",
-                "reference": "34bea19b6e03d8153165d8f30bba4c3be86184c1",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/0ef6c55a3f47f89d7a374e6f835197a0b5fcf900",
+                "reference": "0ef6c55a3f47f89d7a374e6f835197a0b5fcf900",
                 "shasum": ""
             },
             "require": {
@@ -16155,9 +16155,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v4.14.0"
+                "source": "https://github.com/nikic/PHP-Parser/tree/v4.15.1"
             },
-            "time": "2022-05-31T20:59:12+00:00"
+            "time": "2022-09-04T07:30:47+00:00"
         },
         {
             "name": "npm-asset/accessible360--accessible-slick",
@@ -18436,16 +18436,16 @@
         },
         {
             "name": "scssphp/scssphp",
-            "version": "v1.10.5",
+            "version": "v1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scssphp/scssphp.git",
-                "reference": "6d44282ccf283e133ab70b6282f8e068ff2f9bf9"
+                "reference": "33749d12c2569bb24071f94e9af828662dabb068"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scssphp/scssphp/zipball/6d44282ccf283e133ab70b6282f8e068ff2f9bf9",
-                "reference": "6d44282ccf283e133ab70b6282f8e068ff2f9bf9",
+                "url": "https://api.github.com/repos/scssphp/scssphp/zipball/33749d12c2569bb24071f94e9af828662dabb068",
+                "reference": "33749d12c2569bb24071f94e9af828662dabb068",
                 "shasum": ""
             },
             "require": {
@@ -18510,9 +18510,9 @@
             ],
             "support": {
                 "issues": "https://github.com/scssphp/scssphp/issues",
-                "source": "https://github.com/scssphp/scssphp/tree/v1.10.5"
+                "source": "https://github.com/scssphp/scssphp/tree/v1.11.0"
             },
-            "time": "2022-07-27T15:52:39+00:00"
+            "time": "2022-09-02T21:24:55+00:00"
         },
         {
             "name": "softcreatr/jsonpath",
