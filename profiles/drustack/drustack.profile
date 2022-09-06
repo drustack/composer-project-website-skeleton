@@ -19,7 +19,7 @@ use Drupal\user\UserInterface;
 function drustack_install_tasks($install_state) {
   $modules = [
     'drustack_core',
-#    'drustack_devel',
+    'drustack_devel',
 #    'drustack_seo',
 #    'drustack_performance',
 #    'drustack_paragraphs',
