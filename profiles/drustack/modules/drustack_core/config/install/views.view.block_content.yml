@@ -828,6 +828,7 @@ display:
             info: info
             type: type
             langcode: langcode
+            name: name
             status: status
             changed: changed
             operations: operations
@@ -854,6 +855,13 @@ display:
               responsive: ''
             langcode:
               sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            name:
+              sortable: false
               default_sort_order: asc
               align: ''
               separator: ''
