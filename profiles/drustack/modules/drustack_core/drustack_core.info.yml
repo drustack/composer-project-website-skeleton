@@ -1,14 +1,12 @@
 core_version_requirement: ^8.9 || ^9
 dependencies:
+  - admin_toolbar:admin_toolbar
   - admin_toolbar:admin_toolbar_tools
   - better_exposed_filters:better_exposed_filters
   - captcha:captcha
-  - ckeditor_templates:ckeditor_templates
-  - ckeditor_templates_ui:ckeditor_templates_ui
   - codesnippet:codesnippet
   - coffee:coffee
   - diff:diff
-  - drupal:aggregator
   - drupal:automated_cron
   - drupal:basic_auth
   - drupal:block
@@ -21,16 +19,15 @@ dependencies:
   - drupal:contextual
   - drupal:dblog
   - drupal:editor
-  - drupal:embed
   - drupal:field
   - drupal:file
   - drupal:filter
-  - drupal:hal
   - drupal:help
   - drupal:image
   - drupal:jsonapi
   - drupal:language
   - drupal:layout_builder
+  - drupal:link
   - drupal:locale
   - drupal:media
   - drupal:media_library
@@ -39,10 +36,10 @@ dependencies:
   - drupal:node
   - drupal:path
   - drupal:path_alias
-  - drupal:quickedit
   - drupal:rdf
   - drupal:responsive_image
   - drupal:rest
+  - drupal:serialization
   - drupal:shortcut
   - drupal:statistics
   - drupal:syslog
@@ -73,6 +70,7 @@ dependencies:
   - menu_block:menu_block
   - mimemail:mimemail
   - module_filter:module_filter
+  - paragraphs:paragraphs
   - pathauto:pathauto
   - redirect:redirect
   - scheduler:scheduler
@@ -81,7 +79,8 @@ dependencies:
   - sitemap:sitemap
   - sophron:sophron
   - symfony_mailer:symfony_mailer
-  - webform:webform_node
+  - twig-twig:twig
+  - views_bulk_operations:views_bulk_operations
 description: Provides core components required by other features.
 name: DruStack Core
 package: DruStack

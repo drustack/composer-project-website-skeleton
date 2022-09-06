@@ -6,7 +6,6 @@ install:
   - action
   - admin_toolbar
   - admin_toolbar_tools
-  - aggregator
   - automated_cron
   - ban
   - basic_auth
@@ -18,7 +17,6 @@ install:
   - breakpoint
   - ckeditor
   - coffee
-  - color
   - comment
   - config
   - config_translation
@@ -39,7 +37,6 @@ install:
   - field_ui
   - file
   - filter
-  - hal
   - help
   - history
   - image
@@ -64,8 +61,6 @@ install:
   - page_cache
   - path
   - pathauto
-  - php
-  - quickedit
   - rdf
   - responsive_image
   - rest
@@ -95,6 +90,7 @@ name: DruStack
 package: DruStack
 themes:
   - bootstrap_barrio
-  - drustack_bootstrap
   - claro
+  - drustack_bootstrap
+  - olivero
 type: profile

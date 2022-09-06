@@ -1,15 +1,15 @@
 dependencies:
   module:
-    - php
+    - twig
 filters:
-  php_code:
-    id: php_code
-    provider: php
+  filter_twig:
+    id: filter_twig
+    provider: twig
     settings: {}
     status: true
     weight: -50
-format: php_code
+format: twig
 langcode: en
-name: PHP code
+name: Twig
 status: true
 weight: 6

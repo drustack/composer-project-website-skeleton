@@ -6,6 +6,9 @@ advanced:
 binaries: imagemagick
 debug: false
 image_formats:
+  AVIF:
+    enabled: false
+    mime_type: image/avif
   BMP:
     enabled: false
     mime_type: image/x-ms-bmp
@@ -15,6 +18,9 @@ image_formats:
     enabled: false
     mime_type: image/gif
     weight: 10
+  HEIC:
+    enabled: false
+    mime_type: image/heif
   ICO:
     enabled: false
     mime_type: image/vnd.microsoft.icon
@@ -42,7 +48,6 @@ image_formats:
     enabled: false
     mime_type: image/vnd.wap.wbmp
   WEBP:
-    enabled: false
     mime_type: image/webp
   XBM:
     enabled: false

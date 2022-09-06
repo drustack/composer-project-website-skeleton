@@ -2,6 +2,7 @@ dependencies:
   config:
     - system.menu.tools
   module:
+    - block_class
     - system
   theme:
     - drustack_bootstrap
@@ -20,5 +21,8 @@ settings:
   provider: system
 status: true
 theme: drustack_bootstrap
+third_party_settings:
+  block_class:
+    classes: null
 visibility: {}
 weight: 0
