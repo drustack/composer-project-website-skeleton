@@ -1,0 +1,30 @@
+dependencies:
+  config:
+    - system.menu.header
+  module:
+    - menu_block
+  theme:
+    - olivero
+id: header
+langcode: en
+plugin: menu_block:header
+provider: null
+region: primary_menu
+settings:
+  depth: 0
+  expand_all_items: false
+  follow: false
+  follow_parent: child
+  id: menu_block:header
+  label: Header
+  label_display: visible
+  label_link: false
+  label_type: block
+  level: 1
+  parent: 'header:'
+  provider: menu_block
+  suggestion: header
+status: true
+theme: olivero
+visibility: {}
+weight: 0

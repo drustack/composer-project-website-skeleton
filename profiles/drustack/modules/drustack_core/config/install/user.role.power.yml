@@ -1,0 +1,84 @@
+dependencies:
+  config:
+    - filter.format.full_html
+    - media.type.audio
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - taxonomy.vocabulary.tags
+  module:
+    - content_translation
+    - contextual
+    - entity_clone
+    - file
+    - filter
+    - locale
+    - media
+    - node
+    - path
+    - pathauto
+    - redirect
+    - scheduler
+    - statistics
+    - system
+    - taxonomy
+    - toolbar
+    - tour
+id: power
+is_admin: null
+label: Power user
+langcode: en
+permissions:
+  - access administration pages
+  - access content overview
+  - access contextual links
+  - access files overview
+  - access media overview
+  - access site in maintenance mode
+  - access taxonomy overview
+  - access toolbar
+  - access tour
+  - administer menu
+  - administer redirects
+  - administer url aliases
+  - clone comment entity
+  - clone file entity
+  - clone media entity
+  - clone menu_link_content entity
+  - clone node entity
+  - clone taxonomy_term entity
+  - create audio media
+  - create content translations
+  - create image media
+  - create media
+  - create remote_video media
+  - create terms in tags
+  - create url aliases
+  - create video media
+  - delete media
+  - delete own audio media
+  - delete own image media
+  - delete own remote_video media
+  - delete own video media
+  - edit own audio media
+  - edit own image media
+  - edit own remote_video media
+  - edit own video media
+  - edit terms in tags
+  - notify of path changes
+  - schedule publishing of nodes
+  - translate any entity
+  - translate interface
+  - update content translations
+  - update media
+  - use text format full_html
+  - view all media revisions
+  - view all revisions
+  - view media
+  - view own unpublished content
+  - view own unpublished media
+  - view post access counter
+  - view scheduled content
+  - view the administration theme
+status: true
+weight: 9

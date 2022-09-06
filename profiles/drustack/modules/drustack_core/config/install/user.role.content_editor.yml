@@ -1,10 +1,12 @@
 dependencies:
   config:
+    - filter.format.full_html
     - taxonomy.vocabulary.tags
   module:
     - comment
     - contextual
     - file
+    - filter
     - node
     - path
     - system
@@ -28,6 +30,7 @@ permissions:
   - edit own comments
   - edit terms in tags
   - revert all revisions
+  - use text format full_html
   - view all revisions
   - view own unpublished content
   - view the administration theme

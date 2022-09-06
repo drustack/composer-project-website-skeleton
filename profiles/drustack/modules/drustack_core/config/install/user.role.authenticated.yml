@@ -1,7 +1,9 @@
 dependencies:
   config:
     - filter.format.basic_html
+    - filter.format.restricted_html
   module:
+    - captcha
     - comment
     - contact
     - filter
@@ -24,8 +26,10 @@ permissions:
   - cancel account
   - edit own comments
   - post comments
+  - skip CAPTCHA
   - skip comment approval
   - use text format basic_html
+  - use text format restricted_html
   - view media
 status: true
 weight: 1
