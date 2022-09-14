@@ -25,6 +25,12 @@ fieldMappings:
       callable: Drupal\rdf\CommonDataConverter::dateIso8601Value
     properties:
       - schema:dateCreated
+  field_image:
+    properties:
+      - schema:image
+  field_tags:
+    properties:
+      - schema:about
   title:
     properties:
       - schema:name

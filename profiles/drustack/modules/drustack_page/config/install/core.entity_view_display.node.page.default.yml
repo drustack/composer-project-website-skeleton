@@ -1,23 +1,36 @@
 bundle: page
 content:
   body:
-    label: hidden
+    label: visually_hidden
     region: content
     settings: {}
     third_party_settings: {}
     type: text_default
-    weight: 100
+    weight: 0
+  field_tags:
+    label: visually_hidden
+    region: content
+    settings:
+      link: true
+    third_party_settings: {}
+    type: entity_reference_label
+    weight: 2
   links:
     region: content
-    weight: 101
+    settings: {}
+    third_party_settings: {}
+    weight: 1
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_image
+    - field.field.node.page.field_tags
     - node.type.page
   module:
     - text
     - user
 hidden:
+  field_image: true
   langcode: true
   search_api_excerpt: true
 id: node.page.default

@@ -1,20 +1,20 @@
 dependencies:
   module:
     - node
-id: node_article
-label: Content (Article)
+id: node_blog
+label: Content (Blog entry)
 langcode: en
-pattern: article/[node:source:title]
+pattern: blog/[node:author:account-name]/[node:source:title]
 relationships: {}
 selection_criteria:
-  fe71d4f1-32c7-480d-a022-164c6b4f2131:
+  7cc35b84-e1c2-4cf9-bb98-60a3a238d41f:
     bundles:
-      article: article
+      blog: blog
     context_mapping:
       node: node
-    id: entity_bundle:node
+    id: node_type
     negate: false
-    uuid: fe71d4f1-32c7-480d-a022-164c6b4f2131
+    uuid: 7cc35b84-e1c2-4cf9-bb98-60a3a238d41f
 selection_logic: and
 status: true
 type: canonical_entities:node
