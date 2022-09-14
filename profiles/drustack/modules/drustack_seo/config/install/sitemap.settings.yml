@@ -1,0 +1,22 @@
+include_css: true
+message:
+  format: plain_text
+  value: ""
+page_title: Sitemap
+plugins:
+  frontpage:
+    enabled: true
+    id: frontpage
+    provider: sitemap
+    settings:
+      rss: /rss.xml
+      title: Front page
+    weight: 0
+  menu:main:
+    enabled: true
+    id: menu:main
+    provider: sitemap
+    settings:
+      show_disabled: false
+      title: Main navigation
+    weight: 0

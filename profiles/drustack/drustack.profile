@@ -20,7 +20,7 @@ function drustack_install_tasks($install_state) {
   $modules = [
     'drustack_core',
     'drustack_devel',
-#    'drustack_seo',
+    'drustack_seo',
 #    'drustack_performance',
 #    'drustack_paragraphs',
 #    'drustack_layout',
