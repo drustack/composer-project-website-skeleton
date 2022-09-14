@@ -6,13 +6,17 @@ dependencies:
   - drupal:field
   - drupal:image
   - drupal:language
+  - drupal:menu_ui
   - drupal:node
   - drupal:path
   - drupal:rdf
   - drupal:text
   - drupal:user
+  - drupal:views
   - drustack_core:drustack_core
+  - pathauto:pathauto
   - scheduler:scheduler
+  - xmlsitemap:xmlsitemap
 description: Provides Article content type and related configuration. Use <em>articles</em> for time-sensitive content like news, press releases or blog posts.
 name: DruStack Article
 package: DruStack

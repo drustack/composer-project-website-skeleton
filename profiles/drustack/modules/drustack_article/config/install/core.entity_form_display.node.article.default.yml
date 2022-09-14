@@ -9,19 +9,19 @@ content:
       summary_rows: 3
     third_party_settings: {}
     type: text_textarea_with_summary
-    weight: 1
+    weight: 3
   comment:
     region: content
     settings: {}
     third_party_settings: {}
     type: comment_default
-    weight: 20
+    weight: 14
   created:
     region: content
     settings: {}
     third_party_settings: {}
     type: datetime_timestamp
-    weight: 10
+    weight: 7
   field_image:
     region: content
     settings:
@@ -29,7 +29,7 @@ content:
       progress_indicator: throbber
     third_party_settings: {}
     type: image_image
-    weight: 4
+    weight: 2
   field_tags:
     region: content
     settings:
@@ -39,47 +39,52 @@ content:
       size: 60
     third_party_settings: {}
     type: entity_reference_autocomplete_tags
-    weight: 3
+    weight: 4
   langcode:
     region: content
     settings:
       include_locked: true
     third_party_settings: {}
     type: language_select
-    weight: 2
+    weight: 0
   path:
     region: content
     settings: {}
     third_party_settings: {}
     type: path
-    weight: 30
+    weight: 15
   promote:
     region: content
     settings:
       display_label: true
     third_party_settings: {}
     type: boolean_checkbox
-    weight: 15
+    weight: 8
   publish_on:
     region: content
     settings: {}
     third_party_settings: {}
     type: datetime_timestamp_no_default
-    weight: 30
+    weight: 11
+  scheduler_settings:
+    region: content
+    settings: {}
+    third_party_settings: {}
+    weight: 10
   status:
     region: content
     settings:
       display_label: true
     third_party_settings: {}
     type: boolean_checkbox
-    weight: 120
+    weight: 13
   sticky:
     region: content
     settings:
       display_label: true
     third_party_settings: {}
     type: boolean_checkbox
-    weight: 16
+    weight: 9
   title:
     region: content
     settings:
@@ -87,12 +92,12 @@ content:
       size: 60
     third_party_settings: {}
     type: string_textfield
-    weight: 0
+    weight: 1
   translation:
     region: content
     settings: {}
     third_party_settings: {}
-    weight: 10
+    weight: 17
   uid:
     region: content
     settings:
@@ -102,18 +107,18 @@ content:
       size: 60
     third_party_settings: {}
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 6
   unpublish_on:
     region: content
     settings: {}
     third_party_settings: {}
     type: datetime_timestamp_no_default
-    weight: 30
+    weight: 12
   url_redirects:
     region: content
     settings: {}
     third_party_settings: {}
-    weight: 50
+    weight: 16
 dependencies:
   config:
     - field.field.node.article.body

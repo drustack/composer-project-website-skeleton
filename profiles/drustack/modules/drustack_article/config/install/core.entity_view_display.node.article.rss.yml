@@ -2,7 +2,9 @@ bundle: article
 content:
   links:
     region: content
-    weight: 100
+    settings: {}
+    third_party_settings: {}
+    weight: 0
 dependencies:
   config:
     - core.entity_view_mode.node.rss

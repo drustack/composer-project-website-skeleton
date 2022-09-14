@@ -1,15 +1,15 @@
 bundle: article
 content:
   body:
-    label: hidden
+    label: visually_hidden
     region: content
     settings:
       trim_length: 600
     third_party_settings: {}
     type: text_summary_or_trimmed
-    weight: 0
+    weight: 1
   field_image:
-    label: hidden
+    label: visually_hidden
     region: content
     settings:
       image_link: content
@@ -18,18 +18,20 @@ content:
       image_style: medium
     third_party_settings: {}
     type: image
-    weight: -1
+    weight: 0
   field_tags:
-    label: above
+    label: visually_hidden
     region: content
     settings:
       link: true
     third_party_settings: {}
     type: entity_reference_label
-    weight: 10
+    weight: 2
   links:
     region: content
-    weight: 100
+    settings: {}
+    third_party_settings: {}
+    weight: 3
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
@@ -45,8 +47,6 @@ dependencies:
     - user
 hidden:
   comment: true
-  field_image: true
-  field_tags: true
   langcode: true
   search_api_excerpt: true
 id: node.article.teaser

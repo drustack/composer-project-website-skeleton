@@ -1,0 +1,21 @@
+dependencies:
+  module:
+    - node
+id: node_article
+label: Content (Article)
+langcode: en
+pattern: article/[node:source:title]
+relationships: {}
+selection_criteria:
+  541e22eb-d97d-4a2f-bd7d-ec04c824745e:
+    bundles:
+      article: article
+    context_mapping:
+      node: node
+    id: entity_bundle:node
+    negate: false
+    uuid: 541e22eb-d97d-4a2f-bd7d-ec04c824745e
+selection_logic: and
+status: true
+type: canonical_entities:node
+weight: -5

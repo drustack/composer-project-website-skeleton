@@ -1,12 +1,12 @@
 bundle: article
 content:
   body:
-    label: hidden
+    label: visually_hidden
     region: content
     settings: {}
     third_party_settings: {}
     type: text_default
-    weight: 0
+    weight: 1
   comment:
     label: above
     region: content
@@ -15,9 +15,9 @@ content:
       view_mode: default
     third_party_settings: {}
     type: comment_default
-    weight: 110
+    weight: 5
   field_image:
-    label: hidden
+    label: visually_hidden
     region: content
     settings:
       image_link: ""
@@ -26,20 +26,20 @@ content:
       image_style: wide
     third_party_settings: {}
     type: image
-    weight: -1
+    weight: 0
   field_tags:
-    label: above
+    label: visually_hidden
     region: content
     settings:
       link: true
     third_party_settings: {}
     type: entity_reference_label
-    weight: 10
+    weight: 3
   links:
     region: content
     settings: {}
     third_party_settings: {}
-    weight: 100
+    weight: 2
 dependencies:
   config:
     - core.entity_view_display.comment.comment.default
