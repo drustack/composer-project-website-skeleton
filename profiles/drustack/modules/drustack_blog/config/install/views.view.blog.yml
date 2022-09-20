@@ -38,18 +38,36 @@ display:
           exclude: false
           alter:
             alter_text: false
+            text: ''
             make_link: false
+            path: ''
             absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
             word_boundary: false
             ellipsis: false
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
             strip_tags: false
             trim: false
+            preserve_tags: ''
             html: false
           element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -72,17 +90,15 @@ display:
           separator: ', '
           field_api_classes: false
       pager:
-        type: full
+        type: mini
         options:
           offset: 0
           items_per_page: 10
           total_pages: null
           id: 0
           tags:
-            next: 'Next ›'
-            previous: '‹ Previous'
-            first: '« First'
-            last: 'Last »'
+            next: ››
+            previous: ‹‹
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -91,7 +107,6 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
-          quantity: 9
       exposed_form:
         type: basic
         options:
@@ -119,25 +134,9 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: true
-          content: ' No blog content has been created yet.'
+          content: 'No blog content has been created yet.'
           tokenize: true
       sorts:
-        created:
-          id: created
-          table: node_field_data
-          field: created
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: node
-          entity_field: created
-          plugin_id: date
-          order: DESC
-          expose:
-            label: ''
-            field_identifier: created
-          exposed: false
-          granularity: second
         sticky:
           id: sticky
           table: node_field_data
@@ -150,9 +149,25 @@ display:
           plugin_id: standard
           order: DESC
           expose:
-            label: ''
+            label: 'Sticky at top of lists'
             field_identifier: sticky
           exposed: false
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          expose:
+            label: 'Authored on'
+            field_identifier: created
+          exposed: false
+          granularity: second
       arguments: {  }
       filters:
         status:
@@ -258,6 +273,10 @@ display:
           1: AND
       style:
         type: default
+        options:
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
       row:
         type: 'entity:node'
         options:
@@ -272,8 +291,18 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      css_class: ''
+      use_ajax: false
+      group_by: false
+      show_admin_links: true
+      use_more: false
+      use_more_always: true
+      use_more_text: more
+      link_display: blog_all
+      link_url: ''
       header: {  }
       footer: {  }
+      hide_attachment_summary: false
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -291,6 +320,8 @@ display:
     position: 1
     display_options:
       display_description: ''
+      rendering_language: '***LANGUAGE_entity_translation***'
+      exposed_block: false
       display_extenders: {  }
       path: blog
       menu:
@@ -320,13 +351,25 @@ display:
       title: 'Drupal blog posts'
       pager:
         type: some
+        options:
+          offset: 0
+          items_per_page: 10
       style:
         type: rss
+        options:
+          uses_fields: false
+          description: ''
       row:
         type: node_rss
+        options:
+          relationship: none
+          view_mode: default
       defaults:
         title: false
       display_description: ''
+      display_comment: ''
+      rendering_language: '***LANGUAGE_entity_translation***'
+      exposed_block: false
       display_extenders: {  }
       path: blog/feed
       sitename_title: false
@@ -345,14 +388,17 @@ display:
       tags: {  }
   blog_block:
     id: blog_block
-    display_title: Block
+    display_title: 'Recent blog posts'
     display_plugin: block
     position: 5
     display_options:
       title: 'Recent blog posts'
       style:
         type: default
-        options: {  }
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
       row:
         type: fields
         options:
@@ -364,7 +410,15 @@ display:
         title: false
         style: false
         row: false
+      display_description: ''
+      display_comment: ''
+      rendering_language: '***LANGUAGE_entity_translation***'
+      exposed_block: false
       display_extenders: {  }
+      block_description: 'Recent blog posts'
+      block_hide_empty: false
+      allow:
+        items_per_page: true
     cache_metadata:
       max-age: -1
       contexts:
@@ -451,6 +505,9 @@ display:
           plugin_id: standard
           required: false
       display_description: ''
+      display_comment: ''
+      rendering_language: '***LANGUAGE_entity_translation***'
+      exposed_block: false
       display_extenders: {  }
       path: blog/%
     cache_metadata:
@@ -471,6 +528,9 @@ display:
     display_options:
       pager:
         type: some
+        options:
+          offset: 0
+          items_per_page: 10
       empty:
         area_text_custom:
           id: area_text_custom
@@ -548,6 +608,7 @@ display:
       display_description: ''
       display_extenders: {  }
       path: blog/%/feed
+      sitename_title: false
       displays:
         blog_user_all: blog_user_all
         default: '0'

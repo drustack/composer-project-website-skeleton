@@ -1,0 +1,45 @@
+dependencies:
+  module:
+    - search_api
+id: search-api-server
+label: Information about a server
+langcode: en
+module: search_api
+routes:
+  - route_name: entity.search_api_server.canonical
+status: true
+tips:
+  search-api-server-backend:
+    body: The backend plugin used for this server. The backend plugin determines how items are indexed and searched – for example, using the database or an Apache Solr server.
+    id: search-api-server-backend
+    label: Backend class
+    plugin: text
+    selector: .search-api-server-summary--backend
+    weight: 3
+  search-api-server-clear:
+    body: This will permanently remove all data currently indexed on this server for indexes that aren't read-only. Items are queued for reindexing. Until reindexing occurs, searches for the affected indexes will not return any results.
+    id: search-api-server-clear
+    label: Delete all indexed data
+    plugin: text
+    selector: '#edit-clear'
+    weight: 5
+  search-api-server-indexes:
+    body: Lists all search indexes that are attached to this server.
+    id: search-api-server-indexes
+    label: Search indexes
+    plugin: text
+    selector: .search-api-server-summary--indexes
+    weight: 4
+  search-api-server-introduction:
+    body: This page shows a summary of a search server.
+    id: search-api-server-introduction
+    label: Information about a server
+    plugin: text
+    weight: 1
+  search-api-server-status:
+    body: Shows whether the server is currently enabled or disabled.
+    id: search-api-server-status
+    label: Status
+    plugin: text
+    selector: .search-api-server-summary--status
+    weight: 2

@@ -122,7 +122,7 @@ display:
           plugin_id: standard
           order: DESC
           expose:
-            label: ''
+            label: 'Sticky at top of lists'
             field_identifier: sticky
           exposed: false
         created:
@@ -137,7 +137,7 @@ display:
           plugin_id: date
           order: DESC
           expose:
-            label: ''
+            label: 'Authored on'
             field_identifier: created
           exposed: false
           granularity: second
@@ -147,28 +147,84 @@ display:
           id: status
           table: node_field_data
           field: status
+          relationship: none
+          group_type: group
+          admin_label: ''
           entity_type: node
           entity_field: status
           plugin_id: boolean
+          operator: '='
           value: '1'
           group: 1
+          exposed: false
           expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
         type:
           id: type
           table: node_field_data
           field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          operator: in
           value:
             article: article
           group: 1
+          exposed: false
           expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
             operator_limit_selection: false
             operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
         langcode:
           id: langcode
           table: node_field_data
@@ -235,8 +291,18 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      css_class: ''
+      use_ajax: false
+      group_by: false
+      show_admin_links: true
+      use_more: false
+      use_more_always: true
+      use_more_text: more
+      link_display: '0'
+      link_url: ''
       header: {  }
       footer: {  }
+      hide_attachment_summary: false
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -254,8 +320,20 @@ display:
     position: 1
     display_options:
       display_description: ''
+      display_comment: ''
+      rendering_language: '***LANGUAGE_entity_translation***'
+      exposed_block: false
       display_extenders: {  }
       path: article
+      menu:
+        type: none
+        title: ''
+        description: ''
+        weight: 0
+        expanded: false
+        menu_name: main
+        parent: ''
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:
@@ -273,6 +351,9 @@ display:
     display_options:
       pager:
         type: some
+        options:
+          offset: 0
+          items_per_page: 10
       style:
         type: rss
         options:
@@ -284,8 +365,12 @@ display:
           relationship: none
           view_mode: default
       display_description: ''
+      display_comment: ''
+      rendering_language: '***LANGUAGE_entity_translation***'
+      exposed_block: false
       display_extenders: {  }
       path: article/feed
+      sitename_title: false
       displays:
         article_all: article_all
         default: '0'
