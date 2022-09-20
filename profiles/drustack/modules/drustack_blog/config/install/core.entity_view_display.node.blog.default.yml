@@ -1,0 +1,50 @@
+bundle: blog
+content:
+  body:
+    label: visually_hidden
+    region: content
+    settings: {}
+    third_party_settings: {}
+    type: text_default
+    weight: 0
+  comment:
+    label: above
+    region: content
+    settings:
+      pager_id: 0
+      view_mode: default
+    third_party_settings: {}
+    type: comment_default
+    weight: 4
+  field_tags:
+    label: visually_hidden
+    region: content
+    settings:
+      link: true
+    third_party_settings: {}
+    type: entity_reference_label
+    weight: 2
+  links:
+    region: content
+    settings: {}
+    third_party_settings: {}
+    weight: 1
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment.default
+    - field.field.node.blog.body
+    - field.field.node.blog.comment
+    - field.field.node.blog.field_tags
+    - node.type.blog
+  module:
+    - comment
+    - text
+    - user
+hidden:
+  langcode: true
+  search_api_excerpt: true
+id: node.blog.default
+langcode: en
+mode: default
+status: true
+targetEntityType: node

@@ -1,0 +1,25 @@
+bundle: blog
+dependencies:
+  config:
+    - node.type.blog
+  module:
+    - node
+fieldMappings:
+  body:
+    properties:
+      - schema:text
+  comment:
+    properties:
+      - schema:comment
+  field_tags:
+    properties:
+      - schema:about
+  title:
+    properties:
+      - schema:name
+id: node.blog
+langcode: en
+status: true
+targetEntityType: node
+types:
+  - schema:BlogPosting

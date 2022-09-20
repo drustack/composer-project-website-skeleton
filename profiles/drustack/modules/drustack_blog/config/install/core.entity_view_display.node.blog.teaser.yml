@@ -1,0 +1,35 @@
+bundle: blog
+content:
+  body:
+    label: visually_hidden
+    region: content
+    settings:
+      trim_length: 600
+    third_party_settings: {}
+    type: text_summary_or_trimmed
+    weight: 0
+  links:
+    region: content
+    settings: {}
+    third_party_settings: {}
+    weight: 1
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.blog.body
+    - field.field.node.blog.comment
+    - field.field.node.blog.field_tags
+    - node.type.blog
+  module:
+    - text
+    - user
+hidden:
+  comment: true
+  field_tags: true
+  langcode: true
+  search_api_excerpt: true
+id: node.blog.teaser
+langcode: en
+mode: teaser
+status: true
+targetEntityType: node
