@@ -15,25 +15,13 @@ content:
     settings: {}
     third_party_settings: {}
     type: comment_default
-    weight: 14
+    weight: 16
   created:
     region: content
     settings: {}
     third_party_settings: {}
     type: datetime_timestamp
-    weight: 7
-  field_attachment:
-    region: content
-    settings:
-      media_types:
-        - document
-        - audio
-        - image
-        - video
-        - remote_video
-    third_party_settings: {}
-    type: media_library_widget
-    weight: 5
+    weight: 6
   field_image:
     region: content
     settings:
@@ -64,39 +52,39 @@ content:
     settings: {}
     third_party_settings: {}
     type: path
-    weight: 15
+    weight: 13
   promote:
     region: content
     settings:
       display_label: true
     third_party_settings: {}
     type: boolean_checkbox
-    weight: 8
+    weight: 7
   publish_on:
     region: content
     settings: {}
     third_party_settings: {}
     type: datetime_timestamp_no_default
-    weight: 11
+    weight: 10
   scheduler_settings:
     region: content
     settings: {}
     third_party_settings: {}
-    weight: 10
+    weight: 9
   status:
     region: content
     settings:
       display_label: true
     third_party_settings: {}
     type: boolean_checkbox
-    weight: 13
+    weight: 12
   sticky:
     region: content
     settings:
       display_label: true
     third_party_settings: {}
     type: boolean_checkbox
-    weight: 9
+    weight: 8
   title:
     region: content
     settings:
@@ -109,7 +97,7 @@ content:
     region: content
     settings: {}
     third_party_settings: {}
-    weight: 17
+    weight: 15
   uid:
     region: content
     settings:
@@ -119,23 +107,22 @@ content:
       size: 60
     third_party_settings: {}
     type: entity_reference_autocomplete
-    weight: 6
+    weight: 5
   unpublish_on:
     region: content
     settings: {}
     third_party_settings: {}
     type: datetime_timestamp_no_default
-    weight: 12
+    weight: 11
   url_redirects:
     region: content
     settings: {}
     third_party_settings: {}
-    weight: 16
+    weight: 14
 dependencies:
   config:
     - field.field.node.article.body
     - field.field.node.article.comment
-    - field.field.node.article.field_attachment
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
     - image.style.thumbnail
@@ -143,7 +130,6 @@ dependencies:
   module:
     - comment
     - image
-    - media_library
     - path
     - scheduler
     - text

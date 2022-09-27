@@ -7,6 +7,14 @@ langcode: en
 pattern: article/[node:source:title]
 relationships: {}
 selection_criteria:
+  4b6bcbbd-219c-4814-8130-556d2426c3bf:
+    bundles:
+      article: article
+    context_mapping:
+      node: node
+    id: entity_bundle:node
+    negate: false
+    uuid: 4b6bcbbd-219c-4814-8130-556d2426c3bf
   541e22eb-d97d-4a2f-bd7d-ec04c824745e:
     bundles:
       article: article

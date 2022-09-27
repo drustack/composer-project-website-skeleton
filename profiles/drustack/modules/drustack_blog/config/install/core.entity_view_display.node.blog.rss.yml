@@ -1,4 +1,4 @@
-bundle: article
+bundle: blog
 content:
   links:
     region: content
@@ -8,12 +8,13 @@ content:
 dependencies:
   config:
     - core.entity_view_mode.node.rss
-    - field.field.node.article.body
-    - field.field.node.article.comment
-    - field.field.node.article.field_image
-    - field.field.node.article.field_tags
-    - node.type.article
+    - field.field.node.blog.body
+    - field.field.node.blog.comment
+    - field.field.node.blog.field_image
+    - field.field.node.blog.field_tags
+    - node.type.blog
   module:
+    - layout_builder
     - user
 hidden:
   body: true
@@ -22,8 +23,12 @@ hidden:
   field_tags: true
   langcode: true
   search_api_excerpt: true
-id: node.article.rss
+id: node.blog.rss
 langcode: en
 mode: rss
 status: true
 targetEntityType: node
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false

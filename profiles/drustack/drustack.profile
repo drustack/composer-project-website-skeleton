@@ -22,8 +22,6 @@ function drustack_install_tasks($install_state) {
     'drustack_devel',
     'drustack_seo',
     'drustack_performance',
-    'drustack_paragraphs',
-    'drustack_layout',
     'drustack_page',
     'drustack_article',
     'drustack_blog',

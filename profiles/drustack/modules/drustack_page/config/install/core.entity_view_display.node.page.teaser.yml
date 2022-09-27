@@ -34,11 +34,8 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
-    - field.field.node.page.field_attachment
     - field.field.node.page.field_image
     - field.field.node.page.field_tags
-    - field.field.node.page.layout_builder__layout
-    - field.field.node.page.layout_builder__translation
     - node.type.page
     - responsive_image.styles.bootstrap
   module:
@@ -46,10 +43,7 @@ dependencies:
     - text
     - user
 hidden:
-  field_attachment: true
   langcode: true
-  layout_builder__layout: true
-  layout_builder__translation: true
   search_api_excerpt: true
 id: node.page.teaser
 langcode: en

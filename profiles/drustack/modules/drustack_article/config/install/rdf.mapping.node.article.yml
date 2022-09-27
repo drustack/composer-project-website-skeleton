@@ -28,9 +28,6 @@ fieldMappings:
       callable: Drupal\rdf\CommonDataConverter::dateIso8601Value
     properties:
       - schema:dateCreated
-  field_attachment:
-    properties:
-      - schema:associatedMedia
   field_image:
     properties:
       - schema:image

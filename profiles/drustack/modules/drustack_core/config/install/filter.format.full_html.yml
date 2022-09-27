@@ -23,6 +23,15 @@ filters:
     settings: {}
     status: true
     weight: 30
+  filter_html:
+    id: filter_html
+    provider: filter
+    settings:
+      allowed_html: ""
+      filter_html_help: true
+      filter_html_nofollow: false
+    status: false
+    weight: -10
   filter_htmlcorrector:
     id: filter_htmlcorrector
     provider: filter

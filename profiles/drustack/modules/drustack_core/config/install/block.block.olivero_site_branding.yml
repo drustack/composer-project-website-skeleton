@@ -1,0 +1,26 @@
+dependencies:
+  module:
+    - block_class
+    - system
+  theme:
+    - olivero
+id: olivero_site_branding
+langcode: en
+plugin: system_branding_block
+provider: null
+region: header
+settings:
+  id: system_branding_block
+  label: Site branding
+  label_display: "0"
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+status: true
+theme: olivero
+third_party_settings:
+  block_class:
+    classes: null
+visibility: {}
+weight: 0

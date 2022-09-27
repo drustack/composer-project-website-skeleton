@@ -1,4 +1,4 @@
-bundle: article
+bundle: page
 content:
   links:
     region: content
@@ -8,22 +8,25 @@ content:
 dependencies:
   config:
     - core.entity_view_mode.node.rss
-    - field.field.node.article.body
-    - field.field.node.article.comment
-    - field.field.node.article.field_image
-    - field.field.node.article.field_tags
-    - node.type.article
+    - field.field.node.page.body
+    - field.field.node.page.field_image
+    - field.field.node.page.field_tags
+    - node.type.page
   module:
+    - layout_builder
     - user
 hidden:
   body: true
-  comment: true
   field_image: true
   field_tags: true
   langcode: true
   search_api_excerpt: true
-id: node.article.rss
+id: node.page.rss
 langcode: en
 mode: rss
 status: true
 targetEntityType: node
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false

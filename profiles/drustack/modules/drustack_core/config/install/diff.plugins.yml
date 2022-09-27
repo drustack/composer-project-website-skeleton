@@ -3,10 +3,9 @@ fields:
     body:
       settings:
         compare_format: 0
-        compare_summary: 0
         markdown: drupal_html_to_text
         show_header: 1
-      type: text_summary_field_diff_builder
+      type: text_field_diff_builder
     changed:
       settings: {}
       type: hidden
@@ -25,42 +24,6 @@ fields:
     default_langcode:
       settings: {}
       type: hidden
-    field_accordion:
-      settings:
-        markdown: drupal_html_to_text
-        show_header: 1
-      type: entity_reference_revisions_field_diff_builder
-    field_carousel:
-      settings:
-        markdown: drupal_html_to_text
-        show_header: 1
-      type: entity_reference_revisions_field_diff_builder
-    field_modal_body:
-      settings:
-        markdown: drupal_html_to_text
-        show_header: 1
-      type: entity_reference_revisions_field_diff_builder
-    field_modal_button:
-      settings:
-        compare_format: 0
-        markdown: drupal_html_to_text
-        show_header: 1
-      type: text_field_diff_builder
-    field_modal_footer:
-      settings:
-        markdown: drupal_html_to_text
-        show_header: 1
-      type: entity_reference_revisions_field_diff_builder
-    field_modal_title:
-      settings:
-        markdown: drupal_html_to_text
-        show_header: 1
-      type: core_field_diff_builder
-    field_tab:
-      settings:
-        markdown: drupal_html_to_text
-        show_header: 1
-      type: entity_reference_revisions_field_diff_builder
     info:
       settings: {}
       type: hidden
@@ -273,10 +236,9 @@ fields:
     body:
       settings:
         compare_format: 0
-        compare_summary: 0
         markdown: drupal_html_to_text
         show_header: 1
-      type: text_summary_field_diff_builder
+      type: text_field_diff_builder
     changed:
       settings: {}
       type: hidden
@@ -301,12 +263,6 @@ fields:
     default_langcode:
       settings: {}
       type: hidden
-    field_attachment:
-      settings:
-        compare_entity_reference: 1
-        markdown: drupal_html_to_text
-        show_header: 1
-      type: entity_reference_field_diff_builder
     field_image:
       settings:
         compare_alt_field: 1
@@ -324,12 +280,6 @@ fields:
         show_header: 1
       type: entity_reference_field_diff_builder
     langcode:
-      settings: {}
-      type: hidden
-    layout_builder__layout:
-      settings: {}
-      type: hidden
-    layout_builder__translation:
       settings: {}
       type: hidden
     promote:
@@ -367,89 +317,14 @@ fields:
     unpublish_on:
       settings: {}
       type: hidden
-    webform:
-      settings: {}
-      type: hidden
   paragraph:
     behavior_settings:
-      settings: {}
-      type: hidden
-    content_translation_changed:
-      settings: {}
-      type: hidden
-    content_translation_outdated:
-      settings: {}
-      type: hidden
-    content_translation_source:
       settings: {}
       type: hidden
     created:
       settings: {}
       type: hidden
     default_langcode:
-      settings: {}
-      type: hidden
-    field_block:
-      settings:
-        compare_entity_reference: 1
-        markdown: drupal_html_to_text
-        show_header: 1
-      type: entity_reference_field_diff_builder
-    field_card_body:
-      settings:
-        markdown: drupal_html_to_text
-        show_header: 1
-      type: entity_reference_revisions_field_diff_builder
-    field_card_header:
-      settings:
-        markdown: drupal_html_to_text
-        show_header: 1
-      type: core_field_diff_builder
-    field_carousel_caption:
-      settings:
-        compare_format: 0
-        markdown: drupal_html_to_text
-        show_header: 1
-      type: text_field_diff_builder
-    field_carousel_item:
-      settings:
-        markdown: drupal_html_to_text
-        show_header: 1
-      type: entity_reference_revisions_field_diff_builder
-    field_carousel_link:
-      settings:
-        compare_title: 0
-        compare_uri: 1
-        markdown: drupal_html_to_text
-        show_header: 1
-      type: link_field_diff_builder
-    field_image:
-      settings:
-        compare_alt_field: 1
-        compare_title_field: 1
-        markdown: drupal_html_to_text
-        property_separator: nl
-        show_header: 1
-        show_id: 0
-        show_thumbnail: 1
-      type: image_field_diff_builder
-    field_nav_link:
-      settings:
-        markdown: drupal_html_to_text
-        show_header: 1
-      type: core_field_diff_builder
-    field_tab_pane:
-      settings:
-        markdown: drupal_html_to_text
-        show_header: 1
-      type: entity_reference_revisions_field_diff_builder
-    field_text:
-      settings:
-        compare_format: 0
-        markdown: drupal_html_to_text
-        show_header: 1
-      type: text_field_diff_builder
-    field_views:
       settings: {}
       type: hidden
     langcode:
@@ -509,8 +384,11 @@ fields:
       settings: {}
       type: hidden
     description:
-      settings: {}
-      type: hidden
+      settings:
+        compare_format: 0
+        markdown: drupal_html_to_text
+        show_header: 1
+      type: text_field_diff_builder
     langcode:
       settings: {}
       type: hidden
