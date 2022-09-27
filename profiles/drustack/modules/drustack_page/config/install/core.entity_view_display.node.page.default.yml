@@ -3,9 +3,19 @@ content:
   body:
     label: visually_hidden
     region: content
-    settings: {}
+    settings:
+      trim_length: 600
     third_party_settings: {}
-    type: text_default
+    type: text_summary_or_trimmed
+    weight: 1
+  field_image:
+    label: visually_hidden
+    region: content
+    settings:
+      image_link: ""
+      responsive_image_style: bootstrap
+    third_party_settings: {}
+    type: responsive_image
     weight: 0
   field_tags:
     label: visually_hidden
@@ -19,18 +29,19 @@ content:
     region: content
     settings: {}
     third_party_settings: {}
-    weight: 1
+    weight: 3
 dependencies:
   config:
     - field.field.node.page.body
     - field.field.node.page.field_image
     - field.field.node.page.field_tags
     - node.type.page
+    - responsive_image.styles.bootstrap
   module:
+    - responsive_image
     - text
     - user
 hidden:
-  field_image: true
   langcode: true
   search_api_excerpt: true
 id: node.page.default

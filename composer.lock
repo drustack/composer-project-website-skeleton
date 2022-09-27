@@ -2677,7 +2677,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/block_class.git",
-                "reference": "ee1c9256a2b7ddfa2d3be5f1bf14ca040e146403"
+                "reference": "ae908d929db7358ad099ef99175984091803327f"
             },
             "require": {
                 "drupal/core": "^8 || ^9 || ^10"
@@ -2688,8 +2688,8 @@
                     "dev-2.0.x": "2.0.x-dev"
                 },
                 "drupal": {
-                    "version": "2.0.3+1-dev",
-                    "datestamp": "1663942707",
+                    "version": "2.0.4+1-dev",
+                    "datestamp": "1664290250",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -4104,12 +4104,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "a1e7123111e3dbc8c19ffe029651b07850a9710e"
+                "reference": "cc9d08bc644d5257ab30a11e68d5713f9550c35d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/a1e7123111e3dbc8c19ffe029651b07850a9710e",
-                "reference": "a1e7123111e3dbc8c19ffe029651b07850a9710e",
+                "url": "https://api.github.com/repos/drupal/core/zipball/cc9d08bc644d5257ab30a11e68d5713f9550c35d",
+                "reference": "cc9d08bc644d5257ab30a11e68d5713f9550c35d",
                 "shasum": ""
             },
             "require": {
@@ -4263,7 +4263,7 @@
             "support": {
                 "source": "https://github.com/drupal/core/tree/9.5.x"
             },
-            "time": "2022-09-26T19:32:26+00:00"
+            "time": "2022-09-27T14:53:55+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
@@ -9787,7 +9787,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/paragraphs.git",
-                "reference": "b92b70923803210df951d4d27c722530f4610063"
+                "reference": "eeae2003863093afb8f663157e212df7f68754df"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10",
@@ -9814,8 +9814,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.15+1-dev",
-                    "datestamp": "1663944249",
+                    "version": "8.x-1.15+2-dev",
+                    "datestamp": "1664283535",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -16431,10 +16431,10 @@
         },
         {
             "name": "npm-asset/leaflet",
-            "version": "1.9.0",
+            "version": "1.9.1",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/leaflet/-/leaflet-1.9.0.tgz"
+                "url": "https://registry.npmjs.org/leaflet/-/leaflet-1.9.1.tgz"
             },
             "type": "npm-asset",
             "license": [
@@ -18610,16 +18610,16 @@
         },
         {
             "name": "softcreatr/jsonpath",
-            "version": "0.8.0",
+            "version": "0.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SoftCreatR/JSONPath.git",
-                "reference": "c2f4a164c2d9be754e2d47811157a31fe93067d0"
+                "reference": "2de6614d7a9aa5e1f988c5dbc0744fa602847180"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SoftCreatR/JSONPath/zipball/c2f4a164c2d9be754e2d47811157a31fe93067d0",
-                "reference": "c2f4a164c2d9be754e2d47811157a31fe93067d0",
+                "url": "https://api.github.com/repos/SoftCreatR/JSONPath/zipball/2de6614d7a9aa5e1f988c5dbc0744fa602847180",
+                "reference": "2de6614d7a9aa5e1f988c5dbc0744fa602847180",
                 "shasum": ""
             },
             "require": {
@@ -18632,7 +18632,7 @@
             "require-dev": {
                 "phpunit/phpunit": "^9.5",
                 "roave/security-advisories": "dev-latest",
-                "squizlabs/php_codesniffer": "^3.6"
+                "squizlabs/php_codesniffer": "^3.7"
             },
             "type": "library",
             "autoload": {
@@ -18675,7 +18675,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-01-31T14:22:15+00:00"
+            "time": "2022-09-27T09:53:33+00:00"
         },
         {
             "name": "solarium/solarium",

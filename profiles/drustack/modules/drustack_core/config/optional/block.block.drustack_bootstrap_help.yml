@@ -1,0 +1,23 @@
+dependencies:
+  module:
+    - block_class
+    - help
+  theme:
+    - drustack_bootstrap
+id: drustack_bootstrap_help
+langcode: en
+plugin: help_block
+provider: null
+region: content
+settings:
+  id: help_block
+  label: Help
+  label_display: "0"
+  provider: help
+status: true
+theme: drustack_bootstrap
+third_party_settings:
+  block_class:
+    classes: null
+visibility: {}
+weight: -30

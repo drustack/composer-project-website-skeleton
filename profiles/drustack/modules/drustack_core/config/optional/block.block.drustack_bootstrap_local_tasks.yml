@@ -1,0 +1,24 @@
+dependencies:
+  module:
+    - block_class
+  theme:
+    - drustack_bootstrap
+id: drustack_bootstrap_local_tasks
+langcode: en
+plugin: local_tasks_block
+provider: null
+region: content
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: "0"
+  primary: true
+  provider: core
+  secondary: true
+status: true
+theme: drustack_bootstrap
+third_party_settings:
+  block_class:
+    classes: null
+visibility: {}
+weight: -40

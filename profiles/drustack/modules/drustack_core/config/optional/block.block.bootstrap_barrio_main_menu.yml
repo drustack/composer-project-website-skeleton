@@ -1,0 +1,28 @@
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - block_class
+    - system
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_main_menu
+langcode: en
+plugin: system_menu_block:main
+provider: null
+region: primary_menu
+settings:
+  depth: 1
+  expand_all_items: false
+  id: system_menu_block:main
+  label: Main navigation
+  label_display: "0"
+  level: 1
+  provider: system
+status: true
+theme: bootstrap_barrio
+third_party_settings:
+  block_class:
+    classes: null
+visibility: {}
+weight: 0

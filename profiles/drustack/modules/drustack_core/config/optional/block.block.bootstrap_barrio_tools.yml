@@ -1,0 +1,28 @@
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - block_class
+    - system
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_tools
+langcode: en
+plugin: system_menu_block:tools
+provider: null
+region: sidebar_first
+settings:
+  depth: 0
+  expand_all_items: false
+  id: system_menu_block:tools
+  label: Tools
+  label_display: visible
+  level: 1
+  provider: system
+status: true
+theme: bootstrap_barrio
+third_party_settings:
+  block_class:
+    classes: null
+visibility: {}
+weight: 0

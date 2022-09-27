@@ -1,0 +1,24 @@
+dependencies:
+  module:
+    - block_class
+  theme:
+    - olivero
+id: olivero_primary_local_tasks
+langcode: en
+plugin: local_tasks_block
+provider: null
+region: highlighted
+settings:
+  id: local_tasks_block
+  label: Primary tabs
+  label_display: "0"
+  primary: true
+  provider: core
+  secondary: false
+status: true
+theme: olivero
+third_party_settings:
+  block_class:
+    classes: null
+visibility: {}
+weight: -4
