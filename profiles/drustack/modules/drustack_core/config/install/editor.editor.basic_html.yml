@@ -15,37 +15,6 @@ image_upload:
   status: true
 langcode: en
 settings:
-  plugins:
-    codesnippet:
-      highlight_languages:
-        apache: apache
-        bash: bash
-        coffeescript: coffeescript
-        cpp: cpp
-        cs: cs
-        css: css
-        diff: diff
-        html: html
-        http: http
-        ini: ini
-        java: java
-        javascript: javascript
-        json: json
-        makefile: makefile
-        markdown: markdown
-        nginx: nginx
-        objectivec: objectivec
-        perl: perl
-        php: php
-        python: python
-        ruby: ruby
-        sql: sql
-        vbscript: vbscript
-        xhtml: xhtml
-        xml: xml
-      highlight_style: github
-    language:
-      language_list: all
   toolbar:
     rows:
       - - items:
@@ -64,7 +33,6 @@ settings:
             - Blockquote
             - DrupalImage
             - SpecialChar
-            - CodeSnippet
           name: Media
         - items:
             - Format
