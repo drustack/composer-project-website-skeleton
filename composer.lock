@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c111ea1bda722a3ff857a46d499d8419",
+    "content-hash": "065c05aa3ca24e4e80f6b10c93e7be77",
     "packages": [
         {
             "name": "arthurkushman/query-path",
@@ -3074,7 +3074,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/calendar.git",
-                "reference": "f67cc6aaba7d5481327539843965cb9110bb0f79"
+                "reference": "ff894fd5b4828c2bf5c6b48bb43413925c268963"
             },
             "require": {
                 "drupal/calendar_datetime": "*",
@@ -3087,8 +3087,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha4+4-dev",
-                    "datestamp": "1646324068",
+                    "version": "8.x-1.0-alpha4+6-dev",
+                    "datestamp": "1664226550",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -3111,12 +3111,8 @@
                     "role": "Maintainer"
                 },
                 {
-                    "name": "fizk",
-                    "homepage": "https://www.drupal.org/user/473174"
-                },
-                {
-                    "name": "joelpittet",
-                    "homepage": "https://www.drupal.org/user/160302"
+                    "name": "KarenS",
+                    "homepage": "https://www.drupal.org/user/45874"
                 },
                 {
                     "name": "paulocs",
@@ -3158,20 +3154,16 @@
             ],
             "authors": [
                 {
-                    "name": "KarenS",
-                    "homepage": "https://www.drupal.org/user/45874"
-                },
-                {
-                    "name": "Neslee Canil Pinto",
-                    "homepage": "https://www.drupal.org/user/3580850"
-                },
-                {
                     "name": "fizk",
                     "homepage": "https://www.drupal.org/user/473174"
                 },
                 {
                     "name": "joelpittet",
                     "homepage": "https://www.drupal.org/user/160302"
+                },
+                {
+                    "name": "KarenS",
+                    "homepage": "https://www.drupal.org/user/45874"
                 },
                 {
                     "name": "paulocs",
@@ -4112,12 +4104,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "90529383a9eeb9ff810c12b9e15eeaa6ed373f98"
+                "reference": "a1e7123111e3dbc8c19ffe029651b07850a9710e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/90529383a9eeb9ff810c12b9e15eeaa6ed373f98",
-                "reference": "90529383a9eeb9ff810c12b9e15eeaa6ed373f98",
+                "url": "https://api.github.com/repos/drupal/core/zipball/a1e7123111e3dbc8c19ffe029651b07850a9710e",
+                "reference": "a1e7123111e3dbc8c19ffe029651b07850a9710e",
                 "shasum": ""
             },
             "require": {
@@ -4271,7 +4263,7 @@
             "support": {
                 "source": "https://github.com/drupal/core/tree/9.5.x"
             },
-            "time": "2022-09-24T20:58:24+00:00"
+            "time": "2022-09-26T19:32:26+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
@@ -4826,22 +4818,22 @@
         },
         {
             "name": "drupal/devel",
-            "version": "dev-4.x",
+            "version": "dev-5.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/devel.git",
-                "reference": "b072179c1d03149dd7e381e9f21b987ab2ff8441"
+                "reference": "44942594faf1531f137d37a9bf25cb7e447f4813"
             },
             "require": {
                 "doctrine/common": "^2.7",
-                "drupal/core": "^8.8 || ^9",
-                "symfony/var-dumper": "^4 || ^5"
+                "drupal/core": "^9 || ^10",
+                "symfony/var-dumper": "^4 || ^5 || ^6"
             },
             "conflict": {
                 "kint-php/kint": "<3"
             },
             "require-dev": {
-                "drush/drush": "^10"
+                "drush/drush": "^11"
             },
             "suggest": {
                 "kint-php/kint": "Kint provides an informative display of arrays/objects. Useful for debugging and developing."
@@ -4849,11 +4841,11 @@
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-4.x": "4.x-dev"
+                    "dev-5.x": "5.x-dev"
                 },
                 "drupal": {
-                    "version": "4.1.5+25-dev",
-                    "datestamp": "1663039066",
+                    "version": "5.0.0+4-dev",
+                    "datestamp": "1663950134",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -4861,7 +4853,7 @@
                 },
                 "drush": {
                     "services": {
-                        "drush.services.yml": "^9 || ^10"
+                        "drush.services.yml": "^9 || ^10 || ^11"
                     }
                 }
             },
@@ -6644,7 +6636,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/feeds.git",
-                "reference": "59ec296285d1b9b30968cfdf617bfffb82ef4e2e"
+                "reference": "cbb7c8d0dd1c011c4336b9e8c94e1311a93cca45"
             },
             "require": {
                 "drupal/core": "^9.3"
@@ -6659,8 +6651,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-beta2+7-dev",
-                    "datestamp": "1661432432",
+                    "version": "8.x-3.0-beta2+8-dev",
+                    "datestamp": "1664186776",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -7540,7 +7532,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/geofield.git",
-                "reference": "3f0163a5eccce3acfedde332e781f6d1efa2ce28"
+                "reference": "4e65f7b2b54eb0f4344526908b74fb2115c6b36d"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9 || ^10",
@@ -7552,8 +7544,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.44+1-dev",
-                    "datestamp": "1663453265",
+                    "version": "8.x-1.44+2-dev",
+                    "datestamp": "1664233839",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -13322,8 +13314,8 @@
                     "homepage": "https://www.drupal.org/u/graber"
                 },
                 {
-                    "name": "benjy",
-                    "homepage": "https://www.drupal.org/user/1852732"
+                    "name": "Graber",
+                    "homepage": "https://www.drupal.org/user/1599440"
                 }
             ],
             "description": "Allows bulk edition of entity field values.",
