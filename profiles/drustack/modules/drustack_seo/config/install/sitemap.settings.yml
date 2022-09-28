@@ -11,7 +11,23 @@ plugins:
     settings:
       rss: /rss.xml
       title: Front page
-    weight: 0
+    weight: -46
+  menu:footer:
+    enabled: true
+    id: menu:footer
+    provider: sitemap
+    settings:
+      show_disabled: false
+      title: Footer
+    weight: -43
+  menu:header:
+    enabled: true
+    id: menu:header
+    provider: sitemap
+    settings:
+      show_disabled: false
+      title: Header
+    weight: -45
   menu:main:
     enabled: true
     id: menu:main
@@ -19,4 +35,4 @@ plugins:
     settings:
       show_disabled: false
       title: Main navigation
-    weight: 0
+    weight: -44

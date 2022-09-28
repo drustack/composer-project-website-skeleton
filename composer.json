@@ -64,6 +64,9 @@
             "drupal/asset_injector": {
                 "https://drupal.org/node/3181674": "https://drupal.org/files/issues/2021-10-29/add-library-info-tag-3181674-7.patch"
             },
+            "drupal/block_class": {
+                "https://drupal.org/node/3296649": "https://drupal.org/files/issues/2022-07-18/block_class.2.0.x-dev.rector.patch"
+            },
             "drupal/bootstrap_barrio": {
                 "https://drupal.org/node/3266511": "https://git.drupalcode.org/project/bootstrap_barrio/-/merge_requests/17.diff"
             },
@@ -103,7 +106,7 @@
             },
             "drupal/facets": {
                 "https://drupal.org/node/3031544": "https://git.drupalcode.org/project/facets/-/merge_requests/55.diff",
-                "https://drupal.org/node/3073444": "https://drupal.org/files/issues/2022-09-13/facets-create-views-plugins-3073444-166.patch",
+                "https://drupal.org/node/3073444": "https://git.drupalcode.org/project/facets/-/merge_requests/106.diff",
                 "https://drupal.org/node/3153622": "https://git.drupalcode.org/project/facets/-/merge_requests/43.diff",
                 "https://drupal.org/node/3187388": "https://git.drupalcode.org/project/facets/-/merge_requests/53.diff"
             },
@@ -230,7 +233,7 @@
         "drupal/csv_serialization": "2.x-dev",
         "drupal/ctools": "3.x-dev",
         "drupal/default_content": "2.0.x-dev",
-        "drupal/devel": "4.x-dev",
+        "drupal/devel": "5.x-dev",
         "drupal/devel_entity_updates": "~3.0",
         "drupal/diff": "~1.0",
         "drupal/dropdown_language": "3.0.x-dev",
@@ -389,6 +392,7 @@
         "drupal/core-dev": "~9.3.0",
         "drush/drush": "~11.1",
         "drustack/composer-generate-metadata": "~2.0",
+        "mglaman/drupal-check": "~1.4",
         "oomphinc/composer-installers-extender": "~2.0",
         "zaporylie/composer-drupal-optimizations": "~1.2"
     },
