@@ -1,0 +1,19 @@
+dependencies:
+  module:
+    - system
+  theme:
+    - olivero
+id: olivero_messages
+langcode: en
+plugin: system_messages_block
+provider: null
+region: highlighted
+settings:
+  id: system_messages_block
+  label: Status messages
+  label_display: "0"
+  provider: system
+status: true
+theme: olivero
+visibility: {}
+weight: -5

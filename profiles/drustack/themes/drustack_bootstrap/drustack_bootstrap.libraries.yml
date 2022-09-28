@@ -1,0 +1,29 @@
+bootstrap:
+  dependencies:
+    - core/popperjs
+    - core/jquery
+    - core/drupal
+  js:
+    ../../../../libraries/bootstrap/dist/js/bootstrap.bundle.min.js:
+      minified: true
+  version: VERSION
+fontawesome:
+  css:
+    theme:
+      ../../../../libraries/fortawesome--fontawesome-free/css/all.min.css:
+        minified: true
+  js:
+    ../../../../libraries/fortawesome--fontawesome-free/js/all.min.js:
+      minified: true
+  version: VERSION
+global-styling:
+  css:
+    theme:
+      css/style.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+  js:
+    js/barrio.js: {}
+    js/custom.js: {}
+  version: VERSION

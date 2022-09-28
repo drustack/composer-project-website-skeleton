@@ -5,7 +5,7 @@ default_value:
     last_comment_name: null
     last_comment_timestamp: 0
     last_comment_uid: 0
-    status: 2
+    status: 1
 default_value_callback: ""
 dependencies:
   config:
@@ -20,7 +20,7 @@ field_type: comment
 id: node.article.comment
 label: Comments
 langcode: en
-required: true
+required: false
 settings:
   anonymous: 0
   default_mode: 1

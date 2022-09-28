@@ -6,7 +6,7 @@ content:
     settings: {}
     third_party_settings: {}
     type: text_default
-    weight: 0
+    weight: 1
   comment:
     label: above
     region: content
@@ -16,6 +16,15 @@ content:
     third_party_settings: {}
     type: comment_default
     weight: 4
+  field_image:
+    label: visually_hidden
+    region: content
+    settings:
+      image_link: ""
+      responsive_image_style: bootstrap
+    third_party_settings: {}
+    type: responsive_image
+    weight: 0
   field_tags:
     label: visually_hidden
     region: content
@@ -28,16 +37,19 @@ content:
     region: content
     settings: {}
     third_party_settings: {}
-    weight: 1
+    weight: 3
 dependencies:
   config:
     - core.entity_view_display.comment.comment.default
     - field.field.node.blog.body
     - field.field.node.blog.comment
+    - field.field.node.blog.field_image
     - field.field.node.blog.field_tags
     - node.type.blog
+    - responsive_image.styles.bootstrap
   module:
     - comment
+    - responsive_image
     - text
     - user
 hidden:

@@ -15,7 +15,7 @@ content:
     settings: {}
     third_party_settings: {}
     type: datetime_timestamp
-    weight: 7
+    weight: 6
   field_image:
     region: content
     settings:
@@ -46,39 +46,39 @@ content:
     settings: {}
     third_party_settings: {}
     type: path
-    weight: 14
+    weight: 13
   promote:
     region: content
     settings:
       display_label: true
     third_party_settings: {}
     type: boolean_checkbox
-    weight: 8
+    weight: 7
   publish_on:
     region: content
     settings: {}
     third_party_settings: {}
     type: datetime_timestamp_no_default
-    weight: 11
+    weight: 10
   scheduler_settings:
     region: content
     settings: {}
     third_party_settings: {}
-    weight: 10
+    weight: 9
   status:
     region: content
     settings:
       display_label: true
     third_party_settings: {}
     type: boolean_checkbox
-    weight: 13
+    weight: 12
   sticky:
     region: content
     settings:
       display_label: true
     third_party_settings: {}
     type: boolean_checkbox
-    weight: 9
+    weight: 8
   title:
     region: content
     settings:
@@ -91,7 +91,7 @@ content:
     region: content
     settings: {}
     third_party_settings: {}
-    weight: 16
+    weight: 15
   uid:
     region: content
     settings:
@@ -101,18 +101,18 @@ content:
       size: 60
     third_party_settings: {}
     type: entity_reference_autocomplete
-    weight: 6
+    weight: 5
   unpublish_on:
     region: content
     settings: {}
     third_party_settings: {}
     type: datetime_timestamp_no_default
-    weight: 12
+    weight: 11
   url_redirects:
     region: content
     settings: {}
     third_party_settings: {}
-    weight: 15
+    weight: 14
 dependencies:
   config:
     - field.field.node.page.body

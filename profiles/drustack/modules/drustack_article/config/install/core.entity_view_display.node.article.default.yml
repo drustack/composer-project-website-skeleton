@@ -15,17 +15,15 @@ content:
       view_mode: default
     third_party_settings: {}
     type: comment_default
-    weight: 5
+    weight: 4
   field_image:
     label: visually_hidden
     region: content
     settings:
       image_link: ""
-      image_loading:
-        attribute: lazy
-      image_style: wide
+      responsive_image_style: bootstrap
     third_party_settings: {}
-    type: image
+    type: responsive_image
     weight: 0
   field_tags:
     label: visually_hidden
@@ -34,12 +32,12 @@ content:
       link: true
     third_party_settings: {}
     type: entity_reference_label
-    weight: 3
+    weight: 2
   links:
     region: content
     settings: {}
     third_party_settings: {}
-    weight: 2
+    weight: 3
 dependencies:
   config:
     - core.entity_view_display.comment.comment.default
@@ -47,11 +45,11 @@ dependencies:
     - field.field.node.article.comment
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
-    - image.style.wide
     - node.type.article
+    - responsive_image.styles.bootstrap
   module:
     - comment
-    - image
+    - responsive_image
     - text
     - user
 hidden:

@@ -1,6 +1,9 @@
 dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
   module:
     - editor
+    - media
 filters:
   editor_file_reference:
     id: editor_file_reference
@@ -24,7 +27,7 @@ filters:
     id: filter_html
     provider: filter
     settings:
-      allowed_html: <a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol type start> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <p> <br> <img src alt data-entity-type data-entity-uuid data-align data-caption width height> <pre> <span dir lang> <drupal-media data-entity-t ype data-entity-uuid data-view-mode data-align data-caption alt title>
+      allowed_html: <br> <p> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <cite> <dl> <dt> <dd> <span lang dir> <drupal-media data-entity-t ype data-entity-uuid data-view-mode data-align data-caption alt title data-entity-type> <a hreflang href> <blockquote cite> <ul type> <ol type reversed start> <strong> <em> <code class="language-*"> <pre> <li> <img src alt height width data-entity-uuid data-entity-type data-caption data-align>
       filter_html_help: true
       filter_html_nofollow: false
     status: true
@@ -35,6 +38,15 @@ filters:
     settings: {}
     status: true
     weight: 50
+  media_embed:
+    id: media_embed
+    provider: media
+    settings:
+      allowed_media_types: {}
+      allowed_view_modes: {}
+      default_view_mode: media_library
+    status: true
+    weight: 40
 format: basic_html
 langcode: en
 name: Basic HTML
