@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b17b468d8ed7d16c6fab8423d632d751",
+    "content-hash": "e899820601e1f1b30b095a174f5047a1",
     "packages": [
         {
             "name": "arthurkushman/query-path",
@@ -4104,12 +4104,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "b51989a9d777e7354593a1e6328edc78f5a95dd7"
+                "reference": "450475ec1b9f47a73fbb57cd1a458c10c5e12a01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/b51989a9d777e7354593a1e6328edc78f5a95dd7",
-                "reference": "b51989a9d777e7354593a1e6328edc78f5a95dd7",
+                "url": "https://api.github.com/repos/drupal/core/zipball/450475ec1b9f47a73fbb57cd1a458c10c5e12a01",
+                "reference": "450475ec1b9f47a73fbb57cd1a458c10c5e12a01",
                 "shasum": ""
             },
             "require": {
@@ -4263,7 +4263,7 @@
             "support": {
                 "source": "https://github.com/drupal/core/tree/9.5.x"
             },
-            "time": "2022-09-27T19:16:48+00:00"
+            "time": "2022-09-28T09:39:48+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
@@ -6636,7 +6636,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/feeds.git",
-                "reference": "cbb7c8d0dd1c011c4336b9e8c94e1311a93cca45"
+                "reference": "873eb8fbcb9043c087dfeff31516a36260402b22"
             },
             "require": {
                 "drupal/core": "^9.3"
@@ -6651,8 +6651,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-beta2+8-dev",
-                    "datestamp": "1664186776",
+                    "version": "8.x-3.0-beta2+9-dev",
+                    "datestamp": "1664372751",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -13272,17 +13272,17 @@
         },
         {
             "name": "drupal/views_bulk_edit",
-            "version": "2.6.0",
+            "version": "2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/views_bulk_edit.git",
-                "reference": "8.x-2.6"
+                "reference": "8.x-2.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_bulk_edit-8.x-2.6.zip",
-                "reference": "8.x-2.6",
-                "shasum": "0e0f1dab2fa0903cbe2656e754b0d9ed3a935fbb"
+                "url": "https://ftp.drupal.org/files/projects/views_bulk_edit-8.x-2.7.zip",
+                "reference": "8.x-2.7",
+                "shasum": "148457820e7ecd78942326c9c799147ed440f2a6"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -13296,8 +13296,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.6",
-                    "datestamp": "1623748025",
+                    "version": "8.x-2.7",
+                    "datestamp": "1664355764",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -13327,32 +13327,32 @@
         },
         {
             "name": "drupal/views_bulk_operations",
-            "version": "4.1.5",
+            "version": "4.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/views_bulk_operations.git",
-                "reference": "4.1.5"
+                "reference": "4.2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_bulk_operations-4.1.5.zip",
-                "reference": "4.1.5",
-                "shasum": "4a85fa401dae71d5ba8f116fac5d920a5260c631"
+                "url": "https://ftp.drupal.org/files/projects/views_bulk_operations-4.2.0.zip",
+                "reference": "4.2.0",
+                "shasum": "b18fd9a43c47ffaf20f5f888871ff801b6f9f99f"
             },
             "require": {
-                "drupal/core": "^9 || ^10"
+                "drupal/core": "^9.4 || ^10"
             },
             "require-dev": {
-                "drush/drush": "^10"
+                "drush/drush": "^11"
             },
             "suggest": {
-                "drush/drush": "^9 || ^10"
+                "drush/drush": "^10 || ^11"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "4.1.5",
-                    "datestamp": "1663950843",
+                    "version": "4.2.0",
+                    "datestamp": "1664360435",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -13360,7 +13360,7 @@
                 },
                 "drush": {
                     "services": {
-                        "drush.services.yml": "^9 || ^10"
+                        "drush.services.yml": "^10 || ^11"
                     }
                 }
             },
@@ -13737,7 +13737,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "2da5030e09da2bfe3303d5dada67e1d11a167d13"
+                "reference": "4ec3e92bd01682daf794a441aa23ab6bbcd83c0c"
             },
             "require": {
                 "drupal/core": "^9.4"
@@ -13788,8 +13788,8 @@
                     "dev-6.2.x": "6.2.x-dev"
                 },
                 "drupal": {
-                    "version": "6.2.0-beta3+3-dev",
-                    "datestamp": "1664056787",
+                    "version": "6.2.0-beta3+6-dev",
+                    "datestamp": "1664360834",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -21904,16 +21904,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v2.15.2",
+            "version": "v2.15.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "3e43405a9a8b578809426339cc3780e16fba0c52"
+                "reference": "ab402673db8746cb3a4c46f3869d6253699f614a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/3e43405a9a8b578809426339cc3780e16fba0c52",
-                "reference": "3e43405a9a8b578809426339cc3780e16fba0c52",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/ab402673db8746cb3a4c46f3869d6253699f614a",
+                "reference": "ab402673db8746cb3a4c46f3869d6253699f614a",
                 "shasum": ""
             },
             "require": {
@@ -21968,7 +21968,7 @@
             ],
             "support": {
                 "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/v2.15.2"
+                "source": "https://github.com/twigphp/Twig/tree/v2.15.3"
             },
             "funding": [
                 {
@@ -21980,7 +21980,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-08-12T06:43:37+00:00"
+            "time": "2022-09-28T08:40:08+00:00"
         },
         {
             "name": "typo3/phar-stream-wrapper",
