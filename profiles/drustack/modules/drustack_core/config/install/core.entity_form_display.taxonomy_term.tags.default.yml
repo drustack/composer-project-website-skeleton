@@ -29,6 +29,12 @@ content:
     third_party_settings: {}
     type: path
     weight: 3
+  publish_on:
+    region: content
+    settings: {}
+    third_party_settings: {}
+    type: datetime_timestamp_no_default
+    weight: 30
   status:
     region: content
     settings:
@@ -41,11 +47,18 @@ content:
     settings: {}
     third_party_settings: {}
     weight: 5
+  unpublish_on:
+    region: content
+    settings: {}
+    third_party_settings: {}
+    type: datetime_timestamp_no_default
+    weight: 30
 dependencies:
   config:
     - taxonomy.vocabulary.tags
   module:
     - path
+    - scheduler
     - text
 hidden: {}
 id: taxonomy_term.tags.default
