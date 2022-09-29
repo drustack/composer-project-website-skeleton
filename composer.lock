@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "372a08779ea341af5ee6326dcc8efd27",
+    "content-hash": "350538868fa230824f82eefaffa7745d",
     "packages": [
         {
             "name": "arthurkushman/query-path",
@@ -3733,23 +3733,23 @@
         },
         {
             "name": "drupal/config_inspector",
-            "version": "dev-1.x",
+            "version": "dev-2.1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_inspector.git",
-                "reference": "4903ef7bf3532aa2cb6e627f7167a1fd86e84ecc"
+                "reference": "5c7c729fe6021440e34f3dcea4abb4f7d65f5d74"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^9.2 || ^10"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-1.x": "1.x-dev"
+                    "dev-2.1.x": "2.1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.3+2-dev",
-                    "datestamp": "1633292603",
+                    "version": "2.1.0+0-dev",
+                    "datestamp": "1659038597",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
