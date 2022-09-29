@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0f31b55a99d59b0a03810e0ac37ed16b",
+    "content-hash": "230ebff2e418883e0ac4338b3366bfac",
     "packages": [
         {
             "name": "arthurkushman/query-path",
@@ -3445,15 +3445,15 @@
         },
         {
             "name": "drupal/clientside_validation",
-            "version": "dev-3.0.x",
+            "version": "dev-4.0.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/clientside_validation.git",
-                "reference": "92d28a997ad48b88e846a772166f56545894776b"
+                "reference": "8b05a17c3f39322335e31e2c270e9be676851ca8"
             },
             "require": {
-                "drupal/core": "^8.7.7 || ^9",
-                "php": ">=7.2.0"
+                "drupal/core": "^9.4 || ^10.0",
+                "php": ">=7.4.0"
             },
             "require-dev": {
                 "drupal/clientside_validation_demo": "*",
@@ -3462,11 +3462,11 @@
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-3.0.x": "3.0.x-dev"
+                    "dev-4.0.x": "4.0.x-dev"
                 },
                 "drupal": {
-                    "version": "3.0.0-rc7+1-dev",
-                    "datestamp": "1660913865",
+                    "version": "4.0.0+3-dev",
+                    "datestamp": "1661222842",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
