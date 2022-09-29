@@ -23,11 +23,23 @@ content:
     third_party_settings: {}
     type: string_textfield
     weight: 1
+  publish_on:
+    region: content
+    settings: {}
+    third_party_settings: {}
+    type: datetime_timestamp_no_default
+    weight: 30
   translation:
     region: content
     settings: {}
     third_party_settings: {}
     weight: 3
+  unpublish_on:
+    region: content
+    settings: {}
+    third_party_settings: {}
+    type: datetime_timestamp_no_default
+    weight: 30
 dependencies:
   config:
     - core.entity_form_mode.media.media_library
@@ -36,6 +48,7 @@ dependencies:
     - media.type.image
   module:
     - image
+    - scheduler
 hidden:
   created: true
   path: true
