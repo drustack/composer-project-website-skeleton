@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a4003f06ba1e10b21e292e2efe16a8c9",
+    "content-hash": "ea6550aa498dd5baa9f3baaebeacb19f",
     "packages": [
         {
             "name": "arthurkushman/query-path",
@@ -3073,81 +3073,26 @@
         },
         {
             "name": "drupal/calendar",
-            "version": "dev-1.x",
+            "version": "dev-2.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/calendar.git",
-                "reference": "ff894fd5b4828c2bf5c6b48bb43413925c268963"
+                "reference": "87b00adc7103da2d720c836a2b6fe4a0c6a318df"
             },
             "require": {
-                "drupal/calendar_datetime": "*",
-                "drupal/core": "^8 || ^9",
-                "drupal/views_templates": "^1.1"
+                "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-1.x": "1.x-dev"
+                    "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha4+6-dev",
-                    "datestamp": "1664226550",
+                    "version": "8.x-2.x-dev",
+                    "datestamp": "1621165841",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Neslee Canil Pinto",
-                    "homepage": "https://www.drupal.org/u/neslee-canil-pinto",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Eric Sol",
-                    "homepage": "https://www.drupal.org/u/solide-echt",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "KarenS",
-                    "homepage": "https://www.drupal.org/user/45874"
-                },
-                {
-                    "name": "paulocs",
-                    "homepage": "https://www.drupal.org/user/3640109"
-                },
-                {
-                    "name": "solide-echt",
-                    "homepage": "https://www.drupal.org/user/46176"
-                }
-            ],
-            "description": "Provides a Views plugin to display views containing dates as Calendars.",
-            "homepage": "https://www.drupal.org/project/calendar",
-            "support": {
-                "source": "https://git.drupalcode.org/project/calendar",
-                "issues": "https://www.drupal.org/project/issues/calendar"
-            }
-        },
-        {
-            "name": "drupal/calendar_datetime",
-            "version": "1.0.0-alpha4",
-            "require": {
-                "drupal/calendar": "^1",
-                "drupal/core": "^8 || ^9"
-            },
-            "type": "metapackage",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.0-alpha4",
-                    "datestamp": "1621960842",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -3177,7 +3122,7 @@
                     "homepage": "https://www.drupal.org/user/46176"
                 }
             ],
-            "description": "Provides a calendar specific date time.",
+            "description": "Calendar V2",
             "homepage": "https://www.drupal.org/project/calendar",
             "support": {
                 "source": "https://git.drupalcode.org/project/calendar"
