@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5a04b1221a54f03ae23023c12a079869",
+    "content-hash": "65f62f13b7fa66f1d6c0fbbb8ba75ef3",
     "packages": [
         {
             "name": "arthurkushman/query-path",
@@ -6556,24 +6556,24 @@
         },
         {
             "name": "drupal/features",
-            "version": "dev-3.x",
+            "version": "dev-5.0.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/features.git",
-                "reference": "d62788ecefa7f4f14eb0263232e695aa70f9038e"
+                "reference": "8a34ef89b2463e7a8e7fd0dcc88985683e924cb8"
             },
             "require": {
-                "drupal/config_update": "^1.4",
-                "drupal/core": "^8.8 || ^9"
+                "drupal/config_update": "^1.4 || ^2",
+                "drupal/core": "^9.4 || ^10"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-3.x": "3.x-dev"
+                    "dev-5.0.x": "5.0.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.12+1-dev",
-                    "datestamp": "1628545669",
+                    "version": "5.0.x-dev",
+                    "datestamp": "1661527997",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
