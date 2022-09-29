@@ -1,0 +1,19 @@
+dependencies:
+  module:
+    - system
+  theme:
+    - olivero
+id: olivero_content
+langcode: en
+plugin: system_main_block
+provider: null
+region: content
+settings:
+  id: system_main_block
+  label: Main page content
+  label_display: "0"
+  provider: system
+status: true
+theme: olivero
+visibility: {}
+weight: 0

@@ -1,0 +1,31 @@
+breakpoint_group: bootstrap_barrio
+dependencies:
+  config:
+    - image.style.extra
+    - image.style.large
+    - image.style.medium
+    - image.style.small
+  theme:
+    - bootstrap_barrio
+fallback_image_style: small
+id: bootstrap
+image_style_mappings:
+  - breakpoint_id: bootstrap_barrio.extra
+    image_mapping: extra
+    image_mapping_type: image_style
+    multiplier: 1x
+  - breakpoint_id: bootstrap_barrio.large
+    image_mapping: large
+    image_mapping_type: image_style
+    multiplier: 1x
+  - breakpoint_id: bootstrap_barrio.medium
+    image_mapping: medium
+    image_mapping_type: image_style
+    multiplier: 1x
+  - breakpoint_id: bootstrap_barrio.small
+    image_mapping: small
+    image_mapping_type: image_style
+    multiplier: 1x
+label: Bootstrap
+langcode: en
+status: true

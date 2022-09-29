@@ -1,0 +1,19 @@
+dependencies:
+  theme:
+    - olivero
+id: olivero_secondary_local_tasks
+langcode: en
+plugin: local_tasks_block
+provider: null
+region: highlighted
+settings:
+  id: local_tasks_block
+  label: Secondary tabs
+  label_display: "0"
+  primary: false
+  provider: core
+  secondary: true
+status: true
+theme: olivero
+visibility: {}
+weight: -2

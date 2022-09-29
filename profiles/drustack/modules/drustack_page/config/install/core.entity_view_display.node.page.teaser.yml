@@ -13,11 +13,9 @@ content:
     region: content
     settings:
       image_link: content
-      image_loading:
-        attribute: lazy
-      image_style: ""
+      responsive_image_style: bootstrap
     third_party_settings: {}
-    type: image
+    type: responsive_image
     weight: 0
   field_tags:
     label: visually_hidden
@@ -39,8 +37,9 @@ dependencies:
     - field.field.node.page.field_image
     - field.field.node.page.field_tags
     - node.type.page
+    - responsive_image.styles.bootstrap
   module:
-    - image
+    - responsive_image
     - text
     - user
 hidden:

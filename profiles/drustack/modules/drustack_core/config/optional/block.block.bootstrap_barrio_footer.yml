@@ -1,0 +1,30 @@
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_footer
+langcode: en
+plugin: system_menu_block:footer
+provider: null
+region: footer_fifth
+settings:
+  depth: 0
+  expand_all_items: false
+  follow: 0
+  follow_parent: child
+  id: system_menu_block:footer
+  label: Footer menu
+  label_display: "0"
+  label_link: false
+  label_type: block
+  level: 1
+  parent: 'footer:'
+  provider: system
+  suggestion: footer
+status: true
+theme: bootstrap_barrio
+visibility: {}
+weight: 0

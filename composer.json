@@ -64,6 +64,10 @@
             "drupal/asset_injector": {
                 "https://drupal.org/node/3181674": "https://drupal.org/files/issues/2021-10-29/add-library-info-tag-3181674-7.patch"
             },
+            "drupal/block_class": {
+                "https://drupal.org/node/3279758": "https://git.drupalcode.org/project/block_class/-/merge_requests/5.diff",
+                "https://drupal.org/node/3296649": "https://drupal.org/files/issues/2022-07-18/block_class.2.0.x-dev.rector.patch"
+            },
             "drupal/bootstrap_barrio": {
                 "https://drupal.org/node/3266511": "https://git.drupalcode.org/project/bootstrap_barrio/-/merge_requests/17.diff"
             },
@@ -84,14 +88,15 @@
                 "https://drupal.org/node/2869592": "https://git.drupalcode.org/project/drupal/-/merge_requests/1517.diff",
                 "https://drupal.org/node/2896169": "https://git.drupalcode.org/project/drupal/-/merge_requests/1887.diff",
                 "https://drupal.org/node/2924653": "https://drupal.org/files/issues/2022-05-19/2924653-38.patch",
-                "https://drupal.org/node/2946333": "https://drupal.org/files/issues/2022-07-25/2946333-288.patch",
+                "https://drupal.org/node/2946333": "https://drupal.org/files/issues/2022-09-20/core-9.5.x-allow-synced-layout-drupal-2946333-292.patch",
                 "https://drupal.org/node/2985882": "https://drupal.org/files/issues/2022-05-30/2985882-field-142.patch",
                 "https://drupal.org/node/3008924": "https://drupal.org/files/issues/2022-07-11/3008924-33.patch",
                 "https://drupal.org/node/3015152": "https://drupal.org/files/issues/2022-08-22/drupal-9.4.x-3015152-174.patch",
                 "https://drupal.org/node/3025039": "https://git.drupalcode.org/project/drupal/-/merge_requests/1105.diff",
                 "https://drupal.org/node/3180227": "https://drupal.org/files/issues/2022-04-20/3180227-28.patch",
                 "https://drupal.org/node/3255637": "https://drupal.org/files/issues/2022-08-08/3255637-58.patch",
-                "https://drupal.org/node/3292350": "https://drupal.org/files/issues/2022-08-12/core-9.5.x-3292350-file_validate_image_resolution-8.patch"
+                "https://drupal.org/node/3292350": "https://drupal.org/files/issues/2022-08-12/core-9.5.x-3292350-file_validate_image_resolution-8.patch",
+                "https://drupal.org/node/3312477": "https://drupal.org/files/issues/2022-09-29/core-9.5.x-SA-CORE-2022-016-3312477-4.patch"
             },
             "drupal/ctools": {
                 "https://drupal.org/node/2475595": "https://drupal.org/files/issues/2022-02-14/2475595-ctools-autocomplete-fix-81.patch"
@@ -102,12 +107,14 @@
             },
             "drupal/facets": {
                 "https://drupal.org/node/3031544": "https://git.drupalcode.org/project/facets/-/merge_requests/55.diff",
-                "https://drupal.org/node/3073444": "https://drupal.org/files/issues/2022-09-13/facets-create-views-plugins-3073444-166.patch",
+                "https://drupal.org/node/3073444": "https://git.drupalcode.org/project/facets/-/merge_requests/106.diff",
                 "https://drupal.org/node/3153622": "https://git.drupalcode.org/project/facets/-/merge_requests/43.diff",
                 "https://drupal.org/node/3187388": "https://git.drupalcode.org/project/facets/-/merge_requests/53.diff"
             },
             "drupal/features": {
-                "https://drupal.org/node/3034826": "https://drupal.org/files/issues/2021-03-31/features-call_to_member_function_on_null-3034826-5.patch"
+                "https://drupal.org/node/3034826": "https://drupal.org/files/issues/2021-03-31/features-call_to_member_function_on_null-3034826-5.patch",
+                "https://drupal.org/node/3202711": "https://git.drupalcode.org/project/features/-/merge_requests/9.diff",
+                "https://drupal.org/node/3229045": "https://git.drupalcode.org/project/features/-/merge_requests/14.diff"
             },
             "drupal/feeds": {
                 "https://drupal.org/node/3189557": "https://drupal.org/files/issues/2022-07-18/langcode_target-3189557-13.patch"
@@ -219,20 +226,20 @@
         "drupal/config_split": "2.0.x-dev",
         "drupal/config_update": "~1.7",
         "drupal/content_access": "1.x-dev",
-        "drupal/core-composer-scaffold": "~9.4.5",
-        "drupal/core-project-message": "~9.4.5",
-        "drupal/core-recommended": "~9.4.5",
-        "drupal/core-vendor-hardening": "~9.4.5",
+        "drupal/core-composer-scaffold": "9.5.x-dev",
+        "drupal/core-project-message": "9.5.x-dev",
+        "drupal/core-recommended": "9.5.x-dev",
+        "drupal/core-vendor-hardening": "9.5.x-dev",
         "drupal/core_views_facets": "~2.0.2",
         "drupal/csv_serialization": "2.x-dev",
         "drupal/ctools": "3.x-dev",
         "drupal/default_content": "2.0.x-dev",
-        "drupal/devel": "4.x-dev",
+        "drupal/devel": "5.x-dev",
         "drupal/devel_entity_updates": "~3.0",
         "drupal/diff": "~1.0",
         "drupal/dropdown_language": "3.0.x-dev",
         "drupal/dropzonejs": "~2.5",
-        "drupal/easy_breadcrumb": "1.x-dev",
+        "drupal/easy_breadcrumb": "2.x-dev",
         "drupal/editor_advanced_link": "~1.8",
         "drupal/editor_file": "~1.5",
         "drupal/email_registration": "~1.1",
@@ -350,7 +357,7 @@
         "drupal/views_block_filter_block": "1.x-dev",
         "drupal/views_bootstrap": "5.5.x-dev",
         "drupal/views_bulk_edit": "~2.6",
-        "drupal/views_bulk_operations": "~4.1.0",
+        "drupal/views_bulk_operations": "~4.2.0",
         "drupal/views_data_export": "~1.0",
         "drupal/views_geojson": "1.x-dev",
         "drupal/views_googlenews": "1.x-dev",
@@ -384,9 +391,10 @@
         "composer/composer": "~2.0",
         "composer/installers": "~1.9",
         "cweagans/composer-patches": "~1.7",
-        "drupal/core-dev": "~9.4.5",
+        "drupal/core-dev": "9.5.x-dev",
         "drush/drush": "~11.1",
         "drustack/composer-generate-metadata": "~2.0",
+        "mglaman/drupal-check": "~1.4",
         "oomphinc/composer-installers-extender": "~2.0",
         "zaporylie/composer-drupal-optimizations": "~1.2"
     },

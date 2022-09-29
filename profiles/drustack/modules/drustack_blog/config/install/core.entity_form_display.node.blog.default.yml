@@ -9,19 +9,27 @@ content:
       summary_rows: 3
     third_party_settings: {}
     type: text_textarea_with_summary
-    weight: 2
+    weight: 3
   comment:
     region: content
     settings: {}
     third_party_settings: {}
     type: comment_default
-    weight: 13
+    weight: 16
   created:
     region: content
     settings: {}
     third_party_settings: {}
     type: datetime_timestamp
     weight: 6
+  field_image:
+    region: content
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings: {}
+    type: image_image
+    weight: 2
   field_tags:
     region: content
     settings:
@@ -31,7 +39,7 @@ content:
       size: 60
     third_party_settings: {}
     type: entity_reference_autocomplete_tags
-    weight: 3
+    weight: 4
   langcode:
     region: content
     settings:
@@ -44,7 +52,7 @@ content:
     settings: {}
     third_party_settings: {}
     type: path
-    weight: 14
+    weight: 13
   promote:
     region: content
     settings:
@@ -89,7 +97,7 @@ content:
     region: content
     settings: {}
     third_party_settings: {}
-    weight: 16
+    weight: 15
   uid:
     region: content
     settings:
@@ -110,15 +118,18 @@ content:
     region: content
     settings: {}
     third_party_settings: {}
-    weight: 15
+    weight: 14
 dependencies:
   config:
     - field.field.node.blog.body
     - field.field.node.blog.comment
+    - field.field.node.blog.field_image
     - field.field.node.blog.field_tags
+    - image.style.thumbnail
     - node.type.blog
   module:
     - comment
+    - image
     - path
     - scheduler
     - text
