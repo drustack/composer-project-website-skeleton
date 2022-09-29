@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1868007e7cf028de249b54e0711732fe",
+    "content-hash": "e99f77256aedef6651364e6a88f89fed",
     "packages": [
         {
             "name": "arthurkushman/query-path",
@@ -4052,12 +4052,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "450475ec1b9f47a73fbb57cd1a458c10c5e12a01"
+                "reference": "5df03cde759688c5ffc6ec2808d4c9483a19b6a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/450475ec1b9f47a73fbb57cd1a458c10c5e12a01",
-                "reference": "450475ec1b9f47a73fbb57cd1a458c10c5e12a01",
+                "url": "https://api.github.com/repos/drupal/core/zipball/5df03cde759688c5ffc6ec2808d4c9483a19b6a6",
+                "reference": "5df03cde759688c5ffc6ec2808d4c9483a19b6a6",
                 "shasum": ""
             },
             "require": {
@@ -4103,7 +4103,7 @@
                 "symfony/translation": "^4.4",
                 "symfony/validator": "^4.4",
                 "symfony/yaml": "^4.4.19",
-                "twig/twig": "^2.15",
+                "twig/twig": "^2.15.3",
                 "typo3/phar-stream-wrapper": "^3.1.3"
             },
             "conflict": {
@@ -4211,7 +4211,7 @@
             "support": {
                 "source": "https://github.com/drupal/core/tree/9.5.x"
             },
-            "time": "2022-09-28T09:39:48+00:00"
+            "time": "2022-09-29T07:49:39+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
@@ -4310,12 +4310,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "c97d54cb10caf031a9d2694aae3baeca0b21c044"
+                "reference": "b2e0623ee28f3ca325bcb7a712c63a28b0d98806"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/c97d54cb10caf031a9d2694aae3baeca0b21c044",
-                "reference": "c97d54cb10caf031a9d2694aae3baeca0b21c044",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/b2e0623ee28f3ca325bcb7a712c63a28b0d98806",
+                "reference": "b2e0623ee28f3ca325bcb7a712c63a28b0d98806",
                 "shasum": ""
             },
             "require": {
@@ -4373,7 +4373,7 @@
                 "symfony/validator": "~v4.4.45",
                 "symfony/var-dumper": "~v5.4.11",
                 "symfony/yaml": "~v4.4.45",
-                "twig/twig": "~v2.15.2",
+                "twig/twig": "~v2.15.3",
                 "typo3/phar-stream-wrapper": "~v3.1.7"
             },
             "conflict": {
@@ -4388,7 +4388,7 @@
             "support": {
                 "source": "https://github.com/drupal/core-recommended/tree/9.5.x"
             },
-            "time": "2022-09-16T19:49:41+00:00"
+            "time": "2022-09-29T07:49:39+00:00"
         },
         {
             "name": "drupal/core-vendor-hardening",
@@ -5974,7 +5974,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity_usage.git",
-                "reference": "87d5ffdaea7679fd2e78eb301aa5e0bb31b0b2ee"
+                "reference": "d18768adee9937e9772f5bcfa52090203585469a"
             },
             "require": {
                 "drupal/core": "^9.1 || ^10"
@@ -5996,8 +5996,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0-beta6+11-dev",
-                    "datestamp": "1662623976",
+                    "version": "8.x-2.0-beta7+2-dev",
+                    "datestamp": "1664438305",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -6005,7 +6005,7 @@
                 },
                 "drush": {
                     "services": {
-                        "drush.services.yml": "^9"
+                        "drush.services.yml": "^9 || ^10 || ^11"
                     }
                 }
             },
