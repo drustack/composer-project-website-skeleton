@@ -15,16 +15,30 @@ content:
     third_party_settings: {}
     type: string_textfield
     weight: 1
+  publish_on:
+    region: content
+    settings: {}
+    third_party_settings: {}
+    type: datetime_timestamp_no_default
+    weight: 30
   translation:
     region: content
     settings: {}
     third_party_settings: {}
     weight: 2
+  unpublish_on:
+    region: content
+    settings: {}
+    third_party_settings: {}
+    type: datetime_timestamp_no_default
+    weight: 30
 dependencies:
   config:
     - core.entity_form_mode.media.media_library
     - field.field.media.video.field_media_video_file
     - media.type.video
+  module:
+    - scheduler
 hidden:
   created: true
   field_media_video_file: true
