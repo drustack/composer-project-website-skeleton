@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "546b13c5526a2f0b57e2ee64dc0e293f",
+    "content-hash": "1569cb1fbff1dda662607065c468529a",
     "packages": [
         {
             "name": "arthurkushman/query-path",
@@ -6857,14 +6857,14 @@
         },
         {
             "name": "drupal/file_delete",
-            "version": "dev-1.x",
+            "version": "dev-2.0.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/file_delete.git",
-                "reference": "154aef29df1f7140f1b0d71fa7dcd47557ebef51"
+                "reference": "8f725a655d76d38c2f55dbdc07161350f5b79189"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^8 || ^9 || ^10"
             },
             "require-dev": {
                 "drupal/coder": "^8.3"
@@ -6872,11 +6872,11 @@
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-1.x": "1.x-dev"
+                    "dev-2.0.x": "2.0.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0+4-dev",
-                    "datestamp": "1650489652",
+                    "version": "2.0.0+0-dev",
+                    "datestamp": "1667484613",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
