@@ -3,7 +3,6 @@
  * Theme styling for user module.
  */
 
-@use "sass:math";
 
 /* Visual styling for the Password strength indicator */
 
@@ -98,11 +97,11 @@ body.path-user {
       color: $secondary
     }
     .field__item {
-      padding: math.div($spacer, 4) $spacer;
+      padding: calc($spacer / 4) $spacer;
       border-radius: $spacer;
       background: $gray-200;
       min-width: 250px;
-      margin: math.div($spacer, 4) 0; 
+      margin: calc($spacer / 4) 0;
     }
   }
 
@@ -111,11 +110,11 @@ body.path-user {
       color: $secondary
     }
     .field__item {
-      padding: math.div($spacer, 4) $spacer;
+      padding: calc($spacer / 4) $spacer;
       border-radius: $spacer;
       background: $gray-200;
       width: 100%;
-      margin: math.div($spacer, 4) 0; 
+      margin: calc($spacer / 4) 0;
     }
   }
 }

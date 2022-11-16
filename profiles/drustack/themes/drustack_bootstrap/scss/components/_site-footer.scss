@@ -3,8 +3,6 @@
  * Footer Styling.
  */
 
-@use "sass:math";
-
 .site-footer {
     padding: $spacer 0;
     .layout-container {
@@ -23,10 +21,10 @@
 /* Footer Bottom Styling. */
 
 .site-footer__bottom .block {
-    margin: math.div($spacer, 2) 0;
+    margin: calc($spacer / 2) 0;
 }
 
 .site-footer__bottom .content {
-    padding: math.div($spacer, 2) 0;
+    padding: calc($spacer / 2) 0;
     margin-top: 0;
 }
