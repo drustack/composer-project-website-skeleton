@@ -3,8 +3,6 @@
  * Visual styles for table drag.
  */
 
-@use "sass:math";
-
 tr.drag {
     background-color: #fffff0;
 }
@@ -14,5 +12,10 @@ tr.drag-previous {
 }
 
 body div.tabledrag-changed-warning {
-    margin-bottom: math.div($spacer, 2);
+    margin-bottom: calc($spacer / 2);
+}
+
+a.tabledrag-handle .handle {
+    width: 25px;
+    height: 25px;
 }
