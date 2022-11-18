@@ -4425,7 +4425,7 @@
         },
         {
             "name": "drupal/ctools_views",
-            "version": "4.0.2",
+            "version": "4.0.3",
             "require": {
                 "drupal/core": "^9.3 || ^10",
                 "drupal/ctools": "^4"
@@ -4433,8 +4433,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "4.0.2",
-                    "datestamp": "1668486570",
+                    "version": "4.0.3",
+                    "datestamp": "1668631947",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8960,10 +8960,10 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/media_entity_browser.git",
-                "reference": "31fdf95403a2a31f23505d720cd03299213f9d80"
+                "reference": "7ac493b1d0c695a3f939be9564f68295780d8f88"
             },
             "require": {
-                "drupal/core": "^8 || ^9",
+                "drupal/core": "^8 || ^9 || ^10",
                 "drupal/entity_browser": "*",
                 "drupal/entity_browser_entity_form": "*",
                 "drupal/inline_entity_form": "*"
@@ -8981,8 +8981,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0-alpha2+3-dev",
-                    "datestamp": "1593747442",
+                    "version": "8.x-2.0-alpha3+1-dev",
+                    "datestamp": "1668745413",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -8994,10 +8994,6 @@
                 "GPL-2.0-or-later"
             ],
             "authors": [
-                {
-                    "name": "Sam152",
-                    "homepage": "https://www.drupal.org/user/1485048"
-                },
                 {
                     "name": "acbramley",
                     "homepage": "https://www.drupal.org/user/1036766"
@@ -9013,6 +9009,10 @@
                 {
                     "name": "rikki_iki",
                     "homepage": "https://www.drupal.org/user/1068918"
+                },
+                {
+                    "name": "Sam152",
+                    "homepage": "https://www.drupal.org/user/1485048"
                 }
             ],
             "description": "This module provides an Entity Browser for Media.",
@@ -12042,7 +12042,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/tamper.git",
-                "reference": "79573b742d0c1acb5f5e0bf79daeb43496aa258f"
+                "reference": "52d1ce06f91d8d2f9b90719421878af0bfa52204"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9 || ^10"
@@ -12053,8 +12053,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha2+8-dev",
-                    "datestamp": "1668338349",
+                    "version": "8.x-1.0-alpha2+9-dev",
+                    "datestamp": "1668697365",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -13499,7 +13499,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "3b4144f2c1ecbf38cae8dbe98f071d61b30d56a1"
+                "reference": "d91d558c5bec2d0620c3f08ac27be70d5f2170a7"
             },
             "require": {
                 "drupal/core": "^9.4"
@@ -13550,8 +13550,8 @@
                     "dev-6.2.x": "6.2.x-dev"
                 },
                 "drupal": {
-                    "version": "6.2.0-beta3+52-dev",
-                    "datestamp": "1668615215",
+                    "version": "6.2.0-beta3+55-dev",
+                    "datestamp": "1668626455",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
