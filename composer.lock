@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "42bd0e2d48929d8a06289648b3d073e8",
+    "content-hash": "42f9cedc2e1dd0ce5fe2f31fb77fe1f8",
     "packages": [
         {
             "name": "arthurkushman/query-path",
@@ -11116,26 +11116,29 @@
         },
         {
             "name": "drupal/security_review",
-            "version": "dev-1.x",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/security_review.git",
-                "reference": "282208f013ddc2742d060bd055b424dced97b576"
+                "reference": "2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/security_review-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "64f85dd6291d50952a19ece0e4bb5569d74fb193"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^9 || ^10"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.0-alpha2+9-dev",
-                    "datestamp": "1667952547",
+                    "version": "2.0.0",
+                    "datestamp": "1667955325",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -11145,30 +11148,36 @@
             ],
             "authors": [
                 {
-                    "name": "banviktor",
-                    "homepage": "https://www.drupal.org/user/3176333"
+                    "name": "Greg Knaddison (greggles)",
+                    "homepage": "https://www.drupal.org/u/greggles",
+                    "role": "Maintainer"
                 },
                 {
-                    "name": "coltrane",
-                    "homepage": "https://www.drupal.org/user/91990"
+                    "name": "Ben Jeavons (coltrane)",
+                    "homepage": "https://www.drupal.org/u/coltrane",
+                    "role": "Maintainer"
                 },
                 {
-                    "name": "dsnopek",
-                    "homepage": "https://www.drupal.org/user/266527"
+                    "name": "David Snopek (dsnopek)",
+                    "homepage": "https://www.drupal.org/u/dsnopek",
+                    "role": "Maintainer"
                 },
                 {
-                    "name": "greggles",
-                    "homepage": "https://www.drupal.org/user/36762"
+                    "name": "Viktor Bán (banviktor)",
+                    "homepage": "https://www.drupal.org/u/banviktor",
+                    "role": "Maintainer"
                 },
                 {
-                    "name": "smustgrave",
-                    "homepage": "https://www.drupal.org/user/3252890"
+                    "name": "Stephen Mustgrave (smustgrave)",
+                    "homepage": "https://www.drupal.org/u/smustgrave",
+                    "role": "Maintainer"
                 }
             ],
-            "description": "Site security and configuration review module.",
+            "description": "The Security Review module automates testing for many of the easy-to-make mistakes that render your site insecure..",
             "homepage": "https://www.drupal.org/project/security_review",
             "support": {
-                "source": "https://git.drupalcode.org/project/security_review"
+                "source": "https://git.drupalcode.org/project/security_review",
+                "issues": "https://www.drupal.org/project/issues/security_review"
             }
         },
         {
@@ -26513,7 +26522,6 @@
         "drupal/search_api_location": 20,
         "drupal/search_api_solr": 20,
         "drupal/seckit": 20,
-        "drupal/security_review": 20,
         "drupal/select2": 20,
         "drupal/sharedemail": 20,
         "drupal/sitemap": 20,
