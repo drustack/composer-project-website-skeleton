@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "44cbe080b73e69cb871cb3aa5851b8da",
+    "content-hash": "c6eb56451cff990bc4b02ebc63c2347c",
     "packages": [
         {
             "name": "arthurkushman/query-path",
@@ -8056,6 +8056,72 @@
             }
         },
         {
+            "name": "drupal/jquery_ui_autocomplete",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/jquery_ui_autocomplete.git",
+                "reference": "2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/jquery_ui_autocomplete-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "927d312a74002f99e1c971d3d268be1b0a532fc7"
+            },
+            "require": {
+                "drupal/core": "^9.2 || ^10",
+                "drupal/jquery_ui": "^1.6",
+                "drupal/jquery_ui_menu": "^2"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0",
+                    "datestamp": "1670871461",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "bnjmnm",
+                    "homepage": "https://www.drupal.org/user/2369194"
+                },
+                {
+                    "name": "lauriii",
+                    "homepage": "https://www.drupal.org/user/1078742"
+                },
+                {
+                    "name": "nod_",
+                    "homepage": "https://www.drupal.org/user/598310"
+                },
+                {
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
+                },
+                {
+                    "name": "Wim Leers",
+                    "homepage": "https://www.drupal.org/user/99777"
+                },
+                {
+                    "name": "zrpnr",
+                    "homepage": "https://www.drupal.org/user/1448368"
+                }
+            ],
+            "description": "Provides jQuery UI Autocomplete library.",
+            "homepage": "https://www.drupal.org/project/jquery_ui_autocomplete",
+            "support": {
+                "source": "https://git.drupalcode.org/project/jquery_ui_autocomplete"
+            }
+        },
+        {
             "name": "drupal/jquery_ui_datepicker",
             "version": "2.0.0",
             "source": {
@@ -8175,6 +8241,71 @@
             "homepage": "https://www.drupal.org/project/jquery_ui_effects",
             "support": {
                 "source": "https://git.drupalcode.org/project/jquery_ui_effects"
+            }
+        },
+        {
+            "name": "drupal/jquery_ui_menu",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/jquery_ui_menu.git",
+                "reference": "2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/jquery_ui_menu-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "5e1b56bf457669c7779a81784f49da63e3956854"
+            },
+            "require": {
+                "drupal/core": "^9.2 || ^10",
+                "drupal/jquery_ui": "^1.6"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0",
+                    "datestamp": "1670871546",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "bnjmnm",
+                    "homepage": "https://www.drupal.org/user/2369194"
+                },
+                {
+                    "name": "lauriii",
+                    "homepage": "https://www.drupal.org/user/1078742"
+                },
+                {
+                    "name": "nod_",
+                    "homepage": "https://www.drupal.org/user/598310"
+                },
+                {
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
+                },
+                {
+                    "name": "Wim Leers",
+                    "homepage": "https://www.drupal.org/user/99777"
+                },
+                {
+                    "name": "zrpnr",
+                    "homepage": "https://www.drupal.org/user/1448368"
+                }
+            ],
+            "description": "Provides jQuery UI Menu library.",
+            "homepage": "https://www.drupal.org/project/jquery_ui_menu",
+            "support": {
+                "source": "https://git.drupalcode.org/project/jquery_ui_menu"
             }
         },
         {
@@ -9429,26 +9560,30 @@
         },
         {
             "name": "drupal/module_filter",
-            "version": "dev-3.x",
+            "version": "4.0.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/module_filter.git",
-                "reference": "4285128003f2d29a2feba30e9535b61c1bfdd2bb"
+                "reference": "4.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/module_filter-4.0.1.zip",
+                "reference": "4.0.1",
+                "shasum": "6c18b7689b24b694d84b73fcfcbfb4ce013deb59"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^9 || ^10",
+                "drupal/jquery_ui_autocomplete": "^2.0"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-3.2+10-dev",
-                    "datestamp": "1671484745",
+                    "version": "4.0.1",
+                    "datestamp": "1671484875",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -26431,7 +26566,6 @@
         "drupal/memcache": 20,
         "drupal/menu_block": 20,
         "drupal/mimemail": 20,
-        "drupal/module_filter": 20,
         "drupal/office_hours": 20,
         "drupal/paragraphs": 20,
         "drupal/password_policy": 20,
