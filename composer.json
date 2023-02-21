@@ -58,9 +58,6 @@
             "npm-asset"
         ],
         "patches": {
-            "drupal/advagg": {
-                "https://drupal.org/node/3258389": "https://git.drupalcode.org/project/advagg/-/merge_requests/6.diff"
-            },
             "drupal/asset_injector": {
                 "https://drupal.org/node/3181674": "https://drupal.org/files/issues/2021-10-29/add-library-info-tag-3181674-7.patch"
             },
@@ -116,9 +113,6 @@
             },
             "drupal/geofield": {
                 "https://drupal.org/node/3254909": "https://git.drupalcode.org/project/geofield/-/merge_requests/9.diff"
-            },
-            "drupal/leaflet": {
-                "https://drupal.org/node/3255306": "https://git.drupalcode.org/project/leaflet/-/merge_requests/15.diff"
             },
             "drupal/profile": {
                 "https://drupal.org/node/2899744": "https://drupal.org/files/issues/2022-04-17/2899744-54.patch",
@@ -176,11 +170,11 @@
         "drupal/acl": "1.x-dev",
         "drupal/address": "1.x-dev",
         "drupal/admin_toolbar": "3.x-dev",
-        "drupal/advagg": "~5.0.0",
+        "drupal/advagg": "6.0.x-dev",
         "drupal/asset_injector": "2.x-dev",
         "drupal/authorization": "1.x-dev",
         "drupal/avatars": "~1.1",
-        "drupal/back_to_top": "~2.0.0",
+        "drupal/back_to_top": "~3.0.0",
         "drupal/better_exposed_filters": "6.0.x-dev",
         "drupal/blazy": "2.x-dev",
         "drupal/block_class": "2.0.x-dev",
@@ -192,13 +186,14 @@
         "drupal/bootstrap_sass": "5.x-dev",
         "drupal/calendar": "2.x-dev",
         "drupal/captcha": "1.x-dev",
-        "drupal/cdn": "~3.5",
+        "drupal/cas": "~2.0.2",
+        "drupal/cdn": "~4.0.1",
         "drupal/checklistapi": "~2.0",
         "drupal/clamav": "2.x-dev",
         "drupal/clientside_validation": "4.0.x-dev",
         "drupal/codesnippet": "1.x-dev",
         "drupal/coffee": "1.x-dev",
-        "drupal/computed_field": "3.x-dev",
+        "drupal/computed_field": "4.0.x-dev",
         "drupal/conditional_fields": "4.x-dev",
         "drupal/config_inspector": "2.1.x-dev",
         "drupal/config_rewrite": "~1.4",
@@ -216,7 +211,7 @@
         "drupal/devel": "5.x-dev",
         "drupal/devel_entity_updates": "~4.0",
         "drupal/diff": "~1.0",
-        "drupal/dropdown_language": "3.0.x-dev",
+        "drupal/dropdown_language": "~3.1.0",
         "drupal/dropzonejs": "~2.5",
         "drupal/easy_breadcrumb": "2.x-dev",
         "drupal/editor_advanced_link": "~2.1.1",
@@ -243,7 +238,7 @@
         "drupal/field_validation": "1.x-dev",
         "drupal/file_browser": "~1.3",
         "drupal/file_delete": "2.0.x-dev",
-        "drupal/flood_control": "~2.2.2",
+        "drupal/flood_control": "~2.3.0",
         "drupal/fontyourface": "~3.5",
         "drupal/form_options_attributes": "2.0.x-dev",
         "drupal/geocoder": "3.x-dev",
@@ -262,7 +257,7 @@
         "drupal/layout_builder_restrictions": "~2.8",
         "drupal/layout_library": "1.x-dev",
         "drupal/ldap": "4.x-dev",
-        "drupal/leaflet": "3.0.x-dev",
+        "drupal/leaflet": "~10.0.8",
         "drupal/libraries": "~4.0.0",
         "drupal/link_attributes": "~1.11",
         "drupal/linkit": "~6.0.0-beta3",
@@ -280,7 +275,7 @@
         "drupal/multiple_registration": "~3.0",
         "drupal/office_hours": "1.x-dev",
         "drupal/paragraphs": "1.x-dev",
-        "drupal/password_policy": "3.x-dev",
+        "drupal/password_policy": "~4.0.0",
         "drupal/pathauto": "~1.8",
         "drupal/poll": "~1.4",
         "drupal/profile": "1.x-dev",
@@ -304,7 +299,7 @@
         "drupal/securelogin": "~1.8",
         "drupal/security_review": "~2.0.0",
         "drupal/select2": "1.x-dev",
-        "drupal/sharedemail": "2.x-dev",
+        "drupal/sharedemail": "~3.0.0",
         "drupal/shield": "~1.4",
         "drupal/sitemap": "2.x-dev",
         "drupal/slick": "2.x-dev",
