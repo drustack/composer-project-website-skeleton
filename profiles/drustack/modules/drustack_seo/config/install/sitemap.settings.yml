@@ -1,7 +1,7 @@
 include_css: true
 message:
   format: plain_text
-  value: ""
+  value: ''
 page_title: Sitemap
 plugins:
   frontpage:
@@ -10,29 +10,29 @@ plugins:
     provider: sitemap
     settings:
       rss: /rss.xml
-      title: Front page
+      title: 'Front page'
     weight: -46
-  menu:footer:
+  'menu:footer':
     enabled: true
-    id: menu:footer
+    id: 'menu:footer'
     provider: sitemap
     settings:
       show_disabled: false
       title: Footer
     weight: -43
-  menu:header:
+  'menu:header':
     enabled: true
-    id: menu:header
+    id: 'menu:header'
     provider: sitemap
     settings:
       show_disabled: false
       title: Header
     weight: -45
-  menu:main:
+  'menu:main':
     enabled: true
-    id: menu:main
+    id: 'menu:main'
     provider: sitemap
     settings:
       show_disabled: false
-      title: Main navigation
+      title: 'Main navigation'
     weight: -44

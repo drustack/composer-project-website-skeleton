@@ -1,54 +1,54 @@
+langcode: en
+status: true
 dependencies:
   config:
     - core.entity_view_mode.media.media_library
   module:
     - editor
     - media
+name: 'Basic HTML'
+format: basic_html
+weight: -3
 filters:
   editor_file_reference:
     id: editor_file_reference
     provider: editor
-    settings: {}
     status: true
     weight: -30
+    settings: {  }
   filter_align:
     id: filter_align
     provider: filter
-    settings: {}
     status: true
     weight: 30
+    settings: {  }
   filter_caption:
     id: filter_caption
     provider: filter
-    settings: {}
     status: true
     weight: 30
+    settings: {  }
   filter_html:
     id: filter_html
     provider: filter
-    settings:
-      allowed_html: <br> <p> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <cite> <dl> <dt> <dd> <span lang dir> <drupal-media data-entity-t ype data-entity-uuid data-view-mode data-align data-caption alt title data-entity-type> <a hreflang href> <blockquote cite> <ul type> <ol type reversed start> <strong> <em> <code class="language-*"> <pre> <li> <img src alt height width data-entity-uuid data-entity-type data-caption data-align>
-      filter_html_help: true
-      filter_html_nofollow: false
     status: true
     weight: -40
+    settings:
+      allowed_html: '<br> <p> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <cite> <dl> <dt> <dd> <span lang dir> <drupal-media data-entity-t ype data-entity-uuid data-view-mode data-align data-caption alt title data-entity-type> <a hreflang href> <blockquote cite> <ul type> <ol type reversed start> <strong> <em> <code class="language-*"> <pre> <li> <img src alt height width data-entity-uuid data-entity-type data-caption data-align>'
+      filter_html_help: true
+      filter_html_nofollow: false
   filter_htmlcorrector:
     id: filter_htmlcorrector
     provider: filter
-    settings: {}
     status: true
     weight: 50
+    settings: {  }
   media_embed:
     id: media_embed
     provider: media
-    settings:
-      allowed_media_types: {}
-      allowed_view_modes: {}
-      default_view_mode: media_library
     status: true
     weight: 40
-format: basic_html
-langcode: en
-name: Basic HTML
-status: true
-weight: -3
+    settings:
+      default_view_mode: media_library
+      allowed_view_modes: {  }
+      allowed_media_types: {  }

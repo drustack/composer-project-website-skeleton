@@ -1,32 +1,32 @@
-cardinality: 1
-custom_storage: false
+langcode: en
+status: true
 dependencies:
-  enforced:
-    module:
-      - media
   module:
     - file
     - image
     - media
-entity_type: media
-field_name: field_media_image
+  enforced:
+    module:
+      - media
 id: media.field_media_image
-indexes: {}
-langcode: en
-locked: false
-module: image
-persist_with_no_fields: false
+field_name: field_media_image
+entity_type: media
+type: image
 settings:
   default_image:
-    alt: ""
+    alt: ''
     height: null
-    title: ""
+    title: ''
     uuid: null
     width: null
   display_default: false
   display_field: false
   target_type: file
   uri_scheme: public
-status: true
+module: image
+locked: false
+cardinality: 1
 translatable: true
-type: image
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,58 +1,59 @@
+langcode: en
+status: true
 dependencies:
   module:
     - sitemap
 id: sitemap
-label: Sitemap tour
-langcode: en
+label: 'Sitemap tour'
 module: sitemap
 routes:
-  - route_name: sitemap.settings
-status: true
+  -
+    route_name: sitemap.settings
 tips:
   css:
-    body: <p>Select this box if you wish to load the CSS file included with the module. To learn how to override or specify the CSS at the theme level, visit the <a href="https://www.drupal.org/node/2615568">documentation page</a>.</p>
+    body: '<p>Select this box if you wish to load the CSS file included with the module. To learn how to override or specify the CSS at the theme level, visit the <a href="https://www.drupal.org/node/2615568">documentation page</a>.</p>'
     id: css
-    label: CSS Settings
+    label: 'CSS Settings'
     plugin: text
     position: top-start
     selector: '#edit-css'
     weight: -96
   message:
-    body: <p>Define a message to be displayed above the sitemap. If you do not wish to display a message, leave this field blank.</p>
+    body: '<p>Define a message to be displayed above the sitemap. If you do not wish to display a message, leave this field blank.</p>'
     id: message
-    label: Sitemap message
+    label: 'Sitemap message'
     plugin: text
     position: bottom-start
     selector: '#edit-message-value'
     weight: -99
   page-title:
-    body: <p>Define the page title that will be used on the Sitemap page. If you do not wish to display a title, leave this field blank.</p>
+    body: '<p>Define the page title that will be used on the Sitemap page. If you do not wish to display a title, leave this field blank.</p>'
     id: page-title
-    label: Page Title
+    label: 'Page Title'
     plugin: text
     position: right-start
     selector: '#edit-page-title'
     weight: -100
   plugin-display-order:
-    body: <p>Use this section to reorder the items as they appear in the Sitemap.  Click and drag the arrow icon to reorder, or select Show row heights and you can set the weight of the items manually.  The lower the number the higher in the list it will appear.</p>
+    body: '<p>Use this section to reorder the items as they appear in the Sitemap.  Click and drag the arrow icon to reorder, or select Show row heights and you can set the weight of the items manually.  The lower the number the higher in the list it will appear.</p>'
     id: plugin-display-order
-    label: Plugin display order
+    label: 'Plugin display order'
     plugin: text
     position: bottom-start
     selector: '#sitemap-order'
     weight: -97
   plugins:
-    body: <p>Select which plugins to use to generate entries into the sitemap.  You will be able to configure below.</p>
+    body: '<p>Select which plugins to use to generate entries into the sitemap.  You will be able to configure below.</p>'
     id: plugins
     label: Plugins
     plugin: text
     position: right-start
-    selector: .form-item label[for="edit-enabled"]
+    selector: '.form-item label[for="edit-enabled"]'
     weight: -98
   save-configuration:
-    body: <p>Once you are finished configuring the sitemap settings, select Save configuration to save them.</p>
+    body: '<p>Once you are finished configuring the sitemap settings, select Save configuration to save them.</p>'
     id: save-configuration
-    label: Save configuration
+    label: 'Save configuration'
     plugin: text
     position: top-start
     selector: '#edit-actions'

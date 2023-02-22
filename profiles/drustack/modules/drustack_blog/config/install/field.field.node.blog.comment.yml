@@ -1,31 +1,32 @@
-bundle: blog
-default_value:
-  - cid: 0
-    comment_count: 0
-    last_comment_name: null
-    last_comment_timestamp: 0
-    last_comment_uid: 0
-    status: 2
-default_value_callback: ""
+langcode: en
+status: true
 dependencies:
   config:
     - field.storage.node.comment
     - node.type.blog
   module:
     - comment
-description: Comments against a blog post.
-entity_type: node
-field_name: comment
-field_type: comment
 id: node.blog.comment
+field_name: comment
+entity_type: node
+bundle: blog
 label: Comments
-langcode: en
+description: 'Comments against a blog post.'
 required: false
+translatable: true
+default_value:
+  -
+    cid: 0
+    comment_count: 0
+    last_comment_name: null
+    last_comment_timestamp: 0
+    last_comment_uid: 0
+    status: 2
+default_value_callback: ''
 settings:
   anonymous: 0
   default_mode: 1
   form_location: true
   per_page: 50
   preview: 1
-status: true
-translatable: true
+field_type: comment

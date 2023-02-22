@@ -1,28 +1,28 @@
-bundle: comment
-content:
-  comment_body:
-    label: visually_hidden
-    region: content
-    settings: {}
-    third_party_settings: {}
-    type: text_default
-    weight: 0
-  links:
-    region: content
-    settings: {}
-    third_party_settings: {}
-    weight: 100
+langcode: en
+status: true
 dependencies:
   config:
     - comment.type.comment
     - field.field.comment.comment.comment_body
   module:
     - text
+id: comment.comment.default
+targetEntityType: comment
+bundle: comment
+mode: default
+content:
+  comment_body:
+    label: visually_hidden
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    weight: 0
+  links:
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
 hidden:
   langcode: true
   search_api_excerpt: true
-id: comment.comment.default
-langcode: en
-mode: default
-status: true
-targetEntityType: comment

@@ -1,19 +1,12 @@
+langcode: en
+status: true
 dependencies:
   config:
     - filter.format.basic_html
   module:
     - ckeditor5
-editor: ckeditor5
 format: basic_html
-image_upload:
-  directory: inline-images
-  max_dimensions:
-    height: 0
-    width: 0
-  max_size: ""
-  scheme: public
-  status: true
-langcode: en
+editor: ckeditor5
 settings:
   plugins:
     ckeditor5_heading:
@@ -32,21 +25,21 @@ settings:
       startIndex: true
     ckeditor5_sourceEditing:
       allowed_tags:
-        - <cite>
-        - <dl>
-        - <dt>
-        - <dd>
-        - <span>
-        - <drupal-media data-entity-t ype data-entity-uuid data-view-mode data-align data-caption alt title>
-        - <a hreflang>
-        - <blockquote cite>
-        - <ul type>
-        - <ol type>
-        - <h2 id>
-        - <h3 id>
-        - <h4 id>
-        - <h5 id>
-        - <h6 id>
+        - '<cite>'
+        - '<dl>'
+        - '<dt>'
+        - '<dd>'
+        - '<span>'
+        - '<drupal-media data-entity-t ype data-entity-uuid data-view-mode data-align data-caption alt title>'
+        - '<a hreflang>'
+        - '<blockquote cite>'
+        - '<ul type>'
+        - '<ol type>'
+        - '<h2 id>'
+        - '<h3 id>'
+        - '<h4 id>'
+        - '<h5 id>'
+        - '<h6 id>'
     media_media:
       allow_view_mode_override: false
   toolbar:
@@ -71,4 +64,11 @@ settings:
       - '|'
       - code
       - codeBlock
-status: true
+image_upload:
+  directory: inline-images
+  max_dimensions:
+    height: 0
+    width: 0
+  max_size: ''
+  scheme: public
+  status: true

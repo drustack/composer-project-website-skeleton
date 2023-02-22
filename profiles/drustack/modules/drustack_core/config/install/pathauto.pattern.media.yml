@@ -1,13 +1,13 @@
+langcode: en
+status: true
 dependencies:
   module:
     - media
 id: media
 label: Media
-langcode: en
+type: 'canonical_entities:media'
 pattern: '[media:original:bundle:target_id]/[media:name]'
-relationships: {}
-selection_criteria: {}
+selection_criteria: {  }
 selection_logic: and
-status: true
-type: canonical_entities:media
 weight: 0
+relationships: {  }
