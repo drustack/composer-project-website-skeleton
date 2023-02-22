@@ -1,3 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - node
+    - serialization
+id: entity.node
+plugin_id: 'entity:node'
+granularity: resource
 configuration:
   authentication:
     - basic_auth
@@ -9,13 +19,3 @@ configuration:
     - POST
     - DELETE
     - PATCH
-dependencies:
-  module:
-    - basic_auth
-    - node
-    - serialization
-granularity: resource
-id: entity.node
-langcode: en
-plugin_id: entity:node
-status: true

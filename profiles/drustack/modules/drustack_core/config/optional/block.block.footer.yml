@@ -1,3 +1,5 @@
+langcode: en
+status: true
 dependencies:
   config:
     - system.menu.footer
@@ -6,25 +8,23 @@ dependencies:
   theme:
     - olivero
 id: footer
-langcode: en
-plugin: menu_block:footer
-provider: null
+theme: olivero
 region: footer_bottom
+weight: 0
+provider: null
+plugin: 'menu_block:footer'
 settings:
-  depth: 0
-  expand_all_items: false
-  follow: false
-  follow_parent: child
-  id: menu_block:footer
+  id: 'menu_block:footer'
   label: Footer
   label_display: visible
-  label_link: false
-  label_type: block
-  level: 1
-  parent: 'footer:'
   provider: menu_block
+  follow: false
+  follow_parent: child
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'footer:'
   suggestion: footer
-status: true
-theme: olivero
-visibility: {}
-weight: 0
+  label_type: block
+  label_link: false
+visibility: {  }

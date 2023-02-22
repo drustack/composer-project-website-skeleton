@@ -1,73 +1,5 @@
-bundle: video
-content:
-  created:
-    region: content
-    settings: {}
-    third_party_settings: {}
-    type: datetime_timestamp
-    weight: 4
-  field_media_video_file:
-    region: content
-    settings:
-      progress_indicator: throbber
-    third_party_settings: {}
-    type: file_generic
-    weight: 2
-  langcode:
-    region: content
-    settings:
-      include_locked: true
-    third_party_settings: {}
-    type: language_select
-    weight: 0
-  name:
-    region: content
-    settings:
-      placeholder: ""
-      size: 60
-    third_party_settings: {}
-    type: string_textfield
-    weight: 1
-  path:
-    region: content
-    settings: {}
-    third_party_settings: {}
-    type: path
-    weight: 5
-  publish_on:
-    region: content
-    settings: {}
-    third_party_settings: {}
-    type: datetime_timestamp_no_default
-    weight: 30
-  status:
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {}
-    type: boolean_checkbox
-    weight: 6
-  translation:
-    region: content
-    settings: {}
-    third_party_settings: {}
-    weight: 7
-  uid:
-    region: content
-    settings:
-      match_limit: 10
-      match_operator: CONTAINS
-      placeholder: ""
-      size: 60
-    third_party_settings: {}
-    type: entity_reference_autocomplete
-    weight: 3
-  unpublish_on:
-    region: content
-    settings: {}
-    third_party_settings: {}
-    type: datetime_timestamp_no_default
-    weight: 30
+langcode: en
+status: true
 dependencies:
   config:
     - field.field.media.video.field_media_video_file
@@ -76,9 +8,77 @@ dependencies:
     - file
     - path
     - scheduler
-hidden: {}
 id: media.video.default
-langcode: en
-mode: default
-status: true
 targetEntityType: media
+bundle: video
+mode: default
+content:
+  created:
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_timestamp
+    weight: 4
+  field_media_video_file:
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    weight: 2
+  langcode:
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+    type: language_select
+    weight: 0
+  name:
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+    type: string_textfield
+    weight: 1
+  path:
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+    type: path
+    weight: 5
+  publish_on:
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_timestamp_no_default
+    weight: 30
+  status:
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    weight: 6
+  translation:
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+  uid:
+    region: content
+    settings:
+      match_limit: 10
+      match_operator: CONTAINS
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    weight: 3
+  unpublish_on:
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_timestamp_no_default
+    weight: 30
+hidden: {  }

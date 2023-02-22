@@ -1,20 +1,20 @@
-bundle: comment
-default_value: {}
-default_value_callback: ""
+langcode: en
+status: true
 dependencies:
   config:
     - comment.type.comment
     - field.storage.comment.comment_body
   module:
     - text
-description: ""
-entity_type: comment
-field_name: comment_body
-field_type: text_long
 id: comment.comment.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment
 label: Comment
-langcode: en
+description: ''
 required: true
-settings: {}
-status: true
 translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
