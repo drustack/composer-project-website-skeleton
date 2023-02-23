@@ -6803,17 +6803,17 @@
         },
         {
             "name": "drupal/group",
-            "version": "3.0.0-rc1",
+            "version": "3.0.0-rc2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/group.git",
-                "reference": "3.0.0-rc1"
+                "reference": "3.0.0-rc2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/group-3.0.0-rc1.zip",
-                "reference": "3.0.0-rc1",
-                "shasum": "53a300a8a0aa5f98120074bff338ea310bdb33f9"
+                "url": "https://ftp.drupal.org/files/projects/group-3.0.0-rc2.zip",
+                "reference": "3.0.0-rc2",
+                "shasum": "2aa3fb296ef80fccb7cf30c570196a8804f55dbe"
             },
             "require": {
                 "drupal/core": "^9.1 || ^10",
@@ -6823,8 +6823,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-rc1",
-                    "datestamp": "1675846642",
+                    "version": "3.0.0-rc2",
+                    "datestamp": "1677073975",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -9775,7 +9775,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/search_api.git",
-                "reference": "028b7c03d93bca878cf80fa05e2e304619bbd3dd"
+                "reference": "f7fa72771a2da16b04818e4d33b5e717c860d65f"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10.0"
@@ -9799,8 +9799,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.28+14-dev",
-                    "datestamp": "1676880933",
+                    "version": "8.x-1.28+15-dev",
+                    "datestamp": "1677137796",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -24148,16 +24148,16 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.7.1",
+            "version": "3.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "1359e176e9307e906dc3d890bcc9603ff6d90619"
+                "reference": "ed8e00df0a83aa96acf703f8c2979ff33341f879"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/1359e176e9307e906dc3d890bcc9603ff6d90619",
-                "reference": "1359e176e9307e906dc3d890bcc9603ff6d90619",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/ed8e00df0a83aa96acf703f8c2979ff33341f879",
+                "reference": "ed8e00df0a83aa96acf703f8c2979ff33341f879",
                 "shasum": ""
             },
             "require": {
@@ -24193,14 +24193,15 @@
             "homepage": "https://github.com/squizlabs/PHP_CodeSniffer",
             "keywords": [
                 "phpcs",
-                "standards"
+                "standards",
+                "static analysis"
             ],
             "support": {
                 "issues": "https://github.com/squizlabs/PHP_CodeSniffer/issues",
                 "source": "https://github.com/squizlabs/PHP_CodeSniffer",
                 "wiki": "https://github.com/squizlabs/PHP_CodeSniffer/wiki"
             },
-            "time": "2022-06-18T07:21:10+00:00"
+            "time": "2023-02-22T23:07:41+00:00"
         },
         {
             "name": "symfony/browser-kit",
