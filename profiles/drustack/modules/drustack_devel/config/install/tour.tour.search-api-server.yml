@@ -18,7 +18,7 @@ tips:
     selector: .search-api-server-summary--backend
     weight: 3
   search-api-server-clear:
-    body: "This will permanently remove all data currently indexed on this server for indexes that aren't read-only. Items are queued for reindexing. Until reindexing occurs, searches for the affected indexes will not return any results."
+    body: 'This will permanently remove all data currently indexed on this server for indexes that aren''t read-only. Items are queued for reindexing. Until reindexing occurs, searches for the affected indexes will not return any results.'
     id: search-api-server-clear
     label: 'Delete all indexed data'
     plugin: text
