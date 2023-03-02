@@ -95,7 +95,7 @@ class Redirect404Operations extends FieldPluginBase {
       'url' => Url::fromRoute('redirect.add', [], $query),
     ];
 
-    if ($this->currentUser->hasPermission('administer redirect settings')) {
+    if ($this->currentUser->hasPermission('administer redirect settings') || $this->currentUser->hasPermission('ignore 404 requests')) {
       $links['ignore'] = [
         'title' => $this->t('Ignore'),
         'url' => Url::fromRoute('redirect_404.ignore_404', [
