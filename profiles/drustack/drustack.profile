@@ -61,10 +61,10 @@ function drustack_form_install_configure_form_alter(&$form, FormStateInterface $
   $form['admin_account']['account']['name']['#default_value'] = 'admin';
   $form['admin_account']['account']['mail']['#default_value'] = 'admin@example.com';
 
-  // Power user account form.
+  // Webmaster account form.
   $form['webmaster_account'] = [
     '#type' => 'fieldgroup',
-    '#title' => t('Site power user account'),
+    '#title' => t('Site webmaster account'),
     '#collapsible' => FALSE,
   ];
 
@@ -100,7 +100,7 @@ function drustack_form_install_configure_form_alter(&$form, FormStateInterface $
 }
 
 /**
- * Validate Power user account.
+ * Validate Webmaster account.
  */
 function _drustack_form_install_configure_form_validate($form, FormStateInterface $form_state) {
   // Check admin account.
@@ -116,20 +116,20 @@ function _drustack_form_install_configure_form_validate($form, FormStateInterfac
 }
 
 /**
- * Create Power user account and change root password.
+ * Create Webmaster account and change root password.
  */
 function _drustack_form_install_configure_form_submit($form, FormStateInterface $form_state) {
   // Add the user and associate role here.
-  $role = Role::load('power');
+  $role = Role::load('webmaster');
   if (!$role) {
     $role = Role::create([
-      'id' => 'power',
-      'label' => 'Power user',
+      'id' => 'webmaster',
+      'label' => 'Webmaster',
     ]);
     $role->save();
   }
 
-  // We keep power user and administrator account password in sync by default.
+  // We keep webmaster and administrator account password in sync by default.
   $account = User::create([
     'mail' => $form_state->getValue(['webmaster_account', 'mail']),
     'name' => $form_state->getValue(['webmaster_account', 'name']),
