@@ -66,7 +66,7 @@ class Fix404IgnoreController extends ControllerBase {
     $langcode = $request->query->get('langcode');
 
     if (empty($existing_config_raw) || !empty($path) || !strpos($path, $existing_config_raw)) {
-      $this->redirectStorage->resolveLogRequest($path, $langcode);
+      $this->redirectStorage->resolveLogRequest($path);
 
       // Users without 'administer redirect settings' and 'ignore 4040 request'
       // permission can also ignore pages.
