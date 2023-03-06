@@ -1,21 +1,21 @@
+langcode: en
+status: true
 dependencies:
   module:
     - node
 id: node_blog
-label: Content (Blog entry)
-langcode: en
-pattern: blog/[node:author:account-name]/[node:source:title]
-relationships: {}
+label: 'Content (Blog entry)'
+type: 'canonical_entities:node'
+pattern: 'blog/[node:author:account-name]/[node:source:title]'
 selection_criteria:
   c4345ffd-060b-40b0-a834-be4048420568:
+    id: 'entity_bundle:node'
     bundles:
       blog: blog
     context_mapping:
       node: node
-    id: entity_bundle:node
     negate: false
     uuid: c4345ffd-060b-40b0-a834-be4048420568
 selection_logic: and
-status: true
-type: canonical_entities:node
 weight: -5
+relationships: {  }

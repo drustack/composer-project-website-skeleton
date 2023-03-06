@@ -1,3 +1,5 @@
+langcode: en
+status: true
 dependencies:
   config:
     - system.menu.header
@@ -6,25 +8,23 @@ dependencies:
   theme:
     - bootstrap_barrio
 id: bootstrap_barrio_header
-langcode: en
-plugin: menu_block:header
-provider: null
+theme: bootstrap_barrio
 region: primary_menu
+weight: 0
+provider: null
+plugin: 'menu_block:header'
 settings:
-  depth: 0
-  expand_all_items: true
+  id: 'menu_block:header'
+  label: 'Header menu'
+  label_display: '0'
+  provider: menu_block
   follow: false
   follow_parent: child
-  id: menu_block:header
-  label: Header menu
-  label_display: "0"
-  label_link: false
-  label_type: block
   level: 1
+  depth: 0
+  expand_all_items: true
   parent: 'header:'
-  provider: menu_block
   suggestion: header
-status: true
-theme: bootstrap_barrio
-visibility: {}
-weight: 0
+  label_type: block
+  label_link: false
+visibility: {  }

@@ -1,29 +1,29 @@
-bundle: document
-default_value: {}
-default_value_callback: ""
+langcode: en
+status: true
 dependencies:
   config:
     - field.storage.media.field_media_document
     - media.type.document
+  module:
+    - file
   enforced:
     module:
       - media
-  module:
-    - file
-description: ""
-entity_type: media
-field_name: field_media_document
-field_type: file
 id: media.document.field_media_document
+field_name: field_media_document
+entity_type: media
+bundle: document
 label: Document
-langcode: en
+description: ''
 required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
 settings:
   description_field: true
   file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: txt rtf doc docx ppt pptx xls xlsx pdf odf odg odp ods odt fodt fods fodp fodg key numbers pages
-  handler: default:file
-  handler_settings: {}
-  max_filesize: ""
-status: true
-translatable: true
+  file_extensions: 'txt rtf doc docx ppt pptx xls xlsx pdf odf odg odp ods odt fodt fods fodp fodg key numbers pages'
+  handler: 'default:file'
+  handler_settings: {  }
+  max_filesize: ''
+field_type: file
