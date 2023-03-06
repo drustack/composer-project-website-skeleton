@@ -11,8 +11,8 @@ plugin: system_menu_block:main
 provider: null
 region: primary_menu
 settings:
-  depth: 1
-  expand_all_items: false
+  depth: 2
+  expand_all_items: true
   id: system_menu_block:main
   label: Main navigation
   label_display: "0"
@@ -21,4 +21,4 @@ settings:
 status: true
 theme: bootstrap_barrio
 visibility: {}
-weight: 0
+weight: -6

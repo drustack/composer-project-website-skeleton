@@ -1,4 +1,5 @@
-# Schema for the configuration files of the Bootstrap SASS Subtheme.
+# Schema for the configuration files of the Bootstrap Barrio Subtheme.
+
 # Buttons.
 # ----------------------------
 bootstrap_barrio_button:
@@ -220,6 +221,10 @@ bootstrap_barrio_region_clean_top_header:
 bootstrap_barrio_region_clean_top_header_form:
   label: Clean wrapper for Top header form region
   type: text
+bootstrap_barrio_sass.settings:
+  label: Bootstrap Barrio settings
+  mapping:
+  type: theme_settings
 # Scrollspy.
 # ----------------------------
 bootstrap_barrio_scroll_spy:
@@ -274,7 +279,3 @@ bootstrap_barrio_table_hover:
 bootstrap_barrio_table_style:
   label: Table cell style
   type: text
-drustack_bootstrap.settings:
-  label: Bootstrap SASS Subtheme settings
-  mapping:
-  type: theme_settings

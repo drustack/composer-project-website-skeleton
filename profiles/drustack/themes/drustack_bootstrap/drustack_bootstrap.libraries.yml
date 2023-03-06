@@ -4,7 +4,7 @@ bootstrap:
     - core/jquery
     - core/drupal
   js:
-    ../../../../libraries/bootstrap/dist/js/bootstrap.bundle.min.js:
+    ../../../../libraries/bootstrap/dist/js/bootstrap.min.js:
       minified: true
   version: VERSION
 fontawesome:
@@ -18,11 +18,8 @@ fontawesome:
   version: VERSION
 global-styling:
   css:
-    theme:
+    component:
       css/style.css: {}
-  dependencies:
-    - core/jquery
-    - core/drupal
   js:
     js/barrio.js: {}
     js/custom.js: {}

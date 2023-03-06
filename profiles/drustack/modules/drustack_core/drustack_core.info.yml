@@ -1,4 +1,4 @@
-core_version_requirement: ^8.9 || ^9
+core_version_requirement: ^9.4 || ^10
 dependencies:
   - admin_toolbar:admin_toolbar
   - admin_toolbar:admin_toolbar_tools
@@ -35,7 +35,6 @@ dependencies:
   - drupal:node
   - drupal:path
   - drupal:path_alias
-  - drupal:rdf
   - drupal:responsive_image
   - drupal:rest
   - drupal:serialization
@@ -76,14 +75,8 @@ dependencies:
   - search_api_db:search_api_db
   - sitemap:sitemap
   - sophron:sophron
-  - symfony_mailer:symfony_mailer
   - twig-twig:twig
   - views_bulk_operations:views_bulk_operations
-  - webform:webform
-  - webform:webform_bootstrap
-  - webform:webform_devel
-  - webform:webform_templates
-  - webform:webform_ui
 description: Provides core components required by other features.
 name: DruStack Core
 package: DruStack

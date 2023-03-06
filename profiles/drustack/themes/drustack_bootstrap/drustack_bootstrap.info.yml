@@ -1,8 +1,5 @@
 base theme: bootstrap_barrio
-ckeditor_stylesheets:
-  - ../../../../libraries/bootstrap/dist/css/bootstrap-grid.min.css
-  - ../../../../libraries/fortawesome--fontawesome-free/css/all.min.css
-core_version_requirement: ^8.9 || ^9
+core_version_requirement: ^9 || ^10
 description: SASS starter kit for a Bootstrap Barrio SubTheme.
 libraries:
   - drustack_bootstrap/bootstrap
@@ -10,8 +7,7 @@ libraries:
   - drustack_bootstrap/global-styling
 libraries-override:
   bootstrap_barrio/global-styling: false
-name: DruStack Bootstrap
-package: DruStack
+name: DruStack BootStrap
 regions:
   breadcrumb: Breadcrumb
   content: Content
@@ -25,12 +21,14 @@ regions:
   footer_second: Footer second
   footer_third: Footer third
   header: Header
-  header_form: Header Form
+  header_form: Header form
   highlighted: Highlighted
   page_bottom: Page bottom
   page_top: Page top
   primary_menu: Primary menu
   secondary_menu: Secondary menu
-  top_header: Top Header
-  top_header_form: Top Header Form
+  sidebar_first: Sidebar first
+  sidebar_second: Sidebar second
+  top_header: Top header
+  top_header_form: Top header form
 type: theme

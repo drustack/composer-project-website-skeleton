@@ -1,11 +1,11 @@
-add_captcha_description: false
 administration_mode: false
-allow_on_admin_pages: false
+administration_mode_on_admin_routes: false
 default_challenge: image_captcha/Image
 default_validation: 1
 description: This question is for testing whether or not you are a human visitor and to prevent automated spam submissions.
+enable_globally: 0
+enable_globally_on_admin_routes: false
 enable_stats: true
-enabled_default: 0
 log_wrong_responses: true
 persistence: 1
 whitelist_ips: ""

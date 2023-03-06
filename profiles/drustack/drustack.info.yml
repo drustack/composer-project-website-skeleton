@@ -1,4 +1,4 @@
-core_version_requirement: ^8.9 || ^9
+core_version_requirement: ^9.4 || ^10
 description: DruStack is a starter Drupal distribution for developer.
 distribution:
   name: DruStack
@@ -60,7 +60,6 @@ install:
   - page_cache
   - path
   - pathauto
-  - rdf
   - responsive_image
   - rest
   - scheduler
@@ -72,7 +71,6 @@ install:
   - statistics
   - syslog
   - system
-  - system_stream_wrapper
   - taxonomy
   - telephone
   - text

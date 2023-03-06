@@ -642,9 +642,6 @@ display:
             remember_roles:
               anonymous: '0'
               authenticated: '0'
-              blogger: '0'
-              content_editor: '0'
-              power: '0'
               administrator: '0'
             placeholder: ''
           is_grouped: false
@@ -781,9 +778,6 @@ display:
             remember_roles:
               anonymous: '0'
               authenticated: '0'
-              blogger: '0'
-              content_editor: '0'
-              power: '0'
               administrator: '0'
             reduce: false
           is_grouped: false
@@ -1036,8 +1030,8 @@ display:
     display_plugin: page
     position: 1
     display_options:
-      display_description: 'Overview of all scheduled content, as a tab on main ''content admin'' page'
-      display_comment: 'Revision nid relationship is required because the content type is only stored at ''content'' level, not ''content revision'' level.'
+      display_description: "Overview of all scheduled content, as a tab on main 'content admin' page"
+      display_comment: "Revision nid relationship is required because the content type is only stored at 'content' level, not 'content revision' level."
       rendering_language: '***LANGUAGE_entity_translation***'
       exposed_block: false
       display_extenders: {  }
@@ -1134,7 +1128,7 @@ display:
         arguments: false
         filters: true
         filter_groups: true
-      display_description: 'Scheduled content tab on user profile, showing just that user''s scheduled content'
+      display_description: "Scheduled content tab on user profile, showing just that user's scheduled content"
       rendering_language: '***LANGUAGE_entity_translation***'
       display_extenders: {  }
       path: user/%user/scheduled
