@@ -1,21 +1,21 @@
-langcode: en
-status: true
 dependencies:
   module:
     - node
 id: node_article
-label: 'Content (Article)'
-type: 'canonical_entities:node'
-pattern: 'article/[node:source:title]'
+label: Content (Article)
+langcode: en
+pattern: article/[node:source:title]
+relationships: {}
 selection_criteria:
   4b6bcbbd-219c-4814-8130-556d2426c3bf:
-    id: 'entity_bundle:node'
     bundles:
       article: article
     context_mapping:
       node: node
+    id: entity_bundle:node
     negate: false
     uuid: 4b6bcbbd-219c-4814-8130-556d2426c3bf
 selection_logic: and
+status: true
+type: canonical_entities:node
 weight: -5
-relationships: {  }

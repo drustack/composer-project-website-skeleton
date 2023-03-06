@@ -1,31 +1,31 @@
-langcode: en
-status: true
+cardinality: 1
+custom_storage: false
 dependencies:
   module:
     - file
     - image
     - node
-id: node.field_image
-field_name: field_image
 entity_type: node
-type: image
+field_name: field_image
+id: node.field_image
+indexes:
+  target_id:
+    - target_id
+langcode: en
+locked: false
+module: image
+persist_with_no_fields: false
 settings:
   default_image:
-    alt: ''
+    alt: ""
     height: null
-    title: ''
+    title: ""
     uuid: null
     width: null
   display_default: false
   display_field: false
   target_type: file
   uri_scheme: public
-module: image
-locked: false
-cardinality: 1
+status: true
 translatable: true
-indexes:
-  target_id:
-    - target_id
-persist_with_no_fields: false
-custom_storage: false
+type: image

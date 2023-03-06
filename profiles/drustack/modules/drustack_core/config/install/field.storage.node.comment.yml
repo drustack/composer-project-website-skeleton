@@ -1,19 +1,19 @@
-langcode: en
-status: true
+cardinality: 1
+custom_storage: false
 dependencies:
   module:
     - comment
     - node
-id: node.comment
-field_name: comment
 entity_type: node
-type: comment
+field_name: comment
+id: node.comment
+indexes: {}
+langcode: en
+locked: false
+module: comment
+persist_with_no_fields: false
 settings:
   comment_type: comment
-module: comment
-locked: false
-cardinality: 1
+status: true
 translatable: true
-indexes: {  }
-persist_with_no_fields: false
-custom_storage: false
+type: comment

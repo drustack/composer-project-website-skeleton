@@ -1,15 +1,4 @@
-langcode: en
-status: true
-dependencies:
-  config:
-    - field.field.media.video.field_media_video_file
-    - media.type.video
-  module:
-    - file
-id: media.video.default
-targetEntityType: media
 bundle: video
-mode: default
 content:
   field_media_video_file:
     label: visually_hidden
@@ -22,9 +11,15 @@ content:
       multiple_file_display_type: tags
       muted: false
       width: 640
-    third_party_settings: {  }
+    third_party_settings: {}
     type: file_video
     weight: 0
+dependencies:
+  config:
+    - field.field.media.video.field_media_video_file
+    - media.type.video
+  module:
+    - file
 hidden:
   created: true
   langcode: true
@@ -32,3 +27,8 @@ hidden:
   search_api_excerpt: true
   thumbnail: true
   uid: true
+id: media.video.default
+langcode: en
+mode: default
+status: true
+targetEntityType: media

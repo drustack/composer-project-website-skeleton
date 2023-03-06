@@ -1,0 +1,24 @@
+conf:
+  extensions: jpg png gif
+  folders:
+    - path: users/user[user:uid]
+      permissions:
+        browse_files: true
+        delete_files: true
+        upload_files: true
+  ignore_usage: false
+  maxheight: 1024
+  maxsize: 2
+  maxwidth: 1024
+  quota: 50
+  replace: 0
+  thumbnail_grid_style: false
+  thumbnail_style: ""
+  url_alter: false
+  usertab: false
+dependencies: {}
+description: Configuration for site members
+id: member
+label: Member profile
+langcode: en
+status: true

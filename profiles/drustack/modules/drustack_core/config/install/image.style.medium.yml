@@ -1,14 +1,14 @@
-langcode: en
-status: true
-dependencies: {  }
-name: medium
-label: 'Medium (720px)'
+dependencies: {}
 effects:
   36149b02-5a61-4f57-bfb5-daf2dfe035c8:
-    uuid: 36149b02-5a61-4f57-bfb5-daf2dfe035c8
-    id: image_scale
-    weight: 1
     data:
       height: null
       upscale: false
       width: 720
+    id: image_scale
+    uuid: 36149b02-5a61-4f57-bfb5-daf2dfe035c8
+    weight: 1
+label: Medium (720px)
+langcode: en
+name: medium
+status: true

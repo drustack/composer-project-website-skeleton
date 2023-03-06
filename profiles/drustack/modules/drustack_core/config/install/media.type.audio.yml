@@ -1,13 +1,13 @@
-langcode: en
-status: true
-dependencies: {  }
-id: audio
-label: Audio
-description: 'A locally hosted audio file.'
-source: audio_file
-queue_thumbnail_downloads: false
-new_revision: true
-source_configuration:
-  source_field: field_media_audio_file
+dependencies: {}
+description: A locally hosted audio file.
 field_map:
   name: name
+id: audio
+label: Audio
+langcode: en
+new_revision: true
+queue_thumbnail_downloads: false
+source: audio_file
+source_configuration:
+  source_field: field_media_audio_file
+status: true

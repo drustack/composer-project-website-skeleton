@@ -1,9 +1,3 @@
-langcode: en
-status: true
-dependencies: {  }
-name: DruStack
-machine_name: drustack
-description: 'DruStack is a starter Drupal distribution for developer.'
 assignments:
   alter:
     core: true
@@ -67,7 +61,7 @@ assignments:
   optional:
     enabled: true
     types:
-      config: {  }
+      config: {}
     weight: 0
   packages:
     enabled: true
@@ -97,5 +91,11 @@ assignments:
         rdf_mapping: rdf_mapping
         taxonomy_vocabulary: taxonomy_vocabulary
     weight: 7
-profile_name: drustack
+dependencies: {}
+description: DruStack is a starter Drupal distribution for developer.
 is_profile: true
+langcode: en
+machine_name: drustack
+name: DruStack
+profile_name: drustack
+status: true

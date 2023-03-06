@@ -1,19 +1,19 @@
-langcode: en
-status: true
 dependencies:
   module:
     - system
   theme:
     - drustack_bootstrap
 id: drustack_bootstrap_content
-theme: drustack_bootstrap
-region: content
-weight: 0
-provider: null
+langcode: en
 plugin: system_main_block
+provider: null
+region: content
 settings:
   id: system_main_block
-  label: 'Main page content'
-  label_display: '0'
+  label: Main page content
+  label_display: "0"
   provider: system
-visibility: {  }
+status: true
+theme: drustack_bootstrap
+visibility: {}
+weight: 0

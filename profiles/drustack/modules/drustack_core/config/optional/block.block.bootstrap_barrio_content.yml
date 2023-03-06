@@ -1,0 +1,19 @@
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_content
+langcode: en
+plugin: system_main_block
+provider: null
+region: content
+settings:
+  id: system_main_block
+  label: Main page content
+  label_display: "0"
+  provider: system
+status: true
+theme: bootstrap_barrio
+visibility: {}
+weight: -3

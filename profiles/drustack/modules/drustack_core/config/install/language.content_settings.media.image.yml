@@ -1,17 +1,17 @@
-langcode: en
-status: true
+default_langcode: site_default
 dependencies:
   config:
     - media.type.image
   module:
     - content_translation
+id: media.image
+langcode: en
+language_alterable: true
+status: true
+target_bundle: image
+target_entity_type_id: media
 third_party_settings:
   content_translation:
     bundle_settings:
-      untranslatable_fields_hide: '0'
+      untranslatable_fields_hide: "0"
     enabled: true
-id: media.image
-target_entity_type_id: media
-target_bundle: image
-default_langcode: site_default
-language_alterable: true
