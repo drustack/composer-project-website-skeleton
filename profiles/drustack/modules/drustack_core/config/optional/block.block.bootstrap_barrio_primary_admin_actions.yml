@@ -1,0 +1,17 @@
+dependencies:
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_primary_admin_actions
+langcode: en
+plugin: local_actions_block
+provider: null
+region: content
+settings:
+  id: local_actions_block
+  label: Primary admin actions
+  label_display: "0"
+  provider: core
+status: true
+theme: bootstrap_barrio
+visibility: {}
+weight: -6

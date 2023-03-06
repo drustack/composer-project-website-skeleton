@@ -1,5 +1,35 @@
-langcode: en
-status: true
+bundle: page
+content:
+  body:
+    label: visually_hidden
+    region: content
+    settings:
+      trim_length: 600
+    third_party_settings: {}
+    type: text_summary_or_trimmed
+    weight: 1
+  field_image:
+    label: visually_hidden
+    region: content
+    settings:
+      image_link: content
+      responsive_image_style: bootstrap
+    third_party_settings: {}
+    type: responsive_image
+    weight: 0
+  field_tags:
+    label: visually_hidden
+    region: content
+    settings:
+      link: true
+    third_party_settings: {}
+    type: entity_reference_label
+    weight: 2
+  links:
+    region: content
+    settings: {}
+    third_party_settings: {}
+    weight: 3
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
@@ -12,41 +42,11 @@ dependencies:
     - responsive_image
     - text
     - user
-id: node.page.teaser
-targetEntityType: node
-bundle: page
-mode: teaser
-content:
-  body:
-    label: visually_hidden
-    region: content
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    type: text_summary_or_trimmed
-    weight: 1
-  field_image:
-    label: visually_hidden
-    region: content
-    settings:
-      image_link: content
-      responsive_image_style: bootstrap
-    third_party_settings: {  }
-    type: responsive_image
-    weight: 0
-  field_tags:
-    label: visually_hidden
-    region: content
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    weight: 2
-  links:
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-    weight: 3
 hidden:
   langcode: true
   search_api_excerpt: true
+id: node.page.teaser
+langcode: en
+mode: teaser
+status: true
+targetEntityType: node

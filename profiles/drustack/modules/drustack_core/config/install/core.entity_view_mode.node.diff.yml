@@ -1,13 +1,13 @@
-langcode: en
-status: false
+cache: true
 dependencies:
-  module:
-    - node
   enforced:
     module:
       - node
       - diff
+  module:
+    - node
 id: node.diff
-label: 'Revision comparison'
+label: Revision comparison
+langcode: en
+status: false
 targetEntityType: node
-cache: true

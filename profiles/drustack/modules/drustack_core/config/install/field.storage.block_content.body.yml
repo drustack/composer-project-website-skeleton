@@ -1,18 +1,18 @@
-langcode: en
-status: true
+cardinality: 1
+custom_storage: false
 dependencies:
   module:
     - block_content
     - text
-id: block_content.body
-field_name: body
 entity_type: block_content
-type: text_with_summary
-settings: {  }
-module: text
+field_name: body
+id: block_content.body
+indexes: {}
+langcode: en
 locked: false
-cardinality: 1
-translatable: true
-indexes: {  }
+module: text
 persist_with_no_fields: true
-custom_storage: false
+settings: {}
+status: true
+translatable: true
+type: text_with_summary

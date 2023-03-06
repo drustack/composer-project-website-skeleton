@@ -1,19 +1,19 @@
-langcode: en
-status: true
+cardinality: -1
+custom_storage: false
 dependencies:
   module:
     - node
     - taxonomy
-id: node.field_tags
-field_name: field_tags
 entity_type: node
-type: entity_reference
+field_name: field_tags
+id: node.field_tags
+indexes: {}
+langcode: en
+locked: false
+module: core
+persist_with_no_fields: false
 settings:
   target_type: taxonomy_term
-module: core
-locked: false
-cardinality: -1
+status: true
 translatable: true
-indexes: {  }
-persist_with_no_fields: false
-custom_storage: false
+type: entity_reference

@@ -1,17 +1,17 @@
-langcode: en
-status: true
+default_langcode: site_default
 dependencies:
   config:
     - shortcut.set.default
   module:
     - content_translation
+id: shortcut.default
+langcode: en
+language_alterable: true
+status: true
+target_bundle: default
+target_entity_type_id: shortcut
 third_party_settings:
   content_translation:
     bundle_settings:
-      untranslatable_fields_hide: '0'
+      untranslatable_fields_hide: "0"
     enabled: true
-id: shortcut.default
-target_entity_type_id: shortcut
-target_bundle: default
-default_langcode: site_default
-language_alterable: true

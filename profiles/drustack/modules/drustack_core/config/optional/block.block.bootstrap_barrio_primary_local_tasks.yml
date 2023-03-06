@@ -1,0 +1,19 @@
+dependencies:
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_primary_local_tasks
+langcode: en
+plugin: local_tasks_block
+provider: null
+region: content
+settings:
+  id: local_tasks_block
+  label: Primary tabs
+  label_display: "0"
+  primary: true
+  provider: core
+  secondary: false
+status: true
+theme: bootstrap_barrio
+visibility: {}
+weight: -5

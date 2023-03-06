@@ -1,22 +1,22 @@
-langcode: en
-status: true
+bundle: basic
+default_value: {}
+default_value_callback: ""
 dependencies:
   config:
     - block_content.type.basic
     - field.storage.block_content.body
   module:
     - text
-id: block_content.basic.body
-field_name: body
+description: ""
 entity_type: block_content
-bundle: basic
+field_name: body
+field_type: text_with_summary
+id: block_content.basic.body
 label: Body
-description: ''
+langcode: en
 required: false
-translatable: true
-default_value: {  }
-default_value_callback: ''
 settings:
   display_summary: false
   required_summary: false
-field_type: text_with_summary
+status: true
+translatable: true

@@ -1,19 +1,19 @@
-langcode: en
-status: true
 dependencies:
   module:
     - system
   theme:
     - olivero
 id: olivero_powered
-theme: olivero
-region: footer_bottom
-weight: 0
-provider: null
+langcode: en
 plugin: system_powered_by_block
+provider: null
+region: footer_bottom
 settings:
   id: system_powered_by_block
-  label: 'Powered by Drupal'
-  label_display: '0'
+  label: Powered by Drupal
+  label_display: "0"
   provider: system
-visibility: {  }
+status: true
+theme: olivero
+visibility: {}
+weight: 0
