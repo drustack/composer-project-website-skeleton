@@ -1,3 +1,5 @@
+langcode: en
+status: true
 dependencies:
   config:
     - filter.format.basic_html
@@ -12,24 +14,22 @@ dependencies:
     - sitemap
     - system
 id: authenticated
-is_admin: false
-label: Authenticated user
-langcode: en
-permissions:
-  - access comments
-  - access content
-  - access shortcuts
-  - access site-wide contact form
-  - access sitemap
-  - access user contact forms
-  - access user profiles
-  - cancel account
-  - edit own comments
-  - post comments
-  - skip CAPTCHA
-  - skip comment approval
-  - use text format basic_html
-  - use text format restricted_html
-  - view media
-status: true
+label: 'Authenticated user'
 weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'access sitemap'
+  - 'access user contact forms'
+  - 'access user profiles'
+  - 'cancel account'
+  - 'edit own comments'
+  - 'post comments'
+  - 'skip CAPTCHA'
+  - 'skip comment approval'
+  - 'use text format basic_html'
+  - 'use text format restricted_html'
+  - 'view media'

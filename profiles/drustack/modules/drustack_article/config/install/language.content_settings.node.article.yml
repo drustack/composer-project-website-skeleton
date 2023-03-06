@@ -1,17 +1,17 @@
-default_langcode: site_default
+langcode: en
+status: true
 dependencies:
   config:
     - node.type.article
   module:
     - content_translation
-id: node.article
-langcode: en
-language_alterable: true
-status: true
-target_bundle: article
-target_entity_type_id: node
 third_party_settings:
   content_translation:
     bundle_settings:
-      untranslatable_fields_hide: "0"
+      untranslatable_fields_hide: '0'
     enabled: true
+id: node.article
+target_entity_type_id: node
+target_bundle: article
+default_langcode: site_default
+language_alterable: true

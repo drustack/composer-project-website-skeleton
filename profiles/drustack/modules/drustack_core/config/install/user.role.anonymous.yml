@@ -1,3 +1,5 @@
+langcode: en
+status: true
 dependencies:
   config:
     - filter.format.restricted_html
@@ -9,16 +11,14 @@ dependencies:
     - sitemap
     - system
 id: anonymous
-is_admin: false
-label: Anonymous user
-langcode: en
-permissions:
-  - access comments
-  - access content
-  - access site-wide contact form
-  - access sitemap
-  - post comments
-  - use text format restricted_html
-  - view media
-status: true
+label: 'Anonymous user'
 weight: -10
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'access sitemap'
+  - 'post comments'
+  - 'use text format restricted_html'
+  - 'view media'

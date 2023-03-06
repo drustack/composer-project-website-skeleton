@@ -1,47 +1,47 @@
-bundle: image
-default_value: {}
-default_value_callback: ""
+langcode: en
+status: true
 dependencies:
   config:
     - field.storage.media.field_media_image
     - media.type.image
-  enforced:
-    module:
-      - media
   module:
     - content_translation
     - image
-description: ""
-entity_type: media
-field_name: field_media_image
-field_type: image
+  enforced:
+    module:
+      - media
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: '0'
+      file: file
+      title: '0'
 id: media.image.field_media_image
+field_name: field_media_image
+entity_type: media
+bundle: image
 label: Image
-langcode: en
+description: ''
 required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
 settings:
   alt_field: true
   alt_field_required: true
   default_image:
-    alt: ""
+    alt: ''
     height: null
-    title: ""
-    uuid: ""
+    title: ''
+    uuid: ''
     width: null
   file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: png gif jpg jpeg
-  handler: default:file
-  handler_settings: {}
-  max_filesize: ""
-  max_resolution: ""
-  min_resolution: ""
+  file_extensions: 'png gif jpg jpeg'
+  handler: 'default:file'
+  handler_settings: {  }
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
   title_field: true
   title_field_required: false
-status: true
-third_party_settings:
-  content_translation:
-    translation_sync:
-      alt: "0"
-      file: file
-      title: "0"
-translatable: true
+field_type: image
