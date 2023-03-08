@@ -1,12 +1,19 @@
-langcode: en
-status: true
 dependencies:
   config:
     - filter.format.full_html
   module:
     - ckeditor5
-format: full_html
 editor: ckeditor5
+format: full_html
+image_upload:
+  directory: inline-images
+  max_dimensions:
+    height: 0
+    width: 0
+  max_size: ""
+  scheme: public
+  status: true
+langcode: en
 settings:
   plugins:
     ckeditor5_heading:
@@ -24,9 +31,9 @@ settings:
       reversed: true
       startIndex: true
     ckeditor5_sourceEditing:
-      allowed_tags: {  }
+      allowed_tags: {}
     editor_advanced_link_link:
-      enabled_attributes: {  }
+      enabled_attributes: {}
     media_media:
       allow_view_mode_override: false
   toolbar:
@@ -58,11 +65,4 @@ settings:
       - '|'
       - sourceEditing
       - textPartLanguage
-image_upload:
-  directory: inline-images
-  max_dimensions:
-    height: 0
-    width: 0
-  max_size: ''
-  scheme: public
-  status: true
+status: true

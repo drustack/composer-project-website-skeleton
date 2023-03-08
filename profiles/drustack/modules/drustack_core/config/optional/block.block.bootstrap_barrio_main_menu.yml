@@ -1,5 +1,3 @@
-langcode: en
-status: true
 dependencies:
   config:
     - system.menu.main
@@ -8,17 +6,19 @@ dependencies:
   theme:
     - bootstrap_barrio
 id: bootstrap_barrio_main_menu
-theme: bootstrap_barrio
-region: primary_menu
-weight: -6
+langcode: en
+plugin: system_menu_block:main
 provider: null
-plugin: 'system_menu_block:main'
+region: primary_menu
 settings:
-  id: 'system_menu_block:main'
-  label: 'Main navigation'
-  label_display: '0'
-  provider: system
-  level: 1
   depth: 2
   expand_all_items: true
-visibility: {  }
+  id: system_menu_block:main
+  label: Main navigation
+  label_display: "0"
+  level: 1
+  provider: system
+status: true
+theme: bootstrap_barrio
+visibility: {}
+weight: -6

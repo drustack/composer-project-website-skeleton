@@ -1,21 +1,9 @@
-langcode: en
-status: true
-dependencies:
-  config:
-    - field.field.user.user.user_picture
-    - image.style.thumbnail
-  module:
-    - image
-    - user
-id: user.user.default
-targetEntityType: user
 bundle: user
-mode: default
 content:
   member_for:
     region: content
-    settings: {  }
-    third_party_settings: {  }
+    settings: {}
+    third_party_settings: {}
     weight: 5
   user_picture:
     label: visually_hidden
@@ -25,9 +13,21 @@ content:
       image_loading:
         attribute: lazy
       image_style: thumbnail
-    third_party_settings: {  }
+    third_party_settings: {}
     type: image
     weight: 0
+dependencies:
+  config:
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - image
+    - user
 hidden:
   langcode: true
   search_api_excerpt: true
+id: user.user.default
+langcode: en
+mode: default
+status: true
+targetEntityType: user

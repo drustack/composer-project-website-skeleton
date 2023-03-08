@@ -1,5 +1,3 @@
-langcode: en
-status: true
 dependencies:
   config:
     - filter.format.full_html
@@ -18,26 +16,28 @@ dependencies:
     - toolbar
     - tour
 id: article
-label: Article
-weight: 5
 is_admin: null
+label: Article
+langcode: en
 permissions:
-  - 'create article content'
-  - 'delete article revisions'
-  - 'delete own article content'
-  - 'edit own article content'
-  - 'revert article revisions'
-  - 'view article revisions'
-  - 'access contextual links'
-  - 'access files overview'
-  - 'use text format full_html'
-  - 'access content overview'
-  - 'view own unpublished content'
-  - 'create url aliases'
-  - 'access administration pages'
-  - 'view the administration theme'
-  - 'create terms in tags'
-  - 'access toolbar'
-  - 'access tour'
-  - 'translate article node'
-  - 'clone node entity'
+  - create article content
+  - delete article revisions
+  - delete own article content
+  - edit own article content
+  - revert article revisions
+  - view article revisions
+  - access contextual links
+  - access files overview
+  - use text format full_html
+  - access content overview
+  - view own unpublished content
+  - create url aliases
+  - access administration pages
+  - view the administration theme
+  - create terms in tags
+  - access toolbar
+  - access tour
+  - translate article node
+  - clone node entity
+status: true
+weight: 5

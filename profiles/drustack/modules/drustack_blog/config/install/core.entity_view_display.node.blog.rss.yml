@@ -1,5 +1,10 @@
-langcode: en
-status: true
+bundle: blog
+content:
+  links:
+    region: content
+    settings: {}
+    third_party_settings: {}
+    weight: 0
 dependencies:
   config:
     - core.entity_view_mode.node.rss
@@ -11,20 +16,6 @@ dependencies:
   module:
     - layout_builder
     - user
-third_party_settings:
-  layout_builder:
-    allow_custom: false
-    enabled: false
-id: node.blog.rss
-targetEntityType: node
-bundle: blog
-mode: rss
-content:
-  links:
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-    weight: 0
 hidden:
   body: true
   comment: true
@@ -32,3 +23,12 @@ hidden:
   field_tags: true
   langcode: true
   search_api_excerpt: true
+id: node.blog.rss
+langcode: en
+mode: rss
+status: true
+targetEntityType: node
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false

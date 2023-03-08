@@ -1,22 +1,22 @@
-langcode: en
-status: true
+bundle: page
+default_value: {}
+default_value_callback: ""
 dependencies:
   config:
     - field.storage.node.body
     - node.type.page
   module:
     - text
-id: node.page.body
-field_name: body
+description: ""
 entity_type: node
-bundle: page
+field_name: body
+field_type: text_with_summary
+id: node.page.body
 label: Body
-description: ''
+langcode: en
 required: false
-translatable: true
-default_value: {  }
-default_value_callback: ''
 settings:
   display_summary: true
   required_summary: false
-field_type: text_with_summary
+status: true
+translatable: true

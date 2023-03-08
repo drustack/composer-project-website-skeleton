@@ -1,20 +1,20 @@
-langcode: en
-status: true
 dependencies:
   module:
     - node
   theme:
     - olivero
 id: olivero_syndicate
-theme: olivero
-region: social
-weight: 0
-provider: null
+langcode: en
 plugin: node_syndicate_block
+provider: null
+region: social
 settings:
-  id: node_syndicate_block
-  label: 'RSS feed'
-  label_display: '0'
-  provider: node
   block_count: 10
-visibility: {  }
+  id: node_syndicate_block
+  label: RSS feed
+  label_display: "0"
+  provider: node
+status: true
+theme: olivero
+visibility: {}
+weight: 0

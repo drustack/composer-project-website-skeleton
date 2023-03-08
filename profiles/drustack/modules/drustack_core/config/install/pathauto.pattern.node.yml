@@ -1,13 +1,13 @@
-langcode: en
-status: true
 dependencies:
   module:
     - node
 id: node
 label: Content
-type: 'canonical_entities:node'
+langcode: en
 pattern: '[node:content-type:machine-name]/[node:source:title]'
-selection_criteria: {  }
+relationships: {}
+selection_criteria: {}
 selection_logic: and
+status: true
+type: canonical_entities:node
 weight: 0
-relationships: {  }

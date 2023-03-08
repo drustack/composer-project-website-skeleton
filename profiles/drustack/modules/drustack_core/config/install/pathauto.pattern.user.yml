@@ -1,13 +1,13 @@
-langcode: en
-status: true
 dependencies:
   module:
     - user
 id: user
 label: User
-type: 'canonical_entities:user'
-pattern: 'user/[user:account-name]'
-selection_criteria: {  }
+langcode: en
+pattern: user/[user:account-name]
+relationships: {}
+selection_criteria: {}
 selection_logic: and
+status: true
+type: canonical_entities:user
 weight: 0
-relationships: {  }

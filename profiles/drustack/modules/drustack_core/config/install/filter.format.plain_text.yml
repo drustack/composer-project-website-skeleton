@@ -1,26 +1,26 @@
-langcode: en
-status: true
-dependencies: {  }
-name: 'Plain text'
-format: plain_text
-weight: 3
+dependencies: {}
 filters:
-  filter_html_escape:
-    id: filter_html_escape
-    provider: filter
-    status: true
-    weight: -50
-    settings: {  }
-  filter_url:
-    id: filter_url
-    provider: filter
-    status: true
-    weight: 40
-    settings:
-      filter_url_length: 72
   filter_autop:
     id: filter_autop
     provider: filter
+    settings: {}
     status: true
     weight: 40
-    settings: {  }
+  filter_html_escape:
+    id: filter_html_escape
+    provider: filter
+    settings: {}
+    status: true
+    weight: -50
+  filter_url:
+    id: filter_url
+    provider: filter
+    settings:
+      filter_url_length: 72
+    status: true
+    weight: 40
+format: plain_text
+langcode: en
+name: Plain text
+status: true
+weight: 3

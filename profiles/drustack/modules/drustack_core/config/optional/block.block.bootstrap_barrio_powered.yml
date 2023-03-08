@@ -1,19 +1,19 @@
-langcode: en
-status: true
 dependencies:
   module:
     - system
   theme:
     - bootstrap_barrio
 id: bootstrap_barrio_powered
-theme: bootstrap_barrio
-region: footer_fifth
-weight: -7
-provider: null
+langcode: en
 plugin: system_powered_by_block
+provider: null
+region: footer_fifth
 settings:
   id: system_powered_by_block
-  label: 'Powered by Drupal'
-  label_display: '0'
+  label: Powered by Drupal
+  label_display: "0"
   provider: system
-visibility: {  }
+status: true
+theme: bootstrap_barrio
+visibility: {}
+weight: -7
