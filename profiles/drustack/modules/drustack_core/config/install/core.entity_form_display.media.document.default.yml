@@ -7,7 +7,6 @@ dependencies:
   module:
     - file
     - path
-    - scheduler
 id: media.document.default
 targetEntityType: media
 bundle: document
@@ -47,12 +46,6 @@ content:
     third_party_settings: {  }
     type: path
     weight: 5
-  publish_on:
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-    type: datetime_timestamp_no_default
-    weight: 30
   status:
     region: content
     settings:
@@ -75,10 +68,6 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     weight: 3
-  unpublish_on:
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-    type: datetime_timestamp_no_default
-    weight: 30
-hidden: {  }
+hidden:
+  publish_on: true
+  unpublish_on: true

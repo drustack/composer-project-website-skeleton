@@ -3,9 +3,10 @@ fields:
     body:
       settings:
         compare_format: 0
+        compare_summary: 0
         markdown: drupal_html_to_text
         show_header: 1
-      type: text_field_diff_builder
+      type: text_summary_field_diff_builder
     changed:
       settings: {  }
       type: hidden
@@ -140,6 +141,9 @@ fields:
     name:
       settings: {  }
       type: hidden
+    publish_on:
+      settings: {  }
+      type: hidden
     revision_created:
       settings: {  }
       type: hidden
@@ -169,6 +173,9 @@ fields:
         show_thumbnail: 1
       type: image_field_diff_builder
     uid:
+      settings: {  }
+      type: hidden
+    unpublish_on:
       settings: {  }
       type: hidden
   menu_link_content:
@@ -236,9 +243,10 @@ fields:
     body:
       settings:
         compare_format: 0
+        compare_summary: 0
         markdown: drupal_html_to_text
         show_header: 1
-      type: text_field_diff_builder
+      type: text_summary_field_diff_builder
     changed:
       settings: {  }
       type: hidden
@@ -384,11 +392,8 @@ fields:
       settings: {  }
       type: hidden
     description:
-      settings:
-        compare_format: 0
-        markdown: drupal_html_to_text
-        show_header: 1
-      type: text_field_diff_builder
+      settings: {  }
+      type: hidden
     langcode:
       settings: {  }
       type: hidden
@@ -398,6 +403,9 @@ fields:
         show_header: 1
       type: core_field_diff_builder
     parent:
+      settings: {  }
+      type: hidden
+    publish_on:
       settings: {  }
       type: hidden
     revision_created:
@@ -416,5 +424,8 @@ fields:
       settings: {  }
       type: hidden
     status:
+      settings: {  }
+      type: hidden
+    unpublish_on:
       settings: {  }
       type: hidden

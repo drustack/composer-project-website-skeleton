@@ -4,11 +4,11 @@ dependencies:
   config:
     - core.entity_form_mode.media.media_library
     - field.field.media.image.field_media_image
-    - image.style.thumbnail
+    - image.style.media_library
     - media.type.image
   module:
     - image
-    - scheduler
+    - imce
 id: media.image.media_library
 targetEntityType: media
 bundle: image
@@ -17,9 +17,11 @@ content:
   field_media_image:
     region: content
     settings:
-      preview_image_style: thumbnail
+      preview_image_style: media_library
       progress_indicator: throbber
-    third_party_settings: {  }
+    third_party_settings:
+      imce:
+        enabled: false
     type: image_image
     weight: 2
   langcode:
@@ -37,25 +39,16 @@ content:
     third_party_settings: {  }
     type: string_textfield
     weight: 1
-  publish_on:
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-    type: datetime_timestamp_no_default
-    weight: 30
   translation:
     region: content
     settings: {  }
     third_party_settings: {  }
     weight: 3
-  unpublish_on:
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-    type: datetime_timestamp_no_default
-    weight: 30
 hidden:
   created: true
   path: true
+  publish_on: true
+  scheduler_settings: true
   status: true
   uid: true
+  unpublish_on: true
