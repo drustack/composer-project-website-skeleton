@@ -14,7 +14,7 @@ base_field: ''
 display:
   default:
     id: default
-    display_title: Default
+    display_title: Master
     display_plugin: default
     position: 0
     display_options:
@@ -391,8 +391,6 @@ display:
             description: ''
             use_operator: false
             operator: path_op
-            operator_limit_selection: false
-            operator_list: {  }
             identifier: path
             required: false
             remember: false
@@ -431,8 +429,6 @@ display:
             description: ''
             use_operator: false
             operator: langcode_op
-            operator_limit_selection: false
-            operator_list: {  }
             identifier: langcode
             required: false
             remember: false
@@ -472,8 +468,6 @@ display:
             description: ''
             use_operator: false
             operator: resolved_op
-            operator_limit_selection: false
-            operator_list: {  }
             identifier: resolved
             required: false
             remember: false

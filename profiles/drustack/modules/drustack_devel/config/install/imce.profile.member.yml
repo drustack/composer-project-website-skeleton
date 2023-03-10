@@ -1,7 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+id: member
+label: 'Member profile'
+description: 'Configuration for site members'
 conf:
-  extensions: jpg png gif
+  extensions: 'jpg png gif'
   folders:
-    - path: users/user[user:uid]
+    -
+      path: 'users/user[user:uid]'
       permissions:
         browse_files: true
         delete_files: true
@@ -13,12 +20,6 @@ conf:
   quota: 50
   replace: 0
   thumbnail_grid_style: false
-  thumbnail_style: ""
+  thumbnail_style: ''
   url_alter: false
   usertab: false
-dependencies: {}
-description: Configuration for site members
-id: member
-label: Member profile
-langcode: en
-status: true

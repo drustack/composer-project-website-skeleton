@@ -1,54 +1,54 @@
+langcode: en
+status: true
 dependencies:
   config:
     - core.entity_view_mode.media.media_library
   module:
     - editor
     - media
+name: 'Full HTML'
+format: full_html
+weight: -6
 filters:
   editor_file_reference:
     id: editor_file_reference
     provider: editor
-    settings: {}
     status: true
     weight: -30
+    settings: {  }
   filter_align:
     id: filter_align
     provider: filter
-    settings: {}
     status: true
     weight: 30
+    settings: {  }
   filter_caption:
     id: filter_caption
     provider: filter
-    settings: {}
     status: true
     weight: 30
+    settings: {  }
   filter_html:
     id: filter_html
     provider: filter
-    settings:
-      allowed_html: ""
-      filter_html_help: true
-      filter_html_nofollow: false
     status: false
     weight: -10
+    settings:
+      allowed_html: ''
+      filter_html_help: true
+      filter_html_nofollow: false
   filter_htmlcorrector:
     id: filter_htmlcorrector
     provider: filter
-    settings: {}
     status: true
     weight: 50
+    settings: {  }
   media_embed:
     id: media_embed
     provider: media
-    settings:
-      allowed_media_types: {}
-      allowed_view_modes: {}
-      default_view_mode: media_library
     status: true
     weight: 40
-format: full_html
-langcode: en
-name: Full HTML
-status: true
-weight: -6
+    settings:
+      default_view_mode: media_library
+      allowed_view_modes: {  }
+      allowed_media_types: {  }

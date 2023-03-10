@@ -1,22 +1,22 @@
-bundle: blog
-default_value: {}
-default_value_callback: ""
+langcode: en
+status: true
 dependencies:
   config:
     - field.storage.node.body
     - node.type.blog
   module:
     - text
-description: ""
-entity_type: node
-field_name: body
-field_type: text_with_summary
 id: node.blog.body
+field_name: body
+entity_type: node
+bundle: blog
 label: Body
-langcode: en
+description: ''
 required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
 settings:
   display_summary: true
   required_summary: false
-status: true
-translatable: true
+field_type: text_with_summary

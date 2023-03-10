@@ -1,21 +1,20 @@
-configuration:
-  authentication:
-    - basic_auth
-  formats:
-    - json
-    - xml
-  methods:
-    - GET
-    - POST
-    - DELETE
-    - PATCH
+langcode: en
+status: true
 dependencies:
   module:
     - basic_auth
     - node
     - serialization
-granularity: resource
 id: entity.node
-langcode: en
-plugin_id: entity:node
-status: true
+plugin_id: 'entity:node'
+granularity: resource
+configuration:
+  authentication:
+    - basic_auth
+  formats:
+    - json
+  methods:
+    - GET
+    - POST
+    - PATCH
+    - DELETE

@@ -1,50 +1,15 @@
+langcode: en
+status: true
 dependencies:
   module:
-    - editor
-    - media
     - twig
+name: Twig
+format: twig
+weight: 6
 filters:
-  editor_file_reference:
-    id: editor_file_reference
-    provider: editor
-    settings: {}
-    status: true
-    weight: -30
-  filter_align:
-    id: filter_align
-    provider: filter
-    settings: {}
-    status: true
-    weight: 30
-  filter_caption:
-    id: filter_caption
-    provider: filter
-    settings: {}
-    status: true
-    weight: 30
-  filter_htmlcorrector:
-    id: filter_htmlcorrector
-    provider: filter
-    settings: {}
-    status: true
-    weight: 50
   filter_twig:
     id: filter_twig
     provider: twig
-    settings: {}
     status: true
     weight: 40
-  media_embed:
-    id: media_embed
-    provider: media
-    settings:
-      allowed_media_types: {}
-      allowed_view_modes: {}
-      default_view_mode: default
-    status: true
-    weight: 40
-format: twig
-langcode: en
-name: Twig
-status: true
-weight: 6
+    settings: {  }

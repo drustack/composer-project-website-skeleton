@@ -1,19 +1,19 @@
+langcode: en
+status: true
 dependencies:
   module:
     - system
   theme:
     - claro
 id: claro_messages
-langcode: en
-plugin: system_messages_block
-provider: null
+theme: claro
 region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
 settings:
   id: system_messages_block
-  label: Status messages
-  label_display: "0"
+  label: 'Status messages'
+  label_display: '0'
   provider: system
-status: true
-theme: claro
-visibility: {}
-weight: 0
+visibility: {  }

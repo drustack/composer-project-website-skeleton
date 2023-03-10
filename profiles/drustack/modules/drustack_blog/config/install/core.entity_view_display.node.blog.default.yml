@@ -1,43 +1,5 @@
-bundle: blog
-content:
-  body:
-    label: visually_hidden
-    region: content
-    settings: {}
-    third_party_settings: {}
-    type: text_default
-    weight: 1
-  comment:
-    label: above
-    region: content
-    settings:
-      pager_id: 0
-      view_mode: default
-    third_party_settings: {}
-    type: comment_default
-    weight: 4
-  field_image:
-    label: visually_hidden
-    region: content
-    settings:
-      image_link: ""
-      responsive_image_style: bootstrap
-    third_party_settings: {}
-    type: responsive_image
-    weight: 0
-  field_tags:
-    label: visually_hidden
-    region: content
-    settings:
-      link: true
-    third_party_settings: {}
-    type: entity_reference_label
-    weight: 2
-  links:
-    region: content
-    settings: {}
-    third_party_settings: {}
-    weight: 3
+langcode: en
+status: true
 dependencies:
   config:
     - core.entity_view_display.comment.comment.default
@@ -52,11 +14,49 @@ dependencies:
     - responsive_image
     - text
     - user
+id: node.blog.default
+targetEntityType: node
+bundle: blog
+mode: default
+content:
+  body:
+    label: visually_hidden
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    weight: 1
+  comment:
+    label: above
+    region: content
+    settings:
+      pager_id: 0
+      view_mode: default
+    third_party_settings: {  }
+    type: comment_default
+    weight: 4
+  field_image:
+    label: visually_hidden
+    region: content
+    settings:
+      image_link: ''
+      responsive_image_style: bootstrap
+    third_party_settings: {  }
+    type: responsive_image
+    weight: 0
+  field_tags:
+    label: visually_hidden
+    region: content
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    weight: 2
+  links:
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
 hidden:
   langcode: true
   search_api_excerpt: true
-id: node.blog.default
-langcode: en
-mode: default
-status: true
-targetEntityType: node

@@ -1,3 +1,5 @@
+langcode: en
+status: true
 dependencies:
   config:
     - filter.format.full_html
@@ -16,28 +18,26 @@ dependencies:
     - toolbar
     - tour
 id: page
-is_admin: null
-label: Basic Page
-langcode: en
-permissions:
-  - access administration pages
-  - access content overview
-  - access contextual links
-  - access files overview
-  - access toolbar
-  - access tour
-  - clone node entity
-  - create page content
-  - create terms in tags
-  - create url aliases
-  - delete own page content
-  - delete page revisions
-  - edit own page content
-  - revert page revisions
-  - translate page node
-  - use text format full_html
-  - view own unpublished content
-  - view page revisions
-  - view the administration theme
-status: true
+label: 'Basic Page'
 weight: 5
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access toolbar'
+  - 'access tour'
+  - 'clone node entity'
+  - 'create page content'
+  - 'create terms in tags'
+  - 'create url aliases'
+  - 'delete own page content'
+  - 'delete page revisions'
+  - 'edit own page content'
+  - 'revert page revisions'
+  - 'translate page node'
+  - 'use text format full_html'
+  - 'view own unpublished content'
+  - 'view page revisions'
+  - 'view the administration theme'

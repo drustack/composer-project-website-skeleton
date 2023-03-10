@@ -1,20 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+id: contact_message.feedback.default
+targetEntityType: contact_message
 bundle: feedback
+mode: default
 content:
   message:
     label: above
     region: content
-    settings: {}
-    third_party_settings: {}
+    settings: {  }
+    third_party_settings: {  }
     type: basic_string
     weight: 0
-dependencies:
-  config:
-    - contact.form.feedback
 hidden:
   langcode: true
   search_api_excerpt: true
-id: contact_message.feedback.default
-langcode: en
-mode: default
-status: true
-targetEntityType: contact_message
