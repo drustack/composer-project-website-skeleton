@@ -8,7 +8,7 @@ dependencies:
     - field.field.node.blog.field_image
     - field.field.node.blog.field_tags
     - node.type.blog
-    - responsive_image.styles.bootstrap
+    - responsive_image.styles.durstack_bootstrap
   module:
     - responsive_image
     - text
@@ -31,7 +31,7 @@ content:
     region: content
     settings:
       image_link: content
-      responsive_image_style: bootstrap
+      responsive_image_style: durstack_bootstrap
     third_party_settings: {  }
     type: responsive_image
     weight: 0
