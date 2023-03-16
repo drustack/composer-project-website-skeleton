@@ -1,19 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.page.body
+    - field.field.node.page.field_image
+    - field.field.node.page.field_tags
+    - node.type.page
+    - responsive_image.styles.durstack_bootstrap
+  module:
+    - responsive_image
+    - text
+    - user
+id: node.page.default
+targetEntityType: node
 bundle: page
+mode: default
 content:
   body:
     label: visually_hidden
     region: content
-    settings: {}
-    third_party_settings: {}
+    settings: {  }
+    third_party_settings: {  }
     type: text_default
     weight: 1
   field_image:
     label: visually_hidden
     region: content
     settings:
-      image_link: ""
-      responsive_image_style: bootstrap
-    third_party_settings: {}
+      image_link: ''
+      responsive_image_style: durstack_bootstrap
+    third_party_settings: {  }
     type: responsive_image
     weight: 0
   field_tags:
@@ -21,30 +37,14 @@ content:
     region: content
     settings:
       link: true
-    third_party_settings: {}
+    third_party_settings: {  }
     type: entity_reference_label
     weight: 2
   links:
     region: content
-    settings: {}
-    third_party_settings: {}
+    settings: {  }
+    third_party_settings: {  }
     weight: 3
-dependencies:
-  config:
-    - field.field.node.page.body
-    - field.field.node.page.field_image
-    - field.field.node.page.field_tags
-    - node.type.page
-    - responsive_image.styles.bootstrap
-  module:
-    - responsive_image
-    - text
-    - user
 hidden:
   langcode: true
   search_api_excerpt: true
-id: node.page.default
-langcode: en
-mode: default
-status: true
-targetEntityType: node

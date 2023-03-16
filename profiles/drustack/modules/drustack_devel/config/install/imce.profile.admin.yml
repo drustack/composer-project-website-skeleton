@@ -1,7 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+id: admin
+label: 'Admin profile'
+description: 'Configuration for site administrators'
 conf:
   extensions: '*'
   folders:
-    - path: .
+    -
+      path: .
       permissions:
         all: true
   ignore_usage: false
@@ -11,12 +18,6 @@ conf:
   quota: 0
   replace: 0
   thumbnail_grid_style: false
-  thumbnail_style: ""
+  thumbnail_style: ''
   url_alter: false
   usertab: false
-dependencies: {}
-description: Configuration for site administrators
-id: admin
-label: Admin profile
-langcode: en
-status: true

@@ -1,13 +1,13 @@
+langcode: en
+status: true
 dependencies:
   module:
     - taxonomy
 id: taxonomy_term
-label: Taxonomy term
-langcode: en
+label: 'Taxonomy term'
+type: 'canonical_entities:taxonomy_term'
 pattern: '[term:source:parent:url:path]/[term:source:name]'
-relationships: {}
-selection_criteria: {}
+selection_criteria: {  }
 selection_logic: and
-status: true
-type: canonical_entities:taxonomy_term
 weight: 0
+relationships: {  }

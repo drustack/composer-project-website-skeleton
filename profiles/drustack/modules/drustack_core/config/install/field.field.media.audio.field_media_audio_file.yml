@@ -1,26 +1,26 @@
-bundle: audio
-default_value: {}
-default_value_callback: ""
+langcode: en
+status: true
 dependencies:
   config:
     - field.storage.media.field_media_audio_file
     - media.type.audio
   module:
     - file
-description: ""
-entity_type: media
-field_name: field_media_audio_file
-field_type: file
 id: media.audio.field_media_audio_file
-label: Audio file
-langcode: en
+field_name: field_media_audio_file
+entity_type: media
+bundle: audio
+label: 'Audio file'
+description: ''
 required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
 settings:
   description_field: true
   file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: mp3 wav aac
-  handler: default:file
-  handler_settings: {}
-  max_filesize: ""
-status: true
-translatable: true
+  file_extensions: 'mp3 wav aac'
+  handler: 'default:file'
+  handler_settings: {  }
+  max_filesize: ''
+field_type: file

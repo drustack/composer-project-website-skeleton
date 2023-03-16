@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - better_exposed_filters
     - node
     - user
     - views_bulk_operations
@@ -79,23 +80,7 @@ display:
           force_selection_info: false
           selected_actions:
             -
-              action_id: node_unpublish_by_keyword_action
-              preconfiguration:
-                add_confirmation: false
-            -
-              action_id: node_make_sticky_action
-              preconfiguration:
-                add_confirmation: false
-            -
-              action_id: node_assign_owner_action
-              preconfiguration:
-                add_confirmation: false
-            -
               action_id: node_unpromote_action
-              preconfiguration:
-                add_confirmation: false
-            -
-              action_id: node_promote_action
               preconfiguration:
                 add_confirmation: false
             -
@@ -103,17 +88,33 @@ display:
               preconfiguration:
                 add_confirmation: false
             -
-              action_id: views_bulk_operations_delete_entity
-            -
-              action_id: 'entity:save_action:node'
+              action_id: node_unpublish_by_keyword_action
               preconfiguration:
                 add_confirmation: false
+            -
+              action_id: node_assign_owner_action
+              preconfiguration:
+                add_confirmation: false
+            -
+              action_id: node_promote_action
+              preconfiguration:
+                add_confirmation: false
+            -
+              action_id: node_make_sticky_action
+              preconfiguration:
+                add_confirmation: false
+            -
+              action_id: views_bulk_operations_delete_entity
             -
               action_id: 'entity:publish_action:node'
               preconfiguration:
                 add_confirmation: false
             -
               action_id: 'entity:unpublish_action:node'
+              preconfiguration:
+                add_confirmation: false
+            -
+              action_id: 'entity:save_action:node'
               preconfiguration:
                 add_confirmation: false
         title:
@@ -583,15 +584,59 @@ display:
             offset_label: Offset
           quantity: 9
       exposed_form:
-        type: basic
+        type: bef
         options:
-          submit_button: Apply
+          submit_button: Filter
           reset_button: true
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
+          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required_format: full_html
+          bef:
+            general:
+              autosubmit: false
+              autosubmit_exclude_textfield: false
+              autosubmit_textfield_delay: 500
+              autosubmit_hide: false
+              input_required: false
+              allow_secondary: false
+              secondary_label: 'Advanced options'
+              secondary_open: false
+              reset_button_always_show: true
+            filter:
+              title:
+                plugin_id: default
+                advanced:
+                  placeholder_text: ''
+                  collapsible: false
+                  is_secondary: false
+              type:
+                plugin_id: default
+                advanced:
+                  sort_options: false
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
+              status:
+                plugin_id: default
+                advanced:
+                  sort_options: false
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
+              langcode:
+                plugin_id: default
+                advanced:
+                  sort_options: false
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
       access:
         type: perm
         options:
@@ -643,7 +688,6 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
-            placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -685,6 +729,10 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
+              article: '0'
+              page: '0'
+              blog: '0'
+              webmaster: '0'
               administrator: '0'
             reduce: false
           is_grouped: false
@@ -776,6 +824,10 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
+              article: '0'
+              page: '0'
+              blog: '0'
+              webmaster: '0'
               administrator: '0'
             reduce: false
           is_grouped: false
@@ -923,18 +975,12 @@ display:
           id: uid
           table: node_field_data
           field: uid
-          relationship: none
-          group_type: group
           admin_label: author
           plugin_id: standard
           required: true
-      css_class: ''
       use_ajax: false
       group_by: false
-      show_admin_links: false
-      use_more: false
-      use_more_always: true
-      use_more_text: more
+      show_admin_links: true
       hide_attachment_summary: false
       display_extenders: {  }
     cache_metadata:
@@ -954,7 +1000,6 @@ display:
     display_plugin: page
     position: 1
     display_options:
-      display_description: ''
       display_comment: ''
       rendering_language: '***LANGUAGE_entity_translation***'
       exposed_block: false
