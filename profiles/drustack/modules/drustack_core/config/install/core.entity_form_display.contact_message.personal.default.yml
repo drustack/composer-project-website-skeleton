@@ -1,59 +1,59 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.personal
+id: contact_message.personal.default
+targetEntityType: contact_message
 bundle: personal
+mode: default
 content:
   copy:
     region: content
-    settings: {}
-    third_party_settings: {}
+    settings: {  }
+    third_party_settings: {  }
     weight: 50
   langcode:
     region: content
     settings:
       include_locked: true
-    third_party_settings: {}
+    third_party_settings: {  }
     type: language_select
     weight: 2
   mail:
     region: content
-    settings: {}
-    third_party_settings: {}
+    settings: {  }
+    third_party_settings: {  }
     weight: -40
   message:
     region: content
     settings:
-      placeholder: ""
+      placeholder: ''
       rows: 12
-    third_party_settings: {}
+    third_party_settings: {  }
     type: string_textarea
     weight: 0
   name:
     region: content
-    settings: {}
-    third_party_settings: {}
+    settings: {  }
+    third_party_settings: {  }
     weight: -50
   preview:
     region: content
-    settings: {}
-    third_party_settings: {}
+    settings: {  }
+    third_party_settings: {  }
     weight: 40
   recipient:
     region: content
-    settings: {}
-    third_party_settings: {}
+    settings: {  }
+    third_party_settings: {  }
     weight: -30
   subject:
     region: content
     settings:
-      placeholder: ""
+      placeholder: ''
       size: 60
-    third_party_settings: {}
+    third_party_settings: {  }
     type: string_textfield
     weight: -10
-dependencies:
-  config:
-    - contact.form.personal
-hidden: {}
-id: contact_message.personal.default
-langcode: en
-mode: default
-status: true
-targetEntityType: contact_message
+hidden: {  }

@@ -1,18 +1,18 @@
-cardinality: 1
-custom_storage: false
+langcode: en
+status: true
 dependencies:
   module:
     - comment
     - text
-entity_type: comment
-field_name: comment_body
 id: comment.comment_body
-indexes: {}
-langcode: en
-locked: false
-module: text
-persist_with_no_fields: true
-settings: {}
-status: true
-translatable: true
+field_name: comment_body
+entity_type: comment
 type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: true
+custom_storage: false

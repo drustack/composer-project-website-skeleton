@@ -1,0 +1,66 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.lg
+    - image.style.md
+    - image.style.sm
+    - image.style.xl
+    - image.style.xxl
+  theme:
+    - drustack_bootstrap
+id: durstack_bootstrap
+label: 'DurStack Bootstrap'
+image_style_mappings:
+  -
+    breakpoint_id: drustack_bootstrap.xxl
+    image_mapping: xxl
+    image_mapping_type: image_style
+    multiplier: 1x
+  -
+    breakpoint_id: drustack_bootstrap.xxl
+    image_mapping: xxl
+    image_mapping_type: image_style
+    multiplier: 2x
+  -
+    breakpoint_id: drustack_bootstrap.xl
+    image_mapping: xl
+    image_mapping_type: image_style
+    multiplier: 1x
+  -
+    breakpoint_id: drustack_bootstrap.xl
+    image_mapping: xl
+    image_mapping_type: image_style
+    multiplier: 2x
+  -
+    breakpoint_id: drustack_bootstrap.lg
+    image_mapping: lg
+    image_mapping_type: image_style
+    multiplier: 1x
+  -
+    breakpoint_id: drustack_bootstrap.lg
+    image_mapping: lg
+    image_mapping_type: image_style
+    multiplier: 2x
+  -
+    breakpoint_id: drustack_bootstrap.md
+    image_mapping: md
+    image_mapping_type: image_style
+    multiplier: 1x
+  -
+    breakpoint_id: drustack_bootstrap.md
+    image_mapping: md
+    image_mapping_type: image_style
+    multiplier: 2x
+  -
+    breakpoint_id: drustack_bootstrap.sm
+    image_mapping: sm
+    image_mapping_type: image_style
+    multiplier: 1x
+  -
+    breakpoint_id: drustack_bootstrap.sm
+    image_mapping: sm
+    image_mapping_type: image_style
+    multiplier: 2x
+breakpoint_group: drustack_bootstrap
+fallback_image_style: '_original image_'

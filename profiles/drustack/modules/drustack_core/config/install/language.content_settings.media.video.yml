@@ -1,17 +1,17 @@
-default_langcode: site_default
+langcode: en
+status: true
 dependencies:
   config:
     - media.type.video
   module:
     - content_translation
-id: media.video
-langcode: en
-language_alterable: true
-status: true
-target_bundle: video
-target_entity_type_id: media
 third_party_settings:
   content_translation:
     bundle_settings:
-      untranslatable_fields_hide: "0"
+      untranslatable_fields_hide: '0'
     enabled: true
+id: media.video
+target_entity_type_id: media
+target_bundle: video
+default_langcode: site_default
+language_alterable: true

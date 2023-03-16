@@ -1,0 +1,35 @@
+drustack_bootstrap.sm:
+  label: Small
+  mediaQuery: 'all and (max-width: 576px)'
+  multipliers:
+    - 1x
+    - 2x
+  weight: 0
+drustack_bootstrap.md:
+  label: Medium
+  mediaQuery: 'all and (min-width: 768px)'
+  multipliers:
+    - 1x
+    - 2x
+  weight: 1
+drustack_bootstrap.lg:
+  label: Large
+  mediaQuery: 'all and (min-width: 992px)'
+  multipliers:
+    - 1x
+    - 2x
+  weight: 2
+drustack_bootstrap.xl:
+  label: Extra large
+  mediaQuery: 'all and (min-width: 1200px)'
+  multipliers:
+    - 1x
+    - 2x
+  weight: 3
+drustack_bootstrap.xxl:
+  label: Extra extra large
+  mediaQuery: 'all and (min-width: 1400px)'
+  multipliers:
+    - 1x
+    - 2x
+  weight: 4

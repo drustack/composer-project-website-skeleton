@@ -1,19 +1,19 @@
+langcode: en
+status: true
 dependencies:
   module:
     - system
   theme:
     - drustack_bootstrap
 id: drustack_bootstrap_breadcrumbs
-langcode: en
-plugin: system_breadcrumb_block
-provider: null
+theme: drustack_bootstrap
 region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
 settings:
   id: system_breadcrumb_block
   label: Breadcrumbs
-  label_display: "0"
+  label_display: '0'
   provider: system
-status: true
-theme: drustack_bootstrap
-visibility: {}
-weight: 0
+visibility: {  }

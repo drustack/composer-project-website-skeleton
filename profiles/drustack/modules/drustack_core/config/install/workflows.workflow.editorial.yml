@@ -1,14 +1,14 @@
+langcode: en
+status: true
 dependencies:
   module:
     - content_moderation
 id: editorial
 label: Editorial
-langcode: en
-status: true
 type: content_moderation
 type_settings:
   default_moderation_state: draft
-  entity_types: {}
+  entity_types: {  }
   states:
     archived:
       default_revision: true
@@ -35,7 +35,7 @@ type_settings:
     archived_draft:
       from:
         - archived
-      label: Restore to Draft
+      label: 'Restore to Draft'
       to: draft
       weight: 3
     archived_published:
@@ -48,7 +48,7 @@ type_settings:
       from:
         - draft
         - published
-      label: Create New Draft
+      label: 'Create New Draft'
       to: draft
       weight: 0
     publish:
