@@ -1,10 +1,9 @@
 bootstrap:
   dependencies:
-    - core/popperjs
     - core/jquery
     - core/drupal
   js:
-    ../../../../libraries/bootstrap/dist/js/bootstrap.min.js:
+    ../../../../libraries/bootstrap/dist/js/bootstrap.bundle.min.js:
       minified: true
   version: VERSION
 fontawesome:
