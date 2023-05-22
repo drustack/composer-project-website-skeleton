@@ -1,0 +1,51 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: httpd
+  namespace: default
+  labels:
+    service: httpd
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      service: httpd
+  template:
+    metadata:
+      labels:
+        service: httpd
+    spec:
+      containers:
+        - name: httpd
+          image: docker.io/alvistack/httpd-2.4:latest
+          imagePullPolicy: IfNotPresent
+          resources:
+            requests:
+              cpu: 10m
+              memory: 64Mi
+            limits:
+              memory: 128Mi
+          workingDir: /var/www/html
+          ports:
+            - containerPort: 80
+          readinessProbe:
+            tcpSocket:
+              port: 80
+          livenessProbe:
+            tcpSocket:
+              port: 80
+            initialDelaySeconds: 30
+          volumeMounts:
+            - mountPath: /etc/apache2/sites-enabled/000-default.conf
+              name: etc-apache2-sites-enabled
+              subPath: 000-default.conf
+#            - mountPath: /var/www/html
+#              name: var-www-html
+      volumes:
+        - name: etc-apache2-sites-enabled
+          configMap:
+            name: etc-apache2-sites-enabled
+#        - name: var-www-html
+#          persistentVolumeClaim:
+#            claimName: var-www-html

@@ -1,0 +1,36 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: etc-php-fpm-pool-d
+  namespace: default
+data:
+  www.conf: |
+    [www]
+    user = www-data
+    group = www-data
+    listen = 9000
+    listen.owner = www-data
+    listen.group = www-data
+    pm = static
+    pm.max_children = 2
+    access.log = /proc/self/fd/2
+    catch_workers_output = yes
+    decorate_workers_output = no
+    clear_env = no
+    php_admin_value[date.timezone] = Asia/Hong_Kong
+    php_admin_value[display_errors] = Off
+    php_admin_value[display_startup_errors] = Off
+    php_admin_value[error_reporting] = E_ALL & ~E_DEPRECATED & ~E_STRICT
+    php_admin_value[html_errors] = On
+    php_admin_value[ignore_repeated_errors] = Off
+    php_admin_value[ignore_repeated_source] = Off
+    php_admin_value[log_errors] = On
+    php_admin_value[max_execution_time] = 300
+    php_admin_value[max_input_time] = 600
+    php_admin_value[memory_limit] = 256M
+    php_admin_value[post_max_size] = 32M
+    php_admin_value[report_memleaks] = On
+    php_admin_value[short_open_tag] = Off
+    php_admin_value[track_errors] = Off
+    php_admin_value[upload_max_filesize] = 32M

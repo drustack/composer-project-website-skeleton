@@ -1,0 +1,97 @@
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: mariadb
+  namespace: default
+  labels:
+    service: mariadb
+spec:
+  serviceName: mariadb-headless
+  replicas: 1
+  updateStrategy:
+    type: RollingUpdate
+  selector:
+    matchLabels:
+      service: mariadb
+  template:
+    metadata:
+      labels:
+        service: mariadb
+    spec:
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            - labelSelector:
+                matchExpressions:
+                  - key: service
+                    operator: In
+                    values:
+                      - mariadb
+              topologyKey: "kubernetes.io/hostname"
+      containers:
+        - name: mariadb
+          image: docker.io/alvistack/mariadb-10.8:latest
+          imagePullPolicy: IfNotPresent
+          resources:
+            requests:
+              cpu: 100m
+              memory: 511Mi
+            limits:
+              memory: 512Mi
+          ports:
+            - containerPort: 3306
+            - containerPort: 4444
+            - containerPort: 4567
+            - containerPort: 4568
+          env:
+            - name: MYSQL_DATABASE
+              value: "default"
+            - name: MYSQL_ROOT_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: mariadb
+                  key: MYSQL_ROOT_PASSWORD
+            - name: POD_NAMESPACE
+              valueFrom:
+                fieldRef:
+                  apiVersion: v1
+                  fieldPath: metadata.namespace
+#          args:
+#            - /bin/sh
+#            - -c
+#            - peer-finder -on-start=on-start.sh -service=mariadb-headless
+          readinessProbe:
+            exec:
+              command:
+                - /bin/sh
+                - -c
+                - mysql -uroot -p$MYSQL_ROOT_PASSWORD -e "SELECT 1"
+            failureThreshold: 30
+          livenessProbe:
+            exec:
+              command:
+                - /bin/sh
+                - -c
+                - mysql -uroot -p$MYSQL_ROOT_PASSWORD -e "SELECT 1"
+            initialDelaySeconds: 300
+            failureThreshold: 30
+          volumeMounts:
+            - mountPath: /etc/mysql/my.cnf
+              name: etc-mysql
+              subPath: my.cnf
+#            - mountPath: /var/lib/mysql
+#              name: var-lib-mysql
+      volumes:
+        - name: etc-mysql
+          configMap:
+            name: etc-mysql
+#  volumeClaimTemplates:
+#    - metadata:
+#        name: var-lib-mysql
+#      spec:
+#        accessModes:
+#          - ReadWriteOnce
+#        resources:
+#          requests:
+#            storage: 100Gi

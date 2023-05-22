@@ -1,0 +1,51 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: php
+  namespace: default
+  labels:
+    service: php
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      service: php
+  template:
+    metadata:
+      labels:
+        service: php
+    spec:
+      containers:
+        - name: php
+          image: docker.io/alvistack/php-8.1-fpm:latest
+          imagePullPolicy: IfNotPresent
+          resources:
+            requests:
+              cpu: 10m
+              memory: 256Mi
+            limits:
+              memory: 512Mi
+          workingDir: /var/www/html
+          ports:
+            - containerPort: 9000
+          readinessProbe:
+            tcpSocket:
+              port: 9000
+          livenessProbe:
+            tcpSocket:
+              port: 9000
+            initialDelaySeconds: 30
+          volumeMounts:
+            - mountPath: /etc/php/fpm/pool.d/www.conf
+              name: etc-php-fpm-pool-d
+              subPath: www.conf
+#            - mountPath: /var/www/html
+#              name: var-www-html
+      volumes:
+        - name: etc-php-fpm-pool-d
+          configMap:
+            name: etc-php-fpm-pool-d
+#        - name: var-www-html
+#          persistentVolumeClaim:
+#            claimName: var-www-html
