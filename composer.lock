@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8ab2393f209a86bc6208fe14ea4d4d5f",
+    "content-hash": "bb8da94bb628429b0809b71c620ff12f",
     "packages": [
         {
             "name": "arthurkushman/query-path",
@@ -8110,6 +8110,57 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/imce",
                 "issues": "https://www.drupal.org/project/issues/imce"
+            }
+        },
+        {
+            "name": "drupal/imce_rename_plugin",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/imce_rename_plugin.git",
+                "reference": "2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/imce_rename_plugin-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "55f0519dfe339bdf8c87bbfa04e4ab07b06f3585"
+            },
+            "require": {
+                "drupal/core": "^9.3 || ^10",
+                "drupal/imce": "*",
+                "ext-mbstring": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0",
+                    "datestamp": "1683888882",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Volodymyr Melnychuk",
+                    "homepage": "https://www.drupal.org/user/3138649",
+                    "email": "melnychuk.v8@gmail.com"
+                }
+            ],
+            "description": "Plugin Rename for IMCE in order to rename image",
+            "homepage": "https://www.drupal.org/project/imce_rename_plugin",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/imce_rename_plugin",
+                "issues": "https://www.drupal.org/project/issues/imce_rename_plugin"
             }
         },
         {
