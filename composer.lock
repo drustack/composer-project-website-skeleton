@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5512290d2aebbebe072be303f8765ee2",
+    "content-hash": "66f39de7a0461f7dffb3fa2ca31c9f30",
     "packages": [
         {
             "name": "arthurkushman/query-path",
@@ -9561,29 +9561,29 @@
         },
         {
             "name": "drupal/metatag",
-            "version": "1.25.0",
+            "version": "2.0.0-rc2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/metatag.git",
-                "reference": "8.x-1.25"
+                "reference": "2.0.0-rc2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/metatag-8.x-1.25.zip",
-                "reference": "8.x-1.25",
-                "shasum": "8603d84df3b93dd02dae601d57a6347598829e56"
+                "url": "https://ftp.drupal.org/files/projects/metatag-2.0.0-rc2.zip",
+                "reference": "2.0.0-rc2",
+                "shasum": "a7af9af95aa74d7964fb76afa6b3f379ed385171"
             },
             "require": {
-                "drupal/core": "^9.3 || ^10",
-                "drupal/token": "^1.0"
+                "drupal/core": "^9.4 || ^10",
+                "drupal/token": "^1.0",
+                "php": ">=8.0"
             },
             "require-dev": {
                 "drupal/devel": "^4.0 || ^5.0",
                 "drupal/hal": "^9 || ^1 || ^2",
                 "drupal/metatag_dc": "*",
                 "drupal/metatag_open_graph": "*",
-                "drupal/page_manager": "*",
-                "drupal/panelizer": "^4.0",
+                "drupal/page_manager": "^4.0",
                 "drupal/redirect": "^1.0",
                 "drupal/webprofiler": "^9 || ^10",
                 "mpyw/phpunit-patch-serializable-comparison": "*"
@@ -9591,11 +9591,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.25",
-                    "datestamp": "1685541226",
+                    "version": "2.0.0-rc2",
+                    "datestamp": "1685470335",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -10988,21 +10988,22 @@
         },
         {
             "name": "drupal/schema_metatag",
-            "version": "2.4.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/schema_metatag.git",
-                "reference": "8.x-2.4"
+                "reference": "3.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/schema_metatag-8.x-2.4.zip",
-                "reference": "8.x-2.4",
-                "shasum": "4ea69916a78192e0af6e2a7d0f4f6d3f0e891b0a"
+                "url": "https://ftp.drupal.org/files/projects/schema_metatag-3.0.0.zip",
+                "reference": "3.0.0",
+                "shasum": "4162542d1b6bfa07ad749b6b2d58249063fe7146"
             },
             "require": {
                 "drupal/core": "^9.0 || ^10",
-                "drupal/metatag": "^1.0"
+                "drupal/metatag": "^2.0",
+                "php": ">=8.0"
             },
             "require-dev": {
                 "drupal/coder": "^8.3",
@@ -11014,8 +11015,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.4",
-                    "datestamp": "1670328794",
+                    "version": "3.0.0",
+                    "datestamp": "1686395007",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
