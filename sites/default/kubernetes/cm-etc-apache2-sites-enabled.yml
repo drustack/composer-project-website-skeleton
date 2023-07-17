@@ -1,0 +1,26 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: etc-apache2-sites-enabled
+  namespace: default
+data:
+  000-default.conf: |
+    <VirtualHost *:80>
+        DocumentRoot /var/www/html/web
+        SetEnvIfNoCase ^Authorization$ "(.+)" HTTP_AUTHORIZATION=$1
+        <Directory /var/www/html/web>
+            Options Indexes FollowSymLinks
+            AllowOverride All
+            Require all granted
+        </Directory>
+        <FilesMatch ".+\.ph(p[3457]?|t|tml)$">
+            SetHandler proxy:fcgi://php:9000
+        </FilesMatch>
+        <FilesMatch ".+\.phps$">
+            Require all denied
+        </FilesMatch>
+        <FilesMatch "^\.ph(p[3457]?|t|tml|ps)$">
+            Require all denied
+        </FilesMatch>
+    </VirtualHost>
