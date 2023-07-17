@@ -5,56 +5,29 @@ Description: Bootstrap 4 with Sass
 
 // import files
 @import "import";
+@import "page";
+@import "region--header-top";
+@import "menu--main";
+@import "menu--header";
+@import "menu--footer";
+@import "block--system-breadcrumb-block";
+@import "region--footer-first";
+@import "region--footer-second";
+@import "region--footer-third";
+@import "region--footer-fourth";
+@import "region--footer-bottom";
 
 /* GENERAL STYLES
 -------------------------------------------------*/
 
 body {
-    background: $white;
+  overflow-x: hidden;
 }
 
-
-/* COLORS 
---------------------------------------------------*/
-
-a {
-    color: $secondary;
+.container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+  --bs-gutter-x: 40px;
 }
 
-.bg-inverse {
-    background: $primary !important;
-}
-
-.site-footer {
-    background: $secondary !important;
-}
-
-.menu--main li a {
-    color: $primary;
-}
-
-.menu--account li a {
-    color: $primary;
-}
-
-.site-name-slogan a {
-    text-decoration: none;
-}
-
-.card-group img {
-    margin: 0;
-    width: 100%;
-    height: auto;
-}
-
-.card-group .field--type-image {
-    margin: 0;
-}
-
-.slick {
-    width: 100%;
-}
-
-.slick>div {
-    margin: 0 15px;
+img {
+  width: 100%;
 }

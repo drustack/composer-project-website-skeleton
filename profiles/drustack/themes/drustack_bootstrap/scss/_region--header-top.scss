@@ -1,0 +1,108 @@
+.region-header-top {
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+
+  @media (min-width: $lg) {
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header_top_right {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: end;
+    height: inherit;
+
+    .drawer_btn_wrapper {
+      width: 55px;
+
+      @media (min-width: $lg) {
+        border-left: 1px solid $white;
+        border-right: 1px solid $white;
+      }
+
+      .drawer_btn {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+
+        &.clicked svg {
+          transform: rotate(180deg);
+        }
+
+        svg {
+          color: $white;
+          width: inherit;
+          transform: rotate(0);
+          transition: transform 0.3s;
+        }
+      }
+    }
+
+    .block-text-resize-block {
+      width: auto;
+
+      .content {
+        height: 100%;
+
+        .content {
+          display: flex;
+          align-items: center;
+
+          #text_resize_decrease, #text_resize_reset, #text_resize_increase {
+            color: $white;
+            float: none;
+            margin: 0;
+            padding: 0 5px;
+            width: auto;
+            background-image: none;
+            text-indent: unset;
+            display: flex;
+            align-items: center;
+
+            sup {
+              display: none;
+            }
+          }
+
+          #text_resize_decrease {
+            font-size: 12px;
+          }
+
+          #text_resize_reset {
+            font-size: 16px;
+          }
+
+          #text_resize_increase {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    .language-switcher-language-url {
+      margin: 0 20px;
+      width: auto;
+      .content {
+        .links {
+          .nav-link {
+            padding-left: 5px;
+            padding-right: 5px;
+            color: $white;
+            .language-link {
+              color: inherit;
+            }
+          }
+        }
+      }
+    }
+  }
+}
