@@ -2332,7 +2332,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/blazy.git",
-                "reference": "3ec0742124ffcfcdcca450bf793b16a19a7177fb"
+                "reference": "7352ebb75cc3ff86185ea27d5a65f3372e464c84"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9 || ^10"
@@ -2346,8 +2346,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.16+94-dev",
-                    "datestamp": "1689568925",
+                    "version": "8.x-2.16+98-dev",
+                    "datestamp": "1689737236",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -2789,10 +2789,10 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/captcha.git",
-                "reference": "2ea3dd26924e58d6d2f7f180d1490b01d0cf1f87"
+                "reference": "9d858c86268293ad200ced40f20b47c170621d7e"
             },
             "require": {
-                "drupal/core": "^10"
+                "drupal/core": ">=9.4 <11"
             },
             "type": "drupal-module",
             "extra": {
@@ -2801,8 +2801,8 @@
                     "dev-8.x-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "2.0.0-beta3+1-dev",
-                    "datestamp": "1686230645",
+                    "version": "2.0.2+1-dev",
+                    "datestamp": "1689779101",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -2841,10 +2841,6 @@
                 {
                     "name": "RobLoach",
                     "homepage": "https://www.drupal.org/user/61114"
-                },
-                {
-                    "name": "soxofaan",
-                    "homepage": "https://www.drupal.org/user/41478"
                 },
                 {
                     "name": "thomas.frobieter",
@@ -5403,7 +5399,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity.git",
-                "reference": "2b00dacf352842b96472c39272a1bdffd25c0cfc"
+                "reference": "de33b9717b1c2462d01c100c7589cb5968140122"
             },
             "require": {
                 "drupal/core": "^9.2|^10.0"
@@ -5414,8 +5410,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.4+3-dev",
-                    "datestamp": "1673673427",
+                    "version": "8.x-1.4+4-dev",
+                    "datestamp": "1689629337",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -6845,7 +6841,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/field_validation.git",
-                "reference": "3dbf7405c7a61f25021194e063c707e4c16b8df0"
+                "reference": "48b6ff5a493ec78bbedf8ee48f3b3ed32b667ca2"
             },
             "require": {
                 "drupal/core": "^9 || ^10"
@@ -6856,8 +6852,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-rc1+1-dev",
-                    "datestamp": "1687603483",
+                    "version": "8.x-1.0-rc1+3-dev",
+                    "datestamp": "1689760518",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -8859,17 +8855,17 @@
         },
         {
             "name": "drupal/leaflet",
-            "version": "10.0.16",
+            "version": "10.0.17",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/leaflet.git",
-                "reference": "10.0.16"
+                "reference": "10.0.17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/leaflet-10.0.16.zip",
-                "reference": "10.0.16",
-                "shasum": "5b37163e3b1fde2e247bfa2c95e898f81888f903"
+                "url": "https://ftp.drupal.org/files/projects/leaflet-10.0.17.zip",
+                "reference": "10.0.17",
+                "shasum": "fda6332826c933d2d8f4c763a2ec0a6146733a82"
             },
             "require": {
                 "drupal/core": "^9 || ^10",
@@ -8878,8 +8874,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "10.0.16",
-                    "datestamp": "1688332238",
+                    "version": "10.0.17",
+                    "datestamp": "1689717156",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -10554,7 +10550,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/rabbit_hole.git",
-                "reference": "8d0bce68a6aeaee0ada345fad618c14f4cd76557"
+                "reference": "d64ff00b470678406b8f9f741838371f3dd2d973"
             },
             "require": {
                 "drupal/core": "^8 || ^9 || ^10"
@@ -10572,8 +10568,8 @@
                     "dev-2.0.x": "2.0.x-dev"
                 },
                 "drupal": {
-                    "version": "2.0.0-alpha2+2-dev",
-                    "datestamp": "1688823364",
+                    "version": "2.0.0-alpha3+2-dev",
+                    "datestamp": "1689688373",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -11827,7 +11823,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/slick.git",
-                "reference": "a93464f72df33a8186a73ae01ac68902faa995a3"
+                "reference": "bc35ba1ea2f5a7c8c1c7b3d97391d5158b5fc3d7"
             },
             "require": {
                 "drupal/blazy": ">=2.16",
@@ -11839,8 +11835,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.9+18-dev",
-                    "datestamp": "1689413429",
+                    "version": "8.x-2.9+19-dev",
+                    "datestamp": "1689671781",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -23239,16 +23235,16 @@
         },
         {
             "name": "drupal/coder",
-            "version": "8.3.20",
+            "version": "8.3.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pfrenssen/coder.git",
-                "reference": "88055e40931a56074b6510a631d3403794c91625"
+                "reference": "a0b76c6c8ea277b07d58fa75dcacf102a203ad51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pfrenssen/coder/zipball/88055e40931a56074b6510a631d3403794c91625",
-                "reference": "88055e40931a56074b6510a631d3403794c91625",
+                "url": "https://api.github.com/repos/pfrenssen/coder/zipball/a0b76c6c8ea277b07d58fa75dcacf102a203ad51",
+                "reference": "a0b76c6c8ea277b07d58fa75dcacf102a203ad51",
                 "shasum": ""
             },
             "require": {
@@ -23286,7 +23282,7 @@
                 "issues": "https://www.drupal.org/project/issues/coder",
                 "source": "https://www.drupal.org/project/coder"
             },
-            "time": "2023-06-15T07:16:09+00:00"
+            "time": "2023-07-17T15:36:49+00:00"
         },
         {
             "name": "drupal/core-dev",
@@ -24497,16 +24493,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.10.25",
+            "version": "1.10.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "578f4e70d117f9a90699324c555922800ac38d8c"
+                "reference": "5d660cbb7e1b89253a47147ae44044f49832351f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/578f4e70d117f9a90699324c555922800ac38d8c",
-                "reference": "578f4e70d117f9a90699324c555922800ac38d8c",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/5d660cbb7e1b89253a47147ae44044f49832351f",
+                "reference": "5d660cbb7e1b89253a47147ae44044f49832351f",
                 "shasum": ""
             },
             "require": {
@@ -24555,7 +24551,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-07-06T12:11:37+00:00"
+            "time": "2023-07-19T12:44:37+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
