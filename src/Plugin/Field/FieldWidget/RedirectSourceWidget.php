@@ -2,7 +2,6 @@
 
 namespace Drupal\redirect\Plugin\Field\FieldWidget;
 
-use Drupal\Component\Utility\NestedArray;
 use Drupal\Component\Utility\UrlHelper;
 use Drupal\Core\Field\FieldItemListInterface;
 use Drupal\Core\Field\WidgetBase;

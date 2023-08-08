@@ -2,7 +2,6 @@
 
 namespace Drupal\Tests\redirect\Functional;
 
-use Drupal\Component\Render\FormattableMarkup;
 use Drupal\Core\Language\Language;
 use Drupal\Core\Logger\RfcLogLevel;
 use Drupal\Core\Url;
