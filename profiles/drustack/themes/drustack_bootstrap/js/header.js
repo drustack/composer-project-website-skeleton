@@ -18,11 +18,13 @@
       const header = document.querySelector("#header");
       const drawer = document.querySelector("#start_menu_block");
       const drawerBtn = document.querySelector(".drawer_btn_wrapper .drawer_btn");
-      const searchBtn = document.querySelector(".search");
+      const searchBtns = document.querySelectorAll(".search");
       const searchPage = document.querySelector("#search_page");
       const navbarMenu = header.querySelector(".navbar-toggler");
+      const navMain = header.querySelector("#navbar-main");
       const mainNav = header.querySelector(".block-menu");
       const menuList = header.querySelector(".navbar-nav");
+      const menuBottom = header.querySelector(".menu_bottom");
       const expandableItems = header.querySelectorAll("li.menu-item--expanded");
       const expandableItemsLevel1 = header.querySelectorAll(".nav-item.menu-item--expanded");
       const expandableItemsLevel2 = header.querySelectorAll(".nav-item.menu-item--expanded > ul > li.menu-item--expanded");
@@ -50,7 +52,13 @@
       }
 
       const getToolbarHeight = () => {
-        return toolbar.getBoundingClientRect().height + toolbarTray.getBoundingClientRect().height;
+        let height = 0;
+        if(toolbarTray.classList.contains("toolbar-tray-vertical")) {
+          height = toolbar.getBoundingClientRect().height;
+        } else {
+          height = toolbar.getBoundingClientRect().height + toolbarTray.getBoundingClientRect().height;
+        }
+        return height;
       }
 
       const isDescendant = (parent, child) => {
@@ -124,19 +132,25 @@
       const handleMobileMenu = () => {
         navbarMenu.addEventListener("click", () => {
           if (isMenuOpen(navbarMenu)) {
-            mainNav.style.height = `${window.innerHeight - mainNav.getBoundingClientRect().top}px`;
+            if(menuBottom) {
+              mainNav.style.height = `${window.innerHeight - mainNav.getBoundingClientRect().top - menuBottom.getBoundingClientRect().height}px`;
+            } else {
+              mainNav.style.height = `${window.innerHeight - mainNav.getBoundingClientRect().top}px`;
+            }
             setTimeout(function () {
               let menuListWidth = menuList.getBoundingClientRect().width;
               let dropdownBtn = menuList.querySelector(".dropdown-toggle");
-              let dropdownBtnWidth = dropdownBtn.getBoundingClientRect().width;
-              calMenuWidth(expandableItemsLevel1, 0, menuListWidth, dropdownBtnWidth);
-              calMenuWidth(expandableItemsLevel2, paddingLeft, menuListWidth, dropdownBtnWidth);
-              calMenuWidth(expandableItemsLevel3, paddingLeft * 2, menuListWidth, dropdownBtnWidth);
+              if(dropdownBtn) {
+                let dropdownBtnWidth = dropdownBtn.getBoundingClientRect().width;
+                calMenuWidth(expandableItemsLevel1, 0, menuListWidth, dropdownBtnWidth);
+                calMenuWidth(expandableItemsLevel2, paddingLeft, menuListWidth, dropdownBtnWidth);
+                calMenuWidth(expandableItemsLevel3, paddingLeft * 2, menuListWidth, dropdownBtnWidth);
+              }
             }, 100);
           }
         });
 
-        document.addEventListener("click", (el) => {
+        navMain.addEventListener("click", (el) => {
           if (window.innerWidth < widthXL) {
             let items = menuList.querySelectorAll(":scope > li");
             let isWithinMenu = false;
@@ -221,6 +235,9 @@
       }
 
       window.addEventListener("resize", () => {
+        if (toolbar) {
+          header.style.top = `${getToolbarHeight()}px`;
+        }
         if (window.innerWidth >= widthXL) {
           for (let i = 0; i < expandableItems.length; i++) {
             let dropdownBtn = expandableItems[i].querySelector(".dropdown-toggle");
@@ -244,7 +261,12 @@
             if (dropdownMenu.classList.contains("show_nolink")) {
               dropdownMenu.classList.remove("show_nolink");
             }
+            let item = expandableItems[i].querySelector(":scope > a:first-child");
+            if (item) {
+              item.removeAttribute("style");
+            }
           }
+          mainNav.removeAttribute("style");
         } else {
           for (let i = 0; i < expandableItems.length; i++) {
             let dropdownBtn = expandableItems[i].querySelector("a.dropdown-toggle");
@@ -252,34 +274,32 @@
               dropdownBtn.innerHTML = "";
             }
           }
-        }
 
-        if (window.innerWidth < widthXL) {
           if (isMenuOpen(navbarMenu)) {
             let menuListWidth = menuList.getBoundingClientRect().width;
             let dropdownBtn = menuList.querySelector(".dropdown-toggle");
-            let dropdownBtnWidth = dropdownBtn.getBoundingClientRect().width;
-            calMenuWidth(expandableItemsLevel1, 0, menuListWidth, dropdownBtnWidth);
-            calMenuWidth(expandableItemsLevel2, paddingLeft, menuListWidth, dropdownBtnWidth);
-            calMenuWidth(expandableItemsLevel3, paddingLeft * 2, menuListWidth, dropdownBtnWidth);
-            mainNav.style.height = `${window.innerHeight - mainNav.getBoundingClientRect().top}px`;
-          }
-        } else {
-          for (let i = 0; i < expandableItems.length; i++) {
-            let item = expandableItems[i].querySelector(":scope > a:first-child");
-            if (item) {
-              item.removeAttribute("style");
+            if(dropdownBtn) {
+              let dropdownBtnWidth = dropdownBtn.getBoundingClientRect().width;
+              calMenuWidth(expandableItemsLevel1, 0, menuListWidth, dropdownBtnWidth);
+              calMenuWidth(expandableItemsLevel2, paddingLeft, menuListWidth, dropdownBtnWidth);
+              calMenuWidth(expandableItemsLevel3, paddingLeft * 2, menuListWidth, dropdownBtnWidth);
+            }
+            if(menuBottom) {
+              mainNav.style.height = `${window.innerHeight - mainNav.getBoundingClientRect().top - menuBottom.getBoundingClientRect().height}px`;
+            } else {
+              mainNav.style.height = `${window.innerHeight - mainNav.getBoundingClientRect().top}px`;
             }
           }
-          mainNav.removeAttribute("style");
         }
 
-        if (searchBtn) {
-          if (searchBtn.classList.contains("clicked")) {
-            let searchResultBox = searchPage.querySelector(".view-search .view-content");
-            let loadMoreButton = searchPage.querySelector(".view-search .js-pager__items");
-            if (searchResultBox && loadMoreButton) {
-              searchResultBox.style.height = `${window.innerHeight - searchResultBox.getBoundingClientRect().top - loadMoreButton.getBoundingClientRect().height}px`;
+        for(let searchBtn of searchBtns) {
+          if (searchBtn) {
+            if (searchBtn.classList.contains("clicked")) {
+              let searchResultBox = searchPage.querySelector(".view-search .view-content");
+              let loadMoreButton = searchPage.querySelector(".view-search .js-pager__items");
+              if (searchResultBox && loadMoreButton) {
+                searchResultBox.style.height = `${window.innerHeight - searchResultBox.getBoundingClientRect().top - loadMoreButton.getBoundingClientRect().height}px`;
+              }
             }
           }
         }
@@ -304,7 +324,9 @@
       window.addEventListener('DOMContentLoaded', () => {
         once('drustack_bootstrap_header', 'html').forEach(function (element) {
           if (toolbar) {
-            header.style.top = `${getToolbarHeight()}px`;
+            setTimeout(() => {
+              header.style.top = `${getToolbarHeight()}px`;
+            }, 100);
             toolbarManage.addEventListener("click", () => {
               setTimeout(() => {
                 header.style.top = `${getToolbarHeight()}px`;
@@ -324,48 +346,55 @@
                 header.classList.add("setHeightWhenDrawerOpen");
               }
               if (isMenuOpen(navbarMenu)) {
-                mainNav.style.height = `${window.innerHeight - mainNav.getBoundingClientRect().top}px`;
+                if(menuBottom) {
+                  mainNav.style.height = `${window.innerHeight - mainNav.getBoundingClientRect().top - menuBottom.getBoundingClientRect().height}px`;
+                } else {
+                  mainNav.style.height = `${window.innerHeight - mainNav.getBoundingClientRect().top}px`;
+                }
               }
             })
           }
 
-          waitForElm(".block-language-blocklanguage-interface").then(el => {
+          waitForElm(".region-header-top .block-language-blocklanguage-interface").then(el => {
             let languages = el.querySelectorAll(".nav-link .language-link");
+            // console.log(el);
             for (let lang of languages) {
               if (lang.getAttribute("hreflang") == "en") {
                 lang.innerHTML = "EN";
               } else if (lang.getAttribute("hreflang") == "zh-hk") {
-                lang.innerHTML = "繁體";
+                lang.innerHTML = "繁中";
               } else if (lang.getAttribute("hreflang") == "zh-cn") {
                 lang.innerHTML = "简体";
               }
             }
           });
 
-          if (searchBtn && navbarMenu) {
-            searchBtn.addEventListener("click", function () {
-              if (searchBtn.classList.contains("clicked")) {
-                searchBtn.classList.remove("clicked");
-                searchPage.classList.remove("show");
-              } else {
-                searchBtn.classList.add("clicked");
-                searchPage.classList.add("show");
-                let searchResultBox = searchPage.querySelector(".view-search .view-content");
-                let loadMoreButton = searchPage.querySelector(".view-search .js-pager__items");
-                if (searchResultBox && loadMoreButton) {
-                  searchResultBox.style.height = `${window.innerHeight - searchResultBox.getBoundingClientRect().top - loadMoreButton.getBoundingClientRect().height}px`;
+          for(let searchBtn of searchBtns) {
+            if (searchBtn && navbarMenu) {
+              searchBtn.addEventListener("click", function () {
+                if (searchBtn.classList.contains("clicked")) {
+                  searchBtn.classList.remove("clicked");
+                  searchPage.classList.remove("show");
+                } else {
+                  searchBtn.classList.add("clicked");
+                  searchPage.classList.add("show");
+                  let searchResultBox = searchPage.querySelector(".view-search .view-content");
+                  let loadMoreButton = searchPage.querySelector(".view-search .js-pager__items");
+                  if (searchResultBox && loadMoreButton) {
+                    searchResultBox.style.height = `${window.innerHeight - searchResultBox.getBoundingClientRect().top - loadMoreButton.getBoundingClientRect().height}px`;
+                  }
                 }
-              }
-              if (isMenuOpen(navbarMenu)) {
-                navbarMenu.click();
-                searchBtn.click();
-              }
-            });
-            navbarMenu.addEventListener("click", function () {
-              if (searchBtn.classList.contains("clicked")) {
-                searchBtn.click();
-              }
-            });
+                if (isMenuOpen(navbarMenu)) {
+                  navbarMenu.click();
+                  searchBtn.click();
+                }
+              });
+              navbarMenu.addEventListener("click", function () {
+                if (searchBtn.classList.contains("clicked")) {
+                  searchBtn.click();
+                }
+              });
+            }
           }
 
           handleMobileMenu();

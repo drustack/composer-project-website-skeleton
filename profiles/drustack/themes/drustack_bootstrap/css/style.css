@@ -15843,6 +15843,9 @@ table,
 .list-group {
   font-size: 0.9625rem; }
 
+#toolbar-bar {
+  position: fixed; }
+
 /* User login page start */
 nav.tabs {
   padding-left: 20px;
@@ -15908,7 +15911,8 @@ nav.tabs {
   #page-wrapper a:focus-visible, #page-wrapper button:focus-visible {
     outline: 1px solid #000; }
 #page-wrapper #header {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 100;
   background-color: white; }
@@ -16359,7 +16363,7 @@ nav.tabs {
             font-size: 14px;
             vertical-align: middle;
             transition: transform 0.3s; }
-            @media (min-width: 1400px) {
+            @media (min-width: 1200px) {
               .menu--main ul.nav li a.dropdown-toggle::after {
                 font-size: 16px; } }
             @media (min-width: 1200px) {
@@ -16369,7 +16373,7 @@ nav.tabs {
                 font-weight: 900;
                 font-size: 14px;
                 vertical-align: middle; } }
-  @media (min-width: 1200px) and (min-width: 1400px) {
+  @media (min-width: 1200px) and (min-width: 1200px) {
     .menu--main ul.nav li a.dropdown-toggle::after {
       font-size: 16px; } }
 
@@ -16386,7 +16390,7 @@ nav.tabs {
                 font-weight: 900;
                 font-size: 14px;
                 vertical-align: middle; } }
-    @media (min-width: 1200px) and (min-width: 1400px) {
+    @media (min-width: 1200px) and (min-width: 1200px) {
       .menu--main ul.nav li a.dropdown-toggle.show::after, .menu--main ul.nav li a.dropdown-toggle.show_nolink::after {
         font-size: 16px; } }
 
@@ -16426,7 +16430,7 @@ nav.tabs {
             font-size: 14px;
             vertical-align: middle;
             transition: transform 0.3s; }
-            @media (min-width: 1400px) {
+            @media (min-width: 1200px) {
               .menu--main ul.nav li span.dropdown-toggle::after {
                 font-size: 16px; } }
             @media (min-width: 1200px) {
@@ -16436,7 +16440,7 @@ nav.tabs {
                 font-weight: 900;
                 font-size: 14px;
                 vertical-align: middle; } }
-  @media (min-width: 1200px) and (min-width: 1400px) {
+  @media (min-width: 1200px) and (min-width: 1200px) {
     .menu--main ul.nav li span.dropdown-toggle::after {
       font-size: 16px; } }
 
@@ -16454,7 +16458,7 @@ nav.tabs {
                 font-weight: 900;
                 font-size: 14px;
                 vertical-align: middle; } }
-    @media (min-width: 1200px) and (min-width: 1400px) {
+    @media (min-width: 1200px) and (min-width: 1200px) {
       .menu--main ul.nav li span.dropdown-toggle.show::after, .menu--main ul.nav li span.dropdown-toggle.show_nolink::after {
         font-size: 16px; } }
 
@@ -16501,8 +16505,6 @@ nav.tabs {
           width: unset;
           margin-left: 1rem;
           margin-right: 1rem; } }
-      .menu--main ul.nav li.nav-item > .first {
-        font-weight: 500; }
       @media (min-width: 1200px) {
         .menu--main ul.nav li.nav-item > .dropdown-toggle::after {
           content: ""; } }
@@ -16622,7 +16624,7 @@ nav.tabs {
             font-size: 14px;
             vertical-align: middle;
             transition: transform 0.3s; }
-            @media (min-width: 1400px) {
+            @media (min-width: 1200px) {
               .menu--header ul.nav li a.dropdown-toggle::after {
                 font-size: 16px; } }
             @media (min-width: 1200px) {
@@ -16632,7 +16634,7 @@ nav.tabs {
                 font-weight: 900;
                 font-size: 14px;
                 vertical-align: middle; } }
-  @media (min-width: 1200px) and (min-width: 1400px) {
+  @media (min-width: 1200px) and (min-width: 1200px) {
     .menu--header ul.nav li a.dropdown-toggle::after {
       font-size: 16px; } }
 
@@ -16649,7 +16651,7 @@ nav.tabs {
                 font-weight: 900;
                 font-size: 14px;
                 vertical-align: middle; } }
-    @media (min-width: 1200px) and (min-width: 1400px) {
+    @media (min-width: 1200px) and (min-width: 1200px) {
       .menu--header ul.nav li a.dropdown-toggle.show::after, .menu--header ul.nav li a.dropdown-toggle.show_nolink::after {
         font-size: 16px; } }
 
@@ -16689,7 +16691,7 @@ nav.tabs {
             font-size: 14px;
             vertical-align: middle;
             transition: transform 0.3s; }
-            @media (min-width: 1400px) {
+            @media (min-width: 1200px) {
               .menu--header ul.nav li span.dropdown-toggle::after {
                 font-size: 16px; } }
             @media (min-width: 1200px) {
@@ -16699,7 +16701,7 @@ nav.tabs {
                 font-weight: 900;
                 font-size: 14px;
                 vertical-align: middle; } }
-  @media (min-width: 1200px) and (min-width: 1400px) {
+  @media (min-width: 1200px) and (min-width: 1200px) {
     .menu--header ul.nav li span.dropdown-toggle::after {
       font-size: 16px; } }
 
@@ -16717,7 +16719,7 @@ nav.tabs {
                 font-weight: 900;
                 font-size: 14px;
                 vertical-align: middle; } }
-    @media (min-width: 1200px) and (min-width: 1400px) {
+    @media (min-width: 1200px) and (min-width: 1200px) {
       .menu--header ul.nav li span.dropdown-toggle.show::after, .menu--header ul.nav li span.dropdown-toggle.show_nolink::after {
         font-size: 16px; } }
 
@@ -16764,8 +16766,6 @@ nav.tabs {
           width: unset;
           margin-left: 1rem;
           margin-right: 1rem; } }
-      .menu--header ul.nav li.nav-item > .first {
-        font-weight: 500; }
       @media (min-width: 1200px) {
         .menu--header ul.nav li.nav-item > .dropdown-toggle::after {
           content: ""; } }
