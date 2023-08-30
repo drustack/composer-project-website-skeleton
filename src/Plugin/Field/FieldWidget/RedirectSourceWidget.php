@@ -45,7 +45,9 @@ class RedirectSourceWidget extends WidgetBase {
       '#default_value' => $default_url_value,
       '#maxlength' => 2048,
       '#required' => $element['#required'],
-      '#field_prefix' => Url::fromRoute('<front>', [], ['absolute' => TRUE])->toString(),
+      // Add a trailing slash to make it more clear that a redirect should not
+      // start with a leading slash.
+      '#field_prefix' => \Drupal::request()->getSchemeAndHttpHost() . '/',
       '#attributes' => ['data-disable-refocus' => 'true'],
     ];
 
