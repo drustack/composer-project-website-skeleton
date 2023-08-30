@@ -34,6 +34,13 @@ class Redirect404Operations extends FieldPluginBase {
   protected $renderer;
 
   /**
+   * The current user.
+   *
+   * @var \Drupal\Core\Session\AccountInterface
+   */
+  protected $currentUser;
+
+  /**
    * Constructor for the redirect operations view field.
    *
    * @param array $configuration
