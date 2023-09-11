@@ -2282,7 +2282,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/blazy.git",
-                "reference": "ea4360ccd8c8908068fc3000da68b29811735827"
+                "reference": "8aae1657ee136c379185e64a3396edae037849a6"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9 || ^10"
@@ -2296,8 +2296,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.17-rc4+26-dev",
-                    "datestamp": "1693707627",
+                    "version": "8.x-2.17-rc4+38-dev",
+                    "datestamp": "1694417498",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -2642,7 +2642,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/bootstrap_paragraphs.git",
-                "reference": "54ec11aad92a265bc7112ba96ffdbbecc725ec91"
+                "reference": "46518a5ba08b5859be159f8533fd7a1ae52aa7f7"
             },
             "require": {
                 "drupal/core": "*",
@@ -2662,8 +2662,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0-beta7+2-dev",
-                    "datestamp": "1674220613",
+                    "version": "8.x-2.0-beta7+3-dev",
+                    "datestamp": "1693917838",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -3788,13 +3788,13 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/content_access.git",
-                "reference": "16475b64565a48163e615e22087e828b21c377d3"
+                "reference": "f1785797c309652c18beee7ac6bb3d8e608faf1a"
             },
             "require": {
                 "drupal/core": "^9.4 || ^10"
             },
             "require-dev": {
-                "drupal/acl": "~1.0"
+                "drupal/acl": "~1.0 || ~2.0"
             },
             "type": "drupal-module",
             "extra": {
@@ -3802,8 +3802,8 @@
                     "dev-2.0.x": "2.0.x-dev"
                 },
                 "drupal": {
-                    "version": "2.0.0-rc1+3-dev",
-                    "datestamp": "1693411681",
+                    "version": "2.0.0+1-dev",
+                    "datestamp": "1694331341",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -3822,6 +3822,10 @@
                 {
                     "name": "gisle",
                     "homepage": "https://www.drupal.org/user/409554"
+                },
+                {
+                    "name": "Steven Jones",
+                    "homepage": "https://www.drupal.org/user/99644"
                 }
             ],
             "description": "Provides flexible content access control.",
@@ -3832,16 +3836,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "10.1.2",
+            "version": "10.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "949779f2244b955bdd6946c8af5dee8054501fe6"
+                "reference": "0943d60970670a7f7c18ee24a800b3b87aac4641"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/949779f2244b955bdd6946c8af5dee8054501fe6",
-                "reference": "949779f2244b955bdd6946c8af5dee8054501fe6",
+                "url": "https://api.github.com/repos/drupal/core/zipball/0943d60970670a7f7c18ee24a800b3b87aac4641",
+                "reference": "0943d60970670a7f7c18ee24a800b3b87aac4641",
                 "shasum": ""
             },
             "require": {
@@ -3986,13 +3990,13 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/10.1.2"
+                "source": "https://github.com/drupal/core/tree/10.1.3"
             },
-            "time": "2023-08-02T10:10:11+00:00"
+            "time": "2023-09-07T15:19:51+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "10.1.2",
+            "version": "10.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -4036,13 +4040,13 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/10.1.2"
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/10.1.3"
             },
             "time": "2023-04-30T16:15:32+00:00"
         },
         {
             "name": "drupal/core-project-message",
-            "version": "10.1.2",
+            "version": "10.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-project-message.git",
@@ -4077,22 +4081,22 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-project-message/tree/10.1.2"
+                "source": "https://github.com/drupal/core-project-message/tree/10.1.3"
             },
             "time": "2022-07-01T08:32:39+00:00"
         },
         {
             "name": "drupal/core-recommended",
-            "version": "10.1.2",
+            "version": "10.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "f3d23274697b82081765296727ae765b7522caf5"
+                "reference": "d32977bba64355e7399cf63db4cea41b3172d6fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/f3d23274697b82081765296727ae765b7522caf5",
-                "reference": "f3d23274697b82081765296727ae765b7522caf5",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/d32977bba64355e7399cf63db4cea41b3172d6fa",
+                "reference": "d32977bba64355e7399cf63db4cea41b3172d6fa",
                 "shasum": ""
             },
             "require": {
@@ -4101,12 +4105,12 @@
                 "doctrine/annotations": "~1.14.3",
                 "doctrine/deprecations": "~v1.1.1",
                 "doctrine/lexer": "~2.1.0",
-                "drupal/core": "10.1.2",
+                "drupal/core": "10.1.3",
                 "egulias/email-validator": "~4.0.1",
                 "guzzlehttp/guzzle": "~7.7.0",
                 "guzzlehttp/psr7": "~2.5.0",
                 "masterminds/html5": "~2.8.0",
-                "mck89/peast": "~v1.15.2",
+                "mck89/peast": "~v1.15.4",
                 "pear/archive_tar": "~1.4.14",
                 "pear/console_getopt": "~v1.4.3",
                 "pear/pear-core-minimal": "~v1.10.13",
@@ -4158,13 +4162,13 @@
             ],
             "description": "Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-recommended/tree/10.1.2"
+                "source": "https://github.com/drupal/core-recommended/tree/10.1.3"
             },
-            "time": "2023-08-02T10:10:11+00:00"
+            "time": "2023-09-07T15:19:51+00:00"
         },
         {
             "name": "drupal/core-vendor-hardening",
-            "version": "10.1.2",
+            "version": "10.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-vendor-hardening.git",
@@ -4199,7 +4203,7 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-vendor-hardening/tree/10.1.2"
+                "source": "https://github.com/drupal/core-vendor-hardening/tree/10.1.3"
             },
             "time": "2022-12-07T11:22:31+00:00"
         },
@@ -5049,7 +5053,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/easy_breadcrumb.git",
-                "reference": "6b689959fbe36e6dd7d115bfbf5789c6427c284d"
+                "reference": "179612b9a775668a1539db559f6bc4dd52231493"
             },
             "require": {
                 "drupal/core": "^9.2 || ^10"
@@ -5060,8 +5064,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "2.0.5+12-dev",
-                    "datestamp": "1689090609",
+                    "version": "2.0.5+13-dev",
+                    "datestamp": "1694189999",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -5110,10 +5114,6 @@
                 {
                     "name": "tatarbj",
                     "homepage": "https://www.drupal.org/user/649590"
-                },
-                {
-                    "name": "volkswagenchick",
-                    "homepage": "https://www.drupal.org/user/3332522"
                 }
             ],
             "description": "Adds configuration to the system breadcrumbs.",
@@ -6327,6 +6327,10 @@
                     "homepage": "https://www.drupal.org/node/2625160/committers"
                 },
                 {
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
+                },
+                {
                     "name": "StryKaizer",
                     "homepage": "https://www.drupal.org/user/462700"
                 },
@@ -6736,7 +6740,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/field_permissions.git",
-                "reference": "003b4f069a4c27f73947a81d6214eb1017003995"
+                "reference": "572b1469db1f182bd0a3a7a112def6ae1dbfc2cc"
             },
             "require": {
                 "drupal/core": ">=8.9 <11"
@@ -6748,8 +6752,8 @@
                     "dev-8.x-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.2+7-dev",
-                    "datestamp": "1690913095",
+                    "version": "8.x-1.2+8-dev",
+                    "datestamp": "1694023132",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -7169,7 +7173,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/fontyourface.git",
-                "reference": "8e5514d3b14022a7bc98931cf625da047045bdb8"
+                "reference": "c9e929c2a5712919400310850c1643cb3b46b837"
             },
             "require": {
                 "drupal/core": "^9.4 || ^10.0"
@@ -7180,8 +7184,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.6+10-dev",
-                    "datestamp": "1680072330",
+                    "version": "8.x-3.6+11-dev",
+                    "datestamp": "1694110127",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -9934,7 +9938,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/office_hours.git",
-                "reference": "b56c2e063fee613734476c704ecdceed83e4d80b"
+                "reference": "186a971503476a7f344e82b5211776f88e8c1991"
             },
             "require": {
                 "drupal/core": "^8 || ^9 || ^10"
@@ -9945,8 +9949,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.11+24-dev",
-                    "datestamp": "1693694865",
+                    "version": "8.x-1.11+26-dev",
+                    "datestamp": "1693826726",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -11785,7 +11789,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/slick.git",
-                "reference": "2b9e5afcc9572593b306ce53bf32201647901925"
+                "reference": "99da994248670a8cf0e69762dd11c2447b5eb564"
             },
             "require": {
                 "drupal/blazy": "^2.17",
@@ -11797,8 +11801,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.10-rc3+4-dev",
-                    "datestamp": "1693715669",
+                    "version": "8.x-2.10-rc3+6-dev",
+                    "datestamp": "1694144658",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -11958,7 +11962,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/slick_extras.git",
-                "reference": "9dad0d5a397846ee3ca22f3fb112c5f3f13b02ec"
+                "reference": "731653cc32cdd7e0f78c8055283f05ff86d36856"
             },
             "require": {
                 "drupal/core": "^8 || ^9 || ^10",
@@ -11974,8 +11978,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-rc7+1-dev",
-                    "datestamp": "1687332908",
+                    "version": "8.x-1.0-rc7+2-dev",
+                    "datestamp": "1694009489",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -12841,7 +12845,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/translatable_menu_link_uri.git",
-                "reference": "822d97123531cb3bfa5de75f18ec220f08d5d3bb"
+                "reference": "ee594e08e7a5a8ef6d1521371eb0182aee5fa81e"
             },
             "require": {
                 "drupal/core": "^8 || ^9 || ^10"
@@ -12853,7 +12857,7 @@
                 },
                 "drupal": {
                     "version": "2.x-dev",
-                    "datestamp": "1675005734",
+                    "datestamp": "1694361614",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -13780,7 +13784,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "ea1fbc7256c6cbbc12e4a1943e37767c8261920a"
+                "reference": "46b5638323c7bfaa224bf253d3f48a10cf7ce62c"
             },
             "require": {
                 "drupal/core": "^9.4 || ^10"
@@ -13831,8 +13835,8 @@
                     "dev-6.2.x": "6.2.x-dev"
                 },
                 "drupal": {
-                    "version": "6.2.0-beta6+26-dev",
-                    "datestamp": "1693393258",
+                    "version": "6.2.0-beta6+36-dev",
+                    "datestamp": "1694376502",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -14607,16 +14611,16 @@
         },
         {
             "name": "giggsey/libphonenumber-for-php",
-            "version": "8.13.19",
+            "version": "8.13.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/giggsey/libphonenumber-for-php.git",
-                "reference": "7b60d1264ba806e68fb99b06e73e2ed07815689e"
+                "reference": "c8da9366ab46cbc83f9fd0e7b0ac12f8ddbb721a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/7b60d1264ba806e68fb99b06e73e2ed07815689e",
-                "reference": "7b60d1264ba806e68fb99b06e73e2ed07815689e",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/c8da9366ab46cbc83f9fd0e7b0ac12f8ddbb721a",
+                "reference": "c8da9366ab46cbc83f9fd0e7b0ac12f8ddbb721a",
                 "shasum": ""
             },
             "require": {
@@ -14675,7 +14679,7 @@
                 "issues": "https://github.com/giggsey/libphonenumber-for-php/issues",
                 "source": "https://github.com/giggsey/libphonenumber-for-php"
             },
-            "time": "2023-08-22T13:59:44+00:00"
+            "time": "2023-09-07T06:33:03+00:00"
         },
         {
             "name": "giggsey/locale",
@@ -22376,16 +22380,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "2.6.1",
+            "version": "2.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "ee851d6b6bb4bf2e0fbfb22b22b44727cded6f29"
+                "reference": "623e5e1de055e65bc6c3c61b8348dc4662d75e2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/ee851d6b6bb4bf2e0fbfb22b22b44727cded6f29",
-                "reference": "ee851d6b6bb4bf2e0fbfb22b22b44727cded6f29",
+                "url": "https://api.github.com/repos/composer/composer/zipball/623e5e1de055e65bc6c3c61b8348dc4662d75e2b",
+                "reference": "623e5e1de055e65bc6c3c61b8348dc4662d75e2b",
                 "shasum": ""
             },
             "require": {
@@ -22470,7 +22474,7 @@
                 "irc": "ircs://irc.libera.chat:6697/composer",
                 "issues": "https://github.com/composer/composer/issues",
                 "security": "https://github.com/composer/composer/security/policy",
-                "source": "https://github.com/composer/composer/tree/2.6.1"
+                "source": "https://github.com/composer/composer/tree/2.6.2"
             },
             "funding": [
                 {
@@ -22486,7 +22490,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-09-01T11:53:08+00:00"
+            "time": "2023-09-03T12:09:15+00:00"
         },
         {
             "name": "composer/installers",
@@ -23174,7 +23178,7 @@
         },
         {
             "name": "drupal/core-dev",
-            "version": "10.1.2",
+            "version": "10.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-dev.git",
@@ -23222,7 +23226,7 @@
             ],
             "description": "require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-dev/tree/10.1.2"
+                "source": "https://github.com/drupal/core-dev/tree/10.1.3"
             },
             "time": "2023-05-25T11:39:24+00:00"
         },
@@ -24334,16 +24338,16 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "1.23.1",
+            "version": "1.24.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpdoc-parser.git",
-                "reference": "846ae76eef31c6d7790fac9bc399ecee45160b26"
+                "reference": "3510b0a6274cc42f7219367cb3abfc123ffa09d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/846ae76eef31c6d7790fac9bc399ecee45160b26",
-                "reference": "846ae76eef31c6d7790fac9bc399ecee45160b26",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/3510b0a6274cc42f7219367cb3abfc123ffa09d6",
+                "reference": "3510b0a6274cc42f7219367cb3abfc123ffa09d6",
                 "shasum": ""
             },
             "require": {
@@ -24375,22 +24379,22 @@
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
             "support": {
                 "issues": "https://github.com/phpstan/phpdoc-parser/issues",
-                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.23.1"
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.24.0"
             },
-            "time": "2023-08-03T16:32:59+00:00"
+            "time": "2023-09-07T20:46:32+00:00"
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.10.32",
+            "version": "1.10.33",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "c47e47d3ab03137c0e121e77c4d2cb58672f6d44"
+                "reference": "03b1cf9f814ba0863c4e9affea49a4d1ed9a2ed1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/c47e47d3ab03137c0e121e77c4d2cb58672f6d44",
-                "reference": "c47e47d3ab03137c0e121e77c4d2cb58672f6d44",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/03b1cf9f814ba0863c4e9affea49a4d1ed9a2ed1",
+                "reference": "03b1cf9f814ba0863c4e9affea49a4d1ed9a2ed1",
                 "shasum": ""
             },
             "require": {
@@ -24439,7 +24443,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-08-24T21:54:50+00:00"
+            "time": "2023-09-04T12:20:53+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
