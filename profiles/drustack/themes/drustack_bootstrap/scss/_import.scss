@@ -1,6 +1,8 @@
 /* IMPORTS */
 
 // variables
+@import "../../../../../themes/contrib/bootstrap_sass/scss/variables";
+@import "../../../../../themes/contrib/bootstrap_sass/scss/typography";
 @import "variables";
 
 // mixins
@@ -11,7 +13,7 @@
 @import "../../../../../libraries/bootstrap/scss/bootstrap";
 
 // barrio
-@import "barrio";
+@import "../../../../../themes/contrib/bootstrap_barrio/scss/barrio";
 
 // bootswatch
 @import "bootswatch";
