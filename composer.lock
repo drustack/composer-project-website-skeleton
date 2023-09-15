@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7c90e45bf735a7f8f7d13909e0a12341",
+    "content-hash": "327bd7ae5660dea259e6486a26aab32d",
     "packages": [
         {
             "name": "arthurkushman/query-path",
@@ -2278,11 +2278,17 @@
         },
         {
             "name": "drupal/blazy",
-            "version": "dev-2.x",
+            "version": "2.17.0-rc5",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/blazy.git",
-                "reference": "c15f98be584829a6def23a325260fa7eae343621"
+                "reference": "8.x-2.17-rc5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/blazy-8.x-2.17-rc5.zip",
+                "reference": "8.x-2.17-rc5",
+                "shasum": "577bae8f3ac4e170a784bc5fe5184797fad03228"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9 || ^10"
@@ -2292,15 +2298,12 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-2.17-rc4+50-dev",
-                    "datestamp": "1694658364",
+                    "version": "8.x-2.17-rc5",
+                    "datestamp": "1694660558",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -11785,11 +11788,17 @@
         },
         {
             "name": "drupal/slick",
-            "version": "dev-2.x",
+            "version": "2.10.0-rc4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/slick.git",
-                "reference": "ad9b2fb8d1f23caff55bc6ea6917783dd1798130"
+                "reference": "8.x-2.10-rc4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/slick-8.x-2.10-rc4.zip",
+                "reference": "8.x-2.10-rc4",
+                "shasum": "a4da18113a55d9098c2f5448064db44bf50e68c8"
             },
             "require": {
                 "drupal/blazy": "^2.17",
@@ -11797,15 +11806,12 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-2.10-rc4+1-dev",
-                    "datestamp": "1694696767",
+                    "version": "8.x-2.10-rc4",
+                    "datestamp": "1694666801",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -11842,36 +11848,36 @@
         },
         {
             "name": "drupal/slick_browser",
-            "version": "2.4.0",
+            "version": "2.5.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/slick_browser.git",
-                "reference": "8.x-2.4"
+                "reference": "8.x-2.5-beta1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/slick_browser-8.x-2.4.zip",
-                "reference": "8.x-2.4",
-                "shasum": "1da1788db90a4c7f8dd82a1549c37a01aa6ad308"
+                "url": "https://ftp.drupal.org/files/projects/slick_browser-8.x-2.5-beta1.zip",
+                "reference": "8.x-2.5-beta1",
+                "shasum": "cbed417d600b8b97256980cac93064214c49726f"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9 || ^10",
-                "drupal/entity_browser": "~2.0",
-                "drupal/slick": "~2.0"
+                "drupal/entity_browser": "^2.9",
+                "drupal/slick": "^2.9"
             },
             "require-dev": {
-                "drupal/dropzonejs": "~2.0",
+                "drupal/dropzonejs": "^2.0",
                 "drupal/entity_browser_entity_form": "*",
                 "drupal/inline_entity_form": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.4",
-                    "datestamp": "1685705718",
+                    "version": "8.x-2.5-beta1",
+                    "datestamp": "1690104768",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -11894,7 +11900,7 @@
             "description": "A Slick Entity Browser integration",
             "homepage": "https://www.drupal.org/project/slick_browser",
             "support": {
-                "source": "http://cgit.drupalcode.org/slick_browser",
+                "source": "https://cgit.drupalcode.org/slick_browser",
                 "issues": "https://www.drupal.org/project/issues/slick_browser"
             }
         },
@@ -12060,36 +12066,36 @@
         },
         {
             "name": "drupal/slick_views",
-            "version": "2.7.0",
+            "version": "2.8.0-rc3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/slick_views.git",
-                "reference": "8.x-2.7"
+                "reference": "8.x-2.8-rc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/slick_views-8.x-2.7.zip",
-                "reference": "8.x-2.7",
-                "shasum": "ca1bf78e5883adbdb10247592644d4fce4d7012c"
+                "url": "https://ftp.drupal.org/files/projects/slick_views-8.x-2.8-rc3.zip",
+                "reference": "8.x-2.8-rc3",
+                "shasum": "c4ceb081d150d349e6fd49ab97ccd2c6299958ff"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10",
-                "drupal/slick": "~2.0"
+                "drupal/core": "^8.8 || ^9 || ^10",
+                "drupal/slick": "^2.10"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.7",
-                    "datestamp": "1685800148",
+                    "version": "8.x-2.8-rc3",
+                    "datestamp": "1694666857",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -12106,7 +12112,7 @@
                 "views"
             ],
             "support": {
-                "source": "http://cgit.drupalcode.org/slick_views",
+                "source": "https://git.drupalcode.org/project/slick_views",
                 "issues": "https://drupal.org/project/issues/slick_views"
             }
         },
@@ -26829,7 +26835,6 @@
         "drupal/asset_injector": 20,
         "drupal/authorization": 20,
         "drupal/better_exposed_filters": 20,
-        "drupal/blazy": 20,
         "drupal/block_class": 20,
         "drupal/block_content_permissions": 20,
         "drupal/block_visibility_groups": 20,
@@ -26898,7 +26903,6 @@
         "drupal/seckit": 20,
         "drupal/select2": 20,
         "drupal/sitemap": 20,
-        "drupal/slick": 20,
         "drupal/slick_extras": 20,
         "drupal/slick_paragraphs": 20,
         "drupal/styleguide": 20,
