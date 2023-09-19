@@ -1,8 +1,15 @@
-$sm: 576px;
-$md: 768px;
-$lg: 992px;
-$xl: 1200px;
-$xxl: 1400px;
+@use "sass:map";
+$sm: map.get($grid-breakpoints, sm);
+$md: map.get($grid-breakpoints, md);
+$lg: map.get($grid-breakpoints, lg);
+$xl: map.get($grid-breakpoints, xl);
+$xxl: map.get($grid-breakpoints, xxl);
+$sm-max-width: map.get($container-max-widths, sm);
+$md-max-width: map.get($container-max-widths, md);
+$lg-max-width: map.get($container-max-widths, lg);
+$xl-max-width: map.get($container-max-widths, xl);
+$xxl-max-width: map.get($container-max-widths, xxl);
+
 $start-menu-block-height: 190px;
 $start-menu-block-transition-time: 0.3s;
 $lightblue: lightblue;
@@ -16,11 +23,11 @@ $white-300: white;
   @media (min-width: $xl) {
     padding-left: 0;
     padding-right: 0;
-    max-width: 1140px;
+    max-width: $xl-max-width;
   }
 
   @media (min-width: $xxl) {
-    max-width: 1320px;
+    max-width: $xxl-max-width;
   }
 
 }
@@ -141,20 +148,28 @@ nav.tabs {
 }
 
 /* User login page end */
+.toolbar .toolbar-bar {
+  position: fixed;
+  top: 0;
+}
+
 #page-wrapper {
   a, button {
-    text-decoration: none;
+    // text-decoration: none;
     &:focus {
-      outline: none;
-      box-shadow: none;
+      // outline: none;
+      // box-shadow: none;
     }
 
     &:focus-visible {
-      outline: 1px solid $black ;
+      // outline: 1px solid $black ;
     }
   }
 
   #header {
+    position: sticky;
+    z-index: 99;
+    background-color: $white;
     #start_menu_block {
       background-color: $gray-200;
       height: 0;
@@ -172,13 +187,12 @@ nav.tabs {
         }
       }
 
-      h2 {
+      .title {
         margin-top: 15px;
         margin-bottom: 10px;
         font-size: 12px;
         text-align: center;
         color: $blue;
-
         @media (min-width: $lg) {
           font-size: 16px;
           margin: 30px 0;
@@ -273,7 +287,9 @@ nav.tabs {
         padding: 0;
         order: 1;
         margin-right: 20px;
-
+        &:focus {
+          box-shadow: none;
+        }
         @media (min-width: $lg) {
           width: 20px;
           height: 20px;
@@ -403,7 +419,7 @@ nav.tabs {
       align-items: center;
       justify-content: center;
       background-color: rgb(242, 242, 242);
-
+      z-index: 1;
       .contentbox {
         width: auto;
         text-align: center;
