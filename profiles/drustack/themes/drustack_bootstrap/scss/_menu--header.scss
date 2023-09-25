@@ -26,26 +26,6 @@
         }
       }
 
-      &:hover {
-        background-color: unset;
-
-        @media (min-width: $xl) {
-          >a, >span {
-            color: $black;
-            &::after {
-              color: $black;
-            }
-          }
-        }
-      }
-
-      &.active {
-        background-color: unset;
-        a {
-          color: $blue;
-        }
-      }
-
       &.menu-item--expanded {
         @media (min-width: $xl) {
           >.first {
@@ -75,6 +55,9 @@
           padding: 0;
           margin: 0;
           white-space: nowrap;
+        }
+        &.active {
+          color: null;
         }
 
         &.dropdown-toggle {

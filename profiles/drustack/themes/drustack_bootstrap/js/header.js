@@ -132,6 +132,7 @@
       const handleMobileMenu = () => {
         navbarMenu.addEventListener("click", () => {
           if (isMenuOpen(navbarMenu)) {
+            document.body.classList.add("overflow-y");
             if(menuBottom) {
               mainNav.style.height = `${window.innerHeight - mainNav.getBoundingClientRect().top - menuBottom.getBoundingClientRect().height}px`;
             } else {
@@ -147,6 +148,8 @@
                 calMenuWidth(expandableItemsLevel3, paddingLeft * 2, menuListWidth, dropdownBtnWidth);
               }
             }, 100);
+          } else {
+            document.body.classList.remove("overflow-y");
           }
         });
 
@@ -175,11 +178,13 @@
           }
           let dropdownBtn = expandableItems[i].querySelector(".dropdown-toggle");
           let menuList = expandableItems[i].querySelector(".dropdown-menu");
-          dropdownBtn.addEventListener("click", function () {
-            if (window.innerWidth >= widthXL) {
-              location.href = this.href;
-            }
-          });
+          if(dropdownBtn) {
+            dropdownBtn.addEventListener("click", function () {
+              if (window.innerWidth >= widthXL) {
+                location.href = this.href;
+              }
+            });
+          }
 
           expandableItems[i].addEventListener("mouseenter", () => {
             if (window.innerWidth >= widthXL) {
@@ -242,24 +247,31 @@
           for (let i = 0; i < expandableItems.length; i++) {
             let dropdownBtn = expandableItems[i].querySelector(".dropdown-toggle");
             let dropdownMenu = expandableItems[i].querySelector(".dropdown-menu");
+            if(dropdownBtn) {
+              if (dropdownBtn.innerHTML == "") {
+                let menuTitle = expandableItems[i].querySelector(":scope > a:first-child") || expandableItems[i].querySelector(":scope > span:first-child");
+                if(menuTitle) {
+                  dropdownBtn.innerHTML = menuTitle.innerHTML;
+                }
+              }
+              if (dropdownBtn.classList.contains("show")) {
+                dropdownBtn.classList.remove("show");
+                dropdownBtn.setAttribute("aria-expanded", "false");
+              }
+              if (dropdownBtn.classList.contains("show_nolink")) {
+                dropdownBtn.classList.remove("show_nolink");
+              }
+            }
 
-            if (dropdownBtn.innerHTML == "") {
-              let menuTitle = expandableItems[i].querySelector(":scope > a:first-child") || expandableItems[i].querySelector(":scope > span:first-child");
-              dropdownBtn.innerHTML = menuTitle.innerHTML;
-            }
-            if (dropdownBtn.classList.contains("show")) {
-              dropdownBtn.classList.remove("show");
-              dropdownBtn.setAttribute("aria-expanded", "false");
-            }
-            if (dropdownMenu.classList.contains("show")) {
-              dropdownMenu.classList.remove("show");
-              dropdownMenu.removeAttribute("data-bs-popper");
-            }
-            if (dropdownBtn.classList.contains("show_nolink")) {
-              dropdownBtn.classList.remove("show_nolink");
-            }
-            if (dropdownMenu.classList.contains("show_nolink")) {
-              dropdownMenu.classList.remove("show_nolink");
+            if(dropdownMenu) {
+              if (dropdownMenu.classList.contains("show")) {
+                dropdownMenu.classList.remove("show");
+                dropdownMenu.removeAttribute("data-bs-popper");
+              }
+  
+              if (dropdownMenu.classList.contains("show_nolink")) {
+                dropdownMenu.classList.remove("show_nolink");
+              }
             }
             let item = expandableItems[i].querySelector(":scope > a:first-child");
             if (item) {
@@ -387,6 +399,11 @@
                 if (isMenuOpen(navbarMenu)) {
                   navbarMenu.click();
                   searchBtn.click();
+                }
+                if(searchPage.classList.contains("show")) {
+                  document.body.classList.add("overflow-y");
+                } else {
+                  document.body.classList.remove("overflow-y");
                 }
               });
               navbarMenu.addEventListener("click", function () {

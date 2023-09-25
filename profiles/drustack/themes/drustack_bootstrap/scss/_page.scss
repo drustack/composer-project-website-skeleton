@@ -12,25 +12,6 @@ $xxl-max-width: map.get($container-max-widths, xxl);
 
 $start-menu-block-height: 190px;
 $start-menu-block-transition-time: 0.3s;
-$lightblue: lightblue;
-$white-200: white;
-$white-300: white;
-
-@mixin container {
-  padding-left: 20px;
-  padding-right: 20px;
-
-  @media (min-width: $xl) {
-    padding-left: 0;
-    padding-right: 0;
-    max-width: $xl-max-width;
-  }
-
-  @media (min-width: $xxl) {
-    max-width: $xxl-max-width;
-  }
-
-}
 
 @mixin first-level-sub-menu-position-desktop {
   padding-left: 20px;
@@ -51,7 +32,7 @@ $white-300: white;
   background-color: $white;
 
   @media (min-width: $xl) {
-    padding: 10px 0px;
+    padding: 10px 0;
     border-radius: 0 0 5px 5px;
     position: absolute;
     left: $left;
@@ -100,12 +81,39 @@ $white-300: white;
   vertical-align: top;
 }
 
-/* User login page start */
-nav.tabs {
-  @include container;
+@mixin make-container($padding-x: $container-padding-x) {
+  width: 100%;
+  padding-left: $padding-x;
+  padding-right: $padding-x;
   margin-left: auto;
   margin-right: auto;
+  @media (min-width: $sm) {
+    max-width: $sm-max-width;
+  }
 
+  @media (min-width: $md) {
+    max-width: $md-max-width;
+  }
+
+  @media (min-width: $lg) {
+    max-width: $lg-max-width;
+  }
+
+  @media (min-width: $xl) {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: $xl-max-width;
+  }
+
+  @media (min-width: $xxl) {
+    max-width: $xxl-max-width;
+  }
+}
+
+/* User login page start */
+nav.tabs {
+  @include make-container();
+  
   .nav-tabs {
     .nav-item {
       .nav-link {
@@ -122,26 +130,12 @@ nav.tabs {
 
 #user-login-form,
 #user-pass {
-  @media (min-width: $sm) {
-    max-width: 540px;
-  }
-
-  @media (min-width: $md) {
-    max-width: 720px;
-  }
-
-  @media (min-width: $lg) {
-    max-width: 900px;
-  }
-
-  @include container;
-  font-size: 16px;
-  margin-left: auto;
-  margin-right: auto;
+  @include make-container();
 
   .js-form-item {
     padding-left: 0;
   }
+
   .edit-actions {
     width: fit-content;
   }
@@ -154,22 +148,12 @@ nav.tabs {
 }
 
 #page-wrapper {
-  a, button {
-    // text-decoration: none;
-    &:focus {
-      // outline: none;
-      // box-shadow: none;
-    }
-
-    &:focus-visible {
-      // outline: 1px solid $black ;
-    }
-  }
-
   #header {
     position: sticky;
+    top: 0;
     z-index: 99;
     background-color: $white;
+
     #start_menu_block {
       background-color: $gray-200;
       height: 0;
@@ -193,6 +177,7 @@ nav.tabs {
         font-size: 12px;
         text-align: center;
         color: $blue;
+
         @media (min-width: $lg) {
           font-size: 16px;
           margin: 30px 0;
@@ -257,16 +242,12 @@ nav.tabs {
         padding-bottom: 20px;
         position: relative;
       }
-      >div {
-        padding: 0;
-        @media (min-width: $xl) {
-          padding: 0 20px;
-        }
-      }
+
       .navbar-brand {
         display: flex;
         margin-right: auto;
         margin-left: 20px;
+
         @media (min-width: $lg) {
           padding: 0;
         }
@@ -287,9 +268,11 @@ nav.tabs {
         padding: 0;
         order: 1;
         margin-right: 20px;
+
         &:focus {
           box-shadow: none;
         }
+
         @media (min-width: $lg) {
           width: 20px;
           height: 20px;
@@ -420,6 +403,7 @@ nav.tabs {
       justify-content: center;
       background-color: rgb(242, 242, 242);
       z-index: 1;
+
       .contentbox {
         width: auto;
         text-align: center;
@@ -593,7 +577,7 @@ nav.tabs {
                 a {
                   font-size: 14px;
                   font-weight: 500;
-                  color: $lightblue;
+                  color: $blue;
                   background-color: transparent;
                 }
               }
@@ -605,12 +589,6 @@ nav.tabs {
       &.show {
         display: flex;
       }
-    }
-  }
-
-  #main-wrapper {
-    #main {
-
     }
   }
 

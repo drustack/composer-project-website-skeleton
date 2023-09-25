@@ -18190,10 +18190,26 @@ table,
 
 /* User login page start */
 nav.tabs {
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   margin-left: auto;
   margin-right: auto;
+}
+@media (min-width: 576px) {
+  nav.tabs {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  nav.tabs {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  nav.tabs {
+    max-width: 960px;
+  }
 }
 @media (min-width: 1200px) {
   nav.tabs {
@@ -18217,9 +18233,9 @@ nav.tabs .nav-tabs .nav-item .nav-link.active {
 
 #user-login-form,
 #user-pass {
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 16px;
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -18238,7 +18254,7 @@ nav.tabs .nav-tabs .nav-item .nav-link.active {
 @media (min-width: 992px) {
   #user-login-form,
   #user-pass {
-    max-width: 900px;
+    max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
@@ -18272,6 +18288,7 @@ nav.tabs .nav-tabs .nav-item .nav-link.active {
 
 #page-wrapper #header {
   position: sticky;
+  top: 0;
   z-index: 99;
   background-color: #fff;
 }
@@ -18361,14 +18378,6 @@ nav.tabs .nav-tabs .nav-item .nav-link.active {
     padding-top: 20px;
     padding-bottom: 20px;
     position: relative;
-  }
-}
-#page-wrapper #header #navbar-main > div {
-  padding: 0;
-}
-@media (min-width: 1200px) {
-  #page-wrapper #header #navbar-main > div {
-    padding: 0 20px;
   }
 }
 #page-wrapper #header #navbar-main .navbar-brand {
@@ -18673,7 +18682,7 @@ nav.tabs .nav-tabs .nav-item .nav-link.active {
 #page-wrapper #header #search_page .contentbox .block-views .view-search .js-pager__items .pager__item a {
   font-size: 14px;
   font-weight: 500;
-  color: lightblue;
+  color: #4582ec;
   background-color: transparent;
 }
 #page-wrapper #header #search_page.show {
@@ -18775,6 +18784,7 @@ nav.tabs .nav-tabs .nav-item .nav-link.active {
 .region-header-top .header_top_right .language-switcher-language-url {
   margin: 0 20px;
   width: auto;
+  z-index: 101;
 }
 .region-header-top .header_top_right .language-switcher-language-url .content .links .nav-link {
   padding-left: 5px;
@@ -19065,7 +19075,7 @@ nav.tabs .nav-tabs .nav-item .nav-link.active {
 }
 @media (min-width: 1200px) {
   .menu--main ul.nav li.nav-item:nth-last-child(2) > ul li.menu-item--expanded ul {
-    padding: 10px 0px;
+    padding: 10px 0;
     border-radius: 0 0 5px 5px;
     position: absolute;
     left: unset;
@@ -19079,7 +19089,7 @@ nav.tabs .nav-tabs .nav-item .nav-link.active {
 }
 @media (min-width: 1200px) {
   .menu--main ul.nav li.nav-item:last-child > ul li.menu-item--expanded ul {
-    padding: 10px 0px;
+    padding: 10px 0;
     border-radius: 0 0 5px 5px;
     position: absolute;
     left: unset;
@@ -19107,7 +19117,7 @@ nav.tabs .nav-tabs .nav-item .nav-link.active {
 }
 @media (min-width: 1200px) {
   .menu--main ul.nav li.nav-item > ul > li.menu-item--expanded > ul {
-    padding: 10px 0px;
+    padding: 10px 0;
     border-radius: 0 0 5px 5px;
     position: absolute;
     left: 100%;
@@ -19121,7 +19131,7 @@ nav.tabs .nav-tabs .nav-item .nav-link.active {
 }
 @media (min-width: 1200px) {
   .menu--main ul.nav li.nav-item > ul > li.menu-item--expanded > ul > li.menu-item--expanded > ul {
-    padding: 10px 0px;
+    padding: 10px 0;
     border-radius: 0 0 5px 5px;
     position: absolute;
     left: 100%;
@@ -19161,23 +19171,6 @@ nav.tabs .nav-tabs .nav-item .nav-link.active {
   .menu--header ul.nav li .dropdown-toggle::after {
     margin-left: 0;
   }
-}
-.menu--header ul.nav li:hover {
-  background-color: unset;
-}
-@media (min-width: 1200px) {
-  .menu--header ul.nav li:hover > a, .menu--header ul.nav li:hover > span {
-    color: #000;
-  }
-  .menu--header ul.nav li:hover > a::after, .menu--header ul.nav li:hover > span::after {
-    color: #000;
-  }
-}
-.menu--header ul.nav li.active {
-  background-color: unset;
-}
-.menu--header ul.nav li.active a {
-  color: #4582ec;
 }
 @media (min-width: 1200px) {
   .menu--header ul.nav li.menu-item--expanded > .first {
@@ -19410,7 +19403,7 @@ nav.tabs .nav-tabs .nav-item .nav-link.active {
 }
 @media (min-width: 1200px) {
   .menu--header ul.nav li.nav-item:nth-last-child(2) > ul li.menu-item--expanded ul {
-    padding: 10px 0px;
+    padding: 10px 0;
     border-radius: 0 0 5px 5px;
     position: absolute;
     left: unset;
@@ -19424,7 +19417,7 @@ nav.tabs .nav-tabs .nav-item .nav-link.active {
 }
 @media (min-width: 1200px) {
   .menu--header ul.nav li.nav-item:last-child > ul li.menu-item--expanded ul {
-    padding: 10px 0px;
+    padding: 10px 0;
     border-radius: 0 0 5px 5px;
     position: absolute;
     left: unset;
@@ -19452,7 +19445,7 @@ nav.tabs .nav-tabs .nav-item .nav-link.active {
 }
 @media (min-width: 1200px) {
   .menu--header ul.nav li.nav-item > ul > li.menu-item--expanded > ul {
-    padding: 10px 0px;
+    padding: 10px 0;
     border-radius: 0 0 5px 5px;
     position: absolute;
     left: 100%;
@@ -19466,7 +19459,7 @@ nav.tabs .nav-tabs .nav-item .nav-link.active {
 }
 @media (min-width: 1200px) {
   .menu--header ul.nav li.nav-item > ul > li.menu-item--expanded > ul > li.menu-item--expanded > ul {
-    padding: 10px 0px;
+    padding: 10px 0;
     border-radius: 0 0 5px 5px;
     position: absolute;
     left: 100%;
@@ -19878,13 +19871,8 @@ nav.tabs .nav-tabs .nav-item .nav-link.active {
 body {
   overflow-x: hidden;
 }
-
-.container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-  --bs-gutter-x: 40px;
-}
-
-img {
-  width: 100%;
+body.overflow-y {
+  overflow-y: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

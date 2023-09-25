@@ -22,12 +22,7 @@ Description: Bootstrap 4 with Sass
 
 body {
   overflow-x: hidden;
-}
-
-.container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-  --bs-gutter-x: 40px;
-}
-
-img {
-  width: 100%;
+  &.overflow-y {
+    overflow-y: hidden;
+  }
 }
