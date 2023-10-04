@@ -10,7 +10,7 @@
   Drupal.behaviors.drustack_bootstrap_header = {
     attach: function (context, settings) {
       // Custom code here
-      const widthXL = 1200;
+      const XL = 1200;
       const toolbar = document.querySelector("#toolbar-bar");
       const toolbarManage = document.querySelector("#toolbar-bar .toolbar-tab:nth-of-type(3)");
       const toolbarTray = document.querySelector("#toolbar-item-administration-tray");
@@ -91,7 +91,7 @@
       const handleOneLevel = (items) => {
         for (let i = 0; i < items.length; i++) {
           items[i].querySelector(".dropdown-toggle").addEventListener("click", (el) => {
-            if (window.innerWidth < widthXL) {
+            if (window.innerWidth < XL) {
               items[i].querySelector(".dropdown-menu").removeAttribute("style");
               for (let j = 0; j < items.length; j++) {
                 let dropdownBtn =  items[j].querySelector(".dropdown-toggle");
@@ -154,7 +154,7 @@
         });
 
         navMain.addEventListener("click", (el) => {
-          if (window.innerWidth < widthXL) {
+          if (window.innerWidth < XL) {
             let items = menuList.querySelectorAll(":scope > li");
             let isWithinMenu = false;
             for (let item of items) {
@@ -170,7 +170,7 @@
         });
 
         for (let i = 0; i < expandableItems.length; i++) {
-          if (window.innerWidth < widthXL) {
+          if (window.innerWidth < XL) {
             let dropdownBtn = expandableItems[i].querySelector("a.dropdown-toggle");
             if (dropdownBtn) {
               dropdownBtn.innerHTML = "";
@@ -180,14 +180,14 @@
           let menuList = expandableItems[i].querySelector(".dropdown-menu");
           if(dropdownBtn) {
             dropdownBtn.addEventListener("click", function () {
-              if (window.innerWidth >= widthXL) {
+              if (window.innerWidth >= XL) {
                 location.href = this.href;
               }
             });
           }
 
           expandableItems[i].addEventListener("mouseenter", () => {
-            if (window.innerWidth >= widthXL) {
+            if (window.innerWidth >= XL) {
               menuList.classList.add("show");
               dropdownBtn.setAttribute("aria-expanded", "true");
               setTimeout(function () {
@@ -197,7 +197,7 @@
           });
 
           expandableItems[i].addEventListener("mouseleave", () => {
-            if (window.innerWidth >= widthXL) {
+            if (window.innerWidth >= XL) {
               menuList.classList.remove("show");
               dropdownBtn.setAttribute("aria-expanded", "false");
               for (let j = 0; j < expandableItems.length; j++) {
@@ -217,7 +217,7 @@
 
         for (let i = 0; i < expandableItemsLevel1.length; i++) {
           expandableItemsLevel1[i].addEventListener("mouseenter", () => {
-            if (window.innerWidth >= widthXL) {
+            if (window.innerWidth >= XL) {
               let list = expandableItemsLevel1[i].querySelector(".dropdown-menu");
               let shift = (list.getBoundingClientRect().width - expandableItemsLevel1[i].getBoundingClientRect().width) / 2;
               if (shift > 0) {
@@ -226,7 +226,7 @@
             }
           });
           expandableItemsLevel1[i].querySelector(".dropdown-toggle").addEventListener("click", (el) => {
-            if (window.innerWidth < widthXL) {
+            if (window.innerWidth < XL) {
               for (let j = 0; j < expandableItemsLevel1.length; j++) {
                 expandableItemsLevel1[j].querySelector(".dropdown-toggle").classList.remove("show_nolink");
                 expandableItemsLevel1[j].querySelector(".dropdown-menu").classList.remove("show_nolink");
@@ -243,7 +243,11 @@
         if (toolbar) {
           header.style.top = `${getToolbarHeight()}px`;
         }
-        if (window.innerWidth >= widthXL) {
+        if (window.innerWidth >= XL) {
+          // document.body.classList.remove("overflow-y");
+          if(!searchPage.classList.contains("show")) {
+            document.body.classList.remove("overflow-y");
+          } 
           for (let i = 0; i < expandableItems.length; i++) {
             let dropdownBtn = expandableItems[i].querySelector(".dropdown-toggle");
             let dropdownMenu = expandableItems[i].querySelector(".dropdown-menu");
@@ -290,6 +294,7 @@
           if (isMenuOpen(navbarMenu)) {
             let menuListWidth = menuList.getBoundingClientRect().width;
             let dropdownBtn = menuList.querySelector(".dropdown-toggle");
+            document.body.classList.add("overflow-y");
             if(dropdownBtn) {
               let dropdownBtnWidth = dropdownBtn.getBoundingClientRect().width;
               calMenuWidth(expandableItemsLevel1, 0, menuListWidth, dropdownBtnWidth);
@@ -318,7 +323,7 @@
       });
 
       window.addEventListener("focusin", (el) => {
-        if (window.innerWidth >= widthXL) {
+        if (window.innerWidth >= XL) {
           for (let i = 0; i < expandableItems.length; i++) {
             let dropdownBtn = expandableItems[i].querySelector(".dropdown-toggle");
             let dropdownMenu = expandableItems[i].querySelector(".dropdown-menu");
