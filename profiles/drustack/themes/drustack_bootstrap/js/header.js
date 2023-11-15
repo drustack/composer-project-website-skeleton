@@ -72,8 +72,8 @@
         return false;
       };
 
-      const isMenuOpen = (menu) => {
-        return menu.getAttribute("aria-expanded") === "true";
+      const isExpanded = (el) => {
+        return el.getAttribute("aria-expanded") === "true";
       }
 
       const calMenuWidth = (level, padding_left, menu_list_width, dropdown_button_width) => {
@@ -131,7 +131,7 @@
 
       const handleMobileMenu = () => {
         navbarMenu.addEventListener("click", () => {
-          if (isMenuOpen(navbarMenu)) {
+          if (isExpanded(navbarMenu)) {
             document.body.classList.add("overflow-y");
             if(menuBottom) {
               mainNav.style.height = `${window.innerHeight - mainNav.getBoundingClientRect().top - menuBottom.getBoundingClientRect().height}px`;
@@ -244,7 +244,6 @@
           header.style.top = `${getToolbarHeight()}px`;
         }
         if (window.innerWidth >= XL) {
-          // document.body.classList.remove("overflow-y");
           if(!searchPage.classList.contains("show")) {
             document.body.classList.remove("overflow-y");
           } 
@@ -291,7 +290,7 @@
             }
           }
 
-          if (isMenuOpen(navbarMenu)) {
+          if (isExpanded(navbarMenu)) {
             let menuListWidth = menuList.getBoundingClientRect().width;
             let dropdownBtn = menuList.querySelector(".dropdown-toggle");
             document.body.classList.add("overflow-y");
@@ -341,9 +340,7 @@
       window.addEventListener('DOMContentLoaded', () => {
         once('drustack_bootstrap_header', 'html').forEach(function (element) {
           if (toolbar) {
-            setTimeout(() => {
-              header.style.top = `${getToolbarHeight()}px`;
-            }, 100);
+            header.style.top = `${getToolbarHeight()}px`;
             toolbarManage.addEventListener("click", () => {
               setTimeout(() => {
                 header.style.top = `${getToolbarHeight()}px`;
@@ -362,7 +359,7 @@
                 drawerBtn.classList.add("clicked");
                 header.classList.add("setHeightWhenDrawerOpen");
               }
-              if (isMenuOpen(navbarMenu)) {
+              if (isExpanded(navbarMenu)) {
                 if(menuBottom) {
                   mainNav.style.height = `${window.innerHeight - mainNav.getBoundingClientRect().top - menuBottom.getBoundingClientRect().height}px`;
                 } else {
@@ -401,7 +398,7 @@
                     searchResultBox.style.height = `${window.innerHeight - searchResultBox.getBoundingClientRect().top - loadMoreButton.getBoundingClientRect().height}px`;
                   }
                 }
-                if (isMenuOpen(navbarMenu)) {
+                if (isExpanded(navbarMenu)) {
                   navbarMenu.click();
                   searchBtn.click();
                 }
