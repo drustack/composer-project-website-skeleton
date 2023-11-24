@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8ed5916bfbe0cbf972edfe827267edc2",
+    "content-hash": "e731f12a202babc101666f69f7e1c3ae",
     "packages": [
         {
             "name": "arthurkushman/query-path",
@@ -16366,6 +16366,18 @@
             ]
         },
         {
+            "name": "npm-asset/jquery",
+            "version": "3.7.1",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/jquery/-/jquery-3.7.1.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
             "name": "npm-asset/jquery-ui-touch-punch",
             "version": "0.2.3",
             "dist": {
@@ -16508,10 +16520,13 @@
         },
         {
             "name": "npm-asset/slick-carousel",
-            "version": "1.8.1",
+            "version": "1.6.0",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/slick-carousel/-/slick-carousel-1.8.1.tgz"
+                "url": "https://registry.npmjs.org/slick-carousel/-/slick-carousel-1.6.0.tgz"
+            },
+            "require": {
+                "npm-asset/jquery": ">=1.7.2"
             },
             "type": "npm-asset",
             "license": [
