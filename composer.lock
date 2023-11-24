@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e696c57d02c84983a2e0d3ce1d6175ad",
+    "content-hash": "807422a3a42e42a89739f641d2f55c79",
     "packages": [
         {
             "name": "arthurkushman/query-path",
@@ -7289,17 +7289,17 @@
         },
         {
             "name": "drupal/geocoder",
-            "version": "4.10.0",
+            "version": "4.11.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/geocoder.git",
-                "reference": "8.x-4.10"
+                "reference": "8.x-4.11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/geocoder-8.x-4.10.zip",
-                "reference": "8.x-4.10",
-                "shasum": "32c0425803f97072dab94e7447ef00aa215439bd"
+                "url": "https://ftp.drupal.org/files/projects/geocoder-8.x-4.11.zip",
+                "reference": "8.x-4.11",
+                "shasum": "fad26ff8e205c6231e20b807089155a100762b58"
             },
             "require": {
                 "davedevelopment/stiphle": "^0.9.2",
@@ -7318,6 +7318,7 @@
                 "geo6/geocoder-php-geopunt-provider": "^1.0",
                 "geo6/geocoder-php-spw-provider": "^1.0",
                 "geocoder-php/arcgis-online-provider": "^4.0",
+                "geocoder-php/azure-maps-provider": "^1.2",
                 "geocoder-php/bing-maps-provider": "^4.0",
                 "geocoder-php/free-geoip-provider": "^4.1",
                 "geocoder-php/geo-plugin-provider": "^4.0",
@@ -7337,13 +7338,14 @@
                 "geocoder-php/pelias-provider": "^1.1",
                 "geocoder-php/photon-provider": "^0.1.0",
                 "geocoder-php/tomtom-provider": "^4.0",
-                "geocoder-php/yandex-provider": "^4.0"
+                "geocoder-php/yandex-provider": "^4.0",
+                "systonic/ban-france-provider": "^1.0"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-4.10",
-                    "datestamp": "1697825420",
+                    "version": "8.x-4.11",
+                    "datestamp": "1700812536",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -16188,16 +16190,16 @@
         },
         {
             "name": "npm-asset/accessible360--accessible-slick",
-            "version": "dev-master",
+            "version": "v1.8.1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:Accessible360/accessible-slick.git",
-                "reference": "61b53224a47b9aa241bddbb2d7894277ec25ca7f"
+                "reference": "0f40c9d6a02a5c08b5f4dd80fdada3a854a59bee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Accessible360/accessible-slick/zipball/61b53224a47b9aa241bddbb2d7894277ec25ca7f",
-                "reference": "61b53224a47b9aa241bddbb2d7894277ec25ca7f"
+                "url": "https://api.github.com/repos/Accessible360/accessible-slick/zipball/0f40c9d6a02a5c08b5f4dd80fdada3a854a59bee",
+                "reference": "0f40c9d6a02a5c08b5f4dd80fdada3a854a59bee"
             },
             "type": "npm-asset",
             "license": [
@@ -26960,8 +26962,7 @@
         "drupal/views_geojson": 20,
         "drupal/viewsreference": 20,
         "drupal/webform": 20,
-        "drupal/xmlsitemap": 20,
-        "npm-asset/accessible360--accessible-slick": 20
+        "drupal/xmlsitemap": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
