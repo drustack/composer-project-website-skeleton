@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9bde90c50dd111c31626a15d70f9a687",
+    "content-hash": "09d99802154a634ea777958c509dfd69",
     "packages": [
         {
             "name": "arthurkushman/query-path",
@@ -12447,11 +12447,17 @@
         },
         {
             "name": "drupal/svg_image",
-            "version": "dev-1.x",
+            "version": "3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/svg_image.git",
-                "reference": "6527909c1bf2de64e814b69ee3770981bae082bc"
+                "reference": "3.0.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/svg_image-3.0.2.zip",
+                "reference": "3.0.2",
+                "shasum": "77906ae731878b68a181f82b073617b798e5f110"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10",
@@ -12459,15 +12465,12 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.x-dev",
-                    "datestamp": "1698470956",
+                    "version": "3.0.2",
+                    "datestamp": "1698471266",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
