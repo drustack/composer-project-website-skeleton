@@ -18,11 +18,11 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    auto_create: true
-    auto_create_bundle: ''
-    sort:
-      direction: asc
-      field: name
     target_bundles:
       tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
 field_type: entity_reference

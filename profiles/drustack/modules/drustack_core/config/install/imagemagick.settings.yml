@@ -1,59 +1,59 @@
-advanced:
-  coalesce: false
-  colorspace: '0'
-  density: 0
-  profile: ''
+quality: 80
 binaries: imagemagick
+path_to_binaries: ''
+prepend: ''
+log_warnings: true
 debug: false
+locale: en_US.UTF-8
 image_formats:
-  AVIF:
-    enabled: false
-    mime_type: image/avif
-  BMP:
-    enabled: false
-    mime_type: image/x-ms-bmp
-  GIF:
-    mime_type: image/gif
-  GIF87:
-    enabled: false
-    mime_type: image/gif
-    weight: 10
-  HEIC:
-    enabled: false
-    mime_type: image/heif
-  ICO:
-    enabled: false
-    mime_type: image/vnd.microsoft.icon
+  PNG:
+    mime_type: image/png
   JPEG:
     mime_type: image/jpeg
   JPG:
-    enabled: false
     mime_type: image/jpeg
     weight: 10
-  PDF:
     enabled: false
-    mime_type: application/pdf
-  PNG:
-    mime_type: image/png
-  PSD:
+  GIF:
+    mime_type: image/gif
+  GIF87:
+    mime_type: image/gif
+    weight: 10
     enabled: false
-    mime_type: image/x-photoshop
   SVG:
-    enabled: false
     mime_type: image/svg+xml
-  TIFF:
     enabled: false
-    mime_type: image/tiff
-  WBMP:
-    enabled: false
-    mime_type: image/vnd.wap.wbmp
   WEBP:
     mime_type: image/webp
-  XBM:
+  AVIF:
+    mime_type: image/avif
     enabled: false
+  TIFF:
+    mime_type: image/tiff
+    enabled: false
+  PDF:
+    mime_type: application/pdf
+    enabled: false
+  HEIC:
+    mime_type: image/heif
+    enabled: false
+  BMP:
+    mime_type: image/x-ms-bmp
+    enabled: false
+  PSD:
+    mime_type: image/x-photoshop
+    enabled: false
+  WBMP:
+    mime_type: image/vnd.wap.wbmp
+    enabled: false
+  XBM:
     mime_type: image/x-xbitmap
-locale: en_US.UTF-8
-log_warnings: true
-path_to_binaries: ''
-prepend: ''
-quality: 80
+    enabled: false
+  ICO:
+    mime_type: image/vnd.microsoft.icon
+    enabled: false
+advanced:
+  density: 0
+  colorspace: '0'
+  profile: ''
+  coalesce: false

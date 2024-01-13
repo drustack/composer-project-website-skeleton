@@ -16,17 +16,17 @@ required: false
 translatable: true
 default_value:
   -
-    cid: 0
-    comment_count: 0
-    last_comment_name: null
-    last_comment_timestamp: 0
-    last_comment_uid: 0
     status: 1
+    cid: 0
+    last_comment_timestamp: 0
+    last_comment_name: null
+    last_comment_uid: 0
+    comment_count: 0
 default_value_callback: ''
 settings:
-  anonymous: 0
   default_mode: 1
-  form_location: true
   per_page: 50
+  anonymous: 0
+  form_location: true
   preview: 1
 field_type: comment

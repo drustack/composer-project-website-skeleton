@@ -13,54 +13,54 @@ id: drustack_bootstrap
 label: 'DruStack Bootstrap'
 image_style_mappings:
   -
-    breakpoint_id: drustack_bootstrap.xxl
+    image_mapping_type: image_style
     image_mapping: xxl
-    image_mapping_type: image_style
-    multiplier: 1x
-  -
     breakpoint_id: drustack_bootstrap.xxl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
     image_mapping: xxl
-    image_mapping_type: image_style
+    breakpoint_id: drustack_bootstrap.xxl
     multiplier: 2x
   -
-    breakpoint_id: drustack_bootstrap.xl
+    image_mapping_type: image_style
     image_mapping: xl
-    image_mapping_type: image_style
-    multiplier: 1x
-  -
     breakpoint_id: drustack_bootstrap.xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
     image_mapping: xl
-    image_mapping_type: image_style
+    breakpoint_id: drustack_bootstrap.xl
     multiplier: 2x
   -
-    breakpoint_id: drustack_bootstrap.lg
+    image_mapping_type: image_style
     image_mapping: lg
-    image_mapping_type: image_style
-    multiplier: 1x
-  -
     breakpoint_id: drustack_bootstrap.lg
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
     image_mapping: lg
-    image_mapping_type: image_style
+    breakpoint_id: drustack_bootstrap.lg
     multiplier: 2x
   -
-    breakpoint_id: drustack_bootstrap.md
-    image_mapping: md
     image_mapping_type: image_style
+    image_mapping: md
+    breakpoint_id: drustack_bootstrap.md
     multiplier: 1x
   -
-    breakpoint_id: drustack_bootstrap.md
-    image_mapping: md
     image_mapping_type: image_style
+    image_mapping: md
+    breakpoint_id: drustack_bootstrap.md
     multiplier: 2x
   -
-    breakpoint_id: drustack_bootstrap.sm
-    image_mapping: sm
     image_mapping_type: image_style
+    image_mapping: sm
+    breakpoint_id: drustack_bootstrap.sm
     multiplier: 1x
   -
-    breakpoint_id: drustack_bootstrap.sm
-    image_mapping: sm
     image_mapping_type: image_style
+    image_mapping: sm
+    breakpoint_id: drustack_bootstrap.sm
     multiplier: 2x
 breakpoint_group: drustack_bootstrap
 fallback_image_style: '_original image_'

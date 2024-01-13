@@ -1,38 +1,30 @@
-include_css: true
-message:
-  format: plain_text
-  value: ''
 page_title: Sitemap
+message:
+  value: ''
+  format: plain_text
 plugins:
-  frontpage:
-    enabled: true
-    id: frontpage
-    provider: sitemap
-    settings:
-      rss: /rss.xml
-      title: 'Front page'
-    weight: 0
   'menu:footer':
     enabled: true
+    weight: 0
+    settings:
+      title: Footer
+      show_disabled: false
     id: 'menu:footer'
     provider: sitemap
-    settings:
-      show_disabled: false
-      title: Footer
-    weight: 0
-  'menu:header':
-    enabled: true
-    id: 'menu:header'
-    provider: sitemap
-    settings:
-      show_disabled: false
-      title: Header
-    weight: 0
   'menu:main':
     enabled: true
+    weight: 0
+    settings:
+      title: 'Main navigation'
+      show_disabled: false
     id: 'menu:main'
     provider: sitemap
-    settings:
-      show_disabled: false
-      title: 'Main navigation'
+  frontpage:
+    enabled: true
     weight: 0
+    settings:
+      title: 'Front page'
+      rss: /rss.xml
+    id: frontpage
+    provider: sitemap
+include_css: true
