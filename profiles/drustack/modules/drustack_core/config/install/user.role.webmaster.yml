@@ -2,12 +2,10 @@ langcode: en
 status: true
 dependencies:
   config:
+    - filter.format.basic_html
     - filter.format.full_html
+    - filter.format.restricted_html
     - filter.format.twig
-    - media.type.audio
-    - media.type.image
-    - media.type.remote_video
-    - media.type.video
     - taxonomy.vocabulary.tags
   module:
     - content_translation
@@ -50,33 +48,24 @@ permissions:
   - 'clone menu_link_content entity'
   - 'clone node entity'
   - 'clone taxonomy_term entity'
-  - 'create audio media'
-  - 'create content translations'
-  - 'create image media'
   - 'create media'
-  - 'create remote_video media'
   - 'create terms in tags'
   - 'create url aliases'
-  - 'create video media'
   - 'delete all revisions'
   - 'delete media'
-  - 'delete own audio media'
-  - 'delete own image media'
-  - 'delete own remote_video media'
-  - 'delete own video media'
-  - 'edit own audio media'
-  - 'edit own image media'
-  - 'edit own remote_video media'
-  - 'edit own video media'
   - 'edit terms in tags'
   - 'notify of path changes'
   - 'revert all revisions'
+  - 'schedule publishing of media'
   - 'schedule publishing of nodes'
+  - 'schedule publishing of taxonomy_term'
   - 'translate any entity'
   - 'translate interface'
   - 'update content translations'
   - 'update media'
+  - 'use text format basic_html'
   - 'use text format full_html'
+  - 'use text format restricted_html'
   - 'use text format twig'
   - 'view all media revisions'
   - 'view all revisions'
@@ -85,4 +74,6 @@ permissions:
   - 'view own unpublished media'
   - 'view post access counter'
   - 'view scheduled content'
+  - 'view scheduled media'
+  - 'view scheduled taxonomy_term'
   - 'view the administration theme'

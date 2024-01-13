@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.media.image.field_media_image
+    - image.style.lg
     - media.type.image
   module:
     - image
@@ -12,16 +13,16 @@ bundle: image
 mode: default
 content:
   field_media_image:
+    type: image
     label: visually_hidden
-    region: content
     settings:
       image_link: file
+      image_style: lg
       image_loading:
         attribute: lazy
-      image_style: ''
     third_party_settings: {  }
-    type: image
     weight: 0
+    region: content
 hidden:
   created: true
   langcode: true
