@@ -8,42 +8,29 @@ dependencies:
 format: basic_html
 editor: ckeditor5
 settings:
+  toolbar:
+    items:
+      - bold
+      - italic
+      - '|'
+      - link
+      - '|'
+      - bulletedList
+      - numberedList
+      - '|'
+      - blockQuote
+      - drupalInsertImage
+      - drupalMedia
+      - specialCharacters
+      - '|'
+      - heading
+      - '|'
+      - sourceEditing
+      - textPartLanguage
+      - '|'
+      - code
+      - codeBlock
   plugins:
-    ckeditor5_heading:
-      enabled_headings:
-        - heading2
-        - heading3
-        - heading4
-        - heading5
-        - heading6
-    ckeditor5_imageResize:
-      allow_resize: true
-    ckeditor5_language:
-      language_list: all
-    ckeditor5_list:
-      reversed: true
-      startIndex: true
-    ckeditor5_sourceEditing:
-      allowed_tags:
-        - '<cite>'
-        - '<dl>'
-        - '<dt>'
-        - '<dd>'
-        - '<span>'
-        - '<drupal-media data-entity-t ype data-entity-uuid data-view-mode data-align data-caption alt title>'
-        - '<a hreflang>'
-        - '<blockquote cite>'
-        - '<ul type>'
-        - '<ol type>'
-        - '<h2 id>'
-        - '<h3 id>'
-        - '<h4 id>'
-        - '<h5 id>'
-        - '<h6 id>'
-    editor_advanced_link_link:
-      enabled_attributes: {  }
-    media_media:
-      allow_view_mode_override: false
     ckeditor5_codeBlock:
       languages:
         -
@@ -88,33 +75,48 @@ settings:
         -
           label: XML
           language: xml
-  toolbar:
-    items:
-      - bold
-      - italic
-      - '|'
-      - link
-      - '|'
-      - bulletedList
-      - numberedList
-      - '|'
-      - blockQuote
-      - drupalInsertImage
-      - drupalMedia
-      - specialCharacters
-      - '|'
-      - heading
-      - '|'
-      - sourceEditing
-      - textPartLanguage
-      - '|'
-      - code
-      - codeBlock
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_imageResize:
+      allow_resize: true
+    ckeditor5_language:
+      language_list: all
+    ckeditor5_list:
+      properties:
+        reversed: true
+        startIndex: true
+      multiBlock: true
+    ckeditor5_sourceEditing:
+      allowed_tags:
+        - '<cite>'
+        - '<dl>'
+        - '<dt>'
+        - '<dd>'
+        - '<span>'
+        - '<drupal-media data-entity-t ype data-entity-uuid data-view-mode data-align data-caption alt title>'
+        - '<a hreflang>'
+        - '<blockquote cite>'
+        - '<ul type>'
+        - '<ol type>'
+        - '<h2 id>'
+        - '<h3 id>'
+        - '<h4 id>'
+        - '<h5 id>'
+        - '<h6 id>'
+    editor_advanced_link_link:
+      enabled_attributes: {  }
+    media_media:
+      allow_view_mode_override: false
 image_upload:
-  directory: inline-images
-  max_dimensions:
-    height: 0
-    width: 0
-  max_size: ''
-  scheme: public
   status: true
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: 0
+    height: 0

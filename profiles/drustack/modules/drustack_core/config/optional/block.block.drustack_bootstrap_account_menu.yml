@@ -9,8 +9,8 @@ dependencies:
     - drustack_bootstrap
 id: drustack_bootstrap_account_menu
 theme: drustack_bootstrap
-region: secondary_menu
-weight: 0
+region: header_menu
+weight: -6
 provider: null
 plugin: 'system_menu_block:account'
 settings:
