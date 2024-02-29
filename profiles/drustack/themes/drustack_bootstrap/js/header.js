@@ -78,7 +78,7 @@
       let linkTag = level[i].querySelector(":scope > a:first-child");
       let spanTag = level[i].querySelector(":scope > span:first-child");
       if (linkTag) {
-        linkTag.style.width = `${menu_list_width - padding_left - dropdown_button_width}px`;
+        linkTag.style.maxWidth = `${menu_list_width - padding_left - dropdown_button_width}px`;
       } else if (spanTag) {
         spanTag.classList.add("hide");
       }
@@ -120,7 +120,7 @@
         let dropdownBtnWidth = el.target.getBoundingClientRect().width;
         let menuItem = items[i].querySelector(":scope > a:first-child");
         if (menuItem) {
-          menuItem.style.width = `${menuListWidth - paddingLeft - dropdownBtnWidth}px`;
+          menuItem.style.maxWidth = `${menuListWidth - paddingLeft - dropdownBtnWidth}px`;
         }
       });
     }
@@ -314,10 +314,11 @@
     for(let searchBtn of searchBtns) {
       if (searchBtn) {
         if (searchBtn.classList.contains("clicked")) {
+          let searchBlock = searchPage.querySelector(".block-views .content");
           let searchResultBox = searchPage.querySelector(".view-search .view-content");
           let loadMoreButton = searchPage.querySelector(".view-search .js-pager__items");
-          if (searchResultBox && loadMoreButton) {
-            searchResultBox.style.height = `${window.innerHeight - searchResultBox.getBoundingClientRect().top - loadMoreButton.getBoundingClientRect().height}px`;
+          if(searchBlock && searchResultBox && loadMoreButton) {
+            searchBlock.style.height = `${window.innerHeight - searchResultBox.getBoundingClientRect().top - loadMoreButton.getBoundingClientRect().height}px`;
           }
         }
       }
@@ -394,10 +395,12 @@
           } else {
             searchBtn.classList.add("clicked");
             searchPage.classList.add("show");
+            let searchBlock = searchPage.querySelector(".block-views .content");
             let searchResultBox = searchPage.querySelector(".view-search .view-content");
             let loadMoreButton = searchPage.querySelector(".view-search .js-pager__items");
-            if (searchResultBox && loadMoreButton) {
-              searchResultBox.style.height = `${window.innerHeight - searchResultBox.getBoundingClientRect().top - loadMoreButton.getBoundingClientRect().height}px`;
+            // console.log(window.innerHeight, searchResultBox.getBoundingClientRect().top, loadMoreButton.getBoundingClientRect().height);
+            if(searchBlock && searchResultBox && loadMoreButton) {
+              searchBlock.style.height = `${window.innerHeight - searchResultBox.getBoundingClientRect().top - loadMoreButton.getBoundingClientRect().height}px`;
             }
           }
           if (isExpanded(navbarMenu)) {

@@ -1,14 +1,18 @@
 .menu--header {
   background-color: $white;
   overflow-y: auto;
-  @media (min-width: $xl) {
+  scrollbar-width: none;
+
+  @include media-breakpoint-up(xl) {
     background-color: unset;
     overflow: unset;
+    scrollbar-width: auto;
   }
 
   ul.nav {
     font-size: 16px;
-    @media (min-width: $xl) {
+
+    @include media-breakpoint-up(xl) {
       border-top: none;
       font-weight: 500;
       flex-direction: row;
@@ -20,14 +24,15 @@
       padding: 0;
       margin: 0;
       width: 100%;
-      @media (min-width: $xl) {
+
+      @include media-breakpoint-up(xl) {
         .dropdown-toggle::after {
           margin-left: 0;
         }
       }
 
       &.menu-item--expanded {
-        @media (min-width: $xl) {
+        @include media-breakpoint-up(xl) {
           >.first {
             display: none;
           }
@@ -51,13 +56,10 @@
         display: inline-block;
         white-space: break-spaces;
 
-        @media (min-width: $xl) {
+        @include media-breakpoint-up(xl) {
           padding: 0;
           margin: 0;
           white-space: nowrap;
-        }
-        &.active {
-          color: null;
         }
 
         &.dropdown-toggle {
@@ -67,7 +69,8 @@
             border: none;
             @include down-icon;
             transition: transform 0.3s;
-            @media (min-width: $xl) {
+
+            @include media-breakpoint-up(xl) {
               @include right-icon;
             }
           }
@@ -77,7 +80,7 @@
             transform: rotate(180deg);
           }
 
-          @media (min-width: $xl) {
+          @include media-breakpoint-up(xl) {
             float: unset;
             display: flex;
             justify-content: space-between;
@@ -107,7 +110,7 @@
           display: none;
         }
 
-        @media (min-width: $xl) {
+        @include media-breakpoint-up(xl) {
           padding: 0;
           margin: 0;
           white-space: nowrap;
@@ -123,7 +126,8 @@
             border: none;
             @include down-icon;
             transition: transform 0.3s;
-            @media (min-width: $xl) {
+
+            @include media-breakpoint-up(xl) {
               @include right-icon;
             }
           }
@@ -133,7 +137,7 @@
             transform: rotate(180deg);
           }
 
-          @media (min-width: $xl) {
+          @include media-breakpoint-up(xl) {
             pointer-events: none;
             float: unset;
             display: flex;
@@ -161,26 +165,12 @@
           display: block;
         }
 
-        @media (min-width: $xl) {
+        @include media-breakpoint-up(xl) {
           border-radius: 0;
           padding: 0.5rem 0;
           min-width: auto;
 
-          &::before {
-            content: "";
-            width: 0;
-            height: 4px;
-            position: absolute;
-            top: 0;
-            left: 50%;
-            background-color: $blue;
-            transition: all 0.25s ease-out;
-          }
-
-          &.start:before {
-            left: 0;
-            width: 100%;
-          }
+          @include menu-top-line-style;
 
           li {
             padding: 10px 30px;
@@ -196,14 +186,14 @@
 
       &.nav-item {
 
-        @media (min-width: $xl) {
+        @include media-breakpoint-up(xl) {
           width: unset;
           margin-left: 1rem;
           margin-right: 1rem;
         }
 
         >.dropdown-toggle {
-          @media (min-width: $xl) {
+          @include media-breakpoint-up(xl) {
             &::after {
               content: "";
             }
@@ -215,7 +205,7 @@
             li {
               &.menu-item--expanded {
                 ul {
-                  @include sub-menu-position-desktop(unset, 100%);
+                  @include menu-second-level(unset, 100%);
                 }
               }
             }
@@ -227,7 +217,7 @@
             li {
               &.menu-item--expanded {
                 ul {
-                  @include sub-menu-position-desktop(unset, 100%);
+                  @include menu-second-level(unset, 100%);
                 }
               }
             }
@@ -235,17 +225,34 @@
         }
 
         >ul {
-          @include first-level-sub-menu-position-desktop;
+          @include menu-first-level;
 
           >li {
+            a {
+              color: $menu-first-level-color;
+              &:hover {
+                @include media-breakpoint-up(xl) {
+                  color: $desktop-menu-hover-color;
+                }
+              }
+            }
             &.menu-item--expanded {
               >ul {
-                @include sub-menu-position-desktop;
+                @include menu-second-level;
 
                 >li {
+                  a {
+                    color: $menu-second-level-color;
+                    @include media-breakpoint-up(xl) {
+                      color: $desktop-menu-second-level-color;
+                      &:hover {
+                        color: $desktop-menu-hover-color;
+                      }
+                    }
+                  }
                   &.menu-item--expanded {
                     >ul {
-                      @include sub-menu-position-desktop;
+                      @include menu-second-level;
                     }
                   }
                 }
