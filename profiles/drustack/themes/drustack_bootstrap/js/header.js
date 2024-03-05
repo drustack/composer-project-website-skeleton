@@ -312,7 +312,7 @@
     }
 
     for(let searchBtn of searchBtns) {
-      if (searchBtn) {
+      if (searchBtn && searchPage) {
         if (searchBtn.classList.contains("clicked")) {
           let searchBlock = searchPage.querySelector(".block-views .content");
           let searchResultBox = searchPage.querySelector(".view-search .view-content");
@@ -387,7 +387,7 @@
     });
 
     for(let searchBtn of searchBtns) {
-      if (searchBtn && navbarMenu) {
+      if (searchBtn && navbarMenu && searchPage) {
         searchBtn.addEventListener("click", function () {
           if (searchBtn.classList.contains("clicked")) {
             searchBtn.classList.remove("clicked");
