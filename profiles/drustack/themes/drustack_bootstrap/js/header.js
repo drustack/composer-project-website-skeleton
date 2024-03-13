@@ -372,20 +372,6 @@
       })
     }
 
-    waitForElm(".region-header-top .block-language-blocklanguage-interface").then(el => {
-      let languages = el.querySelectorAll(".nav-link .language-link");
-      // console.log(el);
-      for (let lang of languages) {
-        if (lang.getAttribute("hreflang") == "en") {
-          lang.innerHTML = "EN";
-        } else if (lang.getAttribute("hreflang") == "zh-hk") {
-          lang.innerHTML = "繁中";
-        } else if (lang.getAttribute("hreflang") == "zh-cn") {
-          lang.innerHTML = "简体";
-        }
-      }
-    });
-
     for(let searchBtn of searchBtns) {
       if (searchBtn && navbarMenu && searchPage) {
         searchBtn.addEventListener("click", function () {

@@ -2,8 +2,7 @@
   background-color: $white;
   overflow-y: auto;
   scrollbar-width: none;
-
-  @include media-breakpoint-up(xl) {
+  @media (min-width: $xl) {
     background-color: unset;
     overflow: unset;
     scrollbar-width: auto;
