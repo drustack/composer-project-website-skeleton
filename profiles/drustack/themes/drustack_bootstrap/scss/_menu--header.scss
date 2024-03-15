@@ -2,7 +2,8 @@
   background-color: $white;
   overflow-y: auto;
   scrollbar-width: none;
-  @media (min-width: $xl) {
+
+  @include media-breakpoint-up(xl) {
     background-color: unset;
     overflow: unset;
     scrollbar-width: auto;
@@ -95,7 +96,7 @@
           @include external-link-icon;
         }
       }
-
+      
       span {
         padding: 10px 20px;
         display: inline-block;

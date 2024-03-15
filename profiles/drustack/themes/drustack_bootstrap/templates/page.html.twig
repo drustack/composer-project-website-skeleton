@@ -111,11 +111,7 @@
               {% endif %}
             </div>
           {% endif %}
-          <button class="search" name="search">
-            <a href="/search"><span class="fa fa-search"></span></a>
-            {# <span class="fa fa-search"></span>
-            <span class="fa fa-times"></span> #}
-          </button>
+          <a href="/search" class="search"><span class="fa fa-search"></span></a>
           {% if page.header_bottom %}
             <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#CollapsingNavbar1" aria-controls="CollapsingNavbar1" aria-expanded="false" aria-label="Menu">
               <span class="fa fa-bars"></span>
@@ -132,11 +128,6 @@
             </div>
           </nav>
         {% endif %}
-        {# <div id="search_page">
-          <div class="contentbox container">
-            {{ drupal_block('views_block:search-search')}}
-          </div>
-        </div> #}
       {% endblock %}
     </header>
     {% if page.breadcrumb %}

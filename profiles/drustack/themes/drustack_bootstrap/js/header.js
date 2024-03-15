@@ -15,8 +15,6 @@
   const header = document.querySelector("#header");
   const drawer = document.querySelector("#start_menu_block");
   const drawerBtn = document.querySelector(".drawer_btn_wrapper .drawer_btn");
-  const searchBtns = document.querySelectorAll(".search");
-  const searchPage = document.querySelector("#search_page");
   const navbarMenu = document.querySelector("#header .navbar-toggler");
   const navMain = document.querySelector("#header #navbar-main");
   const mainNav = document.querySelector("#header .block-menu");
@@ -130,7 +128,6 @@
     if(navbarMenu) {
       navbarMenu.addEventListener("click", () => {
         if (isExpanded(navbarMenu)) {
-          document.body.classList.add("overflow-y");
           if(menuBottom) {
             mainNav.style.height = `${window.innerHeight - mainNav.getBoundingClientRect().top - menuBottom.getBoundingClientRect().height}px`;
           } else {
@@ -146,9 +143,7 @@
               calMenuWidth(expandableItemsLevel3, paddingLeft * 2, menuListWidth, dropdownBtnWidth);
             }
           }, 100);
-        } else {
-          document.body.classList.remove("overflow-y");
-        }
+        } 
       });
     }
 
@@ -245,9 +240,6 @@
       header.style.top = `${getToolbarHeight()}px`;
     }
     if (window.innerWidth >= XL) {
-      if(searchPage && !searchPage.classList.contains("show")) {
-        document.body.classList.remove("overflow-y");
-      } 
       for (let i = 0; i < expandableItems.length; i++) {
         let dropdownBtn = expandableItems[i].querySelector(".dropdown-toggle");
         let dropdownMenu = expandableItems[i].querySelector(".dropdown-menu");
@@ -296,7 +288,6 @@
       if (isExpanded(navbarMenu)) {
         let menuListWidth = menuList.getBoundingClientRect().width;
         let dropdownBtn = menuList.querySelector(".dropdown-toggle");
-        document.body.classList.add("overflow-y");
         if(dropdownBtn) {
           let dropdownBtnWidth = dropdownBtn.getBoundingClientRect().width;
           calMenuWidth(expandableItemsLevel1, 0, menuListWidth, dropdownBtnWidth);
@@ -307,19 +298,6 @@
           mainNav.style.height = `${window.innerHeight - mainNav.getBoundingClientRect().top - menuBottom.getBoundingClientRect().height}px`;
         } else {
           mainNav.style.height = `${window.innerHeight - mainNav.getBoundingClientRect().top}px`;
-        }
-      }
-    }
-
-    for(let searchBtn of searchBtns) {
-      if (searchBtn && searchPage) {
-        if (searchBtn.classList.contains("clicked")) {
-          let searchBlock = searchPage.querySelector(".block-views .content");
-          let searchResultBox = searchPage.querySelector(".view-search .view-content");
-          let loadMoreButton = searchPage.querySelector(".view-search .js-pager__items");
-          if(searchBlock && searchResultBox && loadMoreButton) {
-            searchBlock.style.height = `${window.innerHeight - searchResultBox.getBoundingClientRect().top - loadMoreButton.getBoundingClientRect().height}px`;
-          }
         }
       }
     }
@@ -370,41 +348,6 @@
           }
         }
       })
-    }
-
-    for(let searchBtn of searchBtns) {
-      if (searchBtn && navbarMenu && searchPage) {
-        searchBtn.addEventListener("click", function () {
-          if (searchBtn.classList.contains("clicked")) {
-            searchBtn.classList.remove("clicked");
-            searchPage.classList.remove("show");
-          } else {
-            searchBtn.classList.add("clicked");
-            searchPage.classList.add("show");
-            let searchBlock = searchPage.querySelector(".block-views .content");
-            let searchResultBox = searchPage.querySelector(".view-search .view-content");
-            let loadMoreButton = searchPage.querySelector(".view-search .js-pager__items");
-            // console.log(window.innerHeight, searchResultBox.getBoundingClientRect().top, loadMoreButton.getBoundingClientRect().height);
-            if(searchBlock && searchResultBox && loadMoreButton) {
-              searchBlock.style.height = `${window.innerHeight - searchResultBox.getBoundingClientRect().top - loadMoreButton.getBoundingClientRect().height}px`;
-            }
-          }
-          if (isExpanded(navbarMenu)) {
-            navbarMenu.click();
-            searchBtn.click();
-          }
-          if(searchPage.classList.contains("show")) {
-            document.body.classList.add("overflow-y");
-          } else {
-            document.body.classList.remove("overflow-y");
-          }
-        });
-        navbarMenu.addEventListener("click", function () {
-          if (searchBtn.classList.contains("clicked")) {
-            searchBtn.click();
-          }
-        });
-      }
     }
 
     handleMobileMenu();
