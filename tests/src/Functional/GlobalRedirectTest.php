@@ -264,7 +264,7 @@ class GlobalRedirectTest extends BrowserTestBase {
       'language_configuration[content_translation]' => TRUE,
     ];
     $this->drupalGet('admin/structure/types/manage/page');
-    $this->submitForm($edit, 'Save content type');
+    $this->submitForm($edit, 'Save');
     $this->assertSession()->responseContains('The content type <em class="placeholder">Page</em> has been updated.');
 
     $spanish_node = $this->drupalCreateNode([
@@ -321,7 +321,7 @@ class GlobalRedirectTest extends BrowserTestBase {
 
     $assert_session = $this->assertSession();
     $assert_session->statusCodeEquals($status_code);
-    $assert_session->responseHeaderEquals('Location', NULL);
+    $assert_session->responseHeaderDoesNotExist('Location');
     $assert_session->responseNotContains('http-equiv="refresh');
     $assert_session->addressEquals($path);
 

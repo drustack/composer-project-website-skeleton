@@ -15,10 +15,10 @@ services:
     tags:
       - { name: event_subscriber }
   redirect.settings_cache_tag:
-        class: Drupal\redirect\EventSubscriber\RedirectSettingsCacheTag
-        arguments: ['@cache_tags.invalidator']
-        tags:
-          - { name: event_subscriber }
+    class: Drupal\redirect\EventSubscriber\RedirectSettingsCacheTag
+    arguments: ['@cache_tags.invalidator']
+    tags:
+      - { name: event_subscriber }
   redirect.route_normalizer_request_subscriber:
     class: Drupal\redirect\EventSubscriber\RouteNormalizerRequestSubscriber
     arguments: ['@url_generator', '@path.matcher', '@config.factory', '@redirect.checker']

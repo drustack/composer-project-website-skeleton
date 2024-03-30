@@ -256,9 +256,9 @@ class RedirectJavascriptTest extends WebDriverTestBase {
     $this->getSession()->getPage()->selectFieldOption("action", "redirect_delete_action", TRUE);
     $this->submitForm($edit, 'Apply to selected items');
     $this->assertSession()->pageTextContains('Are you sure you want to delete these redirects?');
-    $this->clickLink('Cancel');
 
     // Test the delete action.
+    $this->drupalGet('admin/config/search/redirect');
     $page->find('css', '.dropbutton-toggle button')->press();
     $this->clickLink('Delete');
     $this->assertSession()->responseContains(
