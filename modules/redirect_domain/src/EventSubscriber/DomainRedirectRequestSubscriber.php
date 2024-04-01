@@ -127,7 +127,7 @@ class DomainRedirectRequestSubscriber implements EventSubscriberInterface {
   /**
    * {@inheritdoc}
    */
-  public static function getSubscribedEvents() {
+  public static function getSubscribedEvents(): array {
     // This needs to run before RouterListener::onKernelRequest(), which has
     // a priority of 32 and
     // RedirectRequestSubscriber::onKernelRequestCheckRedirect(), which has

@@ -133,7 +133,7 @@ class DomainRedirectRequestSubscriberTest extends UnitTestCase {
     $request = Request::create($path_info . '?' . $query_string, 'GET', [], [], [], ['SCRIPT_NAME' => 'index.php']);
 
     $http_kernel = $this->createMock(HttpKernelInterface::class);
-    return new RequestEvent($http_kernel, $request, HttpKernelInterface::MASTER_REQUEST);
+    return new RequestEvent($http_kernel, $request, HttpKernelInterface::MAIN_REQUEST);
   }
 
   /**

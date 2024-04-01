@@ -134,7 +134,7 @@ class RouteNormalizerRequestSubscriber implements EventSubscriberInterface {
   /**
    * {@inheritdoc}
    */
-  static function getSubscribedEvents() {
+  static function getSubscribedEvents(): array {
     $events[KernelEvents::REQUEST][] = ['onKernelRequestRedirect', 30];
     return $events;
   }
