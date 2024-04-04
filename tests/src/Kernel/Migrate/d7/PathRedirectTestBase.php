@@ -23,6 +23,14 @@ abstract class PathRedirectTestBase extends MigrateDrupalTestBase {
   protected static $modules = ['redirect', 'link', 'path_alias'];
 
   /**
+   * {@inheritdoc}
+   */
+  protected function setUp(): void {
+    parent::setUp();
+    $this->installEntitySchema('path_alias');
+  }
+
+  /**
    * Asserts various aspects of a redirect entity.
    *
    * @param int $id

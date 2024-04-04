@@ -4,7 +4,7 @@ namespace Drupal\Tests\redirect\Unit;
 
 use Drupal\redirect\RedirectChecker;
 use Drupal\Tests\UnitTestCase;
-use Symfony\Component\HttpFoundation\ParameterBag;
+use Symfony\Component\HttpFoundation\InputBag;
 use Symfony\Component\Routing\Route;
 
 /**
@@ -147,8 +147,8 @@ class RedirectCheckerTest extends UnitTestCase {
       ->method('isMethod')
       ->with($this->anything())
       ->will($this->returnValue($method == 'GET'));
-    $request->query = new ParameterBag($query);
-    $request->attributes = new ParameterBag($attributes);
+    $request->query = new InputBag($query);
+    $request->attributes = new InputBag($attributes);
 
     return $request;
   }

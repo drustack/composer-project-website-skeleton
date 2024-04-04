@@ -37,6 +37,7 @@ class RedirectAPITest extends KernelTestBase {
 
     $this->installEntitySchema('redirect');
     $this->installEntitySchema('user');
+    $this->installEntitySchema('path_alias');
     $this->installConfig(['redirect']);
 
     $language = ConfigurableLanguage::createFromLangcode('de');

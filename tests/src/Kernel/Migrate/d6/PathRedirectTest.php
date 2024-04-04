@@ -24,6 +24,7 @@ class PathRedirectTest extends MigrateDrupalTestBase {
   protected function setUp(): void {
     parent::setUp();
     $this->installEntitySchema('redirect');
+    $this->installEntitySchema('path_alias');
     $this->loadFixture( __DIR__ . '/../../../../../tests/fixtures/drupal6.php');
 
     $this->executeMigrations(['d6_path_redirect']);

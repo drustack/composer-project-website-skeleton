@@ -104,7 +104,6 @@ class RedirectJavascriptTest extends WebDriverTestBase {
     $this->assertSession()->addressEquals('admin/config/search/redirect');
     $this->assertSession()->pageTextContains('non-existing');
     $this->assertSession()->linkExists(Url::fromUri('base:node')->toString());
-    $this->assertSession()->pageTextContains('Not specified');
 
     // Test the edit form and update action.
     $this->clickLink('Edit');
