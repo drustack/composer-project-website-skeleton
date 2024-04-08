@@ -1,0 +1,340 @@
+.region-header-menu, 
+.region-header-bottom {
+  .menu--header {
+    scrollbar-width: none;
+    overflow: auto;
+    background-color: $navbar-bg;
+    @include media-breakpoint-up(xl) {
+      scrollbar-width: auto;
+      overflow: unset;
+      background-color: $desktop-navbar-bg;
+    }
+
+    .navbar-nav {
+      @include media-breakpoint-up(xl) {
+        flex-direction: row;
+      }
+      li {
+        padding: 0;
+        margin: 0;
+
+        &.menu-item--expanded {
+          @include media-breakpoint-down(xl) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: $dropdown-toggle-position;
+          }
+
+          >.dropdown-toggle {
+            display: inline-flex;
+            color: inherit;
+            padding: $dropdown-toggle-padding;
+            @include media-breakpoint-up(xl) {
+              pointer-events: none;
+              padding: $desktop-dropdown-toggle-padding;
+            }
+ 
+            &::after {
+              border: none;
+              transition: $transition-base;
+              margin-left: 0;
+              vertical-align: middle;
+              @include down-icon;
+  
+              @include media-breakpoint-up(xl) {
+                @include right-icon;
+              }
+            }
+  
+            &.show::after {
+              @include media-breakpoint-down(xl) {
+                transform: rotate(180deg);
+              }
+            }
+          }
+
+          >.dropdown-menu {
+            padding: 0;
+            margin: 0;
+            @include media-breakpoint-down(xl) {
+              flex-basis: 100%;
+            }
+            @include media-breakpoint-up(xl) {
+              padding: $desktop-dropdown-menu-padding-y 0;
+              &::before {
+                content: "";
+                width: 0;
+                height: 4px;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                background-color: $desktop-dropdown-menu-border-top-color;
+                transition: $transition-base;
+              }
+  
+              &.start:before {
+                left: 0;
+                width: 100%;
+              }
+            }
+
+          }
+        }
+
+        >a,
+        >span {
+          display: inline-block;
+          white-space: break-spaces;
+          padding: $nav-link-padding;
+          color: inherit;
+
+          @include media-breakpoint-up(xl) {
+            white-space: nowrap;
+            padding: $desktop-nav-link-padding;
+          }
+
+          &[target="_blank"]::after {
+            @include external-link-icon;
+          }
+        }
+
+        &.nav-item {
+          color: $navbar-color;
+          @include media-breakpoint-up(xl) {
+            color: $desktop-navbar-color;
+            margin-left: $desktop-nav-item-margin-x;
+            margin-right: $desktop-nav-item-margin-x;
+          }
+          &.menu-item--expanded {
+            &:hover {
+              >.dropdown-toggle {
+                &::after {
+                  color: $navbar-light-hover-color;
+                }
+              }
+            }
+          }
+
+          &:hover {
+            color: $navbar-light-hover-color;
+            background-color: $navbar-hover-bg;
+          }
+
+          &.active {
+            color: $navbar-active-color;
+            background-color: $navbar-active-bg;
+
+            @include media-breakpoint-up(xl) {
+              color: $desktop-navbar-active-color;
+              background-color: $desktop-navbar-active-bg;
+            }
+          }
+
+          &:nth-last-child(2),
+          &:last-child {
+            >.dropdown-menu {
+              .dropdown-item {
+                &.menu-item--expanded {
+                  .dropdown-menu {
+                    @include media-breakpoint-up(xl) {
+                      position: absolute;
+                      left: unset;
+                      right: 100%;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          >a,
+          >span {
+            @include media-breakpoint-up(xl) {
+              padding-left: 0;
+              padding-right: 0;
+            }
+          }
+          >.dropdown-toggle {
+            &::after {
+              @include media-breakpoint-up(xl) {
+                @include down-icon;
+            
+              }
+            }
+          }
+          >.dropdown-menu {
+            background-color: $dropdown-menu-1-bg;
+      
+            @include media-breakpoint-up(xl) {
+              background-color: $desktop-dropdown-menu-1-bg;
+              position: absolute;
+              top: 100%;
+              left: 0;
+            }
+
+            .dropdown-item {
+              font-weight: $dropdown-item-font-weight;
+              @include media-breakpoint-up(xl) {
+                display: flex;
+                justify-content: $desktop-dropdown-toggle-position;
+                padding: $desktop-dropdown-item-padding;
+                font-weight: $desktop-dropdown-item-font-weight;
+              }
+              &.menu-item--expanded {
+                &:hover {
+                  >.dropdown-toggle {
+                    &::after {
+                      color: $dropdown-link-hover-color;
+                    }
+                  }
+                }
+    
+                .dropdown-menu {
+                  @include media-breakpoint-up(xl) {
+                    position: absolute;
+                    top: $desktop-dropdown-menu-padding-y * -1;
+                    left: 100%;
+                    right: unset;
+                  }
+                }
+              }
+            }
+
+            >.dropdown-item {
+              color: $dropdown-menu-1-color;
+
+              @include media-breakpoint-up(xl) {
+                color: $desktop-dropdown-menu-1-color;
+              }
+
+              &.active {
+                color: $dropdown-link-active-color;
+              }
+
+              &:hover {
+                color: $dropdown-link-hover-color;
+              }
+
+              >a:first-child,
+              >span:first-child {
+                @include media-breakpoint-down(xl) {
+                  padding-left: $nav-link-1-padding-left;
+                }
+              }
+
+              &.menu-item--expanded {
+                >.dropdown-menu {
+                  background-color: $dropdown-menu-2-bg;
+
+                  @include media-breakpoint-up(xl) {
+                    background-color: $desktop-dropdown-menu-2-bg;
+                  }
+
+                  >.dropdown-item {
+                    color: $dropdown-menu-2-color;
+
+                    @include media-breakpoint-up(xl) {
+                      color: $desktop-dropdown-menu-2-color;
+                    }
+
+                    &:hover {
+                      color: $dropdown-link-hover-color;
+                    }
+
+                    >a:first-child,
+                    >span:first-child {
+                      @include media-breakpoint-down(xl) {
+                        padding-left: $nav-link-2-padding-left;
+                      }
+                    }
+
+                    &.menu-item--expanded {
+                      >.dropdown-menu {
+                        background-color: $dropdown-menu-3-bg;
+
+                        @include media-breakpoint-up(xl) {
+                          background-color: $desktop-dropdown-menu-3-bg;
+                        }
+
+                        >.dropdown-item {
+                          color: $dropdown-menu-3-color;
+
+                          @include media-breakpoint-up(xl) {
+                            color: $desktop-dropdown-menu-3-color;
+                          }
+
+                          &:hover {
+                            color: $dropdown-link-hover-color;
+                          }
+
+                          >a:first-child,
+                          >span:first-child {
+                            @include media-breakpoint-down(xl) {
+                              padding-left: $nav-link-3-padding-left;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .menu_bottom {
+    display: flex;
+    justify-content: center;
+    background-color: $menu-bottom-bg;
+    padding: $container-padding-x * 0.25 0;
+    @include media-breakpoint-up(xl) {
+      display: none;
+    }
+  }
+}
+
+.region-footer-first,
+.region-footer-second,
+.region-footer-third,
+.region-footer-fourth {
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  ul.nav {
+    >div {
+      padding: 0;
+      .nav-item {
+        margin-bottom: 10px;
+        .nav-link {
+          color: $navbar-light-color;
+          margin-bottom: 10px;
+          width: fit-content;
+          &.is-active {
+            color: $navbar-light-active-color;
+          }
+          &:hover {
+            color: $navbar-light-hover-color;
+          }
+        }
+      }
+  
+      >.nav-item {
+        >.menu {
+          >.nav-item {
+            >ul {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

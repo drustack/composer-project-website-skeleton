@@ -34,10 +34,10 @@
     'block',
     'block-' ~ configuration.provider|clean_class,
     'block-' ~ plugin_id|clean_class,
-    'container'
   ]
 %}
 <div{{ attributes.addClass(classes) }}>
+  <div class="container">
   {{ title_prefix }}
   {% if label %}
     <h2{{ title_attributes }}>{{ label }}</h2>
@@ -48,4 +48,5 @@
       {{ content }}
     </div>
   {% endblock %}
+  </div>
 </div>

@@ -1,0 +1,58 @@
+/* User login page start */
+nav.tabs {
+  @include make-container();
+  
+  .nav-tabs {
+    .nav-item {
+      .nav-link {
+        width: 100%;
+
+        &.active {
+          border-radius: 0;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+#user-login-form,
+#user-pass {
+  @include make-container();
+
+  .js-form-item {
+    padding-left: 0;
+  }
+
+  .form-actions {
+    .js-form-submit {
+      min-width: 150px;
+      width: fit-content;
+    }
+  }
+}
+
+/* User login page end */
+
+/* Website feedback start */
+#contact-message-feedback-form {
+  @include make-container();
+  .form-actions {
+    display: flex;
+    flex-direction: column;
+    @include media-breakpoint-up(sm) {
+      flex-direction: row;
+    }
+    .js-form-submit {
+      min-width: 150px;
+      width: fit-content; 
+      margin-bottom: 20px;
+    }
+    #edit-preview {
+      @include media-breakpoint-up(sm) {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+/* Website feedback end */

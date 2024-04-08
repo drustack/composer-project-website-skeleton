@@ -1,22 +1,25 @@
 .block-views-blocksearch-search {
-  .view-search {
-    .view-filters {
-    
-      .js-form-item {
-        margin-right: 10px;
-        label {
-         
+  .view-header {
+    margin-bottom: 30px;
+  }
+
+  .view-filters {
+    margin-bottom: 20px;
+    .views-exposed-form {
+      .form-actions {
+        margin-left: 10px;
+      }
+    }
+  }
+  
+  .view-content {
+    .views-row {
+      margin-bottom: 50px;
+      .views-field {
+        .field-content {
+          word-break: break-word;
         }
       }
-      .form-actions {
-      }
-    }
-    .view-content {
-      margin-bottom: 50px;
-    }
-    .pagination {
-     flex-wrap: wrap;
-     justify-content: center;
     }
   }
 }

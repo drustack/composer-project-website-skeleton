@@ -1,0 +1,21 @@
+.block-language-blocklanguage-interface {
+  display: flex;
+  align-items: center;
+  margin: 0 $container-padding-x * 0.5;
+  @include media-breakpoint-up(xl) {
+    margin-left: $container-padding-x;
+    margin-right: 0;
+  }
+
+  .links {
+    .nav-link {
+      margin: 0 5px;
+      .language-link {
+        color: $language-color;
+        &:hover {
+          color: $language-hover-color;
+        }
+      }
+    }
+  }
+}

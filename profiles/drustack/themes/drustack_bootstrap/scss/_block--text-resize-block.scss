@@ -1,0 +1,50 @@
+.block-text-resize-block {
+  display: flex;
+  align-items: center;
+  margin-left: $container-padding-x * 0.5;
+  margin-right: $container-padding-x * 0.5;
+  @include media-breakpoint-up(xl) {
+    margin-left: $container-padding-x;
+    margin-right: 0;
+  }
+  width: auto;
+
+  .content {
+    .content {
+      display: flex;
+      align-items: baseline;
+
+      #text_resize_decrease,
+      #text_resize_reset,
+      #text_resize_increase {
+        color: $text-resize-color;
+        float: none;
+        margin: 0 5px;
+        width: auto;
+        background-image: none;
+        text-indent: initial;
+        height: auto;
+        line-height: 1;
+        &:hover {
+          color: $text-resize-hover-color;
+        }
+        
+        sup {
+          display: none;
+        }
+      }
+
+      #text_resize_decrease {
+        font-size: $font-size-sm;
+      }
+
+      #text_resize_reset {
+        font-size: $font-size-base;
+      }
+
+      #text_resize_increase {
+        font-size: $font-size-lg;
+      }
+    }
+  }
+}

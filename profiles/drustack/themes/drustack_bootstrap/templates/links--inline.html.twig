@@ -37,7 +37,8 @@
 {{ attach_library('bootstrap_barrio/links') }}
 
 {% if links %}
-  <div class="inline__links container">
+  <div class="inline__links">
+    <div class="container">
     {%- if heading -%}
       {%- if heading.level -%}
         <{{ heading.level }}{{ heading.attributes }}>{{ heading.text }}</{{ heading.level }}>
@@ -58,5 +59,6 @@
         </span>
       {%- endfor -%}
     </nav>
+    </div>
   </div>
 {% endif %}

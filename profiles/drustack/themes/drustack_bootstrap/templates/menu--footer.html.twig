@@ -30,7 +30,8 @@
   {% import _self as menus %}
   {% if items %}
     {% if menu_level == 0 %}
-      <ul{{ attributes.addClass('nav navbar-nav container')|without('id') }}>
+    <div class="container">
+      <ul{{ attributes.addClass('nav navbar-nav')|without('id') }}>
     {% else %}
       <ul class="menu">
     {% endif %}
@@ -59,5 +60,8 @@
       </li>
     {% endfor %}
     </ul>
+    {% if menu_level == 0 %}
+      </div>
+    {% endif %}
   {% endif %}
 {% endmacro %}

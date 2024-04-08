@@ -1,168 +1,3 @@
-$start-menu-block-height: 190px;
-$start-menu-block-transition-time: 0.3s;
-
-$menu-top-line-color: $primary;
-$menu-first-level-background-color: $white;
-$menu-first-level-color: $primary;
-$menu-second-level-background-color: $white;
-$menu-second-level-color: $primary;
-$desktop-menu-second-level-background-color: $white;
-$desktop-menu-second-level-color: $primary;
-$desktop-menu-hover-color: $black;
-
-@mixin menu-top-line-style {
-  &::before {
-    content: "";
-    width: 0;
-    height: 4px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    background-color: $menu-top-line-color;
-    transition: all 0.25s ease-out;
-  }
-
-  &.start:before {
-    left: 0;
-    width: 100%;
-  }
-}
-
-@mixin menu-first-level {
-  padding-left: 20px;
-  background-color: $menu-first-level-background-color;
-
- @include media-breakpoint-up(xl) {
-    padding: 10px 0px;
-    border-radius: 0 0 5px 5px;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    min-width: 100%;
-  }
-}
-
-@mixin menu-second-level($left: 100%, $right: unset) {
-  padding-left: 20px;
-  background-color: $menu-second-level-background-color;
-
- @include media-breakpoint-up(xl) {
-    padding: 10px 0;
-    border-radius: 0 0 5px 5px;
-    background-color: $desktop-menu-second-level-background-color;
-    position: absolute;
-    left: $left;
-    right: $right;
-    top: -10px;
-  }
-}
-
-@mixin right-icon {
-  content: "\f054";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 14px;
-
- @include media-breakpoint-up(xl) {
-    font-size: 16px;
-  }
-
-  vertical-align: middle;
-}
-
-@mixin down-icon {
-  content: "\f078";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 14px;
-
- @include media-breakpoint-up(xl) {
-    font-size: 16px;
-  }
-
-  vertical-align: middle;
-}
-
-@mixin external-link-icon {
-  content: "\f35d";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  margin-left: 0.8em;
-  font-size: 14px;
-
- @include media-breakpoint-up(xxl) {
-    font-size: 16px;
-  }
-
-  vertical-align: top;
-}
-
-@mixin make-container($padding-x: $container-padding-x) {
-  width: 100%;
-  padding-left: $padding-x;
-  padding-right: $padding-x;
-  margin-left: auto;
-  margin-right: auto;
- @include media-breakpoint-up(sm) {
-    max-width: map.get($container-max-widths, sm);
-  }
-
- @include media-breakpoint-up(md) {
-    max-width: map.get($container-max-widths, md);
-  }
-
- @include media-breakpoint-up(lg) {
-    max-width: map.get($container-max-widths, lg);
-  }
-
- @include media-breakpoint-up(xl) {
-    padding-left: 0;
-    padding-right: 0;
-    max-width: map.get($container-max-widths, xl);
-  }
-
- @include media-breakpoint-up(xxl) {
-    max-width: map.get($container-max-widths, xxl);
-  }
-}
-
-/* User login page start */
-nav.tabs {
-  @include make-container();
-  
-  .nav-tabs {
-    .nav-item {
-      .nav-link {
-        width: 100%;
-
-        &.active {
-          border-radius: 0;
-          color: white;
-        }
-      }
-    }
-  }
-}
-
-#user-login-form,
-#user-pass {
-  @include make-container();
-
-  .js-form-item {
-    padding-left: 0;
-  }
-
-  .edit-actions {
-    width: fit-content;
-  }
-}
-
-/* User login page end */
-.toolbar .toolbar-bar {
-  position: fixed;
-  top: 0;
-}
-
 #page-wrapper {
   #header {
     position: sticky;
@@ -173,18 +8,18 @@ nav.tabs {
     #start_menu_block {
       background-color: $gray-200;
       height: 0;
-      text-transform: uppercase;
-      transition: height $start-menu-block-transition-time linear;
+      text-transform: uppercase;      
       overflow: hidden;
       position: relative;
       z-index: 99;
+      transition: $transition-collapse;
+      @include media-breakpoint-up(xl) {
+        transition: $transition-base;
+      }
 
       &.show {
         height: auto;
-
-       @include media-breakpoint-up(lg) {
-          height: 190.77px;
-        }
+        
       }
 
       .title {
@@ -192,9 +27,8 @@ nav.tabs {
         margin-bottom: 10px;
         font-size: 12px;
         text-align: center;
-        color: $blue;
 
-       @include media-breakpoint-up(lg) {
+        @include media-breakpoint-up(sm) {
           font-size: 16px;
           margin: 30px 0;
         }
@@ -203,35 +37,30 @@ nav.tabs {
       .wrapper {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
-        margin-bottom: 15px;
-        padding: 0 20px;
-
-       @include media-breakpoint-up(lg) {
-          justify-content: unset;
-          margin-bottom: 30px;
-          padding: 0;
+        @include media-breakpoint-up(sm) {
+          margin-bottom: 15px;
         }
-
         .items {
           display: flex;
+          flex-wrap: wrap;
           flex-direction: column;
-
-         @include media-breakpoint-up(lg) {
+          align-content: center;
+          width: 50%;
+          @include media-breakpoint-up(sm) {
             flex-direction: row;
-            justify-content: center;
-            flex-basis: 100%;
+            justify-content: space-between;
+            width: 100%;
           }
 
           >a {
             font-size: 10px;
             text-align: center;
-            padding: 0.375rem 0;
-
-           @include media-breakpoint-up(lg) {
-              font-size: 15px;
-              flex-basis: 25%;
-              max-width: 250px;
+            width: 90%;
+            margin-bottom: 10px;
+            @include media-breakpoint-up(sm) {
+              font-size: 14px;
+              width: 23%;
+              margin-bottom: 15px;
             }
           }
         }
@@ -239,67 +68,32 @@ nav.tabs {
     }
 
     #navbar-top {
-      background-color: $blue;
       padding: 0;
-      overflow: hidden;
-      z-index: 99;
     }
 
     #navbar-main {
-      margin-left: auto;
-      margin-right: auto;
-      background-color: transparent;
-      z-index: 99;
+      background-color: $navbar-main-bg;
 
-     @include media-breakpoint-up(xxl) {
-        flex-wrap: nowrap;
-        justify-content: start;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        position: relative;
+      @include media-breakpoint-up(xl) {
+        background-color: $desktop-navbar-main-bg;
       }
-
-      .navbar-brand {
-        display: flex;
-        margin-right: auto;
-        margin-left: 20px;
-
-       @include media-breakpoint-up(lg) {
-          padding: 0;
-        }
-
-        img {
-          object-fit: contain;
-          width: 100%;
-          border-radius: 0;
+      >div {
+        @include media-breakpoint-down(xl) {
+          padding-left: 0;
+          padding-right: 0;
         }
       }
 
       .navbar-toggler {
         position: relative;
-        color: $blue;
         border: none;
-        width: 17px;
-        height: 17px;
-        padding: 0;
+        width: $navbar-toggler-font-size;
+        height: $navbar-toggler-font-size;
         order: 1;
-        margin-right: 20px;
+        margin-left: $container-padding-x * 0.5;
+        margin-right: $container-padding-x * 0.5;
 
-        &:focus {
-          box-shadow: none;
-        }
-
-       @include media-breakpoint-up(lg) {
-          width: 20px;
-          height: 20px;
-        }
-
-       @include media-breakpoint-up(xxl) {
-          display: none;
-          order: unset;
-        }
-
-        &[aria-expanded="true"] {
+        &:not(.collapsed) {
           .fa-bars {
             opacity: 0;
           }
@@ -308,75 +102,56 @@ nav.tabs {
             opacity: 1;
           }
         }
-
-        .fa-bars {
+        svg {
           position: absolute;
           width: inherit;
           height: inherit;
           top: 0;
           left: 0;
-          color: inherit;
         }
 
         .fa-times {
-          position: absolute;
-          width: inherit;
-          height: inherit;
-          top: 0;
-          left: 0;
-          color: inherit;
           opacity: 0;
         }
       }
 
       #CollapsingNavbar {
         order: 3;
-        width: 100%;
-        margin-top: 10px;
-        border-top: 3.5px solid $blue;
-
-       @include media-breakpoint-up(xl) {
+        border-top: 3.5px solid $menu-border-top-color;
+        @include media-breakpoint-up(xl) {
           order: unset;
-          display: flex;
-          flex-basis: fit-content;
           border-top: none;
-          margin-top: 0;
         }
       }
 
       .search {
         display: flex;
-        margin: 0 10px;
-        font-size: 17px;
+        color: $search-button-color;
+        font-size: $search-button-size;
+        margin-left: $container-padding-x * 0.5;
+        @include media-breakpoint-up(xl) {
+          margin-left: $container-padding-x;
+        }
+        &:hover {
+          color: $search-button-hover-color;
+        }
       }
     }
 
     #navbar-bottom {
-      #CollapsingNavbar1 {
-        width: 100%;
-        border-top: 3.5px solid $blue;
-        margin-top: 10px;
+      background-color: $navbar-bottom-bg;
 
-       @include media-breakpoint-up(xl) {
+      @include media-breakpoint-up(xl) {
+        background-color: $desktop-navbar-bottom-bg;
+      }
+      #CollapsingNavbar1 {
+        border-top: 3.5px solid $menu-border-top-color;
+        @include media-breakpoint-up(xl) {
           display: flex;
           justify-content: center;
           border-top: none;
-          margin-top: 0;
         }
       }
-    }
-  }
-
-  #footer {
-    background-color: $white;
-    font-size: 14px;
-
-   @include media-breakpoint-up(lg) {
-      font-size: 16px;
-    }
-
-    .footer_custom {
-      padding: 0;
     }
   }
 }

@@ -1,0 +1,23 @@
+.navbar-brand {
+  display: flex;
+  margin-top: $container-padding-x * 0.5;
+  margin-left: $container-padding-x * 0.5;
+  margin-bottom: $container-padding-x * 0.5;
+  @include media-breakpoint-up(xl) {
+    margin-left: 0;
+  }
+  img {
+    @include media-breakpoint-down(sm) {
+      max-width: 230px;
+    }
+  }
+
+  .site-name {
+    align-self: center;
+    margin-left: $spacer * 0.5;
+  }
+}
+
+.site-name-slogan {
+  margin-left: $spacer * 0.5;
+}
