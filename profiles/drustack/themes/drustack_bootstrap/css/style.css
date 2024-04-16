@@ -18684,7 +18684,13 @@ body.path-user .field--label-above .field__item {
 }
 
 .block-views-exposed-filter-blocksearch-search .js-form-item {
-  margin-right: 10px;
+  flex-basis: 100%;
+}
+@media (min-width: 576px) {
+  .block-views-exposed-filter-blocksearch-search .js-form-item {
+    flex-basis: auto;
+    margin-right: 10px;
+  }
 }
 .block-views-exposed-filter-blocksearch-search .js-form-item label {
   font-weight: 700;
@@ -18759,6 +18765,7 @@ nav.tabs .nav-tabs .nav-item .nav-link.active {
   padding-left: 0.75rem;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 50px;
 }
 @media (min-width: 576px) {
   #user-login-form,

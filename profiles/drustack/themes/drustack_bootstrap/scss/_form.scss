@@ -19,7 +19,8 @@ nav.tabs {
 #user-login-form,
 #user-pass {
   @include make-container();
-
+  margin-bottom: 50px;
+  
   .js-form-item {
     padding-left: 0;
   }

@@ -38,13 +38,13 @@
 %}
 <div{{ attributes.addClass(classes) }}>
   <div class="container">
-    {% if not label_hidden %}
-      <h3{{ title_attributes.addClass(title_classes) }}>{{ label }}</h3>
-    {% endif %}
-    <ul class='links field__items'>
-      {% for item in items %}
-        <li{{ item.attributes }}>{{ item.content }}</li>
-      {% endfor %}
-    </ul>
+  {% if not label_hidden %}
+    <h3{{ title_attributes.addClass(title_classes) }}>{{ label }}</h3>
+  {% endif %}
+  <ul class='links field__items'>
+    {% for item in items %}
+      <li{{ item.attributes }}>{{ item.content }}</li>
+    {% endfor %}
+  </ul>
   </div>
 </div>
