@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3a6dad6889a6514a3d8546b48eec3009",
+    "content-hash": "6b193e1d32b4ca1452992ff2ac65f139",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -11844,14 +11844,17 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/select2.git",
-                "reference": "ef94ef5e940bceb3c928cc3c426ab4568ec441c8"
+                "reference": "2dda06457426a90ce774e8da89b6e455ca85467a"
             },
             "require": {
-                "drupal/core": "^9 || ^10"
+                "drupal/core": "^9 || ^10",
+                "php": ">=8.1"
             },
             "require-dev": {
+                "drupal/better_exposed_filters": "^6.0",
                 "drupal/facets": "2.0.x-dev",
                 "drupal/form_options_attributes": "^2.0",
+                "drupal/gin": "^3.0",
                 "drupal/search_api": "^1.28"
             },
             "type": "drupal-module",
@@ -11860,8 +11863,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.15+1-dev",
-                    "datestamp": "1689934266",
+                    "version": "8.x-1.15+10-dev",
+                    "datestamp": "1715091215",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -13083,7 +13086,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/token.git",
-                "reference": "81411050eeb245322dda507b656a5e9d6ecab12f"
+                "reference": "ce0ed143597475351fa610514cc1d529b4019e5e"
             },
             "require": {
                 "drupal/core": "^9.2 || ^10"
@@ -13094,8 +13097,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.14+4-dev",
-                    "datestamp": "1714850460",
+                    "version": "8.x-1.14+5-dev",
+                    "datestamp": "1715113915",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
