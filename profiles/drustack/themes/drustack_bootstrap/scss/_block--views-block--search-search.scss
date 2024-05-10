@@ -6,8 +6,19 @@
   .view-filters {
     margin-bottom: 20px;
     .views-exposed-form {
+      .js-form-item {
+        flex-basis: 75%;
+        margin-right: 3%;
+        @include media-breakpoint-up(sm) {
+          flex-basis: auto;
+          margin-right: 10px;
+        }
+      }
       .form-actions {
-        margin-left: 10px;
+        flex-basis: 22%;
+        @include media-breakpoint-up(sm) {
+          flex-basis: auto;
+        }
       }
     }
   }
