@@ -28,7 +28,6 @@ class GlobalRedirectTest extends BrowserTestBase {
     'node',
     'redirect',
     'taxonomy',
-    'forum',
     'views',
     'language',
     'content_translation',
@@ -48,11 +47,6 @@ class GlobalRedirectTest extends BrowserTestBase {
    * @var \Drupal\Core\Config\Config
    */
   protected $config;
-
-  /**
-   * @var \Drupal\Core\Entity\ContentEntityInterface
-   */
-  protected $forumTerm;
 
   /**
    * @var \Drupal\Core\Entity\ContentEntityInterface
@@ -124,15 +118,6 @@ class GlobalRedirectTest extends BrowserTestBase {
     // Create an alias for the create story path - this is used in the
     // "redirect with permissions testing" test.
     $this->createPathAlias('/admin/config/system/site-information', '/site-info');
-
-    // Create a taxonomy term for the forum.
-    $term = Term::create([
-      'name' => 'Test Forum Term',
-      'vid' => 'forums',
-      'langcode' => Language::LANGCODE_NOT_SPECIFIED,
-    ]);
-    $term->save();
-    $this->forumTerm = $term;
 
     // Create another taxonomy vocabulary with a term.
     $vocab = Vocabulary::create([
