@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b04a7cd438d02abf65337bcc45e48a40",
+    "content-hash": "4bd752fbd1b9c5c33c05050a04495292",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1674,40 +1674,6 @@
             "time": "2024-04-29T13:06:17+00:00"
         },
         {
-            "name": "drupal-ckeditor-libraries-group/codesnippet",
-            "version": "4.22.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/drupal-ckeditor-libraries-group/codesnippet.git",
-                "reference": "6e5db84150a5094040d420b9588f2cb815cc2fc3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/drupal-ckeditor-libraries-group/codesnippet/zipball/6e5db84150a5094040d420b9588f2cb815cc2fc3",
-                "reference": "6e5db84150a5094040d420b9588f2cb815cc2fc3",
-                "shasum": ""
-            },
-            "type": "drupal-library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later",
-                "LGPL-2.1-or-later",
-                "MPL-1.1"
-            ],
-            "description": "CKEditor 4 codesnippet plugin",
-            "homepage": "https://ckeditor.com/cke4/addon/codesnippet",
-            "keywords": [
-                "CKEditor",
-                "codesnippet",
-                "plugin"
-            ],
-            "support": {
-                "issues": "https://github.com/ckeditor/ckeditor4/issues",
-                "source": "https://github.com/ckeditor/ckeditor4/tree/master/plugins/codesnippet"
-            },
-            "time": "2023-02-08T14:53:49+00:00"
-        },
-        {
             "name": "drupal/address",
             "version": "dev-1.x",
             "source": {
@@ -3009,101 +2975,6 @@
             }
         },
         {
-            "name": "drupal/ckeditor",
-            "version": "1.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/ckeditor.git",
-                "reference": "1.0.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ckeditor-1.0.2.zip",
-                "reference": "1.0.2",
-                "shasum": "fec2ca9ad852a00c7b9584cb6040dc860364c481"
-            },
-            "require": {
-                "drupal/core": "^9.4 || ^10"
-            },
-            "require-dev": {
-                "drupal/classy": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "1.0.2",
-                    "datestamp": "1695740655",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "dczepierga",
-                    "homepage": "https://www.drupal.org/user/911466"
-                },
-                {
-                    "name": "hass",
-                    "homepage": "https://www.drupal.org/user/85918"
-                },
-                {
-                    "name": "jcisio",
-                    "homepage": "https://www.drupal.org/user/210762"
-                },
-                {
-                    "name": "Jorrit",
-                    "homepage": "https://www.drupal.org/user/161217"
-                },
-                {
-                    "name": "lauriii",
-                    "homepage": "https://www.drupal.org/user/1078742"
-                },
-                {
-                    "name": "Magnus",
-                    "homepage": "https://www.drupal.org/user/73919"
-                },
-                {
-                    "name": "mkesicki",
-                    "homepage": "https://www.drupal.org/user/922884"
-                },
-                {
-                    "name": "nod_",
-                    "homepage": "https://www.drupal.org/user/598310"
-                },
-                {
-                    "name": "p.wiaderny",
-                    "homepage": "https://www.drupal.org/user/2956619"
-                },
-                {
-                    "name": "vokiel",
-                    "homepage": "https://www.drupal.org/user/2793801"
-                },
-                {
-                    "name": "Wim Leers",
-                    "homepage": "https://www.drupal.org/user/99777"
-                },
-                {
-                    "name": "wwalc",
-                    "homepage": "https://www.drupal.org/user/184556"
-                },
-                {
-                    "name": "xjm",
-                    "homepage": "https://www.drupal.org/user/65776"
-                }
-            ],
-            "description": "WYSIWYG editing for rich text fields using CKEditor.",
-            "homepage": "https://www.drupal.org/project/ckeditor",
-            "support": {
-                "source": "https://git.drupalcode.org/project/ckeditor"
-            }
-        },
-        {
             "name": "drupal/clamav",
             "version": "dev-2.x",
             "source": {
@@ -3213,58 +3084,6 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/clientside_validation",
                 "issues": "https://drupal.org/project/issues/clientside_validation"
-            }
-        },
-        {
-            "name": "drupal/codesnippet",
-            "version": "dev-1.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/codesnippet.git",
-                "reference": "10969497b535f456e4ebae9cb5c2082a1444af1b"
-            },
-            "require": {
-                "drupal-ckeditor-libraries-group/codesnippet": "^4.5.11",
-                "drupal/ckeditor": "*",
-                "drupal/core": "^9.2 || ^10"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.8+1-dev",
-                    "datestamp": "1683639210",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Kevin Quillen (kevinquillen)",
-                    "homepage": "https://www.drupal.org/u/kevinquillen",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "szloredan",
-                    "homepage": "https://www.drupal.org/user/3531611"
-                }
-            ],
-            "description": "Adds the CodeSnippet plugin to CKEditor.",
-            "homepage": "http://drupal.org/project/codesnippet",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "http://cgit.drupalcode.org/codesnippet",
-                "issues": "http://drupal.org/project/issues/codesnippet"
             }
         },
         {
@@ -5216,30 +5035,29 @@
         },
         {
             "name": "drupal/editor_file",
-            "version": "1.8.0",
+            "version": "2.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/editor_file.git",
-                "reference": "8.x-1.8"
+                "reference": "2.0.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/editor_file-8.x-1.8.zip",
-                "reference": "8.x-1.8",
-                "shasum": "13e893db9089c09355fab6f373e79893552f0178"
+                "url": "https://ftp.drupal.org/files/projects/editor_file-2.0.0-rc1.zip",
+                "reference": "2.0.0-rc1",
+                "shasum": "bd0381d44cf582f9a3b2dab9267c2a97a809c6c3"
             },
             "require": {
-                "drupal/ckeditor": "*",
                 "drupal/core": "^9.4 || ^10"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.8",
-                    "datestamp": "1705484081",
+                    "version": "2.0.0-rc1",
+                    "datestamp": "1705484426",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -5256,7 +5074,8 @@
             "description": "Allow users to link uploaded files in the text Editor.",
             "homepage": "https://www.drupal.org/project/editor_file",
             "support": {
-                "source": "https://git.drupalcode.org/project/editor_file"
+                "source": "https://git.drupalcode.org/project/editor_file",
+                "issues": "https://www.drupal.org/project/issues/editor_file"
             }
         },
         {
@@ -28418,7 +28237,6 @@
         "drupal/cas_attributes": 20,
         "drupal/clamav": 20,
         "drupal/clientside_validation": 20,
-        "drupal/codesnippet": 20,
         "drupal/coffee": 20,
         "drupal/computed_field": 20,
         "drupal/conditional_fields": 20,
