@@ -15,35 +15,35 @@ bundle: image
 mode: media_library
 content:
   field_media_image:
+    type: image_image
+    weight: 2
     region: content
     settings:
-      preview_image_style: media_library
       progress_indicator: throbber
+      preview_image_style: media_library
     third_party_settings:
       imce:
         enabled: false
-    type: image_image
-    weight: 2
   langcode:
+    type: language_select
+    weight: 0
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
-    type: language_select
-    weight: 0
   name:
-    region: content
-    settings:
-      placeholder: ''
-      size: 60
-    third_party_settings: {  }
     type: string_textfield
     weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   translation:
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
-    weight: 3
 hidden:
   created: true
   path: true

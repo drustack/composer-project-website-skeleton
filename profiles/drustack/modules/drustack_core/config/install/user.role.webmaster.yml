@@ -20,11 +20,9 @@ dependencies:
     - pathauto
     - redirect
     - scheduler
-    - statistics
     - system
     - taxonomy
     - toolbar
-    - tour
 id: webmaster
 label: Webmaster
 weight: 9
@@ -38,7 +36,6 @@ permissions:
   - 'access site in maintenance mode'
   - 'access taxonomy overview'
   - 'access toolbar'
-  - 'access tour'
   - 'administer menu'
   - 'administer redirects'
   - 'administer url aliases'
@@ -72,7 +69,6 @@ permissions:
   - 'view media'
   - 'view own unpublished content'
   - 'view own unpublished media'
-  - 'view post access counter'
   - 'view scheduled content'
   - 'view scheduled media'
   - 'view scheduled taxonomy_term'

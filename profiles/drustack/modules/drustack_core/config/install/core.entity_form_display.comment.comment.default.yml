@@ -12,31 +12,31 @@ bundle: comment
 mode: default
 content:
   author:
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
-    weight: 3
   comment_body:
-    region: content
-    settings:
-      placeholder: ''
-      rows: 5
-    third_party_settings: {  }
     type: text_textarea
     weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
   langcode:
+    type: language_select
+    weight: 0
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
-    type: language_select
-    weight: 0
   subject:
-    region: content
-    settings:
-      placeholder: ''
-      size: 60
-    third_party_settings: {  }
     type: string_textfield
     weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
 hidden: {  }

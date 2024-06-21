@@ -14,16 +14,16 @@ bundle: video
 mode: media_library
 content:
   thumbnail:
+    type: image
     label: visually_hidden
-    region: content
     settings:
       image_link: ''
+      image_style: media_library
       image_loading:
         attribute: lazy
-      image_style: media_library
     third_party_settings: {  }
-    type: image
     weight: 0
+    region: content
 hidden:
   created: true
   field_media_video_file: true

@@ -20,122 +20,122 @@ bundle: blog
 mode: default
 content:
   body:
-    region: content
-    settings:
-      placeholder: ''
-      rows: 9
-      show_summary: false
-      summary_rows: 3
-    third_party_settings: {  }
     type: text_textarea_with_summary
     weight: 3
-  comment:
     region: content
-    settings: {  }
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
     third_party_settings: {  }
+  comment:
     type: comment_default
     weight: 16
-  created:
     region: content
     settings: {  }
     third_party_settings: {  }
+  created:
     type: datetime_timestamp
     weight: 6
-  field_image:
     region: content
-    settings:
-      preview_image_style: thumbnail
-      progress_indicator: throbber
+    settings: {  }
     third_party_settings: {  }
+  field_image:
     type: image_image
     weight: 2
-  field_tags:
     region: content
     settings:
-      match_limit: 10
-      match_operator: CONTAINS
-      placeholder: ''
-      size: 60
+      progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
+  field_tags:
     type: entity_reference_autocomplete_tags
     weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   langcode:
+    type: language_select
+    weight: 0
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
-    type: language_select
-    weight: 0
   path:
-    region: content
-    settings: {  }
-    third_party_settings: {  }
     type: path
     weight: 13
-  promote:
     region: content
-    settings:
-      display_label: true
+    settings: {  }
     third_party_settings: {  }
+  promote:
     type: boolean_checkbox
     weight: 7
-  publish_on:
     region: content
-    settings: {  }
+    settings:
+      display_label: true
     third_party_settings: {  }
+  publish_on:
     type: datetime_timestamp_no_default
     weight: 10
-  scheduler_settings:
     region: content
     settings: {  }
     third_party_settings: {  }
+  scheduler_settings:
     weight: 9
-  status:
     region: content
-    settings:
-      display_label: true
+    settings: {  }
     third_party_settings: {  }
+  status:
     type: boolean_checkbox
     weight: 12
-  sticky:
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
+  sticky:
     type: boolean_checkbox
     weight: 8
-  title:
     region: content
     settings:
-      placeholder: ''
-      size: 60
+      display_label: true
     third_party_settings: {  }
+  title:
     type: string_textfield
     weight: 1
-  translation:
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-    weight: 15
-  uid:
     region: content
     settings:
-      match_limit: 10
-      match_operator: CONTAINS
-      placeholder: ''
       size: 60
+      placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  uid:
     type: entity_reference_autocomplete
     weight: 5
-  unpublish_on:
     region: content
-    settings: {  }
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
+  unpublish_on:
     type: datetime_timestamp_no_default
     weight: 11
-  url_redirects:
     region: content
     settings: {  }
     third_party_settings: {  }
+  url_redirects:
     weight: 14
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }

@@ -14,16 +14,16 @@ bundle: user
 mode: compact
 content:
   user_picture:
+    type: image
     label: visually_hidden
-    region: content
     settings:
       image_link: content
+      image_style: thumbnail
       image_loading:
         attribute: lazy
-      image_style: thumbnail
     third_party_settings: {  }
-    type: image
     weight: 0
+    region: content
 hidden:
   langcode: true
   member_for: true

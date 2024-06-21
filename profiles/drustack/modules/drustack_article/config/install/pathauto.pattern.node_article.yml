@@ -8,14 +8,14 @@ label: 'Content (Article)'
 type: 'canonical_entities:node'
 pattern: 'article/[node:source:title]'
 selection_criteria:
-  4b6bcbbd-219c-4814-8130-556d2426c3bf:
+  c604d351-6704-4181-a475-fe8216333f6b:
     id: 'entity_bundle:node'
-    bundles:
-      article: article
+    negate: false
+    uuid: c604d351-6704-4181-a475-fe8216333f6b
     context_mapping:
       node: node
-    negate: false
-    uuid: 4b6bcbbd-219c-4814-8130-556d2426c3bf
+    bundles:
+      article: article
 selection_logic: and
 weight: -5
 relationships: {  }
