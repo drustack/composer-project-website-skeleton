@@ -4,18 +4,23 @@ Description: Bootstrap 4 with Sass
 */
 
 // import files
+@use "sass:map";
 @import "import";
-@import "page";
+@import "custom-variable";
+@import "custom-mixin";
+@import "region";
 @import "region--header-top";
-@import "menu--main";
-@import "menu--header";
-@import "menu--footer";
-@import "block--system-breadcrumb-block";
-@import "region--footer-first";
-@import "region--footer-second";
-@import "region--footer-third";
-@import "region--footer-fourth";
 @import "region--footer-bottom";
+@import "block--system-branding-block";
+@import "block--language-block--language-interface";
+@import "block--text-resize-block";
+@import "block-views-exposed-filter-blocksearch-search";
+@import "block--views-block--search-search";
+@import "toolbar";
+@import "form";
+@import "breadcrumb";
+@import "pager";
+@import "page";
 
 /* GENERAL STYLES
 -------------------------------------------------*/
@@ -25,4 +30,14 @@ body {
   &.overflow-y {
     overflow-y: hidden;
   }
+}
+
+a {
+  word-break: break-word;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
 }

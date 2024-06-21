@@ -1,104 +1,115 @@
 .region-footer-bottom {
-  ul, ol {
+  background-color: $footer-bottom-bg;
+
+  ul,
+  ol {
     margin: 0;
     padding: 0;
     list-style-type: none;
   }
+
   nav {
     ul.nav {
-      margin-left: auto;
-      margin-right: auto;
-      padding: 0 20px;
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: start;
-      font-size: 14px;
-      letter-spacing: 0.4px;
-      margin-bottom: 20px;
-  
-      @media (min-width: $lg) {
-        font-size: 16px;
-        margin-bottom: 40px;
-      }
-  
-      @media (min-width: $xxl) {
-        font-size: 18px;
+      font-size: $font-size-sm;
+      padding-top: 50px;
+
+      @include media-breakpoint-up(xl) {
+        font-size: $font-size-base;
       }
 
-      li {
-        @media (min-width: $xl) {
+      .nav-item {
+        .nav-link {
+          color: $footer-nav-link-color;
+          width: fit-content;
+          margin-bottom: 10px;
+
+          &.is-active {
+            color: $footer-nav-link-active-color;
+          }
+
           &:hover {
-            >a, >span {
-              color: $black;
-            }
+            color: $footer-nav-link-hover-color;
           }
         }
       }
-  
+
       >.nav-item {
-        margin: 15px 0 30px;
         flex-basis: 100%;
-        @media (min-width: $sm) {
+        margin-bottom: 30px;
+
+        &:first-child {
+          display: block;
+        }
+
+        &:not(:first-child) {
+          display: none;
+        }
+
+        @include media-breakpoint-up(sm) {
           flex-basis: 48%;
-          &:nth-child(2n-1) {
+
+          &:nth-child(2n+1) {
+            display: block;
             margin-right: 2%;
           }
+
           &:nth-child(2n) {
+            display: block;
             margin-left: 2%;
           }
         }
-        @media (min-width: $lg) {
+
+        @include media-breakpoint-up(xl) {
           flex-basis: 23%;
-   
-          &:nth-child(4n-3) {
+
+          &:nth-child(4n+1) {
+            display: block;
             margin-right: 1.5%;
           }
-          &:nth-child(4n-2) {
+
+          &:nth-child(4n+2) {
+            display: block;
             margin-left: 1.25%;
             margin-right: 1.25%;
           }
-          &:nth-child(4n-1) {
+
+          &:nth-child(4n+3) {
             margin-left: 1.25%;
             margin-right: 1.25%;
+            display: block;
           }
-          &:nth-child(4n) {
+
+          &:nth-child(4n+4) {
+            display: block;
             margin-left: 1.5%;
           }
         }
-  
-        >a {
-          color: $blue-400;
-          font-weight: 500;
-  
-          &.active {
-            color: $black;
+        a, span {
+          font-size: $font-size-sm;
+          @include media-breakpoint-up(xl) {
+            font-size: $font-size-base;
           }
         }
-  
+
+        >a {
+          font-weight: 700;
+        }
+
         >span {
           font-weight: 500;
-          color: $black;
         }
-  
+
         >ul {
-          font-size: 12px;
-  
-          @media (min-width: $lg) {
-            font-size: 14px;
-          }
-  
-          @media (min-width: $xxl) {
-            font-size: 16px;
-          }
-  
-          >.nav-item {  
-            a {
-              &.active {
-                color: $black;
-              }
+          border-top: 2px solid $navbar-light-color;
+          padding-top: 15px;
+
+          >.nav-item {
+            >a {
+              font-weight: 400;
+              margin-bottom: 15px;
             }
-  
             >ul {
               display: none;
             }

@@ -16,13 +16,13 @@
 {% if site_logo or site_name %}
   <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home" class="navbar-brand">
     {% if site_logo %}
-      <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" class="img-fluid d-inline-block align-top" />
+      <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" class="img-fluid d-inline-block" />
     {% endif %}
-    <span class="ml-2 d-none d-md-inline">{{ site_name }}</span>
+    <span class="site-name">{{ site_name }}</span>
   </a>
 {% endif %}
 {% if site_slogan %}
-  <div class="ml-2 d-none d-inline-block align-top site-name-slogan">
+  <span class="site-name-slogan">
     {{ site_slogan }}
-  </div>
+  </span>
 {% endif %}

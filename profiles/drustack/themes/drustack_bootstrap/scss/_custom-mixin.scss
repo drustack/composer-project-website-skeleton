@@ -1,0 +1,48 @@
+@mixin right-icon {
+  content: "\f054";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: $font-size-base * 0.84375;
+}
+
+@mixin down-icon {
+  content: "\f078";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: $font-size-base * 0.84375;
+}
+
+@mixin external-link-icon {
+  content: "\f35d";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: $font-size-base * 0.84375;
+  margin-left: 0.8em;
+}
+
+@mixin make-container {
+  width: 100%;
+  padding-right: $container-padding-x * 0.5;
+  padding-left: $container-padding-x * 0.5;
+  margin-left: auto;
+  margin-right: auto;
+ @include media-breakpoint-up(sm) {
+    max-width: map.get($container-max-widths, sm);
+  }
+
+ @include media-breakpoint-up(md) {
+    max-width: map.get($container-max-widths, md);
+  }
+
+ @include media-breakpoint-up(lg) {
+    max-width: map.get($container-max-widths, lg);
+  }
+
+ @include media-breakpoint-up(xl) {
+    max-width: map.get($container-max-widths, xl);
+  }
+
+ @include media-breakpoint-up(xxl) {
+    max-width: map.get($container-max-widths, xxl);
+  }
+}

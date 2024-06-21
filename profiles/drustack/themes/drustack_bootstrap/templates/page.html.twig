@@ -72,19 +72,21 @@
     <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
       {% block header %}
         <div id="start_menu_block">
-          <div class="title">{{ 'Heading 2'|t }}</div>
-          <div class="wrapper">
-            <div class="items">
-              {{ '<a href="/" target="_blank" rel="noreferrer">Item 1</a>' |t }}
-              {{ '<a href="/" target="_blank" rel="noreferrer">Item 2</a>' |t }}
-              {{ '<a href="/" target="_blank" rel="noreferrer">Item 3</a>' |t }}
-              {{ '<a href="/" target="_blank" rel="noreferrer">Item 4</a>' |t }} 
-            </div>
-            <div class="items">
-              {{ '<a href="/" target="_blank" rel="noreferrer">Item 5</a>' |t }} 
-              {{ '<a href="/" target="_blank" rel="noreferrer">Item 6</a>' |t }} 
-              {{ '<a href="/" target="_blank" rel="noreferrer">Item 7</a>' |t }} 
-              {{ '<a href="/" target="_blank" rel="noreferrer">Item 8</a>' |t }} 
+          <div class="container">
+            <div class="title">{{ 'Heading 2'|t }}</div>
+            <div class="wrapper">
+              <div class="items">
+                {{ '<a href="/" target="_blank" rel="noreferrer">Item 1</a>' |t }}
+                {{ '<a href="/" target="_blank" rel="noreferrer">Item 2</a>' |t }}
+                {{ '<a href="/" target="_blank" rel="noreferrer">Item 3</a>' |t }}
+                {{ '<a href="/" target="_blank" rel="noreferrer">Item 4</a>' |t }} 
+              </div>
+              <div class="items">
+                {{ '<a href="/" target="_blank" rel="noreferrer">Item 5</a>' |t }} 
+                {{ '<a href="/" target="_blank" rel="noreferrer">Item 6</a>' |t }} 
+                {{ '<a href="/" target="_blank" rel="noreferrer">Item 7</a>' |t }} 
+                {{ '<a href="/" target="_blank" rel="noreferrer">Item 8</a>' |t }} 
+              </div>
             </div>
           </div>
         </div>
@@ -98,25 +100,20 @@
           <div class="container-xl">
           {{ page.header }}
           {% if page.header_menu or page.header_form %}
-            <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Menu">
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Menu">
               <span class="fa fa-bars"></span>
               <span class="fa fa-times"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="CollapsingNavbar">
               {{ page.header_menu }}
               {% if page.header_form %}
-                <div class="form-inline navbar-form justify-content-end">
-                  {{ page.header_form }}
-                </div>
+                {{ page.header_form }}
               {% endif %}
             </div>
           {% endif %}
-          <button class="search" name="search">
-            <span class="fa fa-search"></span>
-            <span class="fa fa-times"></span>
-          </button>
+          <a href="{{ path('<front>') }}/search" class="search"><span class="fa fa-search"></span></a>
           {% if page.header_bottom %}
-            <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#CollapsingNavbar1" aria-controls="CollapsingNavbar1" aria-expanded="false" aria-label="Menu">
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#CollapsingNavbar1" aria-controls="CollapsingNavbar1" aria-expanded="false" aria-label="Menu">
               <span class="fa fa-bars"></span>
               <span class="fa fa-times"></span>
             </button>
@@ -125,17 +122,12 @@
           {% if container_navbar %}</div>{% endif %}
         </nav>
         {% if page.header_bottom %}
-          <nav class="navbar p-0" id="navbar-bottom">
+          <nav class="navbar" id="navbar-bottom">
             <div class="collapse navbar-collapse" id="CollapsingNavbar1">
               {{ page.header_bottom }}
             </div>
           </nav>
         {% endif %}
-        <div id="search_page">
-          <div class="contentbox">
-            {{ drupal_block('views_block:search-search')}}
-          </div>
-        </div>
       {% endblock %}
     </header>
     {% if page.breadcrumb %}
@@ -152,49 +144,49 @@
               {{ page.content }}
             </section>
           </main>
-          {% if page.sidebar_first %}
-          <aside class="section col-xl-3 order-xl-1" role="complementary">
-            {{ page.sidebar_first }}
-          </aside>
-          {% endif %}
-          {% if page.sidebar_second %}
-          <aside class="section col-xl-3 order-xl-3" role="complementary">
-            {{ page.sidebar_second }}
-          </aside>
-          {% endif %}
-          {#
-          {% if page.sidebar_first %}
-            <div{{ sidebar_first_attributes }}>
-              <aside class="section" role="complementary">
-                {{ page.sidebar_first }}
-              </aside>
+          <div class="container-field">
+            <div class="row">
+              <div class="col-12 col-xl-3">
+                {% if page.sidebar_first %}
+                    <div{{ sidebar_first_attributes }}>
+                      <aside class="section" role="complementary">
+                        {{ page.sidebar_first }}
+                      </aside>
+                    </div>
+                  {% endif %}
+              </div>
+              <div class="col-12 col-xl-6">
+                {% if page.content_bottom %}
+                  {{ page.content_bottom }}
+                {% endif %}
+              </div>
+              <div class="col-12 col-xl-3">
+                {% if page.sidebar_second %}
+                  <div{{ sidebar_second_attributes }}>
+                    <aside class="section" role="complementary">
+                      {{ page.sidebar_second }}
+                    </aside>
+                  </div>
+                {% endif %}
+              </div>
             </div>
-          {% endif %}
-          {% if page.sidebar_second %}
-            <div{{ sidebar_second_attributes }}>
-              <aside class="section" role="complementary">
-                {{ page.sidebar_second }}
-              </aside>
-            </div>
-          {% endif %}
-          #}
+          </div>
       </div>
     </div>
     {% if page.featured_bottom_first or page.featured_bottom_second or page.featured_bottom_third %}
-      <div class="d-flex">
-        <div class="bottom_first col-lg-4">
-          {{ page.featured_bottom_first}}
-        </div>
-        <div class="bottom_second col-lg-4">
-          {{ page.featured_bottom_second}}
-        </div>
-        <div class="bottom_third col-lg-4">
-          {{ page.featured_bottom_third}}
+      <div class="container-field">
+        <div class="row">
+          <div class="bottom_first col-12 col-xl-4">
+            {{ page.featured_bottom_first}}
+          </div>
+          <div class="bottom_second col-12 col-xl-4">
+            {{ page.featured_bottom_second}}
+          </div>
+          <div class="bottom_third col-12 col-xl-4">
+            {{ page.featured_bottom_third}}
+          </div>
         </div>
       </div>
-    {% endif %}
-    {% if page.content_bottom %}
-      {{ page.content_bottom }}
     {% endif %}
     <footer id="footer">
       <div class="layout-container clearfix">
@@ -202,18 +194,22 @@
           {{ page.footer_top }}
         {% endif %}
         {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
-          <div class="footer_custom container d-flex">
-            <div class="footer-first col-sm-6 col-lg-3">
-              {{ page.footer_first }}
-            </div>
-            <div class="footer-second d-none d-sm-block col-sm-6 col-lg-3">
-              {{ page.footer_second }}
-            </div>
-            <div class="footer-third d-none d-lg-block col-lg-3">
-              {{ page.footer_third }}
-            </div>
-            <div class="footer-fourth d-none d-lg-block col-lg-3">
-              {{ page.footer_fourth }}
+          <div class="footer-custom">
+            <div class="container">
+              <div class="row">
+                <div class="footer-first col-12 col-sm-6 col-lg-3">
+                  {{ page.footer_first }}
+                </div>
+                <div class="footer-second d-none d-sm-block col-12 col-sm-6 col-lg-3">
+                  {{ page.footer_second }}
+                </div>
+                <div class="footer-third d-none d-lg-block col-12 col-lg-3">
+                  {{ page.footer_third }}
+                </div>
+                <div class="footer-fourth d-none d-lg-block col-12 col-lg-3">
+                  {{ page.footer_fourth }}
+                </div>
+              </div>
             </div>
           </div>
         {% endif %}

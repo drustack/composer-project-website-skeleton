@@ -1,0 +1,13 @@
+.block-views-exposed-filter-blocksearch-search {
+  .js-form-item {
+    flex-basis: 100%;
+    @include media-breakpoint-up(sm) {
+      flex-basis: auto;
+      margin-right: 10px;
+    }
+
+    label {
+      font-weight: 700;
+    }
+  }
+}
