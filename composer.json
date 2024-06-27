@@ -59,7 +59,6 @@
         ],
         "patches": {
             "drupal/asset_injector": {
-                "https://drupal.org/node/3181674": "https://drupal.org/files/issues/2021-10-29/add-library-info-tag-3181674-7.patch",
                 "https://drupal.org/node/3418928": "https://git.drupalcode.org/project/asset_injector/-/merge_requests/14.diff"
             },
             "drupal/block_class": {
@@ -157,6 +156,7 @@
         }
     },
     "require": {
+        "drupal/acl": "~2.0.0-beta1",
         "drupal/address": "~2.0.1",
         "drupal/admin_toolbar": "~3.4.0",
         "drupal/advagg": "6.0.x-dev",
@@ -180,6 +180,7 @@
         "drupal/checklistapi": "~2.0",
         "drupal/clamav": "2.x-dev",
         "drupal/clientside_validation": "4.0.x-dev",
+        "drupal/codesnippet": "1.x-dev",
         "drupal/coffee": "1.x-dev",
         "drupal/computed_field": "4.0.x-dev",
         "drupal/conditional_fields": "4.x-dev",
@@ -312,6 +313,7 @@
         "drupal/styleguide": "2.x-dev",
         "drupal/svg_image": "~3.0.2",
         "drupal/symfony_mailer": "1.x-dev",
+        "drupal/system_stream_wrapper": "~2.0.0",
         "drupal/tamper": "1.x-dev",
         "drupal/taxonomy_menu": "3.x-dev",
         "drupal/telephone_formatter": "~1.2",
@@ -356,8 +358,7 @@
         "npm-asset/leaflet.markercluster": "~1.5",
         "npm-asset/select2": "~4.0",
         "npm-asset/select2-bootstrap-5-theme": "~1.2",
-        "npm-asset/slick-carousel": "~1.8",
-        "php-http/guzzle7-adapter": "~1.0"
+        "npm-asset/slick-carousel": "~1.8"
     },
     "require-dev": {
         "composer/composer": "~2.0",
