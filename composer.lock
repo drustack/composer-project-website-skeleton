@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9c2da844c95bd6571d9b283c8e316260",
+    "content-hash": "3482837398bc551377d899dae14faeff",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3389,26 +3389,29 @@
         },
         {
             "name": "drupal/computed_field",
-            "version": "dev-4.0.x",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/computed_field.git",
-                "reference": "ca2488eea6bc0a1ae551cd501b632e6a67d2e5de"
+                "reference": "3.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/computed_field-3.0.0.zip",
+                "reference": "3.0.0",
+                "shasum": "88f060658f30e196b177923dc12bc48df38042df"
             },
             "require": {
-                "drupal/core": "^10.2"
+                "drupal/core": "^8 || ^9 || ^10"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-4.0.x": "4.0.x-dev"
-                },
                 "drupal": {
-                    "version": "4.0.0-beta1+2-dev",
-                    "datestamp": "1719219036",
+                    "version": "3.0.0",
+                    "datestamp": "1705775905",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -3454,7 +3457,7 @@
                     "homepage": "https://www.drupal.org/user/601534"
                 }
             ],
-            "description": "Provides a UI to add computed fields to entities.",
+            "description": "Defines a field type that allows values to be \"computed\" via PHP code.",
             "homepage": "https://www.drupal.org/project/computed_field",
             "support": {
                 "source": "https://git.drupalcode.org/project/computed_field"
@@ -3622,27 +3625,27 @@
         },
         {
             "name": "drupal/config_rewrite",
-            "version": "1.5.0",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_rewrite.git",
-                "reference": "8.x-1.5"
+                "reference": "8.x-1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_rewrite-8.x-1.5.zip",
-                "reference": "8.x-1.5",
-                "shasum": "c4740c74fc6e48069cada1fab4c809f1b99d31ac"
+                "url": "https://ftp.drupal.org/files/projects/config_rewrite-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "caa66f28c03e680ce5163c2924733f75913231ad"
             },
             "require": {
-                "drupal/core": "^8.6 || ^9 || ^10",
+                "drupal/core": "^8.6 || ^9 || ^10 || ^11",
                 "php": ">=7.1"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.5",
-                    "datestamp": "1659538494",
+                    "version": "8.x-1.6",
+                    "datestamp": "1719490162",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3655,9 +3658,9 @@
             ],
             "authors": [
                 {
-                    "name": "Brant Wynn (brantwynn)",
-                    "homepage": "https://www.drupal.org/u/brantwynn",
-                    "role": "Maintainer"
+                    "name": "Diana Wynn (saltednut)",
+                    "homepage": "https://www.drupal.org/u/saltednut",
+                    "role": "Co-Maintainer"
                 },
                 {
                     "name": "saltednut",
@@ -4236,27 +4239,27 @@
         },
         {
             "name": "drupal/core_views_facets",
-            "version": "2.1.0",
+            "version": "2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/core_views_facets.git",
-                "reference": "2.1.0"
+                "reference": "2.0.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/core_views_facets-2.1.0.zip",
-                "reference": "2.1.0",
-                "shasum": "8e07fa32f84f9752487cd442166bcea3e246279c"
+                "url": "https://ftp.drupal.org/files/projects/core_views_facets-2.0.4.zip",
+                "reference": "2.0.4",
+                "shasum": "3afecac0567915e338cbe6d9bc340c4f7b0597cf"
             },
             "require": {
-                "drupal/core": "^10.1",
+                "drupal/core": "^9.3 || ^10.0",
                 "drupal/facets": "^2.0"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.1.0",
-                    "datestamp": "1705319977",
+                    "version": "2.0.4",
+                    "datestamp": "1699447494",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5144,7 +5147,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/easy_breadcrumb.git",
-                "reference": "8dc49891b279d840d69f3a6bef930ddb2885dc4d"
+                "reference": "17a06632f034d88faa74c9a3a7f84868ecb01927"
             },
             "require": {
                 "drupal/core": "^9.2 || ^10 || ^11"
@@ -5155,8 +5158,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "2.0.7+2-dev",
-                    "datestamp": "1719430718",
+                    "version": "2.0.7+4-dev",
+                    "datestamp": "1719488792",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -5475,26 +5478,29 @@
         },
         {
             "name": "drupal/entity",
-            "version": "dev-1.x",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity.git",
-                "reference": "5f9fb56f484b31bac9f734ab69a8b770fb45fad4"
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "1cf7712318fad144eab106a8fcfcd396aeb5676f"
             },
             "require": {
-                "drupal/core": "^10.1 || ^11"
+                "drupal/core": "^9.2|^10.0"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.4+8-dev",
-                    "datestamp": "1717616369",
+                    "version": "8.x-1.4",
+                    "datestamp": "1661898023",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -6342,18 +6348,18 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/facets.git",
-                "reference": "ffcf26fb1dd4dcf62640f98b8bf7f9e92ef39c39"
+                "reference": "741031654b1e1a02197658adb7282f690b20a528"
             },
             "require": {
-                "drupal/core": "^9.3 || ^10.0"
+                "drupal/core": "^10 || ^11"
             },
             "conflict": {
-                "drupal/search_api": "<1.14"
+                "drupal/search_api": "<1.30"
             },
             "require-dev": {
-                "drupal/jquery_ui_slider": "~2.0",
-                "drupal/jquery_ui_touch_punch": "~1.1",
-                "drupal/search_api": "^1.28||1.x-dev"
+                "drupal/jquery_ui_slider": "^2.1",
+                "drupal/jquery_ui_touch_punch": "^1.1",
+                "drupal/search_api": "1.x-dev"
             },
             "suggest": {
                 "drupal/jquery_ui_slider": "Required for the 'Facets Range Widget' module to work",
@@ -6365,8 +6371,8 @@
                     "dev-2.0.x": "2.0.x-dev"
                 },
                 "drupal": {
-                    "version": "2.0.7+11-dev",
-                    "datestamp": "1719395929",
+                    "version": "2.0.7+12-dev",
+                    "datestamp": "1719491487",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -7979,24 +7985,31 @@
         },
         {
             "name": "drupal/image_effects",
-            "version": "dev-3.x",
+            "version": "3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/image_effects.git",
-                "reference": "05e88f4e02483c33d47b95cf50b0cea1fe198712"
+                "reference": "8.x-3.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/image_effects-8.x-3.6.zip",
+                "reference": "8.x-3.6",
+                "shasum": "a3a9a04f7632b5be09eb67c97b4015111cc3d47f"
             },
             "require": {
-                "drupal/core": "^10.2",
+                "drupal/core": "^10.1",
                 "drupal/file_mdm": "^3",
                 "drupal/file_mdm_exif": "*",
                 "drupal/file_mdm_font": "*"
             },
             "conflict": {
-                "drupal/imagemagick": "<3.7"
+                "drupal/imagemagick": "<3.6",
+                "drupal/jquery_colorpicker": "<2"
             },
             "require-dev": {
                 "drupal/color": "*",
-                "drupal/imagemagick": "^3.7",
+                "drupal/imagemagick": "^3.6",
                 "drupal/token": "*",
                 "drupal/vendor_stream_wrapper": "^2.0.2",
                 "drush/drush": ">=12",
@@ -8004,15 +8017,12 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-3.6+4-dev",
-                    "datestamp": "1718480779",
+                    "version": "8.x-3.6",
+                    "datestamp": "1705681111",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "drush": {
@@ -8134,11 +8144,17 @@
         },
         {
             "name": "drupal/imagemagick",
-            "version": "dev-3.x",
+            "version": "3.7.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/imagemagick.git",
-                "reference": "5df91cfaed6a4ce32fc19532454eba619ece7d1a"
+                "reference": "8.x-3.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/imagemagick-8.x-3.7.zip",
+                "reference": "8.x-3.7",
+                "shasum": "2698db0ccc4a76d44ebbbfcabe9e70d25ae3db9b"
             },
             "require": {
                 "drupal/core": "^10.1",
@@ -8147,15 +8163,12 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-3.7+2-dev",
-                    "datestamp": "1716103383",
+                    "version": "8.x-3.7",
+                    "datestamp": "1706096705",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -9408,20 +9421,20 @@
         },
         {
             "name": "drupal/linkit",
-            "version": "7.0.0-alpha1",
+            "version": "6.1.4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/linkit.git",
-                "reference": "7.0.0-alpha1"
+                "reference": "6.1.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/linkit-7.0.0-alpha1.zip",
-                "reference": "7.0.0-alpha1",
-                "shasum": "cf1bc362a7ab99da2f08214e9d8181d2b6a689cd"
+                "url": "https://ftp.drupal.org/files/projects/linkit-6.1.4.zip",
+                "reference": "6.1.4",
+                "shasum": "f5544a39d691af5efd1532bd5403862a7153f60b"
             },
             "require": {
-                "drupal/core": "^10.1 || ^11"
+                "drupal/core": "^10.1"
             },
             "require-dev": {
                 "drupal/ckeditor": "*",
@@ -9430,11 +9443,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "7.0.0-alpha1",
-                    "datestamp": "1715887209",
+                    "version": "6.1.4",
+                    "datestamp": "1715203830",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -11617,11 +11630,17 @@
         },
         {
             "name": "drupal/search_api",
-            "version": "dev-1.x",
+            "version": "1.35.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/search_api.git",
-                "reference": "e78fcd1a82e801165ab3d8b472a573f18f20cce4"
+                "reference": "8.x-1.35"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/search_api-8.x-1.35.zip",
+                "reference": "8.x-1.35",
+                "shasum": "d119726e870f793c6470d2a4fa9286662c5eb45d"
             },
             "require": {
                 "drupal/core": "^10.1 || ^11"
@@ -11641,15 +11660,12 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.35+4-dev",
-                    "datestamp": "1719064248",
+                    "version": "8.x-1.35",
+                    "datestamp": "1718551025",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "drush": {
@@ -11807,11 +11823,17 @@
         },
         {
             "name": "drupal/search_api_solr",
-            "version": "dev-4.x",
+            "version": "4.3.4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/search_api_solr.git",
-                "reference": "e1f67e9fdd2cab4b3890d213836b0339679411e2"
+                "reference": "4.3.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/search_api_solr-4.3.4.zip",
+                "reference": "4.3.4",
+                "shasum": "e3f4ded975d57d4fa1d57786dcd6174e97804f45"
             },
             "require": {
                 "composer-runtime-api": ">=2.0",
@@ -11849,15 +11871,12 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-4.x": "4.x-dev"
-                },
                 "drupal": {
-                    "version": "4.3.4+3-dev",
-                    "datestamp": "1718810104",
+                    "version": "4.3.4",
+                    "datestamp": "1718742899",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "drush": {
@@ -14388,11 +14407,17 @@
         },
         {
             "name": "drupal/webform",
-            "version": "dev-6.2.x",
+            "version": "6.2.3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "869509b0073e512f83cf5b58da1e8e520446c864"
+                "reference": "6.2.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform-6.2.3.zip",
+                "reference": "6.2.3",
+                "shasum": "b23b2746643ef11ee764ac420a02e2162d727930"
             },
             "require": {
                 "drupal/core": "^9.4 || ^10",
@@ -14412,7 +14437,6 @@
                 "drupal/group": "1.x-dev",
                 "drupal/hal": "1 - 2",
                 "drupal/jquery_ui": "1.x-dev",
-                "drupal/jquery_ui_button": "2.x-dev",
                 "drupal/jquery_ui_checkboxradio": "2.x-dev",
                 "drupal/jquery_ui_datepicker": "2.x-dev",
                 "drupal/mailsystem": "4.x-dev",
@@ -14436,20 +14460,17 @@
                 "drupal/webform_ui": "*"
             },
             "suggest": {
-                "drupal/jquery_ui_buttons": "Provides jQuery UI Checkboxradio library. Required by the Webform jQueryUI Buttons module. The Webform jQueryUI Buttons module is deprecated because jQueryUI is no longer maintained.",
+                "drupal/jquery_ui_checkboxradio": "Provides jQuery UI Checkboxradio library. Required by the Webform jQueryUI Buttons module. The Webform jQueryUI Buttons module is deprecated because jQueryUI is no longer maintained.",
                 "drupal/jquery_ui_datepicker": "Provides jQuery UI Datepicker library. Required to support datepickers. The Webform jQueryUI Datepicker module is deprecated because jQueryUI is no longer maintained."
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-6.2.x": "6.2.x-dev"
-                },
                 "drupal": {
-                    "version": "6.2.3+84-dev",
-                    "datestamp": "1719438838",
+                    "version": "6.2.3",
+                    "datestamp": "1719431562",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "drush": {
@@ -29022,7 +29043,6 @@
         "drupal/clientside_validation": 20,
         "drupal/codesnippet": 20,
         "drupal/coffee": 20,
-        "drupal/computed_field": 20,
         "drupal/conditional_fields": 20,
         "drupal/config_inspector": 20,
         "drupal/config_split": 20,
@@ -29031,7 +29051,6 @@
         "drupal/custom_formatters": 20,
         "drupal/default_content": 20,
         "drupal/easy_breadcrumb": 20,
-        "drupal/entity": 20,
         "drupal/entity_browser": 20,
         "drupal/entity_embed": 20,
         "drupal/entity_usage": 20,
@@ -29050,10 +29069,8 @@
         "drupal/geofield": 20,
         "drupal/geofield_map": 20,
         "drupal/hcaptcha": 20,
-        "drupal/image_effects": 20,
         "drupal/imageapi_optimize": 20,
         "drupal/imageapi_optimize_binaries": 20,
-        "drupal/imagemagick": 20,
         "drupal/inline_entity_form": 20,
         "drupal/layout_library": 20,
         "drupal/ldap": 20,
@@ -29070,10 +29087,8 @@
         "drupal/rules": 20,
         "drupal/samlauth": 20,
         "drupal/search404": 20,
-        "drupal/search_api": 20,
         "drupal/search_api_autocomplete": 20,
         "drupal/search_api_location": 20,
-        "drupal/search_api_solr": 20,
         "drupal/seckit": 20,
         "drupal/select2": 20,
         "drupal/sitemap": 20,
@@ -29086,7 +29101,6 @@
         "drupal/views_bootstrap": 20,
         "drupal/views_geojson": 20,
         "drupal/viewsreference": 20,
-        "drupal/webform": 20,
         "drupal/xmlsitemap": 20,
         "npm-asset/accessible360--accessible-slick": 20
     },
