@@ -1,10 +1,11 @@
-core_version_requirement: '^9.4 || ^10'
+core_version_requirement: '^9.4 || ^10 || ^11'
 description: 'DruStack is a starter Drupal distribution for developer.'
 distribution:
   name: DruStack
 install:
   - admin_toolbar
   - admin_toolbar_tools
+  - announcements_feed
   - automated_cron
   - ban
   - basic_auth
@@ -41,12 +42,10 @@ install:
   - inline_form_errors
   - jsonapi
   - language
-  - layout_builder
-  - layout_builder_restrictions
-  - layout_discovery
   - libraries
   - link
   - link_attributes
+  - link_attributes_menu_link_content
   - locale
   - media
   - media_library
@@ -68,6 +67,8 @@ install:
   - serialization
   - settings_tray
   - shortcut
+  - svg_image
+  - svg_image_responsive
   - syslog
   - system
   - taxonomy
@@ -80,6 +81,7 @@ install:
   - views
   - views_ui
   - workflows
+  - workspaces
 name: DruStack
 package: DruStack
 themes:
