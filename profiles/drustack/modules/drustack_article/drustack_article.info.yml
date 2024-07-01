@@ -1,4 +1,4 @@
-core_version_requirement: '^9.4 || ^10 || ^11'
+core_version_requirement: '^9.4 || ^10'
 dependencies:
   - 'captcha:captcha'
   - 'drupal:comment'
@@ -24,6 +24,8 @@ dependencies:
   - 'metatag:metatag'
   - 'pathauto:pathauto'
   - 'scheduler:scheduler'
+  - 'svg_image:svg_image'
+  - 'svg_image:svg_image_responsive'
   - 'xmlsitemap:xmlsitemap'
 description: 'Provides Article content type and related configuration. Use <em>articles</em> for time-sensitive content like news, press releases or blog posts.'
 name: 'DruStack Article'

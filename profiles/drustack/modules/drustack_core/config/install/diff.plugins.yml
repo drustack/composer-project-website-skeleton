@@ -27,6 +27,9 @@ fields:
     revision_translation_affected:
       type: hidden
       settings: {  }
+    workspace:
+      type: hidden
+      settings: {  }
     content_translation_source:
       type: hidden
       settings: {  }
@@ -40,8 +43,12 @@ fields:
       type: hidden
       settings: {  }
     body:
-      type: hidden
-      settings: {  }
+      type: text_summary_field_diff_builder
+      settings:
+        show_header: 1
+        markdown: drupal_html_to_text
+        compare_format: 0
+        compare_summary: 0
   content_moderation_state:
     langcode:
       type: hidden
@@ -124,6 +131,9 @@ fields:
       type: hidden
       settings: {  }
     unpublish_on:
+      type: hidden
+      settings: {  }
+    workspace:
       type: hidden
       settings: {  }
     content_translation_source:
@@ -220,6 +230,9 @@ fields:
     revision_translation_affected:
       type: hidden
       settings: {  }
+    workspace:
+      type: hidden
+      settings: {  }
     content_translation_source:
       type: hidden
       settings: {  }
@@ -285,6 +298,9 @@ fields:
     unpublish_on:
       type: hidden
       settings: {  }
+    workspace:
+      type: hidden
+      settings: {  }
     content_translation_source:
       type: hidden
       settings: {  }
@@ -292,11 +308,12 @@ fields:
       type: hidden
       settings: {  }
     body:
-      type: text_field_diff_builder
+      type: text_summary_field_diff_builder
       settings:
         show_header: 1
         markdown: drupal_html_to_text
         compare_format: 0
+        compare_summary: 0
     comment:
       type: comment_field_diff_builder
       settings:
@@ -336,6 +353,9 @@ fields:
     revision_default:
       type: hidden
       settings: {  }
+    workspace:
+      type: hidden
+      settings: {  }
   taxonomy_term:
     langcode:
       type: hidden
@@ -358,8 +378,11 @@ fields:
         show_header: 1
         markdown: drupal_html_to_text
     description:
-      type: hidden
-      settings: {  }
+      type: text_field_diff_builder
+      settings:
+        show_header: 1
+        markdown: drupal_html_to_text
+        compare_format: 0
     parent:
       type: hidden
       settings: {  }
@@ -381,6 +404,9 @@ fields:
     unpublish_on:
       type: hidden
       settings: {  }
+    workspace:
+      type: hidden
+      settings: {  }
     content_translation_source:
       type: hidden
       settings: {  }
@@ -391,6 +417,16 @@ fields:
       type: hidden
       settings: {  }
     content_translation_created:
+      type: hidden
+      settings: {  }
+  workspace:
+    label:
+      type: hidden
+      settings: {  }
+    changed:
+      type: hidden
+      settings: {  }
+    revision_default:
       type: hidden
       settings: {  }
   paragraph:
@@ -422,5 +458,8 @@ fields:
       type: hidden
       settings: {  }
     revision_translation_affected:
+      type: hidden
+      settings: {  }
+    workspace:
       type: hidden
       settings: {  }

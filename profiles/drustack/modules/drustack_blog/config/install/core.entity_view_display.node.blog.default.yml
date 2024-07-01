@@ -11,7 +11,7 @@ dependencies:
     - responsive_image.styles.drustack_bootstrap
   module:
     - comment
-    - responsive_image
+    - svg_image_responsive
     - text
     - user
 id: node.blog.default
@@ -43,6 +43,10 @@ content:
       image_link: ''
       image_loading:
         attribute: lazy
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
     third_party_settings: {  }
     weight: 0
     region: content
