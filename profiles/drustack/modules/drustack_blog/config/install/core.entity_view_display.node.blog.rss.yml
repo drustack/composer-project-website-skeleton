@@ -9,22 +9,17 @@ dependencies:
     - field.field.node.blog.field_tags
     - node.type.blog
   module:
-    - layout_builder
     - user
-third_party_settings:
-  layout_builder:
-    allow_custom: false
-    enabled: false
 id: node.blog.rss
 targetEntityType: node
 bundle: blog
 mode: rss
 content:
   links:
-    region: content
     settings: {  }
     third_party_settings: {  }
     weight: 0
+    region: content
 hidden:
   body: true
   comment: true

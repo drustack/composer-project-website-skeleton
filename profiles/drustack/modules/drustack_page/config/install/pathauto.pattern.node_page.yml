@@ -8,14 +8,14 @@ label: 'Content (Basic page)'
 type: 'canonical_entities:node'
 pattern: '[node:source:menu-link:parents:join-path]/[node:source:menu-link:title]'
 selection_criteria:
-  523cce7a-e7e4-47d2-8818-dd71e7c3ddd6:
+  b5cacbd3-9f92-4bf2-810c-1f3fc5581f30:
     id: 'entity_bundle:node'
-    bundles:
-      page: page
+    negate: false
+    uuid: b5cacbd3-9f92-4bf2-810c-1f3fc5581f30
     context_mapping:
       node: node
-    negate: false
-    uuid: 523cce7a-e7e4-47d2-8818-dd71e7c3ddd6
+    bundles:
+      page: page
 selection_logic: and
 weight: -5
 relationships: {  }

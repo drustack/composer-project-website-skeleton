@@ -5,8 +5,8 @@ dependencies:
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
-    - image
     - path
+    - svg_image
     - user
 id: user.user.default
 targetEntityType: user
@@ -14,38 +14,38 @@ bundle: user
 mode: default
 content:
   account:
-    region: content
-    settings: {  }
-    third_party_settings: {  }
     weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   contact:
-    region: content
-    settings: {  }
-    third_party_settings: {  }
     weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   language:
-    region: content
-    settings: {  }
-    third_party_settings: {  }
     weight: 0
-  path:
     region: content
     settings: {  }
     third_party_settings: {  }
+  path:
     type: path
     weight: 30
-  timezone:
     region: content
     settings: {  }
     third_party_settings: {  }
+  timezone:
     weight: 6
-  user_picture:
     region: content
-    settings:
-      preview_image_style: thumbnail
-      progress_indicator: throbber
+    settings: {  }
     third_party_settings: {  }
+  user_picture:
     type: image_image
     weight: -1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
 hidden:
   langcode: true

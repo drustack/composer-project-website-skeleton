@@ -98,7 +98,6 @@ settings:
         - '<dt>'
         - '<dd>'
         - '<span>'
-        - '<drupal-media data-entity-t ype data-entity-uuid data-view-mode data-align data-caption alt title>'
         - '<a hreflang>'
         - '<blockquote cite>'
         - '<ul type>'
@@ -116,7 +115,7 @@ image_upload:
   status: true
   scheme: public
   directory: inline-images
-  max_size: ''
+  max_size: null
   max_dimensions:
-    width: 0
-    height: 0
+    width: null
+    height: null

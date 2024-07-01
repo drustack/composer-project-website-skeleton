@@ -7,54 +7,54 @@ id: editorial
 label: Editorial
 type: content_moderation
 type_settings:
-  default_moderation_state: draft
-  entity_types: {  }
   states:
     archived:
-      default_revision: true
       label: Archived
-      published: false
       weight: 5
-    draft:
-      default_revision: false
-      label: Draft
       published: false
-      weight: -5
-    published:
       default_revision: true
+    draft:
+      label: Draft
+      weight: -5
+      published: false
+      default_revision: false
+    published:
       label: Published
-      published: true
       weight: 0
+      published: true
+      default_revision: true
   transitions:
     archive:
+      label: Archive
       from:
         - published
-      label: Archive
       to: archived
       weight: 2
     archived_draft:
+      label: 'Restore to Draft'
       from:
         - archived
-      label: 'Restore to Draft'
       to: draft
       weight: 3
     archived_published:
+      label: Restore
       from:
         - archived
-      label: Restore
       to: published
       weight: 4
     create_new_draft:
+      label: 'Create New Draft'
       from:
         - draft
         - published
-      label: 'Create New Draft'
       to: draft
       weight: 0
     publish:
+      label: Publish
       from:
         - draft
         - published
-      label: Publish
       to: published
       weight: 1
+  entity_types: {  }
+  default_moderation_state: draft
