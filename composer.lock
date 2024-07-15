@@ -315,16 +315,16 @@
         },
         {
             "name": "composer/semver",
-            "version": "3.4.0",
+            "version": "3.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/semver.git",
-                "reference": "35e8d0af4486141bc745f23a29cc2091eb624a32"
+                "reference": "c51258e759afdb17f1fd1fe83bc12baaef6309d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/semver/zipball/35e8d0af4486141bc745f23a29cc2091eb624a32",
-                "reference": "35e8d0af4486141bc745f23a29cc2091eb624a32",
+                "url": "https://api.github.com/repos/composer/semver/zipball/c51258e759afdb17f1fd1fe83bc12baaef6309d6",
+                "reference": "c51258e759afdb17f1fd1fe83bc12baaef6309d6",
                 "shasum": ""
             },
             "require": {
@@ -376,7 +376,7 @@
             "support": {
                 "irc": "ircs://irc.libera.chat:6697/composer",
                 "issues": "https://github.com/composer/semver/issues",
-                "source": "https://github.com/composer/semver/tree/3.4.0"
+                "source": "https://github.com/composer/semver/tree/3.4.2"
             },
             "funding": [
                 {
@@ -392,7 +392,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-08-31T09:50:34+00:00"
+            "time": "2024-07-12T11:35:52+00:00"
         },
         {
             "name": "consolidation/annotated-command",
@@ -5554,10 +5554,10 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity_browser.git",
-                "reference": "ed8d15f96e4551c4c0b3bf2c5595a16413fab042"
+                "reference": "893ea180f44e6590cf9b85d2393404ab7c66b920"
             },
             "require": {
-                "drupal/core": "^9.5 || ^10"
+                "drupal/core": "^10.2 || ^11"
             },
             "conflict": {
                 "drupal/media_entity": "1.*"
@@ -5570,6 +5570,7 @@
                 "drupal/entityqueue": "^1.0",
                 "drupal/inline_entity_form": "^1.0@rc",
                 "drupal/paragraphs": "^1.0",
+                "drupal/search_api": "^1.0",
                 "drupal/token": "^1.0"
             },
             "type": "drupal-module",
@@ -5578,8 +5579,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.10+2-dev",
-                    "datestamp": "1717711130",
+                    "version": "8.x-2.10+7-dev",
+                    "datestamp": "1720951598",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -6353,7 +6354,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/facets.git",
-                "reference": "0068ab9178cc42b6a6be728ec2d72c4a4e1bd2eb"
+                "reference": "6e9034ef64871c453ae685329f69530ff33227d6"
             },
             "require": {
                 "drupal/core": "^10 || ^11"
@@ -6376,8 +6377,8 @@
                     "dev-2.0.x": "2.0.x-dev"
                 },
                 "drupal": {
-                    "version": "2.0.7+14-dev",
-                    "datestamp": "1720612033",
+                    "version": "2.0.7+15-dev",
+                    "datestamp": "1720862220",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -6581,7 +6582,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/feeds.git",
-                "reference": "7697fd03404ce108010b1c08a2f7283b50e2c74c"
+                "reference": "b8c200dc9b46522498eb56b003277a567358db1b"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10",
@@ -6597,8 +6598,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-beta5+4-dev",
-                    "datestamp": "1720342566",
+                    "version": "8.x-3.0-beta5+6-dev",
+                    "datestamp": "1720864016",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -7649,7 +7650,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/geofield_map.git",
-                "reference": "9d6a1c1dde165c49cdbc13125a05df7619ffe2a9"
+                "reference": "d82a7e6ee55132ffe3cd02d3e0319a34a11adaf2"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10",
@@ -7661,8 +7662,8 @@
                     "dev-3.0.x": "3.0.x-dev"
                 },
                 "drupal": {
-                    "version": "3.0.18+3-dev",
-                    "datestamp": "1720702249",
+                    "version": "3.0.19+0-dev",
+                    "datestamp": "1720791355",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -9170,17 +9171,17 @@
         },
         {
             "name": "drupal/leaflet",
-            "version": "10.2.19",
+            "version": "10.2.20",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/leaflet.git",
-                "reference": "10.2.19"
+                "reference": "10.2.20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/leaflet-10.2.19.zip",
-                "reference": "10.2.19",
-                "shasum": "6ad48c4c3730adf0e9e6cda811b706181f8275a7"
+                "url": "https://ftp.drupal.org/files/projects/leaflet-10.2.20.zip",
+                "reference": "10.2.20",
+                "shasum": "0998b9bb5e6ca22a6125a46321542a19ca1ca8e6"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10 || ^11",
@@ -9189,8 +9190,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "10.2.19",
-                    "datestamp": "1719911106",
+                    "version": "10.2.20",
+                    "datestamp": "1720793068",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -10864,26 +10865,26 @@
         },
         {
             "name": "drupal/quicklink",
-            "version": "2.0.3",
+            "version": "2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/quicklink.git",
-                "reference": "2.0.3"
+                "reference": "2.0.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/quicklink-2.0.3.zip",
-                "reference": "2.0.3",
-                "shasum": "f88d236a059f4864fba5a31cf3a0f87217823786"
+                "url": "https://ftp.drupal.org/files/projects/quicklink-2.0.4.zip",
+                "reference": "2.0.4",
+                "shasum": "a494378d7503d02b2aaa5505422f560ddfe072a3"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10"
+                "drupal/core": "^8 || ^9 || ^10 || ^11"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.3",
-                    "datestamp": "1719234491",
+                    "version": "2.0.4",
+                    "datestamp": "1720978306",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
