@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e2b4ad48b8c838c392c88898cf1f1367",
+    "content-hash": "a58373abb78a53187af4fe337cc903de",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4627,41 +4627,42 @@
         },
         {
             "name": "drupal/devel",
-            "version": "dev-5.x",
+            "version": "5.2.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/devel.git",
-                "reference": "894f0e4fbc550c3f39151ce77a7a5745d19c13e0"
+                "reference": "5.2.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/devel-5.2.1.zip",
+                "reference": "5.2.1",
+                "shasum": "793861751e01092fe8bc7c0cd47589ebea2bb8df"
             },
             "require": {
                 "doctrine/common": "^2.7 || ^3.4",
-                "drupal/core": "^10 || ^11 || ^12",
+                "drupal/core": ">=10.0 <12.0.0-stable",
                 "php": ">=8.1",
-                "symfony/var-dumper": "^4 || ^5 || ^6 || ^7"
+                "symfony/var-dumper": "^4 || ^5 || ^6"
             },
             "conflict": {
                 "drush/drush": "<12.5.1",
                 "kint-php/kint": "<3"
             },
             "require-dev": {
-                "drush/drush": "^12.5.1 || ^13@beta",
-                "firephp/firephp-core": "^0.5.3",
-                "kint-php/kint": "^5.1"
+                "drush/drush": "^12.5.1"
             },
             "suggest": {
                 "kint-php/kint": "Kint provides an informative display of arrays/objects. Useful for debugging and developing."
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-5.x": "5.x-dev"
-                },
                 "drupal": {
-                    "version": "5.2.1+50-dev",
-                    "datestamp": "1719414587",
+                    "version": "5.2.1",
+                    "datestamp": "1711328410",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -14402,11 +14403,17 @@
         },
         {
             "name": "drupal/webform",
-            "version": "dev-6.2.x",
+            "version": "6.2.3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "e07194c11531eb6da43fc8bcdd38ace4ca9c71fc"
+                "reference": "6.2.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform-6.2.3.zip",
+                "reference": "6.2.3",
+                "shasum": "b23b2746643ef11ee764ac420a02e2162d727930"
             },
             "require": {
                 "drupal/core": "^9.4 || ^10",
@@ -14426,7 +14433,6 @@
                 "drupal/group": "1.x-dev",
                 "drupal/hal": "1 - 2",
                 "drupal/jquery_ui": "1.x-dev",
-                "drupal/jquery_ui_button": "2.x-dev",
                 "drupal/jquery_ui_checkboxradio": "2.x-dev",
                 "drupal/jquery_ui_datepicker": "2.x-dev",
                 "drupal/mailsystem": "4.x-dev",
@@ -14450,20 +14456,17 @@
                 "drupal/webform_ui": "*"
             },
             "suggest": {
-                "drupal/jquery_ui_buttons": "Provides jQuery UI Checkboxradio library. Required by the Webform jQueryUI Buttons module. The Webform jQueryUI Buttons module is deprecated because jQueryUI is no longer maintained.",
+                "drupal/jquery_ui_checkboxradio": "Provides jQuery UI Checkboxradio library. Required by the Webform jQueryUI Buttons module. The Webform jQueryUI Buttons module is deprecated because jQueryUI is no longer maintained.",
                 "drupal/jquery_ui_datepicker": "Provides jQuery UI Datepicker library. Required to support datepickers. The Webform jQueryUI Datepicker module is deprecated because jQueryUI is no longer maintained."
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-6.2.x": "6.2.x-dev"
-                },
                 "drupal": {
-                    "version": "6.2.4-rc1+1-dev",
-                    "datestamp": "1720313759",
+                    "version": "6.2.3",
+                    "datestamp": "1719431562",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "drush": {
@@ -28300,7 +28303,6 @@
         "drupal/ctools": 20,
         "drupal/custom_formatters": 20,
         "drupal/default_content": 20,
-        "drupal/devel": 20,
         "drupal/easy_breadcrumb": 20,
         "drupal/entity_embed": 20,
         "drupal/entity_usage": 20,
@@ -28351,7 +28353,6 @@
         "drupal/views_bootstrap": 20,
         "drupal/views_geojson": 20,
         "drupal/viewsreference": 20,
-        "drupal/webform": 20,
         "drupal/xmlsitemap": 20,
         "npm-asset/accessible360--accessible-slick": 20
     },
