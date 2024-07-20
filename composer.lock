@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6f093658a962f55252cdb3a4d078a3ae",
+    "content-hash": "cd264816482af5dd2c4bd0c31eb65d8e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2206,7 +2206,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/better_exposed_filters.git",
-                "reference": "6c3f9bb004b8b25267db9e296f7525803961e12e"
+                "reference": "3c9676eedaa236e33b1a359b3078e092207c0050"
             },
             "require": {
                 "drupal/core": "^10 || ^11"
@@ -2217,8 +2217,8 @@
                     "dev-7.0.x": "7.0.x-dev"
                 },
                 "drupal": {
-                    "version": "7.0.0-beta1+6-dev",
-                    "datestamp": "1720196536",
+                    "version": "7.0.0-beta1+7-dev",
+                    "datestamp": "1721398554",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -6569,7 +6569,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/feeds.git",
-                "reference": "b8c200dc9b46522498eb56b003277a567358db1b"
+                "reference": "da73e82b9331110620f5448a18657dfae5a62758"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10",
@@ -6585,8 +6585,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-beta5+6-dev",
-                    "datestamp": "1720864016",
+                    "version": "8.x-3.0-beta5+7-dev",
+                    "datestamp": "1721221671",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -6939,7 +6939,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/field_permissions.git",
-                "reference": "c96874523f78b7d46207dedf89e089c2d10a685c"
+                "reference": "0cafa0bfacd566a1d8a9edb56f436174a6c0240c"
             },
             "require": {
                 "drupal/core": ">=8.9 <11"
@@ -6951,8 +6951,8 @@
                     "dev-8.x-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.3+7-dev",
-                    "datestamp": "1720636375",
+                    "version": "8.x-1.3+9-dev",
+                    "datestamp": "1721428323",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -9294,30 +9294,30 @@
         },
         {
             "name": "drupal/link_attributes",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/link_attributes.git",
-                "reference": "2.1.0"
+                "reference": "2.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/link_attributes-2.1.0.zip",
-                "reference": "2.1.0",
-                "shasum": "3cac3d09a8351c0ca41a43ee26bba02fac31ef18"
+                "url": "https://ftp.drupal.org/files/projects/link_attributes-2.1.1.zip",
+                "reference": "2.1.1",
+                "shasum": "fc71571fc41adeda6b39ccefd3c8e21955c0d96f"
             },
             "require": {
-                "drupal/core": "^9 || ^10",
+                "drupal/core": "^9 || ^10 || ^11",
                 "php": ">=8.0"
             },
             "require-dev": {
-                "drupal/linkit": "6.x-dev"
+                "drupal/linkit": "~6 || ~7"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.1.0",
-                    "datestamp": "1690356668",
+                    "version": "2.1.1",
+                    "datestamp": "1721366572",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9953,17 +9953,17 @@
         },
         {
             "name": "drupal/migrate_plus",
-            "version": "6.0.2",
+            "version": "6.0.3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/migrate_plus.git",
-                "reference": "6.0.2"
+                "reference": "6.0.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/migrate_plus-6.0.2.zip",
-                "reference": "6.0.2",
-                "shasum": "4315bc293aa75ea9247582d5d1925b075865e467"
+                "url": "https://ftp.drupal.org/files/projects/migrate_plus-6.0.3.zip",
+                "reference": "6.0.3",
+                "shasum": "08feb88178a45d8354862b03fd7fcf9b47ae14e1"
             },
             "require": {
                 "drupal/core": ">=9.1",
@@ -9980,8 +9980,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "6.0.2",
-                    "datestamp": "1705424638",
+                    "version": "6.0.3",
+                    "datestamp": "1721333111",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -10309,7 +10309,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/office_hours.git",
-                "reference": "77e04e39e92b5e7cc725e1720001d1a78f720422"
+                "reference": "4b1121dde094bff6c1f34e96d0b050b714e8c3b6"
             },
             "require": {
                 "drupal/core": "^8 || ^9 || ^10 || ^11"
@@ -10320,8 +10320,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.17+50-dev",
-                    "datestamp": "1721201457",
+                    "version": "8.x-1.17+51-dev",
+                    "datestamp": "1721219940",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -10997,7 +10997,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/rabbit_hole.git",
-                "reference": "e7ffae201c4d2eb07f5e3f98f9b7fc2adec2537f"
+                "reference": "2235a0800ee22d35ec3fa0854af2213449b6a7ea"
             },
             "require": {
                 "drupal/core": "^8 || ^9 || ^10"
@@ -11015,8 +11015,8 @@
                     "dev-2.0.x": "2.0.x-dev"
                 },
                 "drupal": {
-                    "version": "2.0.0-alpha4+4-dev",
-                    "datestamp": "1691227372",
+                    "version": "2.0.0-alpha5+1-dev",
+                    "datestamp": "1721364553",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -11039,6 +11039,10 @@
                 {
                     "name": "Dylan Donkersgoed",
                     "homepage": "https://www.drupal.org/user/2803351"
+                },
+                {
+                    "name": "japerry",
+                    "homepage": "https://www.drupal.org/user/45640"
                 },
                 {
                     "name": "Matroskeen",
@@ -11932,10 +11936,10 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/seckit.git",
-                "reference": "db84d6db73520db18a0baffa9aca6013711d3945"
+                "reference": "f6d51c205ec2c52346490cfe954b388b97130ec7"
             },
             "require": {
-                "drupal/core": "^9.3 || ^10"
+                "drupal/core": "^9.5 || ^10 || ^11"
             },
             "type": "drupal-module",
             "extra": {
@@ -11943,8 +11947,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "2.0.1+11-dev",
-                    "datestamp": "1690807706",
+                    "version": "2.0.1+14-dev",
+                    "datestamp": "1721400602",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -12297,7 +12301,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/sitemap.git",
-                "reference": "ea3e82fa24b033dd2ca368c93fc8d26bccb24f24"
+                "reference": "551a37b904ddb4d9805354be39d601cd531f3e3e"
             },
             "require": {
                 "drupal/core": "^9.1 || ^10"
@@ -12308,8 +12312,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0-beta6+2-dev",
-                    "datestamp": "1711979698",
+                    "version": "8.x-2.0-beta6+6-dev",
+                    "datestamp": "1721266388",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -14413,17 +14417,17 @@
         },
         {
             "name": "drupal/webform",
-            "version": "6.2.4",
+            "version": "6.2.6",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "6.2.4"
+                "reference": "6.2.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-6.2.4.zip",
-                "reference": "6.2.4",
-                "shasum": "7fcada08c02718462d346c07120b84b9709a30f4"
+                "url": "https://ftp.drupal.org/files/projects/webform-6.2.6.zip",
+                "reference": "6.2.6",
+                "shasum": "4199a563123ec2512b84b04ce8e7b45d8fc589da"
             },
             "require": {
                 "drupal/core": "^9.4 || ^10",
@@ -14443,7 +14447,6 @@
                 "drupal/group": "1.x-dev",
                 "drupal/hal": "1 - 2",
                 "drupal/jquery_ui": "1.x-dev",
-                "drupal/jquery_ui_button": "2.x-dev",
                 "drupal/jquery_ui_checkboxradio": "2.x-dev",
                 "drupal/jquery_ui_datepicker": "2.x-dev",
                 "drupal/mailsystem": "4.x-dev",
@@ -14467,14 +14470,14 @@
                 "drupal/webform_ui": "*"
             },
             "suggest": {
-                "drupal/jquery_ui_buttons": "Provides jQuery UI Checkboxradio library. Required by the Webform jQueryUI Buttons module. The Webform jQueryUI Buttons module is deprecated because jQueryUI is no longer maintained.",
+                "drupal/jquery_ui_checkboxradio": "Provides jQuery UI Checkboxradio library. Required by the Webform jQueryUI Buttons module. The Webform jQueryUI Buttons module is deprecated because jQueryUI is no longer maintained.",
                 "drupal/jquery_ui_datepicker": "Provides jQuery UI Datepicker library. Required to support datepickers. The Webform jQueryUI Datepicker module is deprecated because jQueryUI is no longer maintained."
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "6.2.4",
-                    "datestamp": "1721065680",
+                    "version": "6.2.6",
+                    "datestamp": "1721424721",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -14529,7 +14532,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/xmlsitemap.git",
-                "reference": "8731ff07e2dc58887aac99cae1cf260cdf42bb3c"
+                "reference": "40727c92415802bb14c3d139a0c575e324ed4d00"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10",
@@ -14549,8 +14552,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.5+3-dev",
-                    "datestamp": "1699301373",
+                    "version": "8.x-1.5+4-dev",
+                    "datestamp": "1721321791",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
