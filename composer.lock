@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1cec07bb3e403608ccaa9d7d753697dc",
+    "content-hash": "8d21f4ca3a2054ebeb48a6565727b615",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6569,7 +6569,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/feeds.git",
-                "reference": "da73e82b9331110620f5448a18657dfae5a62758"
+                "reference": "180a801b0c53771bcd8f811fc044e674849cb3b3"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10",
@@ -6585,8 +6585,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-beta5+7-dev",
-                    "datestamp": "1721221671",
+                    "version": "8.x-3.0-beta5+9-dev",
+                    "datestamp": "1721492451",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -11303,11 +11303,11 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/rules.git",
-                "reference": "23735ff1985e3ee2cac9d16646c6e8efddeaa871"
+                "reference": "7cadd625573a14bd327197c3c322b77f472b3ae4"
             },
             "require": {
                 "drupal/core": "^9.1 || ^10",
-                "drupal/typed_data": "^1.0"
+                "drupal/typed_data": "^2.0"
             },
             "conflict": {
                 "drupal/core": ">=10.3"
@@ -11318,8 +11318,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-alpha8+9-dev",
-                    "datestamp": "1720224541",
+                    "version": "8.x-3.0-alpha8+10-dev",
+                    "datestamp": "1721536428",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -11709,11 +11709,17 @@
         },
         {
             "name": "drupal/search_api_autocomplete",
-            "version": "dev-1.x",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/search_api_autocomplete.git",
-                "reference": "28fac57e7072bd9f35a2756a637adaf97dcc6b2b"
+                "reference": "8.x-1.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/search_api_autocomplete-8.x-1.9.zip",
+                "reference": "8.x-1.9",
+                "shasum": "5cb2d1a09dbd54facba82d6d88907e3a184c1539"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10 || ^11",
@@ -11724,15 +11730,12 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.9+4-dev",
-                    "datestamp": "1719068502",
+                    "version": "8.x-1.9",
+                    "datestamp": "1718551474",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -13645,17 +13648,11 @@
         },
         {
             "name": "drupal/typed_data",
-            "version": "1.0.0-beta3",
+            "version": "dev-2.0.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/typed_data.git",
-                "reference": "8.x-1.0-beta3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/typed_data-8.x-1.0-beta3.zip",
-                "reference": "8.x-1.0-beta3",
-                "shasum": "6ab9cc4d136f71a8b187e2ba806c4f4f83b62d95"
+                "reference": "48345a2798a900c4414f3f4fceac7ba7d4e78518"
             },
             "require": {
                 "drupal/core": "^9.1 || ^10"
@@ -13665,12 +13662,15 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-2.0.x": "2.0.x-dev"
+                },
                 "drupal": {
-                    "version": "8.x-1.0-beta3",
-                    "datestamp": "1719984500",
+                    "version": "2.0.x-dev",
+                    "datestamp": "1719476189",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 },
                 "drush": {
@@ -28353,7 +28353,6 @@
         "drupal/rules": 20,
         "drupal/samlauth": 20,
         "drupal/search404": 20,
-        "drupal/search_api_autocomplete": 20,
         "drupal/search_api_location": 20,
         "drupal/seckit": 20,
         "drupal/select2": 20,
