@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1a8eb6550cd9d0547df1c4b70c7f850a",
+    "content-hash": "8a75958462eeeac13a51802dc15ec87f",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2384,20 +2384,20 @@
         },
         {
             "name": "drupal/blazy",
-            "version": "3.0.1",
+            "version": "2.27.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/blazy.git",
-                "reference": "3.0.1"
+                "reference": "8.x-2.27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/blazy-3.0.1.zip",
-                "reference": "3.0.1",
-                "shasum": "8cc005cd64f821f69845306c8f64f5ea24fd77b1"
+                "url": "https://ftp.drupal.org/files/projects/blazy-8.x-2.27.zip",
+                "reference": "8.x-2.27",
+                "shasum": "3cf511ad1ea33c94a5c4b93f49344bef24456067"
             },
             "require": {
-                "drupal/core": ">=9.3"
+                "drupal/core": "^8.8 || ^9 || ^10"
             },
             "conflict": {
                 "drupal/csp": "<1.12"
@@ -2405,8 +2405,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.1",
-                    "datestamp": "1713536543",
+                    "version": "8.x-2.27",
+                    "datestamp": "1715944090",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -12547,30 +12547,30 @@
         },
         {
             "name": "drupal/slick",
-            "version": "2.10.0-beta1",
+            "version": "2.11.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/slick.git",
-                "reference": "8.x-2.10-beta1"
+                "reference": "8.x-2.11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/slick-8.x-2.10-beta1.zip",
-                "reference": "8.x-2.10-beta1",
-                "shasum": "841e056513015a129b2950160916a7d74a6ceee6"
+                "url": "https://ftp.drupal.org/files/projects/slick-8.x-2.11.zip",
+                "reference": "8.x-2.11",
+                "shasum": "81c8364992578aadec46955c494085d3d04e01f3"
             },
             "require": {
-                "drupal/blazy": ">=2.16",
+                "drupal/blazy": "^2.17",
                 "drupal/core": "^8.8 || ^9 || ^10"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.10-beta1",
-                    "datestamp": "1690090538",
+                    "version": "8.x-2.11",
+                    "datestamp": "1712817716",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
