@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6af47bcb2592ba4c8392eedc77e869d0",
+    "content-hash": "b6005c0a1c73addc8bc19cad7d065ba2",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3002,46 +3002,48 @@
         },
         {
             "name": "drupal/cdn",
-            "version": "4.0.2",
+            "version": "5.0.0-alpha1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/cdn.git",
-                "reference": "4.0.2"
+                "reference": "5.0.0-alpha1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/cdn-4.0.2.zip",
-                "reference": "4.0.2",
-                "shasum": "1ce03cafb90d9505785e56fb050c0862a162c0ce"
+                "url": "https://ftp.drupal.org/files/projects/cdn-5.0.0-alpha1.zip",
+                "reference": "5.0.0-alpha1",
+                "shasum": "ddc04f3504fa7f04d7b396a54dcae4eb3f55f4d5"
             },
             "require": {
-                "drupal/core": "^9.4 || ^10"
+                "drupal/core": "^10.3 || ^11",
+                "php": ">=8.3"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "4.0.2",
-                    "datestamp": "1704289294",
+                    "version": "5.0.0-alpha1",
+                    "datestamp": "1714887110",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
                     }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
                     "name": "Wim Leers",
-                    "homepage": "https://www.drupal.org/user/99777"
+                    "homepage": "https://wimleers.com"
                 }
             ],
             "description": "Serves files (CSS, JS, images …) from a CDN.",
             "homepage": "https://www.drupal.org/project/cdn",
             "support": {
-                "source": "https://git.drupalcode.org/project/cdn"
+                "source": "https://git.drupalcode.org/project/cdn",
+                "issues": "https://www.drupal.org/project/issues/cdn"
             }
         },
         {
@@ -4285,27 +4287,27 @@
         },
         {
             "name": "drupal/core_views_facets",
-            "version": "2.0.4",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/core_views_facets.git",
-                "reference": "2.0.4"
+                "reference": "2.1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/core_views_facets-2.0.4.zip",
-                "reference": "2.0.4",
-                "shasum": "3afecac0567915e338cbe6d9bc340c4f7b0597cf"
+                "url": "https://ftp.drupal.org/files/projects/core_views_facets-2.1.0.zip",
+                "reference": "2.1.0",
+                "shasum": "8e07fa32f84f9752487cd442166bcea3e246279c"
             },
             "require": {
-                "drupal/core": "^9.3 || ^10.0",
+                "drupal/core": "^10.1",
                 "drupal/facets": "^2.0"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.4",
-                    "datestamp": "1699447494",
+                    "version": "2.1.0",
+                    "datestamp": "1705319977",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5752,32 +5754,32 @@
         },
         {
             "name": "drupal/entity_clone",
-            "version": "2.0.0-beta6",
+            "version": "2.1.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity_clone.git",
-                "reference": "2.0.0-beta6"
+                "reference": "2.1.0-beta1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_clone-2.0.0-beta6.zip",
-                "reference": "2.0.0-beta6",
-                "shasum": "afd98c1aeffc1d28b8a0b29c8cfb09de95debc9b"
+                "url": "https://ftp.drupal.org/files/projects/entity_clone-2.1.0-beta1.zip",
+                "reference": "2.1.0-beta1",
+                "shasum": "3602955a33ac4fff0213fd302e78d0c7b5c628ca"
             },
             "require": {
-                "drupal/core": "^8.8 || ^9 || ^10"
+                "drupal/core": "^9 || ^10 || ^11"
             },
             "require-dev": {
                 "drupal/entity_browser": "2.x-dev",
                 "drupal/entity_usage": "2.x-dev",
                 "drupal/paragraphs": "^1.0",
-                "drupal/search_api": "~1.0"
+                "drupal/search_api": "^1.0"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.0-beta6",
-                    "datestamp": "1712549899",
+                    "version": "2.1.0-beta1",
+                    "datestamp": "1721571015",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
