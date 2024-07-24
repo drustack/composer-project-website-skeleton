@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5c88732add76b44c185b8a24bb6fc2e8",
+    "content-hash": "c63443acb31369fde254e96ae6883043",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -14592,20 +14592,14 @@
         },
         {
             "name": "drupal/webform",
-            "version": "6.2.7",
+            "version": "dev-6.2.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "6.2.7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-6.2.7.zip",
-                "reference": "6.2.7",
-                "shasum": "7e0520773f2521d70837371b08e09a13704b4274"
+                "reference": "6d7a56fe71b9dc719801287a001f46b9d8cd9008"
             },
             "require": {
-                "drupal/core": "^10.1",
+                "drupal/core": "^10.2",
                 "php": ">=8.1"
             },
             "require-dev": {
@@ -14651,12 +14645,15 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-6.2.x": "6.2.x-dev"
+                },
                 "drupal": {
-                    "version": "6.2.7",
-                    "datestamp": "1721425228",
+                    "version": "6.2.5+1-dev",
+                    "datestamp": "1721068834",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 },
                 "drush": {
@@ -17642,10 +17639,10 @@
         },
         {
             "name": "npm-asset/jquery-validation",
-            "version": "1.20.1",
+            "version": "1.21.0",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/jquery-validation/-/jquery-validation-1.20.1.tgz"
+                "url": "https://registry.npmjs.org/jquery-validation/-/jquery-validation-1.21.0.tgz"
             },
             "type": "npm-asset",
             "license": [
@@ -29726,6 +29723,7 @@
         "drupal/views_bootstrap": 20,
         "drupal/views_geojson": 20,
         "drupal/viewsreference": 20,
+        "drupal/webform": 20,
         "drupal/xmlsitemap": 20,
         "npm-asset/accessible360--accessible-slick": 20
     },
