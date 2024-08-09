@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c63443acb31369fde254e96ae6883043",
+    "content-hash": "a168eb80e36bcf30ced93bebd6f1cca6",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -12251,17 +12251,11 @@
         },
         {
             "name": "drupal/security_review",
-            "version": "3.0.3",
+            "version": "dev-3.0.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/security_review.git",
-                "reference": "3.0.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/security_review-3.0.3.zip",
-                "reference": "3.0.3",
-                "shasum": "06ccb512ca80b2aa5158ec67f30d84cc3f33ec30"
+                "reference": "2ac9e462a18b67b42fd81c35f93488b8dcefdc63"
             },
             "require": {
                 "drupal/core": "^10 || ^11",
@@ -12270,12 +12264,15 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-3.0.x": "3.0.x-dev"
+                },
                 "drupal": {
-                    "version": "3.0.3",
-                    "datestamp": "1722973230",
+                    "version": "3.0.3+1-dev",
+                    "datestamp": "1723037759",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -29750,6 +29747,7 @@
         "drupal/search_api_autocomplete": 20,
         "drupal/search_api_location": 20,
         "drupal/seckit": 20,
+        "drupal/security_review": 20,
         "drupal/select2": 20,
         "drupal/sitemap": 20,
         "drupal/styleguide": 20,
