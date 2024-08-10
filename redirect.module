@@ -62,7 +62,6 @@ function redirect_help($route_name, RouteMatchInterface $route_match) {
       $output .= '<dd>' . t('The <a href=":settings">"Settings"</a> page presents you with a number of means to adjust redirect settings.', [':settings' => Url::fromRoute('redirect.settings')->toString()]) . '</dd>';
       $output .= '</dl>';
       return $output;
-      break;
   }
 }
 
@@ -212,7 +211,7 @@ function redirect_delete_by_path($path, $langcode = NULL, $match_subpaths_and_re
  * @param $callback
  *   The sorting callback to use (e.g. 'sort', 'ksort', 'asort').
  *
- * @return
+ * @return bool
  *   TRUE on success or FALSE on failure.
  */
 function redirect_sort_recursive(&$array, $callback = 'sort') {
@@ -235,7 +234,7 @@ function redirect_status_code_options($code = NULL) {
     305 => t('305 Use Proxy'),
     307 => t('307 Temporary Redirect'),
   ];
-  return isset($codes[$code]) ? $codes[$code] : $codes;
+  return $codes[$code] ?? $codes;
 }
 
 /**
@@ -243,7 +242,7 @@ function redirect_status_code_options($code = NULL) {
  *
  * Why the fuck do we have to do this? Why is there not an easier way???
  *
- * @return
+ * @return bool
  *   TRUE if the current page is a 404, or FALSE otherwise.
  */
 function redirect_is_current_page_404() {
@@ -251,7 +250,9 @@ function redirect_is_current_page_404() {
 }
 
 /**
- * Implements hook_form_FORM_ID_alter() on behalf of locale.module.
+ * Implements hook_form_FORM_ID_alter().
+ *
+ * (on behalf of locale.module)
  */
 function locale_form_redirect_edit_form_alter(array &$form, FormStateInterface $form_state) {
   $form['language'] = [

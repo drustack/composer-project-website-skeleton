@@ -55,3 +55,8 @@ variables:
 phpunit (next major):
   variables:
     SYMFONY_DEPRECATIONS_HELPER: "disabled"
+
+# This module wants to strictly comply with Drupal core's coding standards.
+phpcs:
+  before_script:
+  - cp $_WEB_ROOT/core/phpcs.xml.dist ./phpcs.xml.dist

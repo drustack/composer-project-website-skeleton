@@ -249,7 +249,7 @@ class Redirect extends ContentEntityBase {
    */
   public function getRedirectOption($key, $default = NULL) {
     $options = $this->getRedirectOptions();
-    return isset($options[$key]) ? $options[$key] : $default;
+    return $options[$key] ?? $default;
   }
 
   /**
@@ -310,7 +310,7 @@ class Redirect extends ContentEntityBase {
       ->setTranslatable(FALSE)
       ->setSettings([
         'link_type' => LinkItemInterface::LINK_GENERIC,
-        'title' => DRUPAL_DISABLED
+        'title' => DRUPAL_DISABLED,
       ])
       ->setDisplayOptions('form', [
         'type' => 'link',

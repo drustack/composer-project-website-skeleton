@@ -40,7 +40,7 @@ class DomainRedirectRequestSubscriber implements EventSubscriberInterface {
    *
    * @var \Drupal\Core\Config\Config
    */
-  protected  $redirectConfig;
+  protected $redirectConfig;
 
   /**
    * Constructs a \Drupal\redirect\EventSubscriber\RedirectRequestSubscriber object.

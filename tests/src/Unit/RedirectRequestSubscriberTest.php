@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Drupal\Tests\redirect\Unit;
 
 use Drupal\Core\Entity\EntityTypeManagerInterface;
@@ -255,9 +257,11 @@ class RedirectRequestSubscriberTest extends UnitTestCase {
    * Gets response event object.
    *
    * @param $path_info
+   *   The "pathinfo" (the url without querystring).
    * @param $query_string
+   *   The query string.
    *
-   * @return RequestEvent
+   * @return \Symfony\Component\HttpKernel\Event\RequestEvent
    */
   protected function getGetResponseEventStub($path_info, $query_string) {
     $request = Request::create($path_info . '?' . $query_string, 'GET', [], [], [], ['SCRIPT_NAME' => 'index.php']);

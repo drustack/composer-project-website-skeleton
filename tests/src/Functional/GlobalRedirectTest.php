@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Drupal\Tests\redirect\Functional;
 
 use Drupal\Core\Language\Language;
@@ -193,9 +195,9 @@ class GlobalRedirectTest extends BrowserTestBase {
     $this->assertNoRedirect('admin/config/system/site-information', 403);
 
     $this->config->set('access_check', FALSE)->save();
-    // @todo - here it seems that the access check runs prior to our redirecting
+    // @todo Here it seems that the access check runs prior to our redirecting
     //   check why so and enable the test.
-    //$this->assertRedirect('admin/config/system/site-information', 'site-info');
+    //   $this->assertRedirect('admin/config/system/site-information', 'site-info');
 
     // Test original query string is preserved with alias normalization.
     $this->assertRedirect('Test-node?&foo&.bar=baz', 'test-node?&foo&.bar=baz');
