@@ -3,6 +3,7 @@
 namespace Drupal\redirect\Plugin\Field\FieldWidget;
 
 use Drupal\Component\Utility\UrlHelper;
+use Drupal\Core\Field\FieldDefinitionInterface;
 use Drupal\Core\Field\FieldItemListInterface;
 use Drupal\Core\Field\WidgetBase;
 use Drupal\Core\Url;
@@ -125,6 +126,14 @@ class RedirectSourceWidget extends WidgetBase {
       }
     }
     return $values;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public static function isApplicable(FieldDefinitionInterface $field_definition): bool {
+    $entity_type = $field_definition->getTargetEntityTypeId();
+    return $entity_type === 'redirect';
   }
 
 }
