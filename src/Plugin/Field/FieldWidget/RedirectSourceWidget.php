@@ -71,7 +71,8 @@ class RedirectSourceWidget extends WidgetBase {
           $url = Url::fromRoute('entity.path_alias.add_form');
           if ($url->access()) {
             $element['status_box'][]['#markup'] = '<div class="messages messages--warning">' . $this->t('The source path %path is likely a valid path. It is preferred to <a href="@url-alias">create URL aliases</a> for existing paths rather than redirects.', [
-              '%path' => $source_path, '@url-alias' => $url->toString(),
+              '%path' => $source_path,
+              '@url-alias' => $url->toString(),
             ]) . '</div>';
           }
         }
