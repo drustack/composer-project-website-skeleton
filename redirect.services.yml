@@ -6,9 +6,11 @@ services:
     arguments: ['@entity_type.manager', '@database', '@config.factory']
     tags:
       - { name: backend_overridable }
+  Drupal\redirect\RedirectRepository: '@redirect.repository'
   redirect.checker:
     class: Drupal\redirect\RedirectChecker
     arguments: ['@config.factory', '@state', '@access_manager', '@current_user', '@router.route_provider']
+  Drupal\redirect\RedirectChecker: '@redirect.checker'
   redirect.request_subscriber:
     class: Drupal\redirect\EventSubscriber\RedirectRequestSubscriber
     arguments: ['@redirect.repository', '@language_manager', '@config.factory', '@path_alias.manager', '@module_handler', '@entity_type.manager', '@redirect.checker', '@router.request_context', '@path_processor_manager']
