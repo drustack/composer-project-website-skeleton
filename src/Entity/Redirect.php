@@ -60,6 +60,8 @@ class Redirect extends ContentEntityBase {
    *   Base 64 hash.
    */
   public static function generateHash($source_path, array $source_query, $language) {
+    // Remove leading and trailing slashes, and convert to lowercase.
+    $source_path = trim(mb_strtolower($source_path), '/');
     $hash = [
       'source' => mb_strtolower($source_path),
       'language' => $language,
