@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a168eb80e36bcf30ced93bebd6f1cca6",
+    "content-hash": "0e1b3d00d01b024fb385472f612d2557",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2447,17 +2447,17 @@
         },
         {
             "name": "drupal/blazy",
-            "version": "3.0.9",
+            "version": "3.0.10",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/blazy.git",
-                "reference": "3.0.9"
+                "reference": "3.0.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/blazy-3.0.9.zip",
-                "reference": "3.0.9",
-                "shasum": "d6f5b75dae3b1e98632729228a909cea7bfb98dc"
+                "url": "https://ftp.drupal.org/files/projects/blazy-3.0.10.zip",
+                "reference": "3.0.10",
+                "shasum": "8887721c80b9faac7350af4723aae6fb0ffa6927"
             },
             "require": {
                 "drupal/core": ">=9.4"
@@ -2468,8 +2468,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.9",
-                    "datestamp": "1719068240",
+                    "version": "3.0.10",
+                    "datestamp": "1723362697",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2518,7 +2518,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/block_class.git",
-                "reference": "46fdcd251e4582b673703c713bbad596724a802b"
+                "reference": "db6e0f3e7b81b97d87bc07f017ac0dd2122e1558"
             },
             "require": {
                 "drupal/core": "^9 || ^10 || ^11"
@@ -2529,8 +2529,8 @@
                     "dev-2.0.x": "2.0.x-dev"
                 },
                 "drupal": {
-                    "version": "2.0.11+14-dev",
-                    "datestamp": "1720303551",
+                    "version": "2.0.11+16-dev",
+                    "datestamp": "1723233414",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -2718,7 +2718,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/bootstrap_barrio.git",
-                "reference": "0e501ae3e905dafcef0b6bf5d6c25878ded5156b"
+                "reference": "19091be430e148a2802dc8e9a5a27d6157672b3f"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11.0",
@@ -2730,8 +2730,8 @@
                     "dev-5.5.x": "5.5.x-dev"
                 },
                 "drupal": {
-                    "version": "5.5.16+12-dev",
-                    "datestamp": "1722790473",
+                    "version": "5.5.17-beta2+1-dev",
+                    "datestamp": "1723418178",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -5097,20 +5097,20 @@
         },
         {
             "name": "drupal/dropzonejs",
-            "version": "2.10.0",
+            "version": "2.11.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/dropzonejs.git",
-                "reference": "8.x-2.10"
+                "reference": "8.x-2.11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/dropzonejs-8.x-2.10.zip",
-                "reference": "8.x-2.10",
-                "shasum": "72bee3bce2d29eace381edba1a7e0237db6ecd48"
+                "url": "https://ftp.drupal.org/files/projects/dropzonejs-8.x-2.11.zip",
+                "reference": "8.x-2.11",
+                "shasum": "0fb4eff1bba2fd33850db0dfd9929ef4bd4569ee"
             },
             "require": {
-                "drupal/core": "^9.3 || ^10"
+                "drupal/core": "^9.3 || ^10 || ^11"
             },
             "require-dev": {
                 "drupal/entity_browser": "^2.5"
@@ -5121,8 +5121,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.10",
-                    "datestamp": "1709584348",
+                    "version": "8.x-2.11",
+                    "datestamp": "1723381576",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5190,17 +5190,17 @@
         },
         {
             "name": "drupal/dropzonejs_eb_widget",
-            "version": "2.10.0",
+            "version": "2.11.0",
             "require": {
-                "drupal/core": "^9.3 || ^10",
+                "drupal/core": "^9.3 || ^10 || ^11",
                 "drupal/dropzonejs": "*",
                 "drupal/entity_browser": "*"
             },
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.10",
-                    "datestamp": "1709584348",
+                    "version": "8.x-2.11",
+                    "datestamp": "1723381576",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5213,7 +5213,7 @@
             ],
             "authors": [
                 {
-                    "name": "Berdir",
+                    "name": "berdir",
                     "homepage": "https://www.drupal.org/user/214652"
                 },
                 {
@@ -5412,17 +5412,17 @@
         },
         {
             "name": "drupal/editor_advanced_link",
-            "version": "2.2.5",
+            "version": "2.2.6",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/editor_advanced_link.git",
-                "reference": "2.2.5"
+                "reference": "2.2.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/editor_advanced_link-2.2.5.zip",
-                "reference": "2.2.5",
-                "shasum": "01b789448f1ee93bf287a1cf140f5e8eecedfe1b"
+                "url": "https://ftp.drupal.org/files/projects/editor_advanced_link-2.2.6.zip",
+                "reference": "2.2.6",
+                "shasum": "f6d7c437900f288b1e735b4faf2decc99bdd30e8"
             },
             "require": {
                 "drupal/core": "^10.2 || ^11.0"
@@ -5434,8 +5434,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.2.5",
-                    "datestamp": "1723046670",
+                    "version": "2.2.6",
+                    "datestamp": "1723183019",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5590,26 +5590,29 @@
         },
         {
             "name": "drupal/embed",
-            "version": "1.8.0",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/embed.git",
-                "reference": "8.x-1.8"
+                "reference": "8.x-1.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/embed-8.x-1.8.zip",
-                "reference": "8.x-1.8",
-                "shasum": "c0612ae09b1eff8316726aac25c1b73853f57b14"
+                "url": "https://ftp.drupal.org/files/projects/embed-8.x-1.9.zip",
+                "reference": "8.x-1.9",
+                "shasum": "e6b4875e2b245ddf1a68a8615cbb4c5a378a0e9f"
             },
             "require": {
-                "drupal/core": "^10.2 || ^11"
+                "drupal/core": "^9.5 | ^10"
+            },
+            "require-dev": {
+                "drupal/ckeditor": "^1.0"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.8",
-                    "datestamp": "1723034389",
+                    "version": "8.x-1.9",
+                    "datestamp": "1723283819",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5626,7 +5629,7 @@
                     "homepage": "https://www.drupal.org/user/2828287"
                 },
                 {
-                    "name": "Dave Reid",
+                    "name": "dave reid",
                     "homepage": "https://www.drupal.org/user/53892"
                 },
                 {
@@ -5654,26 +5657,26 @@
         },
         {
             "name": "drupal/entity",
-            "version": "1.4.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity.git",
-                "reference": "8.x-1.4"
+                "reference": "8.x-1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity-8.x-1.4.zip",
-                "reference": "8.x-1.4",
-                "shasum": "1cf7712318fad144eab106a8fcfcd396aeb5676f"
+                "url": "https://ftp.drupal.org/files/projects/entity-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "86c0b75c173144aaedde3e3258dc0d3ce11d1a22"
             },
             "require": {
-                "drupal/core": "^9.2|^10.0"
+                "drupal/core": "^10.1 || ^11"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.4",
-                    "datestamp": "1661898023",
+                    "version": "8.x-1.5",
+                    "datestamp": "1723380062",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5686,7 +5689,7 @@
             ],
             "authors": [
                 {
-                    "name": "Berdir",
+                    "name": "berdir",
                     "homepage": "https://www.drupal.org/user/214652"
                 },
                 {
@@ -5727,7 +5730,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity_browser.git",
-                "reference": "893ea180f44e6590cf9b85d2393404ab7c66b920"
+                "reference": "3f2260badd96990a27596d3941023e0e1c1250a1"
             },
             "require": {
                 "drupal/core": "^10.2 || ^11"
@@ -5752,8 +5755,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.10+7-dev",
-                    "datestamp": "1720951598",
+                    "version": "8.x-2.10+11-dev",
+                    "datestamp": "1723305263",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -5815,17 +5818,17 @@
         },
         {
             "name": "drupal/entity_browser_entity_form",
-            "version": "2.10.0",
+            "version": "2.11.0",
             "require": {
-                "drupal/core": "^9.5 || ^10",
+                "drupal/core": "^10.2 || ^11",
                 "drupal/entity_browser": "*",
                 "drupal/inline_entity_form": "*"
             },
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.10",
-                    "datestamp": "1702325310",
+                    "version": "8.x-2.11",
+                    "datestamp": "1723378138",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5838,11 +5841,11 @@
             ],
             "authors": [
                 {
-                    "name": "Berdir",
+                    "name": "berdir",
                     "homepage": "https://www.drupal.org/user/214652"
                 },
                 {
-                    "name": "Dave Reid",
+                    "name": "dave reid",
                     "homepage": "https://www.drupal.org/user/53892"
                 },
                 {
@@ -6936,7 +6939,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/feeds_tamper.git",
-                "reference": "6b0cbdefbb53f10cb64ff41ed42aa76364cfe103"
+                "reference": "dd72663b432e3a70d2cef59f7e210bfce7456635"
             },
             "require": {
                 "drupal/core": "^8 || ^9 || ^10 || ^11",
@@ -6952,8 +6955,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0-beta3+3-dev",
-                    "datestamp": "1722070801",
+                    "version": "8.x-2.0-beta3+5-dev",
+                    "datestamp": "1723285691",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -7833,7 +7836,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/geofield_map.git",
-                "reference": "f4566aacd871d197ddb26fce643a1ee304e3cfa1"
+                "reference": "223c22ac74c85828033faf4670b303fc7018ec7d"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10",
@@ -7845,8 +7848,8 @@
                     "dev-3.0.x": "3.0.x-dev"
                 },
                 "drupal": {
-                    "version": "3.0.20+1-dev",
-                    "datestamp": "1722953786",
+                    "version": "3.0.20+2-dev",
+                    "datestamp": "1723191620",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -9728,26 +9731,26 @@
         },
         {
             "name": "drupal/mailsystem",
-            "version": "4.4.0",
+            "version": "4.5.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/mailsystem.git",
-                "reference": "8.x-4.4"
+                "reference": "8.x-4.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/mailsystem-8.x-4.4.zip",
-                "reference": "8.x-4.4",
-                "shasum": "49b2e9efd090cdb4a282c7638b1c76d6723c47b6"
+                "url": "https://ftp.drupal.org/files/projects/mailsystem-8.x-4.5.zip",
+                "reference": "8.x-4.5",
+                "shasum": "e52a814a87b343ab69f8d8ef462a9873c1d01158"
             },
             "require": {
-                "drupal/core": "^9 || ^10"
+                "drupal/core": "^9 || ^10.1 || ^11"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-4.4",
-                    "datestamp": "1657576306",
+                    "version": "8.x-4.5",
+                    "datestamp": "1723379369",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9760,7 +9763,7 @@
             ],
             "authors": [
                 {
-                    "name": "Berdir",
+                    "name": "berdir",
                     "homepage": "https://www.drupal.org/user/214652"
                 },
                 {
@@ -10346,7 +10349,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/mimemail.git",
-                "reference": "bb4c3f8a8333a1a74e8082371c86435bafe1ec66"
+                "reference": "31ba81bc9f17da24445937e7bf56c8c9da9e7c57"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10",
@@ -10361,8 +10364,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha6+9-dev",
-                    "datestamp": "1722194191",
+                    "version": "8.x-1.0-alpha6+11-dev",
+                    "datestamp": "1723265261",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -11396,7 +11399,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/redirect.git",
-                "reference": "f900de0ce3f1267b3213ffa8731085d940f8129b"
+                "reference": "69303ac2d1af0cacace29125f7b214db58d3f267"
             },
             "require": {
                 "drupal/core": "^9.2 || ^10 || ^11"
@@ -11407,8 +11410,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.9+8-dev",
-                    "datestamp": "1723067690",
+                    "version": "8.x-1.9+14-dev",
+                    "datestamp": "1723277206",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -11425,7 +11428,7 @@
                     "homepage": "https://www.drupal.org/user/214652"
                 },
                 {
-                    "name": "Dave Reid",
+                    "name": "dave reid",
                     "homepage": "https://www.drupal.org/user/53892"
                 },
                 {
@@ -12504,7 +12507,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/sitemap.git",
-                "reference": "74f7a09f0321f2b5cd75c55f8a2eb56f8114c637"
+                "reference": "4d911d061010a0efc0957584d225da22b08355ce"
             },
             "require": {
                 "drupal/core": "^9.1 || ^10 || ^11"
@@ -12518,8 +12521,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0-beta7+1-dev",
-                    "datestamp": "1723023721",
+                    "version": "8.x-2.0-beta8+1-dev",
+                    "datestamp": "1723200334",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -12565,17 +12568,17 @@
         },
         {
             "name": "drupal/slick",
-            "version": "3.0.2",
+            "version": "3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/slick.git",
-                "reference": "3.0.2"
+                "reference": "3.0.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/slick-3.0.2.zip",
-                "reference": "3.0.2",
-                "shasum": "e77f46f4897b4a7ca4dd55e43f57cfec9bbb773e"
+                "url": "https://ftp.drupal.org/files/projects/slick-3.0.3.zip",
+                "reference": "3.0.3",
+                "shasum": "be22330dd9f070521d9dcc01f441d9df7c48a288"
             },
             "require": {
                 "drupal/blazy": "^3.0",
@@ -12584,8 +12587,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.2",
-                    "datestamp": "1715948640",
+                    "version": "3.0.3",
+                    "datestamp": "1723362744",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
