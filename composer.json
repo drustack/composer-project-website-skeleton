@@ -155,11 +155,13 @@
     "name": "drustack/website-skeleton",
     "prefer-stable": true,
     "repositories": {
-        "asset": {
+        "https://asset-packagist.org": {
+            "canonical": false,
             "type": "composer",
             "url": "https://asset-packagist.org"
         },
-        "drupal": {
+        "https://packages.drupal.org/8": {
+            "canonical": false,
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         }
@@ -167,7 +169,7 @@
     "require": {
         "drupal/acl": "~2.0.0-beta1",
         "drupal/address": "~2.0.1",
-        "drupal/admin_toolbar": "~3.4.0",
+        "drupal/admin_toolbar": "~3.5.0",
         "drupal/advagg": "6.0.x-dev",
         "drupal/asset_injector": "2.x-dev",
         "drupal/authorization": "1.x-dev",
@@ -207,7 +209,7 @@
         "drupal/ctools": "4.1.x-dev",
         "drupal/custom_formatters": "4.0.x-dev",
         "drupal/default_content": "2.0.x-dev",
-        "drupal/devel": "~5.2.1",
+        "drupal/devel": "~5.3.1",
         "drupal/devel_entity_updates": "~4.0",
         "drupal/diff": "~1.0",
         "drupal/dropdown_language": "~4.0.0",
@@ -264,7 +266,7 @@
         "drupal/layout_library": "1.x-dev",
         "drupal/ldap": "4.x-dev",
         "drupal/leaflet": "10.2.x-dev",
-        "drupal/libraries": "~4.0.0",
+        "drupal/libraries": "~4.0.5",
         "drupal/link_attributes": "~2.1.0",
         "drupal/linkchecker": "~2.0.0-alpha1",
         "drupal/linkit": "~6.1.4",
@@ -287,7 +289,7 @@
         "drupal/pathauto": "~1.8",
         "drupal/pdf_api": "~2.4.2",
         "drupal/poll": "~1.4",
-        "drupal/printable": "~3.1.2",
+        "drupal/printable": "~3.1.3",
         "drupal/private_files_download_permission": "~3.1.0",
         "drupal/profile": "1.x-dev",
         "drupal/quicklink": "~2.0.2",
@@ -296,9 +298,9 @@
         "drupal/recaptcha": "3.x-dev",
         "drupal/redirect": "1.x-dev",
         "drupal/restui": "~1.18",
-        "drupal/rules": "~3.0-alpha8",
+        "drupal/rules": "~4.0.0",
         "drupal/samlauth": "3.x-dev",
-        "drupal/scheduler": "~2.0.0-rc5",
+        "drupal/scheduler": "~2.1.0",
         "drupal/schema_metatag": "~3.0.0",
         "drupal/search404": "2.x-dev",
         "drupal/search_api": "~1.30",
@@ -332,7 +334,7 @@
         "drupal/token": "1.x-dev",
         "drupal/translatable_menu_link_uri": "~2.1.0",
         "drupal/twig-twig": "~2.0.1",
-        "drupal/twig_tweak": "~3.0",
+        "drupal/twig_tweak": "~3.4.0",
         "drupal/unlimited_number": "~2.0",
         "drupal/vbo_export": "~4.1.0",
         "drupal/view_unpublished": "~1.1",
