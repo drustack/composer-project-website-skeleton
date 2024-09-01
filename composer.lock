@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d328bdba929ebf526182ecbacdcbcc5f",
+    "content-hash": "a1256758c62cc5e8639ec5c642cfd159",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2084,26 +2084,61 @@
         },
         {
             "name": "drupal/back_to_top",
-            "version": "dev-project-update-bot-only",
+            "version": "dev-2.x",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/issue/back_to_top-3428936.git",
-                "reference": "861731b15bb5a4fef307e7ea96893d24aedc12c6"
+                "url": "https://git.drupalcode.org/project/back_to_top.git",
+                "reference": "19ea9e923a23b91585367af7ff369f346fe820f4"
             },
             "require": {
                 "drupal/core": "^8 || ^9 || ^10 || ^11"
             },
             "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "2.x-dev",
+                    "datestamp": "1725125613",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "acke",
+                    "homepage": "https://www.drupal.org/user/765764"
+                },
+                {
+                    "name": "dqd",
+                    "homepage": "https://www.drupal.org/user/1001934"
+                },
+                {
+                    "name": "Nitesh Sethia",
+                    "homepage": "https://www.drupal.org/user/2474982"
+                },
+                {
+                    "name": "sumitmadan",
+                    "homepage": "https://www.drupal.org/user/1538790"
+                },
+                {
+                    "name": "thomas alsén",
+                    "homepage": "https://www.drupal.org/user/1726528"
+                }
             ],
             "description": "Back To Top adds a button that hovers in the bottom of your screen and allow users to smoothly scroll up the page using jQuery.",
             "homepage": "https://www.drupal.org/project/back_to_top",
             "support": {
-                "issues": "https://www.drupal.org/project/issues/back_to_top",
-                "source": "https://git.drupalcode.org/project/back_to_top"
-            },
-            "time": "2024-03-16T16:18:42+00:00"
+                "source": "https://git.drupalcode.org/project/back_to_top",
+                "issues": "https://www.drupal.org/project/issues/back_to_top"
+            }
         },
         {
             "name": "drupal/better_exposed_filters",
@@ -5203,7 +5238,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/feeds.git",
-                "reference": "d33e70877125d3dbd7bad9d6e04aad02b4a601ae"
+                "reference": "1669313b397c8f13143b46a460ea8dc74c151f01"
             },
             "require": {
                 "drupal/core": "^10.1 || ^11",
@@ -5219,8 +5254,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-beta5+13-dev",
-                    "datestamp": "1724404946",
+                    "version": "8.x-3.0-beta5+15-dev",
+                    "datestamp": "1725188521",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -5748,6 +5783,31 @@
             }
         },
         {
+            "name": "drupal/flood_control",
+            "version": "dev-3454910-drupal-11-compatibility",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/issue/flood_control-3454910.git",
+                "reference": "7bb446fa7ef82c32235ced889fc7283d0939cf7e"
+            },
+            "require": {
+                "drupal/core": "^10.2 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drush": {
+                    "services": {
+                        "drush.services.yml": ">=9"
+                    }
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Provides administration possibilities for hidden flood control variables",
+            "time": "2024-08-21T09:43:18+00:00"
+        },
+        {
             "name": "drupal/geocoder",
             "version": "4.25.0",
             "source": {
@@ -6182,17 +6242,17 @@
         },
         {
             "name": "drupal/image_effects",
-            "version": "4.0.0-beta1",
+            "version": "4.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/image_effects.git",
-                "reference": "4.0.0-beta1"
+                "reference": "4.0.0-beta2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/image_effects-4.0.0-beta1.zip",
-                "reference": "4.0.0-beta1",
-                "shasum": "496eee469bb7c84336c82206e6628a336253cb64"
+                "url": "https://ftp.drupal.org/files/projects/image_effects-4.0.0-beta2.zip",
+                "reference": "4.0.0-beta2",
+                "shasum": "8d3446513348535ab1be446a3a3fbe9ab2bf39fc"
             },
             "require": {
                 "drupal/core": "^10.3 | ^11",
@@ -6215,8 +6275,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "4.0.0-beta1",
-                    "datestamp": "1723547538",
+                    "version": "4.0.0-beta2",
+                    "datestamp": "1725133607",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -8020,6 +8080,52 @@
                 "source": "https://git.drupalcode.org/project/migrate_upgrade",
                 "issues": "https://www.drupal.org/project/issues/migrate_upgrade",
                 "slack": "#migrate"
+            }
+        },
+        {
+            "name": "drupal/mimemail",
+            "version": "dev-2.0.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/mimemail.git",
+                "reference": "79c1820fe07b42e924ae00c8b5ed3dde773d232e"
+            },
+            "require": {
+                "drupal/core": "^10.3 || ^11",
+                "drupal/mailsystem": "^4"
+            },
+            "require-dev": {
+                "drupal/rules": "^4.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.0.x": "2.0.x-dev"
+                },
+                "drupal": {
+                    "version": "2.0.x-dev",
+                    "datestamp": "1724887756",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TR",
+                    "homepage": "https://www.drupal.org/user/202830"
+                }
+            ],
+            "description": "Sends MIME-encoded emails with embedded images and attachments.",
+            "homepage": "https://www.drupal.org/project/mimemail",
+            "support": {
+                "source": "https://git.drupalcode.org/project/mimemail",
+                "issues": "https://www.drupal.org/project/issues/mimemail"
             }
         },
         {
@@ -11356,7 +11462,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/issue/xmlsitemap-3435760.git",
-                "reference": "d77ebe970584e859ba37908dccc68e92653ec543"
+                "reference": "ff4c6f05d70be8bf2ade77c3a82be13cb45a49cf"
             },
             "require": {
                 "ext-xmlwriter": "*"
@@ -11386,7 +11492,7 @@
                 "issues": "http://drupal.org/project/issues/xmlsitemap",
                 "source": "https://git.drupalcode.org/project/xmlsitemap"
             },
-            "time": "2024-08-29T07:11:16+00:00"
+            "time": "2024-09-01T09:41:03+00:00"
         },
         {
             "name": "drush/drush",
@@ -25520,6 +25626,7 @@
         "drupal/feeds_ex": 20,
         "drupal/feeds_tamper": 20,
         "drupal/field_permissions": 20,
+        "drupal/flood_control": 20,
         "drupal/geofield": 20,
         "drupal/hcaptcha": 20,
         "drupal/inline_entity_form": 20,
@@ -25527,6 +25634,7 @@
         "drupal/leaflet": 20,
         "drupal/memcache": 20,
         "drupal/menu_block": 20,
+        "drupal/mimemail": 20,
         "drupal/office_hours": 20,
         "drupal/paragraphs": 20,
         "drupal/profile": 20,
