@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "33907aeb0d9db1406d25f4125aa26284",
+    "content-hash": "ada01cc4d3cc6e58d05f541deccbc197",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2714,11 +2714,17 @@
         },
         {
             "name": "drupal/bootstrap_barrio",
-            "version": "dev-5.5.x",
+            "version": "5.5.17",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/bootstrap_barrio.git",
-                "reference": "1b6aa467c209600238642fcd973e995cb5d7cc47"
+                "reference": "5.5.17"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bootstrap_barrio-5.5.17.zip",
+                "reference": "5.5.17",
+                "shasum": "2f24a1caee5cd9041c49c607c2cde0a7d48083ae"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11.0",
@@ -2726,15 +2732,12 @@
             },
             "type": "drupal-theme",
             "extra": {
-                "branch-alias": {
-                    "dev-5.5.x": "5.5.x-dev"
-                },
                 "drupal": {
-                    "version": "5.5.17-beta5+1-dev",
-                    "datestamp": "1725300182",
+                    "version": "5.5.17",
+                    "datestamp": "1725856215",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -2769,10 +2772,10 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/bootstrap_layouts.git",
-                "reference": "c9de9b35479f1743edbdccf30f66b752d980ff44"
+                "reference": "ddf17e4ddfbac5136d748599730ba1f4b2af7e9e"
             },
             "require": {
-                "drupal/core": "^9.3 || ^10"
+                "drupal/core": "^10.3 || ^11"
             },
             "type": "drupal-module",
             "extra": {
@@ -2780,8 +2783,8 @@
                     "dev-5.x": "5.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-5.3+2-dev",
-                    "datestamp": "1724146368",
+                    "version": "8.x-5.3+3-dev",
+                    "datestamp": "1726478455",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -2809,7 +2812,8 @@
             "description": "This module is going to generate layouts with Bootstrap grid system.",
             "homepage": "https://www.drupal.org/project/bootstrap_layouts",
             "support": {
-                "source": "https://git.drupalcode.org/project/bootstrap_layouts"
+                "source": "http://cgit.drupalcode.org/bootstrap_layouts",
+                "issues": "https://www.drupal.org/project/issues/bootstrap_layouts"
             }
         },
         {
@@ -12589,11 +12593,17 @@
         },
         {
             "name": "drupal/sitemap",
-            "version": "dev-2.x",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/sitemap.git",
-                "reference": "acfc11fd46717b4997d0038104984deae91cd23c"
+                "reference": "8.x-2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/sitemap-8.x-2.0.zip",
+                "reference": "8.x-2.0",
+                "shasum": "1e1db0da34ff07318cd2179b392d6495da49a0f4"
             },
             "require": {
                 "drupal/core": "^10.2 || ^11"
@@ -12603,15 +12613,12 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-2.0-beta9+6-dev",
-                    "datestamp": "1723639745",
+                    "version": "8.x-2.0",
+                    "datestamp": "1724850275",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -17501,16 +17508,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v5.1.0",
+            "version": "v5.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "683130c2ff8c2739f4822ff7ac5c873ec529abd1"
+                "reference": "23c79fbbfb725fb92af9bcf41065c8e9a0d49ddb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/683130c2ff8c2739f4822ff7ac5c873ec529abd1",
-                "reference": "683130c2ff8c2739f4822ff7ac5c873ec529abd1",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/23c79fbbfb725fb92af9bcf41065c8e9a0d49ddb",
+                "reference": "23c79fbbfb725fb92af9bcf41065c8e9a0d49ddb",
                 "shasum": ""
             },
             "require": {
@@ -17553,9 +17560,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v5.1.0"
+                "source": "https://github.com/nikic/PHP-Parser/tree/v5.2.0"
             },
-            "time": "2024-07-01T20:03:41+00:00"
+            "time": "2024-09-15T16:40:33+00:00"
         },
         {
             "name": "npm-asset/accessible360--accessible-slick",
@@ -29840,7 +29847,6 @@
         "drupal/block_class": 20,
         "drupal/block_content_permissions": 20,
         "drupal/block_visibility_groups": 20,
-        "drupal/bootstrap_barrio": 20,
         "drupal/bootstrap_layouts": 20,
         "drupal/bootstrap_sass": 20,
         "drupal/captcha": 20,
@@ -29899,7 +29905,6 @@
         "drupal/seckit": 20,
         "drupal/security_review": 20,
         "drupal/select2": 20,
-        "drupal/sitemap": 20,
         "drupal/styleguide": 20,
         "drupal/symfony_mailer": 20,
         "drupal/tamper": 20,
