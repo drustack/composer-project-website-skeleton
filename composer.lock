@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6dfdb789c469e42e10e1ed66d8971655",
+    "content-hash": "22d073c217bf1549df7a1e213d06e15b",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3873,17 +3873,17 @@
         },
         {
             "name": "drupal/diff",
-            "version": "1.7.0",
+            "version": "2.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/diff.git",
-                "reference": "8.x-1.7"
+                "reference": "2.0.0-beta2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/diff-8.x-1.7.zip",
-                "reference": "8.x-1.7",
-                "shasum": "d282bdf3350ac71f95b38576a9f397bdbab8d249"
+                "url": "https://ftp.drupal.org/files/projects/diff-2.0.0-beta2.zip",
+                "reference": "2.0.0-beta2",
+                "shasum": "41f2623de110d0d480c4c57df6526e229d2778c4"
             },
             "require": {
                 "drupal/core": "^10 || ^11",
@@ -3898,16 +3898,16 @@
                 "phpstan/phpstan-deprecation-rules": "*",
                 "phpstan/phpstan-phpunit": "1.4.x-dev",
                 "phpstan/phpstan-strict-rules": "^1@stable",
-                "previousnext/coding-standard": "^1"
+                "previousnext/coding-standard": "1.1.0"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.7",
-                    "datestamp": "1718073570",
+                    "version": "2.0.0-beta2",
+                    "datestamp": "1720739026",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 }
             },
