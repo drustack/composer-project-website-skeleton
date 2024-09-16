@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ada01cc4d3cc6e58d05f541deccbc197",
+    "content-hash": "f02c63e0986c0fedf7ce97f70dba818f",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2164,26 +2164,29 @@
         },
         {
             "name": "drupal/asset_injector",
-            "version": "dev-2.x",
+            "version": "2.21.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/asset_injector.git",
-                "reference": "0fbb0cc9e9114f1e87e53d42327474430ddfacea"
+                "reference": "8.x-2.21"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/asset_injector-8.x-2.21.zip",
+                "reference": "8.x-2.21",
+                "shasum": "24dc111e995d6a33cb9f11f106b0d1e716e92767"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-2.20+10-dev",
-                    "datestamp": "1720800441",
+                    "version": "8.x-2.21",
+                    "datestamp": "1723044656",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -7800,7 +7803,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/geofield.git",
-                "reference": "d2f940cfa28cf51b494b1986c6e127234edadadc"
+                "reference": "ea971851f5d5d16b2cc8f108fb43e7c80bc21876"
             },
             "require": {
                 "drupal/core": "^9 || ^10 || ^11",
@@ -7816,8 +7819,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.61+0-dev",
-                    "datestamp": "1725441786",
+                    "version": "8.x-1.61+1-dev",
+                    "datestamp": "1726489646",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -29841,7 +29844,6 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/advagg": 20,
-        "drupal/asset_injector": 20,
         "drupal/authorization": 20,
         "drupal/better_exposed_filters": 20,
         "drupal/block_class": 20,

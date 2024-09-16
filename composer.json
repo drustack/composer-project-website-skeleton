@@ -58,9 +58,6 @@
             "npm-asset"
         ],
         "patches": {
-            "drupal/asset_injector": {
-                "https://drupal.org/node/3418928": "https://git.drupalcode.org/project/asset_injector/-/merge_requests/14.diff"
-            },
             "drupal/block_class": {
                 "https://drupal.org/node/3279758": "https://git.drupalcode.org/project/block_class/-/merge_requests/5.diff"
             },
@@ -171,7 +168,7 @@
         "drupal/address": "~2.0.1",
         "drupal/admin_toolbar": "~3.5.0",
         "drupal/advagg": "6.0.x-dev",
-        "drupal/asset_injector": "2.x-dev",
+        "drupal/asset_injector": "~2.21",
         "drupal/authorization": "1.x-dev",
         "drupal/avatars": "~1.1",
         "drupal/back_to_top": "~3.0.0",
