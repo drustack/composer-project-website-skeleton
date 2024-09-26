@@ -6,6 +6,7 @@ dependencies:
     - image.style.thumbnail
     - media.type.image
   module:
+    - imce
     - path
     - svg_image
 id: media.image.default
@@ -26,7 +27,9 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
-    third_party_settings: {  }
+    third_party_settings:
+      imce:
+        enabled: false
   langcode:
     type: language_select
     weight: 0

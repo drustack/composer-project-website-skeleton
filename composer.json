@@ -58,8 +58,14 @@
             "npm-asset"
         ],
         "patches": {
+            "drupal/admin_toolbar": {
+                "https://drupal.org/node/3474908": "https://git.drupalcode.org/project/admin_toolbar/-/merge_requests/100.diff"
+            },
             "drupal/block_class": {
                 "https://drupal.org/node/3279758": "https://git.drupalcode.org/project/block_class/-/merge_requests/5.diff"
+            },
+            "drupal/captcha": {
+                "https://drupal.org/node/3307927": "https://git.drupalcode.org/project/captcha/-/merge_requests/98.diff"
             },
             "drupal/cas_attributes": {
                 "https://drupal.org/node/3324867": "https://drupal.org/files/issues/2022-12-02/3324867-type-error-implode.patch"
@@ -110,6 +116,9 @@
                 "https://drupal.org/node/2899744": "https://drupal.org/files/issues/2022-04-17/2899744-54.patch",
                 "https://drupal.org/node/3139127": "https://drupal.org/files/issues/2020-05-22/profile-local-tasks-313912-2.patch",
                 "https://drupal.org/node/3178743": "https://drupal.org/files/issues/2024-03-19/respect-assigned-roles-3178743-8.patch"
+            },
+            "drupal/quicklink": {
+                "https://drupal.org/node/3472776": "https://git.drupalcode.org/project/quicklink/-/merge_requests/14.diff"
             },
             "drupal/recaptcha": {
                 "https://drupal.org/node/2852269": "https://git.drupalcode.org/project/recaptcha/-/merge_requests/15.diff"
@@ -181,11 +190,6 @@
             "type": "vcs",
             "url": "https://git.drupalcode.org/issue/select2-3454104.git"
         },
-        "https://drupal.org/node/3454910": {
-            "canonical": false,
-            "type": "vcs",
-            "url": "https://git.drupalcode.org/issue/flood_control-3454910.git"
-        },
         "https://drupal.org/node/3455298": {
             "canonical": false,
             "type": "vcs",
@@ -214,7 +218,7 @@
     },
     "require": {
         "drupal/address": "~2.0.1",
-        "drupal/admin_toolbar": "~3.5.0",
+        "drupal/admin_toolbar": "3.x-dev",
         "drupal/asset_injector": "~2.21",
         "drupal/avatars": "~1.1",
         "drupal/back_to_top": "2.x-dev",
@@ -266,7 +270,7 @@
         "drupal/feeds_tamper": "2.x-dev",
         "drupal/field_formatter_class": "~1.4",
         "drupal/field_permissions": "1.x-dev",
-        "drupal/flood_control": "dev-3454910-drupal-11-compatibility",
+        "drupal/flood_control": "~3.0.0",
         "drupal/geocoder": "~4.4",
         "drupal/geofield": "1.x-dev",
         "drupal/geofield_map": "~11.0.0",
@@ -307,7 +311,7 @@
         "drupal/pdf_api": "~2.4.2",
         "drupal/poll": "~2.0.0-alpha1",
         "drupal/profile": "1.x-dev",
-        "drupal/quicklink": "~2.0.2",
+        "drupal/quicklink": "2.0.x-dev",
         "drupal/recaptcha": "3.x-dev",
         "drupal/redirect": "1.x-dev",
         "drupal/restui": "~1.18",
@@ -374,6 +378,7 @@
         "npm-asset/leaflet-gesture-handling": "~1.2",
         "npm-asset/leaflet.locatecontrol": "~0.76",
         "npm-asset/leaflet.markercluster": "~1.5",
+        "npm-asset/quicklink": "~2.3",
         "npm-asset/select2": "~4.0",
         "npm-asset/select2-bootstrap-5-theme": "~1.2",
         "npm-asset/slick-carousel": "~1.8",

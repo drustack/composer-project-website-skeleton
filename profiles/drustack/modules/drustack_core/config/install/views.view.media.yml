@@ -134,10 +134,6 @@ display:
             image_style: thumbnail
             image_loading:
               attribute: lazy
-            svg_attributes:
-              width: null
-              height: null
-            svg_render_as_image: true
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -162,30 +158,12 @@ display:
           exclude: false
           alter:
             alter_text: false
-            text: ''
             make_link: false
-            path: ''
             absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
             word_boundary: false
             ellipsis: false
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
             strip_tags: false
             trim: false
-            preserve_tags: ''
             html: false
           element_type: ''
           element_class: ''
@@ -476,7 +454,6 @@ display:
               past_format: '@interval ago'
               granularity: 2
               refresh: 60
-              description: ''
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -637,12 +614,7 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
-              article: '0'
-              page: '0'
-              blog: '0'
-              webmaster: '0'
               administrator: '0'
-            placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -684,10 +656,6 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
-              article: '0'
-              page: '0'
-              blog: '0'
-              webmaster: '0'
               administrator: '0'
             reduce: false
           is_grouped: false
@@ -818,10 +786,6 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
-              article: '0'
-              page: '0'
-              blog: '0'
-              webmaster: '0'
               administrator: '0'
             reduce: false
           is_grouped: false
@@ -843,28 +807,14 @@ display:
           row_class: ''
           default_row_class: true
           columns:
-            media_bulk_form: media_bulk_form
-            thumbnail__target_id: thumbnail__target_id
             name: name
             bundle: bundle
+            changed: changed
             uid: uid
             status: status
-            changed: changed
-            operations: operations
+            thumbnail__target_id: thumbnail__target_id
           default: changed
           info:
-            media_bulk_form:
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            thumbnail__target_id:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
             name:
               sortable: true
               default_sort_order: asc
@@ -875,6 +825,13 @@ display:
             bundle:
               sortable: true
               default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            changed:
+              sortable: true
+              default_sort_order: desc
               align: ''
               separator: ''
               empty_column: false
@@ -893,14 +850,9 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
-            changed:
-              sortable: true
-              default_sort_order: desc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            operations:
+            thumbnail__target_id:
+              sortable: false
+              default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
@@ -922,16 +874,8 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
-      css_class: ''
-      use_ajax: false
-      group_by: false
-      show_admin_links: true
-      use_more: false
-      use_more_always: true
-      use_more_text: more
       header: {  }
       footer: {  }
-      hide_attachment_summary: false
       display_extenders: {  }
     cache_metadata:
       max-age: 0
@@ -950,9 +894,6 @@ display:
     position: 1
     display_options:
       display_description: ''
-      display_comment: ''
-      rendering_language: '***LANGUAGE_entity_translation***'
-      exposed_block: false
       display_extenders: {  }
       path: admin/content/media
       menu:
