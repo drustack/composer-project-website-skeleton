@@ -378,11 +378,8 @@ fields:
         show_header: 1
         markdown: drupal_html_to_text
     description:
-      type: text_field_diff_builder
-      settings:
-        show_header: 1
-        markdown: drupal_html_to_text
-        compare_format: 0
+      type: hidden
+      settings: {  }
     parent:
       type: hidden
       settings: {  }
