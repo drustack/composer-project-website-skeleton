@@ -23,9 +23,9 @@ spec:
           resources:
             requests:
               cpu: 10m
-              memory: 64Mi
+              memory: 64M
             limits:
-              memory: 128Mi
+              memory: 128M
           workingDir: /var/www/html
           ports:
             - containerPort: 80
@@ -40,12 +40,12 @@ spec:
             - mountPath: /etc/apache2/sites-enabled/000-default.conf
               name: etc-apache2-sites-enabled
               subPath: 000-default.conf
-#            - mountPath: /var/www/html
-#              name: var-www-html
+            - mountPath: /var/www/html
+              name: var-www-html
       volumes:
         - name: etc-apache2-sites-enabled
           configMap:
             name: etc-apache2-sites-enabled
-#        - name: var-www-html
-#          persistentVolumeClaim:
-#            claimName: var-www-html
+        - name: var-www-html
+          persistentVolumeClaim:
+            claimName: var-www-html

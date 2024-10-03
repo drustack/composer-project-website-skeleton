@@ -2,14 +2,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: sshd
+  name: solr
   namespace: default
   labels:
-    service: sshd
+    service: solr
 spec:
   ports:
-    - name: sshd
-      port: 22
+    - name: solr
+      port: 8983
   selector:
-    service: sshd
-  type: NodePort
+    service: solr
