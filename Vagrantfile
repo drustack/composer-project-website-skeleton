@@ -43,11 +43,6 @@ Vagrant.configure("2") do |config|
     chgrp -Rf www-data /vagrant
     chmod -Rf g+rw /vagrant
 
-    # pre-symlink path for csi-hostpath
-    mkdir -p /vagrant/sites/default/csi-hostpath
-    ln -s /vagrant/sites/default/csi-hostpath /var/lib/csi-hostpath
-    rm -rf /var/lib/csi-hostpath/symlinks
-
     # manually provision kubernetes
     ansible-playbook \
       /etc/ansible/playbooks/verify.yml \
@@ -64,8 +59,8 @@ Vagrant.configure("2") do |config|
     pushd /var/lib/csi-hostpath && /vagrant/sites/default/csi-hostpath-symlink.sh && popd
 
     # hotfix for solr
-    rsync -avP modules/contrib/search_api_solr/jump-start/solr9/config-set/ /vagrant/sites/default/csi-hostpath/symlinks/default/opt-solr-server-solr-configsets-default-conf
-    chown -Rf 8983:8983 $(readlink -f /vagrant/sites/default/csi-hostpath/symlinks/default/var-solr-solr-0)
+    rsync -avP /vagrant/modules/contrib/search_api_solr/jump-start/solr9/config-set/ /var/lib/csi-hostpath/symlinks/default/opt-solr-server-solr-configsets-default-conf
+    chown -Rf 8983:8983 $(readlink -f /var/lib/csi-hostpath/symlinks/default/var-solr-solr-0)
     kubectl -n default delete pod solr-0
 
     # wait until all pods running correctly
