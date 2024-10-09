@@ -3,10 +3,10 @@ status: true
 dependencies:
   module:
     - media
-    - node
-id: node.field_image
+    - taxonomy
+id: taxonomy_term.field_image
 field_name: field_image
-entity_type: node
+entity_type: taxonomy_term
 type: entity_reference
 settings:
   target_type: media
