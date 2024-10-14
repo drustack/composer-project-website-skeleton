@@ -42,6 +42,7 @@ Vagrant.configure("2") do |config|
     # pre-fixup for path and permission
     chgrp -Rf www-data /vagrant
     chmod -Rf g+rw /vagrant
+    chmod a-w /vagrant/sites/default /vagrant/sites/default/settings.php
 
     # manually provision kubernetes
     ansible-playbook \
