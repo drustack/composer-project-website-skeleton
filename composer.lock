@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "02272e89d3361affdc140b936cf8d4fa",
+    "content-hash": "8a4f433783907e28d18ed651bdb9fb67",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3759,6 +3759,48 @@
                 "issues": "https://gitlab.com/drupalspoons/devel/-/issues",
                 "slack": "https://drupal.slack.com/archives/C012WAW1MH6"
             }
+        },
+        {
+            "name": "drupal/devel_entity_updates",
+            "version": "dev-3454902-drupal-11-compatibility",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/issue/devel_entity_updates-3454902.git",
+                "reference": "bb423cf80ed55ec177b4b1d6bd07d64e79ef5080"
+            },
+            "require": {
+                "drupal/core": "^10.1 || ^11",
+                "drush/drush": "^11 || ^12 || ^13"
+            },
+            "require-dev": {
+                "drupal/devel": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^11 || ^12 || ^13"
+                    }
+                }
+            },
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Francesco Placella (plach)",
+                    "homepage": "https://www.drupal.org/u/plach",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Provides developers an API and drush command to perform automatic entity updates.",
+            "homepage": "http://drupal.org/project/devel_entity_updates",
+            "support": {
+                "issues": "https://drupal.org/project/issues/devel_entity_updates",
+                "irc": "irc://irc.freenode.org/drupal-contribute",
+                "source": "https://cgit.drupalcode.org/devel_entity_updates"
+            },
+            "time": "2024-09-11T01:37:10+00:00"
         },
         {
             "name": "drupal/diff",
@@ -10501,6 +10543,22 @@
                 "source": "https://git.drupalcode.org/project/telephone_validation",
                 "issues": "http://drupal.org/project/issues/telephone_validation"
             }
+        },
+        {
+            "name": "drupal/text_resize",
+            "version": "dev-project-update-bot-only",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/issue/text_resize-3434962.git",
+                "reference": "d930ff820bd32ded2c09cc1adea3eedef1242fff"
+            },
+            "type": "drupal-module",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Creates a block that allows your users to resize text on the page.",
+            "homepage": "https://www.drupal.org/project/text_resize",
+            "time": "2024-10-20T14:43:57+00:00"
         },
         {
             "name": "drupal/tmgmt",
@@ -25924,6 +25982,7 @@
         "drupal/config_split": 20,
         "drupal/ctools": 20,
         "drupal/default_content": 20,
+        "drupal/devel_entity_updates": 20,
         "drupal/easy_breadcrumb": 20,
         "drupal/entity_browser": 20,
         "drupal/entity_usage": 20,
@@ -25958,6 +26017,7 @@
         "drupal/select2": 20,
         "drupal/styleguide": 20,
         "drupal/symfony_mailer": 20,
+        "drupal/text_resize": 20,
         "drupal/token": 20,
         "drupal/translatable_menu_link_uri": 20,
         "drupal/twig-twig": 20,
