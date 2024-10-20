@@ -63,6 +63,7 @@ data:
     thread_cache_size              = 256
     tmp_table_size                 = 32M
     tmpdir                         = /tmp
+    transaction_isolation          = READ-COMMITTED
     user                           = mysql
     wait_timeout                   = 600
 

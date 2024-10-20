@@ -1,0 +1,39 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: memcached
+  namespace: default
+  labels:
+    service: memcached
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      service: memcached
+  template:
+    metadata:
+      labels:
+        service: memcached
+    spec:
+      containers:
+        - name: memcached
+          image: docker.io/memcached:1.6
+          imagePullPolicy: IfNotPresent
+          args:
+            - -m 64
+          resources:
+            requests:
+              cpu: 10m
+              memory: 64M
+            limits:
+              memory: 128M
+          ports:
+            - containerPort: 11211
+          readinessProbe:
+            tcpSocket:
+              port: 11211
+          livenessProbe:
+            tcpSocket:
+              port: 11211
+            initialDelaySeconds: 30

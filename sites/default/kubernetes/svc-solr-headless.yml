@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: solr-headless
+  namespace: default
+  labels:
+    service: solr
+spec:
+  ports:
+    - name: solr
+      port: 8983
+  selector:
+    service: solr
+  clusterIP: None
+  publishNotReadyAddresses: true
