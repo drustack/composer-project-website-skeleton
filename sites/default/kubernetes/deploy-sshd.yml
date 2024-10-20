@@ -1,43 +1,43 @@
-#---
-#apiVersion: apps/v1
-#kind: Deployment
-#metadata:
-#  name: sshd
-#  namespace: default
-#  labels:
-#    service: sshd
-#spec:
-#  replicas: 1
-#  selector:
-#    matchLabels:
-#      service: sshd
-#  template:
-#    metadata:
-#      labels:
-#        service: sshd
-#    spec:
-#      containers:
-#        - name: sshd
-#          image: docker.io/alvistack/devel-22.04:latest
-#          imagePullPolicy: IfNotPresent
-#          ports:
-#            - containerPort: 22
-#          readinessProbe:
-#            tcpSocket:
-#              port: 22
-#          livenessProbe:
-#            tcpSocket:
-#              port: 22
-#            initialDelaySeconds: 30
-#          volumeMounts:
-#            - mountPath: /root
-#              name: root
-#            - mountPath: /var/www/html
-#              name: var-www-html
-#      volumes:
-#        - name: root
-#          persistentVolumeClaim:
-#            claimName: root
-#        - name: var-www-html
-#          persistentVolumeClaim:
-#            claimName: var-www-html
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sshd
+  namespace: default
+  labels:
+    service: sshd
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      service: sshd
+  template:
+    metadata:
+      labels:
+        service: sshd
+    spec:
+      containers:
+        - name: sshd
+          image: docker.io/alvistack/devel-24.04:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 22
+          readinessProbe:
+            tcpSocket:
+              port: 22
+          livenessProbe:
+            tcpSocket:
+              port: 22
+            initialDelaySeconds: 30
+          volumeMounts:
+            - mountPath: /root
+              name: root
+            - mountPath: /var/www/html
+              name: var-www-html
+      volumes:
+        - name: root
+          persistentVolumeClaim:
+            claimName: root
+        - name: var-www-html
+          persistentVolumeClaim:
+            claimName: var-www-html
