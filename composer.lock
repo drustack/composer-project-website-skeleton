@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "525bfa7eb18a002c62b4ccc1da4ce014",
+    "content-hash": "771abbee685bfcffa7b32f5e9b7cd1a6",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -9826,6 +9826,68 @@
             ],
             "description": "Integration with the select2 JavaScript library.",
             "time": "2024-10-09T11:05:32+00:00"
+        },
+        {
+            "name": "drupal/select_translation",
+            "version": "2.0.0-alpha5",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/select_translation.git",
+                "reference": "2.0.0-alpha5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/select_translation-2.0.0-alpha5.zip",
+                "reference": "2.0.0-alpha5",
+                "shasum": "882a4d375b596493cb55c8d2dd0b372455d648cc"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0-alpha5",
+                    "datestamp": "1724782283",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9 || ^10 || ^11"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "alcroito",
+                    "homepage": "https://www.drupal.org/user/176134"
+                },
+                {
+                    "name": "Alice Heaton",
+                    "homepage": "https://www.drupal.org/user/60899"
+                },
+                {
+                    "name": "anybody",
+                    "homepage": "https://www.drupal.org/user/291091"
+                },
+                {
+                    "name": "ao2",
+                    "homepage": "https://www.drupal.org/user/234884"
+                }
+            ],
+            "description": "Example Project is a lightweight PHP class for detecting examples",
+            "homepage": "https://drupal.org/project/select_translation",
+            "support": {
+                "source": "https://git.drupalcode.org/project/select_translation",
+                "issues": "https://drupal.org/project/issues/select_translation"
+            }
         },
         {
             "name": "drupal/shield",
