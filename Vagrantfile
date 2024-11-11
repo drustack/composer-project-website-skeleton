@@ -14,6 +14,7 @@ Vagrant.configure("2") do |config|
 
     override.vm.disk :disk, name: "sdb", size: "10GB"
     override.vm.synced_folder "./", "/vagrant"
+    override.vm.synced_folder "/tmp", "/tmp"
   end
 
   config.vm.provider :libvirt do |libvirt, override|
@@ -30,9 +31,10 @@ Vagrant.configure("2") do |config|
 
     libvirt.storage :file, bus: "virtio", cache: "writeback"
     override.vm.synced_folder "./", "/vagrant", type: "virtiofs"
+    override.vm.synced_folder "/tmp", "/tmp", type: "virtiofs"
   end
 
-  config.vm.network :forwarded_port, guest: 80, host: 8080
+  config.vm.network :forwarded_port, guest: 80, host: 80
 
   config.vm.provision :shell, inline: <<-SHELL
     # stop auto kubernets provisioning
