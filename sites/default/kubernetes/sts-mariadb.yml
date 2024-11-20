@@ -31,7 +31,7 @@ spec:
               topologyKey: "kubernetes.io/hostname"
       containers:
         - name: mariadb
-          image: docker.io/alvistack/mariadb-10.11:latest
+          image: docker.io/alvistack/mariadb-11.4:latest
           imagePullPolicy: IfNotPresent
           resources:
             requests:
