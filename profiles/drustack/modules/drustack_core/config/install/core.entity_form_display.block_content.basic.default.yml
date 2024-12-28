@@ -12,33 +12,33 @@ bundle: basic
 mode: default
 content:
   body:
-    region: content
-    settings:
-      placeholder: ''
-      rows: 9
-      show_summary: false
-      summary_rows: 3
-    third_party_settings: {  }
     type: text_textarea_with_summary
     weight: 2
-  info:
     region: content
     settings:
+      rows: 9
+      summary_rows: 3
       placeholder: ''
-      size: 60
+      show_summary: false
     third_party_settings: {  }
+  info:
     type: string_textfield
     weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   langcode:
+    type: language_select
+    weight: 0
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
-    type: language_select
-    weight: 0
   translation:
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
-    weight: 3
 hidden: {  }

@@ -1,0 +1,79 @@
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: solr
+  namespace: default
+  labels:
+    service: solr
+spec:
+  serviceName: solr-headless
+  replicas: 1
+  updateStrategy:
+    type: RollingUpdate
+  selector:
+    matchLabels:
+      service: solr
+  template:
+    metadata:
+      labels:
+        service: solr
+    spec:
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            - labelSelector:
+                matchExpressions:
+                  - key: service
+                    operator: In
+                    values:
+                      - solr
+              topologyKey: "kubernetes.io/hostname"
+      containers:
+        - name: solr
+          image: docker.io/solr:9.6
+          imagePullPolicy: IfNotPresent
+          resources:
+            requests:
+              cpu: 100m
+              memory: 256M
+            limits:
+              memory: 1024M
+          ports:
+            - containerPort: 8983
+          env:
+            - name: SOLR_JAVA_MEM
+              value: "-Xms256m -Xmx256m"
+            - name: OOM
+              value: "script"
+          args:
+            - /bin/sh
+            - -c 
+            - solr-precreate default
+          readinessProbe:
+            tcpSocket:
+              port: 8983
+            failureThreshold: 30
+          livenessProbe:
+            tcpSocket:
+              port: 8983
+            initialDelaySeconds: 30
+            failureThreshold: 30
+          volumeMounts:
+            - mountPath: /opt/solr/server/solr/configsets/_default/conf
+              name: opt-solr-server-solr-configsets-default-conf
+            - mountPath: /var/solr
+              name: var-solr
+      volumes:
+        - name: opt-solr-server-solr-configsets-default-conf
+          persistentVolumeClaim:
+            claimName: opt-solr-server-solr-configsets-default-conf
+  volumeClaimTemplates:
+    - metadata:
+        name: var-solr
+      spec:
+        accessModes:
+          - ReadWriteOnce
+        resources:
+          requests:
+            storage: 100Gi

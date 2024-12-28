@@ -8,14 +8,14 @@ label: 'Content (Blog entry)'
 type: 'canonical_entities:node'
 pattern: 'blog/[node:author:account-name]/[node:source:title]'
 selection_criteria:
-  c4345ffd-060b-40b0-a834-be4048420568:
+  bb4a7b44-12e8-4f65-80f8-d4e040da4ead:
     id: 'entity_bundle:node'
-    bundles:
-      blog: blog
+    negate: false
+    uuid: bb4a7b44-12e8-4f65-80f8-d4e040da4ead
     context_mapping:
       node: node
-    negate: false
-    uuid: c4345ffd-060b-40b0-a834-be4048420568
+    bundles:
+      blog: blog
 selection_logic: and
 weight: -5
 relationships: {  }

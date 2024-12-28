@@ -18,14 +18,14 @@ spec:
     spec:
       containers:
         - name: php
-          image: docker.io/alvistack/php-8.1-fpm:latest
+          image: docker.io/alvistack/php-8.3-fpm:latest
           imagePullPolicy: IfNotPresent
           resources:
             requests:
               cpu: 10m
-              memory: 256Mi
+              memory: 512M
             limits:
-              memory: 512Mi
+              memory: 2048M
           workingDir: /var/www/html
           ports:
             - containerPort: 9000
@@ -40,12 +40,12 @@ spec:
             - mountPath: /etc/php/fpm/pool.d/www.conf
               name: etc-php-fpm-pool-d
               subPath: www.conf
-#            - mountPath: /var/www/html
-#              name: var-www-html
+            - mountPath: /var/www/html
+              name: var-www-html
       volumes:
         - name: etc-php-fpm-pool-d
           configMap:
             name: etc-php-fpm-pool-d
-#        - name: var-www-html
-#          persistentVolumeClaim:
-#            claimName: var-www-html
+        - name: var-www-html
+          persistentVolumeClaim:
+            claimName: var-www-html

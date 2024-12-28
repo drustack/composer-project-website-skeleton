@@ -5,6 +5,7 @@ metadata:
   name: var-www-html
   namespace: default
 spec:
+  storageClassName: manual
   accessModes:
     - ReadWriteMany
   resources:

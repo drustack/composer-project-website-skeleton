@@ -5,7 +5,14 @@ dependencies:
     - field.storage.media.field_media_video_file
     - media.type.video
   module:
+    - content_translation
     - file
+third_party_settings:
+  content_translation:
+    translation_sync:
+      target_id: target_id
+      display: display
+      description: description
 id: media.video.field_media_video_file
 field_name: field_media_video_file
 entity_type: media
@@ -17,10 +24,10 @@ translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  description_field: true
-  file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: mp4
   handler: 'default:file'
   handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: mp4
   max_filesize: ''
+  description_field: true
 field_type: file

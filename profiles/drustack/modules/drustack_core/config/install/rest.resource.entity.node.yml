@@ -9,12 +9,12 @@ id: entity.node
 plugin_id: 'entity:node'
 granularity: resource
 configuration:
-  authentication:
-    - basic_auth
-  formats:
-    - json
   methods:
     - GET
     - POST
-    - PATCH
     - DELETE
+    - PATCH
+  formats:
+    - json
+  authentication:
+    - basic_auth

@@ -1,4 +1,15 @@
-configured: true
-log: true
 untrusted_roles:
   - anonymous
+log: true
+skipped: {  }
+views_access:
+  ignore_default: false
+upload_extensions:
+  hush_upload_extensions: {  }
+fields:
+  known_risky_fields: {  }
+file_permissions:
+  hushed_files: {  }
+headers:
+  headers_to_check: {  }
+configured: true

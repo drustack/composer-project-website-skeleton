@@ -74,13 +74,14 @@ display:
           batch: true
           batch_size: 10
           form_step: true
+          ajax_loader: false
           buttons: false
           action_title: Action
           clear_on_exposed: true
           force_selection_info: false
           selected_actions:
             -
-              action_id: node_unpromote_action
+              action_id: node_promote_action
               preconfiguration:
                 add_confirmation: false
             -
@@ -88,15 +89,7 @@ display:
               preconfiguration:
                 add_confirmation: false
             -
-              action_id: node_unpublish_by_keyword_action
-              preconfiguration:
-                add_confirmation: false
-            -
-              action_id: node_assign_owner_action
-              preconfiguration:
-                add_confirmation: false
-            -
-              action_id: node_promote_action
+              action_id: node_unpromote_action
               preconfiguration:
                 add_confirmation: false
             -
@@ -106,7 +99,7 @@ display:
             -
               action_id: views_bulk_operations_delete_entity
             -
-              action_id: 'entity:publish_action:node'
+              action_id: 'entity:save_action:node'
               preconfiguration:
                 add_confirmation: false
             -
@@ -114,7 +107,7 @@ display:
               preconfiguration:
                 add_confirmation: false
             -
-              action_id: 'entity:save_action:node'
+              action_id: 'entity:publish_action:node'
               preconfiguration:
                 add_confirmation: false
         title:
@@ -449,9 +442,6 @@ display:
           id: changed
           table: node_field_data
           field: changed
-          relationship: none
-          group_type: group
-          admin_label: ''
           entity_type: node
           entity_field: changed
           plugin_id: field
@@ -459,51 +449,19 @@ display:
           exclude: false
           alter:
             alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
           element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
           element_default_classes: true
           empty: ''
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: value
           type: timestamp
           settings:
             date_format: short
             custom_date_format: ''
             timezone: ''
             tooltip:
-              date_format: ''
+              date_format: long
               custom_date_format: ''
             time_diff:
               enabled: false
@@ -511,16 +469,6 @@ display:
               past_format: '@interval ago'
               granularity: 2
               refresh: 60
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
         operations:
           id: operations
           table: node
@@ -575,6 +523,7 @@ display:
         type: full
         options:
           offset: 0
+          pagination_heading_level: h4
           items_per_page: 50
           total_pages: null
           id: 0
@@ -621,6 +570,7 @@ display:
                 advanced:
                   placeholder_text: ''
                   collapsible: false
+                  collapsible_disable_automatic_open: false
                   is_secondary: false
               type:
                 plugin_id: default
@@ -628,7 +578,9 @@ display:
                   sort_options: false
                   rewrite:
                     filter_rewrite_values: ''
+                    filter_rewrite_values_key: false
                   collapsible: false
+                  collapsible_disable_automatic_open: false
                   is_secondary: false
               status:
                 plugin_id: default
@@ -636,7 +588,9 @@ display:
                   sort_options: false
                   rewrite:
                     filter_rewrite_values: ''
+                    filter_rewrite_values_key: false
                   collapsible: false
+                  collapsible_disable_automatic_open: false
                   is_secondary: false
               langcode:
                 plugin_id: default
@@ -644,7 +598,9 @@ display:
                   sort_options: false
                   rewrite:
                     filter_rewrite_values: ''
+                    filter_rewrite_values_key: false
                   collapsible: false
+                  collapsible_disable_automatic_open: false
                   is_secondary: false
       access:
         type: perm
@@ -738,10 +694,6 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
-              article: '0'
-              page: '0'
-              blog: '0'
-              webmaster: '0'
               administrator: '0'
             reduce: false
           is_grouped: false
@@ -945,7 +897,7 @@ display:
               empty_column: false
               responsive: ''
             name:
-              sortable: false
+              sortable: true
               default_sort_order: asc
               align: ''
               separator: ''
@@ -984,12 +936,15 @@ display:
           id: uid
           table: node_field_data
           field: uid
+          relationship: none
+          group_type: group
           admin_label: author
           plugin_id: standard
           required: true
+      css_class: ''
       use_ajax: false
       group_by: false
-      show_admin_links: true
+      show_admin_links: false
       hide_attachment_summary: false
       display_extenders: {  }
     cache_metadata:

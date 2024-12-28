@@ -12,16 +12,16 @@ bundle: audio
 mode: default
 content:
   field_media_audio_file:
+    type: file_audio
     label: visually_hidden
-    region: content
     settings:
-      autoplay: false
       controls: true
+      autoplay: false
       loop: false
       multiple_file_display_type: tags
     third_party_settings: {  }
-    type: file_audio
     weight: 0
+    region: content
 hidden:
   created: true
   langcode: true

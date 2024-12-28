@@ -8,12 +8,7 @@ dependencies:
     - field.field.node.page.field_tags
     - node.type.page
   module:
-    - layout_builder
     - user
-third_party_settings:
-  layout_builder:
-    enabled: false
-    allow_custom: false
 id: node.page.rss
 targetEntityType: node
 bundle: page

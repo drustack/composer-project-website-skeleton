@@ -10,7 +10,6 @@ spec:
   ports:
     - name: sshd
       port: 22
-      nodePort: 30062
   selector:
     service: sshd
   type: NodePort
