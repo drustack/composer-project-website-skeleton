@@ -1,7 +1,6 @@
-core_version_requirement: '^9.4 || ^10'
+core_version_requirement: '^10.3 || ^11'
 dependencies:
   - 'admin_toolbar:admin_toolbar'
-  - 'admin_toolbar:admin_toolbar_links_access_filter'
   - 'admin_toolbar:admin_toolbar_tools'
   - 'asset_injector:asset_injector'
   - 'coffee:coffee'
@@ -23,3 +22,4 @@ description: 'Development environment for DruStack'
 name: 'DruStack Devel'
 package: DruStack
 type: module
+version: VERSION

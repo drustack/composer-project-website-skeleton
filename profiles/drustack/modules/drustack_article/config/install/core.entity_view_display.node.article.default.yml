@@ -8,10 +8,8 @@ dependencies:
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
     - node.type.article
-    - responsive_image.styles.drustack_bootstrap
   module:
     - comment
-    - svg_image_responsive
     - text
     - user
 id: node.article.default
@@ -36,17 +34,11 @@ content:
     weight: 4
     region: content
   field_image:
-    type: responsive_image
+    type: entity_reference_entity_view
     label: visually_hidden
     settings:
-      responsive_image_style: drustack_bootstrap
-      image_link: ''
-      image_loading:
-        attribute: lazy
-      svg_attributes:
-        width: null
-        height: null
-      svg_render_as_image: true
+      view_mode: default
+      link: false
     third_party_settings: {  }
     weight: 0
     region: content

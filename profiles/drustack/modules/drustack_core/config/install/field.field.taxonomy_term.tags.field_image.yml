@@ -2,13 +2,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_image
+    - field.storage.taxonomy_term.field_image
     - media.type.image
-    - node.type.blog
-id: node.blog.field_image
+    - taxonomy.vocabulary.tags
+id: taxonomy_term.tags.field_image
 field_name: field_image
-entity_type: node
-bundle: blog
+entity_type: taxonomy_term
+bundle: tags
 label: Image
 description: ''
 required: false

@@ -1,10 +1,11 @@
-core_version_requirement: '^9.4 || ^10'
+core_version_requirement: '^10.3 || ^11'
 dependencies:
   - 'admin_toolbar:admin_toolbar'
   - 'admin_toolbar:admin_toolbar_tools'
   - 'better_exposed_filters:better_exposed_filters'
   - 'captcha:captcha'
   - 'coffee:coffee'
+  - 'config_update:config_update_ui'
   - 'diff:diff'
   - 'drupal:announcements_feed'
   - 'drupal:automated_cron'
@@ -51,7 +52,6 @@ dependencies:
   - 'drupal:workflows'
   - 'drupal:workspaces'
   - 'editor_advanced_link:editor_advanced_link'
-  - 'embed:embed'
   - 'entity_clone:entity_clone'
   - 'features:features'
   - 'file_mdm:file_mdm'
@@ -76,9 +76,11 @@ dependencies:
   - 'sitemap:sitemap'
   - 'sophron:sophron'
   - 'svg_image:svg_image'
+  - 'svg_image_responsive:svg_image_responsive'
   - 'twig-twig:twig'
   - 'views_bulk_operations:views_bulk_operations'
 description: 'Provides core components required by other features.'
 name: 'DruStack Core'
 package: DruStack
 type: module
+version: VERSION

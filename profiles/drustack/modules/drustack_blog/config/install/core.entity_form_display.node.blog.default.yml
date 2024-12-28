@@ -6,13 +6,12 @@ dependencies:
     - field.field.node.blog.comment
     - field.field.node.blog.field_image
     - field.field.node.blog.field_tags
-    - image.style.thumbnail
     - node.type.blog
   module:
     - comment
+    - media_library
     - path
     - scheduler
-    - svg_image
     - text
 id: node.blog.default
 targetEntityType: node
@@ -42,12 +41,11 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_image:
-    type: image_image
+    type: media_library_widget
     weight: 2
     region: content
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      media_types: {  }
     third_party_settings: {  }
   field_tags:
     type: entity_reference_autocomplete_tags
