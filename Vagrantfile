@@ -41,11 +41,6 @@ Vagrant.configure("2") do |config|
     systemctl stop guestfs-firstboot.service
     systemctl disable guestfs-firstboot.service
 
-    # pre-fixup for path and permission
-    chgrp -Rf www-data /vagrant
-    chmod -Rf g+rw /vagrant
-    chmod a-w /vagrant/sites/default /vagrant/sites/default/settings.php
-
     # manually provision kubernetes
     ansible-playbook \
       /etc/ansible/playbooks/verify.yml \
@@ -63,11 +58,6 @@ Vagrant.configure("2") do |config|
     pushd /var/lib/csi-hostpath && /vagrant/sites/default/csi-hostpath-symlink.sh && popd
     rm -rf /var/lib/csi-hostpath/symlinks/default/var-www-html
     ln -fs /vagrant /var/lib/csi-hostpath/symlinks/default/var-www-html
-
-    # hotfix for solr
-    rsync -avP /vagrant/modules/contrib/search_api_solr/jump-start/solr9/config-set/ /var/lib/csi-hostpath/symlinks/default/opt-solr-server-solr-configsets-default-conf
-    chown -Rf 8983:8983 $(readlink -f /var/lib/csi-hostpath/symlinks/default/var-solr-solr-0)
-    kubectl -n default delete pod solr-0
 
     # wait until all pods running correctly
     until [ $(kubectl get pod --all-namespaces | grep -v Running | grep -v Completed | wc -l) -eq 1 ]; do echo "sleep 10..."; sleep 10; done

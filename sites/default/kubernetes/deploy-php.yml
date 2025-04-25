@@ -16,6 +16,21 @@ spec:
       labels:
         service: php
     spec:
+      initContainers:
+        - name: bootstrap
+          image: docker.io/busybox:latest
+          imagePullPolicy: IfNotPresent
+          args:
+            - /bin/sh
+            - -c
+            - |
+              until nc -zvw1 mariadb 3306; do sleep 1; done
+              chgrp -Rf www-data /var/www/html
+              find /var/www/html -type d -exec chmod g+wrx {} \;
+              find /var/www/html -type f -exec chmod g+wr {} \;
+          volumeMounts:
+            - mountPath: /var/www/html
+              name: var-www-html
       containers:
         - name: php
           image: docker.io/alvistack/php-8.3-fpm:latest
