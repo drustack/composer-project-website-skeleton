@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b2032ea440e80fcade5561f652ff2fb0",
+    "content-hash": "113d9f24a25c222d7c07c81b078e54a6",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1962,7 +1962,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/admin_toolbar.git",
-                "reference": "e0bec4a0eb61157c03d3119a47e7d3dd8027f4c4"
+                "reference": "7b317b29112bfaba72f99d4665c02ee904dd88f6"
             },
             "require": {
                 "drupal/core": "^9.5 || ^10 || ^11"
@@ -1976,8 +1976,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "3.5.3+19-dev",
-                    "datestamp": "1746558084",
+                    "version": "3.5.3+21-dev",
+                    "datestamp": "1746999204",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -2622,30 +2622,30 @@
         },
         {
             "name": "drupal/cdn",
-            "version": "5.0.0-alpha1",
+            "version": "4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/cdn.git",
-                "reference": "5.0.0-alpha1"
+                "reference": "4.1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/cdn-5.0.0-alpha1.zip",
-                "reference": "5.0.0-alpha1",
-                "shasum": "ddc04f3504fa7f04d7b396a54dcae4eb3f55f4d5"
+                "url": "https://ftp.drupal.org/files/projects/cdn-4.1.0.zip",
+                "reference": "4.1.0",
+                "shasum": "8954639a23531a2a24bcd27c6567035d63b40c96"
             },
             "require": {
-                "drupal/core": "^10.3 || ^11",
-                "php": ">=8.3"
+                "drupal/core": "^9.4 || ^10",
+                "php": ">=8.1"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "5.0.0-alpha1",
-                    "datestamp": "1714887110",
+                    "version": "4.1.0",
+                    "datestamp": "1714643594",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -8246,7 +8246,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/office_hours.git",
-                "reference": "2dbfa0ee05bd7a3b8a38516f1a0ed632a7284541"
+                "reference": "ee2f287e3c247e84a9ce19841fdd21438426fa0a"
             },
             "require": {
                 "drupal/core": "^8 || ^9 || ^10 || ^11"
@@ -8257,8 +8257,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.28+3-dev",
-                    "datestamp": "1745791711",
+                    "version": "8.x-1.28+5-dev",
+                    "datestamp": "1747007244",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -25677,16 +25677,16 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.12.2",
+            "version": "3.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPCSStandards/PHP_CodeSniffer.git",
-                "reference": "6d4cf6032d4b718f168c90a96e36c7d0eaacb2aa"
+                "reference": "65ff2489553b83b4597e89c3b8b721487011d186"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/6d4cf6032d4b718f168c90a96e36c7d0eaacb2aa",
-                "reference": "6d4cf6032d4b718f168c90a96e36c7d0eaacb2aa",
+                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/65ff2489553b83b4597e89c3b8b721487011d186",
+                "reference": "65ff2489553b83b4597e89c3b8b721487011d186",
                 "shasum": ""
             },
             "require": {
@@ -25757,7 +25757,7 @@
                     "type": "thanks_dev"
                 }
             ],
-            "time": "2025-04-13T04:10:18+00:00"
+            "time": "2025-05-11T03:36:00+00:00"
         },
         {
             "name": "symfony/browser-kit",
