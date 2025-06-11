@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bbf6556816e6121653e42c527627c590",
+    "content-hash": "3eecf6aefcef06c01db0aa0e33b3c897",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -11234,23 +11234,60 @@
         },
         {
             "name": "drupal/twig-twig",
-            "version": "dev-3471389-drupal-11-compatibility",
+            "version": "2.0.3",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/issue/twig-3471389.git",
-                "reference": "7d2ea30dee39799d949a556eba3b29a8d19556f5"
+                "url": "https://git.drupalcode.org/project/twig.git",
+                "reference": "2.0.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/twig-2.0.3.zip",
+                "reference": "2.0.3",
+                "shasum": "e28ef43fea3950623cfbbf9c7f2659df84894b64"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11.0",
                 "php": ">=8.1"
             },
             "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.3",
+                    "datestamp": "1744144456",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0-or-later"
             ],
+            "authors": [
+                {
+                    "name": "anydigital",
+                    "homepage": "https://www.drupal.org/user/787240"
+                },
+                {
+                    "name": "joelpittet",
+                    "homepage": "https://www.drupal.org/user/160302"
+                },
+                {
+                    "name": "paulmckibben",
+                    "homepage": "https://www.drupal.org/user/279003"
+                },
+                {
+                    "name": "smokris",
+                    "homepage": "https://www.drupal.org/user/161913"
+                }
+            ],
             "description": "Provides a text filter that renders using the Twig template engine.",
             "homepage": "https://www.drupal.org/project/twig",
-            "time": "2024-08-31T12:19:12+00:00"
+            "support": {
+                "source": "https://git.drupalcode.org/project/twig"
+            }
         },
         {
             "name": "drupal/twig_tweak",
@@ -26519,7 +26556,6 @@
         "drupal/symfony_mailer": 20,
         "drupal/text_resize": 20,
         "drupal/token": 20,
-        "drupal/twig-twig": 20,
         "drupal/views_bootstrap": 20,
         "drupal/views_data_export": 20,
         "drupal/views_geojson": 20,
