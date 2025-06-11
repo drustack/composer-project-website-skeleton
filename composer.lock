@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3eecf6aefcef06c01db0aa0e33b3c897",
+    "content-hash": "70179bcebaac42cb97f8559a83fe7bd7",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -11694,25 +11694,75 @@
         },
         {
             "name": "drupal/views_data_export",
-            "version": "dev-project-update-bot-only",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/issue/views_data_export-3459698.git",
-                "reference": "1329de88a068130b2f29d75c2f0dfdb4d7010fe0"
+                "url": "https://git.drupalcode.org/project/views_data_export.git",
+                "reference": "8.x-1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/views_data_export-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "2664bd52dd47b068dec60eecd3c6fc73f2d6c1b8"
             },
             "require": {
+                "drupal/core": "^9 || ^10 || ^11",
                 "drupal/csv_serialization": "~1.4 || ~2.0 || ~3 || ~4"
+            },
+            "conflict": {
+                "phpoffice/phpspreadsheet": "<1.23.0"
             },
             "require-dev": {
                 "drupal/search_api": "~1.12",
                 "drupal/xls_serialization": "~1.0"
             },
             "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.5",
+                    "datestamp": "1732280381",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0-or-later"
             ],
+            "authors": [
+                {
+                    "name": "amoebanath",
+                    "homepage": "https://www.drupal.org/user/2810799"
+                },
+                {
+                    "name": "james.williams",
+                    "homepage": "https://www.drupal.org/user/592268"
+                },
+                {
+                    "name": "jamsilver",
+                    "homepage": "https://www.drupal.org/user/476732"
+                },
+                {
+                    "name": "jhedstrom",
+                    "homepage": "https://www.drupal.org/user/208732"
+                },
+                {
+                    "name": "nerdstein",
+                    "homepage": "https://www.drupal.org/user/1557710"
+                },
+                {
+                    "name": "steven jones",
+                    "homepage": "https://www.drupal.org/user/99644"
+                }
+            ],
             "description": "Plugin to export views data into various file formats.",
-            "time": "2024-10-26T17:44:57+00:00"
+            "homepage": "https://www.drupal.org/project/views_data_export",
+            "support": {
+                "source": "https://git.drupalcode.org/project/views_data_export"
+            }
         },
         {
             "name": "drupal/views_geojson",
@@ -26557,7 +26607,6 @@
         "drupal/text_resize": 20,
         "drupal/token": 20,
         "drupal/views_bootstrap": 20,
-        "drupal/views_data_export": 20,
         "drupal/views_geojson": 20,
         "drupal/viewsreference": 20,
         "drupal/webform": 20,
