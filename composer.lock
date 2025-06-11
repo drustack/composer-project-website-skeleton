@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7ca26c79da53682b96f2b31ed78388d6",
+    "content-hash": "02025efb68a420100ad61f2e447cc38c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -11290,23 +11290,51 @@
         },
         {
             "name": "drupal/translatable_menu_link_uri",
-            "version": "dev-3435091-automated-drupal-11",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/issue/translatable_menu_link_uri-3435091.git",
-                "reference": "46b50481b5b2d1b9a9797c3034419f07001365ab"
+                "url": "https://git.drupalcode.org/project/translatable_menu_link_uri.git",
+                "reference": "2.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/translatable_menu_link_uri-2.1.1.zip",
+                "reference": "2.1.1",
+                "shasum": "862b0f0317ac37f8849d9f3725bcf44940d98dbf"
             },
             "require": {
-                "drupal/core": "^10.3 || ^11.0",
-                "php": ">=8.1"
+                "drupal/core": "^8 || ^9 || ^10 || ^11"
             },
             "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.1.1",
+                    "datestamp": "1737392436",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0-or-later"
             ],
+            "authors": [
+                {
+                    "name": "jsobiecki",
+                    "homepage": "https://www.drupal.org/user/112744"
+                },
+                {
+                    "name": "wiktorb",
+                    "homepage": "https://www.drupal.org/user/762836"
+                }
+            ],
             "description": "This module enables support for translation of link field in menu_link_content entity.",
             "homepage": "https://www.drupal.org/project/translatable_menu_link_uri",
-            "time": "2024-08-31T12:31:52+00:00"
+            "support": {
+                "source": "https://git.drupalcode.org/project/translatable_menu_link_uri"
+            }
         },
         {
             "name": "drupal/twig-twig",
@@ -26649,7 +26677,6 @@
         "drupal/symfony_mailer": 20,
         "drupal/text_resize": 20,
         "drupal/token": 20,
-        "drupal/translatable_menu_link_uri": 20,
         "drupal/twig-twig": 20,
         "drupal/views_bootstrap": 20,
         "drupal/views_data_export": 20,
