@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "77753a8024c0381bafd10f02a1c8f63e",
+    "content-hash": "02a4ad3608890159624aa9713e7f46de",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4850,16 +4850,33 @@
         },
         {
             "name": "drupal/eu_cookie_compliance",
-            "version": "dev-3430336-Drupal-11-readiness",
+            "version": "1.26.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/issue/eu_cookie_compliance-3430336.git",
-                "reference": "64dd2aa05ecc193b03f092c374f7badcb43c52c6"
+                "url": "https://git.drupalcode.org/project/eu-cookie-compliance.git",
+                "reference": "8.x-1.26"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/eu_cookie_compliance-8.x-1.26.zip",
+                "reference": "8.x-1.26",
+                "shasum": "4f251814019a14ae09e69d7436fec2cf0ae1b673"
             },
             "require": {
                 "drupal/core": "^8.9 || ^9 || ^10 || ^11"
             },
             "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.26",
+                    "datestamp": "1748453829",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -4893,13 +4910,12 @@
                 "GDPR"
             ],
             "support": {
+                "source": "https://git.drupalcode.org/project/eu-cookie-compliance",
                 "docs": "https://www.drupal.org/docs/contributed-modules/eu-cookie-compliance",
                 "forum": "https://drupal.stackexchange.com/search?q=eu+cookie+compliance",
                 "issues": "https://www.drupal.org/project/issues/eu_cookie_compliance?version=8.x",
-                "slack": "https://app.slack.com/client/T06GX3JTS/C012XBTH81E",
-                "source": "https://git.drupalcode.org/project/eu-cookie-compliance"
-            },
-            "time": "2024-07-23T06:13:44+00:00"
+                "slack": "https://app.slack.com/client/T06GX3JTS/C012XBTH81E"
+            }
         },
         {
             "name": "drupal/examples",
@@ -26578,7 +26594,6 @@
         "drupal/entity_browser": 20,
         "drupal/entity_usage": 20,
         "drupal/entityqueue": 20,
-        "drupal/eu_cookie_compliance": 20,
         "drupal/externalauth": 20,
         "drupal/facets": 20,
         "drupal/features": 20,
