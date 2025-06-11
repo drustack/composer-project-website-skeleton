@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "310684e7ce8e0dff9dfb02e9020c2872",
+    "content-hash": "e02fd46ce4f1995e3956fbb1e4adccd2",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -9597,7 +9597,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/issue/search_api_location-3455298.git",
-                "reference": "413011aca82122ed2f8ce2f5925eb0c8eae33afd"
+                "reference": "0fd39c2b40a14d772db96601a7eb35c051da4532"
             },
             "require": {
                 "drupal/search_api": "^1.28",
@@ -9910,13 +9910,20 @@
         },
         {
             "name": "drupal/select2",
-            "version": "dev-3454104-drupal-11-compatibility",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/issue/select2-3454104.git",
-                "reference": "d24e177d069dbd0b000a79922fdaf2b1d4cf054b"
+                "url": "https://git.drupalcode.org/project/select2.git",
+                "reference": "2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/select2-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "0a2eeb56ad26504a026bfbbed7a384dae6c1f46d"
             },
             "require": {
+                "drupal/core": "^10 || ^11",
                 "php": ">=8.1"
             },
             "require-dev": {
@@ -9927,17 +9934,36 @@
                 "drupal/search_api": "^1.35"
             },
             "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0",
+                    "datestamp": "1736434228",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0-or-later"
             ],
             "authors": [
                 {
                     "name": "Christian Fritsch",
+                    "homepage": "https://www.drupal.org/user/157725",
                     "email": "christian.fritsch@burda.com"
+                },
+                {
+                    "name": "chr.fritsch",
+                    "homepage": "https://www.drupal.org/user/2103716"
                 }
             ],
             "description": "Integration with the select2 JavaScript library.",
-            "time": "2025-01-09T14:16:09+00:00"
+            "homepage": "https://www.drupal.org/project/select2",
+            "support": {
+                "source": "https://git.drupalcode.org/project/select2"
+            }
         },
         {
             "name": "drupal/select_translation",
@@ -26462,7 +26488,6 @@
         "drupal/search_api_location": 20,
         "drupal/seckit": 20,
         "drupal/security_review": 20,
-        "drupal/select2": 20,
         "drupal/symfony_mailer": 20,
         "drupal/text_resize": 20,
         "drupal/token": 20,
