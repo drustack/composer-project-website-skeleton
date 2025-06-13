@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e0a20a9a5b8732fe64fbec7963abb816",
+    "content-hash": "9d340fdfcf3850c9f287cc6fc62800d1",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1908,7 +1908,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/admin_toolbar.git",
-                "reference": "b244ce07621bdbfad857629260b7636492d55454"
+                "reference": "0412425d5a7d82d02a39294c9d45fe9363d2e724"
             },
             "require": {
                 "drupal/core": "^9.5 || ^10 || ^11"
@@ -1922,8 +1922,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "3.6.0+3-dev",
-                    "datestamp": "1749040328",
+                    "version": "3.6.1+1-dev",
+                    "datestamp": "1749674706",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -7707,7 +7707,7 @@
             "extra": {
                 "drupal": {
                     "version": "1.6.1",
-                    "datestamp": "1749109091",
+                    "datestamp": "1749656220",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -11962,21 +11962,22 @@
         },
         {
             "name": "drupal/views_data_export",
-            "version": "1.5.0",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/views_data_export.git",
-                "reference": "8.x-1.5"
+                "reference": "8.x-1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_data_export-8.x-1.5.zip",
-                "reference": "8.x-1.5",
-                "shasum": "2664bd52dd47b068dec60eecd3c6fc73f2d6c1b8"
+                "url": "https://ftp.drupal.org/files/projects/views_data_export-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "7031e3fc2232c891a5c1a8ec917a850614fd8f62"
             },
             "require": {
                 "drupal/core": "^9 || ^10 || ^11",
-                "drupal/csv_serialization": "~1.4 || ~2.0 || ~3 || ~4"
+                "drupal/csv_serialization": "~1.4 || ~2.0 || ~3 || ~4",
+                "php": ">=8.0"
             },
             "conflict": {
                 "phpoffice/phpspreadsheet": "<1.23.0"
@@ -11988,8 +11989,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.5",
-                    "datestamp": "1732280381",
+                    "version": "8.x-1.6",
+                    "datestamp": "1749820793",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -12225,7 +12226,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "d93dd5110098f7226c911bc84212ef9e0075514e"
+                "reference": "46671264915f49e26507f121e81ac80580c5435a"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11.0"
@@ -12273,8 +12274,8 @@
                     "dev-6.3.x": "6.3.x-dev"
                 },
                 "drupal": {
-                    "version": "6.3.0-beta2+23-dev",
-                    "datestamp": "1749479385",
+                    "version": "6.3.0-beta2+24-dev",
+                    "datestamp": "1749764354",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -14982,7 +14983,7 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Accessible360/accessible-slick.git",
+                "url": "git@github.com:Accessible360/accessible-slick.git",
                 "reference": "61b53224a47b9aa241bddbb2d7894277ec25ca7f"
             },
             "dist": {
@@ -26047,16 +26048,16 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.13.0",
+            "version": "3.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPCSStandards/PHP_CodeSniffer.git",
-                "reference": "65ff2489553b83b4597e89c3b8b721487011d186"
+                "reference": "1b71b4dd7e7ef651ac749cea67e513c0c832f4bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/65ff2489553b83b4597e89c3b8b721487011d186",
-                "reference": "65ff2489553b83b4597e89c3b8b721487011d186",
+                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/1b71b4dd7e7ef651ac749cea67e513c0c832f4bd",
+                "reference": "1b71b4dd7e7ef651ac749cea67e513c0c832f4bd",
                 "shasum": ""
             },
             "require": {
@@ -26127,7 +26128,7 @@
                     "type": "thanks_dev"
                 }
             ],
-            "time": "2025-05-11T03:36:00+00:00"
+            "time": "2025-06-12T15:04:34+00:00"
         },
         {
             "name": "symfony/browser-kit",
