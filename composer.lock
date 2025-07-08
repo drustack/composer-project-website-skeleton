@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aad1783036ad07dd55f7cea896a54135",
+    "content-hash": "eec723f7cab2c0ada708fe24f9683c83",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -578,23 +578,23 @@
         },
         {
             "name": "consolidation/config",
-            "version": "3.1.0",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/config.git",
-                "reference": "0615499781449ab773ffc609b97b934b3357b3f9"
+                "reference": "54bb59d156e01698cd52d4dbbf6df98924f9ff7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/config/zipball/0615499781449ab773ffc609b97b934b3357b3f9",
-                "reference": "0615499781449ab773ffc609b97b934b3357b3f9",
+                "url": "https://api.github.com/repos/consolidation/config/zipball/54bb59d156e01698cd52d4dbbf6df98924f9ff7e",
+                "reference": "54bb59d156e01698cd52d4dbbf6df98924f9ff7e",
                 "shasum": ""
             },
             "require": {
                 "dflydev/dot-access-data": "^3",
                 "grasmash/expander": "^3",
                 "php": ">=8.2.0",
-                "symfony/event-dispatcher": "^7"
+                "symfony/event-dispatcher": "^6 || ^7"
             },
             "require-dev": {
                 "ext-json": "*",
@@ -611,7 +611,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "2.x-dev"
+                    "dev-main": "3.x-dev"
                 }
             },
             "autoload": {
@@ -632,9 +632,9 @@
             "description": "Provide configuration services for a commandline tool.",
             "support": {
                 "issues": "https://github.com/consolidation/config/issues",
-                "source": "https://github.com/consolidation/config/tree/3.1.0"
+                "source": "https://github.com/consolidation/config/tree/3.1.1"
             },
-            "time": "2024-11-28T14:37:27+00:00"
+            "time": "2025-07-07T13:37:38+00:00"
         },
         {
             "name": "consolidation/filter-via-dot-access-data",
@@ -4326,20 +4326,20 @@
         },
         {
             "name": "drupal/editor_advanced_link",
-            "version": "2.2.6",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/editor_advanced_link.git",
-                "reference": "2.2.6"
+                "reference": "2.3.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/editor_advanced_link-2.2.6.zip",
-                "reference": "2.2.6",
-                "shasum": "f6d7c437900f288b1e735b4faf2decc99bdd30e8"
+                "url": "https://ftp.drupal.org/files/projects/editor_advanced_link-2.3.0.zip",
+                "reference": "2.3.0",
+                "shasum": "bd567b4f6a11ec80989ad2f420eaec6614653f88"
             },
             "require": {
-                "drupal/core": "^10.2 || ^11.0"
+                "drupal/core": "^10.5 || ^11.2"
             },
             "require-dev": {
                 "drupal/ckeditor": "*",
@@ -4348,8 +4348,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.2.6",
-                    "datestamp": "1723183019",
+                    "version": "2.3.0",
+                    "datestamp": "1751299046",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4832,11 +4832,17 @@
         },
         {
             "name": "drupal/entity_usage",
-            "version": "dev-2.x",
+            "version": "2.0.0-beta24",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity_usage.git",
-                "reference": "a930a093e468dedf3599b4436419524d2835478c"
+                "reference": "8.x-2.0-beta24"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity_usage-8.x-2.0-beta24.zip",
+                "reference": "8.x-2.0-beta24",
+                "shasum": "063cf50d2b5cf7c99bb86a818c03fcfef2082151"
             },
             "require": {
                 "drupal/core": "^10.2 || ^11"
@@ -4855,15 +4861,12 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-2.0-beta24+2-dev",
-                    "datestamp": "1748246710",
+                    "version": "8.x-2.0-beta24",
+                    "datestamp": "1743745774",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 },
                 "drush": {
@@ -7397,26 +7400,26 @@
         },
         {
             "name": "drupal/libraries",
-            "version": "4.0.5",
+            "version": "4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/libraries.git",
-                "reference": "4.0.5"
+                "reference": "4.1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/libraries-4.0.5.zip",
-                "reference": "4.0.5",
-                "shasum": "24da67bb58b9e4b1ae28cdfdc4f6152587d17baf"
+                "url": "https://ftp.drupal.org/files/projects/libraries-4.1.0.zip",
+                "reference": "4.1.0",
+                "shasum": "c01dee43da5d4bcc86299409e485640fc7915761"
             },
             "require": {
-                "drupal/core": "^9.5 || ^10 || ^11"
+                "drupal/core": "^10 || ^11"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "4.0.5",
-                    "datestamp": "1725052147",
+                    "version": "4.1.0",
+                    "datestamp": "1751287499",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8151,17 +8154,17 @@
         },
         {
             "name": "drupal/migrate_tools",
-            "version": "6.0.5",
+            "version": "6.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/migrate_tools.git",
-                "reference": "6.0.5"
+                "reference": "6.1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/migrate_tools-6.0.5.zip",
-                "reference": "6.0.5",
-                "shasum": "c82519b366f43827818b04bfbc0009a6e028b835"
+                "url": "https://ftp.drupal.org/files/projects/migrate_tools-6.1.0.zip",
+                "reference": "6.1.0",
+                "shasum": "252af91da4650424d62df2e2f58f182da02c5a68"
             },
             "require": {
                 "drupal/core": ">=9.1",
@@ -8179,8 +8182,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "6.0.5",
-                    "datestamp": "1730824457",
+                    "version": "6.1.0",
+                    "datestamp": "1751918505",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -11460,17 +11463,17 @@
         },
         {
             "name": "drupal/translatable_menu_link_uri",
-            "version": "2.1.1",
+            "version": "2.1.2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/translatable_menu_link_uri.git",
-                "reference": "2.1.1"
+                "reference": "2.1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/translatable_menu_link_uri-2.1.1.zip",
-                "reference": "2.1.1",
-                "shasum": "862b0f0317ac37f8849d9f3725bcf44940d98dbf"
+                "url": "https://ftp.drupal.org/files/projects/translatable_menu_link_uri-2.1.2.zip",
+                "reference": "2.1.2",
+                "shasum": "e439b0f60cedf63583aa0fd28ed4454049831e6e"
             },
             "require": {
                 "drupal/core": "^8 || ^9 || ^10 || ^11"
@@ -11478,8 +11481,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.1.1",
-                    "datestamp": "1737392436",
+                    "version": "2.1.2",
+                    "datestamp": "1751878444",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -12165,14 +12168,20 @@
         },
         {
             "name": "drupal/viewsreference",
-            "version": "dev-2.x",
+            "version": "2.0.0-beta10",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/viewsreference.git",
-                "reference": "17a299ae20415d7f863efbe0448defa988cbdc9e"
+                "reference": "8.x-2.0-beta10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/viewsreference-8.x-2.0-beta10.zip",
+                "reference": "8.x-2.0-beta10",
+                "shasum": "699c3f790d3dbe6ebcd890916409c66562a04eb4"
             },
             "require": {
-                "drupal/core": "^10 || ^11 || ^12"
+                "drupal/core": "^10 || ^11"
             },
             "conflict": {
                 "drupal/viewsreferennce": "*"
@@ -12182,15 +12191,12 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-2.0-beta10+10-dev",
-                    "datestamp": "1747997543",
+                    "version": "8.x-2.0-beta10",
+                    "datestamp": "1725510905",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -12232,7 +12238,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "46671264915f49e26507f121e81ac80580c5435a"
+                "reference": "e83172048d6d59d7788faf7ca47a32bd0724f288"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11.0"
@@ -12280,8 +12286,8 @@
                     "dev-6.3.x": "6.3.x-dev"
                 },
                 "drupal": {
-                    "version": "6.3.0-beta2+24-dev",
-                    "datestamp": "1749764354",
+                    "version": "6.3.0-beta2+25-dev",
+                    "datestamp": "1751899291",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -13675,16 +13681,16 @@
         },
         {
             "name": "halaxa/json-machine",
-            "version": "1.2.4",
+            "version": "1.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/halaxa/json-machine.git",
-                "reference": "ca1e2fc61d3596655e5480e192ef30ad67478ad4"
+                "reference": "d0f84abf79ac98145d478b66d2bcf363d706477c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/halaxa/json-machine/zipball/ca1e2fc61d3596655e5480e192ef30ad67478ad4",
-                "reference": "ca1e2fc61d3596655e5480e192ef30ad67478ad4",
+                "url": "https://api.github.com/repos/halaxa/json-machine/zipball/d0f84abf79ac98145d478b66d2bcf363d706477c",
+                "reference": "d0f84abf79ac98145d478b66d2bcf363d706477c",
                 "shasum": ""
             },
             "require": {
@@ -13725,7 +13731,7 @@
             "description": "Efficient, easy-to-use and fast JSON pull parser",
             "support": {
                 "issues": "https://github.com/halaxa/json-machine/issues",
-                "source": "https://github.com/halaxa/json-machine/tree/1.2.4"
+                "source": "https://github.com/halaxa/json-machine/tree/1.2.5"
             },
             "funding": [
                 {
@@ -13733,7 +13739,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2025-06-16T07:42:34+00:00"
+            "time": "2025-07-07T13:38:34+00:00"
         },
         {
             "name": "html2text/html2text",
@@ -27051,7 +27057,6 @@
         "drupal/devel_entity_updates": 20,
         "drupal/easy_breadcrumb": 20,
         "drupal/entity_browser": 20,
-        "drupal/entity_usage": 20,
         "drupal/entityqueue": 20,
         "drupal/externalauth": 20,
         "drupal/facets": 20,
@@ -27084,7 +27089,6 @@
         "drupal/token": 20,
         "drupal/views_bootstrap": 20,
         "drupal/views_geojson": 20,
-        "drupal/viewsreference": 20,
         "drupal/webform": 20,
         "npm-asset/accessible360--accessible-slick": 20
     },
