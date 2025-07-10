@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "356fa8ada38a502e5163740649dba52d",
+    "content-hash": "a5c601e0bf5181739918348f3e48ae32",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2042,7 +2042,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/better_exposed_filters.git",
-                "reference": "ec3450b22e696db598acf731c1aa6e5a8eef2374"
+                "reference": "dd8b8a048f5d9c990b9dfb0af90e2bb7caffd2d1"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11",
@@ -2055,7 +2055,7 @@
                 },
                 "drupal": {
                     "version": "7.1.x-dev",
-                    "datestamp": "1748618740",
+                    "datestamp": "1752100633",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -5186,44 +5186,50 @@
         },
         {
             "name": "drupal/facets",
-            "version": "dev-2.0.x",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/facets.git",
-                "reference": "d02aef49a09deadd75d5fe4f8d7fdf27c9c5d48c"
+                "reference": "3.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/facets-3.0.0.zip",
+                "reference": "3.0.0",
+                "shasum": "9fa44774d43aa065989cdf26b3992fa4029ae63e"
             },
             "require": {
-                "drupal/core": "^10 || ^11"
+                "drupal/core": "^10.1 || ^11"
             },
             "conflict": {
-                "drupal/search_api": "<1.30"
+                "drupal/core": "<10.1.0",
+                "drupal/search_api": "<1.14"
             },
             "require-dev": {
-                "drupal/jquery_ui_slider": "^2.1",
-                "drupal/jquery_ui_touch_punch": "^1.1",
+                "drupal/better_exposed_filters": "~7.0",
+                "drupal/jquery_ui_slider": "~2.1",
+                "drupal/jquery_ui_touch_punch": "~1.1",
                 "drupal/search_api": "1.x-dev"
             },
             "suggest": {
+                "drupal/better_exposed_filters": "Required for AJAX support for facets rendered as views exposed filters",
                 "drupal/jquery_ui_slider": "Required for the 'Facets Range Widget' module to work",
                 "drupal/jquery_ui_touch_punch": "Required for the 'Facets Range Widget' module to work"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.0.x": "2.0.x-dev"
-                },
                 "drupal": {
-                    "version": "2.0.9+5-dev",
-                    "datestamp": "1737540365",
+                    "version": "3.0.0",
+                    "datestamp": "1735915197",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -5250,7 +5256,7 @@
             "description": "The Facet module allows site builders to easily create and manage faceted search interfaces.",
             "homepage": "https://www.drupal.org/project/facets",
             "support": {
-                "source": "https://git.drupalcode.org/project/facets",
+                "source": "https://git.drupalcode.org/project/facets.git",
                 "issues": "https://www.drupal.org/project/issues/facets",
                 "irc": "irc://irc.freenode.org/drupal-search-api"
             }
@@ -7696,19 +7702,19 @@
         },
         {
             "name": "drupal/mailer_transport",
-            "version": "1.6.2",
+            "version": "2.0.0-alpha4",
             "require": {
                 "drupal/core": "^10.3 || ^11",
-                "drupal/symfony_mailer": "^1"
+                "drupal/symfony_mailer": "^2"
             },
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "1.6.2",
-                    "datestamp": "1751013031",
+                    "version": "2.0.0-alpha4",
+                    "datestamp": "1750246155",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -7722,7 +7728,7 @@
                     "homepage": "https://www.drupal.org/user/2650563"
                 }
             ],
-            "description": "Placeholder to support upgrade to v2.x",
+            "description": "Configuration UI for Symfony Mailer Transports",
             "homepage": "https://www.drupal.org/project/symfony_mailer",
             "support": {
                 "source": "https://git.drupalcode.org/project/symfony_mailer"
@@ -11132,11 +11138,17 @@
         },
         {
             "name": "drupal/symfony_mailer",
-            "version": "dev-1.x",
+            "version": "2.0.0-alpha4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/symfony_mailer.git",
-                "reference": "337815d4d4af874cfb72b21b8786585c74601ef1"
+                "reference": "2.0.0-alpha4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/symfony_mailer-2.0.0-alpha4.zip",
+                "reference": "2.0.0-alpha4",
+                "shasum": "f2c46bc9771dfe36cfd4fcbc003cf9d527620799"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11",
@@ -11145,17 +11157,19 @@
                 "symfony/mailer": "^6.0 || ^7.0",
                 "tijsverkoyen/css-to-inline-styles": "^2.2"
             },
+            "require-dev": {
+                "drupal/commerce": "^3",
+                "drupal/mailer_policy": "*",
+                "drupal/simplenews": "^4.1"
+            },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "1.6.1+1-dev",
-                    "datestamp": "1751012429",
+                    "version": "2.0.0-alpha4",
+                    "datestamp": "1750246155",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "message": "Alpha releases are not covered by Drupal security advisories."
                     }
                 },
                 "drush": {
@@ -12285,7 +12299,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "e83172048d6d59d7788faf7ca47a32bd0724f288"
+                "reference": "0abbd8a77e388bc7b673bab25262eb378ddcc776"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11.0"
@@ -12333,8 +12347,8 @@
                     "dev-6.3.x": "6.3.x-dev"
                 },
                 "drupal": {
-                    "version": "6.3.0-beta2+25-dev",
-                    "datestamp": "1751899291",
+                    "version": "6.3.0-beta2+26-dev",
+                    "datestamp": "1752094207",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -27066,7 +27080,6 @@
         "drupal/entity_browser": 20,
         "drupal/entityqueue": 20,
         "drupal/externalauth": 20,
-        "drupal/facets": 20,
         "drupal/features": 20,
         "drupal/feeds": 20,
         "drupal/feeds_ex": 20,
@@ -27091,7 +27104,6 @@
         "drupal/search_api_location": 20,
         "drupal/seckit": 20,
         "drupal/security_review": 20,
-        "drupal/symfony_mailer": 20,
         "drupal/text_resize": 20,
         "drupal/token": 20,
         "drupal/views_bootstrap": 20,
