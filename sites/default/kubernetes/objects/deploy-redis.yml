@@ -1,0 +1,34 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis
+  namespace: default
+  labels:
+    service: redis
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      service: redis
+  template:
+    metadata:
+      labels:
+        service: redis
+    spec:
+      containers:
+        - name: redis
+          image: docker.io/redis:8.0
+          imagePullPolicy: IfNotPresent
+          command:
+            - /bin/bash
+            - -c
+            - redis-server --appendonly no --maxmemory 64mb --maxmemory-policy volatile-lru
+          resources:
+            requests:
+              cpu: 10m
+              memory: 64M
+            limits:
+              memory: 128M
+          ports:
+            - containerPort: 6379

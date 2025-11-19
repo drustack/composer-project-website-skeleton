@@ -2,14 +2,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: memcached
+  name: redis
   namespace: default
   labels:
-    service: memcached
+    service: redis
 spec:
   ports:
-    - name: memcache
-      port: 11211
+    - name: redis
+      port: 6379
   selector:
-    service: memcached
+    service: redis
   sessionAffinity: ClientIP

@@ -16,21 +16,6 @@ spec:
       labels:
         service: php
     spec:
-      initContainers:
-        - name: bootstrap
-          image: docker.io/busybox:latest
-          imagePullPolicy: IfNotPresent
-          args:
-            - /bin/sh
-            - -c
-            - |
-              until nc -zvw1 mariadb 3306; do sleep 1; done
-              chgrp -Rf www-data /var/www/html
-              find /var/www/html -type d -exec chmod g+wrx {} \;
-              find /var/www/html -type f -exec chmod g+wr {} \;
-          volumeMounts:
-            - mountPath: /var/www/html
-              name: var-www-html
       containers:
         - name: php
           image: docker.io/alvistack/php-8.3-fpm:latest
@@ -44,13 +29,6 @@ spec:
           workingDir: /var/www/html
           ports:
             - containerPort: 9000
-          readinessProbe:
-            tcpSocket:
-              port: 9000
-          livenessProbe:
-            tcpSocket:
-              port: 9000
-            initialDelaySeconds: 30
           volumeMounts:
             - mountPath: /etc/php/fpm/pool.d/www.conf
               name: etc-php-fpm-pool-d
@@ -62,5 +40,6 @@ spec:
           configMap:
             name: etc-php-fpm-pool-d
         - name: var-www-html
-          persistentVolumeClaim:
-            claimName: var-www-html
+          hostPath:
+            path: /vagrant
+            type: DirectoryOrCreate
