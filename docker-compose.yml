@@ -22,6 +22,29 @@ services:
     ports:
       - 9000
 
+  mariadb:
+    image: docker.io/alvistack/mariadb-11.4:latest
+    env_file:
+      - ./sites/default/docker-compose/.env
+    volumes:
+      - ./sites/default/docker-compose/persistentvolumes/var-lib-mysql:/var/lib/mysql
+      - /tmp:/tmp
+    ports:
+      - 3306
+
+  memcached:
+    image: docker.io/memcached:1.6
+    env_file:
+      - ./sites/default/docker-compose/.env
+    command:
+      - /bin/bash
+      - -c
+      - memcached -m 64
+    volumes:
+      - /tmp:/tmp
+    ports:
+      - 11211
+
   postgres:
     image: docker.io/alvistack/postgres-16:latest
     env_file:
