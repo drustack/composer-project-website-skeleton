@@ -2223,6 +2223,10 @@
                     "homepage": "https://www.drupal.org/user/655282"
                 },
                 {
+                    "name": "anjaliprasannan",
+                    "homepage": "https://www.drupal.org/user/3637917"
+                },
+                {
                     "name": "b_sharpe",
                     "homepage": "https://www.drupal.org/user/2512258"
                 },
@@ -2245,6 +2249,10 @@
                 {
                     "name": "murz",
                     "homepage": "https://www.drupal.org/user/157092"
+                },
+                {
+                    "name": "robloach",
+                    "homepage": "https://www.drupal.org/user/61114"
                 },
                 {
                     "name": "scott_euser",
@@ -2363,6 +2371,10 @@
                 "GPL-2.0-or-later"
             ],
             "authors": [
+                {
+                    "name": "b_sharpe",
+                    "homepage": "https://www.drupal.org/user/2512258"
+                },
                 {
                     "name": "kevinquillen",
                     "homepage": "https://www.drupal.org/user/317279"
@@ -3002,17 +3014,17 @@
         },
         {
             "name": "drupal/bpmn_io",
-            "version": "3.0.3",
+            "version": "3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/bpmn_io.git",
-                "reference": "3.0.3"
+                "reference": "3.0.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/bpmn_io-3.0.3.zip",
-                "reference": "3.0.3",
-                "shasum": "b0a873631f651af3d4226f36df8385b4fb397b90"
+                "url": "https://ftp.drupal.org/files/projects/bpmn_io-3.0.4.zip",
+                "reference": "3.0.4",
+                "shasum": "bf5a7a99023131e5316c8573598767fd78a989f4"
             },
             "require": {
                 "drupal/core": "^11.2",
@@ -3027,8 +3039,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.3",
-                    "datestamp": "1765298153",
+                    "version": "3.0.4",
+                    "datestamp": "1765554265",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4298,7 +4310,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ctools.git",
-                "reference": "5a323c6e5072515148a54b4055e7db86a50f5111"
+                "reference": "4d403419943bb9a9b720864d328fb3495db98584"
             },
             "require": {
                 "drupal/core": "^9.5 || ^10 || ^11"
@@ -4310,8 +4322,8 @@
                     "dev-8.x-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "4.1.0+1-dev",
-                    "datestamp": "1752166895",
+                    "version": "4.1.0+2-dev",
+                    "datestamp": "1766279214",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -4517,17 +4529,17 @@
         },
         {
             "name": "drupal/devel_entity_updates",
-            "version": "5.0.0-rc1",
+            "version": "5.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/devel_entity_updates.git",
-                "reference": "5.0.0-rc1"
+                "reference": "5.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/devel_entity_updates-5.0.0-rc1.zip",
-                "reference": "5.0.0-rc1",
-                "shasum": "e492889eac9bf0a43d5c202535760a294667c38a"
+                "url": "https://ftp.drupal.org/files/projects/devel_entity_updates-5.0.0.zip",
+                "reference": "5.0.0",
+                "shasum": "2e37b591b2a61c0f5266ede38c5389ae028710b2"
             },
             "require": {
                 "drupal/core": "^10.1 || ^11",
@@ -4540,11 +4552,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "5.0.0-rc1",
-                    "datestamp": "1756474566",
+                    "version": "5.0.0",
+                    "datestamp": "1765883085",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "RC releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "drush": {
@@ -5455,20 +5467,20 @@
         },
         {
             "name": "drupal/entity_reference_revisions",
-            "version": "1.12.0",
+            "version": "1.13.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity_reference_revisions.git",
-                "reference": "8.x-1.12"
+                "reference": "8.x-1.13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_reference_revisions-8.x-1.12.zip",
-                "reference": "8.x-1.12",
-                "shasum": "2a2ff8617c7ce01b56df1caaf0a563da04948e26"
+                "url": "https://ftp.drupal.org/files/projects/entity_reference_revisions-8.x-1.13.zip",
+                "reference": "8.x-1.13",
+                "shasum": "717ecc88566a3ed0aaec031043fe7a6913535862"
             },
             "require": {
-                "drupal/core": "^9 || ^10 || ^11"
+                "drupal/core": "^10.2 || ^11"
             },
             "require-dev": {
                 "drupal/diff": "^1 || ^2"
@@ -5476,8 +5488,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.12",
-                    "datestamp": "1722804497",
+                    "version": "8.x-1.13",
+                    "datestamp": "1765498075",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7034,17 +7046,17 @@
         },
         {
             "name": "drupal/geofield_map",
-            "version": "11.1.0",
+            "version": "11.1.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/geofield_map.git",
-                "reference": "11.1.0"
+                "reference": "11.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/geofield_map-11.1.0.zip",
-                "reference": "11.1.0",
-                "shasum": "551e64488d77fe4461af2cd52e2ec82d5e0aee7a"
+                "url": "https://ftp.drupal.org/files/projects/geofield_map-11.1.1.zip",
+                "reference": "11.1.1",
+                "shasum": "068cdca36551869b95e1cae0b9a4f1ebc45050e2"
             },
             "require": {
                 "drupal/core": "^10.2 || ^11",
@@ -7053,8 +7065,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "11.1.0",
-                    "datestamp": "1758894951",
+                    "version": "11.1.1",
+                    "datestamp": "1765876927",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8178,20 +8190,20 @@
         },
         {
             "name": "drupal/key",
-            "version": "1.20.0",
+            "version": "1.21.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/key.git",
-                "reference": "8.x-1.20"
+                "reference": "8.x-1.21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/key-8.x-1.20.zip",
-                "reference": "8.x-1.20",
-                "shasum": "f45415552de129e9976af72224393cd1d1f2ea65"
+                "url": "https://ftp.drupal.org/files/projects/key-8.x-1.21.zip",
+                "reference": "8.x-1.21",
+                "shasum": "1e493e73bd41e70831821929b97bfb43818202fe"
             },
             "require": {
-                "drupal/core": ">=8.9 <12"
+                "drupal/core": "^9.1 || ^10 || ^11"
             },
             "require-dev": {
                 "drush/drush": ">=9"
@@ -8202,8 +8214,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.20",
-                    "datestamp": "1744582168",
+                    "version": "8.x-1.21",
+                    "datestamp": "1766353546",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8578,17 +8590,17 @@
         },
         {
             "name": "drupal/linkit",
-            "version": "7.0.11",
+            "version": "7.0.12",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/linkit.git",
-                "reference": "7.0.11"
+                "reference": "7.0.12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/linkit-7.0.11.zip",
-                "reference": "7.0.11",
-                "shasum": "2ad2b67997dad8c6b3f4cbca8e15a78594e324f6"
+                "url": "https://ftp.drupal.org/files/projects/linkit-7.0.12.zip",
+                "reference": "7.0.12",
+                "shasum": "be60722e708e12be1596a804e816652c3c7ea815"
             },
             "require": {
                 "drupal/core": "^10.1 || ^11"
@@ -8596,8 +8608,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "7.0.11",
-                    "datestamp": "1762459908",
+                    "version": "7.0.12",
+                    "datestamp": "1765468273",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8807,17 +8819,17 @@
         },
         {
             "name": "drupal/matomo",
-            "version": "2.0.0-alpha3",
+            "version": "2.0.0-alpha4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/matomo.git",
-                "reference": "2.0.0-alpha3"
+                "reference": "2.0.0-alpha4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/matomo-2.0.0-alpha3.zip",
-                "reference": "2.0.0-alpha3",
-                "shasum": "0b114402a5231d9efba32f101bb79d7ebfb2d446"
+                "url": "https://ftp.drupal.org/files/projects/matomo-2.0.0-alpha4.zip",
+                "reference": "2.0.0-alpha4",
+                "shasum": "7db02888a6cffadcc8ef5660b3f95cbe7d2287b1"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11"
@@ -8826,16 +8838,16 @@
                 "drupal/csp": "<1.12"
             },
             "require-dev": {
-                "drupal/csp": "~1.12",
-                "drupal/facets": "~2.0.7",
-                "drupal/search_api": "~1.34",
-                "drupal/token": "~1.9"
+                "drupal/csp": "^1.12",
+                "drupal/facets": "^3.0",
+                "drupal/search_api": "^1.40",
+                "drupal/token": "^1.9"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.0-alpha3",
-                    "datestamp": "1738948495",
+                    "version": "2.0.0-alpha4",
+                    "datestamp": "1766442549",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -8854,10 +8866,6 @@
                 {
                     "name": "grimreaper",
                     "homepage": "https://www.drupal.org/user/2388214"
-                },
-                {
-                    "name": "hass",
-                    "homepage": "https://www.drupal.org/user/85918"
                 },
                 {
                     "name": "shelane",
@@ -9275,17 +9283,17 @@
         },
         {
             "name": "drupal/mimemail",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/mimemail.git",
-                "reference": "2.0.0"
+                "reference": "2.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/mimemail-2.0.0.zip",
-                "reference": "2.0.0",
-                "shasum": "787bc90afec9e34d3ba848fb646b7585fdbe70be"
+                "url": "https://ftp.drupal.org/files/projects/mimemail-2.0.1.zip",
+                "reference": "2.0.1",
+                "shasum": "c2252489acc864231ebc5e81e7801e0e04f05146"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11",
@@ -9297,8 +9305,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.0",
-                    "datestamp": "1758909753",
+                    "version": "2.0.1",
+                    "datestamp": "1766093117",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -10389,28 +10397,33 @@
         },
         {
             "name": "drupal/samlauth",
-            "version": "3.11.0",
+            "version": "3.13.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/samlauth.git",
-                "reference": "8.x-3.11"
+                "reference": "8.x-3.13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/samlauth-8.x-3.11.zip",
-                "reference": "8.x-3.11",
-                "shasum": "ad5a8449255481aeec5acb7a05778e6e9f10b4fd"
+                "url": "https://ftp.drupal.org/files/projects/samlauth-8.x-3.13.zip",
+                "reference": "8.x-3.13",
+                "shasum": "1d305e0843fabbe8934957baa7e5f831e2a7842f"
             },
             "require": {
                 "drupal/core": "^9.5 || ^10 || ^11",
                 "drupal/externalauth": "^1.3 || ^2.0.7",
-                "onelogin/php-saml": "^3.3.1 || ^4"
+                "onelogin/php-saml": "^3.8.1 || ^4.3.1"
+            },
+            "require-dev": {
+                "colinodell/psr-testlogger": "^1.2",
+                "drupal/key": "^1.19",
+                "drush/drush": "^10 || ^11 || ^12 || ^13"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.11",
-                    "datestamp": "1738685940",
+                    "version": "8.x-3.13",
+                    "datestamp": "1766527551",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -10812,17 +10825,17 @@
         },
         {
             "name": "drupal/search_api_attachments",
-            "version": "10.0.5",
+            "version": "10.0.6",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/search_api_attachments.git",
-                "reference": "10.0.5"
+                "reference": "10.0.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/search_api_attachments-10.0.5.zip",
-                "reference": "10.0.5",
-                "shasum": "646a5cab5eb2de25ee84ccd8036a75a018cbb128"
+                "url": "https://ftp.drupal.org/files/projects/search_api_attachments-10.0.6.zip",
+                "reference": "10.0.6",
+                "shasum": "beebd811176007d48e8123369c51426b1798895f"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11",
@@ -10831,8 +10844,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "10.0.5",
-                    "datestamp": "1751269165",
+                    "version": "10.0.6",
+                    "datestamp": "1765957801",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -15045,16 +15058,16 @@
         },
         {
             "name": "laminas/laminas-feed",
-            "version": "2.25.0",
+            "version": "2.26.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-feed.git",
-                "reference": "6299e8e2502ddedd0f39722f64079f2b709b86fa"
+                "reference": "76f537d457bace6d57aa483fccfc676198d5fca7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-feed/zipball/6299e8e2502ddedd0f39722f64079f2b709b86fa",
-                "reference": "6299e8e2502ddedd0f39722f64079f2b709b86fa",
+                "url": "https://api.github.com/repos/laminas/laminas-feed/zipball/76f537d457bace6d57aa483fccfc676198d5fca7",
+                "reference": "76f537d457bace6d57aa483fccfc676198d5fca7",
                 "shasum": ""
             },
             "require": {
@@ -15063,7 +15076,7 @@
                 "ext-libxml": "*",
                 "laminas/laminas-escaper": "^2.9",
                 "laminas/laminas-stdlib": "^3.6",
-                "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0"
+                "php": "~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0"
             },
             "conflict": {
                 "laminas/laminas-servicemanager": "<3.3",
@@ -15122,7 +15135,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2025-08-04T22:21:52+00:00"
+            "time": "2025-12-19T11:28:10+00:00"
         },
         {
             "name": "laminas/laminas-stdlib",
@@ -16405,38 +16418,19 @@
             ]
         },
         {
-            "name": "npm-asset/geojson-rbush",
-            "version": "3.2.0",
-            "dist": {
-                "type": "tar",
-                "url": "https://registry.npmjs.org/geojson-rbush/-/geojson-rbush-3.2.0.tgz"
-            },
-            "require": {
-                "npm-asset/rbush": ">=3.0.1,<4.0.0",
-                "npm-asset/turf--bbox": "*",
-                "npm-asset/turf--helpers": "dev-6.x|6.x",
-                "npm-asset/turf--meta": "dev-6.x|6.x",
-                "npm-asset/types--geojson": "7946.0.8"
-            },
-            "type": "npm-asset",
-            "license": [
-                "MIT"
-            ]
-        },
-        {
             "name": "npm-asset/geoman-io--leaflet-geoman-free",
-            "version": "2.17.0",
+            "version": "2.19.0",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/@geoman-io/leaflet-geoman-free/-/leaflet-geoman-free-2.17.0.tgz"
+                "url": "https://registry.npmjs.org/@geoman-io/leaflet-geoman-free/-/leaflet-geoman-free-2.19.0.tgz"
             },
             "require": {
                 "npm-asset/lodash": "4.17.21",
-                "npm-asset/polyclip-ts": ">=0.16.5,<0.17.0",
-                "npm-asset/turf--boolean-contains": ">=6.5.0,<7.0.0",
-                "npm-asset/turf--kinks": ">=6.5.0,<7.0.0",
-                "npm-asset/turf--line-intersect": ">=6.5.0,<7.0.0",
-                "npm-asset/turf--line-split": ">=6.5.0,<7.0.0"
+                "npm-asset/polyclip-ts": ">=0.16.8,<0.17.0",
+                "npm-asset/turf--boolean-contains": ">=7.3.1,<8.0.0",
+                "npm-asset/turf--kinks": ">=7.3.1,<8.0.0",
+                "npm-asset/turf--line-intersect": ">=7.3.1,<8.0.0",
+                "npm-asset/turf--line-split": ">=7.3.1,<8.0.0"
             },
             "type": "npm-asset",
             "license": [
@@ -16493,10 +16487,10 @@
         },
         {
             "name": "npm-asset/leaflet.locatecontrol",
-            "version": "0.81.1",
+            "version": "0.85.1",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/leaflet.locatecontrol/-/leaflet.locatecontrol-0.81.1.tgz"
+                "url": "https://registry.npmjs.org/leaflet.locatecontrol/-/leaflet.locatecontrol-0.85.1.tgz"
             },
             "type": "npm-asset",
             "license": [
@@ -16540,15 +16534,30 @@
             ]
         },
         {
-            "name": "npm-asset/polyclip-ts",
-            "version": "0.16.5",
+            "name": "npm-asset/point-in-polygon-hao",
+            "version": "1.2.4",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/polyclip-ts/-/polyclip-ts-0.16.5.tgz"
+                "url": "https://registry.npmjs.org/point-in-polygon-hao/-/point-in-polygon-hao-1.2.4.tgz"
+            },
+            "require": {
+                "npm-asset/robust-predicates": ">=3.0.2,<4.0.0"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/polyclip-ts",
+            "version": "0.16.8",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/polyclip-ts/-/polyclip-ts-0.16.8.tgz"
             },
             "require": {
                 "npm-asset/bignumber.js": ">=9.1.0,<10.0.0",
-                "npm-asset/splaytree-ts": ">=1.0.1,<2.0.0"
+                "npm-asset/splaytree-ts": ">=1.0.2,<2.0.0"
             },
             "type": "npm-asset",
             "license": [
@@ -16611,6 +16620,18 @@
             ]
         },
         {
+            "name": "npm-asset/robust-predicates",
+            "version": "3.0.2",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/robust-predicates/-/robust-predicates-3.0.2.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "Unlicense"
+            ]
+        },
+        {
             "name": "npm-asset/route-manifest",
             "version": "1.0.0",
             "dist": {
@@ -16666,14 +16687,29 @@
         },
         {
             "name": "npm-asset/splaytree-ts",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/splaytree-ts/-/splaytree-ts-1.0.1.tgz"
+                "url": "https://registry.npmjs.org/splaytree-ts/-/splaytree-ts-1.0.2.tgz"
             },
             "type": "npm-asset",
             "license": [
                 "BDS-3-Clause"
+            ]
+        },
+        {
+            "name": "npm-asset/sweepline-intersections",
+            "version": "1.5.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/sweepline-intersections/-/sweepline-intersections-1.5.0.tgz"
+            },
+            "require": {
+                "npm-asset/tinyqueue": ">=2.0.0,<3.0.0"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
             ]
         },
         {
@@ -16689,31 +16725,41 @@
             ]
         },
         {
-            "name": "npm-asset/turf--bbox",
-            "version": "6.5.0",
+            "name": "npm-asset/tinyqueue",
+            "version": "2.0.3",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/@turf/bbox/-/bbox-6.5.0.tgz"
-            },
-            "require": {
-                "npm-asset/turf--helpers": ">=6.5.0,<7.0.0",
-                "npm-asset/turf--meta": ">=6.5.0,<7.0.0"
+                "url": "https://registry.npmjs.org/tinyqueue/-/tinyqueue-2.0.3.tgz"
             },
             "type": "npm-asset",
             "license": [
-                "MIT"
+                "ISC"
             ]
         },
         {
-            "name": "npm-asset/turf--bearing",
-            "version": "6.5.0",
+            "name": "npm-asset/tslib",
+            "version": "2.8.1",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/@turf/bearing/-/bearing-6.5.0.tgz"
+                "url": "https://registry.npmjs.org/tslib/-/tslib-2.8.1.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "0BSD"
+            ]
+        },
+        {
+            "name": "npm-asset/turf--bbox",
+            "version": "7.3.1",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/@turf/bbox/-/bbox-7.3.1.tgz"
             },
             "require": {
-                "npm-asset/turf--helpers": ">=6.5.0,<7.0.0",
-                "npm-asset/turf--invariant": ">=6.5.0,<7.0.0"
+                "npm-asset/tslib": ">=2.8.1,<3.0.0",
+                "npm-asset/turf--helpers": "7.3.1",
+                "npm-asset/turf--meta": "7.3.1",
+                "npm-asset/types--geojson": ">=7946.0.10,<7947.0.0"
             },
             "type": "npm-asset",
             "license": [
@@ -16722,17 +16768,19 @@
         },
         {
             "name": "npm-asset/turf--boolean-contains",
-            "version": "6.5.0",
+            "version": "7.3.1",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/@turf/boolean-contains/-/boolean-contains-6.5.0.tgz"
+                "url": "https://registry.npmjs.org/@turf/boolean-contains/-/boolean-contains-7.3.1.tgz"
             },
             "require": {
-                "npm-asset/turf--bbox": ">=6.5.0,<7.0.0",
-                "npm-asset/turf--boolean-point-in-polygon": ">=6.5.0,<7.0.0",
-                "npm-asset/turf--boolean-point-on-line": ">=6.5.0,<7.0.0",
-                "npm-asset/turf--helpers": ">=6.5.0,<7.0.0",
-                "npm-asset/turf--invariant": ">=6.5.0,<7.0.0"
+                "npm-asset/tslib": ">=2.8.1,<3.0.0",
+                "npm-asset/turf--bbox": "7.3.1",
+                "npm-asset/turf--boolean-point-in-polygon": "7.3.1",
+                "npm-asset/turf--boolean-point-on-line": "7.3.1",
+                "npm-asset/turf--helpers": "7.3.1",
+                "npm-asset/turf--invariant": "7.3.1",
+                "npm-asset/types--geojson": ">=7946.0.10,<7947.0.0"
             },
             "type": "npm-asset",
             "license": [
@@ -16741,14 +16789,17 @@
         },
         {
             "name": "npm-asset/turf--boolean-point-in-polygon",
-            "version": "6.5.0",
+            "version": "7.3.1",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/@turf/boolean-point-in-polygon/-/boolean-point-in-polygon-6.5.0.tgz"
+                "url": "https://registry.npmjs.org/@turf/boolean-point-in-polygon/-/boolean-point-in-polygon-7.3.1.tgz"
             },
             "require": {
-                "npm-asset/turf--helpers": ">=6.5.0,<7.0.0",
-                "npm-asset/turf--invariant": ">=6.5.0,<7.0.0"
+                "npm-asset/point-in-polygon-hao": ">=1.1.0,<2.0.0",
+                "npm-asset/tslib": ">=2.8.1,<3.0.0",
+                "npm-asset/turf--helpers": "7.3.1",
+                "npm-asset/turf--invariant": "7.3.1",
+                "npm-asset/types--geojson": ">=7946.0.10,<7947.0.0"
             },
             "type": "npm-asset",
             "license": [
@@ -16757,30 +16808,16 @@
         },
         {
             "name": "npm-asset/turf--boolean-point-on-line",
-            "version": "6.5.0",
+            "version": "7.3.1",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/@turf/boolean-point-on-line/-/boolean-point-on-line-6.5.0.tgz"
+                "url": "https://registry.npmjs.org/@turf/boolean-point-on-line/-/boolean-point-on-line-7.3.1.tgz"
             },
             "require": {
-                "npm-asset/turf--helpers": ">=6.5.0,<7.0.0",
-                "npm-asset/turf--invariant": ">=6.5.0,<7.0.0"
-            },
-            "type": "npm-asset",
-            "license": [
-                "MIT"
-            ]
-        },
-        {
-            "name": "npm-asset/turf--destination",
-            "version": "6.5.0",
-            "dist": {
-                "type": "tar",
-                "url": "https://registry.npmjs.org/@turf/destination/-/destination-6.5.0.tgz"
-            },
-            "require": {
-                "npm-asset/turf--helpers": ">=6.5.0,<7.0.0",
-                "npm-asset/turf--invariant": ">=6.5.0,<7.0.0"
+                "npm-asset/tslib": ">=2.8.1,<3.0.0",
+                "npm-asset/turf--helpers": "7.3.1",
+                "npm-asset/turf--invariant": "7.3.1",
+                "npm-asset/types--geojson": ">=7946.0.10,<7947.0.0"
             },
             "type": "npm-asset",
             "license": [
@@ -16789,14 +16826,35 @@
         },
         {
             "name": "npm-asset/turf--distance",
-            "version": "6.5.0",
+            "version": "7.3.1",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/@turf/distance/-/distance-6.5.0.tgz"
+                "url": "https://registry.npmjs.org/@turf/distance/-/distance-7.3.1.tgz"
             },
             "require": {
-                "npm-asset/turf--helpers": ">=6.5.0,<7.0.0",
-                "npm-asset/turf--invariant": ">=6.5.0,<7.0.0"
+                "npm-asset/tslib": ">=2.8.1,<3.0.0",
+                "npm-asset/turf--helpers": "7.3.1",
+                "npm-asset/turf--invariant": "7.3.1",
+                "npm-asset/types--geojson": ">=7946.0.10,<7947.0.0"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/turf--geojson-rbush",
+            "version": "7.3.1",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/@turf/geojson-rbush/-/geojson-rbush-7.3.1.tgz"
+            },
+            "require": {
+                "npm-asset/rbush": ">=3.0.1,<4.0.0",
+                "npm-asset/turf--bbox": "7.3.1",
+                "npm-asset/turf--helpers": "7.3.1",
+                "npm-asset/turf--meta": "7.3.1",
+                "npm-asset/types--geojson": ">=7946.0.10,<7947.0.0"
             },
             "type": "npm-asset",
             "license": [
@@ -16805,10 +16863,14 @@
         },
         {
             "name": "npm-asset/turf--helpers",
-            "version": "6.5.0",
+            "version": "7.3.1",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/@turf/helpers/-/helpers-6.5.0.tgz"
+                "url": "https://registry.npmjs.org/@turf/helpers/-/helpers-7.3.1.tgz"
+            },
+            "require": {
+                "npm-asset/tslib": ">=2.8.1,<3.0.0",
+                "npm-asset/types--geojson": ">=7946.0.10,<7947.0.0"
             },
             "type": "npm-asset",
             "license": [
@@ -16817,13 +16879,15 @@
         },
         {
             "name": "npm-asset/turf--invariant",
-            "version": "6.5.0",
+            "version": "7.3.1",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/@turf/invariant/-/invariant-6.5.0.tgz"
+                "url": "https://registry.npmjs.org/@turf/invariant/-/invariant-7.3.1.tgz"
             },
             "require": {
-                "npm-asset/turf--helpers": ">=6.5.0,<7.0.0"
+                "npm-asset/tslib": ">=2.8.1,<3.0.0",
+                "npm-asset/turf--helpers": "7.3.1",
+                "npm-asset/types--geojson": ">=7946.0.10,<7947.0.0"
             },
             "type": "npm-asset",
             "license": [
@@ -16832,13 +16896,15 @@
         },
         {
             "name": "npm-asset/turf--kinks",
-            "version": "6.5.0",
+            "version": "7.3.1",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/@turf/kinks/-/kinks-6.5.0.tgz"
+                "url": "https://registry.npmjs.org/@turf/kinks/-/kinks-7.3.1.tgz"
             },
             "require": {
-                "npm-asset/turf--helpers": ">=6.5.0,<7.0.0"
+                "npm-asset/tslib": ">=2.8.1,<3.0.0",
+                "npm-asset/turf--helpers": "7.3.1",
+                "npm-asset/types--geojson": ">=7946.0.10,<7947.0.0"
             },
             "type": "npm-asset",
             "license": [
@@ -16847,17 +16913,16 @@
         },
         {
             "name": "npm-asset/turf--line-intersect",
-            "version": "6.5.0",
+            "version": "7.3.1",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/@turf/line-intersect/-/line-intersect-6.5.0.tgz"
+                "url": "https://registry.npmjs.org/@turf/line-intersect/-/line-intersect-7.3.1.tgz"
             },
             "require": {
-                "npm-asset/geojson-rbush": "dev-3.x|3.x",
-                "npm-asset/turf--helpers": ">=6.5.0,<7.0.0",
-                "npm-asset/turf--invariant": ">=6.5.0,<7.0.0",
-                "npm-asset/turf--line-segment": ">=6.5.0,<7.0.0",
-                "npm-asset/turf--meta": ">=6.5.0,<7.0.0"
+                "npm-asset/sweepline-intersections": ">=1.5.0,<2.0.0",
+                "npm-asset/tslib": ">=2.8.1,<3.0.0",
+                "npm-asset/turf--helpers": "7.3.1",
+                "npm-asset/types--geojson": ">=7946.0.10,<7947.0.0"
             },
             "type": "npm-asset",
             "license": [
@@ -16866,15 +16931,17 @@
         },
         {
             "name": "npm-asset/turf--line-segment",
-            "version": "6.5.0",
+            "version": "7.3.1",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/@turf/line-segment/-/line-segment-6.5.0.tgz"
+                "url": "https://registry.npmjs.org/@turf/line-segment/-/line-segment-7.3.1.tgz"
             },
             "require": {
-                "npm-asset/turf--helpers": ">=6.5.0,<7.0.0",
-                "npm-asset/turf--invariant": ">=6.5.0,<7.0.0",
-                "npm-asset/turf--meta": ">=6.5.0,<7.0.0"
+                "npm-asset/tslib": ">=2.8.1,<3.0.0",
+                "npm-asset/turf--helpers": "7.3.1",
+                "npm-asset/turf--invariant": "7.3.1",
+                "npm-asset/turf--meta": "7.3.1",
+                "npm-asset/types--geojson": ">=7946.0.10,<7947.0.0"
             },
             "type": "npm-asset",
             "license": [
@@ -16883,22 +16950,22 @@
         },
         {
             "name": "npm-asset/turf--line-split",
-            "version": "6.5.0",
+            "version": "7.3.1",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/@turf/line-split/-/line-split-6.5.0.tgz"
+                "url": "https://registry.npmjs.org/@turf/line-split/-/line-split-7.3.1.tgz"
             },
             "require": {
-                "npm-asset/geojson-rbush": "dev-3.x|3.x",
-                "npm-asset/turf--bbox": ">=6.5.0,<7.0.0",
-                "npm-asset/turf--helpers": ">=6.5.0,<7.0.0",
-                "npm-asset/turf--invariant": ">=6.5.0,<7.0.0",
-                "npm-asset/turf--line-intersect": ">=6.5.0,<7.0.0",
-                "npm-asset/turf--line-segment": ">=6.5.0,<7.0.0",
-                "npm-asset/turf--meta": ">=6.5.0,<7.0.0",
-                "npm-asset/turf--nearest-point-on-line": ">=6.5.0,<7.0.0",
-                "npm-asset/turf--square": ">=6.5.0,<7.0.0",
-                "npm-asset/turf--truncate": ">=6.5.0,<7.0.0"
+                "npm-asset/turf--bbox": "7.3.1",
+                "npm-asset/turf--geojson-rbush": "7.3.1",
+                "npm-asset/turf--helpers": "7.3.1",
+                "npm-asset/turf--invariant": "7.3.1",
+                "npm-asset/turf--line-intersect": "7.3.1",
+                "npm-asset/turf--line-segment": "7.3.1",
+                "npm-asset/turf--meta": "7.3.1",
+                "npm-asset/turf--nearest-point-on-line": "7.3.1",
+                "npm-asset/turf--truncate": "7.3.1",
+                "npm-asset/types--geojson": ">=7946.0.10,<7947.0.0"
             },
             "type": "npm-asset",
             "license": [
@@ -16907,13 +16974,14 @@
         },
         {
             "name": "npm-asset/turf--meta",
-            "version": "6.5.0",
+            "version": "7.3.1",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/@turf/meta/-/meta-6.5.0.tgz"
+                "url": "https://registry.npmjs.org/@turf/meta/-/meta-7.3.1.tgz"
             },
             "require": {
-                "npm-asset/turf--helpers": ">=6.5.0,<7.0.0"
+                "npm-asset/turf--helpers": "7.3.1",
+                "npm-asset/types--geojson": ">=7946.0.10,<7947.0.0"
             },
             "type": "npm-asset",
             "license": [
@@ -16922,35 +16990,18 @@
         },
         {
             "name": "npm-asset/turf--nearest-point-on-line",
-            "version": "6.5.0",
+            "version": "7.3.1",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/@turf/nearest-point-on-line/-/nearest-point-on-line-6.5.0.tgz"
+                "url": "https://registry.npmjs.org/@turf/nearest-point-on-line/-/nearest-point-on-line-7.3.1.tgz"
             },
             "require": {
-                "npm-asset/turf--bearing": ">=6.5.0,<7.0.0",
-                "npm-asset/turf--destination": ">=6.5.0,<7.0.0",
-                "npm-asset/turf--distance": ">=6.5.0,<7.0.0",
-                "npm-asset/turf--helpers": ">=6.5.0,<7.0.0",
-                "npm-asset/turf--invariant": ">=6.5.0,<7.0.0",
-                "npm-asset/turf--line-intersect": ">=6.5.0,<7.0.0",
-                "npm-asset/turf--meta": ">=6.5.0,<7.0.0"
-            },
-            "type": "npm-asset",
-            "license": [
-                "MIT"
-            ]
-        },
-        {
-            "name": "npm-asset/turf--square",
-            "version": "6.5.0",
-            "dist": {
-                "type": "tar",
-                "url": "https://registry.npmjs.org/@turf/square/-/square-6.5.0.tgz"
-            },
-            "require": {
-                "npm-asset/turf--distance": ">=6.5.0,<7.0.0",
-                "npm-asset/turf--helpers": ">=6.5.0,<7.0.0"
+                "npm-asset/tslib": ">=2.8.1,<3.0.0",
+                "npm-asset/turf--distance": "7.3.1",
+                "npm-asset/turf--helpers": "7.3.1",
+                "npm-asset/turf--invariant": "7.3.1",
+                "npm-asset/turf--meta": "7.3.1",
+                "npm-asset/types--geojson": ">=7946.0.10,<7947.0.0"
             },
             "type": "npm-asset",
             "license": [
@@ -16959,14 +17010,16 @@
         },
         {
             "name": "npm-asset/turf--truncate",
-            "version": "6.5.0",
+            "version": "7.3.1",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/@turf/truncate/-/truncate-6.5.0.tgz"
+                "url": "https://registry.npmjs.org/@turf/truncate/-/truncate-7.3.1.tgz"
             },
             "require": {
-                "npm-asset/turf--helpers": ">=6.5.0,<7.0.0",
-                "npm-asset/turf--meta": ">=6.5.0,<7.0.0"
+                "npm-asset/tslib": ">=2.8.1,<3.0.0",
+                "npm-asset/turf--helpers": "7.3.1",
+                "npm-asset/turf--meta": "7.3.1",
+                "npm-asset/types--geojson": ">=7946.0.10,<7947.0.0"
             },
             "type": "npm-asset",
             "license": [
@@ -16975,10 +17028,10 @@
         },
         {
             "name": "npm-asset/types--geojson",
-            "version": "7946.0.8",
+            "version": "7946.0.16",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/@types/geojson/-/geojson-7946.0.8.tgz"
+                "url": "https://registry.npmjs.org/@types/geojson/-/geojson-7946.0.16.tgz"
             },
             "type": "npm-asset",
             "license": [
@@ -17313,16 +17366,16 @@
         },
         {
             "name": "pear/pear-core-minimal",
-            "version": "v1.10.16",
+            "version": "v1.10.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/pear-core-minimal.git",
-                "reference": "c0f51b45f50683bf5bbf558036854ebc9b54d033"
+                "reference": "c7b55789d01de0ce090d289b73f1bbd6a2f113b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pear/pear-core-minimal/zipball/c0f51b45f50683bf5bbf558036854ebc9b54d033",
-                "reference": "c0f51b45f50683bf5bbf558036854ebc9b54d033",
+                "url": "https://api.github.com/repos/pear/pear-core-minimal/zipball/c7b55789d01de0ce090d289b73f1bbd6a2f113b1",
+                "reference": "c7b55789d01de0ce090d289b73f1bbd6a2f113b1",
                 "shasum": ""
             },
             "require": {
@@ -17358,7 +17411,7 @@
                 "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=PEAR",
                 "source": "https://github.com/pear/pear-core-minimal"
             },
-            "time": "2024-11-24T22:27:58+00:00"
+            "time": "2025-12-14T20:37:07+00:00"
         },
         {
             "name": "pear/pear_exception",
@@ -18503,16 +18556,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.12.16",
+            "version": "v0.12.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "ee6d5028be4774f56c6c2c85ec4e6bc9acfe6b67"
+                "reference": "ddff0ac01beddc251786fe70367cd8bbdb258196"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/ee6d5028be4774f56c6c2c85ec4e6bc9acfe6b67",
-                "reference": "ee6d5028be4774f56c6c2c85ec4e6bc9acfe6b67",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/ddff0ac01beddc251786fe70367cd8bbdb258196",
+                "reference": "ddff0ac01beddc251786fe70367cd8bbdb258196",
                 "shasum": ""
             },
             "require": {
@@ -18576,9 +18629,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bobthecow/psysh/issues",
-                "source": "https://github.com/bobthecow/psysh/tree/v0.12.16"
+                "source": "https://github.com/bobthecow/psysh/tree/v0.12.18"
             },
-            "time": "2025-12-07T03:39:01+00:00"
+            "time": "2025-12-17T14:35:46+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -22714,23 +22767,23 @@
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
-            "version": "v2.3.0",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tijsverkoyen/CssToInlineStyles.git",
-                "reference": "0d72ac1c00084279c1816675284073c5a337c20d"
+                "reference": "f0292ccf0ec75843d65027214426b6b163b48b41"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tijsverkoyen/CssToInlineStyles/zipball/0d72ac1c00084279c1816675284073c5a337c20d",
-                "reference": "0d72ac1c00084279c1816675284073c5a337c20d",
+                "url": "https://api.github.com/repos/tijsverkoyen/CssToInlineStyles/zipball/f0292ccf0ec75843d65027214426b6b163b48b41",
+                "reference": "f0292ccf0ec75843d65027214426b6b163b48b41",
                 "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
                 "ext-libxml": "*",
                 "php": "^7.4 || ^8.0",
-                "symfony/css-selector": "^5.4 || ^6.0 || ^7.0"
+                "symfony/css-selector": "^5.4 || ^6.0 || ^7.0 || ^8.0"
             },
             "require-dev": {
                 "phpstan/phpstan": "^2.0",
@@ -22763,9 +22816,9 @@
             "homepage": "https://github.com/tijsverkoyen/CssToInlineStyles",
             "support": {
                 "issues": "https://github.com/tijsverkoyen/CssToInlineStyles/issues",
-                "source": "https://github.com/tijsverkoyen/CssToInlineStyles/tree/v2.3.0"
+                "source": "https://github.com/tijsverkoyen/CssToInlineStyles/tree/v2.4.0"
             },
-            "time": "2024-12-21T16:25:41+00:00"
+            "time": "2025-12-02T11:56:42+00:00"
         },
         {
             "name": "twbs/bootstrap",
@@ -25854,16 +25907,16 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "5.6.5",
+            "version": "5.6.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "90614c73d3800e187615e2dd236ad0e2a01bf761"
+                "reference": "5cee1d3dfc2d2aa6599834520911d246f656bcb8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/90614c73d3800e187615e2dd236ad0e2a01bf761",
-                "reference": "90614c73d3800e187615e2dd236ad0e2a01bf761",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/5cee1d3dfc2d2aa6599834520911d246f656bcb8",
+                "reference": "5cee1d3dfc2d2aa6599834520911d246f656bcb8",
                 "shasum": ""
             },
             "require": {
@@ -25873,7 +25926,7 @@
                 "phpdocumentor/reflection-common": "^2.2",
                 "phpdocumentor/type-resolver": "^1.7",
                 "phpstan/phpdoc-parser": "^1.7|^2.0",
-                "webmozart/assert": "^1.9.1"
+                "webmozart/assert": "^1.9.1 || ^2"
             },
             "require-dev": {
                 "mockery/mockery": "~1.3.5 || ~1.6.0",
@@ -25912,9 +25965,9 @@
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
             "support": {
                 "issues": "https://github.com/phpDocumentor/ReflectionDocBlock/issues",
-                "source": "https://github.com/phpDocumentor/ReflectionDocBlock/tree/5.6.5"
+                "source": "https://github.com/phpDocumentor/ReflectionDocBlock/tree/5.6.6"
             },
-            "time": "2025-11-27T19:50:05+00:00"
+            "time": "2025-12-22T21:13:58+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
@@ -26869,20 +26922,20 @@
         },
         {
             "name": "ramsey/uuid",
-            "version": "4.9.1",
+            "version": "4.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ramsey/uuid.git",
-                "reference": "81f941f6f729b1e3ceea61d9d014f8b6c6800440"
+                "reference": "8429c78ca35a09f27565311b98101e2826affde0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ramsey/uuid/zipball/81f941f6f729b1e3ceea61d9d014f8b6c6800440",
-                "reference": "81f941f6f729b1e3ceea61d9d014f8b6c6800440",
+                "url": "https://api.github.com/repos/ramsey/uuid/zipball/8429c78ca35a09f27565311b98101e2826affde0",
+                "reference": "8429c78ca35a09f27565311b98101e2826affde0",
                 "shasum": ""
             },
             "require": {
-                "brick/math": "^0.8.8 || ^0.9 || ^0.10 || ^0.11 || ^0.12 || ^0.13 || ^0.14",
+                "brick/math": "^0.8.16 || ^0.9 || ^0.10 || ^0.11 || ^0.12 || ^0.13 || ^0.14",
                 "php": "^8.0",
                 "ramsey/collection": "^1.2 || ^2.0"
             },
@@ -26941,9 +26994,9 @@
             ],
             "support": {
                 "issues": "https://github.com/ramsey/uuid/issues",
-                "source": "https://github.com/ramsey/uuid/tree/4.9.1"
+                "source": "https://github.com/ramsey/uuid/tree/4.9.2"
             },
-            "time": "2025-09-04T20:59:21+00:00"
+            "time": "2025-12-14T04:43:48+00:00"
         },
         {
             "name": "react/promise",
@@ -28984,23 +29037,23 @@
         },
         {
             "name": "webmozart/assert",
-            "version": "1.12.1",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozarts/assert.git",
-                "reference": "9be6926d8b485f55b9229203f962b51ed377ba68"
+                "reference": "1b34b004e35a164bc5bb6ebd33c844b2d8069a54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozarts/assert/zipball/9be6926d8b485f55b9229203f962b51ed377ba68",
-                "reference": "9be6926d8b485f55b9229203f962b51ed377ba68",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/1b34b004e35a164bc5bb6ebd33c844b2d8069a54",
+                "reference": "1b34b004e35a164bc5bb6ebd33c844b2d8069a54",
                 "shasum": ""
             },
             "require": {
                 "ext-ctype": "*",
                 "ext-date": "*",
                 "ext-filter": "*",
-                "php": "^7.2 || ^8.0"
+                "php": "^8.2"
             },
             "suggest": {
                 "ext-intl": "",
@@ -29010,7 +29063,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.10-dev"
+                    "dev-feature/2-0": "2.0-dev"
                 }
             },
             "autoload": {
@@ -29026,6 +29079,10 @@
                 {
                     "name": "Bernhard Schussek",
                     "email": "bschussek@gmail.com"
+                },
+                {
+                    "name": "Woody Gilk",
+                    "email": "woody.gilk@gmail.com"
                 }
             ],
             "description": "Assertions to validate method input/output with nice error messages.",
@@ -29036,9 +29093,9 @@
             ],
             "support": {
                 "issues": "https://github.com/webmozarts/assert/issues",
-                "source": "https://github.com/webmozarts/assert/tree/1.12.1"
+                "source": "https://github.com/webmozarts/assert/tree/2.0.0"
             },
-            "time": "2025-10-29T15:56:20+00:00"
+            "time": "2025-12-16T21:36:00+00:00"
         },
         {
             "name": "zaporylie/composer-drupal-optimizations",
