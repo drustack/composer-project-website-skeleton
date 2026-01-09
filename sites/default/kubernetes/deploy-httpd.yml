@@ -16,6 +16,15 @@ spec:
       labels:
         service: httpd
     spec:
+      initContainers:
+        - name: bootstrap
+          image: docker.io/busybox:latest
+          imagePullPolicy: IfNotPresent
+          args:
+            - /bin/sh
+            - -c
+            - |
+              until nc -zvw1 php 9000; do sleep 1; done
       containers:
         - name: httpd
           image: docker.io/alvistack/httpd-2.4:latest
