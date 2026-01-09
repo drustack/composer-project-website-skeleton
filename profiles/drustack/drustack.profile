@@ -181,7 +181,7 @@ function _drustack_features_install(&$install_state) {
 
   $operations = [];
   foreach ($required + $non_required + $features as $module => $weight) {
-    $operations[] = ['_install_module_batch', [$module, $files[$module]->info['name']]];
+    $operations[] = ['_install_module_batch', [[$module], [$files[$module]->info['name']]]];
   }
 
   $batch = [

@@ -29,13 +29,6 @@ spec:
           workingDir: /var/www/html
           ports:
             - containerPort: 9000
-          readinessProbe:
-            tcpSocket:
-              port: 9000
-          livenessProbe:
-            tcpSocket:
-              port: 9000
-            initialDelaySeconds: 30
           volumeMounts:
             - mountPath: /etc/php/fpm/pool.d/www.conf
               name: etc-php-fpm-pool-d
@@ -47,5 +40,6 @@ spec:
           configMap:
             name: etc-php-fpm-pool-d
         - name: var-www-html
-          persistentVolumeClaim:
-            claimName: var-www-html
+          hostPath:
+            path: /vagrant
+            type: DirectoryOrCreate

@@ -27,6 +27,7 @@ Description: Bootstrap 4 with Sass
 
 body {
   overflow-x: hidden;
+
   &.overflow-y {
     overflow-y: hidden;
   }
@@ -40,4 +41,8 @@ img {
   width: auto;
   max-width: 100%;
   object-fit: contain;
+}
+
+button[type="button"]:focus-visible {
+  outline: 1px solid #000;
 }

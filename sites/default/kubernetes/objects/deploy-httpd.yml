@@ -29,13 +29,6 @@ spec:
           workingDir: /var/www/html
           ports:
             - containerPort: 80
-          readinessProbe:
-            tcpSocket:
-              port: 80
-          livenessProbe:
-            tcpSocket:
-              port: 80
-            initialDelaySeconds: 30
           volumeMounts:
             - mountPath: /etc/apache2/sites-enabled/000-default.conf
               name: etc-apache2-sites-enabled
@@ -47,5 +40,6 @@ spec:
           configMap:
             name: etc-apache2-sites-enabled
         - name: var-www-html
-          persistentVolumeClaim:
-            claimName: var-www-html
+          hostPath:
+            path: /vagrant
+            type: DirectoryOrCreate

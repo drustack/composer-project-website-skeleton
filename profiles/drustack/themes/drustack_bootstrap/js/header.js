@@ -16,8 +16,8 @@
   const mainNav = document.querySelector("#header .menu--header");
   const menuList = document.querySelector("#header .navbar-nav");
   const menuBottom = document.querySelector("#header .menu_bottom");
-  const expandableItems = document.querySelectorAll("#header li.menu-item--expanded");
-  const expandableNavItems = document.querySelectorAll("#header .nav-item.menu-item--expanded");
+  let expandableItems;
+  let expandableNavItems;
 
   const waitForElm = (selector) => {
     return new Promise(resolve => {
@@ -74,6 +74,7 @@
   }
 
   window.addEventListener("resize", () => {
+    expandableItems = document.querySelectorAll("#header li.menu-item--expanded");
     if (toolbar && header) {
       header.style.top = getToolbarHeight();
     }
@@ -134,6 +135,8 @@
   });
 
   window.addEventListener('DOMContentLoaded', () => {
+    expandableItems = document.querySelectorAll("#header li.menu-item--expanded");
+    expandableNavItems = document.querySelectorAll("#header .nav-item.menu-item--expanded");
     if (toolbar && header) {
       const toolbarManage = toolbar.querySelector(".toolbar-tab:nth-of-type(3)");
       header.style.top = getToolbarHeight();
