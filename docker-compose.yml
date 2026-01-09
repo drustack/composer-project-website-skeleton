@@ -3,9 +3,9 @@ services:
   httpd:
     image: docker.io/alvistack/httpd-2.4:latest
     env_file:
-      - ./sites/default/docker-compose/.env
+      - ./.env
     volumes:
-      - ./sites/default/docker-compose/configmaps/etc-apache2-sites-enabled/000-default.conf:/etc/apache2/sites-enabled/000-default.conf
+      - ./.root/etc/apache2/sites-enabled/000-default.conf:/etc/apache2/sites-enabled/000-default.conf
       - ./:/var/www/html
       - /tmp:/tmp
     ports:
@@ -14,9 +14,9 @@ services:
   php:
     image: docker.io/alvistack/php-8.3-fpm:latest
     env_file:
-      - ./sites/default/docker-compose/.env
+      - ./.env
     volumes:
-      - ./sites/default/docker-compose/configmaps/etc-php-fpm-pool-d/www.conf:/etc/php/fpm/pool.d/www.conf
+      - ./.root/etc/php/fpm/pool.d/www.conf:/etc/php/fpm/pool.d/www.conf
       - ./:/var/www/html
       - /tmp:/tmp
     ports:
@@ -25,9 +25,9 @@ services:
   mariadb:
     image: docker.io/alvistack/mariadb-11.4:latest
     env_file:
-      - ./sites/default/docker-compose/.env
+      - ./.env
     volumes:
-      - ./sites/default/docker-compose/persistentvolumes/var-lib-mysql:/var/lib/mysql
+      - ./.root/var/lib/mysql:/var/lib/mysql
       - /tmp:/tmp
     ports:
       - 3306
@@ -35,7 +35,7 @@ services:
   memcached:
     image: docker.io/memcached:1.6
     env_file:
-      - ./sites/default/docker-compose/.env
+      - ./.env
     command:
       - /bin/bash
       - -c
@@ -48,9 +48,9 @@ services:
   postgres:
     image: docker.io/alvistack/postgres-16:latest
     env_file:
-      - ./sites/default/docker-compose/.env
+      - ./.env
     volumes:
-      - ./sites/default/docker-compose/persistentvolumes/var-lib-postgresql-data:/var/lib/postgresql/data
+      - ./.root/var/lib/postgresql/data:/var/lib/postgresql/data
       - /tmp:/tmp
     ports:
       - 5432
@@ -58,7 +58,7 @@ services:
   redis:
     image: docker.io/redis:8.0
     env_file:
-      - ./sites/default/docker-compose/.env
+      - ./.env
     command:
       - /bin/bash
       - -c
@@ -71,14 +71,14 @@ services:
   solr:
     image: docker.io/solr:9.8
     env_file:
-      - ./sites/default/docker-compose/.env
+      - ./.env
     command:
       - /bin/bash
       - -c
       - solr-precreate default
     volumes:
       - ./modules/contrib/search_api_solr/jump-start/solr9/config-set:/opt/solr/server/solr/configsets/_default/conf
-      - ./sites/default/docker-compose/persistentvolumes/var-solr:/var/solr
+      - ./.root/var/solr:/var/solr
       - /tmp:/tmp
     ports:
       - 8983
@@ -86,7 +86,7 @@ services:
   devel:
     image: docker.io/alvistack/devel-24.04:latest
     env_file:
-      - ./sites/default/docker-compose/.env
+      - ./.env
     working_dir: /var/www/html
     volumes:
       - ./:/var/www/html
