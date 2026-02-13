@@ -2167,6 +2167,10 @@
                     "homepage": "https://www.drupal.org/user/2512258"
                 },
                 {
+                    "name": "fago",
+                    "homepage": "https://www.drupal.org/user/16747"
+                },
+                {
                     "name": "gxleano",
                     "homepage": "https://www.drupal.org/user/3591999"
                 },
@@ -2181,6 +2185,10 @@
                 {
                     "name": "marcus_johansson",
                     "homepage": "https://www.drupal.org/user/385947"
+                },
+                {
+                    "name": "michaellander",
+                    "homepage": "https://www.drupal.org/user/636494"
                 },
                 {
                     "name": "murz",
@@ -2307,6 +2315,10 @@
                 "GPL-2.0-or-later"
             ],
             "authors": [
+                {
+                    "name": "a.dmitriiev",
+                    "homepage": "https://www.drupal.org/user/3235287"
+                },
                 {
                     "name": "b_sharpe",
                     "homepage": "https://www.drupal.org/user/2512258"
@@ -2438,17 +2450,17 @@
         },
         {
             "name": "drupal/ai_translate",
-            "version": "1.3.0",
+            "version": "1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ai_translate.git",
-                "reference": "1.3.0"
+                "reference": "1.3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ai_translate-1.3.0.zip",
-                "reference": "1.3.0",
-                "shasum": "76b8b1e161406af83a75fd2323afadfdeca3628c"
+                "url": "https://ftp.drupal.org/files/projects/ai_translate-1.3.1.zip",
+                "reference": "1.3.1",
+                "shasum": "9e9635132fbbe51ffb6d558b5f351c4be024f503"
             },
             "require": {
                 "drupal/ai": ">1.2.1",
@@ -2457,8 +2469,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.3.0",
-                    "datestamp": "1761565127",
+                    "version": "1.3.1",
+                    "datestamp": "1770814742",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2477,6 +2489,10 @@
                 {
                     "name": "mkalkbrenner",
                     "homepage": "https://www.drupal.org/user/124705"
+                },
+                {
+                    "name": "svendecabooter",
+                    "homepage": "https://www.drupal.org/user/35369"
                 },
                 {
                     "name": "valthebald",
@@ -3063,17 +3079,17 @@
         },
         {
             "name": "drupal/captcha",
-            "version": "2.0.9",
+            "version": "2.0.10",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/captcha.git",
-                "reference": "2.0.9"
+                "reference": "2.0.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/captcha-2.0.9.zip",
-                "reference": "2.0.9",
-                "shasum": "15b2ba18fab75ea88bfa8f75fb1be09f7cd52cbb"
+                "url": "https://ftp.drupal.org/files/projects/captcha-2.0.10.zip",
+                "reference": "2.0.10",
+                "shasum": "f1052ffe99ec2f8246f7da75e467b281fc2d804a"
             },
             "require": {
                 "drupal/core": "^9.5 || ^10 || ^11"
@@ -3081,8 +3097,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.9",
-                    "datestamp": "1753701287",
+                    "version": "2.0.10",
+                    "datestamp": "1770647534",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5521,17 +5537,17 @@
         },
         {
             "name": "drupal/entity_usage",
-            "version": "2.0.0-beta25",
+            "version": "2.0.0-beta26",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity_usage.git",
-                "reference": "8.x-2.0-beta25"
+                "reference": "8.x-2.0-beta26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_usage-8.x-2.0-beta25.zip",
-                "reference": "8.x-2.0-beta25",
-                "shasum": "1579a29158648e1f65949d4aff1638ccd2c33e80"
+                "url": "https://ftp.drupal.org/files/projects/entity_usage-8.x-2.0-beta26.zip",
+                "reference": "8.x-2.0-beta26",
+                "shasum": "316adfeb7b17bafe7cdd0f6867a59825ee7bb7d2"
             },
             "require": {
                 "drupal/core": "^10.2 || ^11"
@@ -5552,8 +5568,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.0-beta25",
-                    "datestamp": "1762358229",
+                    "version": "8.x-2.0-beta26",
+                    "datestamp": "1770826893",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -10179,20 +10195,20 @@
         },
         {
             "name": "drupal/redis",
-            "version": "2.0.0-alpha1",
+            "version": "2.0.0-alpha2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/redis.git",
-                "reference": "2.0.0-alpha1"
+                "reference": "2.0.0-alpha2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/redis-2.0.0-alpha1.zip",
-                "reference": "2.0.0-alpha1",
-                "shasum": "d15c6d3e36b228be92b986b921fad79812ca6be2"
+                "url": "https://ftp.drupal.org/files/projects/redis-2.0.0-alpha2.zip",
+                "reference": "2.0.0-alpha2",
+                "shasum": "43db3f44a9bc8cd5dba910010742e49982f80981"
             },
             "require": {
-                "drupal/core": "^9.3 || ^10 || ^11"
+                "drupal/core": "^10.3 || ^11"
             },
             "suggest": {
                 "ext-redis": "Required to use the PhpRedis as redis driver (^4.0|^5.0).",
@@ -10202,8 +10218,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.0-alpha1",
-                    "datestamp": "1762689227",
+                    "version": "2.0.0-alpha2",
+                    "datestamp": "1770727928",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -11919,27 +11935,27 @@
         },
         {
             "name": "drupal/sophron",
-            "version": "3.0.0",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/sophron.git",
-                "reference": "3.0.0"
+                "reference": "3.1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/sophron-3.0.0.zip",
-                "reference": "3.0.0",
-                "shasum": "868a50cb2f918c664cbfc5646fef3cdafb01e246"
+                "url": "https://ftp.drupal.org/files/projects/sophron-3.1.0.zip",
+                "reference": "3.1.0",
+                "shasum": "9c410914fda94888d2856b79c1b970d5955bee4b"
             },
             "require": {
-                "drupal/core": "^11.2",
+                "drupal/core": "^11.2 | ^12",
                 "fileeye/mimemap": "^2.2.2"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0",
-                    "datestamp": "1752094642",
+                    "version": "3.1.0",
+                    "datestamp": "1770724263",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -15148,16 +15164,16 @@
         },
         {
             "name": "laravel/prompts",
-            "version": "v0.3.12",
+            "version": "v0.3.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/prompts.git",
-                "reference": "4861ded9003b7f8a158176a0b7666f74ee761be8"
+                "reference": "ed8c466571b37e977532fb2fd3c272c784d7050d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/prompts/zipball/4861ded9003b7f8a158176a0b7666f74ee761be8",
-                "reference": "4861ded9003b7f8a158176a0b7666f74ee761be8",
+                "url": "https://api.github.com/repos/laravel/prompts/zipball/ed8c466571b37e977532fb2fd3c272c784d7050d",
+                "reference": "ed8c466571b37e977532fb2fd3c272c784d7050d",
                 "shasum": ""
             },
             "require": {
@@ -15201,9 +15217,9 @@
             "description": "Add beautiful and user-friendly forms to your command-line applications.",
             "support": {
                 "issues": "https://github.com/laravel/prompts/issues",
-                "source": "https://github.com/laravel/prompts/tree/v0.3.12"
+                "source": "https://github.com/laravel/prompts/tree/v0.3.13"
             },
-            "time": "2026-02-03T06:57:26+00:00"
+            "time": "2026-02-06T12:17:10+00:00"
         },
         {
             "name": "league/commonmark",
@@ -16451,16 +16467,16 @@
         },
         {
             "name": "nette/utils",
-            "version": "v4.1.2",
+            "version": "v4.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/utils.git",
-                "reference": "f76b5dc3d6c6d3043c8d937df2698515b99cbaf5"
+                "reference": "bb3ea637e3d131d72acc033cfc2746ee893349fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/f76b5dc3d6c6d3043c8d937df2698515b99cbaf5",
-                "reference": "f76b5dc3d6c6d3043c8d937df2698515b99cbaf5",
+                "url": "https://api.github.com/repos/nette/utils/zipball/bb3ea637e3d131d72acc033cfc2746ee893349fe",
+                "reference": "bb3ea637e3d131d72acc033cfc2746ee893349fe",
                 "shasum": ""
             },
             "require": {
@@ -16472,8 +16488,10 @@
             },
             "require-dev": {
                 "jetbrains/phpstorm-attributes": "^1.2",
+                "nette/phpstan-rules": "^1.0",
                 "nette/tester": "^2.5",
-                "phpstan/phpstan": "^2.0@stable",
+                "phpstan/extension-installer": "^1.4@stable",
+                "phpstan/phpstan": "^2.1@stable",
                 "tracy/tracy": "^2.9"
             },
             "suggest": {
@@ -16534,9 +16552,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/utils/issues",
-                "source": "https://github.com/nette/utils/tree/v4.1.2"
+                "source": "https://github.com/nette/utils/tree/v4.1.3"
             },
-            "time": "2026-02-03T17:21:09+00:00"
+            "time": "2026-02-13T03:05:33+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -17043,15 +17061,15 @@
         },
         {
             "name": "npm-asset/turf--bbox",
-            "version": "7.3.3",
+            "version": "7.3.4",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/@turf/bbox/-/bbox-7.3.3.tgz"
+                "url": "https://registry.npmjs.org/@turf/bbox/-/bbox-7.3.4.tgz"
             },
             "require": {
                 "npm-asset/tslib": ">=2.8.1,<3.0.0",
-                "npm-asset/turf--helpers": "7.3.3",
-                "npm-asset/turf--meta": "7.3.3",
+                "npm-asset/turf--helpers": "7.3.4",
+                "npm-asset/turf--meta": "7.3.4",
                 "npm-asset/types--geojson": ">=7946.0.10,<7947.0.0"
             },
             "type": "npm-asset",
@@ -17061,19 +17079,19 @@
         },
         {
             "name": "npm-asset/turf--boolean-contains",
-            "version": "7.3.3",
+            "version": "7.3.4",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/@turf/boolean-contains/-/boolean-contains-7.3.3.tgz"
+                "url": "https://registry.npmjs.org/@turf/boolean-contains/-/boolean-contains-7.3.4.tgz"
             },
             "require": {
                 "npm-asset/tslib": ">=2.8.1,<3.0.0",
-                "npm-asset/turf--bbox": "7.3.3",
-                "npm-asset/turf--boolean-point-in-polygon": "7.3.3",
-                "npm-asset/turf--boolean-point-on-line": "7.3.3",
-                "npm-asset/turf--helpers": "7.3.3",
-                "npm-asset/turf--invariant": "7.3.3",
-                "npm-asset/turf--line-split": "7.3.3",
+                "npm-asset/turf--bbox": "7.3.4",
+                "npm-asset/turf--boolean-point-in-polygon": "7.3.4",
+                "npm-asset/turf--boolean-point-on-line": "7.3.4",
+                "npm-asset/turf--helpers": "7.3.4",
+                "npm-asset/turf--invariant": "7.3.4",
+                "npm-asset/turf--line-split": "7.3.4",
                 "npm-asset/types--geojson": ">=7946.0.10,<7947.0.0"
             },
             "type": "npm-asset",
@@ -17083,16 +17101,16 @@
         },
         {
             "name": "npm-asset/turf--boolean-point-in-polygon",
-            "version": "7.3.3",
+            "version": "7.3.4",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/@turf/boolean-point-in-polygon/-/boolean-point-in-polygon-7.3.3.tgz"
+                "url": "https://registry.npmjs.org/@turf/boolean-point-in-polygon/-/boolean-point-in-polygon-7.3.4.tgz"
             },
             "require": {
                 "npm-asset/point-in-polygon-hao": ">=1.1.0,<2.0.0",
                 "npm-asset/tslib": ">=2.8.1,<3.0.0",
-                "npm-asset/turf--helpers": "7.3.3",
-                "npm-asset/turf--invariant": "7.3.3",
+                "npm-asset/turf--helpers": "7.3.4",
+                "npm-asset/turf--invariant": "7.3.4",
                 "npm-asset/types--geojson": ">=7946.0.10,<7947.0.0"
             },
             "type": "npm-asset",
@@ -17102,15 +17120,15 @@
         },
         {
             "name": "npm-asset/turf--boolean-point-on-line",
-            "version": "7.3.3",
+            "version": "7.3.4",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/@turf/boolean-point-on-line/-/boolean-point-on-line-7.3.3.tgz"
+                "url": "https://registry.npmjs.org/@turf/boolean-point-on-line/-/boolean-point-on-line-7.3.4.tgz"
             },
             "require": {
                 "npm-asset/tslib": ">=2.8.1,<3.0.0",
-                "npm-asset/turf--helpers": "7.3.3",
-                "npm-asset/turf--invariant": "7.3.3",
+                "npm-asset/turf--helpers": "7.3.4",
+                "npm-asset/turf--invariant": "7.3.4",
                 "npm-asset/types--geojson": ">=7946.0.10,<7947.0.0"
             },
             "type": "npm-asset",
@@ -17120,15 +17138,15 @@
         },
         {
             "name": "npm-asset/turf--distance",
-            "version": "7.3.3",
+            "version": "7.3.4",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/@turf/distance/-/distance-7.3.3.tgz"
+                "url": "https://registry.npmjs.org/@turf/distance/-/distance-7.3.4.tgz"
             },
             "require": {
                 "npm-asset/tslib": ">=2.8.1,<3.0.0",
-                "npm-asset/turf--helpers": "7.3.3",
-                "npm-asset/turf--invariant": "7.3.3",
+                "npm-asset/turf--helpers": "7.3.4",
+                "npm-asset/turf--invariant": "7.3.4",
                 "npm-asset/types--geojson": ">=7946.0.10,<7947.0.0"
             },
             "type": "npm-asset",
@@ -17138,17 +17156,17 @@
         },
         {
             "name": "npm-asset/turf--geojson-rbush",
-            "version": "7.3.3",
+            "version": "7.3.4",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/@turf/geojson-rbush/-/geojson-rbush-7.3.3.tgz"
+                "url": "https://registry.npmjs.org/@turf/geojson-rbush/-/geojson-rbush-7.3.4.tgz"
             },
             "require": {
                 "npm-asset/rbush": ">=3.0.1,<4.0.0",
                 "npm-asset/tslib": ">=2.8.1,<3.0.0",
-                "npm-asset/turf--bbox": "7.3.3",
-                "npm-asset/turf--helpers": "7.3.3",
-                "npm-asset/turf--meta": "7.3.3",
+                "npm-asset/turf--bbox": "7.3.4",
+                "npm-asset/turf--helpers": "7.3.4",
+                "npm-asset/turf--meta": "7.3.4",
                 "npm-asset/types--geojson": ">=7946.0.10,<7947.0.0"
             },
             "type": "npm-asset",
@@ -17158,10 +17176,10 @@
         },
         {
             "name": "npm-asset/turf--helpers",
-            "version": "7.3.3",
+            "version": "7.3.4",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/@turf/helpers/-/helpers-7.3.3.tgz"
+                "url": "https://registry.npmjs.org/@turf/helpers/-/helpers-7.3.4.tgz"
             },
             "require": {
                 "npm-asset/tslib": ">=2.8.1,<3.0.0",
@@ -17174,14 +17192,14 @@
         },
         {
             "name": "npm-asset/turf--invariant",
-            "version": "7.3.3",
+            "version": "7.3.4",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/@turf/invariant/-/invariant-7.3.3.tgz"
+                "url": "https://registry.npmjs.org/@turf/invariant/-/invariant-7.3.4.tgz"
             },
             "require": {
                 "npm-asset/tslib": ">=2.8.1,<3.0.0",
-                "npm-asset/turf--helpers": "7.3.3",
+                "npm-asset/turf--helpers": "7.3.4",
                 "npm-asset/types--geojson": ">=7946.0.10,<7947.0.0"
             },
             "type": "npm-asset",
@@ -17191,14 +17209,14 @@
         },
         {
             "name": "npm-asset/turf--kinks",
-            "version": "7.3.3",
+            "version": "7.3.4",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/@turf/kinks/-/kinks-7.3.3.tgz"
+                "url": "https://registry.npmjs.org/@turf/kinks/-/kinks-7.3.4.tgz"
             },
             "require": {
                 "npm-asset/tslib": ">=2.8.1,<3.0.0",
-                "npm-asset/turf--helpers": "7.3.3",
+                "npm-asset/turf--helpers": "7.3.4",
                 "npm-asset/types--geojson": ">=7946.0.10,<7947.0.0"
             },
             "type": "npm-asset",
@@ -17208,15 +17226,15 @@
         },
         {
             "name": "npm-asset/turf--line-intersect",
-            "version": "7.3.3",
+            "version": "7.3.4",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/@turf/line-intersect/-/line-intersect-7.3.3.tgz"
+                "url": "https://registry.npmjs.org/@turf/line-intersect/-/line-intersect-7.3.4.tgz"
             },
             "require": {
                 "npm-asset/sweepline-intersections": ">=1.5.0,<2.0.0",
                 "npm-asset/tslib": ">=2.8.1,<3.0.0",
-                "npm-asset/turf--helpers": "7.3.3",
+                "npm-asset/turf--helpers": "7.3.4",
                 "npm-asset/types--geojson": ">=7946.0.10,<7947.0.0"
             },
             "type": "npm-asset",
@@ -17226,16 +17244,16 @@
         },
         {
             "name": "npm-asset/turf--line-segment",
-            "version": "7.3.3",
+            "version": "7.3.4",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/@turf/line-segment/-/line-segment-7.3.3.tgz"
+                "url": "https://registry.npmjs.org/@turf/line-segment/-/line-segment-7.3.4.tgz"
             },
             "require": {
                 "npm-asset/tslib": ">=2.8.1,<3.0.0",
-                "npm-asset/turf--helpers": "7.3.3",
-                "npm-asset/turf--invariant": "7.3.3",
-                "npm-asset/turf--meta": "7.3.3",
+                "npm-asset/turf--helpers": "7.3.4",
+                "npm-asset/turf--invariant": "7.3.4",
+                "npm-asset/turf--meta": "7.3.4",
                 "npm-asset/types--geojson": ">=7946.0.10,<7947.0.0"
             },
             "type": "npm-asset",
@@ -17245,22 +17263,22 @@
         },
         {
             "name": "npm-asset/turf--line-split",
-            "version": "7.3.3",
+            "version": "7.3.4",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/@turf/line-split/-/line-split-7.3.3.tgz"
+                "url": "https://registry.npmjs.org/@turf/line-split/-/line-split-7.3.4.tgz"
             },
             "require": {
                 "npm-asset/tslib": ">=2.8.1,<3.0.0",
-                "npm-asset/turf--bbox": "7.3.3",
-                "npm-asset/turf--geojson-rbush": "7.3.3",
-                "npm-asset/turf--helpers": "7.3.3",
-                "npm-asset/turf--invariant": "7.3.3",
-                "npm-asset/turf--line-intersect": "7.3.3",
-                "npm-asset/turf--line-segment": "7.3.3",
-                "npm-asset/turf--meta": "7.3.3",
-                "npm-asset/turf--nearest-point-on-line": "7.3.3",
-                "npm-asset/turf--truncate": "7.3.3",
+                "npm-asset/turf--bbox": "7.3.4",
+                "npm-asset/turf--geojson-rbush": "7.3.4",
+                "npm-asset/turf--helpers": "7.3.4",
+                "npm-asset/turf--invariant": "7.3.4",
+                "npm-asset/turf--line-intersect": "7.3.4",
+                "npm-asset/turf--line-segment": "7.3.4",
+                "npm-asset/turf--meta": "7.3.4",
+                "npm-asset/turf--nearest-point-on-line": "7.3.4",
+                "npm-asset/turf--truncate": "7.3.4",
                 "npm-asset/types--geojson": ">=7946.0.10,<7947.0.0"
             },
             "type": "npm-asset",
@@ -17270,14 +17288,14 @@
         },
         {
             "name": "npm-asset/turf--meta",
-            "version": "7.3.3",
+            "version": "7.3.4",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/@turf/meta/-/meta-7.3.3.tgz"
+                "url": "https://registry.npmjs.org/@turf/meta/-/meta-7.3.4.tgz"
             },
             "require": {
                 "npm-asset/tslib": ">=2.8.1,<3.0.0",
-                "npm-asset/turf--helpers": "7.3.3",
+                "npm-asset/turf--helpers": "7.3.4",
                 "npm-asset/types--geojson": ">=7946.0.10,<7947.0.0"
             },
             "type": "npm-asset",
@@ -17287,17 +17305,17 @@
         },
         {
             "name": "npm-asset/turf--nearest-point-on-line",
-            "version": "7.3.3",
+            "version": "7.3.4",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/@turf/nearest-point-on-line/-/nearest-point-on-line-7.3.3.tgz"
+                "url": "https://registry.npmjs.org/@turf/nearest-point-on-line/-/nearest-point-on-line-7.3.4.tgz"
             },
             "require": {
                 "npm-asset/tslib": ">=2.8.1,<3.0.0",
-                "npm-asset/turf--distance": "7.3.3",
-                "npm-asset/turf--helpers": "7.3.3",
-                "npm-asset/turf--invariant": "7.3.3",
-                "npm-asset/turf--meta": "7.3.3",
+                "npm-asset/turf--distance": "7.3.4",
+                "npm-asset/turf--helpers": "7.3.4",
+                "npm-asset/turf--invariant": "7.3.4",
+                "npm-asset/turf--meta": "7.3.4",
                 "npm-asset/types--geojson": ">=7946.0.10,<7947.0.0"
             },
             "type": "npm-asset",
@@ -17307,15 +17325,15 @@
         },
         {
             "name": "npm-asset/turf--truncate",
-            "version": "7.3.3",
+            "version": "7.3.4",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/@turf/truncate/-/truncate-7.3.3.tgz"
+                "url": "https://registry.npmjs.org/@turf/truncate/-/truncate-7.3.4.tgz"
             },
             "require": {
                 "npm-asset/tslib": ">=2.8.1,<3.0.0",
-                "npm-asset/turf--helpers": "7.3.3",
-                "npm-asset/turf--meta": "7.3.3",
+                "npm-asset/turf--helpers": "7.3.4",
+                "npm-asset/turf--meta": "7.3.4",
                 "npm-asset/types--geojson": ">=7946.0.10,<7947.0.0"
             },
             "type": "npm-asset",
@@ -17401,16 +17419,16 @@
         },
         {
             "name": "openai-php/client",
-            "version": "v0.18.0",
+            "version": "v0.19.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/openai-php/client.git",
-                "reference": "3362ab004fcfc9d77df3aff7671fbcbe70177cae"
+                "reference": "c52f871fba345c6cbd8a3945c4d167e2e21266fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/openai-php/client/zipball/3362ab004fcfc9d77df3aff7671fbcbe70177cae",
-                "reference": "3362ab004fcfc9d77df3aff7671fbcbe70177cae",
+                "url": "https://api.github.com/repos/openai-php/client/zipball/c52f871fba345c6cbd8a3945c4d167e2e21266fd",
+                "reference": "c52f871fba345c6cbd8a3945c4d167e2e21266fd",
                 "shasum": ""
             },
             "require": {
@@ -17423,16 +17441,16 @@
                 "psr/http-message": "^1.1.0|^2.0.0"
             },
             "require-dev": {
-                "guzzlehttp/guzzle": "^7.9.3",
-                "guzzlehttp/psr7": "^2.7.1",
-                "laravel/pint": "^1.24.0",
+                "guzzlehttp/guzzle": "^7.10.0",
+                "guzzlehttp/psr7": "^2.8.0",
+                "laravel/pint": "^1.25.1",
                 "mockery/mockery": "^1.6.12",
-                "nunomaduro/collision": "^8.8.0",
-                "pestphp/pest": "^3.8.2|^4.0.0",
+                "nunomaduro/collision": "^8.8.3",
+                "pestphp/pest": "^3.8.2|^4.1.4",
                 "pestphp/pest-plugin-arch": "^3.1.1|^4.0.0",
                 "pestphp/pest-plugin-type-coverage": "^3.5.1|^4.0.0",
-                "phpstan/phpstan": "^1.12.25",
-                "symfony/var-dumper": "^7.2.6"
+                "phpstan/phpstan": "^1.12.32",
+                "symfony/var-dumper": "^7.3.5"
             },
             "type": "library",
             "autoload": {
@@ -17472,7 +17490,7 @@
             ],
             "support": {
                 "issues": "https://github.com/openai-php/client/issues",
-                "source": "https://github.com/openai-php/client/tree/v0.18.0"
+                "source": "https://github.com/openai-php/client/tree/v0.19.0"
             },
             "funding": [
                 {
@@ -17488,7 +17506,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-10-31T18:58:57+00:00"
+            "time": "2026-02-10T11:15:52+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -18853,16 +18871,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.12.19",
+            "version": "v0.12.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "a4f766e5c5b6773d8399711019bb7d90875a50ee"
+                "reference": "19678eb6b952a03b8a1d96ecee9edba518bb0373"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/a4f766e5c5b6773d8399711019bb7d90875a50ee",
-                "reference": "a4f766e5c5b6773d8399711019bb7d90875a50ee",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/19678eb6b952a03b8a1d96ecee9edba518bb0373",
+                "reference": "19678eb6b952a03b8a1d96ecee9edba518bb0373",
                 "shasum": ""
             },
             "require": {
@@ -18926,9 +18944,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bobthecow/psysh/issues",
-                "source": "https://github.com/bobthecow/psysh/tree/v0.12.19"
+                "source": "https://github.com/bobthecow/psysh/tree/v0.12.20"
             },
-            "time": "2026-01-30T17:33:13+00:00"
+            "time": "2026-02-11T15:05:28+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -23816,16 +23834,16 @@
         },
         {
             "name": "brick/math",
-            "version": "0.14.7",
+            "version": "0.14.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/brick/math.git",
-                "reference": "07ff363b16ef8aca9692bba3be9e73fe63f34e50"
+                "reference": "63422359a44b7f06cae63c3b429b59e8efcc0629"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brick/math/zipball/07ff363b16ef8aca9692bba3be9e73fe63f34e50",
-                "reference": "07ff363b16ef8aca9692bba3be9e73fe63f34e50",
+                "url": "https://api.github.com/repos/brick/math/zipball/63422359a44b7f06cae63c3b429b59e8efcc0629",
+                "reference": "63422359a44b7f06cae63c3b429b59e8efcc0629",
                 "shasum": ""
             },
             "require": {
@@ -23864,7 +23882,7 @@
             ],
             "support": {
                 "issues": "https://github.com/brick/math/issues",
-                "source": "https://github.com/brick/math/tree/0.14.7"
+                "source": "https://github.com/brick/math/tree/0.14.8"
             },
             "funding": [
                 {
@@ -23872,7 +23890,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-02-07T10:57:35+00:00"
+            "time": "2026-02-10T14:33:43+00:00"
         },
         {
             "name": "colinodell/psr-testlogger",
@@ -26071,16 +26089,16 @@
         },
         {
             "name": "open-telemetry/exporter-otlp",
-            "version": "1.3.4",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opentelemetry-php/exporter-otlp.git",
-                "reference": "62e680d587beb42e5247aa6ecd89ad1ca406e8ca"
+                "reference": "283a0d66522f2adc6d8d7debfd7686be91c282be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opentelemetry-php/exporter-otlp/zipball/62e680d587beb42e5247aa6ecd89ad1ca406e8ca",
-                "reference": "62e680d587beb42e5247aa6ecd89ad1ca406e8ca",
+                "url": "https://api.github.com/repos/opentelemetry-php/exporter-otlp/zipball/283a0d66522f2adc6d8d7debfd7686be91c282be",
+                "reference": "283a0d66522f2adc6d8d7debfd7686be91c282be",
                 "shasum": ""
             },
             "require": {
@@ -26131,7 +26149,7 @@
                 "issues": "https://github.com/open-telemetry/opentelemetry-php/issues",
                 "source": "https://github.com/open-telemetry/opentelemetry-php"
             },
-            "time": "2026-01-15T09:31:34+00:00"
+            "time": "2026-02-05T09:44:52+00:00"
         },
         {
             "name": "open-telemetry/gen-otlp-protobuf",
@@ -26198,16 +26216,16 @@
         },
         {
             "name": "open-telemetry/sdk",
-            "version": "1.12.0",
+            "version": "1.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opentelemetry-php/sdk.git",
-                "reference": "7f1bd524465c1ca42755a9ef1143ba09913f5be0"
+                "reference": "c76f91203bf7ef98ab3f4e0a82ca21699af185e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opentelemetry-php/sdk/zipball/7f1bd524465c1ca42755a9ef1143ba09913f5be0",
-                "reference": "7f1bd524465c1ca42755a9ef1143ba09913f5be0",
+                "url": "https://api.github.com/repos/opentelemetry-php/sdk/zipball/c76f91203bf7ef98ab3f4e0a82ca21699af185e1",
+                "reference": "c76f91203bf7ef98ab3f4e0a82ca21699af185e1",
                 "shasum": ""
             },
             "require": {
@@ -26291,7 +26309,7 @@
                 "issues": "https://github.com/open-telemetry/opentelemetry-php/issues",
                 "source": "https://github.com/open-telemetry/opentelemetry-php"
             },
-            "time": "2026-01-21T04:14:03+00:00"
+            "time": "2026-01-28T11:38:11+00:00"
         },
         {
             "name": "open-telemetry/sem-conv",
@@ -26645,31 +26663,31 @@
         },
         {
             "name": "phpspec/prophecy",
-            "version": "v1.24.0",
+            "version": "v1.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "a24f1bda2d00a03877f7f99d9e6b150baf543f6d"
+                "reference": "7ab965042096282307992f1b9abff020095757f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/a24f1bda2d00a03877f7f99d9e6b150baf543f6d",
-                "reference": "a24f1bda2d00a03877f7f99d9e6b150baf543f6d",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/7ab965042096282307992f1b9abff020095757f0",
+                "reference": "7ab965042096282307992f1b9abff020095757f0",
                 "shasum": ""
             },
             "require": {
                 "doctrine/instantiator": "^1.2 || ^2.0",
                 "php": "8.2.* || 8.3.* || 8.4.* || 8.5.*",
                 "phpdocumentor/reflection-docblock": "^5.2",
-                "sebastian/comparator": "^3.0 || ^4.0 || ^5.0 || ^6.0 || ^7.0",
-                "sebastian/recursion-context": "^3.0 || ^4.0 || ^5.0 || ^6.0 || ^7.0",
+                "sebastian/comparator": "^3.0 || ^4.0 || ^5.0 || ^6.0 || ^7.0 || ^8.0",
+                "sebastian/recursion-context": "^3.0 || ^4.0 || ^5.0 || ^6.0 || ^7.0 || ^8.0",
                 "symfony/deprecation-contracts": "^2.5 || ^3.1"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.88",
+                "php-cs-fixer/shim": "^3.93.1",
                 "phpspec/phpspec": "^6.0 || ^7.0 || ^8.0",
-                "phpstan/phpstan": "^2.1.13",
-                "phpunit/phpunit": "^11.0 || ^12.0"
+                "phpstan/phpstan": "^2.1.13, <2.1.34 || ^2.1.39",
+                "phpunit/phpunit": "^11.0 || ^12.0 || ^13.0"
             },
             "type": "library",
             "extra": {
@@ -26710,28 +26728,28 @@
             ],
             "support": {
                 "issues": "https://github.com/phpspec/prophecy/issues",
-                "source": "https://github.com/phpspec/prophecy/tree/v1.24.0"
+                "source": "https://github.com/phpspec/prophecy/tree/v1.25.0"
             },
-            "time": "2025-11-21T13:10:52+00:00"
+            "time": "2026-02-09T11:58:00+00:00"
         },
         {
             "name": "phpspec/prophecy-phpunit",
-            "version": "v2.4.0",
+            "version": "v2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy-phpunit.git",
-                "reference": "d3c28041d9390c9bca325a08c5b2993ac855bded"
+                "reference": "89f91b01d0640b7820e427e02a007bc6489d8a26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy-phpunit/zipball/d3c28041d9390c9bca325a08c5b2993ac855bded",
-                "reference": "d3c28041d9390c9bca325a08c5b2993ac855bded",
+                "url": "https://api.github.com/repos/phpspec/prophecy-phpunit/zipball/89f91b01d0640b7820e427e02a007bc6489d8a26",
+                "reference": "89f91b01d0640b7820e427e02a007bc6489d8a26",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.3 || ^8",
                 "phpspec/prophecy": "^1.18",
-                "phpunit/phpunit": "^9.1 || ^10.1 || ^11.0 || ^12.0"
+                "phpunit/phpunit": "^9.1 || ^10.1 || ^11.0 || ^12.0 || ^13.0"
             },
             "require-dev": {
                 "phpstan/phpstan": "^1.10"
@@ -26765,9 +26783,9 @@
             ],
             "support": {
                 "issues": "https://github.com/phpspec/prophecy-phpunit/issues",
-                "source": "https://github.com/phpspec/prophecy-phpunit/tree/v2.4.0"
+                "source": "https://github.com/phpspec/prophecy-phpunit/tree/v2.5.0"
             },
-            "time": "2025-05-13T13:52:32+00:00"
+            "time": "2026-02-09T15:40:55+00:00"
         },
         {
             "name": "phpstan/extension-installer",
@@ -27365,16 +27383,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "11.5.52",
+            "version": "11.5.53",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "b287d32c26f78768e391843c5a59395f24b62605"
+                "reference": "a997a653a82845f1240d73ee73a8a4e97e4b0607"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/b287d32c26f78768e391843c5a59395f24b62605",
-                "reference": "b287d32c26f78768e391843c5a59395f24b62605",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/a997a653a82845f1240d73ee73a8a4e97e4b0607",
+                "reference": "a997a653a82845f1240d73ee73a8a4e97e4b0607",
                 "shasum": ""
             },
             "require": {
@@ -27447,7 +27465,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/11.5.52"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/11.5.53"
             },
             "funding": [
                 {
@@ -27471,7 +27489,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-02-08T07:05:14+00:00"
+            "time": "2026-02-10T12:28:25+00:00"
         },
         {
             "name": "ramsey/collection",
