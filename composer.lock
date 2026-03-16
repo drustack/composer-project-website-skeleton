@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "41c7332b7ed87c0dfb72ec5df8c4c646",
+    "content-hash": "fe6f5fcde1b6f7af73905ac1634ea31d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -7364,31 +7364,34 @@
         },
         {
             "name": "drupal/imagemagick",
-            "version": "4.1.0-rc1",
+            "version": "5.0.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/imagemagick.git",
-                "reference": "4.1.0-rc1"
+                "reference": "5.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/imagemagick-4.1.0-rc1.zip",
-                "reference": "4.1.0-rc1",
-                "shasum": "f87f600f83821335d92611832161b5204773bbe7"
+                "url": "https://ftp.drupal.org/files/projects/imagemagick-5.0.1.zip",
+                "reference": "5.0.1",
+                "shasum": "3a9e70d80064b3be3f2d0b4b4a4d1beb92d6ead2"
             },
             "require": {
-                "drupal/core": "^11.2",
+                "drupal/core": "^11.3",
                 "drupal/file_mdm": "^3.2",
                 "drupal/sophron": "^3"
+            },
+            "require-dev": {
+                "drupal/image_effects": "^5"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "4.1.0-rc1",
-                    "datestamp": "1752176906",
+                    "version": "5.0.1",
+                    "datestamp": "1769759255",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "RC releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
