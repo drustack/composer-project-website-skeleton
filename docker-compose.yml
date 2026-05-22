@@ -1,5 +1,16 @@
 services:
 
+  init:
+    image: docker.io/alvistack/devel-24.04:latest
+    env_file:
+      - ./.env
+    command: /var/www/html/scripts/docker-compose-init.sh
+    volumes:
+      - ./.root/var/lib/mysql:/var/lib/mysql
+      - ./.root/var/lib/postgresql/data:/var/lib/postgresql/data
+      - ./.root/var/solr:/var/solr
+      - ./:/var/www/html
+
   httpd:
     image: docker.io/alvistack/httpd-2.4:latest
     env_file:
@@ -10,6 +21,9 @@ services:
       - /tmp:/tmp
     ports:
       - 80
+    depends_on:
+      init:
+        condition: service_completed_successfully
 
   php:
     image: docker.io/alvistack/php-8.3-fpm:latest
@@ -21,6 +35,9 @@ services:
       - /tmp:/tmp
     ports:
       - 9000
+    depends_on:
+      init:
+        condition: service_completed_successfully
 
   mariadb:
     image: docker.io/alvistack/mariadb-11.8:latest
@@ -31,6 +48,9 @@ services:
       - /tmp:/tmp
     ports:
       - 3306
+    depends_on:
+      init:
+        condition: service_completed_successfully
 
   memcached:
     image: docker.io/memcached:1.6
@@ -44,6 +64,9 @@ services:
       - /tmp:/tmp
     ports:
       - 11211
+    depends_on:
+      init:
+        condition: service_completed_successfully
 
   postgres:
     image: docker.io/alvistack/postgres-18:latest
@@ -54,6 +77,9 @@ services:
       - /tmp:/tmp
     ports:
       - 5432
+    depends_on:
+      init:
+        condition: service_completed_successfully
 
   redis:
     image: docker.io/redis:8.6
@@ -67,6 +93,9 @@ services:
       - /tmp:/tmp
     ports:
       - 6379
+    depends_on:
+      init:
+        condition: service_completed_successfully
 
   solr:
     image: docker.io/solr:9.10
@@ -82,6 +111,9 @@ services:
       - /tmp:/tmp
     ports:
       - 8983
+    depends_on:
+      init:
+        condition: service_completed_successfully
 
   devel:
     image: docker.io/alvistack/devel-24.04:latest
@@ -93,3 +125,6 @@ services:
       - /tmp:/tmp
     ports:
       - 22
+    depends_on:
+      init:
+        condition: service_completed_successfully
