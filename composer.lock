@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ac2ff67c38b65a026a61bf570c3c9656",
+    "content-hash": "3e734cd6ccec65ee10943fefb9479526",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -10825,11 +10825,17 @@
         },
         {
             "name": "drupal/search_api",
-            "version": "dev-1.x",
+            "version": "1.40.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/search_api.git",
-                "reference": "7fa076b4b1c2a178555c7aaa01bc5a26efc65876"
+                "reference": "8.x-1.40"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/search_api-8.x-1.40.zip",
+                "reference": "8.x-1.40",
+                "shasum": "64ac71887786da63ced27a43e37342ea3b765a88"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11"
@@ -10850,17 +10856,16 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev",
-                    "dev-8.x-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.40+15-dev",
-                    "datestamp": "1777816491",
+                    "version": "8.x-1.40",
+                    "datestamp": "1762031191",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "branch-alias": {
+                    "dev-8.x-1.x": "1.x-dev"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -11061,24 +11066,30 @@
         },
         {
             "name": "drupal/search_api_solr",
-            "version": "dev-4.x",
+            "version": "4.3.10",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/search_api_solr.git",
-                "reference": "11a74b17ce70567a439dadfb7a6eb11fbd486f1b"
+                "reference": "4.3.10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/search_api_solr-4.3.10.zip",
+                "reference": "4.3.10",
+                "shasum": "8d37467f0f2ab34ed6a0b61872ce7ff8e5e64730"
             },
             "require": {
                 "composer-runtime-api": ">=2.0",
                 "composer/semver": "^1.0|^3.0",
                 "consolidation/annotated-command": "^2.12|^4.1",
                 "drupal/core": "^10.2 || ^11.0",
-                "drupal/search_api": "^1.40|1.x-dev",
+                "drupal/search_api": "^1.37|1.x-dev",
                 "ext-dom": "*",
                 "ext-json": "*",
                 "ext-simplexml": "*",
                 "laminas/laminas-stdlib": "^3.2",
-                "maennchen/zipstream-php": "^3.0.2",
-                "solarium/solarium": "^6.4.0"
+                "maennchen/zipstream-php": "^2.2.1|^3.0.2",
+                "solarium/solarium": "^6.3.7"
             },
             "conflict": {
                 "drupal/acquia_search_solr": "<1.0.0-beta8",
@@ -11087,12 +11098,12 @@
             },
             "require-dev": {
                 "drupal/devel": "^4.0|^5.0",
-                "drupal/facets": "3.0.x-dev",
+                "drupal/facets": "^3.0.x-dev",
                 "drupal/facets_exposed_filters": "*",
                 "drupal/geofield": "1.x-dev",
                 "drupal/search_api_autocomplete": "1.x-dev",
                 "drupal/search_api_location": "1.x-dev",
-                "drupal/search_api_spellcheck": "4.0.x-dev",
+                "drupal/search_api_spellcheck": "3.x-dev",
                 "drupal/views-views": "*",
                 "monolog/monolog": "^1.25|^3"
             },
@@ -11105,15 +11116,17 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-4.x": "4.x-dev"
-                },
                 "drupal": {
-                    "version": "4.3.10+48-dev",
-                    "datestamp": "1777465994",
+                    "version": "4.3.10",
+                    "datestamp": "1745427496",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": ">=9"
                     }
                 }
             },
@@ -11150,7 +11163,7 @@
             "description": "Offers an implementation of the Search API that uses an Apache Solr server for indexing content.",
             "homepage": "https://www.drupal.org/project/search_api_solr",
             "support": {
-                "source": "https://git.drupal.org/project/search_api_solr.git",
+                "source": "http://git.drupal.org/project/search_api_solr.git",
                 "issues": "https://www.drupal.org/project/issues/search_api_solr",
                 "chat": "https://drupalchat.me/channel/search"
             }
@@ -30045,9 +30058,7 @@
         "drupal/profile": 20,
         "drupal/recaptcha": 20,
         "drupal/redirect": 20,
-        "drupal/search_api": 20,
         "drupal/search_api_location": 20,
-        "drupal/search_api_solr": 20,
         "drupal/token": 20,
         "npm-asset/accessible360--accessible-slick": 20
     },
