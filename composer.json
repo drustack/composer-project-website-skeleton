@@ -58,6 +58,10 @@
             "npm-asset"
         ],
         "patches": {
+            "drupal/config_translation_po": {
+                "https://drupal.org/node/3277897": "https://git.drupalcode.org/project/config_translation_po/-/merge_requests/1.diff",
+                "https://drupal.org/node/3439416": "https://git.drupalcode.org/project/config_translation_po/-/merge_requests/6.diff"
+            },
             "drupal/core": {
                 "https://drupal.org/node/2137815": "https://git.drupalcode.org/project/drupal/-/merge_requests/11820.diff",
                 "https://drupal.org/node/2429321": "https://git.drupalcode.org/project/drupal/-/merge_requests/1521.diff",
@@ -160,6 +164,7 @@
         "drupal/config_inspector": "~2.1.9",
         "drupal/config_rewrite": "~1.4",
         "drupal/config_split": "~2.0.2",
+        "drupal/config_translation_po": "1.0.x-dev",
         "drupal/config_update": "~2.0.0-alpha2",
         "drupal/core-composer-scaffold": "~10.6.0",
         "drupal/core-project-message": "~10.6.0",
@@ -246,7 +251,7 @@
         "drupal/restui": "~1.18",
         "drupal/rules": "~4.0.0",
         "drupal/samlauth": "~3.11",
-        "drupal/scheduler": "~2.2.1",
+        "drupal/scheduler": "~2.3.0",
         "drupal/scheduler_content_moderation_integration": "~3.0.3",
         "drupal/schema_metatag": "~3.0.0",
         "drupal/search404": "~2.2.0-rc3",
@@ -271,7 +276,7 @@
         "drupal/smtp": "~1.0",
         "drupal/styleguide": "~2.2.0",
         "drupal/svg_image": "~3.2.0",
-        "drupal/symfony_mailer": "~2.0.0-alpha4",
+        "drupal/symfony_mailer": "~2.0.1",
         "drupal/tamper": "~1.0-alpha5",
         "drupal/telephone_formatter": "~1.2",
         "drupal/telephone_validation": "~2.4",
