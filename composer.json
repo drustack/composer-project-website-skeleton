@@ -7,6 +7,9 @@
     ],
     "config": {
         "allow-plugins": true,
+        "audit": {
+            "block-insecure": false
+        },
         "discard-changes": true,
         "preferred-install": {
             "drustack/*": "source"
