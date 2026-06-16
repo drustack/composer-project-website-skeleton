@@ -6,7 +6,7 @@ dependencies:
 id: node_article
 label: 'Content (Article)'
 type: 'canonical_entities:node'
-pattern: 'article/[node:source:title]'
+pattern: '/article/[node:source:title]'
 selection_criteria:
   c604d351-6704-4181-a475-fe8216333f6b:
     id: 'entity_bundle:node'

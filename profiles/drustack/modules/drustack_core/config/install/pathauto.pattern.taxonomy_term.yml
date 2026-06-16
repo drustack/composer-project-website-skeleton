@@ -6,7 +6,7 @@ dependencies:
 id: taxonomy_term
 label: 'Taxonomy term'
 type: 'canonical_entities:taxonomy_term'
-pattern: '[term:source:parent:url:path]/[term:source:name]'
+pattern: '/[term:source:parent:url:path]/[term:source:name]'
 selection_criteria: {  }
 selection_logic: and
 weight: 0

@@ -26,7 +26,7 @@ services:
         condition: service_completed_successfully
 
   php:
-    image: docker.io/alvistack/php-8.3-fpm:latest
+    image: docker.io/alvistack/php-8.4-fpm:latest
     env_file:
       - ./.env
     volumes:

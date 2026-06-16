@@ -6,7 +6,7 @@ dependencies:
 id: node_blog
 label: 'Content (Blog entry)'
 type: 'canonical_entities:node'
-pattern: 'blog/[node:author:account-name]/[node:source:title]'
+pattern: '/blog/[node:author:account-name]/[node:source:title]'
 selection_criteria:
   bb4a7b44-12e8-4f65-80f8-d4e040da4ead:
     id: 'entity_bundle:node'

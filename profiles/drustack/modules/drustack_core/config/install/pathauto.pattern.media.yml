@@ -6,7 +6,7 @@ dependencies:
 id: media
 label: Media
 type: 'canonical_entities:media'
-pattern: '[media:original:bundle:target_id]/[media:name]'
+pattern: '/[media:original:bundle:target_id]/[media:name]'
 selection_criteria: {  }
 selection_logic: and
 weight: 0
