@@ -7,6 +7,9 @@
     ],
     "config": {
         "allow-plugins": true,
+        "audit": {
+            "block-insecure": false
+        },
         "discard-changes": true,
         "preferred-install": {
             "drustack/*": "source"
@@ -72,7 +75,8 @@
                 "https://drupal.org/node/2980299": "https://git.drupalcode.org/project/drupal/-/merge_requests/8499.diff",
                 "https://drupal.org/node/3008924": "https://drupal.org/files/issues/2022-12-15/3008924-42.patch",
                 "https://drupal.org/node/3025039": "https://git.drupalcode.org/project/drupal/-/merge_requests/9429.diff",
-                "https://drupal.org/node/3523317": "https://git.drupalcode.org/project/drupal/-/merge_requests/12073.diff"
+                "https://drupal.org/node/3523317": "https://git.drupalcode.org/project/drupal/-/merge_requests/12073.diff",
+                "https://drupal.org/node/3563306": "https://git.drupalcode.org/project/drupal/-/merge_requests/14113.diff"
             },
             "drupal/ctools": {
                 "https://drupal.org/node/2475595": "https://drupal.org/files/issues/2022-02-14/2475595-ctools-autocomplete-fix-81.patch"
@@ -99,6 +103,9 @@
                 "https://drupal.org/node/2845245": "https://git.drupalcode.org/project/redirect/-/merge_requests/111.diff",
                 "https://drupal.org/node/3046873": "https://git.drupalcode.org/project/redirect/-/merge_requests/113.diff"
             },
+            "drupal/search_api": {
+                "https://drupal.org/node/3576216": "https://git.drupalcode.org/project/search_api/-/merge_requests/315.diff"
+            },
             "drupal/search_api_location": {
                 "https://drupal.org/node/3258142": "https://git.drupalcode.org/project/search_api_location/-/merge_requests/3.diff",
                 "https://drupal.org/node/3343987": "https://git.drupalcode.org/project/search_api_location/-/merge_requests/13.diff",
@@ -113,6 +120,9 @@
             },
             "drupal/webform": {
                 "https://drupal.org/node/3551513": "https://git.drupalcode.org/project/webform/-/merge_requests/762.diff"
+            },
+            "drupal/xmlsitemap": {
+                "https://drupal.org/node/3571583": "https://git.drupalcode.org/project/xmlsitemap/-/merge_requests/76.diff"
             },
             "npm-asset/accessible360--accessible-slick": {
                 "https://drupal.org/node/3196529": "https://github.com/Accessible360/accessible-slick/pull/104.patch"
@@ -139,8 +149,8 @@
     "require": {
         "drupal/address": "~2.0.1",
         "drupal/admin_toolbar": "~3.6.2",
-        "drupal/ai": "~1.3.0",
-        "drupal/ai_provider_deepseek": "~1.0.0-alpha1",
+        "drupal/ai": "~1.4.2",
+        "drupal/ai_provider_deepseek": "~1.1.0",
         "drupal/ai_provider_openai": "~1.2.0",
         "drupal/ai_provider_perplexity": "~1.0.0-beta2",
         "drupal/ai_provider_x": "~1.0.0",
@@ -155,7 +165,7 @@
         "drupal/bootstrap_sass": "~5.0.12",
         "drupal/bpmn_io": "~3.0.2",
         "drupal/captcha": "~2.0.9",
-        "drupal/cas": "~3.0.0-beta4",
+        "drupal/cas": "~3.1.0",
         "drupal/cas_attributes": "~3.0.0-beta1",
         "drupal/cdn": "~5.0.0-alpha1",
         "drupal/checklistapi": "~2.0",
@@ -176,7 +186,7 @@
         "drupal/default_content": "~2.0.0-alpha3",
         "drupal/devel": "~5.5.0",
         "drupal/devel_entity_updates": "~5.0.0-rc1",
-        "drupal/diff": "~2.0.0-beta2",
+        "drupal/diff": "~2.1.0",
         "drupal/dropdown_language": "~4.1.0",
         "drupal/dropzonejs": "~2.5",
         "drupal/easy_breadcrumb": "~2.0.9",
@@ -185,7 +195,7 @@
         "drupal/email_registration": "~2.0.0-rc5",
         "drupal/entity": "~1.4",
         "drupal/entity_browser": "~2.15",
-        "drupal/entity_clone": "~2.1.0-beta1",
+        "drupal/entity_clone": "~2.2.0-beta1",
         "drupal/entity_print": "~2.4",
         "drupal/entity_usage": "~2.0-beta4",
         "drupal/entityqueue": "~1.10",
@@ -196,8 +206,8 @@
         "drupal/facets_pretty_paths": "~2.0.1",
         "drupal/features": "~3.16",
         "drupal/feeds": "3.x-dev",
-        "drupal/feeds_ex": "~1.0-beta5",
-        "drupal/feeds_tamper": "~2.0-beta4",
+        "drupal/feeds_ex": "1.x-dev",
+        "drupal/feeds_tamper": "2.x-dev",
         "drupal/field_formatter_class": "~1.4",
         "drupal/field_permissions": "~1.4",
         "drupal/field_validation": "~3.0.0-beta4",
