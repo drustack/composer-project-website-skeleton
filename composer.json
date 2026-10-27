@@ -95,7 +95,7 @@
                 "https://drupal.org/node/3479534": "https://git.drupalcode.org/project/leaflet/-/merge_requests/47.diff"
             },
             "drupal/profile": {
-                "https://drupal.org/node/2899744": "https://drupal.org/files/issues/2022-04-17/2899744-54.patch",
+                "https://drupal.org/node/2899744": "https://drupal.org/files/issues/2026-10-21/profile-translatable-2899744-66.patch",
                 "https://drupal.org/node/3139127": "https://drupal.org/files/issues/2020-05-22/profile-local-tasks-313912-2.patch",
                 "https://drupal.org/node/3178743": "https://git.drupalcode.org/project/profile/-/merge_requests/36.diff"
             },
@@ -142,6 +142,31 @@
             "canonical": false,
             "type": "composer",
             "url": "https://asset-packagist.org"
+        },
+        "https://github.com/Accessible360/accessible-slick": {
+            "package": {
+                "name": "npm-asset/accessible360--accessible-slick",
+                "source": {
+                    "reference": "master",
+                    "type": "git",
+                    "url": "https://github.com/Accessible360/accessible-slick.git"
+                },
+                "type": "npm-asset",
+                "version": "dev-master"
+            },
+            "type": "package"
+        },
+        "https://github.com/jgallen23/toc": {
+            "package": {
+                "dist": {
+                    "type": "tar",
+                    "url": "https://github.com/jgallen23/toc/archive/refs/tags/0.3.2.tar.gz"
+                },
+                "name": "npm-asset/firstandthird--toc",
+                "type": "npm-asset",
+                "version": "0.3.2"
+            },
+            "type": "package"
         },
         "https://packages.drupal.org/8": {
             "canonical": false,
@@ -325,7 +350,7 @@
         "npm-asset/bootstrap-icons": "~1.13",
         "npm-asset/bootswatch": "~5.3",
         "npm-asset/dropzone": "~5.9",
-        "npm-asset/firstandthird--toc": "~0.3",
+        "npm-asset/firstandthird--toc": "~0.3.2",
         "npm-asset/flag-icon-css": "~3.5",
         "npm-asset/fortawesome--fontawesome-free": "~5.15",
         "npm-asset/geoman-io--leaflet-geoman-free": "~2.11",
